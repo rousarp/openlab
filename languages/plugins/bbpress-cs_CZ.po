@@ -1,0 +1,4592 @@
+# Translation of Plugins - bbPress - Stable (latest release) in Czech
+# This file is distributed under the same license as the Plugins - bbPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-03 22:01:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: Plugins - bbPress - Stable (latest release)\n"
+
+#. translators: user role
+#: includes/common/locale.php:56
+msgctxt "User role"
+msgid "Blocked"
+msgstr "Blokovaný"
+
+#. translators: user role
+#: includes/common/locale.php:53
+msgctxt "User role"
+msgid "Spectator"
+msgstr "Prohlížející"
+
+#. translators: user role
+#: includes/common/locale.php:50
+msgctxt "User role"
+msgid "Participant"
+msgstr "Účastník"
+
+#. translators: user role
+#: includes/common/locale.php:47
+msgctxt "User role"
+msgid "Moderator"
+msgstr "Moderátor"
+
+#. translators: user role
+#: includes/common/locale.php:44
+msgctxt "User role"
+msgid "Keymaster"
+msgstr "Klíčník"
+
+#. Author of the plugin/theme
+msgid "The bbPress Community"
+msgstr "Komunita bbPress"
+
+#. Plugin Name of the plugin/theme
+msgid "bbPress"
+msgstr "bbPress"
+
+#. Description of the plugin/theme
+msgid "bbPress is forum software with a twist from the creators of WordPress."
+msgstr "bbPress je fórum vytvořené tvůrci WordPressu"
+
+#. #-#-#-#-#  bbpress-code.pot (bbPress 2.5.13)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  bbpress-code.pot (bbPress 2.5.13)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://bbpress.org"
+msgstr "http://bbpress.org"
+
+#: includes/admin/tools.php:1148
+msgid "No reply positions to recalculate!"
+msgstr "Žádné pozice odpovědí pro přepočet!"
+
+#: includes/admin/tools.php:1147
+msgid "Recalculating reply menu order &hellip; %s"
+msgstr "Přepočítávám pořadí nabídek pro odpovědi &hellip; %s"
+
+#: includes/admin/tools.php:166
+msgid "Recalculate the position of each reply"
+msgstr "Přepočítat pozici každého příspěvku"
+
+#: templates/default/extras/page-topic-tags.php:22
+msgid "<p>This is a collection of tags that are currently popular on our forums.</p>"
+msgstr "<p>Soubor štítků, které jsou v poslední době na vašem fóru populární. </p>"
+
+#: templates/default/extras/page-forum-statistics.php:22
+msgid "<p>Here are the statistics and popular topics of our forums.</p>"
+msgstr "<p> Statistiky a populární témata z vašeho fóra. </p>"
+
+#: templates/default/bbpress-functions.php:426
+msgid "Please login to subscribe to this topic."
+msgstr "Pro sledování tohoto tématu musíte být přihlášeni."
+
+#: templates/default/bbpress-functions.php:375
+#: templates/default/bbpress-functions.php:443
+msgid "The topic could not be found."
+msgstr "Téma nenalezeno."
+
+#: templates/default/bbpress-functions.php:358
+msgid "Please login to make this topic a favorite."
+msgstr "Přihlaste se, abyste mohli téma označit za oblíbené."
+
+#: templates/default/bbpress-functions.php:353
+msgid "Favorites are no longer active."
+msgstr "Oblíbené nejsou aktivní."
+
+#: templates/default/bbpress-functions.php:320
+#: templates/default/bbpress-functions.php:388
+#: templates/default/bbpress-functions.php:456
+msgid "The request was unsuccessful. Please try again."
+msgstr "Požadavek byl neúspěšný. Prosím zkuste to znovu."
+
+#: templates/default/bbpress-functions.php:312
+#: templates/default/bbpress-functions.php:380
+#: templates/default/bbpress-functions.php:448
+msgid "Are you sure you meant to do that?"
+msgstr "Určitě chcete udělat přesně tohle?"
+
+#: templates/default/bbpress-functions.php:307
+msgid "The forum could not be found."
+msgstr "Fórum nebylo možné nalézt."
+
+#: templates/default/bbpress-functions.php:299
+#: templates/default/bbpress-functions.php:367
+#: templates/default/bbpress-functions.php:435
+msgid "You do not have permission to do this."
+msgstr "Na tohle nemáte oprávnění."
+
+#: templates/default/bbpress-functions.php:290
+msgid "Please login to subscribe to this forum."
+msgstr "Pro sledování tohoto fóra musíte být přihlášeni."
+
+#: templates/default/bbpress-functions.php:285
+#: templates/default/bbpress-functions.php:421
+msgid "Subscriptions are no longer active."
+msgstr "Sledování již není aktivní."
+
+#: templates/default/bbpress-functions.php:248
+#: templates/default/bbpress-functions.php:257
+msgid "Something went wrong. Refresh your browser and try again."
+msgstr "Chybička se vloudila. Prosím obnovte stránku prohlížeče a zkuste to znovu."
+
+#: templates/default/bbpress/user-topics-created.php:28
+msgid "This user has not created any topics."
+msgstr "Uživatel zatím nezaložil žádné téma."
+
+#: templates/default/bbpress/user-topics-created.php:28
+msgid "You have not created any topics."
+msgstr "Zatím jste nezaložili žádné téma."
+
+#: templates/default/bbpress/user-topics-created.php:15
+msgid "Forum Topics Started"
+msgstr "Založení tématu"
+
+#: templates/default/bbpress/user-subscriptions.php:47
+msgid "This user is not currently subscribed to any topics."
+msgstr "Uživatel zatím nesleduje žádné téma."
+
+#: templates/default/bbpress/user-subscriptions.php:47
+msgid "You are not currently subscribed to any topics."
+msgstr "Zatím nesledujete žádné téma."
+
+#: templates/default/bbpress/user-subscriptions.php:28
+msgid "This user is not currently subscribed to any forums."
+msgstr "Uživatel zatím nesleduje žádné fórum"
+
+#: templates/default/bbpress/user-subscriptions.php:28
+msgid "You are not currently subscribed to any forums."
+msgstr "Zatím nesledujete žádné fórum."
+
+#: templates/default/bbpress/user-subscriptions.php:19
+msgid "Subscribed Forums"
+msgstr "Sledovaná Fóra"
+
+#: templates/default/bbpress/user-replies-created.php:28
+msgid "This user has not replied to any topics."
+msgstr "Uživatel zatím neodpověděl v žádném tématu."
+
+#: templates/default/bbpress/user-replies-created.php:28
+msgid "You have not replied to any topics."
+msgstr "Zatím jste neodpovídali v žádném tématu."
+
+#: templates/default/bbpress/user-replies-created.php:15
+msgid "Forum Replies Created"
+msgstr "Odpovědi ve fórum"
+
+#: templates/default/bbpress/user-profile.php:26
+msgid "Replies Created: %s"
+msgstr "Odpovědi vytvořena: %s"
+
+#: templates/default/bbpress/user-profile.php:25
+msgid "Topics Started: %s"
+msgstr "Vytvořil témata: %s"
+
+#: templates/default/bbpress/user-profile.php:24
+msgid "Forum Role: %s"
+msgstr "Role ve fóru: %s"
+
+#: templates/default/bbpress/user-favorites.php:28
+msgid "This user has no favorite topics."
+msgstr "Uživatel zatím nemá žádné oblíbené téma."
+
+#: templates/default/bbpress/user-favorites.php:28
+msgid "You currently have no favorite topics."
+msgstr "Máte v současné době žádné oblíbené téma."
+
+#: templates/default/bbpress/user-favorites.php:15
+msgid "Favorite Forum Topics"
+msgstr "Oblíbené příspěvky"
+
+#: templates/default/bbpress/user-details.php:58
+msgid "%s's Subscriptions"
+msgstr "Odběry %s"
+
+#: templates/default/bbpress/user-details.php:48
+msgid "%s's Favorites"
+msgstr "%s Oblíbené"
+
+#: templates/default/bbpress/user-details.php:41
+msgid "%s's Replies Created"
+msgstr "Příspěvky uživatele %s"
+
+#: templates/default/bbpress/user-details.php:35
+msgid "%s's Topics Started"
+msgstr "Témata založená uživatelem %s"
+
+#: templates/default/bbpress/user-details.php:29
+#: templates/default/bbpress/user-profile.php:15
+msgid "Profile"
+msgstr "Profil"
+
+#: templates/default/bbpress/user-details.php:29
+msgid "%s's Profile"
+msgstr "%s profil"
+
+#: templates/default/bbpress/loop-single-topic.php:68
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr "v: <a href=\"%1$s\">%2$s</a>"
+
+#: templates/default/bbpress/loop-single-topic.php:60
+msgid "Started by: %1$s"
+msgstr "Založil: %1$s"
+
+#: templates/default/bbpress/loop-single-reply.php:21
+msgid "in reply to: "
+msgstr "odpovědět na:"
+
+#: templates/default/bbpress/loop-search.php:22
+#: templates/default/bbpress/loop-search.php:44
+msgid "Search Results"
+msgstr "Výsledky vyhledávání"
+
+#: templates/default/bbpress/loop-search-topic.php:37
+msgid "in forum "
+msgstr "ve fóru"
+
+#: templates/default/bbpress/loop-search-topic.php:33
+msgid "in group forum "
+msgstr "ve fóru skupin"
+
+#: templates/default/bbpress/loop-search-topic.php:26
+msgid "Topic: "
+msgstr "Téma:"
+
+#: templates/default/bbpress/loop-search-reply.php:24
+msgid "In reply to: "
+msgstr "V odpovědi na:"
+
+#: templates/default/bbpress/loop-search-forum.php:26
+msgid "Forum: "
+msgstr "Fórum:"
+
+#: templates/default/bbpress/loop-search-forum.php:16
+msgid "Last updated %s"
+msgstr "Poslední aktualizace %s"
+
+#: templates/default/bbpress/form-user-roles.php:13
+msgid "Blog Role"
+msgstr "Role na blogu"
+
+#: templates/default/bbpress/form-user-register.php:18
+msgid "We use your email address to email you a secure password and verify your account."
+msgstr "Na vaši E-mailovou adresu zašleme bezpečné heslo a ověření vašeho účtu."
+
+#: templates/default/bbpress/form-user-register.php:17
+msgid "Your username must be unique, and cannot be changed later."
+msgstr "Vaše uživatelské jméno musí být unikátní a nemůže být později změněno."
+
+#: templates/default/bbpress/form-user-register.php:14
+msgid "Create an Account"
+msgstr "Vytvořit účet"
+
+#: templates/default/bbpress/form-user-lost-pass.php:27
+msgid "Reset My Password"
+msgstr "Obnovit heslo"
+
+#: templates/default/bbpress/form-user-lost-pass.php:18
+msgid "Username or Email"
+msgstr "Uživatelské jméno nebo heslo"
+
+#: templates/default/bbpress/form-user-login.php:28
+msgid "Keep me signed in"
+msgstr "Zůstat přihlášen"
+
+#: templates/default/bbpress/form-user-edit.php:178
+msgid "Update User"
+msgstr "Aktualizovat uživatele"
+
+#: templates/default/bbpress/form-user-edit.php:178
+msgid "Update Profile"
+msgstr "Aktualizovat profil"
+
+#: templates/default/bbpress/form-user-edit.php:156
+msgid "Grant this user super admin privileges for the Network."
+msgstr "Přidělit tomuto uživateli rozšířená práva pro správu sítě webů."
+
+#: templates/default/bbpress/form-user-edit.php:153
+msgid "Network Role"
+msgstr "Role v síti"
+
+#: templates/default/bbpress/form-user-edit.php:143
+#: templates/default/bbpress/form-user-edit.php:146
+msgid "User Role"
+msgstr "Uživatelská role"
+
+#: templates/default/bbpress/form-user-edit.php:133
+msgid "Your password should be at least ten characters long. Use upper and lower case letters, numbers, and symbols to make it even stronger."
+msgstr "Vaše heslo by mělo mít alespoň 10 znaků. Pro bezpečnější a silnější heslo je vhodné používat kombinaci velkých a malých písmen, číslic a symbolů."
+
+#: templates/default/bbpress/form-user-edit.php:130
+msgid "Type your new password again."
+msgstr "Zadejte nové heslo znovu."
+
+#: templates/default/bbpress/form-user-edit.php:127
+msgid "If you would like to change the password type a new one. Otherwise leave this blank."
+msgstr "Pokud chcete změnit heslo, napište ho zde. Jinak ponechte pole prázdné."
+
+#: templates/default/bbpress/form-user-edit.php:124
+msgid "New Password"
+msgstr "Nové heslo"
+
+#: templates/default/bbpress/form-user-edit.php:115
+msgid "There is a pending email address change to <code>%1$s</code>. <a href=\"%2$s\">Cancel</a>"
+msgstr "Změna emailové adresy čeká na schválení <code>%1$s</code>. <a href=\"%2$s\">Zrušit</a>"
+
+#: templates/default/bbpress/form-user-edit.php:90
+#: templates/default/bbpress/form-user-edit.php:93
+msgid "Account"
+msgstr "Účet"
+
+#: templates/default/bbpress/form-user-edit.php:82
+msgid "Biographical Info"
+msgstr "Životopisné informace"
+
+#: templates/default/bbpress/form-user-edit.php:74
+#: templates/default/bbpress/form-user-edit.php:77
+msgid "About the user"
+msgstr "O uživateli"
+
+#: templates/default/bbpress/form-user-edit.php:74
+#: templates/default/bbpress/form-user-edit.php:77
+msgid "About Yourself"
+msgstr "O sobě"
+
+#: templates/default/bbpress/form-user-edit.php:49
+#: templates/default/bbpress/form-user-edit.php:52
+msgid "Contact Info"
+msgstr "Kontaktní informace"
+
+#: templates/default/bbpress/form-user-edit.php:39
+msgid "Display Name"
+msgstr "Zobrazení názvu"
+
+#: templates/default/bbpress/form-user-edit.php:34
+msgid "Nickname"
+msgstr "Přezdívka"
+
+#: templates/default/bbpress/form-user-edit.php:29
+msgid "Last Name"
+msgstr "Příjmení"
+
+#: templates/default/bbpress/form-user-edit.php:24
+msgid "First Name"
+msgstr "Jméno"
+
+#: templates/default/bbpress/form-topic.php:234
+msgid "You must be logged in to create new topics."
+msgstr "Pro vytváření nových témat se musíte přihlásit."
+
+#: templates/default/bbpress/form-topic.php:234
+msgid "You cannot create new topics."
+msgstr "Nemůžete vytvořit nová téma."
+
+#: templates/default/bbpress/form-topic.php:145
+msgid "Topic Status:"
+msgstr "Status tématu:"
+
+#: templates/default/bbpress/form-topic.php:133
+msgid "Topic Type:"
+msgstr "Typ téma:"
+
+#: templates/default/bbpress/form-topic.php:101
+msgid "Topic Tags:"
+msgstr "Štítky téma:"
+
+#: templates/default/bbpress/form-topic.php:75
+msgid "Topic Title (Maximum Length: %d):"
+msgstr "Název (maximální délka: %d znaků):"
+
+#: templates/default/bbpress/form-topic.php:53
+msgid "This forum is marked as closed to new topics, however your posting capabilities still allow you to do so."
+msgstr "Toto fórum neumožňuje vkládat nová témata, ale váš účet umožňuje uzamčení překonat."
+
+#: templates/default/bbpress/form-topic.php:43
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr "Vytvořit nové téma ve fóru &ldquo;%s&rdquo;"
+
+#: templates/default/bbpress/form-topic-tag.php:101
+msgid "Are you sure you want to delete the \"%s\" tag? This is permanent and cannot be undone."
+msgstr "Opravdu chcete vymazat štítek \"%s\"? Akci nelze vrátit zpět."
+
+#: templates/default/bbpress/form-topic-tag.php:95
+msgid "Any links to this tag will no longer function."
+msgstr "Veškeré odkazy na tento štítek nebudou nadále fungovat."
+
+#: templates/default/bbpress/form-topic-tag.php:94
+msgid "Deleting a tag cannot be undone."
+msgstr "Odstranění štítku nelze vrátit zpět."
+
+#: templates/default/bbpress/form-topic-tag.php:91
+msgid "This does not delete your topics. Only the tag itself is deleted."
+msgstr "Tento krok neodstraní vaše témata. Odstraní se pouze štítek."
+
+#: templates/default/bbpress/form-topic-tag.php:73
+msgid "Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgstr "Jste si jisti, že chcete sloučit štítek “%s” do vámi zadaného štítku?"
+
+#: templates/default/bbpress/form-topic-tag.php:68
+msgid "Existing tag:"
+msgstr "Existující štítek:"
+
+#: templates/default/bbpress/form-topic-tag.php:62
+msgid "Merging tags together cannot be undone."
+msgstr "Sloučení štítků, nelze vrátit zpět."
+
+#: templates/default/bbpress/form-topic-tag.php:45
+msgid "Update"
+msgstr "Aktualizace"
+
+#: templates/default/bbpress/form-topic-tag.php:40
+msgid "Slug:"
+msgstr "Slug:"
+
+#: templates/default/bbpress/form-topic-tag.php:29
+msgid "Changing the slug affects its permalink. Any links to the old slug will stop working."
+msgstr "Změna pole slug ovlivňuje trvalé odkazy. Odkazy na staré slug  nebudou fungovat."
+
+#: templates/default/bbpress/form-topic-tag.php:25
+msgid "Leave the slug empty to have one automatically generated."
+msgstr "Chcete-li slug automaticky generovat, ponechte toto pole prázdné."
+
+#: templates/default/bbpress/form-topic-tag.php:22
+msgid "Rename"
+msgstr "Přejmenovat"
+
+#: templates/default/bbpress/form-topic-tag.php:18
+msgid "Manage Tag: \"%s\""
+msgstr "Správa štítku: “%s”"
+
+#: templates/default/bbpress/form-topic-split.php:85
+msgid "Copy topic tags to the new topic"
+msgstr "Kopírovat štítky do nového tématu"
+
+#: templates/default/bbpress/form-topic-split.php:80
+msgid "Copy favoriters to the new topic"
+msgstr "Kopírovat oblíbené do nového tématu"
+
+#: templates/default/bbpress/form-topic-split.php:75
+msgid "Copy subscribers to the new topic"
+msgstr "Kopírovat odběratele do nového tématu"
+
+#: templates/default/bbpress/form-topic-split.php:42
+msgid "Split: %s"
+msgstr "Rozdělit: %s"
+
+#: templates/default/bbpress/form-topic-split.php:37
+msgid "Split Method"
+msgstr "Metoda rozdělování"
+
+#: templates/default/bbpress/form-topic-split.php:33
+msgid "If you use the existing topic option, replies within both topics will be merged chronologically. The order of the merged replies is based on the time and date they were posted."
+msgstr "Pokud použijete existující téma, budou příspěvky sloučeny chronologicky. Pořadí sloučených odpovědí vychází z času a data zveřejnění."
+
+#: templates/default/bbpress/form-topic-split.php:29
+msgid "When you split a topic, you are slicing it in half starting with the reply you just selected. Choose to use that reply as a new topic with a new title, or merge those replies into an existing topic."
+msgstr "Když dělíte téma, rozdělujete jej podle zvoleného příspěvku (chronologicky). Zvolte, zda chcete oddělované příspěvky sloučit do jiného existujícího tématu, nebo založit téma nové s jiným názvem."
+
+#: templates/default/bbpress/form-topic-split.php:24
+msgid "Split topic \"%s\""
+msgstr "Rozdělit příspěvek \"%s\""
+
+#: templates/default/bbpress/form-topic-merge.php:106
+#: templates/default/bbpress/form-topic-split.php:110
+msgid "You cannot edit this topic."
+msgstr "Nemůžete upravit toto téma."
+
+#: templates/default/bbpress/form-topic-merge.php:106
+#: templates/default/bbpress/form-topic-split.php:110
+msgid "You do not have the permissions to edit this topic!"
+msgstr "Nemáte povolení pro úpravu tohoto tématu!"
+
+#: templates/default/bbpress/form-topic-merge.php:81
+msgid "Merge topic tags"
+msgstr "Sloučit štítky tématu"
+
+#: templates/default/bbpress/form-topic-merge.php:76
+msgid "Merge topic favoriters"
+msgstr "Sloučit oblíbence témata"
+
+#: templates/default/bbpress/form-topic-merge.php:71
+msgid "Merge topic subscribers"
+msgstr "Sloučit odebíraná témata"
+
+#: templates/default/bbpress/form-topic-merge.php:64
+#: templates/default/bbpress/form-topic-split.php:68
+msgid "Topic Extras"
+msgstr "Extra k tématu"
+
+#: templates/default/bbpress/form-topic-merge.php:56
+msgid "There are no other topics in this forum to merge with."
+msgstr "Neexistuje téma, se kterým by se dalo sloučit."
+
+#: templates/default/bbpress/form-topic-merge.php:42
+msgid "Merge with this topic:"
+msgstr "Sloučit s tématem:"
+
+#: templates/default/bbpress/form-topic-merge.php:38
+msgid "Destination"
+msgstr "Cíl"
+
+#: templates/default/bbpress/form-topic-merge.php:34
+msgid "All replies within both topics will be merged chronologically. The order of the merged replies is based on the time and date they were posted. If the destination topic was created after this one, it's post date will be updated to second earlier than this one."
+msgstr "Všechny příspěvky v rámci obou témat budou sloučeny chronologicky. Pořadí sloučených odpovědí vychází z času a data zveřejnění. Pokud bylo cílové téma vytvořeno později, bude jeho čas vytvoření o vteřinu posunut před slučované."
+
+#: templates/default/bbpress/form-topic-merge.php:30
+msgid "To keep this topic as the lead, go to the other topic and use the merge tool from there instead."
+msgstr "Pokud chcete aby toto téma zůstalo jako hlavní, přejděte na druhé téma, které chcete sloučit a sloučení proveďte z něj."
+
+#: templates/default/bbpress/form-topic-merge.php:29
+msgid "Select the topic to merge this one into. The destination topic will remain the lead topic, and this one will change into a reply."
+msgstr "Vyberte téma, se kterým jej chcete sloučit. Cílové téma zůstane jako hlavní a slučované bude změněno na příspěvek."
+
+#: templates/default/bbpress/form-topic-merge.php:24
+msgid "Merge topic \"%s\""
+msgstr "Sloučit téma  \"%s\""
+
+#: templates/default/bbpress/form-search.php:14
+msgid "Search for:"
+msgstr "Vyhledat:"
+
+#: templates/default/bbpress/form-reply.php:174
+msgid "You must be logged in to reply to this topic."
+msgstr "Pro reakci na tento článek se musíte přihlásit."
+
+#: templates/default/bbpress/form-reply.php:174
+msgid "You cannot reply to this topic."
+msgstr "Nemáte oprávnění odpovídat na toto téma."
+
+#: templates/default/bbpress/form-reply.php:166
+#: templates/default/bbpress/form-topic.php:226
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr "Fórum &#8216;%s&#8217;  je pro vkládání nových témat a příspěvků uzavřeno."
+
+#: templates/default/bbpress/form-reply.php:158
+msgid "The topic &#8216;%s&#8217; is closed to new replies."
+msgstr "Téma &#8216;%s&#8217;  je pro vkládání nových příspěvků uzavřené."
+
+#: templates/default/bbpress/form-reply.php:118
+#: templates/default/bbpress/form-topic.php:188
+msgid "Optional reason for editing:"
+msgstr "Důvod úpravy (nepovinné):"
+
+#: templates/default/bbpress/form-reply.php:114
+#: templates/default/bbpress/form-topic.php:184
+msgid "Keep a log of this edit:"
+msgstr "Uložit záznam o této editaci:"
+
+#: templates/default/bbpress/form-reply.php:97
+#: templates/default/bbpress/form-topic.php:168
+msgid "Notify me of follow-up replies via email"
+msgstr "Upozornit mě na další odpovědi emailem"
+
+#: templates/default/bbpress/form-reply.php:93
+#: templates/default/bbpress/form-topic.php:164
+msgid "Notify the author of follow-up replies via email"
+msgstr "Informujte autora o nových příspěvcích e-mailem"
+
+#: templates/default/bbpress/form-reply.php:75
+msgid "Tags:"
+msgstr "Štítky:"
+
+#: templates/default/bbpress/form-reply.php:36
+msgid "This topic is marked as closed to new replies, however your posting capabilities still allow you to do so."
+msgstr "Toto téma je označené jako uzavřené pro nové odpovědi, nicméně vy můžete stále přidávat vaše komentáře."
+
+#: templates/default/bbpress/form-reply-move.php:85
+msgid "You cannot edit this reply."
+msgstr "Tuto odpověď nemůžete upravit."
+
+#: templates/default/bbpress/form-reply-move.php:85
+msgid "You do not have the permissions to edit this reply!"
+msgstr "K úpravě této odpovědi nemáte oprávnění!"
+
+#: templates/default/bbpress/form-reply-move.php:68
+#: templates/default/bbpress/form-topic-merge.php:89
+#: templates/default/bbpress/form-topic-split.php:93
+msgid "<strong>WARNING:</strong> This process cannot be undone."
+msgstr "<strong>VAROVÁNÍ:</strong> Tento proces nelze vrátit zpět."
+
+#: templates/default/bbpress/form-reply-move.php:49
+#: templates/default/bbpress/form-topic-split.php:49
+msgid "Use an existing topic in this forum:"
+msgstr "Použít existující téma do tohoto fóra:"
+
+#: templates/default/bbpress/form-reply-move.php:42
+msgid "Moved: %s"
+msgstr "Přesunuté: %s"
+
+#: templates/default/bbpress/form-reply-move.php:41
+#: templates/default/bbpress/form-topic-split.php:41
+msgid "New topic in <strong>%s</strong> titled:"
+msgstr "Nové téma <strong>%s</strong> s názvem:"
+
+#: templates/default/bbpress/form-reply-move.php:37
+msgid "Move Method"
+msgstr "Metoda přesunutí"
+
+#: templates/default/bbpress/form-reply-move.php:33
+msgid "If you choose an existing topic, replies will be ordered by the time and date they were created."
+msgstr "Zvolíte-li existující téma, odpovědi budou seřazeny podle data a času kdy byly vytvořeny."
+
+#: templates/default/bbpress/form-reply-move.php:29
+msgid "You can either make this reply a new topic with a new title, or merge it into an existing topic."
+msgstr "Můžete buď vytvořit nové téma s novým názvem, nebo vše sloučit do existující tématu."
+
+#: templates/default/bbpress/form-reply-move.php:24
+msgid "Move reply \"%s\""
+msgstr "Přesunout odpověď do \"%s\""
+
+#: templates/default/bbpress/form-protected.php:14
+msgid "Protected"
+msgstr "Chráněno"
+
+#: templates/default/bbpress/form-forum.php:169
+msgid "You must be logged in to create new forums."
+msgstr "Musíte být přihlášen vytvářet nová fóra."
+
+#: templates/default/bbpress/form-forum.php:169
+msgid "You cannot create new forums."
+msgstr "Nemůžete vytvářet nová fóra."
+
+#: templates/default/bbpress/form-forum.php:161
+msgid "The forum &#8216;%s&#8217; is closed to new content."
+msgstr "Fórum &#8216;%s&#8217; neumožňuje přidávat nový obsah."
+
+#: templates/default/bbpress/form-forum.php:138
+#: templates/default/bbpress/form-reply-move.php:72
+#: templates/default/bbpress/form-reply.php:135
+#: templates/default/bbpress/form-topic-merge.php:93
+#: templates/default/bbpress/form-topic-split.php:97
+#: templates/default/bbpress/form-topic.php:203
+msgid "Submit"
+msgstr "Odeslat"
+
+#: templates/default/bbpress/form-forum.php:123
+msgid "(No Parent)"
+msgstr "(nemá nadřazenou stránku)"
+
+#: templates/default/bbpress/form-forum.php:91
+msgid "Forum Type:"
+msgstr "Typ diskuzního fóra:"
+
+#: templates/default/bbpress/form-forum.php:82
+#: templates/default/bbpress/form-reply.php:64
+#: templates/default/bbpress/form-topic.php:90
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes:"
+msgstr "Můžete použít následující <abbr title=\"HyperText Markup Language\">HTML</abbr> štítky a atributy."
+
+#: templates/default/bbpress/form-forum.php:67
+msgid "Forum Name (Maximum Length: %d):"
+msgstr "Název fóra (Maximálně %d znaků):"
+
+#: templates/default/bbpress/form-forum.php:55
+#: templates/default/bbpress/form-reply.php:44
+#: templates/default/bbpress/form-topic.php:61
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr "Váš účet má schopnost vkládat neomezený HTML obsah."
+
+#: templates/default/bbpress/form-forum.php:47
+msgid "This forum is closed to new content, however your account still allows you to do so."
+msgstr "Toto fórum je uzavřeno pro přidávání nového obsahu, ale váš účet vám to i přesto umožňuje."
+
+#: templates/default/bbpress/form-forum.php:37
+msgid "Create New Forum in &ldquo;%s&rdquo;"
+msgstr "Vytvořit nové fórum v &ldquo;%s&rdquo;"
+
+#: templates/default/bbpress/form-forum.php:35
+#: templates/default/bbpress/form-topic.php:41
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr "Momentálně upravujete &ldquo;%s&rdquo;"
+
+#: templates/default/bbpress/form-anonymous.php:27
+msgid "Mail (will not be published) (required):"
+msgstr "Mail (nebude zveřejněn) (požadováno):"
+
+#: templates/default/bbpress/form-anonymous.php:22
+msgid "Name (required):"
+msgstr "Jméno (požadováno):"
+
+#: templates/default/bbpress/form-anonymous.php:17
+msgid "Your information:"
+msgstr "Informace o Vás:"
+
+#: templates/default/bbpress/feedback-no-topics.php:13
+msgid "Oh bother! No topics were found here!"
+msgstr "Žádné téma nebylo nalezeno."
+
+#: templates/default/bbpress/feedback-no-search.php:13
+msgid "Oh bother! No search results were found here!"
+msgstr "Nebylo nic nalezeno!"
+
+#: templates/default/bbpress/feedback-no-replies.php:13
+msgid "Oh bother! No replies were found here!"
+msgstr "Nebyly nalezeny žádné odpovědi!"
+
+#: templates/default/bbpress/feedback-no-forums.php:13
+msgid "Oh bother! No forums were found here!"
+msgstr "Nenašli jsme žádná fóra!"
+
+#: templates/default/bbpress/feedback-no-access.php:16
+msgid "You do not have permission to view this forum."
+msgstr "K zobrazení tohoto fóra nemáte oprávnění."
+
+#: templates/default/bbpress/feedback-no-access.php:13
+msgid "Private"
+msgstr "Soukromý"
+
+#: templates/default/bbpress/feedback-logged-in.php:13
+msgid "You are already logged in."
+msgstr "Již jste přihlášen."
+
+#: templates/default/bbpress/content-statistics.php:64
+msgid "Hidden Replies"
+msgstr "Skryté odpovědi"
+
+#: templates/default/bbpress/content-statistics.php:53
+msgid "Hidden Topics"
+msgstr "Skrytá témata"
+
+#: templates/default/bbpress/content-statistics.php:44
+msgid "Empty Topic Tags"
+msgstr "Prázdné štítky témat"
+
+#: templates/default/bbpress/content-statistics.php:17
+msgid "Registered Users"
+msgstr "Registrovaní uživatelé"
+
+#: includes/users/template.php:1476
+msgid "Registration complete. Please check your e-mail."
+msgstr "Registrace dokončena. Prosím, zkontrolujte svoji emailovou schránku."
+
+#: includes/users/template.php:1471
+msgid "Check your e-mail for your new password."
+msgstr "Zkontrolujte si emailovou schránku, jestli jste dostali nové heslo."
+
+#: includes/users/template.php:1466
+msgid "Check your e-mail for the confirmation link."
+msgstr "Zkontrolujte si svoji emailovou schránku, jestli jste dostali potvrzovací link."
+
+#: includes/users/template.php:1457
+msgid "New user registration is currently not allowed."
+msgstr "Registrace nových uživatelů není povolena."
+
+#: includes/users/template.php:1453
+msgid "You are now logged out."
+msgstr "Nyní jste odhlášen."
+
+#: includes/users/template.php:1255
+msgid "&mdash; No role for this site &mdash;"
+msgstr "&mdash; Na tomto webu neexistují žádné role &mdash;"
+
+#: includes/users/template.php:1188
+msgid "This user has super admin privileges."
+msgstr "Tento uživatel má nyní super admin oprávnění."
+
+#: includes/users/template.php:1188
+msgid "You have super admin privileges."
+msgstr "Máte nyní super admin oprávnění."
+
+#: includes/users/template.php:1163
+msgid "User updated."
+msgstr "Uživatel aktualizován."
+
+#: includes/users/template.php:895
+msgid "Favorited"
+msgstr "Přidáno do oblíbených"
+
+#: includes/users/template.php:557
+msgid "Admin"
+msgstr "Admin"
+
+#: includes/users/template.php:517
+msgid "Member"
+msgstr "Uživatel"
+
+#: includes/users/template.php:507
+msgid "Inactive"
+msgstr "Neaktivní"
+
+#: includes/users/template.php:503
+msgid "Guest"
+msgstr "Host"
+
+#: includes/users/functions.php:1331
+msgid "<strong>ERROR</strong>: There was a problem subscribing to that topic!"
+msgstr "<strong>CHYBA:</strong> Při zařazování tématu do sledovaných došlo k potížím!"
+
+#: includes/users/functions.php:1329
+msgid "<strong>ERROR</strong>: There was a problem unsubscribing from that topic!"
+msgstr "<strong>CHYBA:</strong> Při odstraňování tématu ze sledovaných došlo k potížím!"
+
+#: includes/users/functions.php:1276
+msgid "<strong>ERROR</strong>: No topic was found! Which topic are you subscribing/unsubscribing to?"
+msgstr "<strong>CHYBA:</strong> Téma nebylo nalezeno! Pro jaké téma jste chtěli nastavit/zrušit sledování?"
+
+#: includes/users/functions.php:1225
+msgid "<strong>ERROR</strong>: There was a problem subscribing to that forum!"
+msgstr "<strong>CHYBA:</strong> Při zařazování fóra do sledovaných došlo k potížím!"
+
+#: includes/users/functions.php:1223
+msgid "<strong>ERROR</strong>: There was a problem unsubscribing from that forum!"
+msgstr "<strong>CHYBA:</strong> Při odstraňování fóra ze sledovaných došlo k potížím!"
+
+#: includes/users/functions.php:1170
+msgid "<strong>ERROR</strong>: No forum was found! Which forum are you subscribing/unsubscribing to?"
+msgstr "<strong>CHYBA:</strong> Fórum nebylo nalezeno! Pro jaké fórum jste chtěli nastavit/zrušit sledování?"
+
+#: includes/users/functions.php:508
+msgid "<strong>ERROR</strong>: There was a problem favoriting that topic!"
+msgstr "<strong>CHYBA:</strong> Při zařazování tématu do oblíbených došlo k potížím!"
+
+#: includes/users/functions.php:506
+msgid "<strong>ERROR</strong>: There was a problem removing that topic from favorites!"
+msgstr "<strong>CHYBA:</strong> Při odstraňování tématu z oblíbených došlo k potížím!"
+
+#: includes/users/functions.php:463 includes/users/functions.php:1178
+#: includes/users/functions.php:1284
+msgid "<strong>ERROR</strong>: You don't have the permission to edit favorites of that user!"
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění upravovat Oblíbené tohoto uživatele!"
+
+#: includes/users/functions.php:455
+msgid "<strong>ERROR</strong>: No topic was found! Which topic are you marking/unmarking as favorite?"
+msgstr "<strong>CHYBA:</strong> Nebylo nalezeno žádné téma! Jaké téma jste přidali do nebo vyjmuli z oblíbených?"
+
+#: includes/topics/template.php:3375
+msgid "View Topic Tag"
+msgstr "Zobrazit štítek tématu"
+
+#: includes/topics/template.php:3374
+msgid "New Tag Name"
+msgstr "Jméno nového štítku"
+
+#: includes/topics/template.php:3373
+msgid "Add New Tag"
+msgstr "Přidat nový štítek"
+
+#: includes/topics/template.php:3372
+msgid "Update Tag"
+msgstr "Aktualizovat štítek"
+
+#: includes/topics/template.php:3371
+msgid "Edit Tag"
+msgstr "Upravit štítek"
+
+#: includes/topics/template.php:3370
+msgid "All Tags"
+msgstr "Všechny štítky"
+
+#: includes/topics/template.php:3369
+msgid "Popular Tags"
+msgstr "Populární štítky"
+
+#: includes/topics/template.php:3368
+msgid "Search Tags"
+msgstr "Prohledat tagy"
+
+#: includes/topics/template.php:3366
+#: templates/default/bbpress/content-statistics.php:37
+msgid "Topic Tags"
+msgstr "Štítky témat"
+
+#: includes/topics/template.php:3320
+msgid "This topic has no replies."
+msgstr "Toto téma neobsahuje odpovědi."
+
+#: includes/topics/template.php:3316
+msgid "This topic contains %1$s and has %2$s."
+msgstr "Toto téma obsahuje %1$s a má %2$s."
+
+#: includes/topics/template.php:3312
+msgid "This topic contains %1$s, has %2$s, and was last updated by %3$s %4$s."
+msgstr "Zvolené téma obsahuje celkem %1$s. Do diskuze (%2$s) se naposledy zapojil uživatel %3$s a poslední změna proběhla %4$s."
+
+#: includes/topics/template.php:3306
+msgid "%s voice"
+msgid_plural "%s voices"
+msgstr[0] "%s hlas"
+msgstr[1] "%s hlasy"
+msgstr[2] "%s hlasů"
+
+#: includes/topics/template.php:3046
+msgid "This topic is in the trash."
+msgstr "Toto téma je v koši."
+
+#: includes/topics/template.php:3041
+msgid "This topic is marked as spam."
+msgstr "Toto téma je označené jako spam."
+
+#: includes/topics/template.php:2981
+msgid "Viewing topic %2$s (of %4$s total)"
+msgid_plural "Viewing %1$s topics - %2$s through %3$s (of %4$s total)"
+msgstr[0] "Prohlížíte si %2$s téma (z %4$s celkem)"
+msgstr[1] "Prohlížíte si %1$s témata - %2$s až %3$s (z %4$s celkem)"
+msgstr[2] "Prohlížíte si %1$s témat - %2$s až %3$s (z %4$s celkem)"
+
+#: includes/topics/template.php:2977
+msgid "Viewing %1$s topic"
+msgid_plural "Viewing %1$s topics"
+msgstr[0] "Zobrazuji %1$s téma"
+msgstr[1] "Zobrazuji %1$s témata"
+msgstr[2] "Zobrazuji %1$s témat"
+
+#: includes/topics/template.php:2816
+#: templates/default/bbpress/form-topic-tag.php:59
+#: templates/default/bbpress/form-topic-tag.php:73
+msgid "Merge"
+msgstr "Sloučit"
+
+#: includes/topics/template.php:2686
+msgctxt "Topic Status"
+msgid "Open"
+msgstr "Otevřít"
+
+#: includes/topics/template.php:2685
+msgctxt "Topic Status"
+msgid "Close"
+msgstr "Zavřít"
+
+#: includes/topics/template.php:2295
+msgid "Tagged:"
+msgstr "Oštítkované:"
+
+#: includes/topics/template.php:1892
+msgid "Unfavorite"
+msgstr "Vyjmout z oblíbených"
+
+#: includes/topics/template.php:1891 includes/users/template.php:894
+msgid "Favorite"
+msgstr "Oblíbené"
+
+#: includes/topics/template.php:993
+msgid "This topic was modified %1$s by %2$s."
+msgstr "Téma bylo upraveno %1$s uživatelem %2$s."
+
+#: includes/topics/template.php:991
+msgid "This topic was modified %1$s by %2$s. Reason: %3$s"
+msgstr "Téma bylo upraveno %1$s uživatelem %2$s. Důvod: %3$s"
+
+#: includes/topics/template.php:60
+msgid "No topics found in Trash"
+msgstr "V koši nejsou žádné témata"
+
+#: includes/topics/template.php:59
+msgid "No topics found"
+msgstr "Nebylo nalezeno žádné téma"
+
+#: includes/topics/template.php:58
+msgid "Search Topics"
+msgstr "Vyhledat téma"
+
+#: includes/topics/template.php:56 includes/topics/template.php:57
+msgid "View Topic"
+msgstr "Zobrazit téma"
+
+#: includes/topics/template.php:54
+msgid "Edit Topic"
+msgstr "Upravit téma"
+
+#: includes/topics/template.php:52 templates/default/bbpress/form-topic.php:43
+msgid "Create New Topic"
+msgstr "Vytvořit nové téma"
+
+#: includes/topics/template.php:51 includes/topics/template.php:55
+msgid "New Topic"
+msgstr "Nové téma"
+
+#: includes/topics/functions.php:2158
+msgid "<strong>ERROR</strong>: There was a problem deleting the topic."
+msgstr "<strong>CHYBA:</strong> Při odstraňování tématu do koše došlo k potížím!"
+
+#: includes/topics/functions.php:2150
+msgid "<strong>ERROR</strong>: There was a problem untrashing the topic."
+msgstr "<strong>CHYBA:</strong> Při obnovování tématu z koše došlo k potížím!"
+
+#: includes/topics/functions.php:2142
+msgid "<strong>ERROR</strong>: There was a problem trashing the topic."
+msgstr "<strong>CHYBA:</strong>  Při přemisťování tématu do koše došlo k potížím!"
+
+#: includes/topics/functions.php:2123
+msgid "<strong>ERROR</strong>: There was a problem marking the topic as spam."
+msgstr "<strong>CHYBA:</strong>  Při označování tématu jako spam došlo k potížím!"
+
+#: includes/topics/functions.php:2123
+msgid "<strong>ERROR</strong>: There was a problem unmarking the topic as spam."
+msgstr "<strong>CHYBA:</strong>  Při vyjímání tématu ze spamu došlo k potížím!"
+
+#: includes/topics/functions.php:2113
+msgid "<strong>ERROR</strong>: There was a problem sticking the topic."
+msgstr "<strong>CHYBA:</strong> Při připínání tématu došlo k potížím!"
+
+#: includes/topics/functions.php:2113
+msgid "<strong>ERROR</strong>: There was a problem unsticking the topic."
+msgstr "<strong>CHYBA:</strong> Při odepínání tématu došlo k potížím!"
+
+#: includes/topics/functions.php:2102
+msgid "<strong>ERROR</strong>: There was a problem opening the topic."
+msgstr "<strong>CHYBA:</strong> Při otevírání tématu došlo k potížím!"
+
+#: includes/topics/functions.php:2102
+msgid "<strong>ERROR</strong>: There was a problem closing the topic."
+msgstr "<strong>CHYBA:</strong> Při uzavírání tématu došlo k chybě."
+
+#: includes/topics/functions.php:2089
+msgid "<strong>ERROR:</strong> You do not have the permission to do that."
+msgstr "<strong>CHYBA:</strong> K tomu nemáte oprávnění!"
+
+#: includes/topics/functions.php:1984
+msgctxt "Make topic super sticky"
+msgid "Super Sticky"
+msgstr "Velmi důležité"
+
+#: includes/topics/functions.php:1983
+msgctxt "Make topic sticky"
+msgid "Sticky"
+msgstr "Přilepit"
+
+#: includes/topics/functions.php:1982
+msgctxt "Unstick a topic"
+msgid "Normal"
+msgstr "Normální"
+
+#: includes/topics/functions.php:1969
+msgctxt "Mark topic as pending"
+msgid "Pending"
+msgstr "Čekající"
+
+#: includes/topics/functions.php:1968
+msgctxt "Trash the topic"
+msgid "Trash"
+msgstr "Koš"
+
+#: includes/topics/functions.php:1967
+msgctxt "Spam the topic"
+msgid "Spam"
+msgstr "Spam"
+
+#: includes/topics/functions.php:1966
+msgctxt "Close the topic"
+msgid "Closed"
+msgstr "Zavřít"
+
+#: includes/topics/functions.php:1965
+msgctxt "Open the topic"
+msgid "Open"
+msgstr "Otevřít"
+
+#: includes/topics/functions.php:1931
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while deleting the tag: %s"
+msgstr "<strong>CHYBA:</strong> Při odstraňování štítku došlo k následujícím problémům: %s"
+
+#: includes/topics/functions.php:1922
+msgid "<strong>ERROR</strong>: You do not have the permissions to delete the topic tags."
+msgstr "<strong>CHYBA:</strong> Pro odstranění štítků u tématu nemáte oprávnění ."
+
+#: includes/topics/functions.php:1890
+msgid "<strong>ERROR</strong>: The tags which are being merged can not be the same."
+msgstr "<strong>CHYBA:</strong> Slučované štítky nesmí být stejné."
+
+#: includes/topics/functions.php:1881 includes/topics/functions.php:1899
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while merging the tags: %s"
+msgstr "<strong>CHYBA:</strong> Při slučování štítků došlo k následujícím problémům: %s"
+
+#: includes/topics/functions.php:1842
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while updating the tag: %s"
+msgstr "<strong>CHYBA:</strong> Při aktualizaci štítku došlo k následujícím problémům: %s"
+
+#: includes/topics/functions.php:1832 includes/topics/functions.php:1871
+msgid "<strong>ERROR</strong>: You need to enter a tag name."
+msgstr "<strong>CHYBA:</strong> Musíte vložit název štítku."
+
+#: includes/topics/functions.php:1826 includes/topics/functions.php:1865
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the topic tags."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění upravovat štítky tématu."
+
+#: includes/topics/functions.php:1808
+msgid "<strong>ERROR</strong>: The following problem(s) have been found while getting the tag: %s"
+msgstr "<strong>CHYBA:</strong> Při získávání štítku došlo k následujícím problémům: %s"
+
+#: includes/topics/functions.php:1492
+msgid "<strong>ERROR</strong>: The topic you want to split to was not found!"
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, do kterého chcete rozdělit."
+
+#: includes/topics/functions.php:1470
+msgid "<strong>ERROR</strong>: You need to choose a valid split option."
+msgstr "<strong>CHYBA:</strong> Musíte zvolit platnou možnost rozdělení."
+
+#: includes/topics/functions.php:1452
+msgid "<strong>ERROR</strong>: The topic you want to split was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, které chcete rozdělit."
+
+#: includes/topics/functions.php:1443
+msgid "<strong>ERROR</strong>: The reply you want to split from was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít příspěvek, od kterého chcete téma rozdělit."
+
+#: includes/topics/functions.php:1435
+msgid "<strong>ERROR</strong>: Reply ID to split the topic from not found!"
+msgstr "<strong>CHYBA:</strong> Nebylo nalezeno ID příspěvku, od kterého se má téma rozdělit!"
+
+#: includes/topics/functions.php:1182
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the destination topic."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění na úpravu cílového tématu."
+
+#: includes/topics/functions.php:1178
+msgid "<strong>ERROR</strong>: The topic you want to merge to was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, do kterého chcete slučovat."
+
+#: includes/topics/functions.php:1172
+msgid "<strong>ERROR</strong>: Destination topic ID not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít ID cílového tématu."
+
+#: includes/topics/functions.php:1158
+msgid "<strong>ERROR</strong>: The topic you want to merge was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, které chcete sloučit."
+
+#: includes/topics/functions.php:602
+msgid "<strong>ERROR</strong>: Your topic cannot be edited at this time."
+msgstr "<strong>CHYBA:</strong> Nyní není možné téma upravovat."
+
+#: includes/topics/functions.php:550
+msgid "<strong>ERROR</strong>: This forum is a category. No topics can be created in it."
+msgstr "<strong>CHYBA:</strong> Fórum je nastaveno jako kategorie.  Proto zde nemohou být vytvářena žádná témata."
+
+#: includes/topics/functions.php:504
+msgid "<strong>ERROR</strong>: You do not have permission to edit that topic."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění k upravovat toto téma."
+
+#: includes/topics/functions.php:493
+msgid "<strong>ERROR</strong>: The topic you want to edit was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, které chcete upravovat."
+
+#: includes/topics/functions.php:482 includes/topics/functions.php:1146
+msgid "<strong>ERROR</strong>: Topic ID not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít ID tématu."
+
+#: includes/topics/functions.php:270
+msgid "<strong>ERROR</strong>: Your topic cannot be created at this time."
+msgstr "<strong>CHYBA:</strong> Nyní není možné vaše téma založit."
+
+#: includes/topics/functions.php:265
+msgid "<strong>ERROR</strong>: Duplicate topic detected; it looks as though you&#8217;ve already said that!"
+msgstr "<strong>CHYBA:</strong> Objeveno duplikátní téma; zdá se, že už jste to požadovali!"
+
+#: includes/topics/functions.php:251 includes/topics/functions.php:569
+msgid "<strong>ERROR</strong>: This forum is hidden and you do not have the capability to read or create new topics in it."
+msgstr "<strong>CHYBA:</strong> Fórum je skryté a nemáte možnost jej číst ani v něm zakládat nová témata."
+
+#: includes/topics/functions.php:245 includes/topics/functions.php:563
+msgid "<strong>ERROR</strong>: This forum is private and you do not have the capability to read or create new topics in it."
+msgstr "<strong>CHYBA:</strong> Fórum je soukromé a nemáte možnost jej číst ani v něm zakládat nová témata."
+
+#: includes/topics/functions.php:239 includes/topics/functions.php:557
+msgid "<strong>ERROR</strong>: This forum has been closed to new topics."
+msgstr "<strong>CHYBA:</strong> Fórum bylo uzavřeno - nelze zakládat nová témata."
+
+#: includes/topics/functions.php:232
+msgid "<strong>ERROR</strong>: This forum is a category. No topics can be created in this forum."
+msgstr "<strong>CHYBA:</strong> Fórum je nastaveno jako kategorie.  Proto zde nemohou být zakládána žádná témata."
+
+#: includes/topics/functions.php:187 includes/topics/functions.php:597
+msgid "<strong>ERROR</strong>: Your topic cannot be empty."
+msgstr "<strong>CHYBA:</strong> Téma nesmí být prázdné."
+
+#: includes/topics/functions.php:175 includes/topics/functions.php:585
+msgid "<strong>ERROR</strong>: Your topic needs a title."
+msgstr "<strong>CHYBA:</strong> Téma musí mít název."
+
+#: includes/topics/functions.php:150
+msgid "<strong>ERROR</strong>: You do not have permission to create new topics."
+msgstr "<strong>CHYBA:</strong> Na zakládání nových témat nemáte oprávnění."
+
+#: includes/search/template.php:405
+msgid "Viewing %2$s results (of %4$s total)"
+msgid_plural "Viewing %1$s results - %2$s through %3$s (of %4$s total)"
+msgstr[0] "Prohlížíte %2$s výsledky (z %4$s celkově)"
+msgstr[1] "Prohlížíte %1$s výsledky - %2$s ze %3$s (z %4$s celkově)"
+msgstr[2] "Prohlížíte %1$s výsledků - %2$s z %3$s (z %4$s celkově)"
+
+#: includes/search/template.php:401
+msgid "Viewing %1$s result"
+msgid_plural "Viewing %1$s results"
+msgstr[0] "Prohlížíte %1$s výsledek"
+msgstr[1] "Prohlížíte %1$s výsledky"
+msgstr[2] "Prohlížíte %1$s výsledků"
+
+#: includes/search/template.php:229
+msgid "Search Results for '%s'"
+msgstr "Výsledek vyhledávání pro '%s'"
+
+#: includes/replies/template.php:2366
+msgid "Viewing %2$s post (of %4$s total)"
+msgid_plural "Viewing %1$s posts - %2$s through %3$s (of %4$s total)"
+msgstr[0] "Prohlížíte %2$s příspěvek (z %4$s celkově)"
+msgstr[1] "Prohlížíte %1$s příspěvky - %2$s ze %3$s (z %4$s celkově)"
+msgstr[2] "Prohlížíte %1$s příspěvků - %2$s z %3$s (z %4$s celkově)"
+
+#: includes/replies/template.php:2362
+msgid "Viewing %1$s post"
+msgid_plural "Viewing %1$s posts"
+msgstr[0] "Prohlížíte si %1$s příspěvek"
+msgstr[1] "Prohlížíte si %1$s příspěvky"
+msgstr[2] "Prohlížíte si %1$s příspěvků"
+
+#: includes/replies/template.php:2354
+msgid "Viewing %2$s replies (of %4$s total)"
+msgid_plural "Viewing %1$s replies - %2$s through %3$s (of %4$s total)"
+msgstr[0] "Prohlížíte si %2$s odpověď (z %4$s celkem)"
+msgstr[1] "Prohlížíte si %1$s odpovědi - %2$s až %3$s (z %4$s celkem)"
+msgstr[2] "Prohlížíte si %1$s odpovědí - %2$s až %3$s (z %4$s celkem)"
+
+#: includes/replies/template.php:2350
+msgid "Viewing %1$s reply"
+msgid_plural "Viewing %1$s replies"
+msgstr[0] "Prohlížíte si %1$s odpověď"
+msgstr[1] "Prohlížíte si %1$s odpovědi"
+msgstr[2] "Prohlížíte si %1$s odpovědí"
+
+#: includes/replies/template.php:2343
+msgid "Viewing %1$s reply thread"
+msgid_plural "Viewing %1$s reply threads"
+msgstr[0] "Prohlížíte si %1$s odpověď u vlákna"
+msgstr[1] "Prohlížíte si %1$s odpovědi u vlákna"
+msgstr[2] "Prohlížíte si %1$s odpovědí u vlákna"
+
+#: includes/replies/template.php:2237
+msgid "Split the topic from this reply"
+msgstr "Odebrat téma z této odpovědi"
+
+#: includes/replies/template.php:2236
+msgid "Split"
+msgstr "Rozdělit"
+
+#: includes/replies/template.php:2170
+msgid "Move this reply"
+msgstr "Přesunout tuto odpověď"
+
+#: includes/replies/template.php:2169
+msgid "Move"
+msgstr "Přesunout"
+
+#: includes/replies/template.php:2106 includes/topics/template.php:2873
+msgid "Unspam"
+msgstr "Vyjmout ze spamu"
+
+#: includes/replies/template.php:2053 includes/topics/template.php:2634
+msgid "Are you sure you want to delete that permanently?"
+msgstr "Jste si jisti, že chcete provést trvalý výmaz?"
+
+#: includes/replies/template.php:2036 includes/topics/template.php:2617
+#: templates/default/bbpress/form-topic-tag.php:88
+#: templates/default/bbpress/form-topic-tag.php:101
+msgid "Delete"
+msgstr "Vymazat"
+
+#: includes/replies/template.php:1695
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: includes/replies/template.php:1210 includes/topics/template.php:1481
+#: includes/users/template.php:1651
+msgid "Visit %s's website"
+msgstr "Navštívit %s's web"
+
+#: includes/replies/template.php:1210 includes/topics/template.php:1481
+#: includes/users/template.php:1651
+msgid "View %s's profile"
+msgstr "Zobrazit profil uživatele %s"
+
+#: includes/replies/template.php:1098 includes/topics/template.php:1368
+#: includes/users/template.php:184
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: includes/replies/template.php:806
+msgid "This reply was modified %1$s by %2$s."
+msgstr "Tato odpověď byla upravena %1$s uživatelem %2$s."
+
+#: includes/replies/template.php:804
+msgid "This reply was modified %1$s by %2$s. Reason: %3$s"
+msgstr "Odpověď byla upravena %1$s uživatelem %2$s. Důvod: %3$s"
+
+#: includes/replies/template.php:706 includes/topics/template.php:809
+msgctxt "date at time"
+msgid "%1$s at %2$s"
+msgstr "%1$s v %2$s"
+
+#: includes/replies/template.php:60
+msgid "No replies found in Trash"
+msgstr "Nenalezeny žádné odpovědi v koši."
+
+#: includes/replies/template.php:59
+msgid "No replies found"
+msgstr "Nebyly nalezeny žádné odpovědi"
+
+#: includes/replies/template.php:58
+msgid "Search Replies"
+msgstr "Vyhledávání odpovědi"
+
+#: includes/replies/template.php:56 includes/replies/template.php:57
+msgid "View Reply"
+msgstr "Zobrazit odpověď"
+
+#: includes/replies/template.php:54
+msgid "Edit Reply"
+msgstr "Upravit odpověď"
+
+#: includes/replies/template.php:52
+msgid "Create New Reply"
+msgstr "Vytvořit novou odpověď"
+
+#: includes/replies/template.php:51 includes/replies/template.php:55
+msgid "New Reply"
+msgstr "Nová odpověď"
+
+#: includes/replies/functions.php:2034 includes/topics/functions.php:3464
+msgid "Replies: %s"
+msgstr "Odpovědi: %s"
+
+#: includes/replies/functions.php:1992
+msgid "All Posts"
+msgstr "Všechny příspěvky"
+
+#: includes/replies/functions.php:1578
+msgid "<strong>ERROR</strong>: There was a problem deleting the reply!"
+msgstr "<strong>CHYBA:</strong> Při mazání příspěvku došlo k potížím!"
+
+#: includes/replies/functions.php:1570
+msgid "<strong>ERROR</strong>: There was a problem untrashing the reply!"
+msgstr "<strong>CHYBA:</strong> Při obnovování příspěvku z koše došlo k potížím!"
+
+#: includes/replies/functions.php:1562
+msgid "<strong>ERROR</strong>: There was a problem trashing the reply!"
+msgstr "<strong>CHYBA:</strong> Při přemisťování příspěvku do koše došlo k potížím!"
+
+#: includes/replies/functions.php:1543
+msgid "<strong>ERROR</strong>: There was a problem marking the reply as spam!"
+msgstr "<strong>CHYBA:</strong> Při označování příspěvku jako spam došlo k potížím!"
+
+#: includes/replies/functions.php:1543
+msgid "<strong>ERROR</strong>: There was a problem unmarking the reply as spam!"
+msgstr "<strong>CHYBA:</strong> Při vyjímání příspěvku ze spamu došlo k potížím!"
+
+#: includes/replies/functions.php:1530
+msgid "<strong>ERROR:</strong> You do not have the permission to do that!"
+msgstr "<strong>CHYBA:</strong> Nemáte k tomu oprávnění!"
+
+#: includes/replies/functions.php:1349 includes/topics/functions.php:1538
+msgid "<strong>ERROR</strong>: You do not have the permissions to create new topics. The reply could not be converted into a topic."
+msgstr "<strong>CHYBA:</strong> Nemáte povolení vytvářet nová témata. Odpověď nemohla být do tématu konvertována."
+
+#: includes/replies/functions.php:1344 includes/topics/functions.php:1533
+msgid "<strong>ERROR</strong>: There was a problem converting the reply into the topic. Please try again."
+msgstr "<strong>CHYBA:</strong> Při převádění příspěvku do tématu došlo k potížím. Zkuste to znovu, prosím."
+
+#: includes/replies/functions.php:1299 includes/replies/template.php:571
+#: includes/topics/functions.php:1294 includes/topics/functions.php:1652
+#: templates/default/bbpress/form-reply.php:29
+msgid "Reply To: %s"
+msgstr "Odpovědět: %s"
+
+#: includes/replies/functions.php:1290 includes/topics/functions.php:1496
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the destination topic!"
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění upravovat cílové téma."
+
+#: includes/replies/functions.php:1285
+msgid "<strong>ERROR</strong>: The topic you want to move to was not found!"
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, do kterého chcete přesouvat."
+
+#: includes/replies/functions.php:1275 includes/topics/functions.php:1483
+msgid "<strong>ERROR</strong>: Destination topic ID not found!"
+msgstr "<strong>CHYBA</strong>: Nebylo nalezeno cílové ID tématu!"
+
+#: includes/replies/functions.php:1262
+msgid "<strong>ERROR</strong>: You need to choose a valid move option."
+msgstr "<strong>CHYBA:</strong> Musíte zvolit platnou možnost přesunu."
+
+#: includes/replies/functions.php:1252 includes/topics/functions.php:1164
+#: includes/topics/functions.php:1462
+msgid "<strong>ERROR</strong>: You do not have the permissions to edit the source topic."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění upravovat zdrojové téma."
+
+#: includes/replies/functions.php:1241
+msgid "<strong>ERROR</strong>: The topic you want to move from was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít téma, které chcete přesunout."
+
+#: includes/replies/functions.php:1232
+msgid "<strong>ERROR</strong>: The reply you want to move was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít odpověd, kterou chcete přesunout."
+
+#: includes/replies/functions.php:1223
+msgid "<strong>ERROR</strong>: Reply ID to move not found!"
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít ID odpovědi, kterou chcete přesunout!"
+
+#: includes/replies/functions.php:616
+msgid "<strong>ERROR</strong>: Your reply cannot be edited at this time."
+msgstr "<strong>CHYBA:</strong> Nyní není možné upravovat odpověď."
+
+#: includes/replies/functions.php:533
+msgid "<strong>ERROR</strong>: You do not have permission to edit that reply."
+msgstr "<strong>CHYBA:</strong> K úpravám odpovědi nemáte oprávnění."
+
+#: includes/replies/functions.php:522
+msgid "<strong>ERROR</strong>: The reply you want to edit was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít odpověď, kterou chcete upravovat."
+
+#: includes/replies/functions.php:505
+msgid "<strong>ERROR</strong>: Reply ID not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít ID odpovědi."
+
+#: includes/replies/functions.php:377 includes/replies/functions.php:702
+msgid "<strong>ERROR</strong>: There was a problem adding the tags to the topic."
+msgstr "<strong>CHYBA:</strong> Při přidávání štítků k tématu došlo k potížím."
+
+#: includes/replies/functions.php:318
+msgid "<strong>ERROR</strong>: Topic is closed."
+msgstr "<strong>CHYBA:</strong> Téma je uzavřeno."
+
+#: includes/replies/functions.php:294
+msgid "<strong>ERROR</strong>: Your reply cannot be created at this time."
+msgstr "<strong>CHYBA:</strong> Nyní není možné vložit příspěvek."
+
+#: includes/replies/functions.php:289
+msgid "<strong>ERROR</strong>: Duplicate reply detected; it looks as though you&#8217;ve already said that!"
+msgstr "<strong>CHYBA:</strong> Objevena duplikátní odpověď; zdá se, že už jste to jednou vložili!"
+
+#: includes/replies/functions.php:279 includes/replies/functions.php:611
+msgid "<strong>ERROR</strong>: Your reply cannot be empty."
+msgstr "<strong>CHYBA:</strong> Váš příspěvek nemůže být prázdný."
+
+#: includes/replies/functions.php:246 includes/replies/functions.php:587
+msgid "<strong>ERROR</strong>: This forum is hidden and you do not have the capability to read or create new replies in it."
+msgstr "<strong>CHYBA:</strong> Fórum je skryté a nemáte možnost jej číst ani v něm vytvářet nové příspěvky."
+
+#: includes/replies/functions.php:240 includes/replies/functions.php:581
+msgid "<strong>ERROR</strong>: This forum is private and you do not have the capability to read or create new replies in it."
+msgstr "<strong>CHYBA:</strong> Fórum je soukromé a nemáte možnost jej číst ani v něm vytvářet nové příspěvky."
+
+#: includes/replies/functions.php:234 includes/replies/functions.php:575
+msgid "<strong>ERROR</strong>: This forum has been closed to new replies."
+msgstr "<strong>CHYBA:</strong> Fórum bylo uzavřeno - nelze vkládat nové příspěvky."
+
+#: includes/replies/functions.php:227 includes/replies/functions.php:568
+msgid "<strong>ERROR</strong>: This forum is a category. No replies can be created in this forum."
+msgstr "<strong>CHYBA:</strong> Fórum je nastaveno jako kategorie.  Proto sem nemohou vkládány žádné příspěvky."
+
+#: includes/replies/functions.php:213 includes/topics/functions.php:218
+msgid "<strong>ERROR</strong>: Forum does not exist."
+msgstr "<strong>CHYBA:</strong> Fórum neexistuje."
+
+#: includes/replies/functions.php:209 includes/topics/functions.php:214
+msgid "<strong>ERROR</strong>: Forum ID cannot be a negative number."
+msgstr "<strong>CHYBA:</strong> ID fóra nesmí být záporné číslo."
+
+#: includes/replies/functions.php:195 includes/topics/functions.php:200
+msgid "<strong>ERROR</strong>: Forum ID must be a number."
+msgstr "<strong>CHYBA:</strong> ID fóra musí být číslo."
+
+#: includes/replies/functions.php:191 includes/replies/functions.php:205
+#: includes/topics/functions.php:196 includes/topics/functions.php:210
+#: includes/topics/functions.php:535
+msgid "<strong>ERROR</strong>: Forum ID is missing."
+msgstr "<strong>CHYBA:</strong> ID fóra nebylo nalezeno."
+
+#: includes/replies/functions.php:172
+msgid "<strong>ERROR</strong>: Topic does not exist."
+msgstr "<strong>CHYBA:</strong> Téma neexistuje."
+
+#: includes/replies/functions.php:168
+msgid "<strong>ERROR</strong>: Topic ID cannot be a negative number."
+msgstr "<strong>CHYBA:</strong> ID tématu nesmí být záporné číslo."
+
+#: includes/replies/functions.php:158
+msgid "<strong>ERROR</strong>: Topic ID must be a number."
+msgstr "<strong>CHYBA:</strong> ID tématu musí být číslo."
+
+#: includes/replies/functions.php:154
+msgid "<strong>ERROR</strong>: Topic ID is missing."
+msgstr "<strong>CHYBA:</strong> Chybí ID tématu."
+
+#: includes/replies/functions.php:142
+msgid "<strong>ERROR</strong>: You do not have permission to reply."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění odpovídat."
+
+#: includes/forums/template.php:2021
+msgid "This forum is empty."
+msgstr "Fórum je zatím prázdné."
+
+#: includes/forums/template.php:2017
+msgid "This forum contains %1$s."
+msgstr "Fórum obsahuje celkem %1$s."
+
+#: includes/forums/template.php:2015
+msgid "This category contains %1$s."
+msgstr "Kategorie obsahuje %1$s."
+
+#: includes/forums/template.php:2007
+msgid "This forum contains %1$s and %2$s."
+msgstr "Fórum obsahuje celkem %1$s a %2$s."
+
+#: includes/forums/template.php:2005
+msgid "This category contains %1$s and %2$s."
+msgstr "Kategorie obsahuje %1$s a %2$s."
+
+#: includes/forums/template.php:1995
+msgid "This forum contains %1$s, and was last updated by %2$s %3$s."
+msgstr "Fórum obsahuje %1$s, a naposledy bylo aktualizované uživatelem %2$s %3$s."
+
+#: includes/forums/template.php:1993
+msgid "This category contains %1$s, and was last updated by %2$s %3$s."
+msgstr "Kategorie obsahuje %1$s,a naposledy byla aktualizovaná uživatelem %2$s %3$s."
+
+#: includes/forums/template.php:1987
+msgid "This forum contains %1$s and %2$s, and was last updated by %3$s %4$s."
+msgstr "Fórum obsahuje %1$s a %2$s, a naposledy bylo aktualizované uživatelem %3$s %4$s."
+
+#: includes/forums/template.php:1985
+msgid "This category contains %1$s and %2$s, and was last updated by %3$s %4$s."
+msgstr "Kategorie obsahuje %1$s a %2$s, a naposledy byla aktualizovaná uživatelem %3$s %4$s."
+
+#: includes/forums/template.php:1965 includes/topics/template.php:2102
+msgid "%s reply"
+msgid_plural "%s replies"
+msgstr[0] "%s odpověď"
+msgstr[1] "%s odpovědi"
+msgstr[2] "%s odpovědí"
+
+#: includes/forums/template.php:1254 includes/topics/template.php:2118
+msgid " (+ %d hidden)"
+msgstr "(+ %d skryté)"
+
+#: includes/forums/template.php:1238 includes/forums/template.php:1976
+msgid "%s topic"
+msgid_plural "%s topics"
+msgstr[0] "%s téma"
+msgstr[1] "%s témata"
+msgstr[2] "%s témata"
+
+#: includes/forums/template.php:841 includes/topics/template.php:1847
+#: includes/users/template.php:1059
+msgid "Unsubscribe"
+msgstr "Odhlásit"
+
+#: includes/forums/template.php:840 includes/topics/template.php:1846
+#: includes/users/template.php:1058
+msgid "Subscribe"
+msgstr "CHCI NOVINKY"
+
+#: includes/forums/template.php:61 templates/default/bbpress/form-forum.php:118
+msgid "Parent Forum:"
+msgstr "Nadřazené fórum:"
+
+#: includes/forums/template.php:60
+msgid "No forums found in Trash"
+msgstr "V koši nebylo nalezeno žádné fórum"
+
+#: includes/forums/template.php:59
+msgid "No forums found"
+msgstr "Žádné fórum nebylo nalezeno"
+
+#: includes/forums/template.php:56 includes/forums/template.php:57
+msgid "View Forum"
+msgstr "Prohlížet fórum"
+
+#: includes/forums/template.php:54
+msgid "Edit Forum"
+msgstr "Upravit fórum"
+
+#: includes/forums/template.php:52 templates/default/bbpress/form-forum.php:37
+msgid "Create New Forum"
+msgstr "Vytvořit nové fórum"
+
+#: includes/forums/template.php:51 includes/forums/template.php:55
+msgid "New Forum"
+msgstr "Nové fórum"
+
+#: includes/forums/functions.php:1632
+msgctxt "Make forum hidden"
+msgid "Hidden"
+msgstr "Skrytý"
+
+#: includes/forums/functions.php:1631
+msgctxt "Make forum private"
+msgid "Private"
+msgstr "Soukromé"
+
+#: includes/forums/functions.php:1630
+msgctxt "Make forum public"
+msgid "Public"
+msgstr "Veřejnost"
+
+#: includes/forums/functions.php:1617
+msgctxt "Forum is a category"
+msgid "Category"
+msgstr "Kategorie"
+
+#: includes/forums/functions.php:1616
+msgctxt "Forum accepts new topics"
+msgid "Forum"
+msgstr "Diskuzní fórum"
+
+#: includes/forums/functions.php:1603
+msgctxt "Close the forum"
+msgid "Closed"
+msgstr "Zavřeno"
+
+#: includes/forums/functions.php:1602
+msgctxt "Open the forum"
+msgid "Open"
+msgstr "Otevřeno"
+
+#: includes/forums/functions.php:472
+msgid "<strong>ERROR</strong>: Your forum cannot be edited at this time."
+msgstr "<strong>CHYBA:</strong> Nyní není možné fórum upravovat."
+
+#: includes/forums/functions.php:405
+msgid "<strong>ERROR</strong>: You do not have permission to edit that forum."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění k upravovat fórum."
+
+#: includes/forums/functions.php:400
+msgid "<strong>ERROR</strong>: The forum you want to edit was not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít fórum, které chcete upravovat."
+
+#: includes/forums/functions.php:384
+msgid "<strong>ERROR</strong>: Forum ID not found."
+msgstr "<strong>CHYBA:</strong> Nepodařilo se najít ID fóra."
+
+#: includes/forums/functions.php:220
+msgid "<strong>ERROR</strong>: Your forum cannot be created at this time."
+msgstr "<strong>CHYBA:</strong> Nyní není možné vytvořit diskuzní fórum."
+
+#: includes/forums/functions.php:215
+msgid "<strong>ERROR</strong>: This forum already exists."
+msgstr "<strong>CHYBA:</strong> Toto fórum již existuje."
+
+#: includes/forums/functions.php:210 includes/replies/functions.php:284
+#: includes/topics/functions.php:260
+msgid "<strong>ERROR</strong>: Slow down; you move too fast."
+msgstr "<strong>CHYBA:</strong> Jste příliš rychlí.  Zpomalte trochu."
+
+#: includes/forums/functions.php:203 includes/forums/functions.php:441
+msgid "<strong>ERROR</strong>: This forum is hidden and you do not have the capability to read or create new forums in it."
+msgstr "<strong>CHYBA:</strong> Fórum je skryté a nemáte možnost jej číst ani v něm vytvářet nová diskuzní fóra."
+
+#: includes/forums/functions.php:198 includes/forums/functions.php:436
+msgid "<strong>ERROR</strong>: This forum is private and you do not have the capability to read or create new forums in it."
+msgstr "<strong>CHYBA:</strong> Fórum je soukromé a nemáte možnost jej číst ani v něm vytvářet nová diskuzní fóra."
+
+#: includes/forums/functions.php:193 includes/forums/functions.php:431
+msgid "<strong>ERROR</strong>: This forum has been closed to new forums."
+msgstr "<strong>CHYBA:</strong> Fórum bylo uzavřeno - nelze vytvářet nová fóra."
+
+#: includes/forums/functions.php:188
+msgid "<strong>ERROR</strong>: This forum is a category. No forums can be created in this forum."
+msgstr "<strong>CHYBA:</strong> Fórum je nastaveno jako kategorie.  Proto zde nemohou být vytvářena žádná fóra."
+
+#: includes/forums/functions.php:181
+msgid "<strong>ERROR</strong>: Your forum must have a parent."
+msgstr "<strong>CHYBA</strong>: Diskuzní fórum musí mít nadřazené fórum."
+
+#: includes/forums/functions.php:167 includes/forums/functions.php:467
+msgid "<strong>ERROR</strong>: Your forum description cannot be empty."
+msgstr "<strong>CHYBA:</strong> Popis diskuzního fóra nesmí být prázdný."
+
+#: includes/forums/functions.php:155 includes/forums/functions.php:455
+msgid "<strong>ERROR</strong>: Your forum needs a title."
+msgstr "<strong>CHYBA:</strong> Diskuzní fórum musí mít název."
+
+#: includes/forums/functions.php:131
+msgid "<strong>ERROR</strong>: You do not have permission to create new forums."
+msgstr "<strong>CHYBA:</strong> Na vytváření nových diskuzních fór nemáte oprávnění."
+
+#: includes/extend/buddypress/notifications.php:165
+msgid "<strong>ERROR</strong>: You do not have permission to mark notifications for that user."
+msgstr "<strong>CHYBA:</strong> Nemáte oprávnění označovat oznámení pro daného uživatele."
+
+#: includes/extend/buddypress/notifications.php:57
+msgid "You have %d new reply to %s"
+msgstr "Máte %d novou odpověď %s"
+
+#: includes/extend/buddypress/notifications.php:55
+msgid "You have %d new reply to %2$s from %3$s"
+msgstr "Máte %d novou odpověď na %2$s z %3$s"
+
+#: includes/extend/buddypress/notifications.php:51
+msgid "You have %d new replies"
+msgstr "Máte %d nových odpovědí"
+
+#: includes/extend/buddypress/notifications.php:48
+msgid "Topic Replies"
+msgstr "Téma odpovědí"
+
+#: includes/extend/buddypress/loader.php:293
+#: templates/default/bbpress/user-subscriptions.php:34
+msgid "Subscribed Topics"
+msgstr "Odebírané příspěvky"
+
+#: includes/extend/buddypress/loader.php:105
+msgid "Search Forums..."
+msgstr "Prohledat fóra..."
+
+#: includes/extend/buddypress/groups.php:775
+msgid "This group does not currently have a forum."
+msgstr "Tato skupina v současné době nemá vytvořené fórum."
+
+#: includes/extend/buddypress/groups.php:478
+msgid "Group Forum"
+msgstr "Skupinové fórum"
+
+#: includes/extend/buddypress/groups.php:437
+msgctxt "group admin edit screen"
+msgid "Discussion Forum"
+msgstr "Diskuzní fórum"
+
+#: includes/extend/buddypress/groups.php:339
+#: includes/extend/buddypress/groups.php:498
+#: includes/extend/buddypress/notifications.php:161
+#: includes/forums/functions.php:118 includes/forums/functions.php:395
+#: includes/replies/functions.php:116 includes/replies/functions.php:516
+#: includes/replies/functions.php:1246 includes/topics/functions.php:122
+#: includes/topics/functions.php:520 includes/topics/functions.php:1153
+#: includes/topics/functions.php:1456 includes/topics/functions.php:1820
+#: includes/topics/functions.php:1859 includes/topics/functions.php:1916
+#: includes/users/functions.php:459 includes/users/functions.php:1174
+#: includes/users/functions.php:1280 includes/users/functions.php:1407
+#: includes/users/functions.php:1413
+msgid "<strong>ERROR</strong>: Are you sure you wanted to do that?"
+msgstr "<strong>CHYBA:</strong> Jste si jistí, že to chcete udělat?"
+
+#: includes/extend/buddypress/groups.php:304
+msgid "Save Settings"
+msgstr "Ulož nastavení"
+
+#: includes/extend/buddypress/groups.php:299
+msgid "Network administrators can reconfigure which forum belongs to this group."
+msgstr "Síťoví administrátoři mohou změnit konfiguraci, které fórum do této skupiny patří."
+
+#: includes/extend/buddypress/groups.php:291
+msgid "Group Forum:"
+msgstr "Skupinové fórum:"
+
+#: includes/extend/buddypress/groups.php:286
+msgid "Saying no will not delete existing forum content."
+msgstr "Odpověď NE vymaže existující obsah fóra."
+
+#: includes/extend/buddypress/groups.php:283
+#: includes/extend/buddypress/groups.php:483
+msgid "Yes. I want this group to have a forum."
+msgstr "Ano. Chci, aby tato skupina měla fórum."
+
+#: includes/extend/buddypress/groups.php:279
+#: includes/extend/buddypress/groups.php:480
+msgid "Create a discussion forum to allow members of this group to communicate in a structured, bulletin-board style fashion."
+msgstr "Vytvořte diskuzní fórum, které umožní uživatelům této skupiny strukturovaně komunikovat."
+
+#: includes/extend/buddypress/groups.php:275
+#: includes/extend/buddypress/groups.php:278
+msgid "Group Forum Settings"
+msgstr "Nastavení skupinového fóra"
+
+#: includes/extend/buddypress/activity.php:566
+msgid "%1$s replied to the topic %2$s in the forum %3$s"
+msgstr "%1$s odpověděl(a) na téma %2$s v diskuzním fóru %3$s"
+
+#: includes/extend/buddypress/activity.php:421
+msgid "%1$s started the topic %2$s in the forum %3$s"
+msgstr "%1$s založil(a) nové téma %2$s v diskuzním fóru %3$s"
+
+#: includes/extend/buddypress/activity.php:196
+msgid "New forum reply"
+msgstr "Nová odpověď"
+
+#: includes/extend/buddypress/activity.php:195
+msgid "New forum topic"
+msgstr "Nové téma"
+
+#: includes/extend/akismet.php:793
+msgid "No recorded history. Akismet has not checked this post."
+msgstr "Žádná zaznamenaná historie. Akismet tento příspěvek nezkontroloval."
+
+#: includes/extend/akismet.php:735 includes/extend/akismet.php:745
+msgid "Akismet History"
+msgstr "Historie Akismetu"
+
+#: includes/extend/akismet.php:489
+msgid "Akismet was unable to check this post (response: %s), will automatically retry again later."
+msgstr "Akismet nedokázal tento příspěvek zkontrolovat (chyba: %s), ale automaticky to zkusí později."
+
+#: includes/extend/akismet.php:475
+msgid "Akismet cleared this post as not spam"
+msgstr "Akismet propustil tento příspěvek jako řádný"
+
+#: includes/extend/akismet.php:467 includes/extend/akismet.php:482
+msgid "Post status was changed to %s"
+msgstr "Stav příspěvku byl změněn na %s"
+
+#: includes/extend/akismet.php:463
+msgid "Akismet caught this post as spam"
+msgstr "Akismet zadržel tento komentář a označil ho jako spam"
+
+#: includes/extend/akismet.php:405
+msgid "No response"
+msgstr "Žádná odpověď"
+
+#: includes/extend/akismet.php:316
+msgid "%1$s reported this %2$s as not spam"
+msgstr "%1$s vyhodnotil %2$s jako řádný příspěvek"
+
+#: includes/extend/akismet.php:309
+msgid "%1$s reported this %2$s as spam"
+msgstr "%1$s vyhodnotil %2$s jako spam"
+
+#: includes/core/update.php:191
+msgid "Oh, and this is what a reply looks like."
+msgstr "Ano, takhle vypadá odpověď."
+
+#: includes/core/update.php:190
+msgid "Re: Hello World!"
+msgstr "Re: Ahoj všichni!"
+
+#: includes/core/update.php:189
+msgid "I am the first topic in your new forums."
+msgstr "Já jsem první téma ve vašem novém fóru."
+
+#: includes/core/update.php:188
+msgid "Hello World!"
+msgstr "Ahoj všichni!"
+
+#: includes/core/update.php:187
+msgid "General chit-chat"
+msgstr "Všeobecná komunikace"
+
+#: includes/core/update.php:186
+msgid "General"
+msgstr "Obecné"
+
+#: includes/core/capabilities.php:531
+msgid "Editable forum roles no longer exist."
+msgstr "Upravitelné role fóra již neexistují"
+
+#: includes/common/widgets.php:1252
+msgid "Recent Replies"
+msgstr "Nejnovější odpovědi"
+
+#: includes/common/widgets.php:1237
+msgid "Show reply author:"
+msgstr "Zobrazit odpovědi autora:"
+
+#: includes/common/widgets.php:1235
+msgid "Maximum replies to show:"
+msgstr "Zobrazit maximálně odpovědí:"
+
+#. translators: 1: reply link
+#: includes/common/widgets.php:1184
+msgctxt "widgets"
+msgid "%1$s"
+msgstr "%1$s"
+
+#. translators: 1: reply author, 2: reply link
+#: includes/common/widgets.php:1178
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr "%1$s u %2$s"
+
+#. translators: 1: reply link, 2: reply timestamp
+#: includes/common/widgets.php:1172
+msgctxt "widgets"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#. translators: 1: reply author, 2: reply link, 3: reply timestamp
+#: includes/common/widgets.php:1166
+msgctxt "widgets"
+msgid "%1$s on %2$s %3$s"
+msgstr "Napsal %1$s dne %2$s %3$s"
+
+#: includes/common/widgets.php:1081
+msgid "(bbPress) Recent Replies"
+msgstr "Nejnovější odpovědi (bbPress)"
+
+#: includes/common/widgets.php:1078
+msgid "A list of the most recent replies."
+msgstr "Seznam posledních odpovědí."
+
+#: includes/common/widgets.php:1048
+msgid "Forum Statistics"
+msgstr "Statistika diskuzního fóra"
+
+#: includes/common/widgets.php:951
+msgid "(bbPress) Statistics"
+msgstr "Statistika (bbPress)"
+
+#: includes/common/widgets.php:948
+msgid "Some statistics from your forum."
+msgstr "Statistiky z vašeho diskuzního fóra."
+
+#: includes/common/widgets.php:914
+msgid "Recent Topics"
+msgstr "Nejnovější témata"
+
+#: includes/common/widgets.php:897
+msgid "Topics With Recent Replies"
+msgstr "Témata s nedávnou odpovědí"
+
+#: includes/common/widgets.php:896
+#: templates/default/extras/page-forum-statistics.php:34
+msgid "Popular Topics"
+msgstr "Oblíbená témata"
+
+#: includes/common/widgets.php:895
+msgid "Newest Topics"
+msgstr "Nejnovější témata"
+
+#: includes/common/widgets.php:893
+msgid "Order By:"
+msgstr "Seřadit:"
+
+#: includes/common/widgets.php:890
+msgid "Show topic author:"
+msgstr "Zobrazit témata autora:"
+
+#: includes/common/widgets.php:889 includes/common/widgets.php:1236
+msgid "Show post date:"
+msgstr "Zobrazit datum příspěvku:"
+
+#: includes/common/widgets.php:877
+msgid "Maximum topics to show:"
+msgstr "Zobrazit maximálně témat:"
+
+#: includes/common/widgets.php:815
+msgctxt "widgets"
+msgid "by %1$s"
+msgstr "autor %1$s"
+
+#: includes/common/widgets.php:695
+msgid "(bbPress) Recent Topics"
+msgstr "Nejnovější témata (bbPress)"
+
+#: includes/common/widgets.php:692
+msgid "A list of recent topics, sorted by popularity or freshness."
+msgstr "Seznam posledních témat, seřazený podle oblíbenosti a aktuálnosti."
+
+#: includes/common/widgets.php:646 includes/common/widgets.php:886
+msgid "\"0\" to show only root - \"any\" to show all"
+msgstr "\"0\" pro zobrazení pouze kořene - \"any\" pro zobrazení všech úrovní"
+
+#: includes/common/widgets.php:640 includes/common/widgets.php:880
+msgid "Parent Forum ID:"
+msgstr "ID nadřazeného fóra:"
+
+#: includes/common/widgets.php:515
+msgid "(bbPress) Forums List"
+msgstr "Výpis diskuzních fór (bbPress)"
+
+#: includes/common/widgets.php:512
+msgid "A list of forums with an option to set the parent."
+msgstr "Výpis diskuzních fór s možností nastavení nadřazeného fóra."
+
+#: includes/common/widgets.php:483 includes/forums/template.php:58
+msgid "Search Forums"
+msgstr "Hledat fórum"
+
+#: includes/common/widgets.php:387
+msgid "(bbPress) Forum Search Form"
+msgstr "Vyhledávací formulář (bbPress)"
+
+#: includes/common/widgets.php:384
+msgid "The bbPress forum search form."
+msgstr "Vyhledávací formulář bbPress"
+
+#: includes/common/widgets.php:246
+msgid "(bbPress) Topic Views List"
+msgstr "Výpis zobrazení témat (bbPress)"
+
+#: includes/common/widgets.php:243
+msgid "A list of registered optional topic views."
+msgstr "Výpis registrovaných volitelných zobrazení témat."
+
+#: includes/common/widgets.php:195
+msgid "Lost Password URI:"
+msgstr "URL pro zapomenuté heslo:"
+
+#: includes/common/widgets.php:190
+msgid "Register URI:"
+msgstr "Registrace URL:"
+
+#: includes/common/widgets.php:185 includes/common/widgets.php:337
+#: includes/common/widgets.php:465 includes/common/widgets.php:634
+#: includes/common/widgets.php:876 includes/common/widgets.php:1030
+#: includes/common/widgets.php:1234
+msgid "Title:"
+msgstr "Název:"
+
+#: includes/common/widgets.php:128
+#: templates/default/bbpress/form-user-lost-pass.php:14
+msgid "Lost Password"
+msgstr "Zapomenuté heslo"
+
+#: includes/common/widgets.php:122
+#: templates/default/bbpress/form-user-register.php:36
+msgid "Register"
+msgstr "Zaregistrujte se"
+
+#: includes/common/widgets.php:103
+msgid "Remember Me"
+msgstr "Pamatovat si mě"
+
+#: includes/common/widgets.php:97
+#: templates/default/bbpress/form-user-login.php:22
+msgid "Password"
+msgstr "Heslo"
+
+#: includes/common/widgets.php:92
+#: templates/default/bbpress/form-user-edit.php:98
+#: templates/default/bbpress/form-user-login.php:17
+#: templates/default/bbpress/form-user-register.php:23
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: includes/common/widgets.php:89 includes/common/widgets.php:110
+#: templates/default/bbpress/form-user-login.php:14
+#: templates/default/bbpress/form-user-login.php:35
+msgid "Log In"
+msgstr "Přihlásit se"
+
+#: includes/common/widgets.php:42
+msgid "(bbPress) Login Widget"
+msgstr "Přihlašovací widget (bbPress)"
+
+#: includes/common/widgets.php:39
+msgid "A simple login form with optional links to sign-up and lost password pages."
+msgstr "Jednoduchý přihlašovací formulář, s volitelnými odkazy na stránky pro registraci a zapomenuté heslo."
+
+#: includes/common/template.php:2646
+msgid "View: %s"
+msgstr "Zobrazit: %s"
+
+#: includes/common/template.php:2638
+#: templates/default/bbpress/user-details.php:65
+msgid "Edit %s's Profile"
+msgstr "Upravit %s profil"
+
+#: includes/common/template.php:2633
+msgid "Edit Your Profile"
+msgstr "Upravit profil"
+
+#: includes/common/template.php:2625
+msgid "%s Profile"
+msgstr "%s  Profil"
+
+#: includes/common/template.php:2621
+msgid "%s Subscriptions"
+msgstr "%s Sledovaní"
+
+#: includes/common/template.php:2617
+msgid "%s Favorites"
+msgstr "%s oblíbených"
+
+#: includes/common/template.php:2613
+msgid "%s Replies"
+msgstr "%s Odpovědí"
+
+#: includes/common/template.php:2609
+msgid "%s Topics"
+msgstr "%s Témat"
+
+#: includes/common/template.php:2604
+msgctxt "User viewing another users profile"
+msgid "%s's"
+msgstr "%s's"
+
+#: includes/common/template.php:2600
+msgctxt "User viewing his/her own profile"
+msgid "Your"
+msgstr "Vaše"
+
+#: includes/common/template.php:2582
+msgid "Topic: %s"
+msgstr "Upravit téma: %s"
+
+#: includes/common/template.php:2577
+msgid "Forum: %s"
+msgstr "Diskuzní fórum %s"
+
+#: includes/common/template.php:2570
+msgid "Topic Tag Edit: %s"
+msgstr "Upravit štítek tématu: %s"
+
+#: includes/common/template.php:2565
+msgid "Reply Edit: %s"
+msgstr "Upravit odpověď: %s"
+
+#: includes/common/template.php:2560
+msgid "Topic Edit: %s"
+msgstr "Upravit téma: %s"
+
+#: includes/common/template.php:2555
+msgid "Forum Edit: %s"
+msgstr "Upravit fórum: %s"
+
+#: includes/common/template.php:2501
+msgid "Log Out"
+msgstr "Odhlásit se"
+
+#: includes/common/template.php:2233
+msgid "&rsaquo;"
+msgstr "&rsaquo;"
+
+#: includes/common/template.php:2233
+msgid "&lsaquo;"
+msgstr "&lsaquo;"
+
+#: includes/common/template.php:2216 includes/forums/template.php:53
+#: includes/replies/template.php:53 includes/replies/template.php:1910
+#: includes/topics/template.php:53 includes/topics/template.php:2491
+#: templates/default/bbpress/user-details.php:65
+msgid "Edit"
+msgstr "Upravit"
+
+#: includes/common/template.php:2212 includes/common/template.php:2326
+#: includes/common/template.php:2591 includes/core/theme-compat.php:739
+#: templates/default/extras/taxonomy-topic-tag-edit.php:17
+#: templates/default/extras/taxonomy-topic-tag.php:17
+msgid "Topic Tag: %s"
+msgstr "Štítky Témat:%s"
+
+#: includes/common/template.php:2208
+msgid "(Edit)"
+msgstr "(Upravit)"
+
+#: includes/common/template.php:2138
+msgid "Home"
+msgstr "Domů"
+
+#: includes/common/template.php:1467
+msgid "None available"
+msgstr "Nenalezeno nic"
+
+#: includes/common/template.php:1462
+msgid "No forums available"
+msgstr "K dispozici není žádné fórum"
+
+#: includes/common/template.php:1457
+msgid "No topics available"
+msgstr "K dispozici není žádné téma"
+
+#: includes/common/functions.php:2026
+msgid "Conditional query tags do not work before the query is run. Before then, they always return false."
+msgstr "Podmíněné štítky dotazů fungují pouze ve spuštěném dotazu, jinak vždy vrátí výraz nepravda."
+
+#: includes/common/functions.php:1256
+msgid ""
+"%1$s wrote:\n"
+"\n"
+"%2$s\n"
+"\n"
+"Topic Link: %3$s\n"
+"\n"
+"-----------\n"
+"\n"
+"You are receiving this email because you subscribed to a forum.\n"
+"\n"
+"Login and visit the topic to unsubscribe from these emails."
+msgstr ""
+"%1$s napsal:\n"
+"\n"
+"%2$s Odkaz: %3$s\n"
+"\n"
+" -----------\n"
+"Tento e-mail jste obdržel, protože jste přihlášeni ke sledování daného diskuzního fóra.\n"
+"\n"
+"Pokud to zprávy nechcete nadále dostávat, přihlaste se, přejděte do daného tématu a zrušte jeho sledování."
+
+#: includes/common/functions.php:1099
+msgid ""
+"%1$s wrote:\n"
+"\n"
+"%2$s\n"
+"\n"
+"Post Link: %3$s\n"
+"\n"
+"-----------\n"
+"\n"
+"You are receiving this email because you subscribed to a forum topic.\n"
+"\n"
+"Login and visit the topic to unsubscribe from these emails."
+msgstr ""
+"%1$s napsal:\n"
+"\n"
+"%2$s Odkaz: %3$s\n"
+"\n"
+" -----------\n"
+"Tento e-mail jste obdržel, protože jste přihlášeni ke sledování daného tématu diskuzního fóra.\n"
+"\n"
+"Pokud to zprávy nechcete nadále dostávat, přihlaste se, přejděte do daného tématu a zrušte jeho sledování."
+
+#: includes/common/functions.php:628
+msgid "<strong>ERROR</strong>: Invalid email address submitted!"
+msgstr "<strong>CHYBA:</strong> Neplatná emailová adresa!"
+
+#: includes/common/functions.php:624
+msgid "<strong>ERROR</strong>: Invalid author name submitted!"
+msgstr "<strong>CHYBA:</strong> Neplatné jméno autora!"
+
+#: includes/common/functions.php:514 includes/common/functions.php:546
+msgid "Trashed: %s"
+msgstr "V koši: %s"
+
+#: includes/common/functions.php:513 includes/common/functions.php:545
+msgid "Spammed: %s"
+msgstr "Nevyžádané: %s"
+
+#: includes/common/functions.php:512 includes/common/functions.php:544
+msgid "Private: %s"
+msgstr "Soukromé: %S"
+
+#: includes/common/functions.php:179
+msgctxt "Separator in time since"
+msgid ","
+msgstr ","
+
+#: includes/common/functions.php:124
+msgid "second"
+msgstr "vteřina"
+
+#: includes/common/functions.php:123
+msgid "minute"
+msgstr "minuta"
+
+#: includes/common/functions.php:122
+msgid "hours"
+msgstr "hodiny"
+
+#: includes/common/functions.php:122
+msgid "hour"
+msgstr "hodina"
+
+#: includes/common/functions.php:121
+msgid "days"
+msgstr "dny"
+
+#: includes/common/functions.php:121
+msgid "day"
+msgstr "den"
+
+#: includes/common/functions.php:120
+msgid "weeks"
+msgstr "týdnů"
+
+#: includes/common/functions.php:120
+msgid "week"
+msgstr "týden"
+
+#: includes/common/functions.php:119
+msgid "months"
+msgstr "měsíců"
+
+#: includes/common/functions.php:119
+msgid "month"
+msgstr "měsíc"
+
+#: includes/common/functions.php:118
+msgid "years"
+msgstr "roky"
+
+#: includes/common/functions.php:118
+msgid "year"
+msgstr "rok"
+
+#: includes/common/functions.php:114
+msgid "%s ago"
+msgstr "před %s"
+
+#: includes/common/functions.php:113
+msgid "right now"
+msgstr "právě teď"
+
+#: includes/common/functions.php:112
+msgid "sometime"
+msgstr "bývalý"
+
+#: includes/admin/users.php:217
+msgid "Site Role"
+msgstr "Role stránky"
+
+#: includes/admin/users.php:144
+msgid "Change"
+msgstr "Změna"
+
+#: includes/admin/users.php:138 includes/admin/users.php:140
+msgid "Change forum role to&hellip;"
+msgstr "Změnit roli ve fóru na&hellip;"
+
+#: includes/admin/users.php:96 includes/admin/users.php:100
+#: includes/users/template.php:1290
+msgid "&mdash; No role for these forums &mdash;"
+msgstr "&mdash; Pro toto fórum není vytvořena žádná role &mdash;"
+
+#: includes/admin/users.php:87 includes/admin/users.php:218
+#: templates/default/bbpress/form-user-roles.php:20
+msgid "Forum Role"
+msgstr "Role v diskuzním fóru"
+
+#: includes/admin/topics.php:953
+msgid "Topic draft updated. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Koncept tématu byl aktualizován. <a target=\"_blank\" href=\"%s\">Náhled tématu</a>"
+
+#: includes/admin/topics.php:946
+msgid "Topic scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview topic</a>"
+msgstr "Téma naplánováno na: <strong>%1$s </strong>. <a target=\"_blank\" href=\"%2$s\">Náhled tématu</a>"
+
+#: includes/admin/topics.php:943
+msgid "Topic submitted. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Téma založeno. <a target=\"_blank\" href=\"%s\">Náhled tématu</a>"
+
+#: includes/admin/topics.php:940
+msgid "Topic saved."
+msgstr "Téma uloženo."
+
+#: includes/admin/topics.php:937
+msgid "Topic created. <a href=\"%s\">View topic</a>"
+msgstr "Téma vytvořeno. <a href=\"%s\">Ukázat téma</a>"
+
+#. translators: %s: date and time of the revision
+#: includes/admin/topics.php:933
+msgid "Topic restored to revision from %s"
+msgstr "Téma byla obnoveno na revizi z %s"
+
+#: includes/admin/topics.php:928
+msgid "Topic updated."
+msgstr "Téma aktualizována."
+
+#: includes/admin/topics.php:919
+msgid "Topic updated. <a href=\"%s\">View topic</a>"
+msgstr "Téma aktualizováno. <a href=\"%s\">Zobrazit téma</a>"
+
+#: includes/admin/topics.php:809
+msgid "Mark this topic as spam"
+msgstr "Označit toto téma jako spam"
+
+#: includes/admin/topics.php:807
+msgid "Mark the topic as not spam"
+msgstr "Vyjmout toto téma ze spamu"
+
+#: includes/admin/topics.php:800 includes/topics/template.php:2747
+msgid "(to front)"
+msgstr "(do popředí)"
+
+#: includes/admin/topics.php:800
+msgid "Stick this topic to front"
+msgstr "Připnout toto téma do popředí"
+
+#: includes/admin/topics.php:800 includes/topics/template.php:2745
+msgid "Stick"
+msgstr "Připnout"
+
+#: includes/admin/topics.php:800
+msgid "Stick this topic to its forum"
+msgstr "Připnout toto téma k fóru."
+
+#: includes/admin/topics.php:797 includes/topics/template.php:2746
+msgid "Unstick"
+msgstr "Odepnout"
+
+#: includes/admin/topics.php:797
+msgid "Unstick this topic"
+msgstr "Odepnout téma"
+
+#: includes/admin/topics.php:788
+msgctxt "Open a Topic"
+msgid "Open"
+msgstr "Otevřít"
+
+#: includes/admin/topics.php:788
+msgid "Open this topic"
+msgstr "Otevřít téma"
+
+#: includes/admin/topics.php:786
+msgctxt "Close a Topic"
+msgid "Close"
+msgstr "Uzavřít"
+
+#: includes/admin/topics.php:786
+msgid "Close this topic"
+msgstr "Uzavřít téma"
+
+#: includes/admin/topics.php:729 includes/topics/template.php:2064
+msgid "No Replies"
+msgstr "Bez odpovědí"
+
+#: includes/admin/topics.php:694 includes/extend/buddypress/groups.php:295
+#: templates/default/bbpress/form-topic.php:117
+msgid "(No Forum)"
+msgstr "(Žádné forum)"
+
+#: includes/admin/topics.php:635 templates/default/bbpress/loop-topics.php:20
+msgid "Voices"
+msgstr "Diskutující"
+
+#: includes/admin/topics.php:599
+msgid "Topic \"%1$s\" successfully unmarked as spam."
+msgstr "Téma \"%1$s\" bylo vyjmuto ze spamu."
+
+#: includes/admin/topics.php:599
+msgid "There was a problem unmarking the topic \"%1$s\" as spam."
+msgstr "Při vyjímání tématu \"%1$s\"ze spamu došlo k problému."
+
+#: includes/admin/topics.php:595
+msgid "Topic \"%1$s\" successfully marked as spam."
+msgstr "Téma \"%1$s\" bylo označeno jako spam."
+
+#: includes/admin/topics.php:595
+msgid "There was a problem marking the topic \"%1$s\" as spam."
+msgstr "Při označování tématu \"%1$s\" jako spam došlo k problému."
+
+#: includes/admin/topics.php:591
+msgid "Topic \"%1$s\" successfully unsticked."
+msgstr "Téma \"%1$s\" bylo odepnuto."
+
+#: includes/admin/topics.php:591
+msgid "There was a problem unsticking the topic \"%1$s\"."
+msgstr "Při odepínání tématu \"%1$s\" došlo k problému."
+
+#: includes/admin/topics.php:587
+msgid "Topic \"%1$s\" successfully sticked."
+msgstr "Téma \"%1$s\" bylo  připnuto."
+
+#: includes/admin/topics.php:587
+msgid "There was a problem sticking the topic \"%1$s\"."
+msgstr "Při připínání tématu \"%1$s\" došlo k problému."
+
+#: includes/admin/topics.php:583
+msgid "Topic \"%1$s\" successfully sticked to front."
+msgstr "Téma \"%1$s\" bylo připnuto do popředí."
+
+#: includes/admin/topics.php:583
+msgid "There was a problem sticking the topic \"%1$s\" to front."
+msgstr "Při připínání tématu do popředí \"%1$s\" došlo k problému."
+
+#: includes/admin/topics.php:579
+msgid "Topic \"%1$s\" successfully closed."
+msgstr "Téma \"%1$s\" bylo uzavřeno."
+
+#: includes/admin/topics.php:579
+msgid "There was a problem closing the topic \"%1$s\"."
+msgstr "Při uzavírání tématu \"%1$s\" došlo k problému."
+
+#: includes/admin/topics.php:575
+msgid "Topic \"%1$s\" successfully opened."
+msgstr "Téma \"%1$s\" bylo otevřeno."
+
+#: includes/admin/topics.php:575
+msgid "There was a problem opening the topic \"%1$s\"."
+msgstr "Při otevírání tématu \"%1$s\" došlo k problému."
+
+#: includes/admin/topics.php:485
+msgid "The topic was not found!"
+msgstr "Téma nenalezeno!"
+
+#: includes/admin/topics.php:223
+msgid "<strong>Topic Type</strong> dropdown indicates the sticky status of the topic. Selecting the super sticky option would stick the topic to the front of your forums, i.e. the topic index, sticky option would stick the topic to its respective forum. Selecting normal would not stick the topic anywhere."
+msgstr "Rozbalovací nabídka <strong>Typ tématu</strong> definuje pozici tématu. Nastavení \"Velmi důležité\", připne téma do popředí příslušného diskuzního fóra.  Možnost \"Normální \" zachová chronologické umístění tématu."
+
+#: includes/admin/topics.php:222
+msgid "<strong>Forum</strong> dropdown determines the parent forum that the topic belongs to. Select the forum or category from the dropdown, or leave the default (No Forum) to post the topic without an assigned forum."
+msgstr "<strong>Fórum</strong> Rozevírací seznam určuje nadřazené fórum tématu.  Z rozbalovací nabídky vyberte fórum nebo kategorii, popřípadě ponechte výchozí (Žádné fórum) pro publikování tématu bez zařazení do fóra."
+
+#: includes/admin/topics.php:220
+msgid "Select the attributes that your topic should have:"
+msgstr "Vyberte atributy pro  Vaše téma:"
+
+#: includes/admin/topics.php:218 includes/admin/topics.php:255
+msgid "Topic Attributes"
+msgstr "Atributy tématu"
+
+#: includes/admin/topics.php:213
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your topic without inserting it. This is usually useful only if your theme makes use of the featured image as a topic thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Náhledový obrázek</strong> - vám umožní přidružit vašemu tématu obrázek bez nutnosti jej vkládat. Tato funkce obvykle využijete, pokud vaše šablona tématu využívá náhledový obrázek jako miniaturu tématu na domácí stránce, v uživatelském záhlaví apod."
+
+#: includes/admin/topics.php:210
+msgid "<strong>Publish</strong> - You can set the terms of publishing your topic in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a topic or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a topic to be published in the future or backdate a topic."
+msgstr "<strong>Publikovat</strong> - Na panelu Publikovat můžete nastavit podmínky publikování vašeho tématu. Rozšířené možnosti pro stav, viditelnost a publikování se zobrazí po kliknutí na odkaz Upravit. Viditelnost tématu zahrnuje možnosti pro ochranu heslem a pro jeho trvalé zobrazování v popředí blogu (připnutí). Publikovat (okamžitě) vám dovoluje nastavit datum a čas jak do minulosti tak do budoucnosti, aby bylo možné naplánovat odložené publikování tématu, nebo jej zařadit na správné místo mezi publikované v minulosti."
+
+#: includes/admin/topics.php:207
+msgid "<strong>Topic Editor</strong> - Enter the text for your topic. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your topic text. You can insert media files by clicking the icons above the topic editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular topic editor."
+msgstr "<strong>Editor témat</strong> - Vyplňte text svého tématu. Jsou dostupné 2 módy editace: Vizuální a HTML. Mód vyberete kliknutím na příslušnou záložku. Vizuální mód vám zpřístupní WYSIWYG editor. Kliknutím na poslední ikonu v řádku zobrazíte druhý řádek ovládacích prvků. HTML mód umožňuje vkládat čistý HTML kód do obsahu vašeho tématu. Mediální soubory můžete vložit kliknutím na ikonu nad Editorem témat. Režim nevyrušovaného psaní spustíte kliknutím na ikonu znázorňující celou obrazovku ve Vizuálním módu (pod záložkami na přepínání editoru). V režimu nevyrušovaného psaní zobrazíte ovládací prvky najetím do horního okraje obrazovky. Návrat do normálního režimu psaní provedete ukončením režimu celé obrazovky."
+
+#: includes/admin/topics.php:206
+msgid "<strong>Title</strong> - Enter a title for your topic. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
+msgstr "<strong>Název</strong> - Vložte název tématu. Po zadání názvu se níže zobrazí trvalý odkaz, který můžete upravit."
+
+#: includes/admin/topics.php:204
+msgid "Title and Topic Editor"
+msgstr "Editor názvu a témetu"
+
+#: includes/admin/topics.php:194
+msgid "The title field and the big topic editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
+msgstr "Základní panel pro zadávání názvu a textu tématu (oblast editoru) jsou sice pevně umístěné, ale všechny ostatní panely je možné na stránce libovolně přemístit uchopením a tažením lišty s názvem příslušné sekce pomocí kurzoru myši nebo je kliknutím rozbalit či sbalit. Pomocí zaškrtávacích polí v záložce &#8222;Obsah obrazovky&#8220; můžete odhalit a začít používat další panely s dodatečnými informacemi (Stručný výpis, Odeslat trackbacky, Uživatelská pole, Komentáře, Slug, Autor) nebo nastavit základní rozmístění sekcí na stránce volbou počtu sloupců (1 nebo 2)."
+
+#: includes/admin/topics.php:173
+msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected topics at once. To remove a topic from the grouping, just click the x next to its name in the Bulk Edit area that appears."
+msgstr "V případě využití Hromadných úprav můžete měnit některé informace u všech vybraných příspěvků najednou (např. kategorii, autora, atd.). Pokud budete chtít nějaký příspěvek z označené skupiny odebrat, stačí kliknout na malé tlačítko x vedle jeho názvu v zobrazené oblasti pro Hromadné úpravy."
+
+#: includes/admin/topics.php:172
+msgid "You can also edit or move multiple topics to the trash at once. Select the topics you want to act on using the checkboxes, then select the action you want to take from the Bulk Actions menu and click Apply."
+msgstr "Je možné také upravovat nebo přesunout do koše několik témat najednou. Nejdříve zaškrtnutím označte konkrétní témata, která chcete upravovat (odstranit), potom vyberte v rozevíracím menu Hromadné úpravy možnost Upravit (Vyhodit) a nakonec klikněte na tlačítko Použít."
+
+#: includes/admin/topics.php:163
+msgid "<strong>Stick <em>(to front)</em></strong> will keep the selected topic &#8217;pinned&#8217; to the top of ALL forums and be visable in any forums topics list."
+msgstr "<strong>Připnout<em>(do popředí)</em></strong> - &#8217;připne&#8217; téma vždy na vrchol VŠECH diskuzních fór, a bude viditelný ve všech výpisech témat."
+
+#: includes/admin/topics.php:162
+msgid "<strong>Stick</strong> will keep the selected topic &#8217;pinned&#8217; to the top the parent forum topic list."
+msgstr "<strong>Připnout</strong> - &#8217;připne&#8217; zvolené téma do horní části diskuzního fóra."
+
+#: includes/admin/topics.php:161
+msgid "<strong>Close</strong> will mark the selected topic as &#8217;closed&#8217; and disable the option to post new replies to the topic."
+msgstr "<strong>Uzavřít</strong> - označí vybrané téma jako &#8217;uzavřené&#8217 a zablokuje vkládání dalších příspěvků do tématu."
+
+#: includes/admin/topics.php:160
+msgid "<strong>Preview</strong> will show you what your draft topic will look like if you publish it. View will take you to your live site to view the topic. Which link is available depends on your topic&#8217;s status."
+msgstr "<strong>Náhled</strong> - zobrazí aktuální koncept tématu tak, jak by vypadal na webu, pokud byste jej právě publikovali. To, zda je odkaz dostupný závisí na stavu vašeho tématu."
+
+#: includes/admin/topics.php:159
+msgid "<strong>Spam</strong> removes your topic from this list and places it in the spam queue, from which you can permanently delete it."
+msgstr "<strong>Spam</strong> - vyjme téma ze seznamu a uloží do jej spamu, odkud může být později trvale odstraněno."
+
+#: includes/admin/topics.php:158
+msgid "<strong>Trash</strong> removes your topic from this list and places it in the trash, from which you can permanently delete it."
+msgstr "<strong>Vyhodit</strong> - vyjme téma ze seznamu a přesune jej koše, odkud může být později trvale odstraněno."
+
+#: includes/admin/topics.php:157
+msgid "<strong>Edit</strong> takes you to the editing screen for that topic. You can also reach that screen by clicking on the topic title."
+msgstr "<strong>Upravit</strong> - zobrazí stránku pro detailní úpravy vybraného tématu. To samé se stane, když kliknete přímo na jeho název."
+
+#: includes/admin/topics.php:155
+msgid "Hovering over a row in the topics list will display action links that allow you to manage your topic. You can perform the following actions:"
+msgstr "Pokud najedete myší na řádek tématu ve výpisu, zobrazí možnosti pro jeho správu. Ihned tak můžete provést následující úkony:"
+
+#: includes/admin/topics.php:146
+msgid "You can refine the list to show only topics from a specific month by using the dropdown menus above the topics list. Click the Filter button after making your selection. You also can refine the list by clicking on the topic creator in the topics list."
+msgstr "Filtr zobrazení můžete zjemnit na zobrazení témat z konkrétního měsíce pomocí rozevíracích nabídek nad výpisem témat. Nastavte si požadovaný filtr a klikněte na tlačítko &#8222;Filtrovat&#8220;. Kromě toho lze témata třídit přímo kliknutím na autora, rubriku nebo štítek přímo ve výpisu témat."
+
+#: includes/admin/topics.php:145
+msgid "You can filter the list of topics by topic status using the text links in the upper left to show All, Published, or Trashed topics. The default view is to show all topics."
+msgstr "Výpis témat můžete filtrovat pomocí textových odkazů, vlevo nahoře - Zobrazit všechny, Publikované a nebo Vyhozené.  Výchozí nastavení je Zobrazit všechny."
+
+#: includes/admin/topics.php:144
+msgid "You can hide/display columns based on your needs and decide how many topics to list per screen using the Screen Options tab."
+msgstr "Prostřednictvím záložky \"Obsah obrazovky\" si sami si rozhodnete, kolik témat se na obrazovce bude zobrazovat a které sloupce budou zobrazeny."
+
+#: includes/admin/topics.php:134
+msgid "This screen displays the individual topics on your site. You can customize the display of this screen to suit your workflow."
+msgstr "Na této obrazovce, jsou zobrazena jednotlivá témata z Vašeho webu. Zobrazení si můžete přizpůsobit tak, aby Vám to co nejlépe vyhovovalo."
+
+#: includes/admin/tools.php:1370
+msgid "Deleting Roles and Capabilities&hellip; %s"
+msgstr "Odstraňuji role a oprávnění&hellip; %s"
+
+#: includes/admin/tools.php:1364
+msgid "Deleting Settings&hellip; %s"
+msgstr "Odstraňuji nastavení&hellip; %s"
+
+#: includes/admin/tools.php:1352
+msgid "Deleting Conversion Table&hellip; %s"
+msgstr "Odstraňuji převodní tabulky&hellip; %s"
+
+#: includes/admin/tools.php:1336 includes/admin/tools.php:1344
+msgid "Deleting User Meta&hellip; %s"
+msgstr "Odstraňuji meta data uživatelů&hellip; %s"
+
+#: includes/admin/tools.php:1331
+msgid "Deleting User&hellip; %s"
+msgstr "Odstaňuji uživatele&hellip; %s"
+
+#: includes/admin/tools.php:1316
+msgid "Deleting Topic Tags&hellip; %s"
+msgstr "Odstraňuji štítky témat&hellip; %s"
+
+#: includes/admin/tools.php:1307
+msgid "Deleting Post Meta&hellip; %s"
+msgstr "Odstraňuji meta data příspěvků&hellip; %s"
+
+#: includes/admin/tools.php:1294
+msgid "Deleting Posts&hellip; %s"
+msgstr "Odstraňuji příspěvky&hellip; %s"
+
+#: includes/admin/tools.php:1287
+msgid "Success!"
+msgstr "Povedlo se!"
+
+#: includes/admin/tools.php:1286
+msgid "Failed"
+msgstr "Selhání"
+
+#: includes/admin/tools.php:1253
+msgid "Reset bbPress"
+msgstr "Vyresetovat bbPress"
+
+#: includes/admin/tools.php:1245
+msgid "Human sacrifice, dogs and cats living together... mass hysteria!"
+msgstr "Komu není rady, tomu není pomoci!"
+
+#: includes/admin/tools.php:1244
+msgid "This process cannot be undone."
+msgstr "Tento proces se nedá vrátit zpět."
+
+#: includes/admin/tools.php:1240
+msgid "Are you sure you want to do this?"
+msgstr "Jste si jisti, že to chcete udělat?"
+
+#: includes/admin/tools.php:1235
+msgid "Note: Resetting without this checked will delete the meta-data necessary to delete these users."
+msgstr "Poznámka: Provedení resetování diskuzních fór bez zaškrtnutí této volby smaže veškerá meta data nezbytná pro odstranění importovaných uživatelů."
+
+#: includes/admin/tools.php:1234
+msgid "This option will delete all previously imported users, and cannot be undone."
+msgstr "Tato volba smaže všechny dříve importované uživatele. Tato akce je nevratná."
+
+#: includes/admin/tools.php:1233 includes/admin/tools.php:1243
+msgid "Say it ain't so!"
+msgstr "Řekněte, že to tak není!"
+
+#: includes/admin/tools.php:1230
+msgid "Delete imported users?"
+msgstr "Smazat importované uživatele?"
+
+#: includes/admin/tools.php:1226
+msgid "Importer Helper Data"
+msgstr "Pomocná data z importu"
+
+#: includes/admin/tools.php:1225
+msgid "Forum User Roles"
+msgstr "Uživatelské role související s diskuzními fóry"
+
+#: includes/admin/tools.php:1224
+msgid "Forum Activity"
+msgstr "Aktivity ve fórech"
+
+#: includes/admin/tools.php:1223
+msgid "Forum Settings"
+msgstr "Nastavení Diskuzního  Fóra"
+
+#: includes/admin/tools.php:1222
+msgid "Related Meta Data"
+msgstr "Související Meta data"
+
+#: includes/admin/tools.php:1221
+msgid "All Topic Tags"
+msgstr "Všechny štítky témat"
+
+#: includes/admin/tools.php:1220 includes/replies/functions.php:1994
+#: includes/replies/template.php:50
+msgid "All Replies"
+msgstr "Všechny příspěvky"
+
+#: includes/admin/tools.php:1219 includes/topics/functions.php:3439
+#: includes/topics/template.php:50
+msgid "All Topics"
+msgstr "Všechna témata"
+
+#: includes/admin/tools.php:1218 includes/forums/template.php:50
+msgid "All Forums"
+msgstr "Všechny fóra"
+
+#: includes/admin/tools.php:1216
+msgid "The following data will be removed:"
+msgstr "Odstraněny budou tyto údaje:"
+
+#: includes/admin/tools.php:1210
+msgid "Backup your database before proceeding."
+msgstr "Před pokračováním zazálohujte databázi"
+
+#: includes/admin/tools.php:1209
+msgid "Revert your forums back to a brand new installation. This process cannot be undone."
+msgstr "Vrátit diskuzní fóra zpět do výchozího stavu těsně po instalaci. Tento proces je nevratný!"
+
+#: includes/admin/tools.php:1100
+msgid "Recalculating the topic for each post &hellip; %s"
+msgstr "Pro každý příspěvek přepočítávám téma &hellip; %s"
+
+#: includes/admin/tools.php:1046
+msgid "Recalculating the forum for each post &hellip; %s"
+msgstr "Pro každý příspěvek přepočítávám fórum &hellip; %s"
+
+#: includes/admin/tools.php:1022
+msgid "Recalculating forum visibility &hellip; %s"
+msgstr "Přepočítávám viditelnost fóra &hellip; %s"
+
+#: includes/admin/tools.php:965
+msgid "Repairing the sticky topic to the parent forum relationships&hellip; %s"
+msgstr "Opravuji vztahy připnutých témat s nadřazeným fórem&hellip; %s"
+
+#: includes/admin/tools.php:859
+msgid "Recomputing latest post in every topic and forum&hellip; %s"
+msgstr "Přepočítávám nejnovější příspěvky v každém tématu a fóru&hellip; %s"
+
+#: includes/admin/tools.php:843
+msgid "Complete! %s users updated."
+msgstr "Hotovo! Upraveno %s uživatelů."
+
+#: includes/admin/tools.php:805
+msgid "Remapping forum role for each user on this site&hellip; %s"
+msgstr "Měním role fóra pro každého uživatele tohoto webu&hellip; %s"
+
+#: includes/admin/tools.php:743
+msgid "Removing trashed forums from user subscriptions&hellip; %s"
+msgstr "Odstraňuji vyhozená fóra ze sledovaných&hellip; %s"
+
+#: includes/admin/tools.php:682
+msgid "Removing trashed topics from user subscriptions&hellip; %s"
+msgstr "Odstraňuji vyhozená témata ze sledovaných&hellip; %s"
+
+#: includes/admin/tools.php:650 includes/admin/tools.php:711
+#: includes/admin/tools.php:772
+msgid "Nothing to remove!"
+msgstr "Není co odstranit!"
+
+#: includes/admin/tools.php:620
+msgid "Removing trashed topics from user favorites&hellip; %s"
+msgstr "Odstraňuji vyhozená témata z oblíbených&hellip; %s"
+
+#: includes/admin/tools.php:575
+msgid "Counting the number of topics to which each user has replied&hellip; %s"
+msgstr "Sčítám témata do kterých jednotlivý uživatelé přispívali&hellip; %s"
+
+#: includes/admin/tools.php:530
+msgid "Counting the number of topics each user has created&hellip; %s"
+msgstr "Sčítám témata založená jednotlivými uživateli&hellip; %s"
+
+#: includes/admin/tools.php:487
+msgid "Counting the number of replies in each forum&hellip; %s"
+msgstr "Sčítám příspěvky v každém fóru&hellip; %s"
+
+#: includes/admin/tools.php:453
+msgid "Counting the number of topics in each forum&hellip; %s"
+msgstr "Sčítám témata v každém fóru&hellip; %s"
+
+#: includes/admin/tools.php:434
+msgid "Complete! %s groups updated; %s forums updated; %s forum statuses synced."
+msgstr "Dokončeno! %s skupin aktualizováno; %s fór aktualizováno; %s stavů synchronizováno."
+
+#: includes/admin/tools.php:418
+msgid "group-forums"
+msgstr "skupinová fóra"
+
+#: includes/admin/tools.php:417
+msgid "Group Forums"
+msgstr "Skupinová fóra"
+
+#: includes/admin/tools.php:316
+msgid "Repairing BuddyPress group-forum relationships&hellip; %s"
+msgstr "Opravuji vazby skupinových fór BuddyPress&hellip; %s"
+
+#: includes/admin/tools.php:291
+msgid "Counting the number of spammed and trashed replies in each topic&hellip; %s"
+msgstr "Počítám nevyžádané zprávy a vyhozené příspěvky v každém tématu&hellip; %s"
+
+#: includes/admin/tools.php:249
+msgid "Counting the number of voices in each topic&hellip; %s"
+msgstr "Počítám diskutující v každém tématu&hellip; %s"
+
+#: includes/admin/tools.php:233 includes/admin/tools.php:276
+#: includes/admin/tools.php:302 includes/admin/tools.php:469
+#: includes/admin/tools.php:514 includes/admin/tools.php:559
+#: includes/admin/tools.php:604 includes/admin/tools.php:666
+#: includes/admin/tools.php:727 includes/admin/tools.php:788
+#: includes/admin/tools.php:950 includes/admin/tools.php:1007
+#: includes/admin/tools.php:1030 includes/admin/tools.php:1085
+#: includes/admin/tools.php:1130 includes/admin/tools.php:1186
+msgid "Complete!"
+msgstr "Hotovo!"
+
+#: includes/admin/tools.php:199 includes/admin/tools.php:250
+#: includes/admin/tools.php:292 includes/admin/tools.php:337
+#: includes/admin/tools.php:454 includes/admin/tools.php:488
+#: includes/admin/tools.php:531 includes/admin/tools.php:576
+#: includes/admin/tools.php:621 includes/admin/tools.php:683
+#: includes/admin/tools.php:744 includes/admin/tools.php:812
+#: includes/admin/tools.php:860 includes/admin/tools.php:966
+#: includes/admin/tools.php:1026 includes/admin/tools.php:1047
+#: includes/admin/tools.php:1101
+msgid "Failed!"
+msgstr "Selhalo!"
+
+#: includes/admin/tools.php:198
+msgid "Counting the number of replies in each topic&hellip; %s"
+msgstr "Počítám příspěvky v každém tématu&hellip; %s"
+
+#: includes/admin/tools.php:178
+msgid "Remap existing users to default forum roles"
+msgstr "Namapovat existující uživatele do výchozích rolí diskuzních fór"
+
+#: includes/admin/tools.php:177
+msgid "Remove trashed forums from user subscriptions"
+msgstr "Ze sledovaných smazat vyhozená fóra"
+
+#: includes/admin/tools.php:176
+msgid "Remove trashed topics from user subscriptions"
+msgstr "Ze sledovaných smazat vyhozená témata"
+
+#: includes/admin/tools.php:175
+msgid "Remove trashed topics from user favorites"
+msgstr "Z oblíbených položek smazat vyhozená témata"
+
+#: includes/admin/tools.php:174
+msgid "Count replies for each user"
+msgstr "Spočítat odpovědi pro každého uživatele"
+
+#: includes/admin/tools.php:173
+msgid "Count topics for each user"
+msgstr "Spočítat témata pro každého uživatele"
+
+#: includes/admin/tools.php:172
+msgid "Count spammed & trashed replies in each topic"
+msgstr "Spočítat nevyžádané zprávy a vyhozené odpovědi v každém tématu"
+
+#: includes/admin/tools.php:171
+msgid "Count voices in each topic"
+msgstr "Spočítat diskutující v každém tématu"
+
+#: includes/admin/tools.php:170
+msgid "Count replies in each topic"
+msgstr "Spočítat příspěvky v každém tématu"
+
+#: includes/admin/tools.php:169
+msgid "Count replies in each forum"
+msgstr "Spočítat příspěvky v každém fóru"
+
+#: includes/admin/tools.php:168
+msgid "Count topics in each forum"
+msgstr "Spočítat témata pro každé fórum"
+
+#: includes/admin/tools.php:167
+msgid "Repair BuddyPress Group Forum relationships"
+msgstr "Opravit vazby skupinových fór BuddyPress"
+
+#: includes/admin/tools.php:165
+msgid "Recalculate the sticky relationship of each topic"
+msgstr "Pro každé téma přepočítat vazby připnutých prvků."
+
+#: includes/admin/tools.php:164
+msgid "Recalculate last activity in each topic and forum"
+msgstr "Pro každé téma a fórum přepočítat poslední aktivitu."
+
+#: includes/admin/tools.php:163
+msgid "Recalculate private and hidden forums"
+msgstr "Přepočítat soukromá a skrytá fóra"
+
+#: includes/admin/tools.php:162
+msgid "Recalculate the parent forum for each post"
+msgstr "Pro každý příspěvek přepočítat nadřazené fórum"
+
+#: includes/admin/tools.php:161
+msgid "Recalculate the parent topic for each post"
+msgstr "Pro každý příspěvek přepočítat nadřazené téma"
+
+#: includes/admin/tools.php:61
+msgid "Repair Items"
+msgstr "Opravit položky"
+
+#: includes/admin/tools.php:46
+msgid "Repair"
+msgstr "Opravit"
+
+#: includes/admin/tools.php:43
+msgid "Relationships to Repair:"
+msgstr "Opravované vazby:"
+
+#: includes/admin/tools.php:37
+msgid "Some of these tools create substantial database overhead. Avoid running more than 1 repair job at a time."
+msgstr "Některé z těchto nástrojů silně zatěžují databázi. Nespouštějte současně více oprav."
+
+#: includes/admin/tools.php:36
+msgid "bbPress keeps track of relationships between forums, topics, replies, and topic tags, and users. Occasionally these relationships become out of sync, most often after an import or migration. Use the tools below to manually recalculate these relationships."
+msgstr "bbPress udržuje vazby mezi fóry, tématy, příspěvky, a štítky témat a uživateli. Někdy však může dojít k porušení synchronizace těchto vazeb, nejčastěji po importu nebo migraci. Pomocí níže uvedených nástrojů lze tyto vazby přepočítat."
+
+#: includes/admin/settings.php:1755
+msgid "Possible %1$s conflict: %2$s"
+msgstr "Možná %1$s konfliktní: %2$s"
+
+#: includes/admin/settings.php:1736
+msgid "%s page"
+msgstr "%s stránka"
+
+#: includes/admin/settings.php:1724
+msgid "Topic tag slug"
+msgstr "Slug štítku tématu"
+
+#: includes/admin/settings.php:1721
+msgid "View base"
+msgstr "Základní zobrazení"
+
+#: includes/admin/settings.php:1718
+msgid "User base"
+msgstr "Základní uživatel"
+
+#: includes/admin/settings.php:1715
+msgid "Reply slug"
+msgstr "Slug odpovědi"
+
+#: includes/admin/settings.php:1712
+msgid "Topic slug"
+msgstr "Slug tématu"
+
+#: includes/admin/settings.php:1709
+msgid "Forum slug"
+msgstr "Slug diskuzního fóra"
+
+#: includes/admin/settings.php:1706
+msgid "Topics base"
+msgstr "Základní téma"
+
+#: includes/admin/settings.php:1703
+msgid "Forums base"
+msgstr "Základní fórum"
+
+#: includes/admin/settings.php:1698
+msgid "Category base"
+msgstr "Základní kategorie"
+
+#: includes/admin/settings.php:1695
+msgid "Tag base"
+msgstr "Základní štítek"
+
+#: includes/admin/settings.php:1692
+msgid "Menus"
+msgstr "Menu"
+
+#: includes/admin/settings.php:1691
+msgid "Attachments"
+msgstr "Přílohy"
+
+#: includes/admin/settings.php:1689
+msgid "Pages"
+msgstr "Stránky"
+
+#: includes/admin/settings.php:1688
+#: templates/default/bbpress/loop-forums.php:21
+#: templates/default/bbpress/loop-replies.php:24
+#: templates/default/bbpress/loop-replies.php:66
+#: templates/default/bbpress/loop-topics.php:21
+msgid "Posts"
+msgstr "Příspěvky"
+
+#: includes/admin/settings.php:1590
+msgid "In the event of a slug collision with WordPress or BuddyPress, a warning will appear next to the problem slug(s)."
+msgstr "V případě kolize slugu s Wordpressem a nebo BuddyPressem bude vedle problémového slugu zobrazeno upozornění."
+
+#: includes/admin/settings.php:1589
+msgid "\"Single Slugs\" are used as a prefix when viewing an individual forum, topic, reply, user, or view."
+msgstr "\"Jednoduché Slugy\" se používají jako předpony při zobrazení jednotlivých fór, témat, odpovědí, uživatelů nebo zobrazení."
+
+#: includes/admin/settings.php:1588
+msgid "\"Archive Slugs\" are used as the \"root\" for your forums and topics. If you combine these values with existing page slugs, bbPress will attempt to output the most correct title and content."
+msgstr "\"Archivní Slugy\" se používají jako \"kořen\" pro fóra a témata. Pokud tyto hodnoty zkombinujete s existujícími slugy stránek, pokusí se bbPress zvolit výstup s nejsprávnějším nadpisem a obsahem."
+
+#: includes/admin/settings.php:1587
+msgid "The Slugs section allows you to control the permalink structure for your forums."
+msgstr "Sekce Slugy umožňuje ovládat strukturu trvalých odkazů v jednotlivých fórech"
+
+#: includes/admin/settings.php:1586
+msgid "Slugs"
+msgstr "Slug"
+
+#: includes/admin/settings.php:1580
+msgid "These are broken up into two separate groups: one for what appears in your theme, another for RSS feeds."
+msgstr "Toto je rozděleno na dvě skupiny: jedna pro to, co se objeví ve vašem tématu a druhá pro RSS informačních kanálů."
+
+#: includes/admin/settings.php:1579
+msgid "This is comparable to the WordPress \"Reading Settings\" page, where you can set the number of posts that should show on blog pages and in feeds."
+msgstr "Toto je obdobné s WordPress stránkou \"Nastavení --> Zobrazení\", kde můžete nastavit počet příspěvků, které by se měli zobrazovat na stránkách blogu a v informačních kanálech."
+
+#: includes/admin/settings.php:1578
+msgid "Per Page settings allow you to control the number of topics and replies appear on each page."
+msgstr "Nastavení \"Na Stránce\", umožňuje nastavit počet témat a odpovědí zobrazených na každé stránce."
+
+#: includes/admin/settings.php:1577
+msgid "Per Page"
+msgstr "Na stránku"
+
+#: includes/admin/settings.php:1571
+msgid "You must click the Save Changes button at the bottom of the screen for new settings to take effect."
+msgstr "Aby se provedené úpravy uložily a projevily na webu, musíte také kliknout na tlačítko &#8222;Uložit změny&#8220; dole na obrazovce."
+
+#: includes/admin/settings.php:1568
+msgid "Auto-embed will embed the media content from a URL directly into the replies. For example: links to Flickr and YouTube."
+msgstr "Auto-ukládání, vloží mediální obsah z URL přímo do odpovědi. Například: odkazy na Flickr a nebo YouTube."
+
+#: includes/admin/settings.php:1567
+msgid "The Fancy Editor brings the luxury of the Visual editor and HTML editor from the traditional WordPress dashboard into your theme."
+msgstr "Fancy editor přináší do šablony luxusní vizuální editor a HTML editor z používaný ve WordPress administraci."
+
+#: includes/admin/settings.php:1566
+msgid "\"Anonymous Posting\" allows guest users who do not have accounts on your site to both create topics as well as replies."
+msgstr "\"Anonymní přispívání\" umožňuje návštěvníkům bez založeného účtu zakládat témata a také přidávat odpovědi."
+
+#: includes/admin/settings.php:1565
+msgid "Topic-Tags allow users to filter topics between forums. This is enabled by default."
+msgstr "Štítky témat umožňují uživatelům filtrovat zobrazené informace z diskuzních fór. Tato funkce, je výchozím nastavení, zapnuta."
+
+#: includes/admin/settings.php:1564
+msgid "Subscriptions allow users to subscribe for notifications to topics that interest them. This is enabled by default."
+msgstr "Sledování dovoluje uživatelům odebírat oznámení o tématech, která je zajímají. Tato funkce je standardně zapnuta."
+
+#: includes/admin/settings.php:1563
+msgid "Favorites are a way for users to save and later return to topics they favor. This is enabled by default."
+msgstr "Oblíbené umožňuje uživatelům označovat a později se vracet k tématům, která se jim zalíbí. Tato funkce, je standardně zapnuta."
+
+#: includes/admin/settings.php:1562
+msgid "\"Throttle time\" is the amount of time required between posts from a single author. The higher the throttle time, the longer a user will need to wait between posting to the forum."
+msgstr "\"Časový odstup\" definuje časový interval, který musí uplynout mezi dvěma příspěvky jednoho autora. Čím větší je interval, tím déle si bude uživatel  muset počkat mezi přidáním jednotlivých příspěvků."
+
+#: includes/admin/settings.php:1561
+msgid "You can choose to lock a post after a certain number of minutes. \"Locking post editing\" will prevent the author from editing some amount of time after saving a post."
+msgstr "Příspěvek může být po několika minutách uzamčen. \"Uzamčení úpravy příspěvků\" znemožní autorovi upravovat příspěvek po uplynutí dané doby od jeho publikování."
+
+#: includes/admin/settings.php:1558
+msgid "In the Main Settings you have a number of options:"
+msgstr "V Základním nastavení máte několik možností:"
+
+#: includes/admin/settings.php:1557
+msgid "Main Settings"
+msgstr "Základní nastavení"
+
+#: includes/admin/settings.php:1551
+msgid "Please see the additional help tabs for more information on each indiviual section."
+msgstr "Další informace o jednotlivých sekcích naleznete na záložkách nápovědy."
+
+#: includes/admin/settings.php:1550
+msgid "This screen provides access to all of the Forums settings."
+msgstr "Tato obrazovka umožňuje přístup ke všem nastavením diskuzních fór."
+
+#: includes/admin/settings.php:1519
+msgid "Stop"
+msgstr "Konec"
+
+#: includes/admin/settings.php:1518
+msgid "Start"
+msgstr "Začátek"
+
+#: includes/admin/settings.php:1488
+msgid "Non-bbPress passwords cannot be automatically converted. They will be converted as each user logs in."
+msgstr "Hesla, která nepochází z bbPress, nelze automaticky převést. K převedení dojde až po prvním přihlášení uživatele."
+
+#: includes/admin/settings.php:1487
+msgid "Attempt to import user accounts from previous forums"
+msgstr "Pokusit se o import uživatelských účtů z původního fóra"
+
+#: includes/admin/settings.php:1473
+msgid "Use this if an import failed and you want to remove that incomplete data."
+msgstr "Tuto volbu zaškrtněte pokud selže import dat diskuzního fóra a je nutné odstranit neúplné údaje."
+
+#: includes/admin/settings.php:1472
+msgid "Purge all information from a previously attempted import"
+msgstr "Vymazat všechny informace z předcházejícího pokusu o import"
+
+#: includes/admin/settings.php:1458
+msgid "You should clean old conversion information before starting over."
+msgstr "Před spuštěním nového převodu je nutné vymazat informace o staré konverzi."
+
+#: includes/admin/settings.php:1457
+msgid "Start a fresh conversion from the beginning"
+msgstr "Novou konverzi spustit od začátku"
+
+#: includes/admin/settings.php:1443
+msgid "Keep this high to prevent too-many-connection issues."
+msgstr "Chcete-li zabránit výskytu chyby too-many-connection, ponechte toto číslo vysoké."
+
+#: includes/admin/settings.php:1442
+msgid "second(s) delay between each group of rows"
+msgstr "sekund - prodleva mezi zpracováním jednotlivých dávek"
+
+#: includes/admin/settings.php:1428
+msgid "Keep this low if you experience out-of-memory issues."
+msgstr "Pokud se setkáváte s problémy s pamětí (out-of-memory), nastavte tuto hodnotu na malé číslo."
+
+#: includes/admin/settings.php:1427
+msgid "rows to process at a time"
+msgstr "řádky, které budou zpracovány v jedné dávce"
+
+#: includes/admin/settings.php:1413
+msgid "(If converting from BuddyPress Forums, use \"wp_bb_\" or your custom prefix)"
+msgstr "(přecházíte-li z BuddyPress Fóra, použijte \"wp_bb_\", nebo váš uživatelský prefix)"
+
+#: includes/admin/settings.php:1399
+msgid "Some optional parameters to help tune the conversion process."
+msgstr "Volitelné parametry, které Vám pomohou optimalizovat proces převodu."
+
+#: includes/admin/settings.php:1386
+msgid "Name of the database with your old forum data"
+msgstr "Název databáze, která obsahuje data vašeho původního diskuzního fóra"
+
+#: includes/admin/settings.php:1372
+msgid "Password to access the database"
+msgstr "Heslo pro přístup k databázi"
+
+#: includes/admin/settings.php:1358
+msgid "User for your database connection"
+msgstr "Uživatel s přístupem k databázi"
+
+#: includes/admin/settings.php:1344
+msgid "Use default 3306 if unsure"
+msgstr "Nejste-li si jisti, použijte výchozí hodnotu - 3306"
+
+#: includes/admin/settings.php:1330
+msgid "IP or hostname"
+msgstr "IP nebo název hostitele"
+
+#: includes/admin/settings.php:1316
+msgid "is the previous forum software"
+msgstr "je software původního diskuzního fóra"
+
+#: includes/admin/settings.php:1286
+msgid "Information about your previous forums database so that they can be converted. <strong>Backup your database before proceeding.</strong>"
+msgstr "Informace o vašem původním diskuzním fóru, které jsou nezbytné pro provedení převodu. <strong>Než budete pokračovat zazálohujte databázi.</strong>"
+
+#: includes/admin/settings.php:1267
+#: templates/default/bbpress/form-user-edit.php:173
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: includes/admin/settings.php:1258
+msgid "Forums Settings"
+msgstr "Nastavení Diskuzních fór"
+
+#: includes/admin/settings.php:1235
+msgid "Allow Akismet to actively prevent forum spam."
+msgstr "Umožněte Akismetu aktivně chránit fórum před spamem."
+
+#: includes/admin/settings.php:1218
+msgid "Forum settings for Akismet"
+msgstr "Nastavení fóra pro Akismet"
+
+#: includes/admin/settings.php:1203
+msgid "Using the Forum Root is not recommended. Changing this does not move existing forums."
+msgstr "Použití kořene fóra není doporučeno. Změnou této položky existující fóra nepřesunete."
+
+#: includes/admin/settings.php:1202
+msgid "is the parent for all group forums"
+msgstr "je nadřazeným pro všechna skupinová fóra"
+
+#: includes/admin/settings.php:1194
+msgid "&mdash; Forum root &mdash;"
+msgstr "&mdash; Kořen diskuzního fóra &mdash;"
+
+#: includes/admin/settings.php:1177
+msgid "Allow BuddyPress Groups to have their own forums"
+msgstr "Umožnit BuddyPress skupinám mít svá vlastní diskuzní fóra"
+
+#: includes/admin/settings.php:1161
+msgid "Forum settings for BuddyPress"
+msgstr "Nastavení fóra pro BuddyPress"
+
+#: includes/admin/settings.php:1043
+msgid "Custom slugs for single forums, topics, replies, tags, views, and search."
+msgstr "Uživatelské slugy pro jednotlivá fóra, témata, odpovědi, zobrazení a hledání"
+
+#: includes/admin/settings.php:943
+msgid "Customize your user profile slugs."
+msgstr "Přizpůsobte slugy svého uživatelského profilu."
+
+#: includes/admin/settings.php:916
+msgid "Topics by Freshness"
+msgstr "Témata podle aktuálnosti"
+
+#: includes/admin/settings.php:913
+msgid "Forum Index"
+msgstr "Index fóra"
+
+#: includes/admin/settings.php:893
+msgid "Prefix all forum content with the Forum Root slug (Recommended)"
+msgstr "Jako prefix obsahu všech fór použít kořenový slug Fóra (Doporučeno)"
+
+#: includes/admin/settings.php:860
+msgid "Customize your Forums root. Partner with a WordPress Page and use Shortcodes for more flexibility."
+msgstr "Přizpůsobit kořen Fóra. Spolupracujte s Wordrpressem a pro větší flexibilitu využívejte Krátké kódy."
+
+#: includes/admin/settings.php:810
+msgid "How many topics and replies to show per RSS page"
+msgstr "Kolik témat a odpovědi zobrazit na jedné RSS stránce"
+
+#: includes/admin/settings.php:779 includes/admin/settings.php:795
+#: includes/admin/settings.php:826 includes/admin/settings.php:842
+msgid "per page"
+msgstr "na stránku"
+
+#: includes/admin/settings.php:763
+msgid "How many topics and replies to show per page"
+msgstr "Kolik témat a odpovědi zobrazit na jedné stránce"
+
+#: includes/admin/settings.php:748
+msgid "Embed media (YouTube, Twitter, Flickr, etc...) directly into topics and replies"
+msgstr "Vkládat media (YouTube, Twitter, Flickr, atd ...) přímo do témat a odpovědí"
+
+#: includes/admin/settings.php:732
+msgid "No template packages available."
+msgstr "Nejsou dostupné žádné šablony."
+
+#: includes/admin/settings.php:728
+msgid "will serve all bbPress templates"
+msgstr "bude sloužit všem šablonám bbPress"
+
+#: includes/admin/settings.php:722
+msgid "%1$s - %2$s"
+msgstr "%1$s, %2$s"
+
+#: includes/admin/settings.php:698
+msgid "How your forum content is displayed within your existing theme."
+msgstr "Jak je obsah fóra zobrazovaný v rámci vaší zvolená šablony."
+
+#: includes/admin/settings.php:685
+msgid "Add toolbar & buttons to textareas to help with HTML formatting"
+msgstr "Přidat k textovým polím nástrojovou lištu & tlačítka pro jednodušší formátování  HTML"
+
+#: includes/admin/settings.php:669
+msgid "Allow topic and reply revision logging"
+msgstr "Povolit zaznamenávání revizí témat a odpovědí"
+
+#: includes/admin/settings.php:652
+msgid "Enable threaded (nested) replies %s levels deep"
+msgstr "Povolit vnořené odpovědi (vlákno) do hloubky %s úrovně"
+
+#: includes/admin/settings.php:613
+msgid "Allow forum wide search"
+msgstr "Povolit rozšířené vyhledávání ve fóru"
+
+#: includes/admin/settings.php:597
+msgid "Allow topics to have tags"
+msgstr "Povolit štítky v tématech"
+
+#: includes/admin/settings.php:581
+msgid "Allow users to subscribe to forums and topics"
+msgstr "Povolit uživatelům sledovat jednotlivá fóra a témata"
+
+#: includes/admin/settings.php:565
+msgid "Allow users to mark topics as favorites"
+msgstr "Povolit uživatelům označovat témata jako oblíbená"
+
+#: includes/admin/settings.php:549
+msgid "Forum features that can be toggled on and off"
+msgstr "Funkce diskuzního fóra, které mohou být zapínány a vypínány"
+
+#: includes/admin/settings.php:533
+msgid "Automatically give registered visitors the %s forum role"
+msgstr "Registrovaným uživatelům ve fóru automaticky přiřadit roli %s"
+
+#: includes/admin/settings.php:499
+msgid "Allow guest users without accounts to create topics and replies"
+msgstr "Povolit uživatelům bez založeného účtu vytvářet témata a odpovědi"
+
+#: includes/admin/settings.php:483 includes/common/functions.php:124
+msgid "seconds"
+msgstr "sekund"
+
+#: includes/admin/settings.php:467 includes/common/functions.php:123
+msgid "minutes"
+msgstr "minut"
+
+#: includes/admin/settings.php:450
+msgid "Setting time limits and other user posting capabilities"
+msgstr "Nastavení časových intervalů a dalších uživatelských možností pro přispívání"
+
+#: includes/admin/settings.php:412
+msgid "Use Akismet"
+msgstr "Používat Akismet"
+
+#: includes/admin/settings.php:399
+msgid "Group Forums Parent"
+msgstr "Nadřazené skupinovým fórům"
+
+#: includes/admin/settings.php:391
+msgid "Enable Group Forums"
+msgstr "Povolit skupinová diskuzní fóra"
+
+#: includes/admin/settings.php:378
+msgid "Topic Subscriptions"
+msgstr "Odběry témat"
+
+#: includes/admin/settings.php:370 includes/extend/buddypress/loader.php:285
+msgid "Favorite Topics"
+msgstr "Oblíbený témata"
+
+#: includes/admin/settings.php:362 includes/extend/buddypress/loader.php:207
+#: includes/extend/buddypress/loader.php:277
+#: templates/default/bbpress/user-details.php:41
+msgid "Replies Created"
+msgstr "Vytvořené odpověďi"
+
+#: includes/admin/settings.php:354 includes/extend/buddypress/loader.php:196
+#: includes/extend/buddypress/loader.php:269
+#: templates/default/bbpress/user-details.php:35
+msgid "Topics Started"
+msgstr "Založené příspěvky"
+
+#: includes/admin/settings.php:346
+msgid "User Base"
+msgstr "Základní uživatel"
+
+#: includes/admin/settings.php:317
+msgid "Topic View"
+msgstr "Zobrazení tématu"
+
+#: includes/admin/settings.php:280
+msgid "Forum root should show"
+msgstr "Root diskuzního fóra by měl ukázat"
+
+#: includes/admin/settings.php:272
+msgid "Forum Prefix"
+msgstr "Prefix diskuzního fóra"
+
+#: includes/admin/settings.php:264
+msgid "Forum Root"
+msgstr "Root diskuzního fóra"
+
+#: includes/admin/settings.php:209
+msgid "Current Package"
+msgstr "Aktuální balíček"
+
+#: includes/admin/settings.php:190
+msgid "Reply Threading"
+msgstr "Vlákno odpovědi"
+
+#: includes/admin/settings.php:182
+msgid "Auto-embed links"
+msgstr "Automaticky vkládat odkazy"
+
+#: includes/admin/settings.php:174
+msgid "Post Formatting"
+msgstr "Formátování příspěvku"
+
+#: includes/admin/settings.php:166 includes/admin/settings.php:333
+#: includes/common/template.php:2330 includes/search/template.php:225
+#: templates/default/bbpress/form-search.php:17
+msgid "Search"
+msgstr "Hledat"
+
+#: includes/admin/settings.php:158
+msgid "Topic tags"
+msgstr "Štítky témat"
+
+#: includes/admin/settings.php:150 includes/extend/buddypress/loader.php:230
+#: templates/default/bbpress/user-details.php:58
+msgid "Subscriptions"
+msgstr "Předplatné"
+
+#: includes/admin/settings.php:142 includes/extend/buddypress/loader.php:218
+#: templates/default/bbpress/user-details.php:48
+msgid "Favorites"
+msgstr "Oblíbené"
+
+#: includes/admin/settings.php:134 includes/admin/settings.php:1690
+msgid "Revisions"
+msgstr "Revize"
+
+#: includes/admin/settings.php:115
+msgid "Auto role"
+msgstr "Automatická role"
+
+#: includes/admin/settings.php:107
+msgid "Anonymous posting"
+msgstr "Anonymní přispívání"
+
+#: includes/admin/settings.php:99
+msgid "Throttle posting every"
+msgstr "Časový odstup mezi příspěvky"
+
+#: includes/admin/settings.php:91
+msgid "Disallow editing after"
+msgstr "Znemožnit editaci po"
+
+#: includes/admin/settings.php:69
+msgid "Akismet Integration"
+msgstr "Integrace Akismetu"
+
+#: includes/admin/settings.php:64
+msgid "BuddyPress Integration"
+msgstr "Integrace BuddyPress"
+
+#: includes/admin/settings.php:59
+msgid "Forum User Slugs"
+msgstr "Slugy uživatelů fóra"
+
+#: includes/admin/settings.php:54
+msgid "Single Forum Slugs"
+msgstr "Slugy jednotlivých fór"
+
+#: includes/admin/settings.php:49
+msgid "Forum Root Slug"
+msgstr "Kořenový slug diskuzního fóra"
+
+#: includes/admin/settings.php:44
+msgid "Topics and Replies Per RSS Page"
+msgstr "Počet témat a odpovědí na RSS stránce"
+
+#: includes/admin/settings.php:39
+msgid "Topics and Replies Per Page"
+msgstr "Počet témat a odpovědí na stránce"
+
+#: includes/admin/settings.php:34
+msgid "Forum Theme Packages"
+msgstr "Balíčky motivů Fóra"
+
+#: includes/admin/settings.php:29
+msgid "Forum Features"
+msgstr "Funkce fóra"
+
+#: includes/admin/settings.php:24
+msgid "Forum User Settings"
+msgstr "Uživatelské nastavení fóra"
+
+#: includes/admin/replies.php:883
+msgid "Reply draft updated. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Koncept odpovědi byl aktualizován. <a target=\"_blank\" href=\"%s\">Náhled tématu</a>"
+
+#: includes/admin/replies.php:876
+msgid "Reply scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview topic</a>"
+msgstr "Odpověď byla naplánována na: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Náhled tématu</a>"
+
+#: includes/admin/replies.php:873
+msgid "Reply submitted. <a target=\"_blank\" href=\"%s\">Preview topic</a>"
+msgstr "Odpověď byla publikována. <a target=\"_blank\" href=\"%s\">Náhled tématu</a>"
+
+#: includes/admin/replies.php:870
+msgid "Reply saved."
+msgstr "Odpověď uložena."
+
+#: includes/admin/replies.php:867
+msgid "Reply created. <a href=\"%s\">View topic</a>"
+msgstr "Odpověď vytvořena. <a href=\"%s\">Prohlížet téma</a>"
+
+#. translators: %s: date and time of the revision
+#: includes/admin/replies.php:863
+msgid "Reply restored to revision from %s"
+msgstr "Odpověď byla obnovena na revizi z %s"
+
+#: includes/admin/replies.php:858
+msgid "Reply updated."
+msgstr "Odpověď aktualizována."
+
+#: includes/admin/replies.php:849
+msgid "Reply updated. <a href=\"%s\">View topic</a>"
+msgstr "Odpověď aktualizována. <a href=\"%s\">Prohlížet téma</a>"
+
+#: includes/admin/replies.php:789 includes/admin/topics.php:859
+msgid "In all forums"
+msgstr "Ve všech fórech"
+
+#: includes/admin/replies.php:779 includes/admin/topics.php:849
+msgid "Empty Spam"
+msgstr "Vyprázdnit spam"
+
+#: includes/admin/replies.php:753 includes/admin/topics.php:823
+msgid "Delete Permanently"
+msgstr "Smazat natrvalo"
+
+#: includes/admin/replies.php:753 includes/admin/topics.php:823
+#: includes/replies/template.php:2053 includes/topics/template.php:2634
+msgid "Delete this item permanently"
+msgstr "Smazat položku natrvalo"
+
+#: includes/admin/replies.php:749 includes/admin/topics.php:819
+#: includes/replies/template.php:2034 includes/topics/template.php:2615
+msgid "Trash"
+msgstr "Odstranit"
+
+#: includes/admin/replies.php:749 includes/admin/topics.php:819
+#: includes/replies/template.php:2049 includes/topics/template.php:2630
+msgid "Move this item to the Trash"
+msgstr "Přesunout tuto položku do koše"
+
+#: includes/admin/replies.php:747 includes/admin/topics.php:817
+#: includes/replies/template.php:2035 includes/topics/template.php:2616
+msgid "Restore"
+msgstr "Obnovit"
+
+#: includes/admin/replies.php:747 includes/admin/topics.php:817
+#: includes/replies/template.php:2047 includes/topics/template.php:2628
+msgid "Restore this item from the Trash"
+msgstr "Obnovit tuto položku z koše"
+
+#: includes/admin/replies.php:738 includes/admin/topics.php:809
+#: includes/replies/template.php:2105 includes/topics/template.php:2872
+msgid "Spam"
+msgstr "Spam"
+
+#: includes/admin/replies.php:738
+msgid "Mark this reply as spam"
+msgstr "Označit odpověď jako spam"
+
+#: includes/admin/replies.php:736 includes/admin/topics.php:807
+msgid "Not spam"
+msgstr "Není spam"
+
+#: includes/admin/replies.php:736
+msgid "Mark the reply as not spam"
+msgstr "Vyjmout odpověď ze spamu"
+
+#: includes/admin/replies.php:725 includes/admin/topics.php:776
+msgid "View"
+msgstr "Prohlížet"
+
+#: includes/admin/replies.php:725 includes/admin/topics.php:776
+msgid "View &#8220;%s&#8221;"
+msgstr "Zobrazit &#8220;%s&#8221;"
+
+#: includes/admin/replies.php:657
+msgid "(Mismatch)"
+msgstr "(Neshoda)"
+
+#: includes/admin/replies.php:651 includes/admin/replies.php:666
+#: includes/admin/topics.php:687
+msgid "No Forum"
+msgstr "Žádné fórum"
+
+#: includes/admin/replies.php:625 includes/admin/replies.php:633
+msgid "No Topic"
+msgstr "Žádné téma"
+
+#: includes/admin/replies.php:572 includes/admin/topics.php:636
+#: templates/default/bbpress/loop-replies.php:18
+#: templates/default/bbpress/loop-replies.php:60
+#: templates/default/bbpress/loop-search.php:18
+#: templates/default/bbpress/loop-search.php:40
+msgid "Author"
+msgstr "Autor"
+
+#: includes/admin/replies.php:569
+msgid "Title"
+msgstr "Název"
+
+#: includes/admin/replies.php:536
+msgid "Reply \"%1$s\" successfully unmarked as spam."
+msgstr "Odpověď \"%1$s\" byla vyjmuta ze spamu."
+
+#: includes/admin/replies.php:536
+msgid "There was a problem unmarking the reply \"%1$s\" as spam."
+msgstr "Nastal problém při odznačování odpovědi \"%1$s\" jako spam."
+
+#: includes/admin/replies.php:532
+msgid "Reply \"%1$s\" successfully marked as spam."
+msgstr "Odpověď \"%1$s\" byla označena jako spam."
+
+#: includes/admin/replies.php:532
+msgid "There was a problem marking the reply \"%1$s\" as spam."
+msgstr "Při označování odpovědi \"%1$s\" jako spam došlo k problému."
+
+#: includes/admin/replies.php:464 includes/admin/topics.php:488
+msgid "You do not have the permission to do that!"
+msgstr "Nemáte oprávnění k této aktivitě!"
+
+#: includes/admin/replies.php:461
+msgid "The reply was not found!"
+msgstr "Odpověď nebyla nalezena!"
+
+#: includes/admin/replies.php:347 includes/admin/topics.php:363
+#: templates/default/bbpress/form-anonymous.php:17
+msgid "Author Information"
+msgstr "Informace o autorovi"
+
+#: includes/admin/replies.php:223
+msgid "<strong>Reply To</strong> determines the threading of the reply."
+msgstr "<strong>Odpověd na</strong> určuje vlákno odpovědi."
+
+#: includes/admin/replies.php:222
+msgid "<strong>Topic</strong> determines the parent topic that the reply belongs to."
+msgstr "<strong>Téma</strong> určuje nadřazené téma, do které odpověď patří."
+
+#: includes/admin/replies.php:221
+msgid "<strong>Forum</strong> dropdown determines the parent forum that the reply belongs to. Select the forum, or leave the default (Use Forum of Topic) to post the reply in forum of the topic."
+msgstr "<strong>Fórum</strong> Rozevírací seznam určuje nadřazené odpovědi fóra.  Z rozbalovací nabídky vyberte fórum, popřípadě ponechte výchozí (Aktualní fórum) pro publikování odpovědi v nadřazeném fóru daného tématu."
+
+#: includes/admin/replies.php:219
+msgid "Select the attributes that your reply should have:"
+msgstr "Vyberte atributy pro odpověď:"
+
+#: includes/admin/replies.php:217 includes/admin/replies.php:255
+msgid "Reply Attributes"
+msgstr "Atributy odpovědi"
+
+#: includes/admin/replies.php:212
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your reply without inserting it. This is usually useful only if your theme makes use of the featured image as a reply thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Náhledový obrázek</strong> - umožní přidružit  odpovědi obrázek bez nutnosti jej vkládat. Tato funkce obvykle využijete, pokud vaše šablona tématu využívá náhledový obrázek jako miniaturu odpovědi na domácí stránce, v uživatelském záhlaví apod."
+
+#: includes/admin/replies.php:209
+msgid "<strong>Publish</strong> - You can set the terms of publishing your reply in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a reply or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a reply to be published in the future or backdate a reply."
+msgstr "<strong>Publikovat</strong> - Na panelu Publikovat můžete nastavit podmínky publikování vaší odpovědi. Rozšířené možnosti pro stav, viditelnost a publikování se zobrazí po kliknutí na odkaz Upravit. Viditelnost odpovědi zahrnuje možnosti pro ochranu heslem a pro její trvalé zobrazování v popředí blogu (připnutí). Publikovat (okamžitě) vám dovoluje nastavit datum a čas jak do minulosti tak do budoucnosti, aby bylo možné naplánovat odložené publikování odpovědi, nebo ji zařadit na správné místo mezi publikované v minulosti."
+
+#: includes/admin/replies.php:206
+msgid "<strong>Reply Editor</strong> - Enter the text for your reply. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your reply text. You can insert media files by clicking the icons above the reply editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular reply editor."
+msgstr "<strong>Editor odpovědi</strong> - Vložte text své odpovědi. Kliknutím na odpovídající záložku můžete využít vizuální mód editace nebo HTML kód. Vizuální mód poskytuje WYSIWYG editor, přičemž poslední ikona zobrazí druhý řádek ikon. HTML mód umožňuje psát surový HTML kód. Mediální soubory můžete vkládat kliknutím na ikony nad editorem odpovědi a následováním dalších pokynů. Pomocí ikony Celé obrazovky ve vizuálním módu (předposlední v horní řadě ikon) nebo HTML módu (poslední v řadě) můžete psát bez vyrušování. V tomto režimu zobrazíte nabídku tlačítek přejetím kurzoru nad horní oblastí obrazovky."
+
+#: includes/admin/replies.php:205
+msgid "<strong>Title</strong> - Enter a title for your reply. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
+msgstr "<strong>Název</strong> - Vložte název odpovědi. Po zadání názvu se níže zobrazí trvalý odkaz, který můžete upravit."
+
+#: includes/admin/replies.php:203
+msgid "Title and Reply Editor"
+msgstr "Název a Editor odpovědi"
+
+#: includes/admin/replies.php:193
+msgid "The title field and the big reply editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
+msgstr "Základní panel pro zadávání názvu a textu odpovědi (oblast editoru) jsou sice pevně umístěné, ale všechny ostatní panely je možné na stránce libovolně přemístit uchopením a tažením lišty s názvem příslušné sekce pomocí kurzoru myši nebo je kliknutím rozbalit či sbalit. Pomocí zaškrtávacích polí v záložce &#8222;Obsah obrazovky&#8220; můžete odhalit a začít používat další panely s dodatečnými informacemi (Stručný výpis, Odeslat trackbacky, Uživatelská pole, Komentáře, Slug, Autor) nebo nastavit základní rozmístění sekcí na stránce volbou počtu sloupců (1 nebo 2)."
+
+#: includes/admin/replies.php:172
+msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected replies at once. To remove a reply from the grouping, just click the x next to its name in the Bulk Edit area that appears."
+msgstr "V případě využití Hromadných úprav můžete měnit některé informace u všech vybraných odpovědí najednou (např. kategorii, autora, atd.). Pokud budete chtít nějakou odpověď z označené skupiny odebrat, stačí kliknout na malé tlačítko x vedle jeho názvu v zobrazené oblasti pro Hromadné úpravy."
+
+#: includes/admin/replies.php:171
+msgid "You can also edit or move multiple replies to the trash at once. Select the replies you want to act on using the checkboxes, then select the action you want to take from the Bulk Actions menu and click Apply."
+msgstr "Je možné také upravovat nebo přesunout do koše několik odpovědí najednou. Nejdříve zaškrtnutím označte konkrétní příspěvky, které chcete upravovat (odstranit), potom vyberte v rozevíracím menu Hromadné úpravy možnost Upravit (Vyhodit) a nakonec klikněte na tlačítko Použít."
+
+#: includes/admin/replies.php:162
+msgid "<strong>Preview</strong> will show you what your draft reply will look like if you publish it. View will take you to your live site to view the reply. Which link is available depends on your reply&#8217;s status."
+msgstr "<strong>Náhled</strong> - zobrazí aktuální koncept odpovědi tak, jak by vypadala na živém webu, pokud byste ji právě publikovali. To, zda je odkaz dostupný závisí na stavu vaší odpovědi."
+
+#: includes/admin/replies.php:161
+msgid "<strong>Spam</strong> removes your reply from this list and places it in the spam queue, from which you can permanently delete it."
+msgstr "<strong>Spam</strong> - vyjme odpověď z tohoto výpisu a uloží ji do spamu, odkud může být později trvale odstraněna."
+
+#: includes/admin/replies.php:160
+msgid "<strong>Trash</strong> removes your reply from this list and places it in the trash, from which you can permanently delete it."
+msgstr "<strong>Koš</strong> - vyjme odpověď z tohoto výpisu a přesune ji koše, odkud může být později trvale odstraněna."
+
+#: includes/admin/replies.php:158
+msgid "<strong>Edit</strong> takes you to the editing screen for that reply. You can also reach that screen by clicking on the reply title."
+msgstr "<strong>Upravit</strong> - zobrazí stránku pro detailní úpravy vybrané odpovědi. To samé se stane, když kliknete přímo na její název."
+
+#: includes/admin/replies.php:156
+msgid "Hovering over a row in the replies list will display action links that allow you to manage your reply. You can perform the following actions:"
+msgstr "Pokud najedete myší na řádek odpovědi ve výpisu, zobrazí možnosti pro její správu. Ihned tak můžete provést následující úkony:"
+
+#: includes/admin/replies.php:147
+msgid "You can refine the list to show only replies in a specific category or from a specific month by using the dropdown menus above the replies list. Click the Filter button after making your selection. You also can refine the list by clicking on the reply author, category or tag in the replies list."
+msgstr "Filtr zobrazení můžete zjemnit na zobrazení odpovědí z určité kategorie, nebo konkrétního měsíce pomocí rozevíracích nabídek nad výpisem odpovědí. Nastavte si požadovaný filtr a klikněte na tlačítko &#8222;Filtrovat&#8220;. Kromě toho lze odpovědi třídit přímo kliknutím na autora příspěvku, kategorii nebo štítek přímo ve výpisu odpovědí."
+
+#: includes/admin/replies.php:146
+msgid "You can view replies in a simple title list or with an excerpt. Choose the view you prefer by clicking on the icons at the top of the list on the right."
+msgstr "Odpovědi můžete zobrazovat ve formě prostého seznamu nebo detailně. Způsob zobrazení, se kterým se vám lépe pracuje můžete změnit kliknutím na ikonky v pravém horním rohu výpisu."
+
+#: includes/admin/replies.php:145
+msgid "You can filter the list of replies by reply status using the text links in the upper left to show All, Published, Draft, or Trashed replies. The default view is to show all replies."
+msgstr "Výpis odpovědí můžete filtrovat pomocí textových odkazů, vlevo nahoře - Zobrazit všechny, Publikované, Koncept a nebo Vyhozené.  Výchozí nastavení je Zobrazit všechny."
+
+#: includes/admin/replies.php:144
+msgid "You can hide/display columns based on your needs and decide how many replies to list per screen using the Screen Options tab."
+msgstr "Prostřednictvím záložky \"Obsah obrazovky\" si sami si rozhodnete, kolik témat se na obrazovce bude zobrazovat a které sloupce budou zobrazeny."
+
+#: includes/admin/replies.php:134
+msgid "This screen provides access to all of your replies. You can customize the display of this screen to suit your workflow."
+msgstr "Přes tuto stránku máte přístup ke všem svým odpovědím. Zobrazení informací si můžete libovolně přizpůsobit, aby odpovídalo vašim potřebám."
+
+#: includes/admin/metaboxes.php:525
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: includes/admin/metaboxes.php:524
+msgid "IP:"
+msgstr "IP:"
+
+#: includes/admin/metaboxes.php:517
+msgid "ID"
+msgstr "ID"
+
+#: includes/admin/metaboxes.php:516
+msgid "ID:"
+msgstr "ID:"
+
+#: includes/admin/metaboxes.php:509
+#: templates/default/bbpress/form-user-edit.php:57
+msgid "Website"
+msgstr "Webová stránka"
+
+#: includes/admin/metaboxes.php:508
+#: templates/default/bbpress/form-anonymous.php:32
+msgid "Website:"
+msgstr "Webová stránka:"
+
+#: includes/admin/metaboxes.php:503
+#: templates/default/bbpress/form-user-edit.php:103
+#: templates/default/bbpress/form-user-register.php:28
+msgid "Email"
+msgstr "Email"
+
+#: includes/admin/metaboxes.php:502
+msgid "Email:"
+msgstr "Email:"
+
+#: includes/admin/metaboxes.php:497
+#: templates/default/bbpress/form-user-edit.php:14
+#: templates/default/bbpress/form-user-edit.php:19
+msgid "Name"
+msgstr "Jméno"
+
+#: includes/admin/metaboxes.php:496
+#: templates/default/bbpress/form-topic-tag.php:35
+msgid "Name:"
+msgstr "Jméno:"
+
+#: includes/admin/metaboxes.php:464
+msgid "Reply To"
+msgstr "Odpověď na"
+
+#: includes/admin/metaboxes.php:463
+msgid "Reply To:"
+msgstr "Odpovědět na:"
+
+#: includes/admin/metaboxes.php:457 includes/replies/template.php:61
+msgid "Topic:"
+msgstr "Téma:"
+
+#: includes/admin/metaboxes.php:379 includes/admin/metaboxes.php:433
+#: includes/extend/buddypress/groups.php:1042 includes/topics/template.php:61
+#: templates/default/bbpress/form-topic.php:114
+msgid "Forum:"
+msgstr "Diskuzní fórum:"
+
+#: includes/admin/metaboxes.php:368
+msgid "Select whether to open or close the topic."
+msgstr "Vyberte, zda chcete téma otevřít nebo zavřít."
+
+#: includes/admin/metaboxes.php:356
+msgid "Topic Type"
+msgstr "Typ tématu"
+
+#: includes/admin/metaboxes.php:322
+msgid "Forum Order"
+msgstr "Objednat fórum"
+
+#: includes/admin/metaboxes.php:321
+msgid "Order:"
+msgstr "Řazení:"
+
+#: includes/admin/metaboxes.php:314 includes/admin/metaboxes.php:394
+#: includes/admin/metaboxes.php:448
+msgid "&mdash; No parent &mdash;"
+msgstr "&mdash; Nemá nadřazené &mdash;"
+
+#: includes/admin/metaboxes.php:300
+msgid "Forum Parent"
+msgstr "Nadřazené fórum"
+
+#: includes/admin/metaboxes.php:299
+msgid "Parent:"
+msgstr "Nadřazená položka:"
+
+#: includes/admin/metaboxes.php:285 includes/admin/metaboxes.php:286
+#: templates/default/bbpress/form-forum.php:109
+msgid "Visibility:"
+msgstr "Viditelnost:"
+
+#: includes/admin/metaboxes.php:273 includes/admin/metaboxes.php:274
+#: includes/admin/metaboxes.php:367
+#: templates/default/bbpress/form-forum.php:100
+msgid "Status:"
+msgstr "Status:"
+
+#: includes/admin/metaboxes.php:261 includes/admin/metaboxes.php:262
+#: includes/admin/metaboxes.php:355
+msgid "Type:"
+msgstr "Typ:"
+
+#: includes/admin/metaboxes.php:222
+msgid "You are using <span class=\"b\">bbPress %s</span>."
+msgstr "Používáte <span class=\"b\">bbPress %s</span>."
+
+#: includes/admin/metaboxes.php:198
+msgid "Empty Topic Tag"
+msgid_plural "Empty Topic Tags"
+msgstr[0] "Téma bez štítku"
+msgstr[1] "Témata bez štítku"
+msgstr[2] "Témat bez štítku"
+
+#: includes/admin/metaboxes.php:176
+msgid "Hidden Reply"
+msgid_plural "Hidden Replies"
+msgstr[0] "Skrytá odpověď"
+msgstr[1] "Skryté odpovědi"
+msgstr[2] "Skrytých odpovědí"
+
+#: includes/admin/metaboxes.php:154
+msgid "Hidden Topic"
+msgid_plural "Hidden Topics"
+msgstr[0] "Skryté téma"
+msgstr[1] "Skrytá témata"
+msgstr[2] "Skrytých témat"
+
+#: includes/admin/metaboxes.php:135
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Uživatel"
+msgstr[1] "Uživatelé"
+msgstr[2] "Uživatelé"
+
+#: includes/admin/metaboxes.php:127
+msgid "Users &amp; Moderation"
+msgstr "Uživatelé &amp; moderování"
+
+#: includes/admin/metaboxes.php:103 includes/admin/settings.php:309
+#: includes/topics/template.php:3367
+msgid "Topic Tag"
+msgid_plural "Topic Tags"
+msgstr[0] "Štítek tématu"
+msgstr[1] "Štítky tématu"
+msgstr[2] "Štítky tématu"
+
+#: includes/admin/metaboxes.php:84 includes/admin/settings.php:325
+#: includes/replies/template.php:49 includes/replies/template.php:1621
+#: includes/topics/template.php:2921
+msgid "Reply"
+msgid_plural "Replies"
+msgstr[0] "Odpověď"
+msgstr[1] "Odpovědi"
+msgstr[2] "Odpovědí"
+
+#: includes/admin/metaboxes.php:67 includes/admin/metaboxes.php:458
+#: includes/admin/replies.php:571 includes/admin/settings.php:301
+#: includes/topics/template.php:49
+#: templates/default/bbpress/content-single-topic-lead.php:22
+#: templates/default/bbpress/content-single-topic-lead.php:94
+#: templates/default/bbpress/loop-topics.php:19
+msgid "Topic"
+msgid_plural "Topics"
+msgstr[0] "Téma"
+msgstr[1] "Témata"
+msgstr[2] "Témat"
+
+#: includes/admin/metaboxes.php:42
+msgid "Discussion"
+msgstr "Diskuze"
+
+#: includes/admin/forums.php:563
+msgid "Forum draft updated. <a target=\"_blank\" href=\"%s\">Preview forum</a>"
+msgstr "Koncept fóra byl aktualizován. <a target=\"_blank\" href=\"%s\">Zobrazit náhled fóra</a>"
+
+#. translators: Publish box date format, see http://php.net/date
+#: includes/admin/forums.php:558 includes/admin/replies.php:878
+#: includes/admin/topics.php:948
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: includes/admin/forums.php:556
+msgid "Forum scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview forum</a>"
+msgstr "Zveřejnění fóra naplánováno na: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Zobrazit náhled</a>"
+
+#: includes/admin/forums.php:553
+msgid "Forum submitted. <a target=\"_blank\" href=\"%s\">Preview forum</a>"
+msgstr "Fórum bylo vytvořeno. <a target=\"_blank\" href=\"%s\">Zobrazit fórum</a>"
+
+#: includes/admin/forums.php:550
+msgid "Forum saved."
+msgstr "Forum uloženo."
+
+#: includes/admin/forums.php:547
+msgid "Forum created. <a href=\"%s\">View forum</a>"
+msgstr "Fórum bylo vytvořeno. <a href=\"%s\">Zobrazit</a>"
+
+#. translators: %s: date and time of the revision
+#: includes/admin/forums.php:543
+msgid "Forum restored to revision from %s"
+msgstr "Fórum obnoveno k revizi ze dne %s"
+
+#: includes/admin/forums.php:538
+msgid "Forum updated."
+msgstr "Forum aktualizováno."
+
+#: includes/admin/forums.php:535 includes/admin/replies.php:855
+#: includes/admin/topics.php:925
+msgid "Custom field deleted."
+msgstr "Uživatelské pole bylo smazáno."
+
+#: includes/admin/forums.php:532 includes/admin/replies.php:852
+#: includes/admin/topics.php:922
+msgid "Custom field updated."
+msgstr "Uživatelské pole bylo aktualizováno."
+
+#: includes/admin/forums.php:529
+msgid "Forum updated. <a href=\"%s\">View forum</a>"
+msgstr "Fórum bylo upraveno. <a href=\"%s\">Zobrazit</a>"
+
+#: includes/admin/forums.php:463 includes/forums/template.php:601
+msgid "No Topics"
+msgstr "Žádné téma"
+
+#: includes/admin/forums.php:414 includes/admin/topics.php:638
+#: templates/default/bbpress/loop-forums.php:22
+#: templates/default/bbpress/loop-topics.php:22
+msgid "Freshness"
+msgstr "Poslední příspěvek"
+
+#: includes/admin/forums.php:413 includes/admin/replies.php:573
+#: includes/admin/topics.php:637
+msgid "Created"
+msgstr "Vytvořeno"
+
+#: includes/admin/forums.php:412
+#: templates/default/bbpress/content-single-topic-lead.php:18
+#: templates/default/bbpress/content-single-topic-lead.php:90
+msgid "Creator"
+msgstr "Tvůrce"
+
+#: includes/admin/forums.php:411 includes/admin/settings.php:230
+#: includes/admin/settings.php:251 includes/admin/topics.php:634
+#: includes/core/theme-compat.php:646
+#: includes/extend/buddypress/activity.php:356
+#: includes/forums/template.php:2665 includes/replies/template.php:47
+#: includes/replies/template.php:48
+#: templates/default/bbpress/content-statistics.php:32
+#: templates/default/bbpress/loop-forums.php:21
+#: templates/default/bbpress/loop-replies.php:32
+#: templates/default/bbpress/loop-replies.php:70
+#: templates/default/bbpress/loop-topics.php:21
+msgid "Replies"
+msgstr "Odpovědi"
+
+#: includes/admin/forums.php:410 includes/admin/settings.php:222
+#: includes/admin/settings.php:243 includes/admin/topics.php:632
+#: includes/extend/buddypress/activity.php:355
+#: includes/forums/template.php:2601 includes/topics/template.php:47
+#: includes/topics/template.php:48
+#: templates/default/bbpress/content-statistics.php:27
+#: templates/default/bbpress/loop-forums.php:20
+msgid "Topics"
+msgstr "Témata"
+
+#: includes/admin/forums.php:409 includes/admin/metaboxes.php:50
+#: includes/admin/metaboxes.php:380 includes/admin/metaboxes.php:434
+#: includes/admin/replies.php:570 includes/admin/settings.php:293
+#: includes/admin/topics.php:633 includes/extend/buddypress/groups.php:52
+#: includes/extend/buddypress/groups.php:53 includes/forums/template.php:49
+#: templates/default/bbpress/loop-forums.php:19
+msgid "Forum"
+msgstr "Diskuzní fórum"
+
+#: includes/admin/forums.php:217 includes/admin/replies.php:229
+#: includes/admin/topics.php:229
+msgid "Publish Box"
+msgstr "Panel pro publikování"
+
+#: includes/admin/forums.php:211
+msgid "<strong>Order</strong> allows you to order your forums numerically."
+msgstr "<strong>Pořadí</strong> vám dovoluje číselně seřadit vaše fóra."
+
+#: includes/admin/forums.php:210
+msgid "<strong>Parent</strong> dropdown determines the parent forum. Select the forum or category from the dropdown, or leave the default (No Parent) to create the forum at the root of your forums."
+msgstr "Rozevírací seznam <strong>Nadřazené</strong> určuje nadřazené fórum. Vyberte fórum nebo kategorii z rozbalovací nabídky, nebo ponechte výchozí (Nemá nadřazené) pro jeho vytvoření v kořeni fóra."
+
+#: includes/admin/forums.php:209
+msgid "<strong>Visibility</strong> lets you pick the scope of each forum and what users are allowed to access it."
+msgstr "<strong>Viditelnost</strong> umožňuje vybrat rozsah každého fóra a to, a k čemu se uživatelé mohou dostat."
+
+#: includes/admin/forums.php:208
+msgid "<strong>Status</strong> allows you to close a forum to new topics and forums."
+msgstr "<strong>Stav</strong> umožňuje uzavřít fórum a zablokovat tak vkládání nových témat a fór."
+
+#: includes/admin/forums.php:207
+msgid "<strong>Type</strong> indicates if the forum is a category or forum. Categories generally contain other forums."
+msgstr "<strong>Typ</strong> označuje, zda je fórum kategorie nebo fórum. Kategorie obecně obsahují další fóra."
+
+#: includes/admin/forums.php:205
+msgid "Select the attributes that your forum should have:"
+msgstr "Vyberte atributy pro  Vaše fórum:"
+
+#: includes/admin/forums.php:203 includes/admin/forums.php:243
+msgid "Forum Attributes"
+msgstr "Atributy diskuzního fóra"
+
+#: includes/admin/forums.php:198
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your forum without inserting it. This is usually useful only if your theme makes use of the featured image as a forum thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Náhledový obrázek</strong> - vám umožní přidružit vašemu fóru obrázek bez nutnosti jej vkládat. Tato funkce obvykle využijete, pokud vaše šablona využívá náhledový obrázek jako miniaturu fóra na domovské stránce, v uživatelském záhlaví apod."
+
+#: includes/admin/forums.php:195
+msgid "<strong>Publish</strong> - You can set the terms of publishing your forum in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a forum or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a forum to be published in the future or backdate a forum."
+msgstr "<strong>Publikovat</strong> - Na panelu Publikovat můžete nastavit podmínky publikování vašeho fóra. Rozšířené možnosti pro stav, viditelnost a publikování se zobrazí po kliknutí na odkaz Upravit. Viditelnost fóra zahrnuje možnosti pro ochranu heslem a pro jeho trvalé zobrazování v popředí blogu (připnutí). Publikovat (okamžitě) vám dovoluje nastavit datum a čas jak do minulosti tak do budoucnosti, aby bylo možné naplánovat odložené publikování fóra, nebo jej zařadit na správné místo mezi publikované v minulosti."
+
+#: includes/admin/forums.php:192
+msgid "<strong>Forum Editor</strong> - Enter the text for your forum. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your forum text. You can insert media files by clicking the icons above the forum editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular forum editor."
+msgstr "<strong>Editor fóra</strong> - Vložte text svého fóra. Kliknutím na odpovídající záložku můžete využít vizuální mód editace nebo HTML kód. Vizuální mód poskytuje WYSIWYG editor, přičemž poslední ikona zobrazí druhý řádek ikon. HTML mód umožňuje psát surový HTML kód. Mediální soubory můžete vkládat kliknutím na ikony nad editorem odpovědi a následováním dalších pokynů. Pomocí ikony Celé obrazovky ve vizuálním módu (předposlední v horní řadě ikon) nebo HTML módu (poslední v řadě) můžete psát bez vyrušování. V tomto režimu zobrazíte nabídku tlačítek přejetím kurzoru nad horní oblastí obrazovky."
+
+#: includes/admin/forums.php:191
+msgid "<strong>Title</strong> - Enter a title for your forum. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
+msgstr "<strong>Název</strong> - Vložte název fóra. Po zadání názvu se níže zobrazí trvalý odkaz, který můžete upravit."
+
+#: includes/admin/forums.php:189
+msgid "Title and Forum Editor"
+msgstr "Název a Editor fóra"
+
+#: includes/admin/forums.php:183 includes/admin/replies.php:197
+#: includes/admin/topics.php:198
+msgid "Customizing This Display"
+msgstr "Přizpůsobení zobrazení"
+
+#: includes/admin/forums.php:179
+msgid "The title field and the big forum editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen."
+msgstr "Základní panel pro zadávání názvu a textu fóra (oblast editoru) jsou sice pevně umístěné, ale všechny ostatní panely je možné na stránce libovolně přemístit uchopením a tažením lišty s názvem příslušné sekce pomocí kurzoru myši, nebo je kliknutím rozbalit či sbalit. Pomocí zaškrtávacích polí v záložce &#8222;Obsah obrazovky&#8220; můžete odhalit a začít používat další panely s dodatečnými informacemi (Stručný výpis, Odeslat trackbacky, Uživatelská pole, Komentáře, Slug, Autor) nebo nastavit základní rozmístění sekcí na stránce volbou počtu sloupců (1 nebo 2)."
+
+#: includes/admin/forums.php:165 includes/admin/forums.php:224
+#: includes/admin/replies.php:179 includes/admin/replies.php:236
+#: includes/admin/settings.php:1597 includes/admin/topics.php:180
+#: includes/admin/topics.php:236
+msgid "<a href=\"http://bbpress.org/forums/\" target=\"_blank\">bbPress Support Forums</a>"
+msgstr "<a href=\"http://bbpress.org/forums/\" target=\"_blank\">Fórum podpory bbPress</a>"
+
+#: includes/admin/forums.php:164 includes/admin/forums.php:223
+#: includes/admin/replies.php:178 includes/admin/replies.php:235
+#: includes/admin/settings.php:1596 includes/admin/topics.php:179
+#: includes/admin/topics.php:235
+msgid "<a href=\"http://codex.bbpress.org\" target=\"_blank\">bbPress Documentation</a>"
+msgstr "<a href=\"http://codex.bbpress.org\" target=\"_blank\">Dokumentace bbPress</a>"
+
+#: includes/admin/forums.php:163 includes/admin/forums.php:222
+#: includes/admin/replies.php:177 includes/admin/replies.php:234
+#: includes/admin/settings.php:1595 includes/admin/topics.php:178
+#: includes/admin/topics.php:234
+msgid "For more information:"
+msgstr "Další informace:"
+
+#: includes/admin/forums.php:158
+msgid "When using Bulk Edit, you can change the metadata (categories, author, etc.) for all selected forums at once. To remove a forum from the grouping, just click the x next to its name in the Bulk Edit area that appears."
+msgstr "V případě využití Hromadných úprav můžete měnit některé informace u všech vybraných fór najednou (např. kategorii, autora, atd.). Pokud budete chtít nějaké fórum z označené skupiny odebrat, stačí kliknout na malé tlačítko x vedle jeho názvu v zobrazené oblasti pro Hromadné úpravy."
+
+#: includes/admin/forums.php:157
+msgid "You can also edit or move multiple forums to the trash at once. Select the forums you want to act on using the checkboxes, then select the action you want to take from the Bulk Actions menu and click Apply."
+msgstr "Je možné také upravovat nebo přesunout do koše několik fór najednou. Nejdříve zaškrtnutím označte konkrétní fóra, která chcete upravovat (odstranit), potom vyberte v rozevíracím menu Hromadné úpravy možnost Upravit (Vyhodit) a nakonec klikněte na tlačítko Použít."
+
+#: includes/admin/forums.php:155 includes/admin/replies.php:169
+#: includes/admin/topics.php:170
+msgid "Bulk Actions"
+msgstr "Hromadné úpravy"
+
+#: includes/admin/forums.php:148
+msgid "<strong>View</strong> will show you what your draft forum will look like if you publish it. View will take you to your live site to view the forum. Which link is available depends on your forum&#8217;s status."
+msgstr "<strong>Náhled</strong> - zobrazí aktuální koncept fóra tak, jak by vypadalo na webu, pokud byste jej právě publikovali. To, zda je odkaz dostupný závisí na stavu vašeho fóra."
+
+#: includes/admin/forums.php:147
+msgid "<strong>Trash</strong> removes your forum from this list and places it in the trash, from which you can permanently delete it."
+msgstr "<strong>Koš</strong> odstraní vaše fórum z tohoto seznamu a umístí jej do koše, ze kterého můžete trvale odstranit."
+
+#: includes/admin/forums.php:146
+msgid "<strong>Edit</strong> takes you to the editing screen for that forum. You can also reach that screen by clicking on the forum title."
+msgstr "<strong>Upravit</strong> - zobrazí stránku pro detailní úpravy vybraného fóra. To samé se stane, když kliknete přímo na jeho název."
+
+#: includes/admin/forums.php:144
+msgid "Hovering over a row in the forums list will display action links that allow you to manage your forum. You can perform the following actions:"
+msgstr "Pokud najedete myší na řádek fóra ve výpisu, zobrazí možnosti pro jeho správu. Ihned tak můžete provést následující úkony:"
+
+#: includes/admin/forums.php:142 includes/admin/replies.php:154
+#: includes/admin/topics.php:153
+msgid "Available Actions"
+msgstr "Možnosti úprav"
+
+#: includes/admin/forums.php:135
+msgid "You can refine the list to show only forums from a specific month by using the dropdown menus above the forums list. Click the Filter button after making your selection. You also can refine the list by clicking on the forum creator in the forums list."
+msgstr "Filtr zobrazení můžete zjemnit na zobrazení fór z konkrétního měsíce pomocí rozevíracích nabídek nad výpisem fór. Nastavte si požadovaný filtr a klikněte na tlačítko &#8222;Filtrovat&#8220;. Kromě toho lze odpovědi třídit přímo kliknutím na autora přímo ve výpisu fór."
+
+#: includes/admin/forums.php:134
+msgid "You can filter the list of forums by forum status using the text links in the upper left to show All, Published, or Trashed forums. The default view is to show all forums."
+msgstr "Výpis fór můžete filtrovat pomocí textových odkazů, vlevo nahoře - Zobrazit všechny, Publikované a nebo Vyhozené.  Výchozí nastavení je Zobrazit všechny."
+
+#: includes/admin/forums.php:133
+msgid "You can hide/display columns based on your needs and decide how many forums to list per screen using the Screen Options tab."
+msgstr "Pomocí záložky &#8222;Obsah obrazovky&#8220; si můžete zobrazit nebo skrýt vybrané sloupce podle vašich potřeb a nastavit i počet zobrazených příspěvků na stránce."
+
+#: includes/admin/forums.php:131 includes/admin/replies.php:142
+#: includes/admin/topics.php:142
+msgid "You can customize the display of this screen&#8217;s contents in a number of ways:"
+msgstr "Obsah této obrazovky si můžete přizpůsobit několika způsoby:"
+
+#: includes/admin/forums.php:129 includes/admin/replies.php:140
+#: includes/admin/topics.php:140
+msgid "Screen Content"
+msgstr "Obsah obrazovky"
+
+#: includes/admin/forums.php:123
+msgid "This screen displays the individual forums on your site. You can customize the display of this screen to suit your workflow."
+msgstr "Přes tuto stránku máte přístup ke všem jednotlivým fórům na vašem webu. Zobrazení informací si můžete libovolně přizpůsobit, aby odpovídalo vašim potřebám."
+
+#: includes/admin/forums.php:121 includes/admin/replies.php:132
+#: includes/admin/settings.php:1549 includes/admin/topics.php:132
+msgid "Overview"
+msgstr "Přehled"
+
+#: includes/admin/converters/AEF.php:688
+#: includes/admin/converters/FluxBB.php:643
+#: includes/admin/converters/Invision.php:525
+#: includes/admin/converters/Kunena1.php:543
+#: includes/admin/converters/Kunena2.php:585
+#: includes/admin/converters/Kunena3.php:812
+#: includes/admin/converters/PHPFox3.php:649
+#: includes/admin/converters/PunBB.php:677
+#: includes/admin/converters/SMF.php:656
+#: includes/admin/converters/SimplePress5.php:537
+#: includes/admin/converters/Vanilla.php:535
+#: includes/admin/converters/XMB.php:705
+#: includes/admin/converters/XenForo.php:722
+#: includes/admin/converters/bbPress1.php:636
+#: includes/admin/converters/phpBB.php:816
+#: includes/admin/converters/vBulletin.php:652
+#: includes/admin/converters/vBulletin3.php:652
+msgid "Re: "
+msgstr "Re:"
+
+#: includes/admin/converter.php:515
+msgid "Calculating reply_to parents (%1$s - %2$s)"
+msgstr "Počítám odpovědi nadřazeným (reply_to_parents)  (%1$s - %2$s)"
+
+#: includes/admin/converter.php:511
+msgid "No reply_to parents to convert"
+msgstr "Neexistují žádné odpovědi nadřazeným (reply_to_parents), které lze převést"
+
+#: includes/admin/converter.php:500
+msgid "Converting replies (%1$s - %2$s)"
+msgstr "Převádím odpovědi (%1$s - %2$s)"
+
+#: includes/admin/converter.php:496
+msgid "No replies to convert"
+msgstr "Neexistují žádné odpovědi, které lze převést"
+
+#: includes/admin/converter.php:485
+msgid "Converting topic tags (%1$s - %2$s)"
+msgstr "Převádím štítky témat (%1$s - %2$s)"
+
+#: includes/admin/converter.php:481
+msgid "No tags to convert"
+msgstr "Neexistují žádné štítky, které lze převést"
+
+#: includes/admin/converter.php:470
+msgid "Calculating topic super stickies (%1$s - %2$s)"
+msgstr "Počítám velmi důležitá témata (%1$s - %2$s)"
+
+#: includes/admin/converter.php:466
+msgid "No super stickies to stick"
+msgstr "Neexistují žádná super připnutá témata, která lze připnout"
+
+#: includes/admin/converter.php:455
+msgid "Calculating topic stickies (%1$s - %2$s)"
+msgstr "Počítám připnutá témata (%1$s - %2$s)"
+
+#: includes/admin/converter.php:451
+msgid "No stickies to stick"
+msgstr "Neexistují žádná připnutá témata, která lze připnout"
+
+#: includes/admin/converter.php:440
+msgid "Converting topics (%1$s - %2$s)"
+msgstr "Převádím témata (%1$s - %2$s)"
+
+#: includes/admin/converter.php:436
+msgid "No topics to convert"
+msgstr "Neexistují žádná témata, která lze převést"
+
+#: includes/admin/converter.php:425
+msgid "Calculating forum hierarchy (%1$s - %2$s)"
+msgstr "Počítám hierarchii diskuzního fóra (%1$s - %2$s)"
+
+#: includes/admin/converter.php:421
+msgid "No forum parents to convert"
+msgstr "Neexistují žádná nadřazená diskuzní fóra, která lze převést"
+
+#: includes/admin/converter.php:410
+msgid "Converting forums (%1$s - %2$s)"
+msgstr "Převádím diskuzní fóra (%1$s - %2$s)"
+
+#: includes/admin/converter.php:406
+msgid "No forums to convert"
+msgstr "Neexistují žádná diskuzní fóra, která lze převést"
+
+#: includes/admin/converter.php:391
+msgid "Delete users WordPress default passwords (%1$s - %2$s)"
+msgstr "Mažu výchozí uživatelská hesla pro WordPress  (%1$s - %2$s)"
+
+#: includes/admin/converter.php:387
+msgid "No passwords to clear"
+msgstr "Neexistuje žádné heslo na vymazání"
+
+#: includes/admin/converter.php:371
+msgid "Converting users (%1$s - %2$s)"
+msgstr "Převádím uživatele (%1$s - %2$s)"
+
+#: includes/admin/converter.php:367
+msgid "No users to convert"
+msgstr "Neexistuje žádný uživatel, kterého lze převést"
+
+#: includes/admin/converter.php:351
+msgid "Deleting previously converted data (%1$s - %2$s)"
+msgstr "Mažu dříve konvertovaná data  (%1$s - %2$s)"
+
+#: includes/admin/converter.php:347
+msgid "No data to clean"
+msgstr "Neexistují žádná data k čištění"
+
+#: includes/admin/converter.php:248 includes/admin/converter.php:525
+msgid "Conversion Complete"
+msgstr "Konverze dokončena"
+
+#: includes/admin/converter.php:223
+msgid "Starting Conversion"
+msgstr "Spouštím konverzi"
+
+#: includes/admin/converter.php:134
+msgid "Purge Previous Import"
+msgstr "Vymazat předcházející import"
+
+#: includes/admin/converter.php:130
+msgid "Start Over"
+msgstr "Začít znovu"
+
+#: includes/admin/converter.php:126
+msgid "Convert Users"
+msgstr "Převést Uživatele"
+
+#: includes/admin/converter.php:122
+msgid "Delay Time"
+msgstr "Čas zpoždění"
+
+#: includes/admin/converter.php:118
+msgid "Rows Limit"
+msgstr "Omezení počtu řádků"
+
+#: includes/admin/converter.php:115
+msgid "Options"
+msgstr "Nastavení"
+
+#: includes/admin/converter.php:111
+msgid "Table Prefix"
+msgstr "Prefix tabulky"
+
+#: includes/admin/converter.php:107
+msgid "Database Password"
+msgstr "Heslo databáze"
+
+#: includes/admin/converter.php:103
+msgid "Database User"
+msgstr "Uživatel databáze"
+
+#: includes/admin/converter.php:99
+msgid "Database Name"
+msgstr "Název databáze"
+
+#: includes/admin/converter.php:95
+msgid "Database Port"
+msgstr "Port pro připojení k databázi"
+
+#: includes/admin/converter.php:91
+msgid "Database Server"
+msgstr "Databázový server"
+
+#: includes/admin/converter.php:87
+msgid "Select Platform"
+msgstr "Zvolte platformu"
+
+#: includes/admin/converter.php:84
+msgid "Database Settings"
+msgstr "Nastavení databáze"
+
+#: includes/admin/admin.php:1096
+msgid "You can update all the forums on your network through this page. It works by calling the update script of each site automatically. Hit the link below to update."
+msgstr "Všechna vaše Fóra můžete aktualizovat prostřednictvím této stránky. Funguje tak, že se na každé stránce automaticky volá skript aktualizace. Pro aktualizaci klikněte na odkaz níže."
+
+#: includes/admin/admin.php:1078
+msgid "Next Forums"
+msgstr "Další diskuzní fóra"
+
+#: includes/admin/admin.php:1077
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgstr "Pokud prohlížeč nespustí načítání další stránky automaticky, klikněte na tento odkaz:"
+
+#: includes/admin/admin.php:1053
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"
+msgstr "Varování! Při aktualizaci došlo k problému %1$s. Server se zřejmě nemůže připojit ke stránkám. Chybová zpráva: <em>%2$s</em>"
+
+#: includes/admin/admin.php:983
+msgid "You can update your forum through this page. Hit the link below to update."
+msgstr "Fórum můžete aktualizovat prostřednictvím této stránky. Pro aktualizaci klikněte na odkaz níže."
+
+#: includes/admin/admin.php:974 includes/admin/admin.php:1028
+msgid "Go Back"
+msgstr "Zpět"
+
+#: includes/admin/admin.php:973 includes/admin/admin.php:1027
+msgid "All done!"
+msgstr "Vše hotovo!"
+
+#: includes/admin/admin.php:962 includes/admin/admin.php:984
+msgid "Update Forum"
+msgstr "Aktualizovat diskuzní fórum"
+
+#: includes/admin/admin.php:905
+msgid "Core Contributors to bbPress 2.5"
+msgstr "Základní spolupracovníci do bbPress v.2.5"
+
+#: includes/admin/admin.php:896
+msgid "Bug Testing"
+msgstr "Testování"
+
+#: includes/admin/admin.php:815
+msgid "Theme Compatibility"
+msgstr "Kompatibilita šablony"
+
+#: includes/admin/admin.php:257 includes/admin/admin.php:258
+#: includes/admin/admin.php:266 includes/admin/admin.php:267
+msgid "Welcome to bbPress"
+msgstr "Vítejte v bbPress"
+
+#: includes/admin/admin.php:530
+msgid "Right Now in Forums"
+msgstr "Aktuálně ve fórech"
+
+#: includes/admin/admin.php:545
+msgid "About bbPress"
+msgstr "O bbPress"
+
+#: includes/admin/admin.php:887
+msgid "Converter Specialist"
+msgstr "Specialista na konverze"
+
+#: bbpress.php:485
+msgid "bbPress Forums"
+msgstr "bbPress fóra"
+
+#: includes/admin/admin.php:816
+msgid "Better handling of styles and scripts in the template stack."
+msgstr "Lepší zpracování stylů a skriptů v zásobníku šablony."
+
+#: includes/admin/admin.php:515
+msgid "About"
+msgstr "O WordPressu"
+
+#: includes/admin/admin.php:865
+msgid "bbPress is created by a worldwide swarm of busy, busy bees."
+msgstr "bbPress vytvořil roj usilovných včeliček z celého světa."
+
+#: includes/admin/admin.php:867
+msgid "Project Leaders"
+msgstr "Vedení projektu"
+
+#: bbpress.php:581
+msgctxt "post"
+msgid "Spam"
+msgstr "Spam"
+
+#: includes/admin/admin.php:208 includes/admin/functions.php:277
+#: includes/admin/settings.php:1509
+msgid "Import Forums"
+msgstr "Importovat diskuzní fóra"
+
+#: bbpress.php:608
+msgctxt "post"
+msgid "Hidden <span class=\"count\">(%s)</span>"
+msgid_plural "Hidden <span class=\"count\">(%s)</span>"
+msgstr[0] "Skrytý <span class=\"count\">(%s)</span>"
+msgstr[1] "Skryté <span class=\"count\">(%s)</span>"
+msgstr[2] "Skryté <span class=\"count\">(%s)</span>"
+
+#: bbpress.php:595
+msgctxt "post"
+msgid "Orphan <span class=\"count\">(%s)</span>"
+msgid_plural "Orphans <span class=\"count\">(%s)</span>"
+msgstr[0] "Nezařazené <span class=\"count\">(%s)</span>"
+msgstr[1] "Nezařazená <span class=\"count\">(%s)</span>"
+msgstr[2] "Nezařazených <span class=\"count\">(%s)</span>"
+
+#: bbpress.php:405 templates/default/bbpress-functions.php:51
+msgid "bbPress Default"
+msgstr "bbPress výchozí"
+
+#: bbpress.php:510
+msgid "bbPress Topics"
+msgstr "bbPress témata"
+
+#: bbpress.php:678
+msgid "Most popular topics"
+msgstr "Nejpopulárnější témata"
+
+#: bbpress.php:607
+msgctxt "post"
+msgid "Hidden"
+msgstr "Skryto"
+
+#: bbpress.php:571
+msgctxt "post"
+msgid "Closed <span class=\"count\">(%s)</span>"
+msgid_plural "Closed <span class=\"count\">(%s)</span>"
+msgstr[0] "Uzavřen <span class=\"count\">(%s)</span>"
+msgstr[1] "Uzavřené <span class=\"count\">(%s)</span>"
+msgstr[2] "Uzavřené <span class=\"count\">(%s)</span>"
+
+#: bbpress.php:133 bbpress.php:140
+msgid "Cheatin&#8217; huh?"
+msgstr "Podvádíš&#8217, jo?"
+
+#: bbpress.php:535
+msgid "bbPress Replies"
+msgstr "bbPress odpovědi"
+
+#: includes/admin/admin.php:832 includes/admin/admin.php:936
+msgid "Go to Forum Settings"
+msgstr "Přejít do nastavení fóra"
+
+#: includes/admin/admin.php:854
+msgid "Thank you for updating! bbPress %s is waxed, polished, and ready for you to take it for a lap or two around the block!"
+msgstr "Děkujeme vám za aktualizace! bbPress %s je navoskovaný, naleštěný a je připraven, zcela pro Vás!"
+
+#: bbpress.php:570
+msgctxt "post"
+msgid "Closed"
+msgstr "Zavřeno"
+
+#: bbpress.php:582
+msgctxt "post"
+msgid "Spam <span class=\"count\">(%s)</span>"
+msgid_plural "Spam <span class=\"count\">(%s)</span>"
+msgstr[0] "Spam <span class=\"count\">(%s)</span>"
+msgstr[1] "Spam <span class=\"count\">(%s)</span>"
+msgstr[2] "Spam <span class=\"count\">(%s)</span>"
+
+#: bbpress.php:594
+msgctxt "post"
+msgid "Orphan"
+msgstr "Nezařazený"
+
+#: bbpress.php:690
+msgid "Topics with no replies"
+msgstr "Témata bez odpovědí"
+
+#: includes/admin/admin.php:218 includes/admin/functions.php:281
+#: includes/admin/tools.php:1208
+msgid "Reset Forums"
+msgstr "Resetovat diskuzní fóra"
+
+#: includes/admin/admin.php:219
+msgid "Forum Reset"
+msgstr "Resetovat fórum"
+
+#: includes/admin/admin.php:233 includes/admin/admin.php:234
+#: includes/admin/admin.php:244 includes/admin/admin.php:245
+#: includes/admin/users.php:82 includes/common/widgets.php:662
+#: includes/extend/buddypress/loader.php:42
+#: includes/extend/buddypress/loader.php:175
+#: includes/extend/buddypress/loader.php:261
+#: includes/extend/buddypress/loader.php:312 includes/forums/template.php:47
+#: includes/forums/template.php:48
+#: templates/default/bbpress/content-statistics.php:22
+msgid "Forums"
+msgstr "Fóra"
+
+#: includes/admin/admin.php:280 includes/admin/admin.php:281
+#: includes/admin/admin.php:302 includes/admin/admin.php:303
+#: includes/admin/admin.php:1010 includes/admin/admin.php:1097
+msgid "Update Forums"
+msgstr "Aktualizovat diskuzní fóra"
+
+#: includes/admin/admin.php:510
+msgid "Settings"
+msgstr "Nastavení"
+
+#: includes/admin/admin.php:639
+msgctxt "admin color scheme"
+msgid "Evergreen"
+msgstr "Evergreen"
+
+#: includes/admin/admin.php:720 includes/admin/admin.php:758
+msgid "%s - %s"
+msgstr "%s - %s"
+
+#: includes/admin/admin.php:776 includes/admin/admin.php:853
+msgid "Welcome to bbPress %s"
+msgstr "Vítejte v bbPress %s"
+
+#: includes/admin/admin.php:777
+msgid "Thank you for updating! bbPress %s is bundled up and ready to weather the storm of users in your community!"
+msgstr "Děkuji vám za aktualizaci! bbPress %s je nablýskán a připraven na diskuzi uživatelů ve vaší komunitě!"
+
+#: includes/admin/admin.php:778 includes/admin/admin.php:855
+msgid "Version %s"
+msgstr " Verze %s"
+
+#: includes/admin/admin.php:782 includes/admin/admin.php:859
+msgid "What&#8217;s New"
+msgstr "Co je nového"
+
+#: includes/admin/admin.php:784 includes/admin/admin.php:861
+msgid "Credits"
+msgstr "Poděkování"
+
+#: includes/admin/admin.php:789
+msgid "Forum Subscriptions"
+msgstr "Sledování diskuzních fór"
+
+#: includes/admin/admin.php:793
+msgid "Subscribe to Forums"
+msgstr "Zahájit sledování fóra"
+
+#: includes/admin/admin.php:794
+msgid "Now your users can subscribe to new topics in specific forums."
+msgstr "Nyní se vaši uživatelé mohou přihlásit ke sledování nových témat v konkrétních fórech."
+
+#: includes/admin/admin.php:798
+msgid "Manage Subscriptions"
+msgstr "Upravit odběry"
+
+#: includes/admin/admin.php:799
+msgid "Your users can manage all of their subscriptions in one convenient location."
+msgstr "Uživatelé mohou spravovat všechna jejich sledování z jednoho snadno přístupného místa."
+
+#: includes/admin/admin.php:805
+msgid "Converters"
+msgstr "Konvertoři"
+
+#: includes/admin/admin.php:809
+msgid "We&#8217;re all abuzz about the hive of new importers, AEF, Drupal, FluxBB, Kunena Forums for Joomla, MyBB, Phorum, PHPFox, PHPWind, PunBB, SMF, Xenforo and XMB. Existing importers are now sweeter than honey with improved importing stickies, topic tags, forum categories and the sting is now gone if you need to remove imported users."
+msgstr "Máme mnoho práce s přípravou nových importů z  AEF, Drupal, FluxBB, Kunena pro Joomlu, MyBB, Phorum, PHPFox, PHPWind, PunBB, SMF, Xenforo a XMB. Stávající importy jsou nyní jednodušší, snáze se importují i připnutí, štítky témat, kategorie fór a pokud potřebujete odstranit importované uživatele, nebudete mít problém."
+
+#: includes/admin/admin.php:820
+msgid "Polyglot support"
+msgstr "Výcejazyčná podpora"
+
+#: includes/admin/admin.php:821
+msgid "bbPress fully supports automatic translation updates."
+msgstr "bbPress plně podporuje automatickou aktualizaci jazykových překladů."
+
+#: includes/admin/admin.php:825
+msgid "User capabilities"
+msgstr "Možnosti uživatele"
+
+#: includes/admin/admin.php:826
+msgid "Roles and capabilities have been swept through, cleaned up, and simplified."
+msgstr "Role a možnosti, byly optimalizovány a zjednodušeny."
+
+#: includes/admin/admin.php:877
+msgid "Lead Developer"
+msgstr "Hlavní vývojář"
+
+#: includes/admin/admin.php:872
+msgid "Founding Developer"
+msgstr "Zakladající vývojář"
+
+#: includes/admin/admin.php:630
+msgctxt "admin color scheme"
+msgid "Mint"
+msgstr "Mint"
+
+#: includes/admin/admin.php:198 includes/admin/functions.php:273
+#: includes/admin/tools.php:34
+msgid "Repair Forums"
+msgstr "Opravit diskuzní fóra"
+
+#: includes/admin/admin.php:891
+msgid "Contributing Developers"
+msgstr "Přispívající vývojáři"
+
+#: includes/admin/admin.php:199
+msgid "Forum Repair"
+msgstr "Opravit fórum"
+
+#: includes/admin/admin.php:209
+msgid "Forum Import"
+msgstr "Importovat fórum"
+
+#: includes/admin/admin.php:882 includes/admin/admin.php:901
+msgid "Feature Developer"
+msgstr "Vývojář funkcí"

@@ -1,0 +1,1029 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Invite Anyone 1.3.13\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/invite-anyone\n"
+"POT-Creation-Date: 2016-12-22 03:11:19+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-11-12 23:04+0000\n"
+"Last-Translator: admin <mil.stastny@volny.cz>\n"
+"Language-Team: Czech\n"
+"Language: cs-CZ\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. #-#-#-#-#  invite-anyone.pot (Invite Anyone 1.3.13)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/admin-panel.php:6 admin/admin-panel.php:114 widgets/widgets.php:41
+#: widgets/widgets.php:92
+msgid "Invite Anyone"
+msgstr "Invite Anyone"
+
+#: admin/admin-panel.php:24
+msgid "Settings"
+msgstr "Nastavení"
+
+#: admin/admin-panel.php:117 admin/admin-panel.php:181
+msgid "General Settings"
+msgstr "Obecné Nastavení"
+
+#: admin/admin-panel.php:118
+msgid "Access Control"
+msgstr "Řízení přístupu"
+
+#: admin/admin-panel.php:119 admin/admin-panel.php:162
+#: admin/admin-panel.php:496
+msgid "CloudSponge"
+msgstr "CloudSponge"
+
+#: admin/admin-panel.php:120 admin/admin-panel.php:168
+msgid "Manage Invitations"
+msgstr "Spravovat Pozvánky"
+
+#: admin/admin-panel.php:121 admin/admin-panel.php:174
+msgid "Stats"
+msgstr "Statistika"
+
+#: admin/admin-panel.php:132
+msgid "Save Changes"
+msgstr "Uložit Zmšny"
+
+#: admin/admin-panel.php:150
+msgid "Access Settings"
+msgstr "Nastavení přístupu"
+
+#: admin/admin-panel.php:152
+msgid "Allow email invitations to be sent by"
+msgstr "Povolit zasílání pozvánek e-mailem"
+
+#: admin/admin-panel.php:154
+msgid "Limit group invitations"
+msgstr "Omezit pozvánky do skupiny"
+
+#: admin/admin-panel.php:156
+msgid "Limit per-user invitations"
+msgstr "Omezit pozvánky na uživatele"
+
+#: admin/admin-panel.php:183
+msgid "Replacement patterns for email text fields"
+msgstr "Vzory nahrazení textových polí e-mailu"
+
+#: admin/admin-panel.php:185
+msgid "Text of email invitation subject line"
+msgstr "Text předmětu e-mailové pozvánky"
+
+#: admin/admin-panel.php:187
+msgid "Main text of email invitation message"
+msgstr "Hlavní text e-mailové pozvánky"
+
+#: admin/admin-panel.php:189
+msgid "Footer text of email invitation message (not editable by users)"
+msgstr "Text zápatí emailu s pozvánkou (nelze upravovat uživateli)"
+
+#: admin/admin-panel.php:191
+msgid "Allow users to customize invitation"
+msgstr "Povolit uživatelům přizpůsobit pozvánku"
+
+#: admin/admin-panel.php:193
+msgid "Number of email invitations users are permitted to send at a time"
+msgstr "Počet e-mailových pozvánek, které mohou uživatelé odesílat najednou"
+
+#: admin/admin-panel.php:195
+msgid "Allow users to send group invitations along with email invitations"
+msgstr ""
+"Umožnit uživatelům posílat pozvánky na skupiny spolu s pozvánkami na e-mail"
+
+#: admin/admin-panel.php:197
+msgid ""
+"Allow email invitations to be accepted even when site registration is "
+"disabled"
+msgstr ""
+"Povolit přijímání e-mailových pozvánek i při zakázané registrace na webu"
+
+#: admin/admin-panel.php:219
+msgid "name of your website"
+msgstr "jméno vašeho webu"
+
+#: admin/admin-panel.php:281
+msgid "Subject line"
+msgstr "Předmět"
+
+#: admin/admin-panel.php:285
+msgid "Message body"
+msgstr "Tělo zprávy"
+
+#: admin/admin-panel.php:293
+msgid "Control which members are able to send various kinds of invitations."
+msgstr "Spravujte, kteří členové mohu poslat různé druhy pozvánek."
+
+#: admin/admin-panel.php:302
+msgid "All users"
+msgstr "Všichni uživatelé"
+
+#: admin/admin-panel.php:304
+msgid "A limited set of users"
+msgstr "Omezená sada uživatelů"
+
+#: admin/admin-panel.php:308
+msgid ""
+"Only users who have been members of the site for a minimum number of days:"
+msgstr "Pouze uživatelé, kteří jsou již členy webu po minimální počet dní:"
+
+#: admin/admin-panel.php:313
+msgid "Only users who have at least the following role on this blog:"
+msgstr "Pouze uživatelé, kteří na tomto blogu mají alespoň následující roli:"
+
+#: admin/admin-panel.php:315
+msgid "Subscriber"
+msgstr "Odběratel"
+
+#: admin/admin-panel.php:316
+msgid "Contributor"
+msgstr "Přispěvatel"
+
+#: admin/admin-panel.php:317
+msgid "Author"
+msgstr "Autor"
+
+#: admin/admin-panel.php:318
+msgid "Editor"
+msgstr "Editor"
+
+#: admin/admin-panel.php:319
+msgid "Administrator"
+msgstr "Administrátor"
+
+#: admin/admin-panel.php:324
+msgid ""
+"Provide a comma-separated list of users (identified by their numerical user "
+"ids) who <strong>cannot</strong> send invitations by email:"
+msgstr ""
+"Uveďte seznam uživatelů oddělených čárkami (identifikovaných jejich "
+"uživatelským ID), kteří <strong> nemohou </ strong> posílat pozvánky e-"
+"mailem:"
+
+#: admin/admin-panel.php:355
+msgid "<strong>Site admins</strong> can send group invitations to: "
+msgstr ""
+"<strong> Správci webu </ strong> mohou posílat pozvánky do skupiny těmto "
+"lidem:"
+
+#: admin/admin-panel.php:357 admin/admin-panel.php:365
+#: admin/admin-panel.php:373 admin/admin-panel.php:381
+msgid "Anyone"
+msgstr "Kdokoliv"
+
+#: admin/admin-panel.php:358 admin/admin-panel.php:366
+#: admin/admin-panel.php:374 admin/admin-panel.php:382
+msgid "Friends"
+msgstr "Přátelé"
+
+#: admin/admin-panel.php:359 admin/admin-panel.php:367
+#: admin/admin-panel.php:375 admin/admin-panel.php:383
+msgid "No one"
+msgstr "Nikdo"
+
+#: admin/admin-panel.php:363
+msgid "<strong>Group admins</strong> can send group invitations to: "
+msgstr ""
+"<strong> Správci skupin </ strong> mohou posílat pozvánky do skupiny těmto "
+"lidem:"
+
+#: admin/admin-panel.php:371
+msgid "<strong>Group mods</strong> can send group invitations to: "
+msgstr ""
+"<strong> Moderátoři skupiny </ strong> mohou posílat pozvánky do skupiny "
+"těmto lidem:"
+
+#: admin/admin-panel.php:379
+msgid "<strong>Group members</strong> can send group invitations to: "
+msgstr ""
+"<strong> Členové skupiny </ strong> mohou posílat pozvánky do skupiny těmto "
+"lidem:"
+
+#: admin/admin-panel.php:424
+msgid "Enable CloudSponge?"
+msgstr "Povolit CloudSponge?"
+
+#: admin/admin-panel.php:432
+msgid "CloudSponge Domain Key"
+msgstr "Klíč CloudSponge Domény"
+
+#: admin/admin-panel.php:432
+msgid ""
+"CloudSponge integration will not work without a valid CloudSponge Domain key."
+msgstr ""
+"Integrace CloudSponge nebude fungovat bez platného klíče CloudSponge Domény."
+
+#: admin/admin-panel.php:436
+msgid "CloudSponge Key"
+msgstr "CloudSponge klíč"
+
+#: admin/admin-panel.php:439
+msgid "Test"
+msgstr "Test"
+
+#: admin/admin-panel.php:443
+msgid "CloudSponge integration will not work without a valid CloudSponge Key."
+msgstr "Integrace CloudSponge nebude fungovat bez platného CloudSponge klíče."
+
+#: admin/admin-panel.php:445
+msgid "Please, click on <strong>Save Changes</strong> to save the key!"
+msgstr ""
+"Prosím, klikněte na tlačítko <strong> Uložit změny </ strong> abyste uložili "
+"klíč!"
+
+#: admin/admin-panel.php:447
+msgid "Click in the <strong>test</strong> button to test your integration."
+msgstr ""
+"Klikněte na tlačítko <strong> test </ strong> abyste ověřili integraci."
+
+#: admin/admin-panel.php:482 by-email/by-email.php:782
+msgid "Sent"
+msgstr "Odesláno"
+
+#: admin/admin-panel.php:490 by-email/by-email.php:783
+msgid "Accepted"
+msgstr "Přijato"
+
+#: admin/admin-panel.php:556 by-email/by-email-db.php:88
+msgid "View Invitation"
+msgstr "Zobrazit Pozvánku"
+
+#: admin/admin-panel.php:598
+msgid "(no data)"
+msgstr "(žádná data)"
+
+#: admin/admin-panel.php:622
+msgid "No invitations have been sent yet."
+msgstr "Zatím nebyly zaslány žádné pozvánky."
+
+#: admin/admin-stats.php:41
+msgid "24 Hours"
+msgstr "24 Hodin"
+
+#: admin/admin-stats.php:44
+msgid "3 Days"
+msgstr "3 Dny"
+
+#: admin/admin-stats.php:47
+msgid "1 Week"
+msgstr "1 Týden"
+
+#: admin/admin-stats.php:50
+msgid "4 Weeks"
+msgstr "4 Týdny"
+
+#: admin/admin-stats.php:53
+msgid "3 Months"
+msgstr "3 Měsíce"
+
+#: admin/admin-stats.php:56
+msgid "All Time"
+msgstr "Vždy"
+
+#: admin/admin-stats.php:163 by-email/by-email-db.php:354
+msgid "Yes"
+msgstr "Ano"
+
+#: admin/admin-stats.php:188 admin/admin-stats.php:196
+#: admin/admin-stats.php:204
+msgid "n/a"
+msgstr ""
+
+#: admin/admin-stats.php:305
+msgid "In the last..."
+msgstr "V poslední ..."
+
+#: admin/admin-stats.php:309
+msgid "Total Sent"
+msgstr "Celkem Odesláno"
+
+#: admin/admin-stats.php:313
+msgid "Total Accepted"
+msgstr "Celkem Přijato"
+
+#: admin/admin-stats.php:317
+msgid "Acceptance Rate"
+msgstr "Poměr Přijatých"
+
+#: admin/admin-stats.php:330
+msgid "Total Sent (CloudSponge)"
+msgstr "Celkem Odeslaných (CloudSponge)"
+
+#: admin/admin-stats.php:334
+msgid "Total Accepted (CloudSponge)"
+msgstr "Celkem Přijato (CloudSponge)"
+
+#: admin/admin-stats.php:338
+msgid "Acceptance Rate (CloudSponge)"
+msgstr "Míra přijetí (CloudSponge)"
+
+#: admin/admin-stats.php:342
+msgid "CloudSponge Usage"
+msgstr "Použití CloudSponge"
+
+#: admin/admin-stats.php:378 admin/admin-stats.php:403
+msgid "(%d sent)"
+msgstr "(%d odesláno)"
+
+#: admin/admin-stats.php:382 admin/admin-stats.php:407
+msgid "(%s accepted)"
+msgstr "(%s přijato)"
+
+#: by-email/by-email-db.php:82
+msgctxt "post type general name"
+msgid "BuddyPress Invitations"
+msgstr "Pozvánky BuddyPress"
+
+#: by-email/by-email-db.php:83
+msgctxt "post type singular name"
+msgid "Invitation"
+msgstr "Pozvánka"
+
+#: by-email/by-email-db.php:84
+msgctxt "add new"
+msgid "Add New"
+msgstr "Přidat Novou"
+
+#: by-email/by-email-db.php:85
+msgid "Add New Invitation"
+msgstr "Přidat Novou Pozvánku"
+
+#: by-email/by-email-db.php:86
+msgid "Edit Invitation"
+msgstr "Upravit Pozvánku"
+
+#: by-email/by-email-db.php:87
+msgid "New Invitation"
+msgstr "Nová Pozvánka"
+
+#: by-email/by-email-db.php:89
+msgid "Search Invitation"
+msgstr "Hledat Pozvánku"
+
+#: by-email/by-email-db.php:90
+msgid "No Invitations found"
+msgstr "Nebyly nalezeny žádné pozvánky"
+
+#: by-email/by-email-db.php:91
+msgid "No Invitations found in Trash"
+msgstr "Nebyly nalezeny žádné pozvánky v koši"
+
+#: by-email/by-email-db.php:97
+msgid "BuddyPress Invitations"
+msgstr "Pozvánky BuddyPress"
+
+#: by-email/by-email-db.php:134
+msgid "All Invited Groups"
+msgstr "Všechny Pozvané Skupiny"
+
+#: by-email/by-email-db.php:135
+msgid "Edit Invited Group"
+msgstr "Upravit Pozvanou Skupinu"
+
+#: by-email/by-email-db.php:136
+msgid "Update Invited Group"
+msgstr "Aktualizovat Pozvanou Skupinu"
+
+#: by-email/by-email-db.php:137
+msgid "Add New Invited Group"
+msgstr "Přidat Novou Pozvanou Skupinu"
+
+#: by-email/by-email-db.php:138
+msgid "New Invited Group Name"
+msgstr "Jméno Nové Pozvané Skupiny"
+
+#: by-email/by-email-db.php:354
+msgid "No"
+msgstr "Ne"
+
+#: by-email/by-email-db.php:914
+msgid "All done!"
+msgstr "Vše hotovo!"
+
+#: by-email/by-email-db.php:916
+msgid "Finish"
+msgstr "Ukončit"
+
+#: by-email/by-email-db.php:954
+msgid "Migrated Invitation"
+msgstr "Migrovat Pozvánky"
+
+#: by-email/by-email-db.php:974
+msgid "Importing: %1$s invited %2$s<br />"
+msgstr "Import: %1$s pozval %2$s<br />"
+
+#: by-email/by-email-db.php:985
+msgid ""
+"If your browser doesn&#8217;t start loading the next page automatically, "
+"click this link:"
+msgstr ""
+"Pokud váš prohlížeč automaticky nespustí načítání další stránky, klikněte na "
+"tento odkaz:"
+
+#: by-email/by-email-db.php:985
+msgid "Next Invitations"
+msgstr "Další Pozvánky"
+
+#: by-email/by-email-db.php:1013
+msgid "Invite Anyone Upgrade"
+msgstr "Aktualizace Invite Anyone"
+
+#: by-email/by-email-db.php:1016
+msgid ""
+"Invite Anyone has just been updated, and needs to move some old invitation "
+"data in order to complete the upgrade. Click GO to start the process."
+msgstr ""
+"Plugin Invite Anyone byl aktualizován a potřebuje přesunout některé staré "
+"údaje o pozvánkách, aby dokončil aktualizaci. Klepnutím na tlačítko GO "
+"spustíte proces."
+
+#: by-email/by-email.php:78
+msgid "Opt Out"
+msgstr "Odhlásit se"
+
+#: by-email/by-email.php:79
+msgid "Accept Invitation"
+msgstr "Přijmout pozvánku"
+
+#: by-email/by-email.php:83
+msgid ""
+"To opt out of future invitations to %s, make sure that your email is entered "
+"in the field below and click \"Opt Out\"."
+msgstr ""
+"Chcete-li se odhlásit od zasílání dalších pozvánky do %s, ujistěte se, že "
+"váš e-mail je zadán do níže uvedeného pole a klikněte na tlačítko \"Odhlásit "
+"se\"."
+
+#: by-email/by-email.php:85
+msgid ""
+"If you are here by mistake and would like to accept your invitation to %s, "
+"click \"Accept Invitation\" instead."
+msgstr ""
+"Pokud jste zde omylem a chcete přijmout pozvánku do %s, klikněte místo toho "
+"na \"Přijmout pozvánku\"."
+
+#: by-email/by-email.php:99
+msgid ""
+"You have successfully opted out. No more invitation emails will be sent to "
+"you by this site."
+msgstr ""
+"Úspěšně jste se odhlásili. Žádné další e-maily s pozvánkami vám nebudou "
+"zasílány tímto webem."
+
+#: by-email/by-email.php:102
+msgid "Sorry, there was an error in processing your request"
+msgstr "Je nám líto, při zpracování vaší žádosti došlo k chybě"
+
+#: by-email/by-email.php:128
+msgid "Email:"
+msgstr "E-mail:"
+
+#: by-email/by-email.php:161
+msgid ""
+"It looks like you're trying to accept an invitation to join the site, but "
+"some information is missing. Please try again by clicking on the link in the "
+"invitation email."
+msgstr ""
+"Zdá se, že se pokoušíte přijmout pozvánku na web, ale některé informace "
+"chybí. Zkuste to znovu kliknutím na odkaz v e-mailu s pozvánkou."
+
+#: by-email/by-email.php:194
+msgid ""
+"Welcome! You&#8217;ve been invited to join the site by the following user: "
+"%s. Please fill out the information below to create your account."
+msgid_plural ""
+"Welcome! You&#8217;ve been invited to join the site by the following users: "
+"%s. Please fill out the information below to create your account."
+msgstr[0] ""
+"Vítejte! Byli jste pozváni k webu následujícím uživatelem: %s. Vyplňte níže "
+"uvedené informace a vytvořte svůj účet."
+msgstr[1] ""
+"Vítejte! Byli jste pozváni k webu následujícími uživateli: %s. Vyplňte níže "
+"uvedené informace a vytvořte svůj účet."
+msgstr[2] ""
+"Vítejte! Byli jste pozváni k webu následujícími uživateli: %s. Vyplňte níže "
+"uvedené informace a vytvořte svůj účet."
+
+#: by-email/by-email.php:196
+msgid ""
+"Welcome! You&#8217;ve been invited to join the site. Please fill out the "
+"information below to create your account."
+msgstr ""
+"Vítejte! Byli jste pozváni k webu. Vyplňte níže uvedené informace a vytvořte "
+"svůj účet."
+
+#: by-email/by-email.php:286 by-email/by-email.php:698
+#: group-invites/group-invites.php:73
+#: group-invites/templates/invite-anyone.php:87
+#: group-invites/templates/invite-anyone.php:178
+msgid "Send Invites"
+msgstr "Poslat Pozvánky"
+
+#: by-email/by-email.php:298 by-email/by-email.php:525
+#: by-email/by-email.php:588
+msgid "Invite New Members"
+msgstr "Pozvat nové členy"
+
+#: by-email/by-email.php:308 by-email/by-email.php:754
+msgid "Sent Invites"
+msgstr "Odeslané Pozvánky"
+
+#: by-email/by-email.php:420
+msgid "Sorry, there was a problem sending your invitations. Please try again."
+msgstr ""
+"Je nám líto, ale došlo k potížím s odesláním pozvánek. Prosím zkuste to "
+"znovu."
+
+#: by-email/by-email.php:465
+msgid "Invitation cleared"
+msgstr "Pozvánka byla zrušena"
+
+#: by-email/by-email.php:467
+msgid "There was a problem clearing the invitation."
+msgstr "Při rušení pozvánky došlo k potížím."
+
+#: by-email/by-email.php:470
+msgid "Invitations cleared."
+msgstr "Pozvánka byla zrušena"
+
+#: by-email/by-email.php:472
+msgid "There was a problem clearing the invitations."
+msgstr "Při rušení pozvánky došlo k potížím."
+
+#: by-email/by-email.php:515
+msgid ""
+"It looks like you&#8217;ve already accepted your invitation to join the site."
+msgstr "Zdá se, že jste již přijali pozvánku k připojení k webu."
+
+#: by-email/by-email.php:527
+msgid "You have sent the maximum allowed number of invitations."
+msgstr "Odeslali jste maximální počet pozvánek."
+
+#: by-email/by-email.php:577
+msgid ""
+"Some of your invitations were not sent. Please see the errors below and "
+"resubmit the failed invitations."
+msgstr ""
+"Některé vaše pozvánky nebyly odeslány. Přečtěte si níže uvedené chyby a "
+"znovu zopakujte odeslání neodeslaných pozvánek."
+
+#: by-email/by-email.php:583
+msgid "Invite friends to join %s by following these steps:"
+msgstr "Pozvěte přátele, aby se připojili k %s, postupujte takto:"
+
+#: by-email/by-email.php:606
+msgid ""
+"The site administrator has limited each user to %1$d invitations. You have "
+"%2$d invitations remaining."
+msgstr ""
+"Správce webu omezil počet pozvánek každého uživatele na %1$d. Počet vašich "
+"zbývajících pozvánek je %2$d."
+
+#: by-email/by-email.php:625
+msgid "Enter email addresses below, one per line."
+msgstr "Zadejte níže e-mailové adresy, jednu na každý řádek."
+
+#: by-email/by-email.php:626
+msgid ""
+"You can only invite people whose email addresses end in one of the following "
+"domains:"
+msgstr ""
+"Můžete pozvat pouze lidi, jejichž e-mailové adresy skončí na jednu z "
+"následujících domén:"
+
+#: by-email/by-email.php:630
+msgid "You can invite a maximum of %s people at a time."
+msgstr "Maximální počet lidí, které můžete pozvat najednou je %s ."
+
+#: by-email/by-email.php:642
+msgid "(optional) Customize the subject line of the invitation email."
+msgstr "(nepovinné) Přizpůsobte předmět e-mailu pozvánky."
+
+#: by-email/by-email.php:645
+msgid "Subject:"
+msgstr "Předmět:"
+
+#: by-email/by-email.php:653
+msgid "(optional) Customize the text of the invitation."
+msgstr "(nepovinné) Přizpůsobte text pozvánky."
+
+#: by-email/by-email.php:654
+msgid ""
+"The message will also contain a custom footer containing links to accept the "
+"invitation or opt out of further email invitations from this site."
+msgstr ""
+"Zpráva bude také obsahovat vlastní zápatí s odkazy na přijetí pozvánky nebo "
+"zrušení dalších e-mailových pozvánek z těchto stránek."
+
+#: by-email/by-email.php:657
+msgid "Message:"
+msgstr "Zpráva:"
+
+#: by-email/by-email.php:668
+msgid ""
+"(optional) Select some groups. Invitees will receive invitations to these "
+"groups when they join the site."
+msgstr ""
+"(volitelné) Vyberte některé skupiny. Pozvaní obdrží pozvánky do těchto "
+"skupin, když se připojí k webu."
+
+#: by-email/by-email.php:761
+msgid "You have sent invitations to the following people."
+msgstr "Odeslali jste pozvánky těmto lidem."
+
+#: by-email/by-email.php:774
+msgid ""
+"This table displays a list of all your sent invites.\n"
+"\t\t\tInvites that have been accepted are highlighted in the listings.\n"
+"\t\t\tYou may clear any individual invites, all accepted invites or all of "
+"the invites from the list."
+msgstr ""
+"Tato tabulka zobrazuje seznam všech odeslaných pozvánek.\n"
+"                      Pozvány, které byly přijaty, jsou zvýrazněny v seznamu."
+"\n"
+"                      Můžete zrušit všechny individuální pozvánky, všechny "
+"přijaté pozvánky nebo všechny pozvánky ze seznamu."
+
+#: by-email/by-email.php:780
+msgid "Invited email address"
+msgstr "Pozvánka na e-mailovou adresu"
+
+#: by-email/by-email.php:781
+msgid "Group invitations"
+msgstr "Pozvánka do skupiny"
+
+#: by-email/by-email.php:791
+msgid "Clear all accepted invites from the list"
+msgstr "Vymazat všechny přijaté pozvánky ze seznamu"
+
+#: by-email/by-email.php:791
+msgid "Clear all accepted invitations"
+msgstr "Vymazat všechny přijaté pozvánky"
+
+#: by-email/by-email.php:792
+msgid "Clear all your listed invites"
+msgstr "Vymazat všechny uvedené pozvánky"
+
+#: by-email/by-email.php:792
+msgid "Clear all invitations"
+msgstr "Vymazat všechny pozvánky"
+
+#: by-email/by-email.php:818
+msgid "Clear this invitation"
+msgstr "Vymažte tuto pozvánku"
+
+#: by-email/by-email.php:872
+msgid "You haven't sent any email invitations yet."
+msgstr "Neodeslali jste ještě žádné pozvánky e-mailem."
+
+#: by-email/by-email.php:905
+msgid "An invitation to join the %s community."
+msgstr "Pozvánka k připojení ke komunitě %s."
+
+#: by-email/by-email.php:930
+msgid ""
+"You have been invited by %%INVITERNAME%% to join the %s community.\n"
+"\n"
+"Visit %%INVITERNAME%%'s profile at %%INVITERURL%%."
+msgstr ""
+"Byli jste pozváni uživatelem %%INVITERNAME%%, abyste se připojili ke "
+"komunitě %s.\n"
+"\n"
+"Navštivte profil uživatele %%INVITERNAME%% na adrese %%INVITERURL%%."
+
+#: by-email/by-email.php:953
+msgid "To accept this invitation, please visit %%ACCEPTURL%%"
+msgstr "Chcete-li přijmout tuto pozvánku, navštivte prosím %%ACCEPTURL%%"
+
+#: by-email/by-email.php:957
+msgid ""
+"To opt out of future invitations to this site, please visit %%OPTOUTURL%%"
+msgstr ""
+"Chcete-li odhlásit ze zasílání dalších pozvánek na tyto stránky, navštivte "
+"stránku %%OPTOUTURL%%"
+
+#: by-email/by-email.php:1131
+msgid ""
+"You are only allowed to invite up to %s people at a time. Please remove some "
+"addresses and try again"
+msgstr ""
+"Máte povoleno pozvat maximálně tento počet lidí najednou :  %s. Odstraňte "
+"některé adresy a zkuste to znovu"
+
+#: by-email/by-email.php:1141
+msgid "You didn't include any email addresses!"
+msgstr "Nezadali jste žádné e-mailové adresy!"
+
+#: by-email/by-email.php:1154
+msgid ""
+"You are only allowed to invite %s more people. Please remove some addresses "
+"and try again"
+msgstr ""
+"Můžete pozvat pouze %s dalších lidí. Odstraňte některé adresy a zkuste to "
+"znovu"
+
+#: by-email/by-email.php:1175
+msgid "<strong>%s</strong> has opted out of email invitations from this site."
+msgstr ""
+"Uživatel <strong>%s </ strong> se odhlásil z e-mailových pozvánek z tohoto "
+"webu."
+
+#: by-email/by-email.php:1179
+msgid "<strong>%s</strong> is already a registered user of the site."
+msgstr "<strong>%s</ strong> je již registrovaným uživatelem webu."
+
+#: by-email/by-email.php:1183
+msgid "<strong>%s</strong> is not a permitted email address."
+msgstr "<strong>%s</strong> není povolená e-mailová adresa."
+
+#: by-email/by-email.php:1187
+msgid ""
+"<strong>%s</strong> is not a valid email address. Please make sure that you "
+"have typed it correctly."
+msgstr ""
+"<strong>%s</strong> není povolená e-mailová adresa. Zkontrolujte jestli jste "
+"ji zadal(a) správně."
+
+#: by-email/by-email.php:1191
+msgid ""
+"<strong>%s</strong> is not a permitted email address. Please make sure that "
+"you have typed the domain name correctly."
+msgstr ""
+"<strong>%s </strong> není povolená e-mailová adresa. Ujistěte se, že jste "
+"správně zadali název domény."
+
+#: by-email/by-email.php:1250
+msgid "Invitations were sent successfully to the following email addresses: %s"
+msgstr "Pozvánky byly úspěšně odeslány na následující e-mailové adresy: %s"
+
+#: by-email/by-email.php:1255
+msgid "Please correct your errors and resubmit."
+msgstr "Prosím, opravte vaše chyby a odešlete znovu."
+
+#: by-email/by-email.php:1352 by-email/by-email.php:1392
+msgid "We couldn't find any invitations associated with this email address."
+msgstr "Nelze najít žádné pozvánky spojené s touto e-mailovou adresou."
+
+#: by-email/cloudsponge-integration.php:79
+msgid ""
+"You can also add email addresses <a class=\"cs_import\">from your Address "
+"Book</a>."
+msgstr ""
+"Můžete také přidat e-mailové adresy <a class=\"cs_import\"> z vašeho "
+"adresáře </a>."
+
+#: group-invites/group-invites.php:23
+msgid ""
+"Click &ldquo;Send Invites&rdquo; to finish sending your new invitations."
+msgstr ""
+"Klikněte na možnost \"Odeslat Pozvánky\" k dokončení odesílání nových "
+"pozvánek."
+
+#: group-invites/group-invites.php:108 group-invites/group-invites.php:157
+#: group-invites/group-invites.php:201
+msgid "Group invites sent."
+msgstr "Pozvánky do skupiny byly odeslány. "
+
+#: group-invites/group-invites.php:159
+msgid "Group created successfully."
+msgstr "Skupina byla úspěšně založena."
+
+#: group-invites/group-invites.php:410
+#: group-invites/templates/invite-anyone.php:70
+#: group-invites/templates/invite-anyone.php:159
+msgid "Remove Invite"
+msgstr "Odstranit pozvánku"
+
+#: group-invites/group-invites.php:594
+msgid ""
+"%1$s has invited you to the group: \"%2$s\".\n"
+"\n"
+"To view your group invites visit: %3$s\n"
+"\n"
+"To view the group visit: %4$s\n"
+"\n"
+"To view %5$s's profile visit: %6$s\n"
+"\n"
+"---------------------\n"
+msgstr ""
+"Uživatel %1$ s vás pozval do skupiny: \"%2$s\".\n"
+"\n"
+"Chcete-li zobrazit své pozvánky do skupin, navštivte: %3$s\n"
+"\n"
+"Chcete-li zobrazit skupinu, navštivte: %4$s\n"
+"\n"
+"Chcete-li zobrazit profil uživatele %5$s, navštivte: %6$s\n"
+"\n"
+"---------------------"
+
+#: group-invites/templates/invite-anyone.php:27
+#: group-invites/templates/invite-anyone.php:115
+msgid "Search for members to invite:"
+msgstr "Hledat členy, které chcete pozvat:"
+
+#: group-invites/templates/invite-anyone.php:35
+#: group-invites/templates/invite-anyone.php:126
+msgid "Select members from the directory:"
+msgstr "Vyberte členy z adresáře:"
+
+#: group-invites/templates/invite-anyone.php:50
+msgid "Select people to invite."
+msgstr "Vyberte lidi, které chcete pozvat."
+
+#: group-invites/templates/invite-anyone.php:107
+msgid ""
+"Want to invite someone to the group who is not yet a member of the site?"
+msgstr "Chcete pozvat do skupiny někoho, kdo ještě není uživatelem webu?"
+
+#: group-invites/templates/invite-anyone.php:107
+msgid "Send invitations by email."
+msgstr "Poslat pozvánky e-mailem."
+
+#: group-invites/templates/invite-anyone.php:139
+msgid "Select people to invite from your friends list."
+msgstr "Vyberte osoby ze seznamu přátel, které chcete pozvat."
+
+#: lib/bbg-cpt-pag.php:190
+msgid "Viewing %1$d - %2$d of a total of %3$d"
+msgstr "Prohlížení %1$d -%2$d z celkového počtu %3$d"
+
+#: lib/bbg-cpt-pag.php:211
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: lib/bbg-cpt-pag.php:212
+msgid "&raquo;"
+msgstr "&laquo;"
+
+#: widgets/widgets.php:44
+msgid "Enter one email address per line to invite friends to join this site."
+msgstr ""
+"Zadejte jednu e-mailovou adresu na každý řádek, chcete-li pozvat přátele, "
+"aby se připojili k tomuto webu."
+
+#: widgets/widgets.php:71
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: widgets/widgets.php:100
+msgid ""
+"Invite friends to join the site by entering their email addresses below."
+msgstr ""
+"Pozvěte přátele, aby se připojili k webu a vložte níže jejich e-mailové "
+"adresy."
+
+#: widgets/widgets.php:104
+msgid "Title:"
+msgstr "Název:"
+
+#: widgets/widgets.php:106
+msgid "Text to display in widget:"
+msgstr "Text, který se má zobrazit ve widgetu:"
+
+#: widgets/widgets.php:110
+msgid "Number of email fields to display in widget:"
+msgstr "Počet emailových polí, které se mají zobrazit ve widgetu:"
+
+#. Plugin URI of the plugin/theme
+msgid "http://teleogistic.net/code/buddypress/invite-anyone/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Allows group admins to invite any member of their BuddyPress community to a "
+"group or to the site"
+msgstr ""
+"Umožňuje správcům skupiny pozvat nějakého člena své komunity BuddyPress do "
+"skupiny nebo na web stránku"
+
+#. Author of the plugin/theme
+msgid "Boone Gorges"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://boone.gorg.es"
+msgstr ""
+
+#: admin/admin-panel.php:199
+msgid "Enable the Send Invites step during group creation"
+msgstr "Povolte krok Odeslat Pozvánky při vytváření skupiny"
+
+#: admin/admin-panel.php:211
+msgid "Control the default behavior of Invite Anyone."
+msgstr "Ovládat výchozí chování Invite Anyone."
+
+#: admin/admin-panel.php:220
+msgid "display name of the inviter"
+msgstr "zobrazit jméno zvajícího"
+
+#: admin/admin-panel.php:221
+msgid "URL to the profile of the inviter"
+msgstr "URL profilu zvajícího"
+
+#: admin/admin-panel.php:222
+msgid "Link that invited users can click to accept the invitation"
+msgstr "Odkaz, na který pozvaní uživatelé mohou kliknutím přijmout pozvánku"
+
+#: admin/admin-panel.php:223
+msgid "Link that invited users can click to opt out of future invitations"
+msgstr ""
+"Odkaz, na který pozvaní uživatelé mohou kliknout k odhlášení zasílání "
+"dalších pozvánek"
+
+#: admin/admin-panel.php:341
+msgid "Limit number of invites per user :"
+msgstr "Maximální počet pozvánek na uživatele :"
+
+#: admin/admin-panel.php:353
+msgid ""
+"Invite Anyone extends BuddyPress's default group invitation settings. "
+"Instead of allowing you to invite only friends to a group, this plugin "
+"allows you to invite any member of the site. Use these settings to limit "
+"possible invitees for different group roles."
+msgstr ""
+"Invite Anyone rozšiřuje výchozí nastavení  pozvánek BuddyPress skupin . "
+"Místo toho, abyste mohli pozvat do skupiny pouze přátele, vám tento plugin "
+"umožňuje pozvat kteréhokoli člena webu. Použijte tato nastavení k omezení "
+"možných pozvaných pro různé role skupiny."
+
+#: admin/admin-panel.php:453
+msgid ""
+"When you use CloudSponge with Invite Anyone, part of your CloudSponge "
+"monthly payment goes to the author of Invite Anyone. This is a great way to "
+"support future development of the plugin. Thanks for your support!"
+msgstr ""
+"Když používáte CloudSponge s Invite Anyone, část měsíční platby CloudSponge "
+"přechází na autora  Invite Anyone. Je to skvělý způsob, jak podpořit budoucí "
+"vývoj pluginu. Děkuji za vaši podporu!"
+
+#: admin/admin-panel.php:472
+msgid "Inviter"
+msgstr "Zvající"
+
+#: admin/admin-panel.php:477
+msgid "Invited Email"
+msgstr "Zvací Email"
+
+#: admin/admin-stats.php:321
+msgid "Top Inviter (by #)"
+msgstr "Top Zvající (podle #)"
+
+#: admin/admin-stats.php:325
+msgid "Top Inviter (by % accepted)"
+msgstr "Top Zvající (podle % přijatých)"
+
+#: admin/admin-stats.php:346
+msgid "Top Inviter (by #) (CloudSponge)"
+msgstr "Top Zvající (podle #) (CloudSponge)"
+
+#: admin/admin-stats.php:350
+msgid "Top Inviter (by % accepted) (CloudSponge)"
+msgstr "Top Zvající (podle % přijatých) (CloudSponge)"
+
+#: by-email/by-email-db.php:109 by-email/by-email-db.php:122
+msgid "Invitees"
+msgstr "Pozvaní"
+
+#: by-email/by-email-db.php:110 by-email/by-email-db.php:117
+msgid "Invitee"
+msgstr "Pozvaný"
+
+#: by-email/by-email-db.php:111
+msgid "Search Invitees"
+msgstr "Hledat Pozvané Uživatele"
+
+#: by-email/by-email-db.php:112
+msgid "All Invitees"
+msgstr "Všichni Pozvaní Uživatelé"
+
+#: by-email/by-email-db.php:113
+msgid "Edit Invitee"
+msgstr "Upravit pozvaného uživatele"
+
+#: by-email/by-email-db.php:114
+msgid "Update Invitee"
+msgstr "Aktualizovat pozvaného uživatele"
+
+#: by-email/by-email-db.php:115
+msgid "Add New Invitee"
+msgstr "Přidat Nového Uživatele"
+
+#: by-email/by-email-db.php:116
+msgid "New Invitee Name"
+msgstr "Nový název pozvaného uživatele"
+
+#: by-email/by-email-db.php:131 by-email/by-email-db.php:144
+msgid "Invited Groups"
+msgstr "Pozvané skupiny"
+
+#: by-email/by-email-db.php:132 by-email/by-email-db.php:139
+msgid "Invited Group"
+msgstr "Pozvaná skupina"
+
+#: by-email/by-email-db.php:133
+msgid "Search Invited Groups"
+msgstr "Hledat Pozvané skupiny"

@@ -1,0 +1,2250 @@
+# Translation of Plugins - captcha - Stable (latest release) in Czech
+# This file is distributed under the same license as the Plugins - captcha - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-09-14 09:03:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: Plugins - captcha - Stable (latest release)\n"
+
+#. Author of the plugin/theme
+msgid "simplywordpress"
+msgstr "simplywordpress"
+
+#: hctpc-contact-form-integration.php:130
+msgid "To use the value input through this field in a Captcha field, you need to insert the corresponding Captcha Shortcode (%s) into the field on the Captcha tab."
+msgstr "Chcete-li použít hodnotu vstupu prostřednictvím tohoto pole v poli Captcha, je třeba vložit odpovídající Captcha zkrácený kód (%s) do pole na kartě Captcha."
+
+#: hctpc-contact-form-integration.php:125
+msgid "Insert Tag"
+msgstr "Vložit štítek"
+
+#: hctpc-contact-form-integration.php:114
+msgid "Captcha Shortcode"
+msgstr "Zkrácený kód CAPTCHA"
+
+#: hctpc-contact-form-integration.php:102
+msgid "WP Captcha"
+msgstr "WP Captcha"
+
+#: hctpc-contact-form-integration.php:71
+msgid "Please enter the correct value."
+msgstr "Zadejte správnou hodnotu."
+
+#: hctpc-contact-form-integration.php:66
+msgid "Please enter the value."
+msgstr "Zadejte prosím hodnotu."
+
+#: includes/class-hctpc-whitelist.php:396
+msgid "Some errors occurred."
+msgstr "Došlo k chybám."
+
+#. Description of the plugin/theme
+msgid "This plugin allows you to implement super security captcha form into web forms."
+msgstr "Tento modul umožňuje implementovat super zabezpečení captcha formulářů do webových formulářů."
+
+#. #-#-#-#-#  captcha-code.pot (Captcha 4.3.5)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  captcha-code.pot (Captcha 4.3.5)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://wordpress.org/plugins/captcha/"
+msgstr "https://cs.wordpress.org/plugins/captcha/"
+
+#: includes/class-hctpc-whitelist.php:348
+msgid "Filter"
+msgstr "Filtr"
+
+#: includes/class-hctpc-whitelist.php:244
+msgid "Delete"
+msgstr "Smazat"
+
+#: includes/class-hctpc-whitelist.php:127
+msgid "Search item"
+msgstr "Vyhledat položku"
+
+#: includes/class-hctpc-whitelist.php:104
+msgid "IP to whitelist"
+msgstr "Přidat IP adresu na seznam povolených"
+
+#: includes/class-hctpc-whitelist.php:47
+msgid "Last year"
+msgstr "Minulý rok"
+
+#: includes/class-hctpc-whitelist.php:46
+msgid "Last month"
+msgstr "Minulý měsíc"
+
+#: includes/class-hctpc-whitelist.php:45
+msgid "Last week"
+msgstr "Minulý týden"
+
+#: includes/class-hctpc-whitelist.php:44
+msgid "Last 24 hours"
+msgstr "Posledních 24 hodin"
+
+#: includes/class-hctpc-whitelist.php:43
+msgid "All dates"
+msgstr "Všechna data"
+
+#: includes/class-hctpc-settings-tabs.php:634
+msgid "This message will be displayed instead of the captcha field."
+msgstr "Tato zpráva se zobrazí namísto pole CAPTCHA."
+
+#: includes/class-hctpc-settings-tabs.php:633
+msgid "Your IP address is Whitelisted."
+msgstr "Vaše IP adresa je mezi povolenými."
+
+#: includes/class-hctpc-settings-tabs.php:632
+msgid "Whitelisted IP"
+msgstr "Seznam povolených IP"
+
+#: includes/class-hctpc-settings-tabs.php:629
+msgid "This message will be displayed above the captcha field."
+msgstr "Tato zpráva se zobrazí nad polem CAPTCHA."
+
+#: includes/class-hctpc-settings-tabs.php:624
+#: includes/class-hctpc-settings-tabs.php:628
+msgid "Time limit exceeded. Please complete the captcha once again."
+msgstr "Byl překročen časový limit. Vyplňte prosím CAPTCHA znovu."
+
+#: includes/class-hctpc-settings-tabs.php:623
+#: includes/class-hctpc-settings-tabs.php:627
+msgid "Time Limit Exceeded"
+msgstr "Byl překročen časový limit"
+
+#: includes/class-hctpc-settings-tabs.php:620
+msgid "Please enter correct captcha value."
+msgstr "Prosím vyplňte správnou hodnotu CAPTCHA."
+
+#: includes/class-hctpc-settings-tabs.php:619
+msgid "Captcha is Incorrect"
+msgstr "CAPTCHA je nesprávná"
+
+#: includes/class-hctpc-settings-tabs.php:616
+msgid "Please complete the captcha."
+msgstr "Prosím vyplňte CAPTCHA."
+
+#: includes/class-hctpc-settings-tabs.php:615
+msgid "Captcha Field is Empty"
+msgstr "Pole CAPTCHA je prázdné"
+
+#: includes/class-hctpc-settings-tabs.php:610
+msgid "Messages Settings"
+msgstr "Nastavení zpráv"
+
+#: includes/class-hctpc-settings-tabs.php:555
+msgid "sec"
+msgstr "vteřin"
+
+#: includes/class-hctpc-settings-tabs.php:552
+msgid "Time Limit Thershold"
+msgstr "Hranice časového limitu"
+
+#: includes/class-hctpc-settings-tabs.php:545
+msgid "Time Limit"
+msgstr "Časový limit"
+
+#: includes/class-hctpc-settings-tabs.php:534
+msgid "Enable to activate a time limit requeired to complete captcha."
+msgstr "Povolte aktivaci časového limitu pro dokončení CAPTCHA."
+
+#: includes/class-hctpc-settings-tabs.php:458
+msgid "Enable Captcha for"
+msgstr "Povolit CAPTCHA pro"
+
+#: includes/class-hctpc-settings-tabs.php:455
+msgid "General"
+msgstr "Obecné"
+
+#: includes/class-hctpc-settings-tabs.php:450
+msgid "Enable to display captcha when the website page is loaded."
+msgstr "Povolte zobrazení CAPTCHA až při načtení stránky webu."
+
+#: includes/class-hctpc-settings-tabs.php:449
+msgid "Advanced Protection"
+msgstr "Pokročilá ochrana"
+
+#: includes/class-hctpc-settings-tabs.php:443
+msgid "Captcha Title"
+msgstr "CAPTCHA nadpis"
+
+#: includes/class-hctpc-settings-tabs.php:440
+msgid "Enable to display reload button for captcha."
+msgstr "Povolit zobrazení tlačítka obnovit CAPTCHA."
+
+#: includes/class-hctpc-settings-tabs.php:439
+msgid "Reload Button"
+msgstr "Tlačítko obnovit"
+
+#: includes/class-hctpc-settings-tabs.php:434
+msgid "Enable to enlarge captcha images on mouseover."
+msgstr "Povolit zvětšení CAPTCHA obrázků při přejetí myši."
+
+#: includes/class-hctpc-settings-tabs.php:433
+msgid "Enlarge Images"
+msgstr "Zvětšit obrázky"
+
+#: includes/class-hctpc-settings-tabs.php:423
+msgid "Set a number of images to display simultaneously as a captcha question."
+msgstr "Nastaví počet obrázků, které se zobrazí společně s CAPTCHA výzvou."
+
+#: includes/class-hctpc-settings-tabs.php:420
+msgid "Number of Images"
+msgstr "Počet obrázků"
+
+#: includes/class-hctpc-settings-tabs.php:413
+msgid "Words (one, two, three, etc.)"
+msgstr "Slova (jeden, dva, tři, atd.)"
+
+#: includes/class-hctpc-settings-tabs.php:412
+msgid "Numbers (1, 2, 3, etc.)"
+msgstr "Čísla (1, 2, 3, atd.)"
+
+#: includes/class-hctpc-settings-tabs.php:403
+msgid "Subtruction"
+msgstr "Odečítání"
+
+#: includes/class-hctpc-settings-tabs.php:402
+msgid "Addition"
+msgstr "Sčítání"
+
+#: includes/class-hctpc-settings-tabs.php:395
+msgid "Optical Character Recognition (OCR)"
+msgstr "Optické rozpoznávání znaků (OCR)"
+
+#: includes/class-hctpc-settings-tabs.php:324
+msgid "Text fields in the \"Messages\" tab must not be empty."
+msgstr "Textová pole v záložce \"Zprávy\" nesmí být prázdná."
+
+#: includes/class-hctpc-settings-tabs.php:310
+#: includes/class-hctpc-settings-tabs.php:428
+msgid "Image Packages"
+msgstr "Balíčky obrázků"
+
+#: includes/class-hctpc-settings-tabs.php:308
+#: includes/class-hctpc-settings-tabs.php:400
+msgid "Arithmetic Actions"
+msgstr "Aritmetické operace"
+
+#: includes/class-hctpc-settings-tabs.php:51
+msgid "Forgot password form"
+msgstr "Formulář při ztrátě hesla"
+
+#: includes/class-hctpc-settings-tabs.php:41
+msgid "Misc"
+msgstr "Různé"
+
+#: includes/class-hctpc-settings-tabs.php:40
+msgid "Messages"
+msgstr "Zprávy"
+
+#: includes/class-hctpc-package-list.php:120
+msgid "No packages found"
+msgstr "Žádný balíček nenalezen"
+
+#: includes/class-hctpc-package-list.php:98
+msgid "Search"
+msgstr "Hledání"
+
+#: includes/class-hctpc-package-list.php:39
+msgid "packages"
+msgstr "balíčky"
+
+#: includes/class-hctpc-package-list.php:38
+msgid "package"
+msgstr "balíček"
+
+#: includes/class-hctpc-whitelist.php:78
+msgid "Captcha Whitelist"
+msgstr "CAPTCHA seznam povolených"
+
+#: includes/class-hctpc-package-list.php:91
+msgid "Captcha Packages"
+msgstr "CAPTCHA balíčky"
+
+#: bws_menu/bws_functions.php:471
+msgid "Thank you for choosing %s plugin!"
+msgstr "Děkujeme, že jste si vybrali %s plugin!"
+
+#: bws_menu/bws_functions.php:201
+msgid "Thank you for installing %s plugin!"
+msgstr "Děkujeme vám za instalaci %s pluginu!"
+
+#: includes/class-hctpc-settings-tabs.php:392
+msgid "Captcha Type"
+msgstr "Typ CAPTCHA"
+
+#: includes/class-hctpc-settings-tabs.php:363
+msgid "In order to use \"Optical Character Recognition\" type, please select at least one of the items in the option \"Image Packages\"."
+msgstr "Chcete-li použít typ \"Optické rozpoznávání znaků\", vyberte alespoň jednu z položek v možnosti \"Použít balíčky obrázků\"."
+
+#: bws_menu/deprecated.php:667
+msgid "Congratulations! Pro version of the plugin is  installed and activated successfully."
+msgstr "Gratulujeme! PRO verze pluginu byla úspěšně instalována a aktivována."
+
+#: bws_menu/deprecated.php:278
+msgid "Congratulations! The Pro license of the plugin is activated successfully."
+msgstr "Gratulujeme! PRO licence pluginu je úspěšně aktivována."
+
+#: bws_menu/class-bws-settings.php:1060
+msgid "Start Your Free Trial"
+msgstr "Vyzkoušejte po omezenou dobu"
+
+#: bws_menu/class-bws-settings.php:1049
+msgid "Watch the Video"
+msgstr "Přehrát video"
+
+#: bws_menu/class-bws-settings.php:1045
+msgid "Read the Instruction"
+msgstr "Přečíst si instrukce"
+
+#: bws_menu/class-bws-settings.php:760
+msgid "Manage active licenses, download BWS products, and view your payment history using BestWebSoft Client Area."
+msgstr "Správa aktivních licencí, stahování BWS produktů a zobrazení historie plateb v BestWebSoft klientské zóně."
+
+#: bws_menu/class-bws-settings.php:758
+msgid "Login to Client Area"
+msgstr "Přihlášení do klientská zóny"
+
+#: bws_menu/class-bws-settings.php:756
+msgid "Manage License Settings"
+msgstr "Správa nastavení licencí"
+
+#: bws_menu/class-bws-settings.php:751
+msgid "If necessary, you can check if the license key is correct or reenter it in the field below."
+msgstr "V případě potřeby zkontrolujte, je-li licenční klíč správně zadán, případně jej do pole níže vložte znova."
+
+#: bws_menu/class-bws-settings.php:730
+msgid "Enter your license key to activate %s and get premium plugin features."
+msgstr "Vložte váš licenční klíč pro aktivaci %s a získání prémiových fukcí pluginu."
+
+#: bws_menu/class-bws-settings.php:715
+msgid "Settings page"
+msgstr "Stránka nastavení"
+
+#: bws_menu/class-bws-settings.php:715
+msgid "You will be automatically redirected to the %s in %s seconds."
+msgstr "Za %s sekund budete automaticky přesměrováni na %s."
+
+#: bws_menu/class-bws-settings.php:714
+msgid "Congratulations! Pro license is activated successfully."
+msgstr "Gratulujeme! PRO licence byla úspěšně aktivována."
+
+#: bws_menu/class-bws-settings.php:691 bws_menu/class-bws-settings.php:724
+#: bws_menu/class-bws-settings.php:746
+msgid "License Key"
+msgstr "Licenční klíč"
+
+#: bws_menu/class-bws-settings.php:575
+msgid "Import / Export"
+msgstr "Import / Export"
+
+#: bws_menu/class-bws-settings.php:563
+#: includes/class-hctpc-settings-tabs.php:289
+msgid "This will restore plugin settings to defaults."
+msgstr "Toto obnoví veškerá nastavení pluginu na výchozí hodnoty."
+
+#: bws_menu/class-bws-settings.php:562
+#: includes/class-hctpc-settings-tabs.php:288
+msgid "Restore Settings"
+msgstr "Obnovit nastavení"
+
+#: bws_menu/class-bws-settings.php:560
+#: includes/class-hctpc-settings-tabs.php:286
+msgid "Default Settings"
+msgstr "Výchozí nastavení"
+
+#: bws_menu/class-bws-settings.php:556
+msgid "Enable to allow tracking plugin usage anonymously in order to make it better."
+msgstr "Umožnit anonymní sledování využití pluginu tak, aby mohl být dále vylepšován."
+
+#: bws_menu/class-bws-settings.php:553
+msgid "Track Usage"
+msgstr "Sběr statistik"
+
+#: bws_menu/class-bws-settings.php:548
+msgid "Enable to display plugin Pro options."
+msgstr "Povolit zobrazení PRO voleb pluginu."
+
+#: bws_menu/class-bws-settings.php:545
+msgid "Pro Options"
+msgstr "PRO nastavení"
+
+#: bws_menu/class-bws-settings.php:536 bws_menu/class-bws-settings.php:587
+msgid "It is prohibited to view %s settings on this site in the %s network settings."
+msgstr "Je zobrazit nastavení %s na této stránce v %s nastavení sítě."
+
+#: bws_menu/class-bws-settings.php:533 bws_menu/class-bws-settings.php:584
+msgid "It is prohibited to change %s settings on this site in the %s network settings."
+msgstr "Je zakázáno měnit nastavení %s na této stránce v %s nastavení sítě."
+
+#: bws_menu/class-bws-settings.php:524
+#: includes/class-hctpc-settings-tabs.php:282
+msgid "Miscellaneous Settings"
+msgstr "Různá nastavení"
+
+#: bws_menu/class-bws-settings.php:457
+msgid "Activate custom %s code."
+msgstr "Aktivovat vlastní %s kód."
+
+#: bws_menu/class-bws-settings.php:435
+msgid "These code will be added to the header on all pages of your site."
+msgstr "Tento kód bude přidán do záhlaví všech stránek vašeho webu."
+
+#: bws_menu/class-bws-settings.php:420
+msgid "Custom Code"
+msgstr "Vlastní kód"
+
+#: bws_menu/class-bws-settings.php:174
+#: includes/class-hctpc-settings-tabs.php:143
+msgid "Version"
+msgstr "Verze"
+
+#: bws_menu/class-bws-settings.php:170
+msgid "Status"
+msgstr "Stav"
+
+#: bws_menu/class-bws-settings.php:167
+msgid "License"
+msgstr "Licence"
+
+#: bws_menu/class-bws-settings.php:162
+msgid "Active"
+msgstr "Aktivní"
+
+#: bws_menu/class-bws-settings.php:160
+msgid "Renew Now"
+msgstr "Obnovit nyní"
+
+#: bws_menu/class-bws-settings.php:160
+msgid "Expired on %s"
+msgstr "Vypršela dne %s"
+
+#: bws_menu/class-bws-settings.php:154
+msgid "%s day(-s) left"
+msgstr "%s dnů zbývá"
+
+#: bws_menu/class-bws-settings.php:151
+msgid "Expired"
+msgstr "Expirované"
+
+#: bws_menu/class-bws-settings.php:143
+msgid "Inactive"
+msgstr "Neaktivní"
+
+#: bws_menu/class-bws-settings.php:135
+#: includes/class-hctpc-settings-tabs.php:137
+msgid "Information"
+msgstr "Informace"
+
+#: bws_menu/bws_menu.php:427
+msgid "The plugin %s is successfully installed."
+msgstr "Plugin %s úspěšně nainstalován."
+
+#: bws_menu/bws_menu.php:228
+msgid "WP DB version"
+msgstr "WP verze DB"
+
+#: bws_menu/bws_menu.php:226
+msgid "Database"
+msgstr "Databáze"
+
+#: bws_menu/bws_menu.php:207
+msgid "Server Environment"
+msgstr "Prostředí"
+
+#: bws_menu/bws_menu.php:203 bws_menu/bws_menu.php:248
+#: bws_menu/bws_menu.php:251
+msgid "by %s"
+msgstr "podle %s"
+
+#: bws_menu/bws_menu.php:202
+msgid "WP Memory Limit"
+msgstr "WP pamětový limit (memory limit)"
+
+#: bws_menu/bws_menu.php:201
+msgid "WP Multisite"
+msgstr "WP Multisite"
+
+#: bws_menu/bws_menu.php:200
+msgid "WP Version"
+msgstr "WP Verze"
+
+#: bws_menu/bws_menu.php:199
+msgid "Website URL"
+msgstr "URL webových stránek"
+
+#: bws_menu/bws_menu.php:196
+msgid "WordPress Environment"
+msgstr "WordPress prostředí"
+
+#: bws_menu/bws_menu.php:146
+msgid "Congratulations! Pro Membership license is  activated successfully."
+msgstr "Gratulujeme! PRO členství bylo úspěšně aktivováno."
+
+#: bws_menu/bws_functions.php:786 includes/class-hctpc-settings-tabs.php:118
+msgid "Are you sure you want to restore default settings?"
+msgstr "Jste si jisti, že chcete obnovit výchozí nastavení?"
+
+#: bws_menu/bws_functions.php:504
+msgid "You can always look at premium options by checking the \"Pro Options\" in the \"Misc\" tab."
+msgstr "Vždy se můžete podívat na možnosti prémiové verze, kliknutím na \"PRO nastavení\" na \"Go PRO\" záložce."
+
+#: bws_menu/bws_functions.php:376
+msgid "Your license key for %s expires on %s and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+msgstr "Váš licenční klíč pro %s vyprší dne %s a nebudou vám poskytovány TOP-PRIOROTNÍ PODPORA a AKTUALIZACE."
+
+#: bws_menu/bws_functions.php:270
+msgid "This function(-s) will be removed over time. Please update the product(-s)."
+msgstr "Tato funkce, bude  v průběhu času odstraněna. Prosím aktualizujte produkt."
+
+#: bws_menu/bws_functions.php:256
+msgid "Deprecated function(-s) is used on the site here:"
+msgstr "Zastaralé funkce se používají na stránkách zde:"
+
+#: bws_menu/bws_functions.php:93
+msgid "Rate it"
+msgstr "Ohodnoťte jej"
+
+#: bws_menu/bws_functions.php:91
+msgid "Like the plugin?"
+msgstr "Líbí se vám plugin?"
+
+#: includes/class-hctpc-package-loader.php:131
+msgid "One image has been updated or added to the database."
+msgid_plural "%s images have been updated or added to the database."
+msgstr[0] "Jeden obrázek byl aktualizován nebo přidán do databáze."
+msgstr[1] "%s obrázeky byly aktualizovány nebo přidány do databáze."
+msgstr[2] "%s obrázk; bylo aktualizováno nebo přidáno do databáze."
+
+#: includes/class-hctpc-package-loader.php:130
+msgid "One package has been updated or added to the database."
+msgid_plural "%s packages have been updated or added to the database."
+msgstr[0] "Jeden balíček byl aktualizován nebo přidán do databáze."
+msgstr[1] "%s balíčky byly aktualizovány nebo přidány do databáze."
+msgstr[2] "%s balíčk; bylo aktualizováno nebo přidáno do databáze."
+
+#: captcha.php:1806
+msgid "You're using W3 Total Cache plugin. If %1$s doesn't work properly, please clear the cache in W3 Total Cache plugin and turn on '%2$s' option on the plugin %3$s."
+msgstr "Používáte W3 Total Cache plugin. Pokud %1$s nefunguje správně, vymažte cache W3 Total Cache plugin a zapněte '%2$s\" v pluginu možnost %3$s."
+
+#: captcha.php:1803
+msgid "settings page"
+msgstr "stránka nastavení"
+
+#: includes/whitelist.php:450
+msgid "the whitelist of"
+msgstr "seznam povolených"
+
+#: includes/class-hctpc-whitelist.php:182 includes/whitelist.php:193
+msgid "No IP in the whitelist"
+msgstr "Na seznamu povolených zatím není žádná IP adresa"
+
+#: includes/class-hctpc-settings-tabs.php:742
+msgid "The image packages list is empty. Please restore default settings or re-install the plugin to fix this error."
+msgstr "Seznam balíčků obrázků je prázdný. Pro opravu této chyby, prosím obnovte výchozí nastavení nebo znovu nainstalujte plugin."
+
+#: includes/settings_page.php:696
+msgid "Check off for adding the CAPTCHA to forms on their settings pages"
+msgstr "Zaškrtněte políčko pro přidání CAPTCHA do formulářů na jejích stránkách nastavení"
+
+#: includes/class-hctpc-settings-tabs.php:586 includes/settings_page.php:684
+msgid "This option is available only for network or for main blog"
+msgstr "Tato možnost je k dispozici pouze pro síť nebo pro hlavní blog"
+
+#: includes/settings_page.php:637
+msgid "install"
+msgstr "instalovat"
+
+#: includes/settings_page.php:630
+msgid "to the current version"
+msgstr "na aktuální  verzi"
+
+#: includes/settings_page.php:580
+msgid "Errors"
+msgstr "Chyby"
+
+#: includes/settings_page.php:535
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "sekunda"
+msgstr[1] "sekundy"
+msgstr[2] "sekund"
+
+#: includes/class-hctpc-settings-tabs.php:404 includes/settings_page.php:382
+msgid "Multiplication"
+msgstr "Krát"
+
+#: captcha.php:1808 includes/settings_page.php:442
+msgid "Show CAPTCHA after the end of the page loading"
+msgstr "Zobrazit CAPTCHA až poté, kdy se načte celá stránka"
+
+#: includes/settings_page.php:436
+msgid "CAPTCHA title"
+msgstr "CAPCHA název"
+
+#: includes/settings_page.php:443
+msgid "With this option the CAPTCHA will be generated via %s into the form after the end of the page loading. In this case, the most of spam bots can't figure out the answer to the CAPTCHA automatically because they just can't get the CAPTCHA content"
+msgstr "S touto volbou se bude CAPTCHA generovat do formuláře %s až po skončení načítání stránky. V takovém případě většina spamovacích robotů nezjistí automaticky odpověď na CAPTCHA, protože prostě nemohou obsah CAPTCHA získat"
+
+#: includes/class-hctpc-settings-tabs.php:366
+msgid "In order to use images in the CAPTCHA, please select at least one of the items in the option \"Image Packages\". The \"Images\" checkbox in \"Complexity\" option has been disabled."
+msgstr "Aby bylo možné používat v CAPTCHA obrázky, vyberte alespoň jednu z položek v možnosti \"Použít obrázky balíčků\". Zaškrtávací políčko \"Obrázky\" v možnosti \"Míra komplexity\" bylo deaktivováno."
+
+#: includes/settings_page.php:215
+msgid "Text fields in the \"Notification messages\" option must not be empty"
+msgstr "Textová pole v \"Zprávy upozornění\" musí být vyplněna."
+
+#: includes/class-hctpc-settings-tabs.php:335
+msgid "\"%s\" option must not be fully disabled."
+msgstr "\"%s\" možnost nesmí být zcela zakázána."
+
+#: includes/settings_page.php:50
+msgid "WordPress Comments form"
+msgstr "WP komentářový formulář"
+
+#: includes/settings_page.php:49
+msgid "WordPress Reset Password form"
+msgstr "WP formulář při ztrátě hesla"
+
+#: includes/settings_page.php:48
+msgid "WordPress Registration form"
+msgstr "WP registrační formulář"
+
+#: includes/settings_page.php:47
+msgid "WordPress Login form"
+msgstr "WP přihlašovací formulář"
+
+#: includes/settings_page.php:46
+msgid "General Options"
+msgstr "Obecná nastavení"
+
+#: includes/class-hctpc-settings-tabs.php:593
+msgid "Hide from Registered Users"
+msgstr "Skrýt pro registrované uživatele"
+
+#: includes/pro_banners.php:66 includes/settings_page.php:662
+msgid "Enable"
+msgstr "Povolit"
+
+#: includes/pro_banners.php:108 includes/settings_page.php:534
+msgid "for"
+msgstr "na"
+
+#: includes/pro_banners.php:78 includes/settings_page.php:422
+msgid "Use image packages"
+msgstr "Použít balíčky obrázků"
+
+#: includes/pro_banners.php:74
+msgid "Use general settings"
+msgstr "Použít obecná nastavení"
+
+#: includes/class-hctpc-package-loader.php:588 includes/package_loader.php:669
+msgid "Wrong data"
+msgstr "Nesprávná data"
+
+#: includes/class-hctpc-package-loader.php:585
+msgid "Some settings of the package %s were set incorrectly. They have been skipped."
+msgstr "Některá nastavení balíčku %s nebyla nastavena správně. Byly přeskočeny."
+
+#: includes/class-hctpc-package-loader.php:239 includes/package_loader.php:318
+msgid "Archive is empty"
+msgstr "Archiv je prázdný"
+
+#: includes/package_loader.php:154
+msgid "Bytes"
+msgstr "Bytes"
+
+#: includes/package_loader.php:152
+msgid "KB"
+msgstr "KB"
+
+#: includes/package_loader.php:150
+msgid "MB"
+msgstr "MB"
+
+#: includes/package_loader.php:137
+msgid "archive can not be unzipped"
+msgstr "Nepodařilo se rozbalit archiv"
+
+#: includes/package_loader.php:125
+msgid "it is impossible to upload the archive to the server"
+msgstr "není možné nahrát archiv na server"
+
+#: includes/package_loader.php:114
+msgid "file size should not exceed"
+msgstr "velikost souboru by neměla překročit"
+
+#: includes/package_loader.php:112
+msgid "file format should be ZIP-archive"
+msgstr "formát souboru by měl být ZIP archiv"
+
+#: includes/package_loader.php:110
+msgid "check your archive"
+msgstr "zkontrolujte váš archiv"
+
+#: includes/package_loader.php:98
+msgid "Error during package uploading"
+msgstr "Chyba během nahrávání balíčku"
+
+#: captcha.php:1977
+msgid "You need to update this plugin for correct work with"
+msgstr "Aktualizujte tento plugin, aby správně pacoval s"
+
+#: captcha.php:1970
+msgid "has compatibility problems with"
+msgstr "má problémy s kompatibilitou"
+
+#: captcha.php:1967
+msgid "has old version"
+msgstr "má starou verzi"
+
+#: captcha.php:1964
+msgid "after"
+msgstr "po"
+
+#: captcha.php:1964
+msgid "in the future"
+msgstr "v budoucnu"
+
+#: captcha.php:1963
+msgid "plugin contains deprecated functionality that will be removed"
+msgstr "plugin obsahuje zastaralé funkce, které budou odstraněny"
+
+#: captcha.php:1959
+msgid "Warning"
+msgstr "Upozornění"
+
+#: captcha.php:1059
+msgid "In order to pass the CAPTCHA please enable JavaScript"
+msgstr "Pro správnou funkci CAPTCHA prosím povolte JavaScript"
+
+#: bws_menu/bws_menu.php:524
+msgid "Not installed"
+msgstr "Neninstalováno"
+
+#: bws_menu/product_list.php:15
+msgid "Other"
+msgstr "Ostatní"
+
+#: bws_menu/product_list.php:14
+msgid "Utilities"
+msgstr "Utility"
+
+#: bws_menu/product_list.php:13
+msgid "Social"
+msgstr "Sociální"
+
+#: bws_menu/product_list.php:12
+msgid "Site Stats"
+msgstr "Statistiky webu"
+
+#: bws_menu/product_list.php:11
+msgid "Security"
+msgstr "Bezpečnost"
+
+#: bws_menu/product_list.php:9
+msgid "Management"
+msgstr "Správa"
+
+#: bws_menu/product_list.php:8
+msgid "Content & Media"
+msgstr "Obsah & Média"
+
+#: bws_menu/product_list.php:7
+msgid "Advertisement"
+msgstr "Reklama"
+
+#: bws_menu/bws_menu.php:584
+msgid "Nothing found. Try another criteria."
+msgstr "Nic nenalezeno. Zkuste jiná kritéria."
+
+#: bws_menu/bws_menu.php:575
+msgid "Install this plugin"
+msgstr "Instalovat tento plugin"
+
+#: bws_menu/bws_menu.php:553
+msgid "Donate"
+msgstr "Darujte"
+
+#: bws_menu/bws_menu.php:549 bws_menu/class-bws-settings.php:156
+#: bws_menu/class-bws-settings.php:1056
+msgid "Upgrade to Pro"
+msgstr "Aktualizovat na Pro"
+
+#: bws_menu/bws_menu.php:531
+msgid "Update to v %s"
+msgstr "Aktualizovat na %s"
+
+#: bws_menu/bws_menu.php:528
+msgid "Renew to get updates"
+msgstr "Obnovit pro získání aktualizací"
+
+#: bws_menu/bws_menu.php:460 bws_menu/bws_menu.php:589
+msgid "Category"
+msgstr "Rubriky"
+
+#: bws_menu/bws_menu.php:457
+msgid "Filter results"
+msgstr "Výsledky filtrování"
+
+#: bws_menu/bws_menu.php:451
+msgid "Not Installed"
+msgstr "Neninstalováno"
+
+#: bws_menu/bws_menu.php:439 bws_menu/bws_menu.php:445
+msgid "Return to BestWebSoft Panel"
+msgstr "Návrat na BestWebSoft panel"
+
+#: bws_menu/bws_menu.php:439
+msgid "Activate Plugin"
+msgstr "Aktivovat plugin"
+
+#: bws_menu/bws_menu.php:413 bws_menu/bws_menu.php:421
+msgid "Installing the plugin"
+msgstr "Instalace pluginu"
+
+#: bws_menu/bws_menu.php:408
+msgid "Unpacking the package"
+msgstr "Rozbalování balíčku"
+
+#: bws_menu/bws_menu.php:383
+msgid "Downloading install package from"
+msgstr "Stahování instalačního balíčku z"
+
+#: bws_menu/bws_menu.php:377
+msgid "Installing Plugin"
+msgstr "Instalace pluginu"
+
+#: bws_menu/bws_menu.php:370
+msgid "Plugin <strong>activated</strong>."
+msgstr "Plugin <strong>aktivován</strong>."
+
+#: bws_menu/bws_menu.php:367
+msgid "Plugin could not be activated because it triggered a <strong>fatal error</strong>."
+msgstr "Plugin nemůže být aktivován, neboť způsobil <strong>závažnou chybu</strong>."
+
+#: bws_menu/bws_menu.php:365
+msgid "The plugin generated %d characters of <strong>unexpected output</strong> during activation. If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
+msgstr "Plugin generoval %d znaků <strong>neočekávaný výstup</strong> v průběhu aktivace. If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, pokuste se deaktivovat, nebo odstranit tento plugin."
+
+#: bws_menu/bws_menu.php:361
+msgid "Upload Plugin"
+msgstr "Nahrát plugin"
+
+#: bws_menu/bws_menu.php:328
+msgid "Subscribe to Pro Membership"
+msgstr "Přihlásit se k Pro členství"
+
+#: bws_menu/bws_menu.php:339
+msgid "Enter your license key"
+msgstr "Vložte váš licenční klíč"
+
+#: bws_menu/bws_menu.php:326
+msgid "Get Access to %s+ Premium Plugins"
+msgstr "Získejte přístup k %s+ Premiovým pluginům"
+
+#: bws_menu/bws_menu.php:318
+msgid "Manage purchased licenses & subscriptions"
+msgstr "Spravovat zakoupené licence a předplatné"
+
+#: bws_menu/bws_menu.php:163
+msgid "Please enter your license key."
+msgstr "Prosím vložte váš licenční klíč."
+
+#: bws_menu/bws_menu.php:130
+msgid "Log in"
+msgstr "Přihlášení"
+
+#: bws_menu/bws_menu.php:130
+msgid "This license key is bound to another site. Change it via personal Client Area."
+msgstr "Tento licenční klíč je přidružen k jinému webu. Změňte jej prostřednictvím osobní Klientské zóny."
+
+#: bws_menu/class-bws-settings.php:432 bws_menu/deprecated.php:620
+msgid "This PHP code will be hooked to the %s action and will be printed on front end only."
+msgstr "Tento PHP kód bude závislý na %s akci a bude zobrazen pouze na front endu."
+
+#: bws_menu/deprecated.php:580
+msgid "Not enough permissions to create the file"
+msgstr "Nedostatečná oprávnění pro vytvoření souboru"
+
+#: bws_menu/bws_functions.php:228
+msgid "Less Details"
+msgstr "Méně detailů"
+
+#: bws_menu/bws_functions.php:227
+msgid "More Details"
+msgstr "Více detailů"
+
+#: bws_menu/bws_functions.php:225
+msgid "Thank you for installing plugins by BestWebSoft!"
+msgstr "Děkujeme vám za instalaci pluginů od BestWebSoft!"
+
+#: bws_menu/deprecated.php:93
+msgid "System Status"
+msgstr "Stav systému"
+
+#: captcha.php:496 captcha.php:518
+msgid "Date"
+msgstr "Datum"
+
+#: captcha.php:493 captcha.php:515 includes/class-hctpc-package-list.php:130
+msgid "Package"
+msgstr "Balíček"
+
+#: includes/settings_page.php:574
+msgid "If the time limit is exhausted (this message will be displayed above the CAPTCHA)"
+msgstr "Je-li časový limit překročen (tato zpráva se objeví nad CAPTCHA)"
+
+#: includes/settings_page.php:585
+msgid "These messages will be displayed inside of the CAPTCHA"
+msgstr "Tyto zprávy budou zobrazeny uvnitř CAPTCHA"
+
+#: includes/settings_page.php:581
+msgid "These messages will be displayed if the CAPTCHA answer has not passed the verification"
+msgstr "Tyto zprávy budou zobrazeny v případě, že CAPTCHA odpověď neprojde ověřením"
+
+#: captcha.php:442
+msgid "Packages"
+msgstr "Balíčky"
+
+#: captcha.php:442
+msgid "This setting is available in Pro version"
+msgstr "Toto nastavení je k dispozici ve verzi Pro"
+
+#: includes/helpers.php:34
+msgid "Time limit is exhausted. Please reload the CAPTCHA."
+msgstr "Časový limit byl překročen. Načtěte prosím CAPTCHA znovu."
+
+#: bws_menu/bws_menu.php:659
+msgid "Browse Free WordPress Themes"
+msgstr "Procházet WordPress šablony zdarma"
+
+#: bws_menu/bws_functions.php:625
+msgid "Add BWS Shortcode"
+msgstr "Přidávejte zkrácený kód BWS"
+
+#: bws_menu/deprecated.php:251 bws_menu/deprecated.php:690
+msgid "(your username is the email address specified during the purchase)."
+msgstr "(vaše uživatelské jméno je e-mailová adresa uvedená při nákupu)."
+
+#: bws_menu/deprecated.php:249 bws_menu/deprecated.php:688
+msgid "License key can be found in the"
+msgstr "Licenční klíč najdete v"
+
+#: bws_menu/deprecated.php:686
+msgid "version of the plugin."
+msgstr "verze pluginu."
+
+#: bws_menu/deprecated.php:684
+msgid "Enter your license key to install and activate"
+msgstr "Vložte váš licenční klíč pro instalaci a aktivaci"
+
+#: includes/class-hctpc-whitelist.php:412 includes/whitelist.php:367
+msgid "%s IP was deleted successfully"
+msgid_plural "%s IPs were deleted successfully"
+msgstr[0] "%s IP adresa byla úspěšně odstraněna"
+msgstr[1] "%s IP adresy byly úspěšně odstraněny"
+msgstr[2] "%s IP adres bylo úspěšně odstraněno"
+
+#: includes/class-hctpc-whitelist.php:116 includes/pro_banners.php:28
+msgid "Allowed formats"
+msgstr "Přípustné formáty"
+
+#: captcha.php:1542
+msgid "ninety nine"
+msgstr "devadesát devět"
+
+#: captcha.php:1541
+msgid "ninety eight"
+msgstr "devadesát osm"
+
+#: captcha.php:1540
+msgid "ninety seven"
+msgstr "devadesát sedm"
+
+#: captcha.php:1539
+msgid "ninety six"
+msgstr "devadesát šest"
+
+#: captcha.php:1538
+msgid "ninety five"
+msgstr "devadesát pět"
+
+#: captcha.php:1537
+msgid "ninety four"
+msgstr "devadesát čtyři"
+
+#: captcha.php:1536
+msgid "ninety three"
+msgstr "devadesát tři"
+
+#: captcha.php:1535
+msgid "ninety two"
+msgstr "devadesát dva"
+
+#: captcha.php:1534
+msgid "ninety one"
+msgstr "devadesát jedna"
+
+#: captcha.php:1531
+msgid "eighty nine"
+msgstr "osmdesát devět"
+
+#: captcha.php:1530
+msgid "eighty eight"
+msgstr "osmdesát osm"
+
+#: captcha.php:1529
+msgid "eighty seven"
+msgstr "osmdesát sedm"
+
+#: captcha.php:1528
+msgid "eighty six"
+msgstr "osmdesát šest"
+
+#: captcha.php:1527
+msgid "eighty five"
+msgstr "osmdesát pět"
+
+#: captcha.php:1526
+msgid "eighty four"
+msgstr "osmdesát čtyři"
+
+#: captcha.php:1525
+msgid "eighty three"
+msgstr "osmdesát tři"
+
+#: captcha.php:1524
+msgid "eighty two"
+msgstr "osmdesát dva"
+
+#: captcha.php:1523
+msgid "eighty one"
+msgstr "osmdesát jedna"
+
+#: captcha.php:1520
+msgid "seventy nine"
+msgstr "sedmdesát devět"
+
+#: captcha.php:1519
+msgid "seventy eight"
+msgstr "sedmdesát osm"
+
+#: captcha.php:1518
+msgid "seventy seven"
+msgstr "sedmdesát sedm"
+
+#: captcha.php:1517
+msgid "seventy six"
+msgstr "sedmdesát šest"
+
+#: captcha.php:1516
+msgid "seventy five"
+msgstr "sedmdesát pět"
+
+#: captcha.php:1515
+msgid "seventy four"
+msgstr "sedmdesát čtyři"
+
+#: captcha.php:1514
+msgid "seventy three"
+msgstr "sedmdesát tři"
+
+#: captcha.php:1513
+msgid "seventy two"
+msgstr "sedmdesát dva"
+
+#: captcha.php:1512
+msgid "seventy one"
+msgstr "sedmdesát jedna"
+
+#: captcha.php:1509
+msgid "sixty nine"
+msgstr "šedesát devět"
+
+#: captcha.php:1508
+msgid "sixty eight"
+msgstr "šedesát osm"
+
+#: captcha.php:1507
+msgid "sixty seven"
+msgstr "šestnáct sedm"
+
+#: captcha.php:1506
+msgid "sixty six"
+msgstr "šedesát šest"
+
+#: captcha.php:1505
+msgid "sixty five"
+msgstr "šedesát pět"
+
+#: captcha.php:1504
+msgid "sixty four"
+msgstr "šedesát čtyři"
+
+#: captcha.php:1503
+msgid "sixty three"
+msgstr "šedesát tři"
+
+#: captcha.php:1502
+msgid "sixty two"
+msgstr "šedesát dva"
+
+#: captcha.php:1501
+msgid "sixty one"
+msgstr "šedesát jedna"
+
+#: captcha.php:1498
+msgid "fifty nine"
+msgstr "padesát devět"
+
+#: captcha.php:1497
+msgid "fifty eight"
+msgstr "padesát osm"
+
+#: captcha.php:1496
+msgid "fifty seven"
+msgstr "padesát sedm"
+
+#: captcha.php:1495
+msgid "fifty six"
+msgstr "padesát šest"
+
+#: captcha.php:1494
+msgid "fifty five"
+msgstr "padesát pět"
+
+#: captcha.php:1493
+msgid "fifty four"
+msgstr "padesát čtyři"
+
+#: captcha.php:1492
+msgid "fifty three"
+msgstr "padesát tři"
+
+#: captcha.php:1491
+msgid "fifty two"
+msgstr "padesát dva"
+
+#: captcha.php:1490
+msgid "fifty one"
+msgstr "padesát jedna"
+
+#: captcha.php:1487
+msgid "forty nine"
+msgstr "čtyřicet devět"
+
+#: captcha.php:1486
+msgid "forty eight"
+msgstr "čtyřicet osm"
+
+#: captcha.php:1485
+msgid "forty seven"
+msgstr "čtyřicet sedm"
+
+#: captcha.php:1484
+msgid "forty six"
+msgstr "čtyřicet šest"
+
+#: captcha.php:1483
+msgid "forty five"
+msgstr "čtyřicet pět"
+
+#: captcha.php:1482
+msgid "forty four"
+msgstr "čtyřicet čtyři"
+
+#: captcha.php:1481
+msgid "forty three"
+msgstr "čtyřicet tři"
+
+#: captcha.php:1480
+msgid "forty two"
+msgstr "čtyřicet dva"
+
+#: captcha.php:1479
+msgid "forty one"
+msgstr "čtyřicet jedna"
+
+#: captcha.php:1476
+msgid "thirty nine"
+msgstr "třicet devět"
+
+#: captcha.php:1475
+msgid "thirty eight"
+msgstr "třicet osm"
+
+#: captcha.php:1474
+msgid "thirty seven"
+msgstr "třicet sedm"
+
+#: captcha.php:1473
+msgid "thirty six"
+msgstr "třicet šest"
+
+#: captcha.php:1472
+msgid "thirty five"
+msgstr "třicet pět"
+
+#: captcha.php:1471
+msgid "thirty four"
+msgstr "třicet čtyři"
+
+#: captcha.php:1470
+msgid "thirty three"
+msgstr "třicet tři"
+
+#: captcha.php:1469
+msgid "thirty two"
+msgstr "třicet dva"
+
+#: captcha.php:1468
+msgid "thirty one"
+msgstr "třicet jedna"
+
+#: captcha.php:1465
+msgid "twenty nine"
+msgstr "dvacet devět"
+
+#: captcha.php:1464
+msgid "twenty eight"
+msgstr "dvacet osm"
+
+#: captcha.php:1463
+msgid "twenty seven"
+msgstr "dvacet sedm"
+
+#: captcha.php:1462
+msgid "twenty six"
+msgstr "dvacet šest"
+
+#: captcha.php:1461
+msgid "twenty five"
+msgstr "dvacet pět"
+
+#: captcha.php:1460
+msgid "twenty four"
+msgstr "dvacet čtyři"
+
+#: captcha.php:1459
+msgid "twenty three"
+msgstr "dvacet tři"
+
+#: captcha.php:1458
+msgid "twenty two"
+msgstr "dvacet dva"
+
+#: captcha.php:1457
+msgid "twenty one"
+msgstr "dvacet jedna"
+
+#: bws_menu/class-bws-settings.php:443 bws_menu/deprecated.php:644
+msgid "You need to make this files writable before you can save your changes. See %s the Codex %s for more information."
+msgstr "Před tím, než budete moci vaše změny uložit, nastavte těmto souborům oprávnění pro zápis. Podívejte se %s na Kodex %s pro více informací."
+
+#: bws_menu/class-bws-settings.php:464 bws_menu/deprecated.php:633
+msgid "Learn more about %s"
+msgstr "Dozvědět se více o %s"
+
+#: bws_menu/class-bws-settings.php:453 bws_menu/deprecated.php:626
+msgid "Browsing"
+msgstr "Procházení"
+
+#: bws_menu/deprecated.php:624
+msgid "Editing"
+msgstr "Úprava"
+
+#: bws_menu/class-bws-settings.php:429 bws_menu/deprecated.php:618
+msgid "These styles will be added to the header on all pages of your site."
+msgstr "Tyto styly budou přidány do hlaviček všech stránek vašeho webu."
+
+#: bws_menu/deprecated.php:550 bws_menu/deprecated.php:577
+msgid "Not enough permissions to create or update the file"
+msgstr "Nedostatečná oprávnění pro vytvoření či úpravu souboru"
+
+#: bws_menu/deprecated.php:548 bws_menu/deprecated.php:575
+msgid "File %s edited successfully."
+msgstr "Soubor %s byl úspěšně upraven."
+
+#: bws_menu/class-bws-settings.php:424 bws_menu/deprecated.php:497
+msgid "You do not have sufficient permissions to edit plugins for this site."
+msgstr "Nemáte dostatečná oprávnění pro úpravu pluginů tohoto webu."
+
+#: bws_menu/bws_functions.php:473
+msgid "Suggest a Feature"
+msgstr "Navrhnout vlastnost"
+
+#: bws_menu/bws_functions.php:472
+msgid "If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it!"
+msgstr "Máte-li nápad, nebo doporučení na novou vlastnost, kterou by jste v pluginu chtěli vidět, rádi o něm uslyšíme!"
+
+#: includes/whitelist.php:467
+msgid "you should install %s to use this functionality"
+msgstr "měli byste instalovat %s chcete-li tuto funkci využívat"
+
+#: includes/whitelist.php:459
+msgid "you should %s to use this functionality"
+msgstr "měli byste %s chcete-li tuto funkci využívat"
+
+#: includes/whitelist.php:458 includes/whitelist.php:466
+msgid "use the whitelist of %s"
+msgstr "použít seznam povolených %s"
+
+#: includes/whitelist.php:450
+msgid "use"
+msgstr "použít"
+
+#: includes/whitelist.php:423
+msgid "IP-address(es) successfully copied to the whitelist"
+msgstr "IP adresa(y) byl(y) úspěšně zkopírovány na seznam povolených"
+
+#: includes/class-hctpc-whitelist.php:398
+msgid "IP is already in the whitelist."
+msgstr "IP adresa již na seznamu povolených je."
+
+#: includes/class-hctpc-whitelist.php:394
+msgid "IP added to the whitelist successfully."
+msgstr "IP adresa byla úspěšně přidána na seznam povolených."
+
+#: includes/whitelist.php:104
+msgid "Save changes"
+msgstr "Uložit změny"
+
+#: includes/whitelist.php:96
+msgid "By click on this button, all IP-addresses from the whitelist of %s will be loaded to the whitelist of %s"
+msgstr "Kliknutím na toto tlačítko všechny IP adresy ze seznamu povolených %s budou nahrány na seznam povolených %s"
+
+#: includes/whitelist.php:94
+msgid "Load IP to the whitelist"
+msgstr "Načíst IP adresu do seznamu povolených"
+
+#: includes/whitelist.php:84
+msgid "With this option, CAPTCHA will not be displayed for IP-addresses from the whitelist of %s"
+msgstr "S touto volbou nebude CAPTCHA zobrazena pro IP adresy ze seznamu povolených %s"
+
+#: includes/pro_banners.php:126
+msgid "Use several image packages at the same time"
+msgstr "Použít několik balíčků obrázků současně"
+
+#: includes/class-hctpc-package-loader.php:43
+msgid "Can not load images in to the \"uploads\" folder. Please, check your permissions."
+msgstr "Obrázky se do složky \"uploads\" nepodařilo nahrát. Prosím, zkontrolujte oprávnění."
+
+#: includes/settings_page.php:575
+msgid "If the user IP is added to the whitelist (this message will be displayed instead of the CAPTCHA)"
+msgstr "Je-li uživatelova IP adresa přidána na seznam povolených (tato zpráva se zobrazí namísto CAPTCHA)"
+
+#: includes/settings_page.php:584
+msgid "Info"
+msgstr "Info"
+
+#: includes/settings_page.php:571
+msgid "If the time limit is exhausted"
+msgstr "Je-li překročen časový limit"
+
+#: includes/settings_page.php:590
+msgid "Notification messages"
+msgstr "Zprávy upozornění"
+
+#: includes/pro_banners.php:110
+msgid "seconds"
+msgstr "sekund"
+
+#: includes/pro_banners.php:104 includes/settings_page.php:529
+msgid "Enable time limit"
+msgstr "Nastavit časový limit"
+
+#: includes/settings_page.php:428
+msgid "Enlarge images on mouseover"
+msgstr "Při přejetí myší zvětšit obrázek"
+
+#: includes/class-hctpc-settings-tabs.php:309
+#: includes/class-hctpc-settings-tabs.php:410 includes/settings_page.php:192
+#: includes/settings_page.php:390
+msgid "Complexity"
+msgstr "Míra komplexity"
+
+#: includes/class-hctpc-settings-tabs.php:394 includes/settings_page.php:191
+#: includes/settings_page.php:364 includes/settings_page.php:371
+msgid "Arithmetic actions"
+msgstr "Aritmetické operace"
+
+#: includes/settings_page.php:433
+msgid "Show reload button"
+msgstr "Zobrazit tlačítko Obnovit"
+
+#: includes/settings_page.php:654
+msgid "to use this functionality"
+msgstr "chcete-li tuto funkci využívat"
+
+#: includes/settings_page.php:642 includes/whitelist.php:459
+msgid "activate"
+msgstr "aktivovat"
+
+#: includes/settings_page.php:651
+msgid "You should"
+msgstr "Měli by jste"
+
+#: includes/class-hctpc-settings-tabs.php:88
+msgid "WordPress default"
+msgstr "Výchozí WordPress"
+
+#: includes/class-hctpc-settings-tabs.php:414 includes/settings_page.php:401
+msgid "Images"
+msgstr "Obrázky"
+
+#: includes/helpers.php:33
+msgid "Time limit is exhausted. Please enter a CAPTCHA value again."
+msgstr "Časový limit byl překročen. Vyplňte prosím CAPTCHA znovu."
+
+#: bws_menu/bws_functions.php:924
+msgid "Submit a Request"
+msgstr "Odeslat požadavek"
+
+#: bws_menu/bws_functions.php:923
+msgid "Video Instructions"
+msgstr "Video instrukce"
+
+#: bws_menu/bws_functions.php:922
+msgid "Documentation"
+msgstr "Dokumentace"
+
+#: bws_menu/bws_functions.php:921
+msgid "For more information:"
+msgstr "Pro více informací:"
+
+#: bws_menu/bws_functions.php:910 bws_menu/class-bws-settings.php:1047
+msgid "Visit Help Center"
+msgstr "Navštivte Centrum pomoci"
+
+#: bws_menu/bws_functions.php:645
+msgid "Add BestWebSoft plugins' shortcodes using this button."
+msgstr "Pomocí tohoto tlačítka můžete přidávat krátké kódy BestWebSoft pluginu."
+
+#: bws_menu/bws_functions.php:645
+msgid "Add shortcode"
+msgstr "Přidat krátký kód"
+
+#: bws_menu/deprecated.php:677
+msgid "Show Pro features"
+msgstr "Zobrazit Pro vlastnosti"
+
+#: bws_menu/deprecated.php:315
+msgid "Check premium options on the plugin settings page!"
+msgstr "Zkontrolujte prémiové možnosti na stránce nastavení pluginů!"
+
+#: includes/class-hctpc-package-list.php:131
+#: includes/class-hctpc-whitelist.php:190
+msgid "Date Added"
+msgstr "Datum přidání"
+
+#: includes/class-hctpc-whitelist.php:111 includes/whitelist.php:121
+msgid "My IP"
+msgstr "Má IP adresa"
+
+#: includes/helpers.php:35
+msgid "You are in the whitelist."
+msgstr "Jste na seznamu povolených."
+
+#: bws_menu/bws_functions.php:855
+msgid "Insert"
+msgstr "Vložit"
+
+#: bws_menu/bws_functions.php:850
+msgid "The shortcode will be inserted"
+msgstr "Bude vložen krátký kód"
+
+#: bws_menu/bws_functions.php:845
+msgid "Shortcode settings"
+msgstr "Nastavení krátkých kódů"
+
+#: bws_menu/bws_functions.php:836
+msgid "Plugin"
+msgstr "Plugin"
+
+#: bws_menu/bws_functions.php:626
+msgid "Add BWS Plugins Shortcode"
+msgstr "Přidávejte zkrácený kód BWS pluginů"
+
+#: bws_menu/bws_functions.php:489
+msgid "The plugin's settings have been changed."
+msgstr "Nastavení pluginu bylo změněno."
+
+#: bws_menu/bws_functions.php:210 bws_menu/bws_functions.php:220
+#: bws_menu/bws_functions.php:324 bws_menu/bws_functions.php:372
+#: bws_menu/bws_functions.php:476
+msgid "Close notice"
+msgstr "Zavřít poznámku"
+
+#: bws_menu/bws_functions.php:206 bws_menu/bws_functions.php:238
+#: includes/class-hctpc-whitelist.php:80
+msgid "Add New"
+msgstr "Přidat nový"
+
+#: bws_menu/bws_functions.php:202
+msgid "Let's get started"
+msgstr "Začněme"
+
+#: bws_menu/bws_functions.php:186
+msgid "or higher! We do not guarantee that our plugin will work correctly. Please upgrade to WordPress latest version."
+msgstr "nebo vyšší! Nezaručujeme, že náš plugin bude fungovat správně. Prosím aktualizujte na nejnovější verzi WordPressu."
+
+#: includes/class-hctpc-whitelist.php:438 includes/whitelist.php:393
+msgid "Search results for"
+msgstr "Výsledky hledání pro"
+
+#: includes/class-hctpc-whitelist.php:436
+msgid "You have not entered any value in to the search form."
+msgstr "Do vyhledávacího formuláře jste nezadali žádnou hodnotu."
+
+#: includes/class-hctpc-whitelist.php:433
+msgid "You have not entered any value."
+msgstr "Nezadali jste žádnou hodnotu."
+
+#: includes/class-hctpc-whitelist.php:424 includes/whitelist.php:379
+msgid "One IP was deleted successfully"
+msgstr "Jedna IP adresa byla úspěšně odstraněna"
+
+#: includes/class-hctpc-whitelist.php:401
+msgid "Invalid IP. See allowed formats."
+msgstr "Neplatná IP adresa. Zkontrolujte Přípustné formáty."
+
+#: includes/class-hctpc-whitelist.php:418
+#: includes/class-hctpc-whitelist.php:430
+msgid "Some errors occurred"
+msgstr "Došlo k chybám"
+
+#: includes/whitelist.php:255 includes/whitelist.php:264
+msgid "Remove from the whitelist"
+msgstr "Odebrat ze seznamu povolených"
+
+#: includes/class-hctpc-whitelist.php:189
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: includes/class-hctpc-whitelist.php:182 includes/whitelist.php:193
+msgid "Nothing found"
+msgstr "Nic nenalezeno"
+
+#: includes/whitelist.php:136
+msgid "Search IP"
+msgstr "Hledat IP adresu"
+
+#: includes/pro_banners.php:30
+msgid "tab, new line or carriage return"
+msgstr "tabelátor, nový řádek nebo návratu vozíku"
+
+#: includes/pro_banners.php:30
+msgid "Allowed separators for reasons: a comma"
+msgstr "Povolené oddělovače pro Důvody: čárka"
+
+#: includes/pro_banners.php:29
+msgid "ordinary space, tab, new line or carriage return"
+msgstr "obyčejná mezera, tabelátor, nový řádek nebo návratu vozíku"
+
+#: includes/pro_banners.php:29 includes/pro_banners.php:30
+msgid "semicolon"
+msgstr "středník"
+
+#: includes/pro_banners.php:29
+msgid "Allowed separators for IPs: a comma"
+msgstr "Povolené oddělovače pro IP adresu: čárka"
+
+#: includes/pro_banners.php:26
+msgid "Reason"
+msgstr "Důvod"
+
+#: includes/class-hctpc-whitelist.php:118
+msgid "Allowed diapason"
+msgstr "Povolený rozsah"
+
+#: includes/whitelist.php:129
+msgid "Allowed formats:"
+msgstr "Přípustné formáty"
+
+#: includes/class-hctpc-whitelist.php:121 includes/whitelist.php:91
+#: includes/whitelist.php:125
+msgid "Add IP to whitelist"
+msgstr "Přidat IP adresu na seznam povolených"
+
+#: includes/whitelist.php:74
+msgid "For IP addresses from the whitelist CAPTCHA will not be displayed"
+msgstr "Pro IP adresy ze seznamu povolených nebude CAPTCHA zobrazena"
+
+#: bws_menu/bws_menu.php:317 captcha.php:1762
+msgid "Support"
+msgstr "Podpora"
+
+#: captcha.php:1628
+msgid "Decryption password is not set"
+msgstr "Dekódovací heslo není nastaveno"
+
+#: captcha.php:1607
+msgid "Encryption password is not set"
+msgstr "Kódovací heslo není nastaveno"
+
+#: captcha.php:1533
+msgid "ninety"
+msgstr "devadesát"
+
+#: captcha.php:1522
+msgid "eighty"
+msgstr "osmdesát"
+
+#: captcha.php:1511
+msgid "seventy"
+msgstr "sedmdesát"
+
+#: captcha.php:1500
+msgid "sixty"
+msgstr "šedesát"
+
+#: captcha.php:1489
+msgid "fifty"
+msgstr "padesát"
+
+#: captcha.php:1478
+msgid "forty"
+msgstr "čtyřicet"
+
+#: captcha.php:1467
+msgid "thirty"
+msgstr "třicet"
+
+#: captcha.php:1456
+msgid "twenty"
+msgstr "dvacet"
+
+#: captcha.php:1445
+msgid "ten"
+msgstr "deset"
+
+#: captcha.php:1454
+msgid "nineteen"
+msgstr "devatenáct"
+
+#: captcha.php:1453
+msgid "eighteen"
+msgstr "osmnáct"
+
+#: captcha.php:1452
+msgid "seventeen"
+msgstr "sedmnáct"
+
+#: captcha.php:1451
+msgid "sixteen"
+msgstr "šestnáct"
+
+#: captcha.php:1450
+msgid "fifteen"
+msgstr "patnáct"
+
+#: captcha.php:1449
+msgid "fourteen"
+msgstr "čtrnáct"
+
+#: captcha.php:1448
+msgid "thirteen"
+msgstr "třináct"
+
+#: captcha.php:1447
+msgid "twelve"
+msgstr "dvanáct"
+
+#: captcha.php:1446
+msgid "eleven"
+msgstr "jedenáct"
+
+#: captcha.php:1443
+msgid "nine"
+msgstr "devět"
+
+#: captcha.php:1442 includes/settings_page.php:379
+msgid "eight"
+msgstr "osm"
+
+#: captcha.php:1441 includes/settings_page.php:375
+#: includes/settings_page.php:383
+msgid "seven"
+msgstr "sedm"
+
+#: captcha.php:1440 includes/settings_page.php:398
+msgid "six"
+msgstr "šest"
+
+#: captcha.php:1439
+msgid "five"
+msgstr "pět"
+
+#: captcha.php:1438
+msgid "four"
+msgstr "čtyři"
+
+#: captcha.php:1437
+msgid "three"
+msgstr "tři"
+
+#: captcha.php:1436
+msgid "two"
+msgstr "dva"
+
+#: captcha.php:1435 includes/settings_page.php:398
+msgid "one"
+msgstr "jedna"
+
+#: captcha.php:1434
+msgid "zero"
+msgstr "nula"
+
+#: captcha.php:833 captcha.php:839
+msgid "Click the BACK button on your browser, and try again."
+msgstr "Klikněte ve vašem prohlížeči na tlačítko ZPĚT a zkuste to znovu."
+
+#: captcha.php:833 captcha.php:839
+msgid "Error"
+msgstr "Chyba"
+
+#: captcha.php:607 captcha.php:613 captcha.php:629 captcha.php:631
+#: captcha.php:640 captcha.php:694 captcha.php:698 captcha.php:707
+#: captcha.php:730 captcha.php:740 captcha.php:765 captcha.php:768
+#: captcha.php:776
+msgid "ERROR"
+msgstr "CHYBA"
+
+#: bws_menu/bws_functions.php:490 bws_menu/class-bws-settings.php:182
+#: bws_menu/class-bws-settings.php:202 bws_menu/deprecated.php:640
+#: includes/class-hctpc-settings-tabs.php:151
+#: includes/class-hctpc-settings-tabs.php:171 includes/settings_page.php:163
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: includes/settings_page.php:570
+msgid "If the CAPTCHA is incorrect"
+msgstr "V případě, že CAPTCHA je nesprávná"
+
+#: includes/settings_page.php:569
+msgid "If the CAPTCHA field is empty"
+msgstr "V případě, že pole CAPTCHA je prázdné"
+
+#: includes/class-hctpc-settings-tabs.php:446
+msgid "Required Symbol"
+msgstr "Požadovaný symbol"
+
+#: bws_menu/bws_functions.php:489 bws_menu/class-bws-settings.php:533
+#: bws_menu/class-bws-settings.php:536 bws_menu/class-bws-settings.php:584
+#: bws_menu/class-bws-settings.php:587
+msgid "Notice"
+msgstr "Poznámka"
+
+#: bws_menu/bws_functions.php:915 captcha.php:1761
+msgid "FAQ"
+msgstr "Často kladené otázky (FAQ)"
+
+#: captcha.php:443
+msgid "Whitelist"
+msgstr "Seznam povolených"
+
+#: captcha.php:438
+msgid "How to Use Step-by-step Instruction"
+msgstr "Instrukce jak používat krok-za-krokem"
+
+#: bws_menu/class-bws-settings.php:282
+#: includes/class-hctpc-settings-tabs.php:246 includes/settings_page.php:137
+msgid "All plugin settings were restored."
+msgstr "Všechna nastavení pluginu byla obnovena."
+
+#: includes/class-hctpc-settings-tabs.php:377
+msgid "Settings saved."
+msgstr "Nastavení uloženo."
+
+#: includes/settings_page.php:397
+msgid "Words"
+msgstr "Slova"
+
+#: includes/settings_page.php:393
+msgid "Numbers"
+msgstr "Čísla"
+
+#: includes/settings_page.php:378
+msgid "Minus"
+msgstr "Mínus"
+
+#: includes/settings_page.php:374
+msgid "Plus"
+msgstr "Plus"
+
+#: includes/class-hctpc-settings-tabs.php:52
+msgid "Comments form"
+msgstr "Formulář komentářů"
+
+#: includes/class-hctpc-settings-tabs.php:50
+msgid "Registration form"
+msgstr "Formulář registrace"
+
+#: includes/class-hctpc-settings-tabs.php:49
+msgid "Login form"
+msgstr "Přihlašovací formulář"
+
+#: includes/helpers.php:32
+msgid "Please enter a valid CAPTCHA value."
+msgstr "Prosím vyplňte správnou CAPTCHA hodnotu."
+
+#: includes/helpers.php:31
+msgid "Please enter a CAPTCHA value."
+msgstr "Prosím vyplňte CAPTCHA hodnotu."
+
+#. Plugin Name of the plugin/theme
+msgid "Captcha"
+msgstr "Captcha"
+
+#: captcha.php:42 captcha.php:436 includes/class-hctpc-settings-tabs.php:453
+msgid "Captcha Settings"
+msgstr "Nastavení CAPTCHA"
+
+#: bws_menu/bws_menu.php:675
+msgid "Send to custom email &#187;"
+msgstr "Odeslat na vlastní e-mail &#187;"
+
+#: bws_menu/bws_menu.php:668
+msgid "Send to support"
+msgstr "Odeslat podpoře"
+
+#: bws_menu/bws_menu.php:239
+msgid "Inactive Plugins"
+msgstr "Neaktivní pluginy"
+
+#: bws_menu/bws_menu.php:234
+msgid "Active Plugins"
+msgstr "Aktivní pluginy"
+
+#: bws_menu/bws_menu.php:648
+msgid "Already Installed"
+msgstr "Již instalováno"
+
+#: bws_menu/bws_menu.php:621 bws_menu/bws_menu.php:641
+msgid "By %s"
+msgstr "podle %s"
+
+#: includes/settings_page.php:629
+msgid "update"
+msgstr "aktualizovat"
+
+#: bws_menu/bws_menu.php:543 bws_menu/bws_menu.php:566
+#: bws_menu/bws_menu.php:575 includes/class-hctpc-settings-tabs.php:792
+msgid "Install Now"
+msgstr "Instalovat nyní"
+
+#: bws_menu/bws_menu.php:563 bws_menu/bws_menu.php:572
+msgid "Activate this plugin"
+msgstr "Aktivovat tento plugin"
+
+#: bws_menu/bws_functions.php:203 bws_menu/bws_functions.php:236
+#: bws_menu/bws_menu.php:557 bws_menu/bws_menu.php:559 captcha.php:441
+#: captcha.php:1747 captcha.php:1760 includes/class-hctpc-settings-tabs.php:39
+msgid "Settings"
+msgstr "Nastavení"
+
+#: bws_menu/product_list.php:10
+msgid "Recommended"
+msgstr "Doporučeno"
+
+#: bws_menu/bws_menu.php:450 bws_menu/bws_menu.php:650
+msgid "Installed"
+msgstr "Instalované"
+
+#: bws_menu/bws_menu.php:449 bws_menu/bws_menu.php:464
+#: bws_menu/bws_menu.php:593
+msgid "All"
+msgstr "Vše"
+
+#: bws_menu/bws_menu.php:308 bws_menu/bws_menu.php:312
+#: bws_menu/bws_menu.php:611 bws_menu/deprecated.php:92
+msgid "Themes"
+msgstr "Šablony"
+
+#: bws_menu/bws_menu.php:307 bws_menu/bws_menu.php:311
+#: bws_menu/bws_menu.php:360 bws_menu/deprecated.php:91
+msgid "Plugins"
+msgstr "Pluginy"
+
+#: bws_menu/bws_menu.php:309 bws_menu/bws_menu.php:313
+#: bws_menu/bws_menu.php:662
+msgid "System status"
+msgstr "Stav systému"
+
+#: bws_menu/class-bws-settings.php:1043
+msgid "Need Help?"
+msgstr "Potřebujete pomoc?"
+
+#: bws_menu/bws_menu.php:291
+msgid "Sorry, email message could not be delivered."
+msgstr "Je nám líto, ale e-mail nemohl být doručen."
+
+#: bws_menu/bws_menu.php:268
+msgid "Thank you for contacting us."
+msgstr "Děkujeme, že jste nás kontaktovali."
+
+#: bws_menu/bws_menu.php:264
+msgid "Email with system info is sent to"
+msgstr "E-mail se systémovým nastavením byl odeslán na"
+
+#: bws_menu/bws_menu.php:260
+msgid "Please enter a valid email address."
+msgstr "Zadejte prosím platnou e-mailovou adresu."
+
+#: bws_menu/bws_menu.php:203
+msgid "Active Theme"
+msgstr "Aktivní šablona"
+
+#: bws_menu/bws_menu.php:198
+msgid "Home URL"
+msgstr "Domovská URL"
+
+#: bws_menu/bws_menu.php:220
+msgid "PHP XML support"
+msgstr "PHP podpora XML"
+
+#: bws_menu/bws_menu.php:219
+msgid "PHP IPTC support"
+msgstr "PHP podpora IPTC"
+
+#: bws_menu/bws_menu.php:218
+msgid "PHP Exif support"
+msgstr "PHP podpora Exif"
+
+#: bws_menu/bws_menu.php:217
+msgid "PHP Max Script Execute Time"
+msgstr "PHP Max Script Execute Time"
+
+#: bws_menu/bws_menu.php:216
+msgid "PHP Max Post Size"
+msgstr "PHP Max Post Size"
+
+#: bws_menu/bws_menu.php:215
+msgid "PHP Max Upload Size"
+msgstr "PHP Max Upload Size"
+
+#: bws_menu/bws_menu.php:213
+msgid "PHP Memory Limit"
+msgstr "PHP Limit paměti"
+
+#: bws_menu/bws_menu.php:212
+msgid "PHP Allow URL fopen"
+msgstr "PHP Allow URL fopen"
+
+#: bws_menu/bws_menu.php:211
+msgid "PHP Version"
+msgstr "Verze PHP"
+
+#: bws_menu/bws_menu.php:230
+msgid "SQL Mode"
+msgstr "Mód SQL"
+
+#: bws_menu/bws_menu.php:229
+msgid "MySQL version"
+msgstr "Verze MYSQL"
+
+#: bws_menu/bws_menu.php:214
+msgid "Memory Usage"
+msgstr "Využití paměti"
+
+#: bws_menu/bws_menu.php:210
+msgid "Server"
+msgstr "Server"
+
+#: bws_menu/bws_menu.php:209
+msgid "Operating System"
+msgstr "Operační systém"
+
+#: bws_menu/bws_menu.php:183 bws_menu/bws_menu.php:184
+#: bws_menu/bws_menu.php:185 bws_menu/bws_menu.php:189
+msgid "No"
+msgstr "Ne"
+
+#: bws_menu/bws_menu.php:183 bws_menu/bws_menu.php:184
+#: bws_menu/bws_menu.php:185 bws_menu/bws_menu.php:189
+msgid "Yes"
+msgstr "Ano"
+
+#: bws_menu/bws_menu.php:182
+msgid " Mb"
+msgstr " Mb"
+
+#: bws_menu/bws_menu.php:177 bws_menu/bws_menu.php:178
+#: bws_menu/bws_menu.php:179 bws_menu/bws_menu.php:180
+#: bws_menu/bws_menu.php:181 bws_menu/bws_menu.php:182
+#: bws_menu/bws_menu.php:191
+msgid "N/A"
+msgstr "N/A"
+
+#: bws_menu/bws_menu.php:176
+msgid "Off"
+msgstr "Vypnout"
+
+#: bws_menu/bws_menu.php:176
+msgid "On"
+msgstr "Zapnout"
+
+#: bws_menu/bws_menu.php:174
+msgid "Not set"
+msgstr "Nenastaveno"
+
+#: bws_menu/bws_functions.php:790 includes/class-hctpc-settings-tabs.php:122
+msgid "No, go back to the settings page"
+msgstr "Ne, vrátit se na nastavení"
+
+#: bws_menu/bws_functions.php:789 includes/class-hctpc-settings-tabs.php:121
+msgid "Yes, restore all settings"
+msgstr "Ano, obnovit veškerá nastavení"
+
+#: bws_menu/deprecated.php:480
+msgid "Restore settings"
+msgstr "Obnovit nastavení"
+
+#: bws_menu/deprecated.php:478
+msgid "Restore all plugin settings to defaults"
+msgstr "Obnovit veškerá nastavení pluginu na výchozí hodnoty?"
+
+#: bws_menu/bws_functions.php:694
+msgid "Close"
+msgstr "Zavřít"
+
+#: bws_menu/bws_functions.php:163
+msgid "The Pro Trial license will expire on"
+msgstr "Zkušební Pro licence vyprší"
+
+#: bws_menu/bws_functions.php:160
+msgid "Notice: You are using the Pro Trial license of plugin."
+msgstr "Poznámka: Používáte zkušební Pro verzi pluginu."
+
+#: bws_menu/bws_functions.php:158
+msgid "Notice: You are using the Pro Trial license of %s plugin."
+msgstr "Poznámka: Používáte zkušební Pro verzi pluginu %s."
+
+#: bws_menu/bws_functions.php:140 bws_menu/bws_functions.php:376
+#: bws_menu/deprecated.php:584
+msgid "Learn more"
+msgstr "Dozvědět se více"
+
+#: bws_menu/bws_functions.php:140
+msgid "Your license has expired. To continue getting top-priority support and plugin updates, you should extend it."
+msgstr "Vaše licence vypršela. Pro přístup k top-prioritní podpoře a aktualizacím pluginu ji budete muset prodloužit."
+
+#: bws_menu/bws_functions.php:138
+msgid "Notice: Your Pro Trial license has expired. To continue using the plugin, you should buy a Pro license"
+msgstr "Poznámka: Vaše zkušební Pro verze pluginu vypršela. Pro další využíváni pluginu bude nutné zakoupit Pro licenci"
+
+#: bws_menu/bws_functions.php:121
+msgid "You can use one license of the Pro plugin for one domain only. Please check and edit your license or domain if necessary using you personal Client Area. We strongly recommend you to solve the problem within 24 hours, otherwise the Pro plugin will be deactivated."
+msgstr "Pro licenci pluginu můžete používat pouze pro jednu doménu. Prosím zkontrolujte a případně upravte Váš licenční klíč na vaší osobní stránce - Klientské zóně. Důrazně doporučujeme, aby jste tento problém odstranili během 24 hodin, jinak bude Pro plugin deaktivován."
+
+#: bws_menu/bws_functions.php:121
+msgid "WARNING: Illegal use notification"
+msgstr "POZOR: upozornění na neoprávněné užívání"
+
+#: bws_menu/bws_menu.php:336 bws_menu/bws_menu.php:347
+#: bws_menu/class-bws-settings.php:749 bws_menu/deprecated.php:227
+msgid "Check license key"
+msgstr "Zkontrolovat licenční klíč"
+
+#: bws_menu/deprecated.php:223
+msgid "(your username is the email address specified during the purchase). If necessary, please submit \"Lost your password?\" request."
+msgstr "(vaše uživatelské jméno je e-mailová adresa uvedena při nákupu). Pokud je to nutné, prosím odešlete \"Lost your password?\" požadavek."
+
+#: bws_menu/deprecated.php:223
+msgid "If necessary, you can check if the license key is correct or reenter it in the field below. You can find your license key on your personal page - Client Area - on our website"
+msgstr "V případě potřeby zkontrolujte, je-li licenční klíč správně zadán, případně jej do pole níže vložte znova. Váš licenční klíč najdete na vaší osobní stránce - Client area - na našem webu"
+
+#: bws_menu/deprecated.php:204
+msgid "Please, enter your license key"
+msgstr "Prosím, vložte váš licenční klíč."
+
+#: bws_menu/bws_menu.php:144 bws_menu/class-bws-settings.php:831
+#: bws_menu/deprecated.php:156
+msgid "Your license will expire on"
+msgstr "Vaše licence vyprší"
+
+#: bws_menu/bws_menu.php:142 bws_menu/class-bws-settings.php:828
+#: bws_menu/deprecated.php:153
+msgid "The license key is valid."
+msgstr "Licenční klíč je platný"
+
+#: bws_menu/class-bws-settings.php:826 bws_menu/deprecated.php:151
+msgid "The Pro Trial license key is valid."
+msgstr "Licenční klíč zkušební Pro verze je platný"
+
+#: bws_menu/class-bws-settings.php:821 bws_menu/deprecated.php:147
+msgid "Unfortunately, the Pro Trial licence was already installed to this domain. The Pro Trial license can be installed only once."
+msgstr "Bohužel, tato zkušební Pro licence již pro tuto doménu byla použita. Zkušební Pro licence může být instalována pouze jedenkrát."
+
+#: bws_menu/class-bws-settings.php:819 bws_menu/deprecated.php:145
+msgid "Unfortunately, you have exceeded the number of available tries."
+msgstr "Bohužel, překročili jste dostupný počet pokusů."
+
+#: bws_menu/class-bws-settings.php:817 bws_menu/deprecated.php:143
+msgid "This license key is valid, but Your license has expired. If you want to update our plugin in future, you should extend the license."
+msgstr "Tento licenční klíč je platný, ale vaše licence vypršela. Chcete-li náš plugin v budoucnosti aktualizovat, měli by jste licenci prodloužit."
+
+#: bws_menu/class-bws-settings.php:815 bws_menu/class-bws-settings.php:918
+#: bws_menu/deprecated.php:141 bws_menu/deprecated.php:360
+msgid "This license key is bound to another site."
+msgstr "Tento licenční klíč je přidružen k jiným webovým stránkám."
+
+#: bws_menu/bws_menu.php:128 bws_menu/class-bws-settings.php:813
+#: bws_menu/class-bws-settings.php:916 bws_menu/deprecated.php:139
+#: bws_menu/deprecated.php:358
+msgid "Wrong license key."
+msgstr "Neplatný licenční klíč"
+
+#: bws_menu/bws_menu.php:132 bws_menu/bws_menu.php:334
+#: bws_menu/deprecated.php:261
+msgid "Unfortunately, you have exceeded the number of available tries per day."
+msgstr "Bohužel, překročili jste dostupný počet pokusů pro daný den."
+
+#: bws_menu/deprecated.php:247
+msgid "After that, you can activate it by entering your license key."
+msgstr "Poté, co jej aktivujete vložením vašeho licenčního klíče."
+
+#: bws_menu/class-bws-settings.php:834 bws_menu/deprecated.php:159
+#: bws_menu/deprecated.php:246
+msgid "In order to continue using the plugin it is necessary to buy a %s license."
+msgstr "Pokud chcete nadále využívat tento plugin, je nutné zakoupit %s licenci."
+
+#: bws_menu/bws_menu.php:345 bws_menu/bws_menu.php:563
+#: bws_menu/bws_menu.php:572 bws_menu/class-bws-settings.php:728
+#: bws_menu/deprecated.php:259 bws_menu/deprecated.php:267
+#: bws_menu/deprecated.php:629 bws_menu/deprecated.php:700
+#: bws_menu/deprecated.php:709 includes/class-hctpc-settings-tabs.php:790
+msgid "Activate"
+msgstr "Aktivovat"
+
+#: bws_menu/class-bws-settings.php:736 bws_menu/deprecated.php:694
+msgid "Start Your Free %s-Day Trial Now"
+msgstr "Vyzkoušejte vaší %s-denní zkušební verzi zdarma nyní"
+
+#: bws_menu/bws_functions.php:205 bws_menu/bws_menu.php:328
+#: bws_menu/class-bws-settings.php:736 bws_menu/class-bws-settings.php:1049
+#: bws_menu/class-bws-settings.php:1059 bws_menu/deprecated.php:694
+msgid "or"
+msgstr "nebo"
+
+#: bws_menu/deprecated.php:281 bws_menu/deprecated.php:670
+msgid "You will be redirected automatically in 5 seconds."
+msgstr "Budete automaticky přesměrováni za 5 sekund."
+
+#: bws_menu/deprecated.php:280 bws_menu/deprecated.php:669
+msgid "the setting page"
+msgstr "stránka nastavení"
+
+#: bws_menu/deprecated.php:280 bws_menu/deprecated.php:669
+msgid "Please, go to"
+msgstr "Prosím, jděte na"
+
+#: bws_menu/class-bws-settings.php:1031 bws_menu/deprecated.php:463
+msgid "Please, enter Your license key"
+msgstr "Prosím, vložte váš licenční klíč"
+
+#: bws_menu/bws_menu.php:153 bws_menu/class-bws-settings.php:996
+#: bws_menu/deprecated.php:435
+msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvenience."
+msgstr "Něco se pokazilo. Zkuste to později, nebo nahrajte plugin ručně. Omlouváme se za nepříjemnosti."
+
+#: bws_menu/bws_menu.php:434 bws_menu/class-bws-settings.php:973
+#: bws_menu/deprecated.php:412
+msgid "UploadDir is not writable. Please, upload the plugin manually"
+msgstr "Nelze zapisovat do UploadDir. Prosím, nahrajte plugin ručně"
+
+#: bws_menu/bws_menu.php:424 bws_menu/class-bws-settings.php:966
+#: bws_menu/deprecated.php:405
+msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
+msgstr "Váš server nepodporuje buď ZipArchive nebo Phar. Prosím, nahrajte plugin ručně"
+
+#: bws_menu/bws_menu.php:417 bws_menu/class-bws-settings.php:960
+#: bws_menu/deprecated.php:399
+msgid "Failed to open the zip archive. Please, upload the plugin manually"
+msgstr "Otevření zip archivu selhalo. Prosíme, nahrajte plugin ručně."
+
+#: bws_menu/bws_menu.php:400 bws_menu/bws_menu.php:431
+#: bws_menu/bws_menu.php:442 bws_menu/class-bws-settings.php:948
+#: bws_menu/class-bws-settings.php:970 bws_menu/class-bws-settings.php:992
+#: bws_menu/deprecated.php:387 bws_menu/deprecated.php:409
+#: bws_menu/deprecated.php:431
+msgid "Failed to download the zip archive. Please, upload the plugin manually"
+msgstr "Stažení zip archivu selhalo. Prosíme, nahrajte plugin ručně."
+
+#: bws_menu/bws_menu.php:136 bws_menu/class-bws-settings.php:924
+#: bws_menu/deprecated.php:366
+msgid "Unfortunately, the Pro licence was already installed to this domain. The Pro Trial license can be installed only once."
+msgstr "Bohužel, pro tuto doménu již byla použita Pro licence. Zkušební Pro licence může být instalována pouze jedenkrát."
+
+#: bws_menu/bws_menu.php:134 bws_menu/class-bws-settings.php:922
+#: bws_menu/deprecated.php:364
+msgid "Unfortunately, Your license has expired. To continue getting top-priority support and plugin updates, you should extend it in your %s"
+msgstr "Bohužel, Vaše licence vypršela. Chcete-li pokračovat v získávání top-prioritní podpory a aktualizace pluginu měli byste ji prodloužit ve vašem"
+
+#: bws_menu/class-bws-settings.php:733 bws_menu/class-bws-settings.php:920
+#: bws_menu/deprecated.php:362 bws_menu/deprecated.php:703
+msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+msgstr "Bohužel, jste překročili počet dostupných pokusů za den. Prosím, nahrejte plugin ručně."
+
+#: bws_menu/bws_menu.php:122 bws_menu/class-bws-settings.php:807
+#: bws_menu/class-bws-settings.php:874 bws_menu/class-bws-settings.php:910
+#: bws_menu/deprecated.php:133 bws_menu/deprecated.php:199
+#: bws_menu/deprecated.php:352
+msgid "We are sorry for inconvenience."
+msgstr "Omlouváme se za nepříjemnosti."
+
+#: bws_menu/bws_menu.php:122 bws_menu/class-bws-settings.php:807
+#: bws_menu/class-bws-settings.php:874 bws_menu/class-bws-settings.php:910
+#: bws_menu/deprecated.php:133 bws_menu/deprecated.php:199
+#: bws_menu/deprecated.php:352
+msgid "Something went wrong. Please try again later. If the error appears again, please contact us"
+msgstr "Něco se pokazilo. Prosím zkuste to znovu později. Pokud se chyba objeví znovu, obraťte se na nás"
+
+#: bws_menu/bws_menu.php:101 bws_menu/class-bws-settings.php:781
+#: bws_menu/deprecated.php:322
+msgid "Wrong license key"
+msgstr "Špatný licenční klíč"
+
+#: bws_menu/bws_functions.php:121 bws_menu/bws_functions.php:333
+#: bws_menu/bws_menu.php:627 bws_menu/bws_menu.php:644
+#: bws_menu/class-bws-settings.php:143
+msgid "Learn More"
+msgstr "Dozvědět se více"
+
+#: bws_menu/bws_functions.php:330
+msgid "Extend standard plugin functionality with new great options."
+msgstr "Rozšiřuje standardní funkce pluginu novými skvělými možnostmi."
+
+#: bws_menu/bws_functions.php:329
+msgid "version!"
+msgstr "verzi!"
+
+#: bws_menu/bws_functions.php:329
+msgid "to"
+msgstr "na"
+
+#: bws_menu/bws_functions.php:329
+msgid "It’s time to upgrade your"
+msgstr "Je čas na aktualizaci vašeho"
+
+#: bws_menu/bws_functions.php:77
+msgid "Plugins page"
+msgstr "Stránka pluginů"
+
+#: bws_menu/bws_functions.php:75
+msgid "Back to the WordPress"
+msgstr "Zpět do WordPressu"
+
+#: bws_menu/bws_functions.php:74
+msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgstr "nebo vyšší, to je důvod, proč byl deaktivován! Proveďte upgrade WordPressu a zkuste to znovu."
+
+#: bws_menu/bws_functions.php:72 bws_menu/bws_functions.php:184
+msgid "requires"
+msgstr "vyžaduje"

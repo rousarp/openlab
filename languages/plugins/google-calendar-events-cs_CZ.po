@@ -1,0 +1,1611 @@
+# Translation of Plugins - Simple Calendar &#8211; Google Calendar Plugin - Stable (latest release) in Czech
+# This file is distributed under the same license as the Plugins - Simple Calendar &#8211; Google Calendar Plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-29 14:37:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: Plugins - Simple Calendar &#8211; Google Calendar Plugin - Stable (latest release)\n"
+
+#: includes/admin/pages/system-status.php:350
+msgid "Cannot connect to MySQL database."
+msgstr "Nelze se připojit k MySQL databázi."
+
+#: includes/functions/admin.php:372
+msgid "Upgrade to Premium Now"
+msgstr "Aktualizovat na Premium teď"
+
+#: includes/functions/admin.php:366
+msgid "Priority email support"
+msgstr "Hlavní podpora přes email"
+
+#: includes/functions/admin.php:365
+msgid "Display attachments"
+msgstr "Zobrazení příloh"
+
+#: includes/functions/admin.php:364
+msgid "Show attendees & RSVP status"
+msgstr "Zobrazit účastníky a RSVP status"
+
+#: includes/functions/admin.php:363
+msgid "Display private calendar events"
+msgstr "Zobrazení soukromé události v kalendáři"
+
+#: includes/functions/admin.php:362
+msgid "Limit event display times"
+msgstr "Limit události zobrazených v čase"
+
+#: includes/functions/admin.php:361
+msgid "Event titles & start times in grid"
+msgstr "Název události a čas začátku v mřížce"
+
+#: includes/functions/admin.php:360
+msgid "Fast view switching"
+msgstr "Rychlé přepínání zobrazení"
+
+#: includes/functions/admin.php:359
+msgid "Show week & day views"
+msgstr "Zobrazit výhled týdne a dne"
+
+#: includes/functions/admin.php:358
+msgid "Display color coded events"
+msgstr "Barva zobrazení kódovaných události"
+
+#: includes/functions/admin.php:354
+msgid "Some of the features included with our premium add-ons"
+msgstr "Některé funkce jsou pouze součástí prémiových rozšíření"
+
+#: includes/admin/meta-boxes.php:96
+msgid "Looking for more?"
+msgstr "Hledáš víc informací?"
+
+#: includes/admin/metaboxes/settings.php:625
+msgid "See details."
+msgstr "Zobrazit detaily."
+
+#: includes/admin/metaboxes/settings.php:623
+msgid "Setting this to <code>Event source default</code> can at times cause unexpected results. Please test thoroughly."
+msgstr "Nastavení na <code>zdroj událostí ve výchozím nastavení</code> může vést k neočekávaným výsledkům. Vyzkoušejte to důkladně!"
+
+#: includes/admin/metaboxes/settings.php:622
+msgid "Warning"
+msgstr "Upozornění"
+
+#: includes/admin/pages/system-status.php:341
+msgid "Read more."
+msgstr "Číst více."
+
+#: includes/admin/pages/system-status.php:340
+msgid "WordPress.org recommends upgrading to PHP 7 or higher for better security."
+msgstr "WordPress.org doporučuje upgrade na PHP 7 nebo vyšší pro lepší bezpečnost."
+
+#: includes/admin/pages/system-status.php:480
+msgid "No version found."
+msgstr "Žádná verze nebyla nalezena."
+
+#: includes/admin/metaboxes/settings.php:504
+#: includes/calendars/views/default-calendar-list.php:679
+msgid "There are no upcoming events."
+msgstr "Žádné události k zobrazení"
+
+#: includes/admin/metaboxes/settings.php:550
+msgid "Yes, Simple Calendar rocks! Show some love with a little link below this calendar."
+msgstr "Pokud tuto volbu zaškrtnete, zobrazí se u kalendáře jaký plugin a od koho používáte."
+
+#: includes/admin/metaboxes/settings.php:538
+msgid "Powered By"
+msgstr "Vytvořeno od"
+
+#: includes/functions/admin.php:327
+msgid "Just take me the add-ons"
+msgstr "Přejděte na rozšíření"
+
+#: includes/functions/admin.php:324
+msgid "No spam. Unsubscribe anytime."
+msgstr "Žádný spam. Možnost odhlásit se je kdykoliv."
+
+#: includes/functions/admin.php:300
+msgid "Enter your name and email and we'll send you a coupon code for <strong>20% off</strong> all Pro Add-on purchases."
+msgstr "Zadej svoje jméno a email a my ti pošleme slevový kupón na <strong>20% slevu</strong> na koupení všech rozšíření."
+
+#: includes/calendars/admin/default-calendar-admin.php:371
+msgid "This setting will modify the day number background for any days that have events on them."
+msgstr "Toto nastavení bude měnit pozadí na dnech, ve kterých máte vytvořeny události."
+
+#: includes/calendars/admin/default-calendar-admin.php:351
+msgid "This option will set the background color for today's date. It will change the day number background and the border around the current day."
+msgstr "Tato možnost nastavuje barvu pozadí pro dnešní den. Pokud změníte den, bude zvýraznění okolo dnešního dne."
+
+#: includes/admin/welcome.php:208
+msgid "View Pricing and Try a Demo of our Simple Calendar Pro Add-ons."
+msgstr "Podívejte se na ceny, zkuste si DEMO našeho Simple Calendar Pro Add-ons."
+
+#: includes/admin/welcome.php:204
+msgid "FullCalendar and Google Calendar Pro"
+msgstr "plná verze kalendáře a Google Calendar Pro"
+
+#: includes/admin/welcome.php:203
+msgid "Add even more display options with add-ons like"
+msgstr "Přidat ještě více dalších možností pomocí rozšíření, jako jsou"
+
+#: includes/admin/welcome.php:195
+msgid "Configure event colors, number of events to display, grid or list style and more."
+msgstr "Nastavení barev událostí, počet událostí k zobrazení, styl seznamu nebo mřížky a mnoho dalšího."
+
+#: includes/admin/welcome.php:152
+msgid "to get started now."
+msgstr "začněte hned teď."
+
+#: includes/admin/welcome.php:151
+msgid "Check out our documentation"
+msgstr "Podívej se na dokumentaci"
+
+#. translators: %s prints the current version of the plugin.
+#: includes/admin/welcome.php:147
+msgid "Simple Calendar %s has a few display options to configure. "
+msgstr "Simple Calendar %s má několik zobrazení konfigurace."
+
+#: includes/admin/pages/advanced.php:77
+msgid "If ticked, this option will prevent all front end stylesheets to load. This also includes all add-on stylesheets."
+msgstr "Pokud je zaškrtnuto, bude zabráněno načítání všech CSS stylů na stránce. To platí i pro všechna rozšíření."
+
+#: includes/admin/metaboxes/settings.php:485
+msgid "Yes (hide navigation arrows)"
+msgstr "Ano (skrýt navigační šipky)"
+
+#: includes/admin/ajax.php:153
+msgid "An error has occurred, please try again."
+msgstr "Došlo k chybě, zkuste to znovu."
+
+#: includes/admin/metaboxes/settings.php:322
+msgid "Years"
+msgstr "Let"
+
+#: includes/admin/metaboxes/settings.php:311
+msgid "Months"
+msgstr "Měsíce"
+
+#: includes/admin/metaboxes/settings.php:300
+msgid "Weeks"
+msgstr "Týdny"
+
+#: includes/admin/metaboxes/settings.php:286
+msgid "Days"
+msgstr "Dní"
+
+#: includes/calendars/admin/default-calendar-admin.php:295
+msgid "No, display on all days of event up to current day (list view only)"
+msgstr "Ne, zobrazit událost na všechny dny po které je naplánovaná (pouze v seznamu)"
+
+#: includes/calendars/admin/default-calendar-admin.php:294
+msgid "No, display only on first day of event"
+msgstr "Ne, zobrazit událost pouze první den"
+
+#: includes/calendars/admin/default-calendar-admin.php:293
+msgid "Yes, display on all days of event"
+msgstr "Ano, zobrazit událost každý den"
+
+#: includes/admin/pages/advanced.php:76
+msgid "Disable CSS"
+msgstr "Zakázat CSS"
+
+#: includes/admin/pages/advanced.php:49
+msgid "Manage front end assets that handle the calendars appearance."
+msgstr "Správa zobrazení, která zpracovává vzhled kalendářů na webu."
+
+#: includes/admin/pages/advanced.php:48
+msgid "Styles"
+msgstr "Styles"
+
+#: includes/admin/metaboxes/settings.php:529
+msgid "No line breaks, no auto paragraphs"
+msgstr "Žádné konce řádků, žádné odstavce"
+
+#: includes/admin/metaboxes/settings.php:528
+msgid "No line breaks, auto paragraphs"
+msgstr "Žádné konce řádků, pouze automatické odstavce"
+
+#: includes/admin/metaboxes/settings.php:527
+msgid "Preserve line breaks, auto paragraphs (default)"
+msgstr "Zachovat konce řádků a automatické zalomení (základní)"
+
+#: includes/admin/metaboxes/settings.php:523
+msgid "How to preserve line breaks and paragraphs in the event template builder."
+msgstr "Jak zachovat zalomení řádků a odstavců u událostí."
+
+#: includes/admin/metaboxes/settings.php:512
+msgid "Event Formatting"
+msgstr "Formátování události"
+
+#: includes/abstracts/calendar.php:843
+msgid "Powered by <a href=\"%s\" target=\"_blank\">Simple Calendar</a>"
+msgstr "Vytvořeno od <a href=\"%s\" target=\"_blank\">Simple Calendar</a>"
+
+#: includes/events/event-builder.php:791
+msgctxt "human date event builder code modifier"
+msgid "ago"
+msgstr "po"
+
+#: includes/events/event-builder.php:793
+msgctxt "human date event builder code modifier"
+msgid "from now"
+msgstr "před"
+
+#: includes/feeds/admin/google-admin.php:87
+msgid "<strong>Note:</strong> Calendars configured to use the <strong><a href=\"%s\" target=\"_blank\">Google Calendar Pro add-on</a></strong> use a different method of authorization."
+msgstr "<strong>Poznámka:</strong> Kalendáře pro použití konfigurace <strong><a href=\"%s\" target=\"_blank\">Google Calendar Pro add-on</a></strong> používá jinou metodu ověření."
+
+#. Description of the plugin/theme
+msgid "Add Google Calendar events to your WordPress site in minutes. Beautiful calendar displays. Fully responsive."
+msgstr "Přidejte Google kalendář do vaší WordPress stránky během několika minut a mějte hezké kalendáře. Celý responzivní."
+
+#. #-#-#-#-#  google-calendar-events-code.pot (Simple Calendar 3.1.10) 
+#. #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  google-calendar-events-code.pot (Simple Calendar 3.1.10) 
+#. #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://simplecalendar.io"
+msgstr "https://simplecalendar.io"
+
+#: includes/widgets/calendar.php:148
+msgid "No calendars found."
+msgstr "Nenalezeny žádné kalendáře."
+
+#: includes/widgets/calendar.php:142
+msgid "Calendar:"
+msgstr "Kalendář:"
+
+#: includes/widgets/calendar.php:51
+msgid "Display a calendar of events from one of your calendar feeds."
+msgstr "Zobrazí kalendář událostí z jednoho vašeho kalendáře."
+
+#. #-#-#-#-#  google-calendar-events-code.pot (Simple Calendar 3.1.10) 
+#. #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#. #-#-#-#-#  google-calendar-events-code.pot (Simple Calendar 3.1.10) 
+#. #-#-#-#-#
+#. Author of the plugin/theme
+#: includes/widgets/calendar.php:49
+msgid "Simple Calendar"
+msgstr "Simple Calendar"
+
+#: includes/post-types.php:184
+msgid "Calendars not found in Trash"
+msgstr "Kalendář nenalezen v koši"
+
+#: includes/post-types.php:183
+msgid "Calendars not found"
+msgstr "Kalendáře nenalezeny"
+
+#: includes/post-types.php:182
+msgid "Search Calendar"
+msgstr "Prohledat kalendáře"
+
+#: includes/post-types.php:181
+msgid "View Calendar"
+msgstr "Zobrazit kalendář"
+
+#: includes/post-types.php:180
+msgid "Update Calendar"
+msgstr "Aktualizovat kalendář"
+
+#: includes/calendars/views/default-calendar-grid.php:196
+#: includes/calendars/views/default-calendar-list.php:197
+#: includes/post-types.php:179
+msgid "Edit Calendar"
+msgstr "Upravit kalendář"
+
+#: includes/post-types.php:178
+msgid "New Calendar"
+msgstr "Nový kalendář"
+
+#: includes/post-types.php:176
+msgid "Add New Calendar"
+msgstr "Přidat nový kalendář"
+
+#: includes/post-types.php:175
+msgid "All Calendars"
+msgstr "Všechny kalendáře"
+
+#: includes/post-types.php:174
+msgid "Parent Calendar:"
+msgstr "Nadřazený Kalendář:"
+
+#: includes/post-types.php:171
+msgctxt "Post Type Singular Name"
+msgid "Calendar"
+msgstr "Kalendář"
+
+#: includes/post-types.php:170
+msgctxt "Post Type General Name"
+msgid "Calendars"
+msgstr "Kalendáře"
+
+#: includes/post-types.php:138
+msgid "Search Categories"
+msgstr "Prohledat rubriky"
+
+#: includes/post-types.php:137
+msgid "Popular Categories"
+msgstr "Populární rubriky"
+
+#: includes/post-types.php:135
+msgid "Add or remove categories"
+msgstr "Přidat nebo odebrat rubriky"
+
+#: includes/post-types.php:134
+msgid "Separate categories with commas"
+msgstr "Oddělit rubriky čárkami"
+
+#: includes/post-types.php:133
+msgid "View Category"
+msgstr "Zobrazit rubriky"
+
+#: includes/post-types.php:132
+msgid "Update Category"
+msgstr "Uložit rubriky"
+
+#: includes/post-types.php:131
+msgid "Edit Category"
+msgstr "Upravit rubriky"
+
+#: includes/post-types.php:130
+msgid "Add New Category"
+msgstr "Přidejte novou rubriku"
+
+#: includes/post-types.php:129
+msgid "New Category"
+msgstr "Nová rubrika"
+
+#: includes/post-types.php:128
+msgid "Parent Category:"
+msgstr "Nadřazená rubrika:"
+
+#: includes/post-types.php:127
+msgid "Parent Category"
+msgstr "Nadřízená rubrika"
+
+#: includes/post-types.php:126
+msgid "All Categories"
+msgstr "Všechny rubriky"
+
+#: includes/post-types.php:123 includes/post-types.php:125
+msgid "Categories"
+msgstr "Rubriky"
+
+#: includes/post-types.php:102
+msgid "Search Calendar Types"
+msgstr "Prohledat typy kalendáře"
+
+#: includes/post-types.php:101
+msgid "Popular calendar types"
+msgstr "Populární typy kalendáře"
+
+#: includes/post-types.php:99
+msgid "Add or remove calendar types"
+msgstr "Přidat nebo odebrat typy kalendáře"
+
+#: includes/post-types.php:98
+msgid "Separate calendar types with commas"
+msgstr "Oddělit typy kalendáře čárkami"
+
+#: includes/post-types.php:97
+msgid "View Calendar Type"
+msgstr "Zobrazit typ kalendáře"
+
+#: includes/post-types.php:96
+msgid "Update Calendar Type"
+msgstr "Aktualizovat typ kalendáře"
+
+#: includes/post-types.php:95
+msgid "Edit Calendar Type"
+msgstr "Upravit typ kalendáře"
+
+#: includes/post-types.php:94
+msgid "Add New Calendar Type"
+msgstr "Přidat nový typ kalendáře"
+
+#: includes/post-types.php:93
+msgid "New Calendar Type"
+msgstr "Nový typ kalendáře"
+
+#: includes/post-types.php:92
+msgid "Parent Calendar Type:"
+msgstr "Nadřazený typ kalendáře:"
+
+#: includes/post-types.php:91
+msgid "Parent Calendar Type"
+msgstr "Nadřazený typ kalendáře"
+
+#: includes/post-types.php:90
+msgid "All Calendar Types"
+msgstr "Typy všech kalendářů"
+
+#: includes/post-types.php:87
+msgid "Calendar Types"
+msgstr "Typ kalendáře"
+
+#: includes/post-types.php:67 includes/post-types.php:103
+#: includes/post-types.php:139
+msgid "Not Found"
+msgstr "Nenalezeno"
+
+#: includes/post-types.php:66
+msgid "Search Events Source Types"
+msgstr "Prohledat typy událostí"
+
+#: includes/post-types.php:65
+msgid "Popular events source types"
+msgstr "Populární typy událostí"
+
+#: includes/post-types.php:64 includes/post-types.php:100
+#: includes/post-types.php:136
+msgid "Choose from the most used"
+msgstr "Vyberte si z nejpoužívanějších"
+
+#: includes/post-types.php:63
+msgid "Add or remove events source types"
+msgstr "Přidat nebo odebrat typy událostí"
+
+#: includes/post-types.php:62
+msgid "Separate events source types with commas"
+msgstr "Oddělit typy událostí čárkami"
+
+#: includes/post-types.php:61
+msgid "View Events Source Type"
+msgstr "Zobrazit typ událostí"
+
+#: includes/post-types.php:60
+msgid "Update Events Source Type"
+msgstr "Aktualizovat typ událostí"
+
+#: includes/post-types.php:59
+msgid "Edit Events Source Type"
+msgstr "Upravit typ událostí"
+
+#: includes/post-types.php:58
+msgid "Add New Events Source Type"
+msgstr "Přidat nový typ událostí"
+
+#: includes/post-types.php:57
+msgid "New Events Source Type"
+msgstr "Nový typ událostí"
+
+#: includes/post-types.php:56
+msgid "Parent Events Source Type:"
+msgstr "Nadřazený typ událostí:"
+
+#: includes/post-types.php:55
+msgid "Parent Events Source Type"
+msgstr "Nadřazený typ událostí"
+
+#: includes/post-types.php:54
+msgid "All Events Source Types"
+msgstr "Všechny typy událostí"
+
+#: includes/post-types.php:52 includes/post-types.php:53
+msgid "Events Source Type"
+msgstr "Typ událostí"
+
+#: includes/post-types.php:51
+msgid "Events Source Types"
+msgstr "Typy událostí"
+
+#: includes/functions/shared.php:283
+msgid "See more details"
+msgstr "Více podrobností"
+
+#: includes/functions/admin.php:331
+msgid "Thank you!"
+msgstr "Děkujeme!"
+
+#: includes/functions/admin.php:321
+msgid "Send me the coupon"
+msgstr "Pošlete mi kupón"
+
+#: includes/functions/admin.php:312
+msgid "First Name"
+msgstr "Křestní jméno"
+
+#: includes/functions/admin.php:304
+msgid "Your Email"
+msgstr "Vaše emailová adresa"
+
+#: includes/functions/admin.php:243
+msgid "Press %s to copy."
+msgstr "Stisknout %s a kopírovat."
+
+#: includes/feeds/grouped-calendars.php:46
+msgid "Grouped Calendar"
+msgstr "Seskupený kalendář"
+
+#: includes/feeds/google.php:358
+msgid "Only you can see this notice."
+msgstr "Pouze vy můžete vidět toto upozornění."
+
+#: includes/feeds/admin/grouped-calendars-admin.php:155
+msgid "There are no calendar categories yet."
+msgstr "Nejsou žádné kategorie pro kalendáře."
+
+#: includes/feeds/admin/grouped-calendars-admin.php:121
+#: includes/feeds/admin/grouped-calendars-admin.php:147
+msgid "No results found."
+msgstr "Nic nebylo nalezeno."
+
+#: includes/feeds/admin/grouped-calendars-admin.php:103
+msgid "Choose from which calendar feeds you want to get events from. Choose them individually or select all those belonging to calendar feed categories."
+msgstr "Vyberte si ze kterých zdrojů kalendářů, chcete dostávat události. Vyberte je jednotlivě, nebo všechny ty, které patří do kategorií zdroje."
+
+#: includes/feeds/admin/grouped-calendars-admin.php:101
+#: includes/post-types.php:124
+msgid "Category"
+msgstr "Rubrika"
+
+#: includes/feeds/admin/grouped-calendars-admin.php:100
+msgid "Manual selection"
+msgstr "Ruční výběr"
+
+#: includes/feeds/admin/grouped-calendars-admin.php:88
+msgid "Get Calendars From"
+msgstr "Získat z kalendáře"
+
+#: includes/feeds/admin/grouped-calendars-admin.php:84
+msgid "Grouped Calendar Settings"
+msgstr "Nastavení seskupeného kalendáře"
+
+#: includes/feeds/admin/google-admin.php:311 includes/feeds/google.php:357
+msgid "Please ensure that both your Google Calendar ID and API Key are valid and that the Google Calendar you want to display is public."
+msgstr "Ujistěte se, že máte platné ID kalendáře, API klíč a že Google kalendář, který chcete zobrazit, je veřejný."
+
+#: includes/feeds/admin/google-admin.php:309 includes/feeds/google.php:355
+msgid "While trying to retrieve events, Google returned an error:"
+msgstr "Při pokusu o načtení události, nastala chyba:"
+
+#: includes/feeds/admin/google-admin.php:278
+msgid "Your Google Calendar events will not show up until you <a href=\"%s\">create and save a Google API key</a>."
+msgstr "Váš Google kalendář se nebude zobrazovat, musíte si <a href=\"%s\">vytvořit a uložit váš Google API klíč</a>."
+
+#: includes/feeds/admin/google-admin.php:262
+msgid "Step 2: Copy and paste your Google Calendar ID here. <a href=\"%2s\" target=\"_blank\">Detailed instructions</a>"
+msgstr "2. krok: Zkopírujte a vložte vaše ID kalendáře sem. <a href=\"%2s\" target=\"_blank\">Podrobný návod</a>"
+
+#: includes/feeds/admin/google-admin.php:261
+msgid "Step 1: Set the Google Calendar you want to use as <strong>\"public.\"</strong> <a href=\"%1s\" target=\"_blank\">Detailed instructions</a>"
+msgstr "1. krok: Nastavte Google kalendář, který chcete použít jako <strong>\"veřejný.\"</strong> <a href=\"%1s\" target=\"_blank\">Podrobný návod</a>"
+
+#: includes/feeds/admin/google-admin.php:227
+msgid "Google Calendar Settings"
+msgstr "Nastavení Google kalendáře"
+
+#: includes/feeds/admin/google-admin.php:210
+msgid "Google Calendar only allows to query for a maximum amount of 2500 events from a calendar each time."
+msgstr "Google Kalendář umožňuje dotazy do maximální výše 2500 událostí z kalendáře najednou."
+
+#: includes/feeds/admin/google-admin.php:209
+msgid "Maximum Events"
+msgstr "Všechny události"
+
+#: includes/feeds/admin/google-admin.php:201
+msgid "Only show first occurrence"
+msgstr "Zobrazovat pouze první výskyt"
+
+#: includes/feeds/admin/google-admin.php:200
+msgid "Show all"
+msgstr "Zobrazit všechny"
+
+#: includes/feeds/admin/google-admin.php:198
+msgid "Events that are programmed to repeat themselves periodically."
+msgstr "Události, které jsou nastaveny jako pravidelně se opakující."
+
+#: includes/feeds/admin/google-admin.php:197
+msgid "Recurring Events"
+msgstr "Opakující se události"
+
+#: includes/feeds/admin/google-admin.php:191
+msgid "Filter events to display by search terms..."
+msgstr "Filtr událostí zobrazující hledané výrazy..."
+
+#: includes/feeds/admin/google-admin.php:190
+msgid "Type in keywords if you only want display events that match these terms. You can use basic boolean search operators too."
+msgstr "Zadejte klíčová slova, pokud chcete zobrazit jen události, které odpovídají těmto podmínkám. Můžete používat základní operátory vyhledávání."
+
+#: includes/feeds/admin/google-admin.php:180
+msgid "Enter a valid Google Calendar ID from a public calendar"
+msgstr "Zadejte vaše platné vřejné ID kalendáře"
+
+#: includes/feeds/admin/google-admin.php:179
+msgid "Visit your Google Calendar account, copy your public calendar ID, then paste it here."
+msgstr "Navštivte nastavení Google kalendáře který chcete zobrazit. Zkopírujte si veřejné ID kalendáře a to potom vložte sem."
+
+#: includes/feeds/admin/google-admin.php:178
+msgid "Calendar ID"
+msgstr "ID kalendáře"
+
+#: includes/feeds/admin/google-admin.php:134
+msgid "<a href=\"%s\" target=\"_blank\">Google Developers Console</a> "
+msgstr "<a href=\"%s\" target=\"_blank\">Google Developers Console</a> "
+
+#: includes/feeds/admin/google-admin.php:130
+msgid "<a href=\"%s\" target=\"_blank\">Step-by-step instructions</a> "
+msgstr "<a href=\"%s\" target=\"_blank\">Instrukce krok za krokem (EN)</a> "
+
+#: includes/feeds/admin/google-admin.php:84
+msgid "To read events from your public Google Calendars you'll need create a Google API key and save it here."
+msgstr "Chcete-li zobrazit události z vašeho veřejného Google kalendáře budete si muset vytvořit Google API klíč a vložit ho sem."
+
+#. translators: Someone did not send yet a rsvp confirmation to join an event.
+#: includes/events/event-builder.php:959
+msgid "Response pending"
+msgstr "Čekám na odpověď"
+
+#. translators: Someone replied with 'maybe' to a rsvp request.
+#: includes/events/event-builder.php:956
+msgid "Maybe attending"
+msgstr "Možná se zůčastním"
+
+#. translators: Someone replied with 'no' to a rsvp request.
+#: includes/events/event-builder.php:953
+msgid "Not attending"
+msgstr "Neúčast"
+
+#. translators: Someone replied with 'yes' to a rsvp request.
+#: includes/events/event-builder.php:950
+msgid "Attending"
+msgstr "Účast"
+
+#: includes/events/event-builder.php:929
+msgctxt "No one yet rsvp to attend the event."
+msgid "No one yet"
+msgstr "Zatím nikdo"
+
+#. translators: One or more persons attending the event whose name is unknown.
+#: includes/events/event-builder.php:924
+msgid "1 anonymous attendee"
+msgid_plural "%s anonymous attendees"
+msgstr[0] "1 anonymní návštěvník"
+msgstr[1] "%s anonymní návštěvníci"
+msgstr[2] "%s anonymních návštěvníků"
+
+#. translators: One more person attending the event.
+#: includes/events/event-builder.php:921
+msgid "1 more attendee"
+msgid_plural "%s more attendees"
+msgstr[0] "1 další návštěvník"
+msgstr[1] "%s další návštěvníci"
+msgstr[2] "%s dalších návštěvníků"
+
+#: includes/events/event-builder.php:305
+msgid "No end time"
+msgstr "Není čas konce"
+
+#: includes/calendars/views/default-calendar-list.php:687
+msgid "Nothing from %1$s to %2$s."
+msgstr "Nic z %1$s na %2$s."
+
+#: includes/calendars/views/default-calendar-grid.php:437
+msgid "Event"
+msgstr "Událost"
+
+#: includes/calendars/views/default-calendar-grid.php:235
+msgid "Next Month"
+msgstr "Příští měsíc"
+
+#: includes/calendars/views/default-calendar-grid.php:204
+msgid "Previous Month"
+msgstr "Minulý měsíc"
+
+#: includes/calendars/default-calendar.php:111
+msgid "Default"
+msgstr "Základní"
+
+#: includes/calendars/admin/default-calendar-admin.php:358
+msgid "Days with Events"
+msgstr "Dny s událostmi"
+
+#: includes/calendars/admin/default-calendar-admin.php:330
+msgid "Dark"
+msgstr "Tmavý"
+
+#: includes/calendars/admin/default-calendar-admin.php:329
+msgid "Light"
+msgstr "Světlý"
+
+#: includes/calendars/admin/default-calendar-admin.php:327
+msgid "Choose a calendar theme to match your site theme."
+msgstr "Vyberte vzhled kalendáře, aby odpovídal vzhledu vašeho webu."
+
+#: includes/calendars/admin/default-calendar-admin.php:315
+msgid "Theme"
+msgstr "Motiv"
+
+#: includes/calendars/admin/default-calendar-admin.php:272
+msgid "Expand Multi-day Events"
+msgstr "Roztáhnout několikadenní události"
+
+#: includes/calendars/admin/default-calendar-admin.php:258
+msgid "Limit the number of initial visible events on each day to a set maximum."
+msgstr "Omezte počet viditelných událostí na maximum pro každý den."
+
+#: includes/calendars/admin/default-calendar-admin.php:231
+msgid "Limit Visible Events"
+msgstr "Limit viditelných událostí"
+
+#: includes/calendars/admin/default-calendar-admin.php:223
+msgid "Make an events list more compact by grouping together events from different days in a single list."
+msgstr "Udělat seznam pro události více kompaktní a při sloučení událostí z různých dní v jednom seznamu."
+
+#: includes/calendars/admin/default-calendar-admin.php:213
+msgid "Compact List"
+msgstr "Kompaktní seznam"
+
+#: includes/calendars/admin/default-calendar-admin.php:205
+msgid "You can use this to hide the month header for this calendar."
+msgstr "Můžete skrýt měsíce v záhlaví pro tento kalendář."
+
+#: includes/calendars/admin/default-calendar-admin.php:195
+msgid "Hide Header"
+msgstr "Skrýt hlavičku"
+
+#: includes/calendars/admin/default-calendar-admin.php:187
+msgid "Event(s)"
+msgstr "Událost(i)"
+
+#: includes/calendars/admin/default-calendar-admin.php:184
+msgid "Month(s)"
+msgstr "Měsíc(e)"
+
+#: includes/calendars/admin/default-calendar-admin.php:178
+msgid "Range of events to show on each calendar page."
+msgstr "Rozsah událostí které se ukáží na každé stránce kalendáře."
+
+#: includes/calendars/admin/default-calendar-admin.php:151
+msgid "Span"
+msgstr "Rozpětí"
+
+#: includes/calendars/admin/default-calendar-admin.php:137
+msgid "Shorten event titles in calendar grid to a specified length in characters."
+msgstr "Zkraťte názvy událostí v mřížce na zadanou délku ve znacích."
+
+#: includes/calendars/admin/default-calendar-admin.php:113
+msgid "Trim Event Titles"
+msgstr "Zkrátit názvy událostí"
+
+#: includes/calendars/admin/default-calendar-admin.php:105
+msgid "Hover"
+msgstr "Při najetí myši"
+
+#: includes/calendars/admin/default-calendar-admin.php:104
+msgid "Click"
+msgstr "Klikněte"
+
+#: includes/calendars/admin/default-calendar-admin.php:100
+msgid "Open event bubbles in calendar grid by clicking or hovering on event titles. On mobile devices it will always default to tapping."
+msgstr "Podrobnosti o událostech se v mřížkovém kalendáři zobrazují po kliknutí nebo přejetí nad titulkem události. U mobilních zařízení je vždy výchozí kliknutí."
+
+#: includes/calendars/admin/default-calendar-admin.php:89
+msgid "Event Bubbles"
+msgstr "Podrobnosti událostí"
+
+#: includes/calendars/admin/default-calendar-admin.php:84
+msgid "Default Calendar"
+msgstr "Základní kalendář"
+
+#: includes/admin/welcome.php:310
+msgid "View %s"
+msgstr "Zobrazit %s"
+
+#: includes/admin/welcome.php:263
+msgid "Click here to help translate"
+msgstr "Pokud ano, klikni zde"
+
+#: includes/admin/welcome.php:260
+msgid "Simple Calendar has been kindly translated into several other languages by contributors from all over the world."
+msgstr "Simple Calendar byl uživateli přeložen do několika dalších jazyků. Chceš také pomoct s překladem?"
+
+#: includes/admin/welcome.php:235
+msgid "Simple Calendar is created by a worldwide team of developers. If you'd like to contribute please visit our <a href='%s' target='_blank'>GitHub repo</a>."
+msgstr "Simple Calendar je vytvořen celosvětovým týmem vývojářů. Pokud byste chtěli přispět, prosím navštivte náš <a href='%s' target='_blank'>GitHub repozitář</a>."
+
+#: includes/admin/welcome.php:198
+msgid "Mobile responsive and widget ready."
+msgstr "Je připraven responzivní vzhled pro mobily i widget."
+
+#: includes/admin/welcome.php:174
+msgid "Translators"
+msgstr "Překladatelé"
+
+#: includes/admin/welcome.php:169
+msgid "Credits"
+msgstr "Tvůrci"
+
+#: includes/admin/welcome.php:164
+msgid "What's New"
+msgstr "Novinky"
+
+#: includes/admin/welcome.php:141
+msgid "Thanks for installing!"
+msgstr "Děkujeme za instalaci!"
+
+#: includes/admin/welcome.php:139
+msgid "Thanks for updating to the latest version!"
+msgstr "Děkujeme, že jsi aktualizoval na poslední verzi!"
+
+#. translators: %s prints the current version of the plugin.
+#: includes/admin/welcome.php:130
+msgid "Welcome to Simple Calendar %s"
+msgstr "Vítej v Simple Calendar %s"
+
+#: includes/admin/welcome.php:53
+msgid "Welcome to Simple Calendar"
+msgstr "Vítej v Simple Calendar"
+
+#: includes/admin/welcome.php:52
+msgid "About Simple Calendar"
+msgstr "O Simple Calendar"
+
+#: includes/admin/updater.php:359
+msgid "Error"
+msgstr "Chyba"
+
+#: includes/admin/updater.php:359
+msgid "You do not have permission to install plugin updates"
+msgstr "Nemáte oprávnění k instalaci aktualizací pluginu"
+
+#: includes/admin/updater.php:217
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s\">update now</a>."
+msgstr "K dispozici je nová verze %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">zobrazit detaily verze %3$s </a> nebo <a href=\"%4$s\">aktualizovat nyní</a>."
+
+#: includes/admin/updater.php:210
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr "K dispozici je nová verze %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">zobrazit detaily verze %3$s </a>."
+
+#: includes/admin/post-types.php:346
+msgid "Please add and configure new calendar first."
+msgstr "Prosím, přidejte a nastavte svůj první kalendář."
+
+#: includes/admin/post-types.php:227
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: includes/admin/post-types.php:190
+msgid "Cache cleared."
+msgstr "Cache vytištěna."
+
+#: includes/admin/post-types.php:185 includes/admin/post-types.php:276
+msgid "Clear cache"
+msgstr "Promazat cache"
+
+#: includes/admin/post-types.php:143
+msgid "Clone"
+msgstr "Klonovat"
+
+#: includes/admin/post-types.php:71
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/admin/metaboxes/settings.php:141 includes/admin/post-types.php:70
+#: includes/post-types.php:88 includes/post-types.php:89
+msgid "Calendar Type"
+msgstr "Typ kalendáře"
+
+#: includes/admin/post-types.php:69
+msgid "Events Source"
+msgstr "Zdroj událostí"
+
+#: includes/admin/pages/system-status.php:532
+msgid "Browser"
+msgstr "Prohlížeč"
+
+#: includes/admin/pages/system-status.php:527
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: includes/admin/pages/system-status.php:519
+msgid "Platform:"
+msgstr "Platforma:"
+
+#: includes/admin/pages/system-status.php:517
+msgid "User Agent:"
+msgstr "Uživatel:"
+
+#: includes/admin/pages/system-status.php:515
+msgid "Version:"
+msgstr "Verze:"
+
+#: includes/admin/pages/system-status.php:513
+msgid "Name:"
+msgstr "Jméno:"
+
+#: includes/admin/pages/system-status.php:443
+msgid "Server Timezone"
+msgstr "Časové pásmo serveru"
+
+#: includes/admin/pages/system-status.php:437
+msgid "MySQL Version"
+msgstr "Verze MySQL"
+
+#: includes/admin/pages/system-status.php:431
+msgid "PHP Version"
+msgstr "Verze PHP"
+
+#: includes/admin/pages/system-status.php:426
+msgid "Web Server"
+msgstr "Webový server"
+
+#: includes/admin/pages/system-status.php:362
+msgid "Server default timezone is %s - it should be UTC"
+msgstr "Výchozího časové pásmo serveru je%s - to by mělo být v UTC"
+
+#: includes/admin/pages/system-status.php:264
+msgid "Parent Theme"
+msgstr "Nadřazené téma"
+
+#: includes/admin/pages/system-status.php:258
+msgid "Child Theme"
+msgstr "Odvozená šablona"
+
+#: includes/admin/pages/system-status.php:252
+msgid "Theme Information"
+msgstr "Informace o šabloně"
+
+#: includes/admin/pages/system-status.php:220
+#: includes/admin/pages/system-status.php:240
+#: includes/admin/pages/system-status.php:314
+msgid "Author"
+msgstr "Text:"
+
+#: includes/admin/pages/system-status.php:218
+#: includes/admin/pages/system-status.php:238
+msgid "Name"
+msgstr "Jméno:"
+
+#: includes/admin/pages/system-status.php:212
+#: includes/admin/pages/system-status.php:305
+msgid "%s is available"
+msgstr "%s je k dispozici"
+
+#: includes/admin/pages/system-status.php:160
+msgid "Permalinks"
+msgstr "Trvalý odkaz"
+
+#: includes/admin/pages/system-status.php:154
+msgid "Multisite"
+msgstr "Multistránka"
+
+#: includes/admin/pages/system-status.php:144
+msgid "Locale"
+msgstr "Lokalizace"
+
+#: includes/admin/pages/system-status.php:139
+#: includes/admin/pages/system-status.php:222
+#: includes/admin/pages/system-status.php:242
+#: includes/admin/pages/system-status.php:316
+msgid "Version"
+msgstr "Verze:"
+
+#: includes/admin/pages/system-status.php:134
+msgid "Site URL"
+msgstr "URl webu"
+
+#: includes/admin/pages/system-status.php:129
+msgid "Home URL"
+msgstr "Domácí URl"
+
+#: includes/admin/pages/system-status.php:124
+msgid "Site Name"
+msgstr "Název stránky"
+
+#: includes/admin/pages/system-status.php:112
+msgid "%1$s - It is recomendend to set memory to at least 64MB. See: <a href=\"%2$s\" target=\"_blank\">Increasing memory allocated to PHP</a>"
+msgstr "%1$s - Doporučujeme nastavit paměť alespoň na 64 MB. Vidíte: <a href=\"%2$s\" target=\"_blank\">zvýšení paměti přidělené v PHP</a>"
+
+#: includes/admin/pages/system-status.php:101
+#: includes/admin/pages/system-status.php:156
+#: includes/admin/pages/system-status.php:260
+#: includes/admin/pages/system-status.php:379
+#: includes/admin/pages/system-status.php:399
+#: includes/admin/pages/system-status.php:475
+#: includes/admin/pages/system-status.php:485
+#: includes/admin/pages/system-status.php:490
+msgid "No"
+msgstr "Ne"
+
+#: includes/admin/pages/system-status.php:84
+msgid "Client Information"
+msgstr "Informace o klientovi"
+
+#: includes/admin/pages/system-status.php:80
+msgid "Server Environment"
+msgstr "Prostředí serveru"
+
+#: includes/admin/pages/system-status.php:76
+msgid "Active Plugins"
+msgstr "Aktivní Pluginy"
+
+#: includes/admin/pages/system-status.php:72
+msgid "Active Theme"
+msgstr "Aktivní šablona"
+
+#: includes/admin/pages/system-status.php:68
+msgid "WordPress Installation"
+msgstr "WordPress instalace"
+
+#: includes/admin/pages/system-status.php:57
+msgid "Download System Report"
+msgstr "Stáhnout systémovou zprávu"
+
+#: includes/admin/pages/system-status.php:56
+msgid "You can also download your information as a text file to attach, or simply view it below."
+msgstr "Můžete si také stáhnout informace do textového souboru pro uložení, nebo prostě pro její zobrazení níže."
+
+#: includes/admin/pages/system-status.php:54
+msgid "Please copy and paste this information when contacting support:"
+msgstr "Prosím, zkopírujte a vložte tyto informace při kontaktování podpory:"
+
+#: includes/admin/pages/system-status.php:33
+msgid "System Report"
+msgstr "Systémová zpráva"
+
+#: includes/admin/pages/licenses.php:79
+msgid "Your license keys are used for access to automatic upgrades and premium support."
+msgstr "Vaše licenční klíče se používají pro přístup k automatickým aktualizacím a k prémiové podpoře."
+
+#: includes/admin/pages/licenses.php:77
+msgid "Enter your add-on license keys below, making sure to activate each one to ensure they are valid."
+msgstr "Zadejte svůj add-on licenční klíč níže a ujistěte se že jste aktivovat každý z nich, aby bylo zajištěno, že jsou platné."
+
+#: includes/admin/pages/licenses.php:76
+msgid "Premium Add-on License Keys"
+msgstr "Premium Add-on licenční klíče"
+
+#: includes/admin/pages/licenses.php:59
+msgid "Delete your license keys"
+msgstr "Odstraňte své licenční klíče"
+
+#: includes/admin/pages/licenses.php:58
+msgid "WARNING: Are you sure you want to start over and delete all license keys from the settings?"
+msgstr "VAROVÁNÍ: Jste si jisti, že chcete začít znovu a odstranit všechny licenční klíče z nastavení?"
+
+#: includes/admin/pages/licenses.php:33
+msgid "Add-on Licenses"
+msgstr "Add-on Licence"
+
+#: includes/admin/pages/feeds.php:42
+msgid "Event Sources"
+msgstr "Zdroje událostí"
+
+#: includes/admin/pages/calendars.php:140
+msgid "You can choose on which content types to add the ability to attach calendars."
+msgstr "Můžete si vybrat které typy obsahu, budou mít možnost připojit kalendáře."
+
+#: includes/admin/pages/calendars.php:139
+msgid "Attach Calendars"
+msgstr "Připojit kalendáře"
+
+#: includes/admin/pages/calendars.php:77
+msgid "General"
+msgstr "Obecný"
+
+#: includes/admin/pages/advanced.php:98
+msgid "By default your data will be retained in database even after uninstall. Tick this option if you want to delete all your calendar data when uninstalling."
+msgstr "Ve výchozím nastavení vaše data budou zachována v databázi i po odinstalování. Zaškrtněte tuto volbu, pokud chcete odstranit všechny kalendáře a data při odinstalaci."
+
+#: includes/admin/pages/advanced.php:97
+msgid "Erase calendar data"
+msgstr "Vymazat data kalendáře"
+
+#: includes/admin/pages/advanced.php:90
+msgid "Tick this option if you want to wipe this plugin settings from database when uninstalling."
+msgstr "Zaškrtněte tuto volbu, pokud chcete vymazat nastavení pluginu z databáze při odinstalování."
+
+#: includes/admin/pages/advanced.php:89
+msgid "Delete settings"
+msgstr "Smazat nastavení"
+
+#: includes/admin/pages/advanced.php:53
+msgid "Manage your data (plugin settings and saved calendars)."
+msgstr "Spravujte svoje data (nastavení pluginu a ukládaní kalendářů)"
+
+#: includes/admin/pages/advanced.php:52
+msgid "Installation"
+msgstr "Instalace"
+
+#: includes/admin/metaboxes/settings.php:862
+msgid "If you add, edit or remove events in your calendar very often, you can set a lower interval to refresh the events displayed. Set a higher interval for best performance."
+msgstr "Pokud přidáváte, upravujete nebo odstraňujete události v kalendáři velmi často, můžete nastavit kratší interval aktualizování událostí. Pokud chcete vyšší výkon nastavte delší interval aktualizování."
+
+#: includes/admin/metaboxes/settings.php:859
+#: includes/calendars/admin/default-calendar-admin.php:185
+msgid "Week(s)"
+msgstr "Víkend/víkendy"
+
+#: includes/admin/metaboxes/settings.php:858
+#: includes/calendars/admin/default-calendar-admin.php:186
+msgid "Day(s)"
+msgstr "Den/dny"
+
+#: includes/admin/metaboxes/settings.php:857
+msgid "Hour(s)"
+msgstr "Hodina/hodiny"
+
+#: includes/admin/metaboxes/settings.php:856
+msgid "Minute(s)"
+msgstr "Minuta/minuty"
+
+#: includes/admin/metaboxes/settings.php:844
+msgctxt "Cache maximum interval"
+msgid "Refresh Interval"
+msgstr "Aktualizace intervalu"
+
+#: includes/admin/metaboxes/settings.php:829
+msgid "Cache"
+msgstr "Cache"
+
+#: includes/admin/metaboxes/settings.php:821
+msgid "Some calendars may use this setting to display the start of the week. It is recommended to keep the site default setting."
+msgstr "Některé kalendáře mohou používat toto nastavení k zobrazení začátku týdne. Doporučuje se ponechat výchozí nastavení."
+
+#: includes/admin/metaboxes/settings.php:791
+msgid "Week Starts On"
+msgstr "Týden začíná"
+
+#: includes/admin/metaboxes/settings.php:780
+msgid "Enter a time format using %s values."
+msgstr "Zadejte formát času pomocí %s hodnot."
+
+#: includes/admin/metaboxes/settings.php:757
+msgid "This option sets how calendars display event times. It is recommended to keep your site default setting."
+msgstr "Toto nastaví umožňuje měnit formát času událostí. Doporučuje se ponechat výchozí nastavení."
+
+#: includes/admin/metaboxes/settings.php:702
+msgid "Used to divide date and time when both are shown."
+msgstr "Používá se, pokud je zobrazen datum i čas a chci je rozdělit."
+
+#: includes/admin/metaboxes/settings.php:677
+msgid "Enter a date format using %s values."
+msgstr "Zadejte formát data pomocí %s hodnot."
+
+#: includes/admin/metaboxes/settings.php:654
+msgid "This option sets how calendars display event dates. It is recommended to keep your site default setting."
+msgstr "Toto nastaví umožňuje měnit formát data událostí. Doporučuje se ponechat výchozí nastavení."
+
+#: includes/admin/metaboxes/settings.php:651
+#: includes/admin/metaboxes/settings.php:754
+msgid "Custom (PHP format)"
+msgstr "Vlastní (PHP formát)"
+
+#: includes/admin/metaboxes/settings.php:620
+msgid "Using a different timezone may alter the date and time display of your calendar events. We recommended using the site default timezone."
+msgstr "Použití jiného časové pásmo může změnit datum a čas u události v kalendáři. Doporučujeme ponechat výchozí časové pásmo kalendáře."
+
+#: includes/admin/metaboxes/settings.php:611
+#: includes/admin/metaboxes/settings.php:649
+#: includes/admin/metaboxes/settings.php:752
+#: includes/admin/metaboxes/settings.php:808
+msgctxt "Use a custom setting"
+msgid "Custom"
+msgstr "Vlastní"
+
+#: includes/admin/metaboxes/settings.php:608
+msgctxt "Use the calendar default setting"
+msgid "Event source default"
+msgstr "Výchozí zdroj událostí"
+
+#: includes/admin/metaboxes/settings.php:576
+msgid "Date and Time"
+msgstr "Datum a čas"
+
+#: includes/admin/metaboxes/settings.php:502
+msgid "Some calendars may display a message when no events are found. You can change the default message here."
+msgstr "U některých kalendářů se může zobrazit zpráva, pokud jsou nalezeny žádné události. Můžete změnit výchozí zprávu."
+
+#: includes/admin/metaboxes/settings.php:493
+msgid "No Events Message"
+msgstr "Zpráva, když nejsou žádné události"
+
+#: includes/admin/metaboxes/settings.php:483
+msgid "Remove the navigation arrows and fix the calendar view to its initial state."
+msgstr "Tohle nastavení odstraní navigační šipky a název měsíce. A kalendář bude statický."
+
+#: includes/admin/metaboxes/settings.php:472
+msgid "Static Calendar"
+msgstr "Statický kalendář"
+
+#: includes/admin/metaboxes/settings.php:466
+msgid "Miscellaneous"
+msgstr "Další nastavení"
+
+#: includes/admin/metaboxes/settings.php:443
+msgid "Set the date for the latest possible event to show on calendar. There will not be events after this date."
+msgstr "Nastavte datum na co nejvzdálenější pro zobrazení událostí z kalendáře. Novější události jinak nebudou zobrazeny."
+
+#: includes/admin/metaboxes/settings.php:440
+msgid "Year(s) after start date"
+msgstr "Rok(y) po datu zahájení"
+
+#: includes/admin/metaboxes/settings.php:438
+msgid "Month(s) after start date"
+msgstr "Měsíc(e) po datu zahájení"
+
+#: includes/admin/metaboxes/settings.php:436
+msgid "Weeks(s) after start date"
+msgstr "Víkend(y) po datu zahájení"
+
+#: includes/admin/metaboxes/settings.php:434
+msgid "Day(s) after start date"
+msgstr "Den(y) po datu zahájení"
+
+#: includes/admin/metaboxes/settings.php:432
+msgid "Day end of start date"
+msgstr "Den konce na začátku data"
+
+#: includes/admin/metaboxes/settings.php:403
+msgid "Latest Event"
+msgstr "Nejnovější události"
+
+#: includes/admin/metaboxes/settings.php:398
+msgid "Set the date for the earliest possible event to show in calendar. There will not be events before this date."
+msgstr "Nastavte datum na co nejstarší pro zobrazení událostí z kalendáře. Starší události nebudou jinak zobrazeny."
+
+#: includes/admin/metaboxes/settings.php:395
+msgid "Year(s) before start date"
+msgstr "Rok(y) před datem zahájení"
+
+#: includes/admin/metaboxes/settings.php:393
+msgid "Month(s) before start date"
+msgstr "Měsíc(e) před datem zahájení"
+
+#: includes/admin/metaboxes/settings.php:391
+msgid "Week(s) before start date"
+msgstr "Víkend(y) před datem zahájení"
+
+#: includes/admin/metaboxes/settings.php:389
+msgid "Day(s) before start date"
+msgstr "Den(y) před datem zahájení"
+
+#: includes/admin/metaboxes/settings.php:387
+msgid "Same as start date"
+msgstr "Stejné jako datum zahájení"
+
+#: includes/admin/metaboxes/settings.php:358
+msgid "Earliest Event"
+msgstr "Nejstarší události"
+
+#: includes/admin/metaboxes/settings.php:353
+msgid "The calendar default opening date. It will automatically adapt based on the chosen calendar type."
+msgstr "Výchozí datum otevření kalendáře, se automaticky přizpůsobí na základě zvoleného typu kalendáře."
+
+#: includes/admin/metaboxes/settings.php:335
+msgid "Specific date"
+msgstr "Konkrétní datum"
+
+#: includes/admin/metaboxes/settings.php:332
+msgid "Other"
+msgstr "Jiný"
+
+#: includes/admin/metaboxes/settings.php:330
+msgid "Year(s) after current"
+msgstr "Rok(y) po aktuálním"
+
+#: includes/admin/metaboxes/settings.php:327
+msgid "Year(s) before current"
+msgstr "Rok(y) před aktuálním"
+
+#: includes/admin/metaboxes/settings.php:325
+msgid "This year"
+msgstr "Tento rok"
+
+#: includes/admin/metaboxes/settings.php:320
+msgid "Month(s) after current"
+msgstr "Měsíc(e) po aktuálním"
+
+#: includes/admin/metaboxes/settings.php:317
+msgid "Month(s) before current"
+msgstr "Měsíc(e) před aktuálním"
+
+#: includes/admin/metaboxes/settings.php:314
+msgid "This month"
+msgstr "Tento měsíc"
+
+#: includes/admin/metaboxes/settings.php:309
+msgid "Week(s) after current"
+msgstr "Víkend(y) po aktuálním"
+
+#: includes/admin/metaboxes/settings.php:306
+msgid "Week(s) before current"
+msgstr "Víkend(y) před aktuálním"
+
+#: includes/admin/metaboxes/settings.php:303
+msgid "This week"
+msgstr "Tento týden"
+
+#: includes/admin/metaboxes/settings.php:298
+msgid "Day(s) after today"
+msgstr "Den(y) po dnešku"
+
+#: includes/admin/metaboxes/settings.php:295
+msgid "Day(s) before today"
+msgstr "Den(y) před dneškem"
+
+#: includes/admin/metaboxes/settings.php:292
+msgid "Now"
+msgstr "Teď"
+
+#: includes/admin/metaboxes/settings.php:289
+#: includes/calendars/admin/default-calendar-admin.php:338
+msgid "Today"
+msgstr "Dnes"
+
+#: includes/admin/metaboxes/settings.php:248
+msgid "Calendar Start"
+msgstr "Start kalendáře"
+
+#: includes/admin/metaboxes/settings.php:242
+msgid "Event Settings"
+msgstr "Nastavení událostí"
+
+#: includes/admin/metaboxes/settings.php:207
+#: includes/admin/pages/advanced.php:32
+msgid "Advanced"
+msgstr "Další nastavení"
+
+#: includes/admin/metaboxes/settings.php:198
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: includes/admin/metaboxes/settings.php:192
+msgid "Events"
+msgstr "Události"
+
+#: includes/admin/metaboxes/settings.php:165
+msgid "View to display"
+msgstr "Pohled na zobrazení"
+
+#: includes/admin/metaboxes/settings.php:162
+msgid "View"
+msgstr "Prohlížet"
+
+#: includes/admin/metaboxes/settings.php:143
+msgid "Calendar to use"
+msgstr "Kalendář k použití"
+
+#: includes/post-types.php:173 includes/post-types.php:201
+#: includes/widgets/calendar.php:125
+msgid "Calendar"
+msgstr "Kalendář"
+
+#: includes/admin/metaboxes/settings.php:121
+msgctxt "From which calendar source to load events from"
+msgid "Get events from"
+msgstr "Získejte události z"
+
+#: includes/admin/metaboxes/settings.php:118
+msgid "Event Source"
+msgstr "Zdroj události"
+
+#: includes/admin/metaboxes/attach-calendar.php:60
+msgid "Before Content"
+msgstr "Před obsahem"
+
+#: includes/admin/metaboxes/attach-calendar.php:59
+msgid "After Content"
+msgstr "Po obsahu"
+
+#: includes/admin/meta-boxes.php:130
+msgid "Attach Calendar"
+msgstr "Připojit kalendář"
+
+#: includes/admin/meta-boxes.php:118
+msgid "Calendar Shortcode"
+msgstr "Shortcode kalendáře"
+
+#: includes/admin/meta-boxes.php:83
+msgid "Calendar Settings"
+msgstr "Nastavení kalendáře"
+
+#: includes/admin/menus.php:217
+msgid "Thanks for using Simple Calendar!"
+msgstr "Děkujeme Vám, že používáte Simple Calendar!"
+
+#: includes/admin/menus.php:205
+msgid "Thanks :)"
+msgstr "Děkuji :)"
+
+#: includes/admin/menus.php:204
+msgid "If you like <strong>Simple Calendar</strong> please leave us a %s&#9733;&#9733;&#9733;&#9733;&#9733; rating on WordPress.org%s. A huge thank you in advance!"
+msgstr "Pokud se vám líbí <strong>Simple Calendar</strong> prosím, nechte nám %s&#9733;&#9733;&#9733;&#9733;&#9733; hodnocení na WordPress.org%s. Děkuji předem!"
+
+#: includes/admin/menus.php:122 includes/admin/pages/calendars.php:42
+#: includes/admin/welcome.php:104 includes/post-types.php:172
+msgid "Calendars"
+msgstr "Kalendáře"
+
+#: includes/admin/menus.php:93 includes/admin/menus.php:94
+msgid "Tools"
+msgstr "Nástroje"
+
+#: includes/admin/menus.php:81 includes/admin/menus.php:82
+#: includes/admin/menus.php:146 includes/admin/pages/add-ons.php:31
+#: includes/admin/welcome.php:110
+msgid "Add-ons"
+msgstr "Add-ony"
+
+#: includes/admin/menus.php:69 includes/admin/menus.php:70
+#: includes/admin/menus.php:121 includes/admin/welcome.php:107
+msgid "Settings"
+msgstr "Nastavení"
+
+#: includes/admin/fields/license.php:86
+msgid "(active)"
+msgstr "(aktivní)"
+
+#: includes/admin/fields/license.php:81
+msgid "Activate"
+msgstr "Zapnout"
+
+#: includes/admin/fields/license.php:77
+msgid "Deactivate"
+msgstr "Vypnout"
+
+#: includes/admin/fields/datetime-format.php:364
+msgctxt "A character to separate two elements"
+msgid "Divider"
+msgstr "Oddělovač"
+
+#: includes/admin/fields/datetime-format.php:341
+msgid "Meridiem"
+msgstr "Poledne"
+
+#: includes/admin/fields/datetime-format.php:319
+msgid "Minutes"
+msgstr "Minuta"
+
+#: includes/admin/fields/datetime-format.php:294
+msgid "Hours"
+msgstr "hodin"
+
+#: includes/admin/fields/datetime-format.php:271
+msgid "Year"
+msgstr "Rok"
+
+#: includes/admin/fields/datetime-format.php:246
+msgid "Month"
+msgstr "Měsíc"
+
+#: includes/admin/fields/datetime-format.php:223
+msgid "Day"
+msgstr "Den"
+
+#: includes/admin/fields/datetime-format.php:200
+msgid "Weekday"
+msgstr "Den v týdnu"
+
+#: includes/admin/fields/datetime-format.php:98
+#: includes/admin/metaboxes/settings.php:657
+#: includes/admin/metaboxes/settings.php:680
+#: includes/admin/metaboxes/settings.php:760
+#: includes/admin/metaboxes/settings.php:783
+msgid "Preview"
+msgstr "Náhled"
+
+#: includes/admin/ajax.php:147
+msgid "License key is invalid."
+msgstr "Klíč licence je neplatný."
+
+#: includes/admin/ajax.php:132
+msgid "There was an error processing your request: %s"
+msgstr "Při zpracování vašeho požadavku došlo k chybě: %s"
+
+#: includes/admin/ajax.php:101 includes/admin/ajax.php:168
+msgid "An error occurred: %s"
+msgstr "Došlo k chybě: %s"
+
+#: includes/admin/ajax.php:96
+msgid "Add-on unspecified or invalid action."
+msgstr "Add-on nespecifikované nebo neplatné akce."
+
+#: includes/widgets/calendar.php:132
+msgid "Title:"
+msgstr "Nadpis:"
+
+#: includes/admin/welcome.php:113
+msgid "Documentation"
+msgstr "Dokumentace"
+
+#: includes/admin/metaboxes/settings.php:734
+msgid "Time Format"
+msgstr "Formát času"
+
+#: includes/admin/metaboxes/settings.php:631
+msgid "Date Format"
+msgstr "Formát data"
+
+#: includes/admin/fields/checkbox.php:90
+#: includes/admin/pages/system-status.php:103
+#: includes/admin/pages/system-status.php:106
+#: includes/admin/pages/system-status.php:156
+#: includes/admin/pages/system-status.php:260
+#: includes/admin/pages/system-status.php:376
+#: includes/admin/pages/system-status.php:396
+#: includes/admin/pages/system-status.php:450
+#: includes/admin/pages/system-status.php:475
+#: includes/admin/pages/system-status.php:485
+#: includes/admin/pages/system-status.php:490
+msgid "Yes"
+msgstr "Ano"
+
+#: includes/feeds/admin/google-admin.php:189
+msgid "Search Query"
+msgstr "Hledaný dotaz"
+
+#: includes/admin/metaboxes/settings.php:605
+#: includes/admin/metaboxes/settings.php:647
+#: includes/admin/metaboxes/settings.php:750
+#: includes/admin/metaboxes/settings.php:807
+msgctxt "Use this site default setting"
+msgid "Site default"
+msgstr "Výchozí nastavení stránky"
+
+#: includes/admin/metaboxes/settings.php:582
+#: includes/admin/pages/system-status.php:149
+msgid "Timezone"
+msgstr "Časové pásmo"
+
+#: includes/feeds/google.php:98
+msgid "Google Calendar"
+msgstr "Google kalendář"
+
+#: includes/admin/metaboxes/settings.php:688
+msgid "Separator"
+msgstr "Oddělovač"
+
+#: includes/feeds/admin/google-admin.php:96
+msgid "Google API Key"
+msgstr "Google API Key"
+
+#: includes/calendars/default-calendar.php:114
+#: includes/calendars/views/default-calendar-list.php:112
+msgid "List"
+msgstr "Seznam"
+
+#: includes/calendars/default-calendar.php:113
+#: includes/calendars/views/default-calendar-grid.php:92
+msgid "Grid"
+msgstr "Mřížka"
+
+#: includes/post-types.php:177
+msgid "Add New"
+msgstr "Přidat nový"
+
+#: includes/calendars/views/default-calendar-list.php:205
+msgid "Previous"
+msgstr "Předcházející"
+
+#: includes/calendars/views/default-calendar-list.php:220
+msgid "Next"
+msgstr "Další"
+
+#: includes/admin/post-types.php:144
+msgid "Clear Cache"
+msgstr "Čistit cache"
+
+#: includes/admin/post-types.php:345
+msgid "Could not find any calendars to add to this post."
+msgstr "Nelze najít žádné kalendáře pro přidání do tohoto příspěvku."
+
+#: includes/admin/post-types.php:343
+msgid "Insert Calendar"
+msgstr "Vložit kalendář"
+
+#: includes/admin/post-types.php:329
+msgid "Add a calendar to your post."
+msgstr "Přidat kalendář do příspěvku."
+
+#: includes/admin/post-types.php:306 includes/admin/post-types.php:328
+msgid "Add Calendar"
+msgstr "Přidat kalendář"

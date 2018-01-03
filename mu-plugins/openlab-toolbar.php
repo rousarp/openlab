@@ -370,7 +370,7 @@ HTML;
 
  		$wp_admin_bar->add_node( array(
 			'id'    => 'my-openlab',
-			'title' => 'My OpenLab <span class="fa fa-caret-down" aria-hidden="true"></span>',
+			'title' => 'Můj OpenLab <span class="fa fa-caret-down" aria-hidden="true"></span>',
 			'href'  => bp_loggedin_user_domain(),
                         'meta'  => array(
                             'class' => 'admin-bar-menu',
@@ -386,7 +386,7 @@ HTML;
 
             $hamburger = <<<HTML
                     <button type="button" class="navbar-toggle mobile-toggle direct-toggle network-menu" data-target="#wp-admin-bar-network-menu-mobile .ab-sub-wrapper" data-plusheight="19">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">Přepnout navigaci</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -402,7 +402,7 @@ HTML;
 //
             $wp_admin_bar->add_node( array(
 			'id'    => 'network-menu-mobile',
-			'title' => 'My OpenLab <span class="fa fa-caret-down" aria-hidden="true"></span>',
+			'title' => 'Můj OpenLab <span class="fa fa-caret-down" aria-hidden="true"></span>',
                         'meta'  => array(
                             'class' => 'visible-xs mobile-menu admin-bar-menu',
                             'tabindex' => 0,
@@ -479,7 +479,7 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => 'my-openlab',
 			'id'     => 'my-profile',
-			'title'  => 'My Profile',
+			'title'  => 'Můj profil',
 			'href'   => bp_loggedin_user_domain(),
                         'meta' => array(
                             'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -489,7 +489,7 @@ HTML;
                 $wp_admin_bar->add_node( array(
 			'parent' => 'my-openlab',
 			'id'     => 'my-settings',
-			'title'  => 'My Settings',
+			'title'  => 'Nastavení',
 			'href'   => trailingslashit( bp_loggedin_user_domain() . 'settings' ),
                         'meta' => array(
                             'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -499,7 +499,7 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => 'my-openlab',
 			'id'     => 'my-courses',
-			'title'  => 'My Courses',
+			'title'  => 'Moje kurzy',
 			'href'   => trailingslashit( bp_get_root_domain() . '/my-courses' ),
                         'meta' => array(
                             'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -509,7 +509,7 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => 'my-openlab',
 			'id'     => 'my-projects',
-			'title'  => 'My Projects',
+			'title'  => 'Moje projekty',
 			'href'   => trailingslashit( bp_get_root_domain() . '/my-projects' ),
                         'meta' => array(
                             'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -519,7 +519,7 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => 'my-openlab',
 			'id'     => 'my-clubs',
-			'title'  => 'My Clubs',
+			'title'  => 'Moje skupiny',
 			'href'   => trailingslashit( bp_get_root_domain() . '/my-clubs' ),
                         'meta' => array(
                             'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -532,7 +532,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'my-openlab',
 				'id'     => 'my-friends',
-				'title'  => 'My Friends '.$request_count,
+				'title'  => 'Přátelé '.$request_count,
 				'href'   => trailingslashit( bp_loggedin_user_domain() . bp_get_friends_slug() ),
                                 'meta' => array(
                                     'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -559,7 +559,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'my-openlab',
 				'id'     => 'my-invitations',
-				'title'  => sprintf( 'My Invitations %s', $invite_count ),
+				'title'  => sprintf( 'Moje pozvánky %s', $invite_count ),
 				'href'   => trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug() . '/invites' ),
                                 'meta' => array(
                                     'class' => 'admin-bar-menu-item mobile-no-hover'
@@ -579,7 +579,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'my-openlab',
 				'id'     => 'my-dashboard',
-				'title'  => 'My Dashboard',
+				'title'  => 'Nástěnka',
 				'href'   => $primary_site_url . '/wp-admin/my-sites.php',
                                 'meta' => array(
                                     'class' => 'admin-bar-menu-item mobile-no-hover exit'
@@ -626,7 +626,7 @@ HTML;
 
 		$wp_admin_bar->add_menu( array(
 			'id' => 'invites',
-			'title' => '<span class="toolbar-item-icon fa fa-user" aria-hidden="true"></span><span class="sr-only">Invitations and Friend Requests</span>' . $total_count,
+			'title' => '<span class="toolbar-item-icon fa fa-user" aria-hidden="true"></span><span class="sr-only">Pozvánky a požadavky přátel</span>' . $total_count,
                         'meta' => array(
                           'class' => 'hidden-xs',
                         ),
@@ -640,7 +640,7 @@ HTML;
 		$wp_admin_bar->add_node(array(
                     'parent' => 'invites',
                     'id' => 'friend-requests-title',
-                    'title' => 'Friend Requests',
+                    'title' => 'Požadavky přátel',
                     'meta' => array(
                         'class' => 'submenu-title bold',
                     )
@@ -657,7 +657,7 @@ HTML;
 				bp_the_member();
 
 				// avatar
-				$title = '<div class="row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_get_member_link() . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => bp_get_member_user_id(), 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profile picture of '.bp_get_member_name().'"/></a></div></div>';
+				$title = '<div class="row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_get_member_link() . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => bp_get_member_user_id(), 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profilový obrázek uživatele '.bp_get_member_name().'"/></a></div></div>';
 
 				// name link
 				$title .= '<div class="col-sm-18"><p class="item"><a class="bold" href="' . bp_get_member_link() . '">' . bp_get_member_name() . '</a></p>';
@@ -680,7 +680,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'invites',
 				'id'     => 'friend-requests-none',
-				'title'  => '<div class="row"><div class="col-sm-24"><p>No new friendship requests.</p></div></div>',
+				'title'  => '<div class="row"><div class="col-sm-24"><p>Žádné nové žádosti o přátelství.</p></div></div>',
 				'meta'   => array(
 					'class' => 'nav-no-items nav-content-item'
 				)
@@ -693,7 +693,7 @@ HTML;
 
                 $title = 'Invitations';
                 if ( !empty( $invites['groups'] )){
-                    $title .= '<span class="see-all pull-right"><a class="regular" href="'.trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug()) . '/invites">See All Invites</a></span>';
+                    $title .= '<span class="see-all pull-right"><a class="regular" href="'.trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug()) . '/invites">Zobrazit všechny pozvánky</a></span>';
                 }
 		// "Invitations" title
 		$wp_admin_bar->add_node( array(
@@ -715,7 +715,7 @@ HTML;
 			foreach ( (array) $invites['groups'] as $group ) {
 				if ( $group_counter < 3 ) {
 					// avatar
-					$title = '<div class="row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_get_group_permalink( $group ) . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => $group->id, 'object' => 'group', 'type' => 'full', 'html' => false)).'" alt="Profile picture of '. stripslashes($group->name).'"/></a></div></div>' ;
+					$title = '<div class="row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_get_group_permalink( $group ) . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => $group->id, 'object' => 'group', 'type' => 'full', 'html' => false)).'" alt="Profilový obrázek '. stripslashes($group->name).'"/></a></div></div>' ;
 
 					// name link
 					$title .= '<div class="col-sm-18"><p class="item-title"><a class="bold" href="' . bp_get_group_permalink( $group ) . '">' . stripslashes($group->name) . '</a></p>';
@@ -740,7 +740,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'invites',
 				'id'     => 'group-invites-none',
-				'title'  => '<div class="row"><div class="col-sm-24"><p>No new invitations.</p></div></div>',
+				'title'  => '<div class="row"><div class="col-sm-24"><p>Žádné nové pozvánky.</p></div></div>',
 				'meta'   => array(
 					'class' => 'nav-no-items nav-content-item'
 				)
@@ -761,7 +761,7 @@ HTML;
 
 		$wp_admin_bar->add_menu( array(
 			'id' => 'messages',
-			'title' => '<span class="toolbar-item-icon fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Messages</span>' . $total_count,
+			'title' => '<span class="toolbar-item-icon fa fa-envelope" aria-hidden="true"></span><span class="sr-only">Zprávy</span>' . $total_count,
                         'meta' => array(
                           'class' => 'hidden-xs',
                           'tabindex' => 0,
@@ -782,7 +782,7 @@ HTML;
 
 				if ( $messages_counter < 5 ) {
 					// avatar
-					$title = '<div class="row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_core_get_user_domain( $messages_template->thread->last_sender_id ) . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => $messages_template->thread->last_sender_id, 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profile picture of '.$messages_template->thread->last_sender_id.'"/></a></div></div>';
+					$title = '<div class="row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_core_get_user_domain( $messages_template->thread->last_sender_id ) . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => $messages_template->thread->last_sender_id, 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profilový obrázek uživatele '.$messages_template->thread->last_sender_id.'"/></a></div></div>';
 
 					// subject
 					$title .= '<div class="col-sm-18"><p class="item"><a class="bold" href="' . bp_get_message_thread_view_link() . '">' . bp_create_excerpt(bp_get_message_thread_subject(), 30) . '</a>';
@@ -794,7 +794,7 @@ HTML;
 					$title .= '<p class="message-excerpt">' .bp_format_time( strtotime( $messages_template->thread->last_message_date ) ).'<br />';
 
 					// Message excerpt
-					$title .= strip_tags( bp_create_excerpt( $messages_template->thread->last_message_content, 75 ) ) . ' <a class="message-excerpt-see-more" href="' . bp_get_message_thread_view_link() . '">See More<span class="sr-only">'.bp_create_excerpt(bp_get_message_thread_subject(), 30).'</span></a></p></div></div>';
+					$title .= strip_tags( bp_create_excerpt( $messages_template->thread->last_message_content, 75 ) ) . ' <a class="message-excerpt-see-more" href="' . bp_get_message_thread_view_link() . '">Zobrazit více<span class="sr-only">'.bp_create_excerpt(bp_get_message_thread_subject(), 30).'</span></a></p></div></div>';
 
 					$wp_admin_bar->add_node( array(
 						'parent' => 'messages',
@@ -815,7 +815,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'messages',
 				'id'     => 'messages-none',
-				'title'  => '<div class="row"><div class="col-sm-24"><p>No new messages.</p></div></div>',
+				'title'  => '<div class="row"><div class="col-sm-24"><p>Žádné nové zprávy.</p></div></div>',
 				'meta'   => array(
 					'class' => 'nav-content-item nav-no-items'
 				)
@@ -826,7 +826,7 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => 'messages',
 			'id'     => 'messages-more',
-			'title'  => '<span class="see-all">See All Messages</span>',
+			'title'  => '<span class="see-all">Zobrazit všechny zprávy</span>',
 			'href'   => trailingslashit( bp_loggedin_user_domain() . bp_get_messages_slug() ),
                         'meta' => array(
                             'class' => 'menu-bottom-link'
@@ -840,7 +840,7 @@ HTML;
 	function add_activity_menu( $wp_admin_bar ) {
 		$wp_admin_bar->add_menu( array(
 			'id' => 'activity',
-			'title' => '<span class="toolbar-item-name fa fa-bullhorn" aria-hidden="true"></span><span class="sr-only">Activity</span>',
+			'title' => '<span class="toolbar-item-name fa fa-bullhorn" aria-hidden="true"></span><span class="sr-only">Aktivita</span>',
                         'meta' => array(
                           'class' => 'hidden-xs',
                           'tabindex' => 0,
@@ -859,7 +859,7 @@ HTML;
 				bp_the_activity();
 
 				// avatar
-				$title = '<div class="row activity-row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_get_activity_user_link() . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => bp_get_activity_user_id(), 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profile picture of '.  bp_get_activity_user_id().'"/></a></div></div>';
+				$title = '<div class="row activity-row"><div class="col-sm-6"><div class="item-avatar"><a href="' . bp_get_activity_user_link() . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => bp_get_activity_user_id(), 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profilový obrázek uživatele  '.  bp_get_activity_user_id().'"/></a></div></div>';
 
 				// action
 				$title .= '<div class="col-sm-18">';
@@ -901,7 +901,7 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => 'activity',
 			'id'     => 'activity-more',
-			'title'  => '<span class="see-all">See All Activity</span>',
+			'title'  => '<span class="see-all">Zobrazit všechny aktivity</span>',
 			'href'   => $link,
                         'meta' => array(
                                 'class' => 'menu-bottom-link exit'
@@ -956,7 +956,7 @@ HTML;
                             $wp_admin_bar->add_menu( array(
                                     'parent' => 'site-name',
                                     'id'     => 'edit-site',
-                                    'title'  => __( 'Edit Site' ),
+                                    'title'  => __( 'Upravit stránky' ),
                                     'href'   => network_admin_url( 'site-info.php?id=' . get_current_blog_id() ),
                             ) );
                     }
@@ -966,7 +966,7 @@ HTML;
                     $wp_admin_bar->add_menu( array(
                             'parent' => 'site-name',
                             'id'     => 'dashboard',
-                            'title'  => __( 'Dashboard' ),
+                            'title'  => __( 'Nástěnka' ),
                             'href'   => admin_url(),
                     ) );
 
@@ -1027,7 +1027,7 @@ HTML;
                         {
                                 $wp_admin_bar->add_menu( array(
                                         'id' => 'edit',
-                                        'title' => '<span class="fa fa-pencil" aria-hidden="true"></span><span class="sr-only">Edit '.$post_label.'</span>',
+                                        'title' => '<span class="fa fa-pencil" aria-hidden="true"></span><span class="sr-only">Upravit '.$post_label.'</span>',
                                         'href' => get_edit_post_link( $current_object->ID ),
                                         'meta' => array(
                                             'class' => 'hidden-xs',
@@ -1041,7 +1041,7 @@ HTML;
                         {
                                 $wp_admin_bar->add_menu( array(
                                         'id' => 'edit',
-                                        'title' => '<span class="fa fa-pencil aria-hidden="true"></span><span class="sr-only">Edit '.$post_label.'</span>',
+                                        'title' => '<span class="fa fa-pencil aria-hidden="true"></span><span class="sr-only">Upravit '.$post_label.'</span>',
                                         'href' => get_edit_term_link( $current_object->term_id, $current_object->taxonomy ),
                                         'meta' => array(
                                             'class' => 'hidden-xs',
@@ -1105,7 +1105,7 @@ HTML;
 	if ( ! $actions )
 		return;
 
-	$title = '<span class="fa fa-plus-circle hidden-xs" aria-hidden="true"></span><span class="ab-icon dashicon-icon visible-xs" aria-hidden="true"></span><span class="sr-only">Add New</span>';
+	$title = '<span class="fa fa-plus-circle hidden-xs" aria-hidden="true"></span><span class="ab-icon dashicon-icon visible-xs" aria-hidden="true"></span><span class="sr-only">Přidat nový</span>';
 
 	$wp_admin_bar->add_menu( array(
 		'id'    => 'new-content',
@@ -1198,7 +1198,7 @@ HTML;
         $awaiting_count = openlab_admin_bar_counts(number_format_i18n($awaiting_mod),' sub-count');
         $awaiting_title = esc_attr(sprintf(_n('%s comment awaiting moderation', '%s comments awaiting moderation', $awaiting_mod), number_format_i18n($awaiting_mod)));
 
-        $icon = '<span class="fa fa-comment hidden-xs" aria-hidden="true"></span><span class="ab-icon dashicon-icon visible-xs" aria-hidden="true"></span><span class="sr-only">Comments</span>';
+        $icon = '<span class="fa fa-comment hidden-xs" aria-hidden="true"></span><span class="ab-icon dashicon-icon visible-xs" aria-hidden="true"></span><span class="sr-only">Komentáře</span>';
         $wp_admin_bar->add_menu(array(
             'id' => 'comments',
             'title' => $icon,
@@ -1286,7 +1286,7 @@ HTML;
                     $user_login = "<span class='username'>{$current_user->user_login}</span>";
 
             // avatar
-            $user_info = '<div class="row"><div class="col-sm-8"><div class="item-avatar"><a href="' . $profile_url . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => $user_id, 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profile picture of '. $current_user->display_name.'"/></a></div></div>' ;
+            $user_info = '<div class="row"><div class="col-sm-8"><div class="item-avatar"><a href="' . $profile_url . '"><img class="img-responsive" src ="'.bp_core_fetch_avatar(array('item_id' => $user_id, 'object' => 'member', 'type' => 'full', 'html' => false)).'" alt="Profilový obrázek uživatele '. $current_user->display_name.'"/></a></div></div>' ;
 
             // name link
             $user_info .= '<div class="col-sm-16"><p class="item-title"><span class="display-name bold">'.$current_user->display_name.'</span>';
@@ -1295,7 +1295,7 @@ HTML;
 
 
             // accept/reject buttons
-            $user_info .= '<p class="actions clearfix inline-links"><a href="' . $profile_url . '">' . __( 'Edit My Profile' ) . '</a> | <span class="exit"><a href="' . wp_logout_url() . '">' . __( 'Log Out' ) . '</a></span></p></div></div>';
+            $user_info .= '<p class="actions clearfix inline-links"><a href="' . $profile_url . '">' . __( 'Upravit můj profil' ) . '</a> | <span class="exit"><a href="' . wp_logout_url() . '">' . __( 'Odhlásit se' ) . '</a></span></p></div></div>';
 
             $wp_admin_bar->add_node( array(
                     'parent' => 'my-account',
@@ -1329,7 +1329,7 @@ HTML;
 		$wp_admin_bar->remove_node( 'bp-login' );
 
 		// Change the title of the signup node
-		$signup->title = 'Sign Up';
+		$signup->title = 'Registrovat se';
 
 		// Move them both to top-secondary, to appear at the right
 		$signup->parent = 'top-secondary';

@@ -43,9 +43,9 @@ $activity_args = array(
 ?>
 
 <?php if (bp_is_user_friends()) : ?>
-    <h2 class="sidebar-header">Recent Friend Activity</h2>
+    <h2 class="sidebar-header">Nedávné aktivity přátel</h2>
 <?php else : ?>
-    <h2 class="sidebar-header">Recent Activity</h2>
+    <h2 class="sidebar-header">Nedávné aktivity</h2>
 <?php endif ?>
 
 <div class="activity-wrapper">

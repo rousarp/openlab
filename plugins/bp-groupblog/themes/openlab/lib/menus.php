@@ -518,9 +518,9 @@ function openlab_my_messages_submenu() {
     }
 
     $menu_list = array(
-        $dud . 'messages/inbox/' => 'Inbox',
-        $dud . 'messages/sentbox/' => 'Sent',
-        $dud . 'messages/compose' => 'Compose',
+        $dud . 'messages/inbox/' => 'Doručené zprávy',
+        $dud . 'messages/sentbox/' => 'Odeslané zprávy',
+        $dud . 'messages/compose' => 'Odeslat zprávu',
     );
     return openlab_submenu_gen($menu_list);
 }
@@ -533,9 +533,9 @@ function openlab_my_invitations_submenu() {
     }
 
     $menu_list = array(
-        $dud . 'groups/invites/' => 'Invitations Received',
-        $dud . 'invite-anyone/' => 'Invite New Members',
-        $dud . 'invite-anyone/sent-invites/' => 'Sent Invitations',
+        $dud . 'groups/invites/' => 'Pozvánky přijaté',
+        $dud . 'invite-anyone/' => 'Pozvat nové uživatele',
+        $dud . 'invite-anyone/sent-invites/' => 'Odeslané pozvánky',
     );
     return openlab_submenu_gen($menu_list);
 }

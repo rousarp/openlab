@@ -553,7 +553,7 @@ function openlab_group_profile_header() {
     ?>
     <h1 class="entry-title group-title clearfix"><span class="profile-name hyphenate"><?php echo bp_group_name(); ?></span>
         <button data-target="#sidebar-menu-wrapper" data-backgroundonly="true" class="mobile-toggle direct-toggle pull-right visible-xs" type="button">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Přepnout navigaci</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -862,7 +862,7 @@ function openlab_group_profile_activity_list() {
                                                 </div></div>                                            <?php endwhile; ?>
                                     <?php else: ?>
                                         <div class="panel panel-default"><div class="panel-body">
-                                                <p><?php _e('Sorry, there were no discussion topics found.', 'buddypress') ?></p>
+                                                <p><?php _e('Je nám líto, nebyly nalezeny žádné témata pro diskusi.', 'buddypress') ?></p>
                                             </div></div>
                                     <?php endif; ?>
                                 </div><!-- .recent-post -->
@@ -893,7 +893,7 @@ function openlab_group_profile_activity_list() {
                                             <?php
                                         endwhile;
                                     } else {
-                                        echo '<div class="panel panel-default"><div class="panel-body"><p>No Recent Docs</p></div></div>';
+                                        echo '<div class="panel panel-default"><div class="panel-body"><p>Žádné nedávné dokumenty</p></div></div>';
                                     }
                                     ?>
                                 </div>

@@ -1,7 +1,7 @@
 <div id="openlabUpcomingEvents" class="calendar-wrapper action-events">
     <div id="item-body">
         <div class="submenu submenu-sitewide-calendar">
-            <div class="submenu-text pull-left bold">Calendar:</div>
+            <div class="submenu-text pull-left bold">Kalendář:</div>
             <ul class="nav nav-inline">
                 <?php foreach ($menu_items as $item): ?>
                     <li class="<?php echo $item['class'] ?>" id="<?php echo $item['slug'] ?>-groups-li"><a href="<?php echo $item['link'] ?>"><?php echo $item['name'] ?></a></li>
@@ -9,7 +9,7 @@
             </ul>
         </div>
 
-        <h2><?php echo __('Upcoming Events', 'bp-event-organiser'); ?></h2>
+        <h2><?php echo __('Nadcházející události', 'bp-event-organiser'); ?></h2>
         <?php if (!empty($events)) : ?>
             <ul class="bpeo-upcoming-events">
                 <?php
@@ -30,7 +30,7 @@
                 ?>
             </ul>
         <?php else : // ! empty( $events ) ?>
-            <p><?php _e('No upcoming events found.', 'bp-event-organiser') ?></p>
+            <p><?php _e('Nebyly nalezeny žádné nadcházející události.', 'bp-event-organiser') ?></p>
         <?php endif; // ! empty( $events )  ?>
     </div>
 </div>

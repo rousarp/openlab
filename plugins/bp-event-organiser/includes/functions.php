@@ -559,7 +559,7 @@ function bpeo_add_ical_link_to_eventmeta() {
 ?>
 	<li><?php
 		printf(
-		__( "%sDownload iCalendar file%s to save this event to your preferred calendar application", 'bp-event-organiser' ),
+		__( "%sStáhněte si soubor iCalendar%s a uložte tuto událost do aplikace, kterou preferujete", 'bp-event-organiser' ),
 		'<a class="bpeo-ical-link" href="' . bpeo_get_the_ical_link( get_the_ID() ) . '"><span class="icon"></span>',
 		'</a>'
 	); ?></li>

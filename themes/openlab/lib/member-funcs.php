@@ -266,7 +266,7 @@ function openlab_list_members($view) {
                             </div>
                             <div class="item col-md-14 col-xs-16">
                                 <h2 class="item-title"><a class="no-deco" href="<?php bp_member_permalink() ?>" title="<?php bp_member_name() ?>"><?php bp_member_name() ?></a></h2>
-                                <span class="member-since-line timestamp">Member since <?php echo $registered; ?></span>
+                                <span class="member-since-line timestamp">Členem od <?php echo $registered; ?></span>
                                 <?php if (bp_get_member_latest_update()) : ?>
                                     <span class="update"><?php bp_member_latest_update('length=10') ?></span>
                                 <?php endif; ?>
@@ -303,7 +303,7 @@ function openlab_list_members($view) {
 
         <div id="group-members-list" class="item-list group-list row">
             <div class="widget-error query-no-results col-sm-24">
-                <p class="bold"><?php _e('There are no ' . strtolower($user_type) . ' to display.', 'buddypress') ?></p>
+                <p class="bold"><?php _e('Neexistují žádné  ' . strtolower($user_type) . ' kluby, které by se zobrazovaly.', 'buddypress') ?></p>
             </div>
         </div>
 
@@ -389,24 +389,24 @@ function openlab_group_status_message($group = null) {
         case 1 :
         case 0 :
             if ('public' === $group->status) {
-                $message = 'This ' . $group_label . ' is OPEN.';
+                $message = '' . $group_label . ' je VEŘEJNÁ.';
             } else if (!$site_url) {
                 // Special case: $site_status will be 0 when the
                 // group does not have an associated site. When
                 // this is the case, and the group is not
                 // public, don't mention anything about the Site.
-                $message = 'This ' . $group_label . ' is PRIVATE.';
+                $message = '' . $group_label . ' je PRIVÁTNÍ.';
             } else {
-                $message = 'This ' . $group_label . ' Profile is PRIVATE, but the ' . $group_label . ' Site is OPEN to all visitors.';
+                $message = 'This profil ' . $group_label . ' je PRIVÁTNÍ, ale web ' . $group_label . ' je VEŘEJNÝ pro všechny návštěvníky.';
             }
 
             break;
 
         case -1 :
             if ('public' === $group->status) {
-                $message = 'This ' . $group_label . ' Profile is OPEN, but only logged-in OpenLab members may view the ' . $group_label . ' Site.';
+                $message = 'Profil ' . $group_label . 'je VEŘEJNÝ, ale pouze přihlášení členové OpenLab mohou zobrazit web ' . $group_label . '.';
             } else {
-                $message = 'This ' . $group_label . ' Profile is PRIVATE, but all logged-in OpenLab members may view the ' . $group_label . ' Site.';
+                $message = 'Profil ' . $group_label . ' Profil je PRIVÁTNÍ, ale všichni přihlášení členové OpenLab mohou zobrazit web ' . $group_label . '.';
             }
 
             break;
@@ -414,9 +414,9 @@ function openlab_group_status_message($group = null) {
         case -2 :
         case -3 :
             if ('public' === $group->status) {
-                $message = 'This ' . $group_label . ' Profile is OPEN, but the ' . $group_label . ' Site is PRIVATE.';
+                $message = 'Profil ' . $group_label . ' je veřejný, ale web ' . $group_label . ' je PRIVÁTNÍ.';
             } else {
-                $message = 'This ' . $group_label . ' is PRIVATE. You must be a member of the ' . $group_label . ' to view the ' . $group_label . ' Site.';
+                $message = 'Profil ' . $group_label . ' je PRIVÁTNÍ. Musíte být členem ' . $group_label . ' pro navštívení webu ' . $group_label . '.';
             }
 
             break;
@@ -530,7 +530,7 @@ function cuny_student_profile() {
                     <ul id="member-list" class="inline-element-list">
 
                         <?php foreach ($friend_ids as $friend_id) { ?>
-                            
+
                             <li class="inline-element">
                                 <a href="<?php echo bp_core_get_user_domain($friend_id) ?>">
                                     <img class="img-responsive" src ="<?php echo bp_core_fetch_avatar(array('item_id' => $friend_id, 'object' => 'member', 'type' => 'full', 'html' => false)) ?>" alt="<?php echo bp_core_get_user_displayname($friend_id); ?>"/>
@@ -702,9 +702,9 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                 <?php endforeach ?>
             <?php else : ?>
                 <?php if (bp_is_my_profile()) : ?>
-                    You haven't created or joined any sites yet.
+                    Dosud jste nevytvořili ani jste nepřipojili připojili.
                 <?php else : ?>
-                    <?php echo $bp->displayed_user->fullname ?> hasn't created or joined any sites yet.
+                    <?php echo $bp->displayed_user->fullname ?> dosud nevytvořil ani se nepřipojil k žádným stránkám.
                 <?php endif ?>
 
             <?php endif ?>
@@ -890,10 +890,10 @@ function openlab_member_header() {
     <?php $account_type = xprofile_get_field_data('Account Type', $this_user_id); ?>
 
     <h1 class="entry-title profile-title clearfix">
-        <span class="profile-name"><?php bp_displayed_user_fullname() ?>&rsquo;s Profile</span>
+        <span class="profile-name">Profil uživatele <?php bp_displayed_user_fullname() ?></span>
         <span class="profile-type pull-right hidden-xs"><?php echo $account_type ?></span>
         <button data-target="#sidebar-mobile" class="mobile-toggle direct-toggle pull-right visible-xs" type="button">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Přepnout navigaci</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

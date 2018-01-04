@@ -974,7 +974,7 @@ function bpeo_ges_add_ical_link( $content, $activity ) {
 		return $content;
 	}
 
-	$ical_link = __( 'Download iCalendar file:', 'bp-event-organiser' );
+	$ical_link = __( 'Stáhněte si soubor iCalendar:', 'bp-event-organiser' );
 	$ical_link .= "\n";
 
 	if ( ! empty( $activity->hide_sidewide ) ) {

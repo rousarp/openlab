@@ -506,9 +506,9 @@ function cuny_student_profile() {
 
     <div id="member-item-body" class="row">
 
-        <?php echo cuny_profile_activty_block('course', 'My Courses', '', 25); ?>
-        <?php echo cuny_profile_activty_block('project', 'My Projects', ' last', 25); ?>
-        <?php echo cuny_profile_activty_block('club', 'My Clubs', ' last', 25); ?>
+        <?php echo cuny_profile_activty_block('course', 'Moje kurzy', '', 25); ?>
+        <?php echo cuny_profile_activty_block('project', 'Moje projekty', ' last', 25); ?>
+        <?php echo cuny_profile_activty_block('club', 'Moje skupiny', ' last', 25); ?>
 
         <script type='text/javascript'>(function ($) {
                 $('.activity-list').css('visibility', 'hidden');
@@ -530,7 +530,7 @@ function cuny_student_profile() {
                     <ul id="member-list" class="inline-element-list">
 
                         <?php foreach ($friend_ids as $friend_id) { ?>
-                            
+
                             <li class="inline-element">
                                 <a href="<?php echo bp_core_get_user_domain($friend_id) ?>">
                                     <img class="img-responsive" src ="<?php echo bp_core_fetch_avatar(array('item_id' => $friend_id, 'object' => 'member', 'type' => 'full', 'html' => false)) ?>" alt="<?php echo bp_core_get_user_displayname($friend_id); ?>"/>
@@ -644,23 +644,23 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                             if ($type != "course") {
                                 if ($bp->loggedin_user->id == $bp->displayed_user->id) {
                                     ?>
-                                    You aren't participating in any <?php echo $type; ?>s on the OpenLab yet. Why not <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">create a <?php echo $type; ?></a>?
+                                    Na portále OpenLab nejste přihlášeni do žádného <?php echo $type; ?>. Nechcete  <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">vytvořit <?php echo $type; ?></a>vlastní?
                                     <?php
                                 } else {
-                                    echo $bp->displayed_user->fullname;
+                                    echo "uživatel".$bp->displayed_user->fullname;
                                     ?>
-                                    hasn't created or joined any <?php echo $type ?>s yet.
+                                    není doposud připojen k žádné skupině typu <?php echo $type ?>.
                                     <?php
                                 }
                             } else {
                                 if ($bp->loggedin_user->id == $bp->displayed_user->id) {
                                     ?>
-                                    You haven't created any courses yet.
+                                    Doposud jste nevytvořili žádný kurz.
                                     <?php
                                 } else {
-                                    echo $bp->displayed_user->fullname;
+                                    echo "uživatel".$bp->displayed_user->fullname;
                                     ?>
-                                    hasn't joined any <?php echo $type ?>s yet.
+                                    není doposud připojen k žádné skupině typu <?php echo $type ?>.
                                     <?php
                                 }
                             }
@@ -890,10 +890,10 @@ function openlab_member_header() {
     <?php $account_type = xprofile_get_field_data('Account Type', $this_user_id); ?>
 
     <h1 class="entry-title profile-title clearfix">
-        <span class="profile-name"><?php bp_displayed_user_fullname() ?>&rsquo;s Profile</span>
+        <span class="profile-name">Profil uživatele <?php bp_displayed_user_fullname() ?></span>
         <span class="profile-type pull-right hidden-xs"><?php echo $account_type ?></span>
         <button data-target="#sidebar-mobile" class="mobile-toggle direct-toggle pull-right visible-xs" type="button">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Přepnout navigaci</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

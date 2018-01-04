@@ -13,10 +13,10 @@ global $bp;
 
     <div class="col-sm-18 col-xs-24 my-groups-grid">
         <h1 class="entry-title mol-title">
-            <span class="profile-name"><?php echo $bp->loggedin_user->fullname . '&rsquo;s'; ?> Profile</span>
+            <span class="profile-name">Profil uživatele <?php echo $bp->loggedin_user->fullname?></span>
             <span class="profile-type pull-right hidden-xs"><?php echo $account_type ?></span>
             <button data-target="#sidebar-mobile" class="mobile-toggle direct-toggle pull-right visible-xs" type="button">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">Přepnout navigaci</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>

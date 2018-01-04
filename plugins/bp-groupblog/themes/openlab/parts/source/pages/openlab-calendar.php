@@ -15,7 +15,7 @@
 
 		<div id="bpeo-ical-download">
 		    <h3><?php echo __('Subscribe', 'bp-event-organiser'); ?></h3>
-		    <li><a class="bpeo-ical-link" href="<?php echo esc_url( $link ); ?>"><span class="icon"></span><?php echo __('Download iCalendar file (Public)', 'bp-event-organiser'); ?></a></li>
+		    <li><a class="bpeo-ical-link" href="<?php echo esc_url( $link ); ?>"><span class="icon"></span><?php echo __(' 	Stáhněte si soubor iCalendar (Veřejný)', 'bp-event-organiser'); ?></a></li>
 		</div>
 	</div>
 </div>

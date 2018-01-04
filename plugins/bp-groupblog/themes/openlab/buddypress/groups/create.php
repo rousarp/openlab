@@ -38,7 +38,7 @@
         $group_id_to_clone = intval($_GET['clone']);
     }
     ?>
-    <h1 class="entry-title mol-title"><?php bp_loggedin_user_fullname() ?>'s Profile</h1>
+    <h1 class="entry-title mol-title">Profil uživatele <?php bp_loggedin_user_fullname() ?></h1>
     <?php
     // get account type to see if they're faculty
     $faculty = xprofile_get_field_data('Account Type', get_current_user_id());
@@ -67,12 +67,12 @@
                         <div class="panel panel-default create-or-clone-selector">
                             <div class="panel-heading semibold">Create New or Clone Existing?</div>
                             <div class="panel-body">
-                            <p class="ol-tooltip clone-course-tooltip" id="clone-course-tooltip-2">If you taught the same course in a previous semester or year, cloning can save you time.</p>
+                            <p class="ol-tooltip clone-course-tooltip" id="clone-course-tooltip-2">Pokud vyučujete stejný kurz v předchozím semestru nebo v roce, může klonování ušetřit čas.</p>
 
                             <ul class="create-or-clone-options">
                                 <li class="radio">
                                     <label for="create-or-clone-create"><input type="radio" name="create-or-clone" id="create-or-clone-create" value="create" <?php checked(!(bool) $group_id_to_clone) ?> />
-                                        Create a New Course</label>
+                                        Vytvořit nový kurz</label>
                                 </li>
 
                                 <?php
@@ -92,10 +92,10 @@
                                         Clone an Existing Course</label>
 
                                     <?php $user_groups = openlab_get_courses_owned_by_user(get_current_user_id()) ?>
-                                    
-                                    <label class="sr-only" for="group-to-clone">Choose a Course</label>
+
+                                    <label class="sr-only" for="group-to-clone">Vyberte kurz</label>
                                     <select class="form-control" id="group-to-clone" name="group-to-clone">
-                                        <option value="" <?php selected($group_id_to_clone, 0) ?>>- choose a course -</option>
+                                        <option value="" <?php selected($group_id_to_clone, 0) ?>>- vyberte kurz -</option>
 
                                         <?php foreach ($user_groups['groups'] as $user_group) : ?>
                                             <option value="<?php echo esc_attr($user_group->id) ?>" <?php selected($group_id_to_clone, $user_group->id) ?>><?php echo esc_attr($user_group->name) ?></option>

@@ -1,2 +1,3 @@
 uploads/
 *.log
+.remote-sync.json

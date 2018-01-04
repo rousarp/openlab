@@ -31,12 +31,12 @@ get_header();
 
     <div class="col-sm-18 col-xs-24">
 
-        <h1 class="entry-title"><span class="profile-name">OpenLab Calendar: Event</span></h1>
+        <h1 class="entry-title"><span class="profile-name">OpenLab Kalendář: Událost</span></h1>
 
         <div class="action-events">
             <div id="item-body">
                 <div class="submenu">
-                    <div class="submenu-text pull-left bold">Calendar:</div>
+                    <div class="submenu-text pull-left bold">Kalendář:</div>
                     <ul class="nav nav-inline"><!--
                         <?php $menu_items = openlab_calendar_submenu(); ?>
                         <?php foreach ($menu_items as $item): ?>
@@ -49,7 +49,7 @@ get_header();
                 <?php while (have_posts()) : the_post(); ?>
 
                     <?php the_content(); ?>
-                
+
                 <?php endwhile; // end of the loop. ?>
 
             </div>

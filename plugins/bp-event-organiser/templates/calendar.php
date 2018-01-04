@@ -30,20 +30,20 @@ echo '<h3>' . __( 'Subscribe', 'bp-event-organiser' ) . '</h3>';
 
 if ( bp_is_user() ) {
 	echo '<ul>';
-	echo '<li><a class="bpeo-ical-link" href="' . bp_displayed_user_domain() . bpeo_get_events_slug() . '/ical/" title="' . __( 'Only public events are listed in this iCalendar. Suitable for sharing.', 'bp-event-organiser' ) . '"><span class="icon"></span>' . __( 'Download iCalendar file (Public)', 'bp-event-organiser' ) . '</a></li>';
+	echo '<li><a class="bpeo-ical-link" href="' . bp_displayed_user_domain() . bpeo_get_events_slug() . '/ical/" title="' . __( 'Only public events are listed in this iCalendar. Suitable for sharing.', 'bp-event-organiser' ) . '"><span class="icon"></span>' . __( 'Stáhněte si soubor iCalendar (Veřejný)', 'bp-event-organiser' ) . '</a></li>';
 
 	if ( bp_is_my_profile() ) {
-		echo '<li><a class="bpeo-ical-link" href="' . bpeo_get_the_user_private_ical_url() . '" title="' . __( 'Both public and private events are listed in this iCalendar.  Be mindful of who you share this with.', 'bp-event-organiser' ) . '"><span class="icon"></span>' . __( 'Download iCalendar file (Private)', 'bp-event-organiser' ) . '</a></li>';
+		echo '<li><a class="bpeo-ical-link" href="' . bpeo_get_the_user_private_ical_url() . '" title="' . __( 'Both public and private events are listed in this iCalendar.  Be mindful of who you share this with.', 'bp-event-organiser' ) . '"><span class="icon"></span>' . __( 'Stáhněte si soubor iCalendar (Privátní)', 'bp-event-organiser' ) . '</a></li>';
 	}
 	echo '</ul>';
 } elseif ( bp_is_active( 'groups' ) && bp_is_group() ) {
 	echo '<ul>';
 
 	if ( 'public' === bp_get_group_status( groups_get_current_group() ) ) {
-		echo '<li><a class="bpeo-ical-link" href="' . bpeo_get_group_permalink() . 'ical/"><span class="icon"></span>' . __( 'Download iCalendar file', 'bp-event-organiser' ) . '</a></li>';
+		echo '<li><a class="bpeo-ical-link" href="' . bpeo_get_group_permalink() . 'ical/"><span class="icon"></span>' . __( 'Stáhněte si soubor iCalendar', 'bp-event-organiser' ) . '</a></li>';
 
 	} else {
-		echo '<li><a class="bpeo-ical-link" href="' . bpeo_get_the_group_private_ical_url() . '" title="' . __( 'This is a private group.  Be mindful of who you share this calendar with.', 'bp-event-organiser' ) . '"><span class="icon"></span>' . __( 'Download iCalendar file (Private)', 'bp-event-organiser' ) . '</a></li>';
+		echo '<li><a class="bpeo-ical-link" href="' . bpeo_get_the_group_private_ical_url() . '" title="' . __( 'This is a private group.  Be mindful of who you share this calendar with.', 'bp-event-organiser' ) . '"><span class="icon"></span>' . __( 'Stáhněte si soubor iCalendar (Privátní)', 'bp-event-organiser' ) . '</a></li>';
 	}
 	echo '</ul>';
 }

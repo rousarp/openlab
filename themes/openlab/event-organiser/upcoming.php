@@ -14,7 +14,7 @@ if ( bp_is_user() ) {
 }
 
 $events = eo_get_events( $eo_get_events_args ); ?>
-<h2>Group Events</h2>
+<h2>Události skupiny</h2>
 <?php if ( ! empty( $events ) ) : ?>
 	<ul class="bpeo-upcoming-events">
 	<?php
@@ -26,5 +26,5 @@ $events = eo_get_events( $eo_get_events_args ); ?>
 	?>
 	</ul>
 <?php else : // ! empty( $events ) ?>
-	<p><?php _e( 'No upcoming events found.', 'bp-event-organiser' ) ?></p>
+	<p><?php _e( 'Nebyly nalezeny žádné nadcházející události.', 'bp-event-organiser' ) ?></p>
 <?php endif; // ! empty( $events ) ?>

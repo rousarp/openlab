@@ -291,7 +291,7 @@ function openlab_submenu_markup($type = '', $opt_var = NULL, $row_wrapper = true
 
     switch ($type) {
         case 'invitations':
-            $submenu_text = 'My Invitations<span aria-hidden="true">:</span> ';
+            $submenu_text = 'Moje pozvánky<span aria-hidden="true">:</span> ';
             $menu = openlab_my_invitations_submenu();
             break;
         case 'friends':
@@ -304,7 +304,7 @@ function openlab_submenu_markup($type = '', $opt_var = NULL, $row_wrapper = true
 
             break;
         case 'messages':
-            $submenu_text = 'My Messages<span aria-hidden="true">:</span> ';
+            $submenu_text = 'Moje zprávy<span aria-hidden="true">:</span> ';
             $menu = openlab_my_messages_submenu();
             break;
         case 'groups':
@@ -320,7 +320,7 @@ function openlab_submenu_markup($type = '', $opt_var = NULL, $row_wrapper = true
 
             break;
         default:
-            $submenu_text = 'My Settings<span aria-hidden="true">:</span> ';
+            $submenu_text = 'Moje nastavení<span aria-hidden="true">:</span> ';
             $menu = openlab_profile_settings_submenu();
     }
 
@@ -434,23 +434,23 @@ function openlab_create_group_menu($grouptype) {
 
     switch ($current_step) {
         case 'group-details':
-            $step_name = 'Step One: Profile';
+            $step_name = 'Krok první: Profil';
             break;
         case 'group-settings':
-            $step_name = 'Step Two: Privacy Settings';
+            $step_name = 'Krok druhý: Nastavení soukromí';
             break;
         case 'group-avatar':
-            $step_name = 'Step Three: Avatar';
+            $step_name = 'Krok třetí: Ilustrační obrázek';
             break;
         case 'invite-anyone' :
-            $step_name = 'Step Four: Invite Members';
+            $step_name = 'Krok čtvrtý: Pozvání uživatelů';
             break;
     }
 
     if ($grouptype == 'course') {
-        $title = 'Create/Clone a Course: ';
+        $title = 'Vytvořit/duplikovat kurz: ';
     } else {
-        $title = 'Create a ' . ucfirst($grouptype) . ': ';
+        $title = 'Vytvořit ' . ucfirst($grouptype) . ': ';
     }
 
     $menu_mup = <<<HTML
@@ -898,7 +898,7 @@ function openlab_filter_subnav_nav_events($subnav_item) {
 add_filter('bp_get_options_nav_calendar', 'openlab_filter_subnav_nav_calendar');
 
 function openlab_filter_subnav_nav_calendar($subnav_item) {
-    $subnav_item = str_replace('Calendar', 'All Events', $subnav_item);
+    $subnav_item = str_replace('Calendar', 'Všechny události', $subnav_item);
 
     $subnav_item = str_replace("current selected", "current-menu-item", $subnav_item);
 
@@ -1169,13 +1169,13 @@ function openlab_calendar_submenu() {
 
     $links_out = array(
         array(
-            'name' => 'All Events',
+            'name' => 'Všechny události',
             'slug' => 'calendar',
             'link' => get_site_url() . '/about/calendar/',
             'class' => $post->post_name === 'calendar' ? 'current-menu-item' : ''
         ),
         array(
-            'name' => 'Upcoming',
+            'name' => 'Nadhcázející',
             'slug' => 'upcoming',
             'link' => get_site_url() . '/about/calendar/upcoming/',
             'class' => $post->post_name === 'upcoming' ? 'current-menu-item' : ''

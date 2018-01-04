@@ -176,7 +176,7 @@ function openlab_help_tags_loop() {
     $tags_query = new WP_Query($args);
     ?>
 
-    <h1 class="parent-cat entry-title"><span class="profile-name hyphenate">Tag Archive for: "<?php echo $parent_cat_name; ?>"</span>
+    <h1 class="parent-cat entry-title"><span class="profile-name hyphenate">Záznamy pro štítek: "<?php echo $parent_cat_name; ?>"</span>
         <?php echo openlab_toggle_button('#sidebar-menu-wrapper', true); ?>
     </h1>
 
@@ -327,7 +327,7 @@ function openlab_help_cats_loop() {
                         ?>
                         <li>
                             <h3 class="help-title no-margin no-margin-bottom"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <div class="help-tags">Tags: <?php echo get_the_term_list($post_id, 'help_tags', '', ', ', ''); ?></div>
+                            <div class="help-tags">Štítky: <?php echo get_the_term_list($post_id, 'help_tags', '', ', ', ''); ?></div>
                         </li>
                         <?php
                     endwhile; // end of the loop.
@@ -346,7 +346,7 @@ function openlab_help_cats_loop() {
 
     <div style="clear:both;"></div>
 
-    <a class="pull-right" href="#help-top">Go To Top <span class="fa fa-angle-up"></span></a>
+    <a class="pull-right" href="#help-top">Jdi nahoru <span class="fa fa-angle-up"></span></a>
 
     <?php
 }
@@ -379,7 +379,7 @@ function openlab_glossary_cats_loop() {
     $cat_query = new WP_Query($args);
     ?>
 
-    <h1 class="parent-cat entry-title"><span class="profile-name hyphenate">Glossary</span>
+    <h1 class="parent-cat entry-title"><span class="profile-name hyphenate">Glosář</span>
         <?php echo openlab_toggle_button('#sidebar-menu-wrapper', true); ?>
     </h1>
     <div class="glossary-description"><p><?php echo $parent_term->description; ?></p></div>
@@ -401,7 +401,7 @@ function openlab_glossary_cats_loop() {
     wp_reset_query();
     ?>
 
-    <a class="pull-right" href="#help-top">Go To Top <span class="fa fa-angle-up"></span></a>
+    <a class="pull-right" href="#help-top">Jdi nahoru <span class="fa fa-angle-up"></span></a>
 
     <?php
 }

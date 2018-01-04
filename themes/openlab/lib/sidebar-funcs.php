@@ -87,8 +87,8 @@ function openlab_group_sidebar($mobile = false) {
     if (bp_has_groups()) : while (bp_groups()) : bp_the_group();
             ?>
             <div class="sidebar-widget sidebar-widget-wrapper" id="portfolio-sidebar-widget">
-                <h2 class="sidebar-header group-single top-sidebar-header">
-                    <?php echo ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Materials'; ?>
+                <h2 class="sidebar-header group-single top-sidebar-header">Pracovní nástroje
+                    <?php // echo ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Materials'; ?>
                 </h2>
                 <div class="wrapper-block">
                     <?php openlab_bp_group_site_pages(); ?>
@@ -275,7 +275,7 @@ function openlab_members_sidebar_blocks($mobile_hide = false) {
 
                 <li class="portfolio-profile-link bold">
                     <a class="bold no-deco" href="<?php openlab_user_portfolio_url() ?>">
-                        <?php echo (is_user_logged_in() && openlab_is_my_profile() ? 'My ' : 'Visit '); ?>
+                        <?php echo (is_user_logged_in() && openlab_is_my_profile() ? 'Moje ' : 'Navštívit '); ?>
                         <?php openlab_portfolio_label('user_id=' . $displayed_user_id . '&case=upper'); ?> stránky <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
                     </a>
                 </li>

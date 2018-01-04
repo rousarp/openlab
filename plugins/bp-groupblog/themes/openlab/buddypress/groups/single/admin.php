@@ -92,7 +92,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                     <div class="panel-body">
                         <p id="discussion-settings-tag">These settings enable or disable the discussion forum on your <?php echo $group_label_uc ?> profile.</p>
                         <div class="checkbox">
-                            <label><input type="checkbox" name="openlab-edit-group-forum" id="group-show-forum" value="1"<?php checked($forum_enabled) ?> /> <?php _e('Enable discussions forum', 'buddypress') ?></label>
+                            <label><input type="checkbox" name="openlab-edit-group-forum" id="group-show-forum" value="1"<?php checked($forum_enabled) ?> /> <?php _e('Povolit diskuzní fórum', 'buddypress') ?></label>
                         </div>
                     </div>
                 </div>
@@ -111,8 +111,8 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                         <div class="row">
                             <div class="col-sm-23 col-sm-offset-1">
                                 <div class="radio no-margin no-margin-all spaced-list">
-                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="members" <?php checked('members', $event_create_access) ?> /> <?php _e('Any group member may connect events to this group', 'buddypress') ?></label>
-                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="admin" <?php checked('admin', $event_create_access) ?> /> <?php _e('Only administrators and moderators may connect events to this group', 'buddypress') ?></label>
+                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="members" <?php checked('members', $event_create_access) ?> /> <?php _e('Každý člen skupiny může přidávat události do této skupiny', 'buddypress') ?></label>
+                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="admin" <?php checked('admin', $event_create_access) ?> /> <?php _e('Pouze Administrátoři a Operátoři mohou přidávat události do této skupiny', 'buddypress') ?></label>
                                 </div>
                             </div>
                         </div>
@@ -526,4 +526,3 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 <?php do_action('bp_after_group_admin_content') ?>
 
 </form><!-- #group-settings-form -->
-

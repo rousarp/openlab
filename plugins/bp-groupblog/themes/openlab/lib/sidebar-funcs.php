@@ -87,8 +87,9 @@ function openlab_group_sidebar($mobile = false) {
     if (bp_has_groups()) : while (bp_groups()) : bp_the_group();
             ?>
             <div class="sidebar-widget sidebar-widget-wrapper" id="portfolio-sidebar-widget">
-                <h2 class="sidebar-header group-single top-sidebar-header">
-                    <?php echo ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Materials'; ?>
+                <h2 class="sidebar-header group-single top-sidebar-header">Pracovní nástroje
+                    <?php //echo ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Materials'; ?>
+
                 </h2>
                 <div class="wrapper-block">
                     <?php openlab_bp_group_site_pages(); ?>

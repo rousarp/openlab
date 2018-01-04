@@ -38,13 +38,13 @@ function cuny_home_login() {
 
         <div id="login-help" class="log-box">
             <h4 class="title">Need Help?</h4>
-            <p class="font-size font-14">Visit the <a class="roll-over-loss" href="<?php echo site_url(); ?>/blog/help/openlab-help/">Help section</a> or <a class="roll-over-loss" href='<?php echo site_url(); ?>/about/contact-us/'>contact us</a> with a question.</p>
+            <p class="font-size font-14">Navštivte <a class="roll-over-loss" href="<?php echo site_url(); ?>/blog/help/openlab-help/">sekci nápovědy</a> nebo <a class="roll-over-loss" href='<?php echo site_url(); ?>/about/contact-us/'>kontaktujte nás</a> s vašimi otázkami.</p>
         </div><!--login-help-->
 
     <?php else : ?>
         <?php echo '<div id="open-lab-join" class="log-box links-lighter-hover">'; ?>
-        <?php echo '<h1 class="title"><span class="fa fa-plus-circle flush-left"></span> Join the OpenLab</h1>'; ?>
-        <?php _e('<p><a class="btn btn-default btn-primary link-btn pull-right semibold" href="' . site_url() . '/register/">Sign up</a> <span class="font-size font-14">Need an account?<br />Sign Up to become a member!</span></p>', 'buddypress') ?>
+        <?php echo '<h1 class="title"><span class="fa fa-plus-circle flush-left"></span> Připojit se k OpenLab</h1>'; ?>
+        <?php _e('<p><a class="btn btn-default btn-primary link-btn pull-right semibold" href="' . site_url() . '/register/">Registrace</a> <span class="font-size font-14">Need an account?<br />Sign Up to become a member!</span></p>', 'buddypress') ?>
         <?php echo '</div>'; ?>
 
         <?php echo '<div id="open-lab-login" class="log-box">'; ?>
@@ -270,7 +270,7 @@ function cuny_home_square($type) {
                             <?php echo bp_create_excerpt($activity, 150, array('ending' => __('&hellip;', 'buddypress'), 'html' => false)) ?>
                         </p>
                         <p class="see-more">
-                            <a class="semibold" href="<?php echo bp_get_group_permalink() ?>">See More<span class="sr-only"> <?php echo bp_get_group_name() ?></span></a>
+                            <a class="semibold" href="<?php echo bp_get_group_permalink() ?>">Zobrazit více<span class="sr-only"> <?php echo bp_get_group_name() ?></span></a>
                         </p>
                     </div>
                 </div>

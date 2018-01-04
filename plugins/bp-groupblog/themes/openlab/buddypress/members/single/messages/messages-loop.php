@@ -40,7 +40,7 @@
 							<span class="fa fa-undo"></span> <span class="timestamp"><?php bp_message_thread_last_post_date() ?></span>
 						</div>
 
-						<p class="thread-excerpt"><?php bp_message_thread_excerpt() ?>... <a href="<?php bp_message_thread_view_link() ?>" class="read-more" title="<?php _e( 'View Message', 'buddypress' ); ?>">See More</a></p>
+						<p class="thread-excerpt"><?php bp_message_thread_excerpt() ?>... <a href="<?php bp_message_thread_view_link() ?>" class="read-more" title="<?php _e( 'View Message', 'buddypress' ); ?>">Zobrazit více</a></p>
 
 						<?php do_action( 'bp_messages_inbox_list_item' ) ?>
 					</div>

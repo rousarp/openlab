@@ -689,16 +689,16 @@ function wds_load_group_type( $group_type ) {
 	// associated school/dept tooltip
 	switch ( $group_type ) {
 		case 'course' :
-			$return .= '<p class="ol-tooltip">If your course is associated with one or more of the college’s schools or departments, please select from the checkboxes below.</p>';
+			$return .= '<p class="ol-tooltip">Pokud je váš kurz spojen s některými z uvedených témat a oblastí, vyberte prosím zaškrtávací políčka níže.</p>';
 			break;
 		case 'portfolio' :
-			$return .= '<p class="ol-tooltip">If your ' . openlab_get_portfolio_label() . ' is associated with one or more of the college’s schools or departments, please select from the checkboxes below.</p>';
+			$return .= '<p class="ol-tooltip">Pokud je vaše portfolio ' . openlab_get_portfolio_label() . ' spojeno s některými z uvedených témat a oblastí, vyberte prosím zaškrtávací políčka níže.</p>';
 			break;
 		case 'project' :
-			$return .= '<p class="ol-tooltip">Is your Project associated with one or more of the college\'s schools?</p>';
+			$return .= '<p class="ol-tooltip">Je váš projekt spojen s jedním nebo více tématy?</p>';
 			break;
 		case 'club' :
-			$return .= '<p class="ol-tooltip">Is your Club associated with one or more of the college\'s schools?</p>';
+			$return .= '<p class="ol-tooltip">Je vaše skupina spojena s jedním nebo více tématy?</p>';
 			break;
 	}
 

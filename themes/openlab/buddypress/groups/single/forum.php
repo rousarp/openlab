@@ -9,7 +9,7 @@ if (bp_is_group_forum_topic_edit()) {
     <div class="row"><div class="col-md-17">
         <div class="submenu">
             <?php if (is_user_logged_in()) : ?>
-                <div class="submenu-text pull-left bold">Discussion:</div>
+                <div class="submenu-text pull-left bold">Diskuse:</div>
                 <ul class="nav nav-inline">
                 <li class="new-topic"><a href="#post-new" class="show-hide-new"><?php _e('New Topic', 'buddypress') ?></a></li>
                 </ul>

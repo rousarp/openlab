@@ -830,7 +830,7 @@ add_filter('bp_get_options_nav_nav-forum', 'openlab_filter_subnav_forums');
 function openlab_filter_subnav_forums($subnav_item) {
     // update "current" class to "current-menu-item" to unify site identification of current menu page
     $subnav_item = str_replace('current selected', 'current-menu-item', $subnav_item);
-    $subnav_item = str_replace('Forum', 'Discussion', $subnav_item);
+    $subnav_item = str_replace('Forum', 'Diskuse', $subnav_item);
 
     // Add count.
     $count = 0;
@@ -1114,7 +1114,7 @@ function openlab_forum_tabs() {
     bbp_the_topic();
     ?>
 
-    <li <?php echo (!bp_action_variable() ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/forum/">Discussion</a></li><!--
+    <li <?php echo (!bp_action_variable() ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/forum/">Diskuse</a></li><!--
     <?php if (bp_action_variable() == 'topic'): ?>
         --><li class="current-menu-item hyphenate"><span><?php bbp_topic_title() ?></span></li><!--
             <?php endif; ?>

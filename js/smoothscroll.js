@@ -3,7 +3,7 @@
 (function(a){function f(a){return a.replace(/(:|\.)/g,"\\$1")}var b="1.4.7",c={exclude:[],excludeWithin:[],offset:0,direction:"top",scrollElement:null,scrollTarget:null,beforeScroll:function(){},afterScroll:function(){},easing:"swing",speed:400,autoCoefficent:2},d=function(b){var c=[],d=!1,e=b.dir&&b.dir=="left"?"scrollLeft":"scrollTop";return this.each(function(){if(this==document||this==window)return;var b=a(this);b[e]()>0?c.push(this):(b[e](1),d=b[e]()>0,d&&c.push(this),b[e](0))}),c.length||this.each(function(a){this.nodeName==="BODY"&&(c=[this])}),b.el==="first"&&c.length>1&&(c=[c[0]]),c},e="ontouchend"in document;a.fn.extend({scrollable:function(a){var b=d.call(this,{dir:a});return this.pushStack(b)},firstScrollable:function(a){var b=d.call(this,{el:"first",dir:a});return this.pushStack(b)},smoothScroll:function(b){b=b||{};var c=a.extend({},a.fn.smoothScroll.defaults,b),d=a.smoothScroll.filterPath(location.pathname);return this.unbind("click.smoothscroll").bind("click.smoothscroll",function(b){var e=this,g=a(this),h=c.exclude,i=c.excludeWithin,j=0,k=0,l=!0,m={},n=location.hostname===e.hostname||!e.hostname,o=c.scrollTarget||(a.smoothScroll.filterPath(e.pathname)||d)===d,p=f(e.hash);if(!c.scrollTarget&&(!n||!o||!p))l=!1;else{while(l&&j<h.length)g.is(f(h[j++]))&&(l=!1);while(l&&k<i.length)g.closest(i[k++]).length&&(l=!1)}l&&(b.preventDefault(),a.extend(m,c,{scrollTarget:c.scrollTarget||p,link:e}),a.smoothScroll(m))}),this}}),a.smoothScroll=function(b,c){var d,e,f,g,h=0,i="offset",j="scrollTop",k={},l={},m=[];typeof b=="number"?(d=a.fn.smoothScroll.defaults,f=b):(d=a.extend({},a.fn.smoothScroll.defaults,b||{}),d.scrollElement&&(i="position",d.scrollElement.css("position")=="static"&&d.scrollElement.css("position","relative"))),d=a.extend({link:null},d),j=d.direction=="left"?"scrollLeft":j,d.scrollElement?(e=d.scrollElement,h=e[j]()):e=a("html, body").firstScrollable(),d.beforeScroll.call(e,d),f=typeof b=="number"?b:c||a(d.scrollTarget)[i]()&&a(d.scrollTarget)[i]()[d.direction]||0,k[j]=f+h+d.offset,g=d.speed,g==="auto"&&(g=k[j]||e.scrollTop(),g=g/d.autoCoefficent),l={duration:g,easing:d.easing,complete:function(){d.afterScroll.call(d.link,d)}},d.step&&(l.step=d.step),e.length?e.stop().animate(k,l):d.afterScroll.call(d.link,d)},a.smoothScroll.version=b,a.smoothScroll.filterPath=function(a){return a.replace(/^\//,"").replace(/(index|default).[a-zA-Z]{3,4}$/,"").replace(/\/$/,"")},a.fn.smoothScroll.defaults=c})(jQuery);;/** @license Hyphenator 5.1.0 - client side hyphenation for webbrowsers
  *  Copyright (C) 2015  Mathias Nater, Zürich (mathiasnater at gmail dot com)
  *  https://github.com/mnater/Hyphenator
- * 
+ *
  *  Released under the MIT license
  *  http://mnater.github.io/Hyphenator/LICENSE.txt
  */
@@ -185,7 +185,7 @@ var Hyphenator = (function (window) {
          * @member {boolean} Hyphenator~persistentConfig
          * @access private
          * @desc
-         * if persistentConfig is set to true (defaults to false), config options and the state of the 
+         * if persistentConfig is set to true (defaults to false), config options and the state of the
          * toggleBox are stored in DOM-storage (according to the storage-setting). So they haven't to be
          * set for each page.
          * @default false
@@ -998,7 +998,7 @@ var Hyphenator = (function (window) {
                  * @member {Object} Hyphenator~CSSEdit~sheet
                  * @desc
                  * A StyleSheet, where Hyphenator can write to.
-                 * If no StyleSheet can be found, lets create one. 
+                 * If no StyleSheet can be found, lets create one.
                  * @access private
                  */
                 sheet = (function () {
@@ -1049,7 +1049,7 @@ var Hyphenator = (function (window) {
                  * @desc
                  * Searches the StyleSheets for a given selector and returns an object containing the rule.
                  * If nothing can be found, false is returned.
-                 * @param {string} sel 
+                 * @param {string} sel
                  * @return {Hyphenator~CSSEdit~rule|false}
                  * @access private
                  */
@@ -1718,7 +1718,7 @@ var Hyphenator = (function (window) {
          *    Use ValueStore.finalize() when the last value of a pattern is added. It will set the length and return the starting index of the pattern.
          *    To prevent doubles we could temporarly store the values in a object {value: startIndex} and only add new values,
          *    but this object deoptimizes very fast (new hidden map for each entry); here we gain speed and pay memory
-         *    
+         *
          * 3. Create and zero initialize a (typed) array to store the trie. The trie uses two slots for each entry/node:
          *    i: a link to another position in the array or -1 if the pattern ends here or more rows have to be added.
          *    i + 1: a link to a value in the ValueStore or 0 if there's no value for the path to this node.
@@ -1734,8 +1734,8 @@ var Hyphenator = (function (window) {
          *    to the trie (adding more "rows" if necessary, i.e. if the last link pointed to -1).
          *    So the first "row" holds all starting characters, where the subsequent rows hold the characters that follow the
          *    character that link to this row. Therefor the array is dense at the beginning and very sparse at the end.
-         * 
-         * 
+         *
+         *
          * @access private
          * @param {Object} language object
          */
@@ -1904,7 +1904,7 @@ var Hyphenator = (function (window) {
          * Checks if the requested file is available in the network.
          * Adds a &lt;script&gt;-Tag to the DOM to load an externeal .js-file containing patterns and settings for the given language.
          * If the given language is not in the {@link Hyphenator~supportedLangs}-Object it returns.
-         * One may ask why we are not using AJAX to load the patterns. The XMLHttpRequest-Object 
+         * One may ask why we are not using AJAX to load the patterns. The XMLHttpRequest-Object
          * has a same-origin-policy. This makes the Bookmarklet impossible.
          * @param {string} lang The language to load the patterns for
          * @access private
@@ -3084,7 +3084,7 @@ var Hyphenator = (function (window) {
         /**
          * @method Hyphenator.addExceptions
              * @desc
-         * Adds the exceptions from the string to the appropriate language in the 
+         * Adds the exceptions from the string to the appropriate language in the
          * {@link Hyphenator~languages}-object
          * @param {string} lang The language
          * @param {string} words A comma separated string of hyphenated words WITH spaces.
@@ -3428,7 +3428,7 @@ OpenLab.search = (function ($) {
 })(jQuery, OpenLab);
 
 (function ($) {
-    
+
     var legacyWidth = $(window).width();
 
     $(document).ready(function () {
@@ -3524,7 +3524,7 @@ OpenLab.truncation = (function ($) {
 
                 if (thisElem.data('link')) {
 
-                    var omissionText = 'See More';
+                    var omissionText = 'Zobrazit více';
 
                     //for screen reader only append
                     //provides screen reader with addtional information in-link
@@ -3712,10 +3712,10 @@ OpenLab.truncation = (function ($) {
     });
 
     $(window).on('resize', function (e) {
-        
+
         clearTimeout(truncationResizeTimer);
         truncationResizeTimer = setTimeout(function () {
-            
+
             if ($('.truncate-on-the-fly').length) {
 
                 $('.trucate-obfuscate').css('opacity', 0);
@@ -4259,11 +4259,11 @@ OpenLab.fixes = (function ($) {
             if (thisHeader.length === 0) {
                 return false;
             }
-            
+
             /**
              * The replacement span we're going to add we'll inherit all of the classes and ids
              * from the empty header element in order to maintain vertical spacing
-             * A new class "empty-header-placeholder" will be added for additional style tweaking 
+             * A new class "empty-header-placeholder" will be added for additional style tweaking
              */
             var headerClasses = thisHeader.attr('class');
 
@@ -4272,11 +4272,11 @@ OpenLab.fixes = (function ($) {
             } else{
                 headerClasses = ' ';
             }
-            
+
             headerClasses += 'empty-header-placeholder';
-            
+
             var headerID = thisHeader.attr('id');
-            
+
             var replacement = $('<span></span>');
             replacement.attr('id', headerID);
             replacement.addClass(headerClasses);

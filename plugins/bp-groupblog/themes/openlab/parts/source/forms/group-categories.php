@@ -1,9 +1,9 @@
 <div class="panel panel-default">
-    <div class="panel-heading">Category</div><div class="panel-body">
+    <div class="panel-heading">Kategorie</div><div class="panel-body">
         <table>
             <tbody>
                 <tr class="school-tooltip">
-                    <td colspan="2"><p class="ol-tooltip">Please select from the following categories. Including this information will make it easier for others to find your<?php echo ' '.$group_type; ?></p></td>
+                    <td colspan="2"><p class="ol-tooltip">Vyberte prosím jednu z následujících kategorií. Zahrnutí těchto informací usnadní ostatním, aby našli váš <?php echo ' '.$group_type; ?></p></td>
                 </tr>
                 <tr class="bp-categories">
                     <td colspan="2" id="bp_group_categories">

@@ -69,7 +69,7 @@ OpenLab.truncation = (function ($) {
 
                 if (thisElem.data('link')) {
 
-                    var omissionText = 'See More';
+                    var omissionText = 'Zobrazit více';
 
                     //for screen reader only append
                     //provides screen reader with addtional information in-link
@@ -257,10 +257,10 @@ OpenLab.truncation = (function ($) {
     });
 
     $(window).on('resize', function (e) {
-        
+
         clearTimeout(truncationResizeTimer);
         truncationResizeTimer = setTimeout(function () {
-            
+
             if ($('.truncate-on-the-fly').length) {
 
                 $('.trucate-obfuscate').css('opacity', 0);

@@ -465,8 +465,8 @@ function wds_bp_group_meta() {
 							$group_site_url_out = '<a class="bold" href="' . $group_site_url . '">' . $group_site_url . '</a>';
 						}
 						?>
-						<p>This <?php echo openlab_get_group_type_label() ?> is currently associated with the site <?php echo $group_site_text ?></p>
-						<ul id="change-group-site"><li><?php echo $group_site_url_out ?> <a class="button underline confirm" href="<?php echo wp_nonce_url( bp_get_group_permalink( groups_get_current_group() ) . 'admin/edit-details/unlink-site/', 'unlink-site' ) ?>" id="change-group-site-toggle">Unlink</a></li></ul>
+						<p>Tento <?php echo openlab_get_group_type_label() ?> je aktuálně přidružen k webu <?php echo $group_site_text ?></p>
+						<ul id="change-group-site"><li><?php echo $group_site_url_out ?> <a class="button underline confirm" href="<?php echo wp_nonce_url( bp_get_group_permalink( groups_get_current_group() ) . 'admin/edit-details/unlink-site/', 'unlink-site' ) ?>" id="change-group-site-toggle">Odpojit</a></li></ul>
 
 					</div>
 
@@ -516,27 +516,27 @@ function wds_bp_group_meta() {
 				switch ( $group_type ) :
 					case 'course' :
 						?>
-						<p class="ol-tooltip">Take a moment to consider the address for your site. You will not be able to change it once you've created it. We recommend the following format:</p>
+						<p class="ol-tooltip">Chvilku se zamyslete nad adresou vašeho webu. Jakmile ji vytvoříte, nebudete ji moci změnit. Bylo by dobré vytvořit si nějaký vlastní systém značení. My vám doporučujeme následující formát:</p>
 
 						<ul class="ol-tooltip">
-							<li class="hyphenate">FacultyLastNameCourseCodeSemYear</li>
-							<li class="hyphenate">smithadv1100sp2012</li>
+							<li class="hyphenate">KurzPrijmeniIDkurzuKvartalRok</li>
+							<li class="hyphenate">Kurznovakgdpr12018</li>
 						</ul>
 
-						<p class="ol-tooltip">If you teach multiple sections on the OpenLab, consider adding other identifying information to the address. Please note that all addresses must be unique.</p>
+						<p class="ol-tooltip">Pokud vyučujete více úseků v OpenLab, zvažte přidání dalších identifikačních informací na adresu. Vezměte prosím na vědomí, že všechny adresy musí být jedinečné.</p>
 
 						<?php
 						break;
 
 					case 'project' :
 						?>
-						<p class="ol-tooltip">Please take a moment to consider the address for your site. You will not be able to change it once you’ve created it.  If you are linking to an existing site, select from the drop-down menu.</p>
+						<p class="ol-tooltip">Věnujte prosím nějakou chvíli pozornost adrese vašeho webu. Jakmile ji vytvoříte, nebudete ji moci změnit. Pokud propojíte existující web, vyberte v rozevírací nabídce.</p>
 
 						<?php
 						break;
 					case 'club' :
 						?>
-						<p class="ol-tooltip">Please take a moment to consider the address for your site. You will not be able to change it once you’ve created it.  If you are linking to an existing site, select from the drop-down menu. </p>
+						<p class="ol-tooltip">Věnujte prosím nějakou chvíli pozornost adrese vašeho webu. Jakmile ji vytvoříte, nebudete ji moci změnit. Pokud propojíte existující web, vyberte v rozevírací nabídce.</p>
 
 						<?php break ?>
 
@@ -550,7 +550,7 @@ function wds_bp_group_meta() {
                                         <div class="radio disabled-opt col-sm-6">
                                             <label>
                                                 <input type="radio" class="noo_radio" name="new_or_old" id="new_or_old_clone" value="clone" disabled/>
-                                                Name your cloned site:</label>
+                                                Název klonovaného webu:</label>
                                         </div>
                                         <div class="col-sm-5 site-label">
                                             <?php global $current_site ?>
@@ -574,7 +574,7 @@ function wds_bp_group_meta() {
                                     <div class="radio col-sm-6">
                                         <label>
                                             <input type="radio" class="noo_radio" name="new_or_old" id="new_or_old_new" value="new" />
-                                            Create a new site:</label>
+                                            Vytvořit nový web:</label>
                                     </div>
 					<div class="col-sm-5 site-label">
 						<?php
@@ -612,12 +612,12 @@ function wds_bp_group_meta() {
                                         <div class="radio col-sm-6">
                                             <label>
                                                 <input type="radio" class="noo_radio" id="new_or_old_old" name="new_or_old" value="old" />
-                                                Use an existing site:</label>
+                                                Použít stávající web:</label>
                                         </div>
                                         <div class="col-sm-18">
-                                            <label class="sr-only" for="groupblog-blogid">Choose a site</label>
+                                            <label class="sr-only" for="groupblog-blogid">Volba webových stránek</label>
                                             <select class="form-control" name="groupblog-blogid" id="groupblog-blogid">
-                                                <option value="0">- Choose a site -</option>
+                                                <option value="0">- Vyberte webové stránky -</option>
                                                 <?php foreach ( (array) $user_blogs as $user_blog) : ?>
                                                     <option value="<?php echo $user_blog->userblog_id; ?>"><?php echo $user_blog->blogname; ?></option>
                                                 <?php endforeach ?>
@@ -635,18 +635,18 @@ function wds_bp_group_meta() {
                                     <div class="radio col-sm-6">
                                         <label>
                                             <input type="radio" class="noo_radio" id="new_or_old_external" name="new_or_old" value="external" />
-                                            Use an external site:
+                                            Použití externího webu:
                                         </label>
                                     </div>
                                     <div class="col-sm-18">
-                                        <label class="sr-only" for="external-site-url">Input external site URL</label>
+                                        <label class="sr-only" for="external-site-url">Zadejte adresu URL externího webu</label>
                                         <input class="form-control pull-left" type="text" name="external-site-url" id="external-site-url" placeholder="http://" />
                                         <a class="btn btn-primary no-deco top-align pull-right" id="find-feeds" href="#" display="none">Check<span class="sr-only"> external site for Post and Comment feeds</span></a>
                                     </div>
                                 </div>
 							</div>
 						</div>
-						<div id="check-note-wrapper" style="display:<?php echo $show_website; ?>"><div colspan="2"><p id="check-note" class="italics disabled-opt">Note: Please click the Check button to search for Post and Comment feeds for your external site. Doing so will push new activity to your <?php echo ucfirst( $group_type ); ?> Profile page. If no feeds are detected, you may type in the Post and Comment feed URLs directly or just leave blank.</p></div></div>
+						<div id="check-note-wrapper" style="display:<?php echo $show_website; ?>"><div colspan="2"><p id="check-note" class="italics disabled-opt">Poznámka: Klepnutím na tlačítko Kontrola vyhledáte zdroje a komentáře pro externí web. Pokud tak učiníte, dojde k načtení aktivit do profilové stránky tohoto <?php echo ucfirst( $group_type ); ?>. Pokud nejsou zjištěny žádné kanály, můžete zadat adresy URL zdroje příspěvků a komentářů přímo nebo jen nechat prázdné.</p></div></div>
 					</div>
 
 				<?php endif; ?>
@@ -900,20 +900,20 @@ function openlab_feed_url_markup() {
 	}
 	?>
 
-	<p>RSS feeds are used to pull new post and comment activity from your external site into your activity stream.</p>
+	<p>Zdroje RSS se používají k vytahování nové příspěvky a komentování aktivity z vašich externích stránek do vašeho streamu aktivit.</p>
 
 	<?php $posts_feed_url = groups_get_groupmeta( $group_id, 'external_site_posts_feed' ) ?>
 	<?php $comments_feed_url = groups_get_groupmeta( $group_id, 'external_site_comments_feed' ) ?>
 
 	<?php if ( $posts_feed_url || $comments_feed_url ) : ?>
-		<p>We located the following RSS feed URLs for your external site. Correct errors or provide missing feed addresses in the fields below.</p>
+		<p>Následující adresy URL zdrojů RSS naleznete pro externí stránky. Opravte chyby nebo poskytněte chybějící adresy krmení v níže uvedených polích.</p>
 	<?php else : ?>
-		<p>We weren't able to auto-locate your RSS feeds. If your site has RSS feeds, enter their addresses below.</p>
+		<p>Nebyli jsme schopni automaticky vyhledávat vaše RSS kanály. Pokud vaše stránky obsahují RSS kanály, zadejte jejich adresy níže.</p>
 	<?php endif ?>
 
-	<p><label for="external-site-posts-feed">Posts:</label> <input id="external-site-posts-feed" name="external-site-posts-feed" value="<?php echo esc_attr( $posts_feed_url ) ?>" /></p>
+	<p><label for="external-site-posts-feed">Příspěvky:</label> <input id="external-site-posts-feed" name="external-site-posts-feed" value="<?php echo esc_attr( $posts_feed_url ) ?>" /></p>
 
-	<p><label for="external-site-comments-feed">Comments:</label> <input id="external-site-comments-feed" name="external-site-comments-feed" value="<?php echo esc_attr( $comments_feed_url ) ?>" /></p>
+	<p><label for="external-site-comments-feed">Komentáře:</label> <input id="external-site-comments-feed" name="external-site-comments-feed" value="<?php echo esc_attr( $comments_feed_url ) ?>" /></p>
 
 	<br />
 	<hr>
@@ -1396,8 +1396,8 @@ function openlab_olgc_notice() {
 		}
 	</style>
 	<div class="updated fade olgc-notice-message">
-		<p><span>Please note: The WP Grade Comments plugin allows all Site Administrators to add, view, and edit private comments and grades.</span>
-		<a class="olgc-notice-message-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>">Dismiss</a>
+		<p><span>Poznámka: Zásuvný modul Komentář WP Grade umožňuje všem administrátorům webu přidat, prohlížet a upravovat soukromé komentáře a známky.</span>
+		<a class="olgc-notice-message-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>">Zamítnout</a>
 		</p>
 	</div>
 	<?php
@@ -1524,8 +1524,8 @@ function openlab_cloned_course_notice() {
 		}
 	</style>
 	<div class="updated fade ol-cloned-message">
-		<p><span>Please Note: Posts and pages from the site you cloned are set to "draft" until you publish or delete them via <a href="<?php echo admin_url( 'edit.php' ); ?>">Posts</a> and <a href="<?php echo admin_url( 'edit.php?post_type=page' ); ?>">Pages</a>. Custom menus will need to be reactivated via <a href="<?php echo admin_url( 'nav-menus.php' ); ?>">Appearance > Menus</a>.</span>
-		<a class="ol-clone-message-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>">Dismiss</a>
+		<p><span>Upozorňujeme, že příspěvky a stránky z webu, který jste klonovali, jsou nastaveny na "návrh", dokud je nezveřejníte nebo neodstraníte v přehledech <a href="<?php echo admin_url( 'edit.php' ); ?>">Příspěvků</a> a <a href="<?php echo admin_url( 'edit.php?post_type=page' ); ?>">Stránek</a>. Položky uživatelského menu  budou muset být znovu aktivovány prostřednictvím <a href="<?php echo admin_url( 'nav-menus.php' ); ?>">Vzhled > Menu</a>.</span>
+		<a class="ol-clone-message-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>">Zamítnout</a>
 		</p>
 	</div>
 	<?php

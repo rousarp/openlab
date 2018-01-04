@@ -88,11 +88,11 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
             <?php if (function_exists('bbpress') && !openlab_is_portfolio()) : ?>
                 <?php $forum_enabled = openlab_is_forum_enabled_for_group() ?>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Discussion Settings</div>
+                    <div class="panel-heading">Nastavení diskuse</div>
                     <div class="panel-body">
-                        <p id="discussion-settings-tag">These settings enable or disable the discussion forum on your <?php echo $group_label_uc ?> profile.</p>
+                        <p id="discussion-settings-tag">Toto nastavení povoluje nebo zakazuje diskusní fórum na vašem <?php echo $group_label_uc ?> profilu.</p>
                         <div class="checkbox">
-                            <label><input type="checkbox" name="openlab-edit-group-forum" id="group-show-forum" value="1"<?php checked($forum_enabled) ?> /> <?php _e('Enable discussions forum', 'buddypress') ?></label>
+                            <label><input type="checkbox" name="openlab-edit-group-forum" id="group-show-forum" value="1"<?php checked($forum_enabled) ?> /> <?php _e('Povolit diskuzní fórum', 'buddypress') ?></label>
                         </div>
                     </div>
                 </div>
@@ -105,14 +105,14 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                     $event_create_access = 'admin';
                 } ?>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Calendar Settings</div>
+                    <div class="panel-heading">Nastavení kalendáře</div>
                     <div class="panel-body">
-                        <p id="discussion-settings-tag">These settings determine who can create an event for your group calendar and for the site-wide calendar.</p>
+                        <p id="discussion-settings-tag">Tato nastavení určují, kdo může vytvořit událost pro skupinový kalendář a pro kalendář na webu.</p>
                         <div class="row">
                             <div class="col-sm-23 col-sm-offset-1">
                                 <div class="radio no-margin no-margin-all spaced-list">
-                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="members" <?php checked('members', $event_create_access) ?> /> <?php _e('Any group member may connect events to this group', 'buddypress') ?></label>
-                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="admin" <?php checked('admin', $event_create_access) ?> /> <?php _e('Only administrators and moderators may connect events to this group', 'buddypress') ?></label>
+                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="members" <?php checked('members', $event_create_access) ?> /> <?php _e('Každý člen skupiny může přidávat události do této skupiny', 'buddypress') ?></label>
+                                    <label class="regular"><input type="radio" name="openlab-bpeo-event-create-access" value="admin" <?php checked('admin', $event_create_access) ?> /> <?php _e('Pouze Administrátoři a Operátoři mohou přidávat události do této skupiny', 'buddypress') ?></label>
                                 </div>
                             </div>
                         </div>
@@ -123,23 +123,23 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
     <?php /* "Related Links List Settings" */ ?>
             <div class="panel panel-default">
-                <div class="panel-heading">Related Links List Settings</div>
+                <div class="panel-heading">Související nastavení seznamu odkazů</div>
                 <div class="panel-body">
-                    <p>These settings enable or disable the related groups list display on your <?php echo $group_label_uc; ?> profile.</p>
+                    <p>Tato nastavení umožňují nebo zakazují zobrazování seznamu příslušných skupin na vašem <?php echo $group_label_uc; ?> profile.</p>
                     <?php $related_links_list_enable = groups_get_groupmeta(bp_get_current_group_id(), 'openlab_related_links_list_enable'); ?>
     <?php $related_links_list_heading = groups_get_groupmeta(bp_get_current_group_id(), 'openlab_related_links_list_heading'); ?>
     <?php $related_links_list = openlab_get_group_related_links(bp_get_current_group_id(), 'edit'); ?>
                     <div class="checkbox">
-                        <label><input type="checkbox" name="related-links-list-enable" id="related-links-list-enable" value="1" <?php checked($related_links_list_enable) ?> /> Enable related groups list</label>
+                        <label><input type="checkbox" name="related-links-list-enable" id="related-links-list-enable" value="1" <?php checked($related_links_list_enable) ?> /> Povolit seznam souvisejících skupin</label>
                     </div>
-                    <label for="related-links-list-heading">List Heading</label>
+                    <label for="related-links-list-heading">Nadpis seznamu</label>
                     <input name="related-links-list-heading" id="related-links-list-heading" class="form-control" type="text" value="<?php echo esc_attr($related_links_list_heading) ?>" />
                     <ul class="related-links-edit-items inline-element-list">
     <?php $rli = 1 ?>
     <?php foreach ((array) $related_links_list as $rl) : ?>
                             <li class="form-inline label-combo row">
                                 <div class="form-group col-sm-9">
-                                    <label for="related-links-<?php echo $rli ?>-name">Name</label> <input name="related-links[<?php echo $rli ?>][name]" id="related-links-<?php echo $rli ?>-name" class="form-control" value="<?php echo esc_attr($rl['name']) ?>" />
+                                    <label for="related-links-<?php echo $rli ?>-name">Název</label> <input name="related-links[<?php echo $rli ?>][name]" id="related-links-<?php echo $rli ?>-name" class="form-control" value="<?php echo esc_attr($rl['name']) ?>" />
                                 </div>
                                 <div class="form-group col-sm-15">
                                     <label for="related-links-<?php echo $rli ?>-url">URL</label> <input name="related-links[<?php echo $rli ?>][url]" id="related-links-<?php echo $rli ?>-url" class="form-control" value="<?php echo esc_attr($rl['url']) ?>" />
@@ -157,9 +157,9 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
     <?php if (!openlab_is_portfolio()) : ?>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Portfolio List Settings</div>
+                    <div class="panel-heading">Nastavení seznamu portfolií</div>
                     <div class="panel-body">
-                        <p id="portfolio-list-settings-tag">These settings enable or disable the member portfolio list display on your Course profile.</p>
+                        <p id="portfolio-list-settings-tag">Tato nastavení umožňují nebo zakazují zobrazování seznamu portfolia členů na profilu kurzu.</p>
 
         <?php $portfolio_list_enabled = openlab_portfolio_list_enabled_for_group() ?>
         <?php $portfolio_list_heading = openlab_portfolio_list_group_heading() ?>
@@ -189,7 +189,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php if ('upload-image' == bp_get_avatar_admin_step()) : ?>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">Upload Avatar</div>
+                    <div class="panel-heading">Nahrát ilustrační obrázek</div>
                     <div class="panel-body">
         <?php do_action('template_notices') ?>
                         <div class="row">
@@ -236,7 +236,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php if ('crop-image' == bp_get_avatar_admin_step()) : ?>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">Crop Avatar</div>
+                    <div class="panel-heading">Oříznout ilustrační obrázek</div>
                     <div class="panel-body">
 
                         <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Avatar to crop', 'buddypress') ?>" />
@@ -526,4 +526,3 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 <?php do_action('bp_after_group_admin_content') ?>
 
 </form><!-- #group-settings-form -->
-

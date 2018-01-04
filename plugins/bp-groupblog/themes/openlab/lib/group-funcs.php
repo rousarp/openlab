@@ -987,7 +987,7 @@ HTML;
     $markup .= <<<HTML
             <p class="activity-content">
                 <span class="hyphenate truncate-on-the-fly" data-basevalue="120" data-minvalue="75" data-basewidth="376">{$content}</span>
-                <span><a href="{$link}" class="read-more">See More<span class="sr-only">{$title}</span></a><span>
+                <span><a href="{$link}" class="read-more">Zobrazit více<span class="sr-only">{$title}</span></a><span>
                 <span class="original-copy hidden">{$content}</span>
             </p>
 HTML;

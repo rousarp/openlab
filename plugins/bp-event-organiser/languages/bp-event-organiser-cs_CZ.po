@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-05 01:44+0100\n"
-"PO-Revision-Date: 2018-01-05 13:30+0100\n"
+"PO-Revision-Date: 2018-01-05 16:13+0100\n"
 "Last-Translator: admin <admin@localhost.dev>\n"
 "Language-Team: Czech\n"
 "Language: cs_CZ\n"
@@ -156,7 +156,7 @@ msgstr "Událost neexistuje."
 
 #: bp-event-organiser-groups.php:347
 msgid "Event does not belong to this group."
-msgstr ""
+msgstr "Událost nepatří do této skupiny."
 
 #: bp-event-organiser-groups.php:377 bp-event-organiser-groups.php:384
 #: includes/component.php:307 includes/component.php:314

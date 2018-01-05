@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-05 01:44+0100\n"
-"PO-Revision-Date: 2018-01-05 02:29+0100\n"
+"PO-Revision-Date: 2018-01-05 13:30+0100\n"
 "Last-Translator: admin <admin@localhost.dev>\n"
 "Language-Team: Czech\n"
 "Language: cs_CZ\n"
@@ -48,11 +48,11 @@ msgstr ""
 
 #: bp-event-organiser-eo.php:48
 msgid "BP Event Organiser requires version 2+ of Event Organiser."
-msgstr ""
+msgstr "BP Event Organiser vyžaduje verzi 2+ pluginu  Event Organiser."
 
 #: bp-event-organiser-eo.php:243
 msgid "BuddyPress Groups"
-msgstr ""
+msgstr "Skupiny BuddyPress"
 
 #: bp-event-organiser-eo.php:243
 msgid "Groups"
@@ -72,23 +72,23 @@ msgstr "Skupina"
 
 #: bp-event-organiser-group-widget.php:167
 msgid "Embed Type"
-msgstr ""
+msgstr "Vložení typu"
 
 #: bp-event-organiser-group-widget.php:178
 msgid "Width"
-msgstr ""
+msgstr "Šířka"
 
 #: bp-event-organiser-group-widget.php:185
 msgid "Enter width in pixels. Defaults to the current theme's width."
-msgstr ""
+msgstr "Zadejte šířku v pixelech. Výchozí šířka aktuálního motivu."
 
 #: bp-event-organiser-group-widget.php:189
 msgid "Height"
-msgstr ""
+msgstr "Výška"
 
 #: bp-event-organiser-group-widget.php:196
 msgid "Enter height in pixels."
-msgstr ""
+msgstr "Zadejte výšku v pixelech."
 
 #: bp-event-organiser-group-widget.php:204
 #: bp-event-organiser-group-widget.php:456
@@ -96,18 +96,20 @@ msgid ""
 "You are not a member of any groups.  Please join a group before attempting "
 "to embed a group's event list."
 msgstr ""
+"Nejste členem žádné skupiny. Před pokusem o vložení seznamu událostí skupiny "
+"se prosím připojte ke skupině."
 
 #: bp-event-organiser-group-widget.php:222 bp-event-organiser-groups.php:275
 msgid "Group Events"
-msgstr ""
+msgstr "Skupinové události"
 
 #: bp-event-organiser-group-widget.php:324
 msgid "(BuddyPress) Group Events"
-msgstr ""
+msgstr "(BuddyPress) Skupinové události"
 
 #: bp-event-organiser-group-widget.php:327
 msgid "Embed events from one of your groups."
-msgstr ""
+msgstr "Vložit události z jedné ze svých skupin."
 
 #: bp-event-organiser-group-widget.php:345
 msgid "My Events"
@@ -123,11 +125,11 @@ msgstr "Skupina:"
 
 #: bp-event-organiser-group-widget.php:437
 msgid "Embed Type:"
-msgstr ""
+msgstr "Typ vkládání:"
 
 #: bp-event-organiser-group-widget.php:449
 msgid "Height:"
-msgstr ""
+msgstr "Výška:"
 
 #: bp-event-organiser-groups.php:78 bp-event-organiser-groups.php:96
 #: includes/component.php:37 includes/component.php:102
@@ -141,16 +143,16 @@ msgstr "Kalendář"
 
 #: bp-event-organiser-groups.php:172 includes/component.php:67
 msgid "Manage"
-msgstr ""
+msgstr "Spravovat"
 
 #: bp-event-organiser-groups.php:207 bp-event-organiser-groups.php:359
 #: includes/component.php:262
 msgid "You do not have access to edit this event."
-msgstr ""
+msgstr "K úpravě této události nemáte přístup."
 
 #: bp-event-organiser-groups.php:339 includes/component.php:175
 msgid "Event does not exist."
-msgstr ""
+msgstr "Událost neexistuje."
 
 #: bp-event-organiser-groups.php:347
 msgid "Event does not belong to this group."
@@ -159,11 +161,11 @@ msgstr ""
 #: bp-event-organiser-groups.php:377 bp-event-organiser-groups.php:384
 #: includes/component.php:307 includes/component.php:314
 msgid "You do not have permission to delete this event."
-msgstr ""
+msgstr "Nemáte oprávnění tuto událost smazat."
 
 #: bp-event-organiser-groups.php:392 includes/component.php:322
 msgid "There was a problem deleting the event."
-msgstr ""
+msgstr "Při mazání události došlo k potížím."
 
 #: bp-event-organiser-groups.php:394 includes/component.php:324
 msgid "Event deleted."
@@ -172,13 +174,15 @@ msgstr "Událost smazána."
 #: bp-event-organiser-groups.php:535 includes/component.php:582
 #, php-format
 msgid "%s (Private)"
-msgstr ""
+msgstr "%s (Soukromé)"
 
 #: bp-event-organiser-groups.php:569 includes/component.php:455
 msgid ""
 "Private iCalendar URL has been reset. Please copy the new link below to use "
 "in your calendar application."
 msgstr ""
+"Soukromá adresa URL iCalendar byla resetována. Zkopírujte níže uvedený nový "
+"odkaz, který chcete použít v aplikaci kalendáře."
 
 #: bp-event-organiser.php:229
 msgid "Filters"
@@ -197,11 +201,14 @@ msgid ""
 "You have added a group to this event.  Since groups have their own privacy "
 "settings, we have removed the ability to set the status for this event."
 msgstr ""
+"Do této události jste přidali skupinu. Vzhledem k tomu, že skupiny mají "
+"vlastní nastavení ochrany soukromí, odstranili jsme schopnost nastavit stav "
+"této události."
 
 #: includes/activity.php:146 includes/activity.php:148 includes/group.php:369
 #: includes/group.php:371
 msgid "Events created"
-msgstr ""
+msgstr "Vytvořeny události"
 
 #: includes/activity.php:155 includes/activity.php:157 includes/group.php:378
 #: includes/group.php:380
@@ -216,16 +223,16 @@ msgstr "Událost smazána"
 #: includes/activity.php:197
 #, php-format
 msgid "%1$s created the event %2$s"
-msgstr ""
+msgstr "uživatel %1$s vytvořil událost %2$s"
 
 #: includes/activity.php:202 includes/activity.php:207
 #, php-format
 msgid "%1$s edited the event %2$s"
-msgstr ""
+msgstr "uživatel %1$s upravil událost %2$s"
 
 #: includes/class.bpeo_frontend_admin_screen.php:21
 msgid "Event successfully created"
-msgstr ""
+msgstr "Událost úspěšně vytvořena"
 
 #: includes/class.bpeo_frontend_admin_screen.php:22
 msgid "Event updated"
@@ -242,7 +249,7 @@ msgstr "Vložit do události"
 #: includes/class.bpeo_group_oembed_extension.php:83
 #, php-format
 msgid "%s - Group Calendar"
-msgstr ""
+msgstr "%s - Skupinový kalendář"
 
 #: includes/component.php:13
 msgid "Event Organiser"
@@ -250,11 +257,11 @@ msgstr "Event Organizer"
 
 #: includes/component.php:279 includes/component.php:286
 msgid "You do not have permission to restore this event."
-msgstr ""
+msgstr "Nemáte oprávnění k obnovení této události."
 
 #: includes/component.php:294
 msgid "There was a problem restoring the event."
-msgstr ""
+msgstr "Při obnovení události došlo k problému."
 
 #: includes/component.php:296
 #, php-format
@@ -266,6 +273,8 @@ msgid ""
 "At the moment, only unpublished events are shown here to allow you to edit "
 "them."
 msgstr ""
+"Momentálně jsou zde zobrazeny pouze nepublikované události, které vám umožní "
+"upravit je."
 
 #: includes/component.php:507
 msgid "Status"
@@ -277,7 +286,7 @@ msgstr "Datum konání události"
 
 #: includes/component.php:510
 msgid "Publish Date"
-msgstr ""
+msgstr "Datum publikace"
 
 #: includes/component.php:524 includes/functions.php:302
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:894
@@ -288,7 +297,7 @@ msgstr "Editovat"
 
 #: includes/component.php:526
 msgid "Restore"
-msgstr ""
+msgstr "Obnovit"
 
 #: includes/component.php:529 includes/functions.php:307
 msgid "Delete"
@@ -299,20 +308,22 @@ msgid ""
 "Looks like you have no unpublished events to manage.  To create a new event, "
 "click on the \"New Event\" link above."
 msgstr ""
+"Zdá se, že nemáte žádné nepublikované události, které byste mohli spravovat. "
+"Chcete-li vytvořit novou událost, klikněte na odkaz \"Nová událost\" výše."
 
 #: includes/functions.php:154
 #, php-format
 msgid "Filtered by category '%s'"
-msgstr ""
+msgstr "Filtrována podle kategorie '%s'"
 
 #: includes/functions.php:156
 #, php-format
 msgid "Filtered by tag '%s'"
-msgstr ""
+msgstr "Filtrováno podle štítku '%s'"
 
 #: includes/functions.php:298
 msgid "&larr; Back"
-msgstr ""
+msgstr "&larr; Back"
 
 #: includes/functions.php:344
 #, php-format
@@ -320,11 +331,13 @@ msgid ""
 "This %1$s is a draft.  Please remember to publish this %1$s once you are "
 "ready."
 msgstr ""
+"Tato událost %1$s je koncept. Nezapomeňte tuto událost %1$s publikovat, "
+"jakmile budete připraveni."
 
 #: includes/functions.php:348
 #, php-format
 msgid "This %1$s is scheduled to be published at <strong>%2$s</strong>."
-msgstr ""
+msgstr "Událost %1$s je naplánována na publikování dne <strong>%2$s</strong>."
 
 #: includes/functions.php:351
 msgid "M j, Y @ G:i"
@@ -336,6 +349,8 @@ msgid ""
 "This %1$s is marked as private.  Only site moderators and yourself can view "
 "this %1$s."
 msgstr ""
+"Událost %1$s je označena jako soukromá. Pouze moderátoři stránek a vy si "
+"můžete prohlédnout tuto událost."
 
 #: includes/functions.php:562
 #, php-format
@@ -346,23 +361,23 @@ msgstr ""
 
 #: includes/group.php:29 includes/group.php:56
 msgid "No group found by that ID."
-msgstr ""
+msgstr "Tomuto ID neodpovídá žádná skupina."
 
 #: includes/group.php:34 includes/group.php:61
 msgid "No event found by that ID."
-msgstr ""
+msgstr "Tomuto ID neodpovídá žádná událost."
 
 #: includes/group.php:66
 msgid "No event found by that ID connected to this group."
-msgstr ""
+msgstr "Žádná událost nalezená s tímto ID není připojena k této skupině."
 
 #: includes/group.php:639
 msgid "Silent Create"
-msgstr ""
+msgstr "Tiché vytvoření"
 
 #: includes/group.php:641
 msgid "Silent Edit"
-msgstr ""
+msgstr "Tichá úprava"
 
 #: includes/group.php:977
 msgid "Stáhněte si soubor iCalendar:"
@@ -371,47 +386,47 @@ msgstr ""
 #: includes/user.php:379
 #, php-format
 msgid "<strong>Author:</strong> %s"
-msgstr ""
+msgstr "<strong>Autor:</strong>%s"
 
 #: includes/wp-frontend-admin-screen/abstraction-admin-post.php:34
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:269
 msgid "Auto Draft"
-msgstr ""
+msgstr "Automatický návrh"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:518
 msgid "Most Used"
-msgstr ""
+msgstr "Nejvíc používané"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:542
 #, php-format
 msgid "+ %s"
-msgstr ""
+msgstr "+ %s"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:870
 msgid "Status:"
-msgstr ""
+msgstr "Stav:"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:875
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:902
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:490
 msgid "Privately Published"
-msgstr ""
+msgstr "Soukromě zveřejněno"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:878
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:900
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:491
 msgid "Published"
-msgstr ""
+msgstr "Publikováno"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:881
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:904
 msgid "Scheduled"
-msgstr ""
+msgstr "Akce naplánována"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:884
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:906
 msgid "Pending Review"
-msgstr ""
+msgstr "Čeká na kontrolu"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:888
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:908
@@ -421,7 +436,7 @@ msgstr "Koncept"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:894
 msgid "Edit status"
-msgstr ""
+msgstr "Upravit stav"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:913
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:957
@@ -439,7 +454,7 @@ msgstr "Zrušit"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:921
 msgid "Visibility:"
-msgstr ""
+msgstr "Viditelnost:"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:926
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:954
@@ -450,26 +465,26 @@ msgstr "Privátní"
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:929
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:952
 msgid "Password protected"
-msgstr ""
+msgstr "Chráněno heslem"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:932
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:488
 msgid "Public, Sticky"
-msgstr ""
+msgstr "Veřejné, připnuté"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:935
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:948
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:487
 msgid "Public"
-msgstr ""
+msgstr "Veřejné"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:940
 msgid "Edit visibility"
-msgstr ""
+msgstr "Upravit viditelnost"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:950
 msgid "Stick this post to the front page"
-msgstr ""
+msgstr "Přidejte tento příspěvek na titulní stránku"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:953
 msgid "Password:"
@@ -477,59 +492,61 @@ msgstr "Heslo:"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:967
 msgid "M j, Y @ H:i"
-msgstr ""
+msgstr "M j, Y @ H:i"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:970
 #, php-format
 msgid "Scheduled for: <b>%1$s</b>"
-msgstr ""
+msgstr "Naplánováno pro: <b>%1$s</b>"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:972
 #, php-format
 msgid "Published on: <b>%1$s</b>"
-msgstr ""
+msgstr "Publikováno na: <b>%1$s</b>"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:974
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:982
 msgid "Publish <b>immediately</b>"
-msgstr ""
+msgstr "Publikujte <b>okamžitě</b>"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:976
 #, php-format
 msgid "Schedule for: <b>%1$s</b>"
-msgstr ""
+msgstr "Plán pro: <b>%1$s</b>"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:978
 #, php-format
 msgid "Publish on: <b>%1$s</b>"
-msgstr ""
+msgstr "Publikujte na: <b>%1$s</b>"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:992
 #, php-format
 msgid "Your site is configured to keep only the last %s revisions."
 msgstr ""
+"Vaše stránky jsou nakonfigurovány tak, aby uchovávaly pouze poslední revize "
+"%s."
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:994
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:997
 #, php-format
 msgid "Revisions: %s"
-msgstr ""
+msgstr "Revize: %s"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1000
 msgid "Browse revisions"
-msgstr ""
+msgstr "Procházet revize"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1008
 msgid "Edit date and time"
-msgstr ""
+msgstr "Upravit datum a čas"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1038
 msgid "Delete Permanently"
-msgstr ""
+msgstr "Trvale odstranit"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1040
 msgid "Move to Trash"
-msgstr ""
+msgstr "Přesunout do koše"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1051
 msgid "Save"
@@ -564,19 +581,19 @@ msgstr "Minuta"
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:478
 #, php-format
 msgid "%1$s %2$s, %3$s @ %4$s : %5$s"
-msgstr ""
+msgstr "%1$s %2$s, %3$s @ %4$s : %5$s"
 
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1230
 msgid "Save Changes"
-msgstr ""
+msgstr "Uložit změny"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:94
 msgid "Post successfully created"
-msgstr ""
+msgstr "Příspěvek úspěšně vytvořen"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:95
 msgid "Post updated"
-msgstr ""
+msgstr "Pošta byla aktualizována"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:96
 msgid "Enter title here"
@@ -585,24 +602,24 @@ msgstr "Zadejte titulek"
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:97
 #, php-format
 msgid "Word count: %s"
-msgstr ""
+msgstr "Počet slov: %s"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:98
 #, php-format
 msgid "Last edited by %1$s on %2$s at %3$s"
-msgstr ""
+msgstr "Naposledy upraveno uživatelem %1$s na %2$s v čase %3$s"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:99
 #, php-format
 msgid "Last edited on %1$s at %2$s"
-msgstr ""
+msgstr "Naposledy upraveno na %1$s v čase %2$s"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:100
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:104
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:402
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:481
 msgid "Publish"
-msgstr ""
+msgstr "Publikovat"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:101
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:483
@@ -611,16 +628,16 @@ msgstr "Aktualizovat"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:103
 msgid "Featured Image"
-msgstr ""
+msgstr "Doporučený obrázek"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:105
 msgid "Insert into post"
-msgstr ""
+msgstr "Vložte do příspěvku"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:399
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:482
 msgid "Schedule"
-msgstr ""
+msgstr "Plán"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:406
 msgid "Submit for Review"
@@ -628,27 +645,27 @@ msgstr "Poslat k revizi"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:474
 msgid "Publish on:"
-msgstr ""
+msgstr "Publikovat dne:"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:475
 msgid "Schedule for:"
-msgstr ""
+msgstr " Plán pro:"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:476
 msgid "Published on:"
-msgstr ""
+msgstr "Publikováno na:"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:479
 msgid "Show more comments"
-msgstr ""
+msgstr "Zobrazit další komentáře"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:480
 msgid "No more comments found."
-msgstr ""
+msgstr "Nebyly nalezeny žádné komentáře."
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:484
 msgid "Save as Pending"
-msgstr ""
+msgstr "Uložit jako čekající"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:485
 msgid "Save Draft"
@@ -656,25 +673,27 @@ msgstr "Uložit koncept"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:489
 msgid "Password Protected"
-msgstr ""
+msgstr "Chráněno heslem"
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:492
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
+"Změny, které jste provedli, budou ztraceny, pokud se od této stránky "
+"dostanete."
 
 #: includes/wp-frontend-admin-screen/wp-frontend-admin-screen.php:493
 msgid "Saving Draft&#8230;"
-msgstr ""
+msgstr "Ukládání návrhu ..."
 
 #: templates/buddypress/events/manage-group-ical.php:2
 #: templates/buddypress/events/manage-user-ical.php:2
 msgid "Manage iCalendar Settings"
-msgstr ""
+msgstr "Správa nastavení iCalendar"
 
 #: templates/buddypress/events/manage-group-ical.php:4
 #: templates/buddypress/events/manage-user-ical.php:4
 msgid "Private URL:"
-msgstr ""
+msgstr "Soukromá adresa URL:"
 
 #: templates/buddypress/events/manage-group-ical.php:8
 msgid ""
@@ -682,6 +701,9 @@ msgid ""
 "this address with others unless you want them to see all events from your "
 "group's calendar."
 msgstr ""
+"Toto je soukromý odkaz iCalendar pro kalendář ve vaší skupině. Nesdílejte "
+"tuto adresu s ostatními, pokud nechcete, aby se zobrazovaly všechny události "
+"z kalendáře vaší skupiny."
 
 #: templates/buddypress/events/manage-group-ical.php:10
 #: templates/buddypress/events/manage-user-ical.php:10
@@ -689,16 +711,18 @@ msgid ""
 "You can copy and paste this link into any calendar application that supports "
 "the iCalendar format."
 msgstr ""
+"Tento odkaz můžete zkopírovat a vložit do libovolné aplikace kalendáře, "
+"která podporuje formát iCalendar."
 
 #: templates/buddypress/events/manage-group-ical.php:12
 #: templates/buddypress/events/manage-user-ical.php:12
 msgid "You can also reset your private iCalendar link below:"
-msgstr ""
+msgstr "Můžete také obnovit svůj soukromý odkaz iCalendar níže:"
 
 #: templates/buddypress/events/manage-group-ical.php:21
 #: templates/buddypress/events/manage-user-ical.php:21
 msgid "Reset private URL"
-msgstr ""
+msgstr "Obnovit soukromou adresu URL"
 
 #: templates/buddypress/events/manage-group-ical.php:22
 #: templates/buddypress/events/manage-user-ical.php:22
@@ -706,6 +730,7 @@ msgid ""
 "This will invalidate the existing private iCalendar link and generate a new "
 "link."
 msgstr ""
+"Tím se zruší stávající soukromý odkaz iCalendar a vytvoří se nový odkaz."
 
 #: templates/buddypress/events/manage-user-ical.php:8
 msgid ""
@@ -713,6 +738,9 @@ msgid ""
 "address with others unless you want them to see all events from your "
 "calendar."
 msgstr ""
+"Toto je soukromý odkaz iCalendar pro váš kalendář. Nesdílejte tuto adresu s "
+"ostatními, pokud nechcete, aby zobrazovaly všechny události z vašeho "
+"kalendáře."
 
 #: templates/calendar.php:29
 msgid "Subscribe"
@@ -721,6 +749,7 @@ msgstr "Přihlásit se k odběru"
 #: templates/calendar.php:33
 msgid "Only public events are listed in this iCalendar. Suitable for sharing."
 msgstr ""
+"V této iCalendar jsou uvedeny pouze veřejné události. Vhodné pro sdílení."
 
 #: templates/calendar.php:33
 msgid "Stáhněte si soubor iCalendar (Veřejný)"
@@ -731,6 +760,8 @@ msgid ""
 "Both public and private events are listed in this iCalendar.  Be mindful of "
 "who you share this with."
 msgstr ""
+"Veřejné i soukromé události jsou uvedeny v souboru iCalendar. Mějte na "
+"paměti, s kým soubor sdílíte."
 
 #: templates/calendar.php:36 templates/calendar.php:46
 msgid "Stáhněte si soubor iCalendar (Privátní)"
@@ -744,14 +775,15 @@ msgstr ""
 msgid ""
 "This is a private group.  Be mindful of who you share this calendar with."
 msgstr ""
+"Toto je soukromá skupina. Mějte na paměti, s kým sdílíte tento kalendář."
 
 #: templates/content-eo-event.php:2
 msgid "Event Description"
-msgstr ""
+msgstr "Popis události"
 
 #: templates/upcoming.php:29
 msgid "No upcoming events found."
-msgstr ""
+msgstr "Nebyly nalezeny žádné nadcházející události."
 
 #: bp-event-organiser-groups.php:159 includes/component.php:58
 msgid "Upcoming"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-05 16:17+0100\n"
-"PO-Revision-Date: 2018-01-05 16:17+0100\n"
+"PO-Revision-Date: 2018-01-05 16:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -17,15 +17,15 @@ msgstr ""
 
 #: admin/class-bp-customizable-group-categories-admin.php:178
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: admin/class-bp-customizable-group-categories-admin.php:211
 msgid "Cheatin&#8217; uh?"
-msgstr ""
+msgstr "Podvod, ha?"
 
 #: admin/class-bp-customizable-group-categories-admin.php:232
 msgid "Invalid taxonomy"
-msgstr ""
+msgstr "Neplatná taxonomie"
 
 #: admin/class-bp-customizable-group-categories-admin.php:295
 #: admin/class-bp-customizable-group-categories-admin.php:311
@@ -33,10 +33,11 @@ msgid ""
 "You attempted to edit an item that doesn&#8217;t exist. Perhaps it was "
 "deleted?"
 msgstr ""
+"Pokusili jste se upravit položku, která neexistuje. Možná byla smazána?"
 
 #: admin/class-bp-customizable-group-categories-admin.php:454
 msgid "An error has occurred. Please reload the page and try again."
-msgstr ""
+msgstr "Došlo k chybě. Znovu načtěte stránku a zkuste to znovu."
 
 #: includes/class-bp-customizable-group-categories.php:264
 #, php-format
@@ -44,18 +45,23 @@ msgid ""
 "BP Customizable Group Categories requires at least version %1$s of "
 "BuddyPress and version %2$s of WordPress."
 msgstr ""
+"Plugin BP Customizable Group Categories vyžaduje alespoň verzi %1$s pluginu "
+"BuddyPress a verzi %2$s aplikace WordPress."
 
 #: includes/class-bp-customizable-group-categories.php:268
 msgid ""
 "BP Customizable Group Categories requires to be activated on the blog where "
 "BuddyPress is activated."
 msgstr ""
+"Kategorie BP přizpůsobitelné skupiny musí být aktivovány na blogu, kde je "
+"aktivován BuddyPress."
 
 #: includes/term-metadata/term-metadata.php:34
 #: includes/term-metadata/term-metadata.php:116
 msgid "Term meta cannot be added to terms that are shared between taxonomies."
 msgstr ""
+"Termín Meta nelze přidat do výrazů, které jsou sdíleny mezi taxonomiemi."
 
 #: parts/category-extra-fields.php:2
 msgid "Category Groups"
-msgstr ""
+msgstr "Kategorie skupin"

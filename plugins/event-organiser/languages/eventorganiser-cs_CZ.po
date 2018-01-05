@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-25 22:52+0000\n"
-"PO-Revision-Date: 2017-10-09T20:46:49+00:00\n"
+"PO-Revision-Date: 2018-01-05 02:11+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -12,6 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : "
 "2);\n"
+"X-Generator: Poedit 2.0.5\n"
 
 #: classes/class-eo-agenda-widget.php:12
 msgid "Displays a list of events, grouped by date"
@@ -277,7 +278,7 @@ msgstr "Ukázat hierarchii"
 
 #: classes/class-eo-widget-venues.php:11
 msgid "A list or dropdown of event venues"
-msgstr "Seznam nebo výběr míst událostí."
+msgstr "Seznam nebo výběr míst událostí"
 
 #: classes/class-eo-widget-venues.php:12
 msgid "Event Venues"
@@ -313,7 +314,6 @@ msgstr ""
 "tomuto plug-inu."
 
 #: event-organiser-add-ons.php:127 event-organiser-go-pro.php:89
-#, fuzzy
 msgid "Find out more &hellip;"
 msgstr "Zjistit více..."
 
@@ -346,15 +346,15 @@ msgstr "jít na datum"
 
 #: event-organiser-calendar.php:125
 msgid "You do not have sufficient permissions to create events. "
-msgstr "Pro vytvoření události nemáte dostatečná proprávnění"
+msgstr "Pro vytvoření události nemáte dostatečná oprávnění."
 
 #: event-organiser-calendar.php:181
 msgid "You do not have sufficient permissions to edit this event. "
-msgstr "Pro úpravuí události nemáte dostatečná oprávnění"
+msgstr "Pro úpravuí události nemáte dostatečná oprávnění."
 
 #: event-organiser-calendar.php:199
 msgid "You do not have sufficient permissions to delete this event. "
-msgstr "Pro smazání události nemáte dostatečná proprávnění"
+msgstr "Pro smazání události nemáte dostatečná oprávnění."
 
 #: event-organiser-calendar.php:213
 msgid "Event deleted."
@@ -479,6 +479,9 @@ msgid ""
 "bug, please include this information. The 'system info' link in under the "
 "Events admin tab is only visible to admins and only when %1$s is set to %1$s."
 msgstr ""
+"Tato stránka zvýrazňuje užitečné informace pro ladění. Pokud chcete nahlásit "
+"chybu, uveďte tyto informace. \"System info\" odkaz v kartě admin události "
+"je viditelné pouze pro administrátory a pouze pokud %1$s nastavena na %1$s."
 
 #: event-organiser-debug.php:72
 msgid ""
@@ -489,6 +492,8 @@ msgid ""
 "issue. Below any <strong>known</strong> plug-in and theme conflicts are "
 "highlighted in red."
 msgstr ""
+"Většina chyb vzniká z konfliktu motivu nebo plug-in. Můžete to ověřit "
+"zákazem všech dalších plug-in a přepnutí do TwentyTweleve."
 
 #: event-organiser-debug.php:80
 msgid "Download system information file"
@@ -560,11 +565,11 @@ msgstr "Datum začátku"
 
 #: event-organiser-edit.php:116
 msgid "Start Time"
-msgstr "čas zahájení"
+msgstr "Čas zahájení"
 
 #: event-organiser-edit.php:130
 msgid "End Date/Time:"
-msgstr "Konec Datum/Čas"
+msgstr "Konec Datum/Čas:"
 
 #: event-organiser-edit.php:135
 msgid "End Date"
@@ -613,7 +618,7 @@ msgstr "Frekvence opakovaní"
 
 #: event-organiser-edit.php:189
 msgid "Repeat on days of week:"
-msgstr "den v týdnu"
+msgstr "Opakování každý den v týdnu:"
 
 #: event-organiser-edit.php:190 templates/shortcode-event-list.php:48
 #: templates/widget-event-list.php:44
@@ -665,6 +670,8 @@ msgid ""
 "Google Maps now requires you register for an API key. If you wish to use "
 "maps on your site, %1$splease enter your key%2$s."
 msgstr ""
+"Mapy Google nyní vyžadují registraci API klíče. Pokud si přejete používat "
+"mapy na webu, zadejte %1$s prosím klíč%2$s."
 
 #: event-organiser-edit.php:495
 msgid "Event dates were not saved."
@@ -908,7 +915,7 @@ msgstr "Štítky události"
 
 #: event-organiser-settings.php:160 event-organiser-settings.php:187
 msgid "Show past events:"
-msgstr "Ukázat i minulé události"
+msgstr "Ukázat i minulé události:"
 
 #: event-organiser-settings.php:166 event-organiser-settings.php:193
 msgid ""
@@ -1002,6 +1009,9 @@ msgid ""
 "To use Google Maps you need to register an API key with Google. You can "
 "register for a free API key by %sfollowing these instructions%s."
 msgstr ""
+"Chcete-li používat Google mapy, je třeba zaregistrovat klíč API Google. "
+"Můžete se zaregistrovat pro bezplatné použití API klíče podle "
+"%snásledujících pokynů%s."
 
 #: event-organiser-settings.php:258
 msgid "Templates:"
@@ -1200,7 +1210,7 @@ msgstr "Místo <strong>nebylo</strong> vytvořeno"
 
 #: event-organiser-venues.php:126
 msgid "You do not have permission to delete this venue"
-msgstr "Nemáte oprávnění smazat toto místo."
+msgstr "Nemáte oprávnění smazat toto místo"
 
 #: event-organiser-venues.php:154
 msgid "Venue(s) <strong>were not </strong> deleted"
@@ -1248,7 +1258,6 @@ msgid "Get Link"
 msgstr "Získat odkaz"
 
 #: event-organiser-venues.php:465
-#, fuzzy
 msgid "Slug"
 msgstr "Slug"
 
@@ -1265,7 +1274,7 @@ msgstr ""
 
 #: includes/class-eo-admin-notice.php:125
 msgid "Dismiss this notice"
-msgstr "Zrušit toto oznámení."
+msgstr "Zrušit toto oznámení"
 
 #: includes/class-eo-ical-parser.php:193
 msgid "There was an error detecting iCal source."
@@ -1273,7 +1282,7 @@ msgstr "Nastala chyba při detekci iCal zdroje."
 
 #: includes/class-eo-ical-parser.php:201
 msgid "Unable to read iCal file"
-msgstr "Nebylo možné přečít iCal soubor."
+msgstr "Nebylo možné přečít iCal soubor"
 
 #: includes/class-eo-ical-parser.php:208
 msgid "Feed not found"
@@ -1289,13 +1298,13 @@ msgid "There was an error opening the ICAL file."
 msgstr "Nastala chyba při otevírání ICAL souboru."
 
 #: includes/class-eo-ical-parser.php:428
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "Feed contains an indefinitely recurring event. This event will recurr until "
 "%s."
 msgstr ""
 "Zdroj obsahuje neomezeně opakující se událost. Tato událost se bude opakovat "
-"až do %s"
+"až do %s."
 
 #: includes/class-eo-ical-parser.php:549 includes/class-eo-ical-parser.php:574
 #, php-format
@@ -1686,7 +1695,6 @@ msgid "New Event"
 msgstr "Nová událost"
 
 #: includes/event-organiser-cpt.php:230
-#, fuzzy
 msgid "All Events"
 msgstr "Všechny události"
 
@@ -1748,9 +1756,9 @@ msgstr "Značka události: %s"
 
 #: includes/event-organiser-cpt.php:247 includes/event-organiser-cpt.php:248
 #: includes/event-organiser-cpt.php:249
-#, fuzzy, php-format
+#, php-format
 msgid "Events: %s"
-msgstr "Události:"
+msgstr "Události: %s"
 
 #: includes/event-organiser-cpt.php:330
 #, php-format
@@ -1848,7 +1856,7 @@ msgid ""
 msgstr ""
 "Pro opakování události podle nějakého pravidelného vzoru, použijte "
 "vyskakovací menu opakování pro výběr, jak se bude událost opakovat. Další "
-"možnosti se pak objeví,"
+"možnosti se pak objeví, "
 
 #: includes/event-organiser-cpt.php:538
 msgid "Specify how regularly the event should repeat (default 1)"
@@ -1935,7 +1943,7 @@ msgstr "Smazání natrvalo odstraní místo"
 
 #: includes/event-organiser-cpt.php:571
 msgid "View will take you to the venue's page"
-msgstr "'Zobrazit' vás přenese na stránku místa."
+msgstr "'Zobrazit' vás přenese na stránku místa"
 
 #: includes/event-organiser-cpt.php:580
 msgid ""
@@ -2259,7 +2267,7 @@ msgstr "Pozdější události <span class=\"meta-nav\">→</span>"
 
 #: templates/eo-events-nav.php:6
 msgid " <span class=\"meta-nav\">&larr;</span> Newer events"
-msgstr "<span class=\"meta-nav\">←</span> Novější události"
+msgstr "<span class=\"meta-nav\">&larr;</span> Novější události"
 
 #: templates/eo-loop-events.php:37
 msgid "Nothing Found"
@@ -2267,7 +2275,7 @@ msgstr "Nenalezeno"
 
 #: templates/eo-loop-events.php:41
 msgid "Apologies, but no results were found for the requested archive. "
-msgstr "Omlouváme se, ale pro tento archiv nebyly nalezeny žádné záznamy"
+msgstr "Omlouváme se, ale pro tento archiv nebyly nalezeny žádné záznamy."
 
 #: templates/event-meta-event-single.php:41
 #, php-format
@@ -2294,9 +2302,9 @@ msgid "This event was posted in %1$s by <a href=\"%3$s\">%2$s</a>."
 msgstr "Tato událost byla zveřejněna v %1$s <a href=\"%3$s\">%2$s</a>."
 
 #: templates/single-event.php:60
-#, fuzzy, php-format
+#, php-format
 msgid "This event was posted by <a href=\"%3$s\">%2$s</a>."
-msgstr "Tato událost byla vložena <a href=\"%3$s\">%2$s</a>."
+msgstr "Tato událost byla vložena uživatelem <a href=\"%3$s\">%2$s</a>."
 
 #: templates/taxonomy-event-venue.php:30
 #, php-format

@@ -373,11 +373,11 @@ function openlab_profile_settings_submenu() {
 
     $settings_slug = $dud . bp_get_settings_slug();
     $menu_list = array(
-        $dud . 'profile/edit' => 'Edit Profile',
-        $dud . 'profile/change-avatar' => 'Change Avatar',
-        $settings_slug => 'Account Settings',
-        $dud . 'settings/notifications' => 'Email Notifications',
-        $dud . 'settings/delete-account' => 'Delete Account',
+        $dud . 'profile/edit' => 'Upravit profil',
+        $dud . 'profile/change-avatar' => 'Změnit profilový obrázek',
+        $settings_slug => 'Nastavení účtu',
+        $dud . 'settings/notifications' => 'Upozornění e-mailem',
+        $dud . 'settings/delete-account' => 'Smazat účet',
     );
     return openlab_submenu_gen($menu_list, true);
 }
@@ -971,11 +971,11 @@ function openlab_group_admin_tabs($group = false) {
     <!--
     <?php if (openlab_is_portfolio()) : ?>
         <?php if ($bp->is_item_admin || $bp->is_item_mod) { ?>
-            --><li<?php if ('edit-details' == $current_tab || empty($current_tab)) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/edit-details">Edit Profile</a></li><!--
+        --><li<?php if ('edit-details' == $current_tab || empty($current_tab)) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/edit-details">Upravit profil</a></li><!--
         <?php } ?>
 
         <?php if (!(int) bp_get_option('bp-disable-avatar-uploads')) : ?>
-            --><li<?php if ('group-avatar' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-avatar">Change Avatar</a></li><!--
+        --><li<?php if ('group-avatar' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-avatar">Změnit profilový obrázek</a></li><!--
         <?php endif; ?>
 
         --><li<?php if ('group-settings' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-settings">Privacy Settings</a></li><!--

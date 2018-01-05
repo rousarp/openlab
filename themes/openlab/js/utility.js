@@ -320,7 +320,7 @@ OpenLab.utility = (function ($) {
 
             if (bpeo_metabox.length) {
 
-                var desc = ' <span class="bold">The event will appear in the OpenLab sitewide calendar unless one or more of the groups selected is private.</span>';
+                var desc = ' <span class="bold">Událost se objeví v místním kalendáři OpenLab, pokud není jedna nebo více vybraných skupin soukromá.</span>';
 
                 bpeo_metabox.find('.inside .bp_event_organiser_desc').append(desc);
                 bpeo_metabox.find('.hndle span').text('Display');
@@ -768,7 +768,7 @@ OpenLab.utility = (function ($) {
         });
     }
 
-    /*this is for the homepage group list, so that cells in each row all have the same height 
+    /*this is for the homepage group list, so that cells in each row all have the same height
      - there is a possiblity of doing this template-side, but requires extensive restructuring of the group list function*/
     function equal_row_height() {
         /*first we get the number of rows by finding the column with the greatest number of rows*/

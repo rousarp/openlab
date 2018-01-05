@@ -132,14 +132,14 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                     <div class="checkbox">
                         <label><input type="checkbox" name="related-links-list-enable" id="related-links-list-enable" value="1" <?php checked($related_links_list_enable) ?> /> Enable related groups list</label>
                     </div>
-                    <label for="related-links-list-heading">List Heading</label>
+                    <label for="related-links-list-heading">Hlavička seznamu</label>
                     <input name="related-links-list-heading" id="related-links-list-heading" class="form-control" type="text" value="<?php echo esc_attr($related_links_list_heading) ?>" />
                     <ul class="related-links-edit-items inline-element-list">
     <?php $rli = 1 ?>
     <?php foreach ((array) $related_links_list as $rl) : ?>
                             <li class="form-inline label-combo row">
                                 <div class="form-group col-sm-9">
-                                    <label for="related-links-<?php echo $rli ?>-name">Name</label> <input name="related-links[<?php echo $rli ?>][name]" id="related-links-<?php echo $rli ?>-name" class="form-control" value="<?php echo esc_attr($rl['name']) ?>" />
+                                    <label for="related-links-<?php echo $rli ?>-name">Název</label> <input name="related-links[<?php echo $rli ?>][name]" id="related-links-<?php echo $rli ?>-name" class="form-control" value="<?php echo esc_attr($rl['name']) ?>" />
                                 </div>
                                 <div class="form-group col-sm-15">
                                     <label for="related-links-<?php echo $rli ?>-url">URL</label> <input name="related-links[<?php echo $rli ?>][url]" id="related-links-<?php echo $rli ?>-url" class="form-control" value="<?php echo esc_attr($rl['url']) ?>" />
@@ -157,17 +157,17 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
     <?php if (!openlab_is_portfolio()) : ?>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Portfolio List Settings</div>
+                    <div class="panel-heading">Nastavení seznamu portfólií</div>
                     <div class="panel-body">
-                        <p id="portfolio-list-settings-tag">These settings enable or disable the member portfolio list display on your Course profile.</p>
+                        <p id="portfolio-list-settings-tag">Tato nastavení umožní nebo zakáže zobrazování seznamu portfolií členů na profilu kurzu.</p>
 
         <?php $portfolio_list_enabled = openlab_portfolio_list_enabled_for_group() ?>
         <?php $portfolio_list_heading = openlab_portfolio_list_group_heading() ?>
                         <div class="checkbox">
-                            <label><input type="checkbox" name="group-show-portfolio-list" id="group-show-portfolio-list" value="1" <?php checked($portfolio_list_enabled) ?> /> Enable portfolio list</label>
+                            <label><input type="checkbox" name="group-show-portfolio-list" id="group-show-portfolio-list" value="1" <?php checked($portfolio_list_enabled) ?> /> Aktivovat seznam portfolií</label>
                         </div>
 
-                        <label for="group-portfolio-list-heading">List Heading</label>
+                        <label for="group-portfolio-list-heading">Hlavička seznamu</label>
                         <input name="group-portfolio-list-heading" id="group-portfolio-list-heading" class="form-control" type="text" value="<?php echo esc_attr($portfolio_list_heading) ?>" />
                     </div>
                 </div>
@@ -189,7 +189,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php if ('upload-image' == bp_get_avatar_admin_step()) : ?>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">Upload Avatar</div>
+                    <div class="panel-heading">Nahrát ilustrační obrázek</div>
                     <div class="panel-body">
         <?php do_action('template_notices') ?>
                         <div class="row">
@@ -236,7 +236,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php if ('crop-image' == bp_get_avatar_admin_step()) : ?>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">Crop Avatar</div>
+                    <div class="panel-heading">Oříznout ilustrační obrázek</div>
                     <div class="panel-body">
 
                         <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Avatar to crop', 'buddypress') ?>" />

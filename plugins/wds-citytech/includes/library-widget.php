@@ -39,10 +39,10 @@ function openlab_group_library_settings() {
 
 	?>
 	<div class="panel panel-default">
-		<div class="panel-heading">Library Settings</div>
+		<div class="panel-heading">Nastavení knihovny</div>
 
 		<div class="panel-body">
-			<p>These settings enable or disable the library tools on your <?php echo esc_html( $group_type_label ); ?> profile.</p>
+			<p>Tato nastavení umožní nebo zakazuje zobrazení nástroje knihovny na profilu vaší skupiny <?php echo esc_html( $group_type_label ); ?>.</p>
 
 			<div class="checkbox">
 				<label><input type="checkbox" name="group-show-library-tools" id="group-show-library-tools" value="1" <?php checked( $setting ); ?> /> Enable library tools</label>

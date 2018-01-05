@@ -643,7 +643,7 @@ function bpeo_render_silent_checkbox( $post_type, $location, $post ) {
 
 	?>
 	<p id="bpeo-silent-wrapper" style="display:none">
-		<label for="bp_event_organiser_silent"><input type="checkbox" value="silent" id="bp_event_organiser_silent" name="bpeo-silent"></input> <strong><?php echo esc_html( $title ); ?></strong> <?php esc_html_e( '(notifications will not be sent to subscribed group members)', 'bp-event-organiser' ); ?>
+		<label for="bp_event_organiser_silent"><input type="checkbox" value="silent" id="bp_event_organiser_silent" name="bpeo-silent"></input> <strong><?php echo esc_html( $title ); ?></strong> <?php esc_html_e( '(oznámení nebudou odesláni členům skupiny přihlášených)', 'bp-event-organiser' ); ?>
 	</p>
 	<?php
 }

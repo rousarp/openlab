@@ -469,7 +469,7 @@ function openlab_portfolio_list_group_heading( $group_id = 0 ) {
 	$heading = groups_get_groupmeta( $group_id, 'portfolio_list_heading' );
 
 	if ( ! $heading ) {
-		$heading = 'Member Portfolios';
+		$heading = 'Portfolia členů';
 	}
 
 	return $heading;
@@ -637,4 +637,3 @@ function openlab_remove_email_settings_from_portfolios() {
 	}
 }
 add_action( 'bp_group_header_meta', 'openlab_remove_email_settings_from_portfolios', 1 );
-

@@ -164,10 +164,10 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
         <?php $portfolio_list_enabled = openlab_portfolio_list_enabled_for_group() ?>
         <?php $portfolio_list_heading = openlab_portfolio_list_group_heading() ?>
                         <div class="checkbox">
-                            <label><input type="checkbox" name="group-show-portfolio-list" id="group-show-portfolio-list" value="1" <?php checked($portfolio_list_enabled) ?> /> Enable portfolio list</label>
+                            <label><input type="checkbox" name="group-show-portfolio-list" id="group-show-portfolio-list" value="1" <?php checked($portfolio_list_enabled) ?> /> Aktivovat seznam portfolií</label>
                         </div>
 
-                        <label for="group-portfolio-list-heading">List Heading</label>
+                        <label for="group-portfolio-list-heading">Nadpis seznamu</label>
                         <input name="group-portfolio-list-heading" id="group-portfolio-list-heading" class="form-control" type="text" value="<?php echo esc_attr($portfolio_list_heading) ?>" />
                     </div>
                 </div>

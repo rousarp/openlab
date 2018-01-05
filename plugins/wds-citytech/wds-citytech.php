@@ -1449,7 +1449,7 @@ class buddypress_Translation_Mangler {
 
 		switch ( $text ) {
 			case 'Forum':
-				return $translations->translate( 'Discussion' );
+				return $translations->translate( 'Forum' );
 				break;
 			case 'Group Forum':
 				return $translations->translate( "$uc_grouptype Discussion" );
@@ -2130,7 +2130,7 @@ class OpenLab_Course_Portfolios_Widget extends WP_Widget {
 
 	public function form( $instance ) {
 		$settings = wp_parse_args($instance, array(
-			'title' => 'Member Portfolios',
+			'title' => 'Portfolia členů',
 			'display_as_dropdown' => '0',
 			'sort_by' => 'title',
 			'num_links' => false,

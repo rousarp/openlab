@@ -398,7 +398,7 @@ function openlab_my_groups_submenu($group) {
     //get account type to see if they're faculty
     $faculty = xprofile_get_field_data('Account Type', get_current_user_id());
 
-    $submenu_text = 'My ' . ucfirst($group) . 's';
+    $submenu_text = 'Moje ' . ucfirst($group) . '';
 
     //if the current user is faculty or a super admin, they can create a course, otherwise no dice
     if ($group == "course") {
@@ -409,13 +409,13 @@ function openlab_my_groups_submenu($group) {
         if (is_super_admin(get_current_user_id()) || $faculty == "Faculty") {
             //have to add extra conditional in here for submenus on editing pages
             $menu_list = array(
-                $create_link => 'Create / Clone a ' . ucfirst($group),
+                $create_link => 'Vytvořit / duplikovat ' . ucfirst($group),
             );
         }
     } else {
         //have to add extra conditional in here for submenus on editing pages
         $menu_list = array(
-            $create_link => 'Create a ' . ucfirst($group),
+            $create_link => 'Vytvořit ' . ucfirst($group),
         );
     }
 
@@ -505,7 +505,7 @@ function openlab_my_friends_submenu($count = true) {
     }
 
     $menu_out['menu'] = openlab_submenu_gen($menu_list);
-    $menu_out['submenu_text'] = '<a class="' . $submenu_class . '" href="' . $my_friends . '">My Friends</a>';
+    $menu_out['submenu_text'] = '<a class="' . $submenu_class . '" href="' . $my_friends . '">Moji přátelé</a>';
 
     return $menu_out;
 }

@@ -35,7 +35,7 @@ function openlab_bp_sidebar($type, $mobile_dropdown = false, $extra_classes = ''
             wp_nav_menu($args);
             echo '</div>';
 
-			echo '<h2 class="sidebar-title hidden-xs">Learn More</h2>';
+			echo '<h2 class="sidebar-title hidden-xs">Další informace</h2>';
             echo '<div class="sidebar-block sidebar-block-learnmore hidden-xs">';
 			openlab_learnmore_sidebar();
             echo '</div>';
@@ -114,9 +114,9 @@ function openlab_group_sidebar($mobile = false) {
 function openlab_learnmore_sidebar() {
 	?>
 	<div class="learn-more-sidebar">
-		<p>Get updates on the <a href="https://openlab.citytech.cuny.edu/openroad/">Open Road</a></p>
-		<p>Follow our student bloggers on <a href="https://openlab.citytech.cuny.edu/the-buzz/">The Buzz</a></p>
-		<p>Join the conversation about <a href="https://openlab.citytech.cuny.edu/openpedagogyopenlab/">Open Pedagogy</a></p>
+		<p>Co je nového na našem webu naleznete na webu <a href="https://lab.urad.online/openroad/">Open Road</a></p>
+		<p>Publikujte na serveru <a href="http://otevrenenoviny.cz/">Otevřené noviny</a></p>
+		<p>Připojte se k serveru <a href="https://openlab.citytech.cuny.edu/openpedagogyopenlab/">Otevřený úřad</a></p>
 	</div>
 	<?php
 }

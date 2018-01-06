@@ -187,15 +187,15 @@ function openlab_help_tags_loop() {
         ?>
 
         <h2 class="help-title cat-title no-margin no-margin-bottom"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <div class="cat-list">Category: <?php echo get_the_term_list($post_id, 'help_category', '', ', ', ''); ?></div>
-        <div class="help-tags">Tags: <?php echo get_the_term_list($post_id, 'help_tags', '', ', ', ''); ?></div>
+        <div class="cat-list">Kategorie: <?php echo get_the_term_list($post_id, 'help_category', '', ', ', ''); ?></div>
+        <div class="help-tags">Štítky: <?php echo get_the_term_list($post_id, 'help_tags', '', ', ', ''); ?></div>
 
         <?php
     endwhile; // end of the loop.
     wp_reset_query();
     ?>
 
-    <a class="pull-right" href="#help-top">Go To Top <span class="fa fa-angle-up"></span></a>
+    <a class="pull-right" href="#help-top">Jdi nahoru <span class="fa fa-angle-up"></span></a>
 
     <?php
 }
@@ -242,7 +242,7 @@ function openlab_help_cats_loop() {
             <?php echo openlab_toggle_button('#sidebar-menu-wrapper', true); ?>
         </h1>
         <div id="help-title">
-            <h2 class="page-title clearfix submenu"><div class="submenu-text pull-left bold">Topics: </div></h2>
+            <h2 class="page-title clearfix submenu"><div class="submenu-text pull-left bold">Témata: </div></h2>
         </div>
         <?php
     else:
@@ -253,7 +253,7 @@ function openlab_help_cats_loop() {
         </h1>
         <div id="help-title">
             <h2 class="page-title clearfix submenu">
-                <div class="submenu-text pull-left bold">Topics: </div><span><?php echo esc_html($parent_term->name) ?></span>
+                <div class="submenu-text pull-left bold">Témata: </div><span><?php echo esc_html($parent_term->name) ?></span>
             </h2>
         </div>
     <?php
@@ -272,7 +272,7 @@ function openlab_help_cats_loop() {
                         ?>
                         <li>
                             <h3 class="help-title no-margin no-margin-bottom"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <div class="help-tags">Tags: <?php echo get_the_term_list($post_id, 'help_tags', '', ', ', ''); ?></div>
+                            <div class="help-tags">Štítky: <?php echo get_the_term_list($post_id, 'help_tags', '', ', ', ''); ?></div>
                         </li>
 
                         <?php

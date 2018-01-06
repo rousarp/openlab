@@ -1175,7 +1175,7 @@ function openlab_calendar_submenu() {
             'class' => $post->post_name === 'calendar' ? 'current-menu-item' : ''
         ),
         array(
-            'name' => 'Nadhcázející',
+            'name' => 'Nadcházející',
             'slug' => 'upcoming',
             'link' => get_site_url() . '/about/calendar/upcoming/',
             'class' => $post->post_name === 'upcoming' ? 'current-menu-item' : ''

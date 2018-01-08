@@ -3,9 +3,9 @@
  * 404 template
  *
  */
- 
+
   get_header(); ?>
-  
+
   <div id="content" class="hfeed">
   			<div <?php post_class(); ?>>
             	<?php cuny_404(); ?>
@@ -18,9 +18,9 @@ function cuny_404() { ?>
 
 	<div class="post hentry">
 
-		<h1 class="entry-title">Page Not Found</h1>
+		<h1 class="entry-title">Stránka nenalezena</h1>
 		<div id="openlab-main-content" class="entry-content">
-			<p>The page you requested could not be found. Please use the menu above to find the page you need.</p>
+			<p>Stránka, kterou jste požadovali, nebyla nalezena. Použijte výše uvedené menu k nalezení stránky, kterou potřebujete.</p>
 
 		</div><!-- end .entry-content -->
 

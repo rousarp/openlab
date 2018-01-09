@@ -3,13 +3,13 @@
 <?php do_action( 'bp_before_profile_avatar_upload_content' ) ?>
 
 <?php if ( !(int)bp_get_option( 'bp-disable-avatar-uploads' ) ) : ?>
-    
+
 	<form action="" method="post" id="avatar-upload-form" enctype="multipart/form-data" class="form-inline form-panel">
-            
+
                 <div class="panel panel-default">
 
 		<?php if ( 'upload-image' == bp_get_avatar_admin_step() ) : ?>
-                <div class="panel-heading">Upload Avatar</div>
+                <div class="panel-heading">Nahrát náhledový obrázek</div>
                     <div class="panel-body">
                         <?php do_action('template_notices') ?>
                         <div class="row">
@@ -21,8 +21,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-16">
-                            
-                                <p class="italics"><?php _e( 'Your avatar will be used on your profile and throughout the site. If there is a Gravatar associated with your account email we will use that, or you can upload an image from your computer. Click below to select a JPG, GIF or PNG format photo from your computer and then click "Upload Image" to proceed.', 'buddypress') ?></p>
+
+                                <p class="italics"><?php _e( 'Váš avatar bude použit ve vašem profilu a na celém webu. Pokud je k účtu Gravatar přidružen e-mail s vaším účtem, použijeme to, nebo můžete z počítače načíst obrázek. Klikněte níže pro výběr fotografie ve formátu JPG, GIF nebo PNG z počítače a pokračujte kliknutím na tlačítko "Nahrát obrázek".', 'buddypress') ?></p>
 
                                 <p id="avatar-upload">
                                     <div class="form-group form-inline">
@@ -35,8 +35,8 @@
                                 </p>
 
                                 <?php if ( bp_get_user_has_avatar() ) : ?>
-                                        <p class="italics"><?php _e( "If you'd like to delete your current avatar but not upload a new one, please use the delete avatar button.", 'buddypress' ) ?></p>
-                                        <a class="btn btn-primary no-deco" href="<?php bp_avatar_delete_link() ?>" title="<?php _e( 'Delete Avatar', 'buddypress' ) ?>"><?php _e( 'Delete My Avatar', 'buddypress' ) ?></a>
+                                        <p class="italics"><?php _e( 'Chcete-li smazat váš aktuální avatar, ale neinstalovat nový, použijte tlačítko "Smazat náhledový obrázek".'', 'buddypress' ) ?></p>
+                                        <a class="btn btn-primary no-deco" href="<?php bp_avatar_delete_link() ?>" title="<?php _e( 'Smazat náhledový obrázek', 'buddypress' ) ?>"><?php _e( 'Smazat náhledový obrázek', 'buddypress' ) ?></a>
                                 <?php endif; ?>
 
                                 <?php wp_nonce_field( 'bp_avatar_upload' ) ?>
@@ -48,13 +48,13 @@
 
 		<?php if ( 'crop-image' == bp_get_avatar_admin_step() ) : ?>
 
-                <div class="panel-heading">Crop Avatar</div>
+                <div class="panel-heading">Oříznout náhledový obrázek</div>
                         <div class="panel-body">
                             <?php do_action('template_notices') ?>
-                            <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Avatar to crop', 'buddypress') ?>" />
+                            <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Náhledový obrázek k oříznutí', 'buddypress') ?>" />
 
                             <div id="avatar-crop-pane">
-                                <img src="<?php bp_avatar_to_crop() ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Avatar preview', 'buddypress') ?>" />
+                                <img src="<?php bp_avatar_to_crop() ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Zobrazení náhledového obrázku', 'buddypress') ?>" />
                             </div>
 
                             <input class="btn btn-primary" type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e('Crop Image', 'buddypress') ?>" />

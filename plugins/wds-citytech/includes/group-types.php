@@ -294,15 +294,15 @@ function openlab_group_type_meta_box_cb( $group ) {
 
 	<ul>
 		<li>
-			<input type="radio" <?php checked( 'course', $group_type ) ?> value="course" name="openlab-group-type" /> Course
+			<input type="radio" <?php checked( 'course', $group_type ) ?> value="course" name="openlab-group-type" /> Kurz
 		</li>
 
 		<li>
-			<input type="radio" <?php checked( 'club', $group_type ) ?> value="club" name="openlab-group-type" /> Club
+			<input type="radio" <?php checked( 'club', $group_type ) ?> value="club" name="openlab-group-type" /> Skupina
 		</li>
 
 		<li>
-			<input type="radio" <?php checked( 'project', $group_type ) ?> value="project" name="openlab-group-type" /> Project
+			<input type="radio" <?php checked( 'project', $group_type ) ?> value="project" name="openlab-group-type" /> Projekt
 		</li>
 
 		<li>
@@ -379,7 +379,7 @@ function openlab_course_faculty_metabox() {
 
 	<div id="additional-faculty-admin" class="panel panel-default">
 		<fieldset>
-            <legend class="panel-heading">Faculty</legend>
+            <legend class="panel-heading">Správci a vyučující</legend>
             <div class="panel-body">
 				<?php /* Data about existing faculty */ ?>
 				<script type="text/javascript">var OL_Primary_Faculty_Existing = '<?php echo json_encode( $primary_faculty_data ) ?>';</script>
@@ -388,28 +388,28 @@ function openlab_course_faculty_metabox() {
 				<div class="subpanel">
 					<?php wp_nonce_field( 'openlab_faculty_autocomplete', '_ol_faculty_autocomplete_nonce', false ) ?>
 
-					<label for="primary-faculty-autocomplete">Primary Faculty</label>
+					<label for="primary-faculty-autocomplete">Hlavní správce / vyučující</label>
 
-					<p>This is usually the person creating the course.</p>
+					<p>Toto je obvykle osoba, která kurzu vytvořila.</p>
 
 					<input class="hide-if-no-js" type="textbox" id="primary-faculty-autocomplete" value="" />
 
 					<ul id="primary-faculty-list" class="inline-element-list"></ul>
 
-					<label class="sr-only hide-if-js" for="primary-faculty">Primary Faculty</label>
+					<label class="sr-only hide-if-js" for="primary-faculty">Základní fakulta</label>
 					<input class="hide-if-js" type="textbox" name="primary-faculty" id="primary-faculty" value="<?php echo esc_attr( $primary_faculty ) ?>" />
 				</div>
 
 				<div class="subpanel">
-					<label for="additional-faculty-autocomplete">Additional Faculty</label>
+					<label for="additional-faculty-autocomplete">Další správci / vyučující</label>
 
-					<p>If your course is taught by multiple instructors, list additional names on the Course Profile by typing the name in the box below, and select from the dropdown list. To become admins for this Course, these additional instructors must also join the Course and be promoted to admin.</p>
+					<p>Pokud je váš kurz vyučován nebo spravován více instruktory, zadejte jejich jména v poli níže a vyberte z rozbalovacího seznamu. Mají-li se stát vyučujícím / správcem tohoto kurzu, musí se tito další instruktoři také připojit ke kurzu a být povýšeni na administrátory.</p>
 
 					<input class="hide-if-no-js" type="textbox" id="additional-faculty-autocomplete" value="" />
 
 					<ul id="additional-faculty-list" class="inline-element-list"></ul>
 
-					<label class="sr-only hide-if-js" for="additional-faculty">Additional Faculty</label>
+					<label class="sr-only hide-if-js" for="additional-faculty">Další správci / vyučující</label>
 					<input class="hide-if-js" type="textbox" name="additional-faculty" id="additional-faculty" value="<?php echo esc_attr( implode( ', ', $addl_faculty ) ) ?>" />
 				</div>
 		</fieldset>

@@ -136,7 +136,7 @@
 
 				<p><?php _e( "If you'd like to remove the existing avatar but not upload a new one, please use the delete avatar button.", 'buddypress' ); ?></p>
 
-				<?php bp_button( array( 'id' => 'delete_group_avatar', 'component' => 'groups', 'wrapper_id' => 'delete-group-avatar-button', 'link_class' => 'edit', 'link_href' => bp_get_group_avatar_delete_link(), 'link_title' => __( 'Delete Avatar', 'buddypress' ), 'link_text' => __( 'Delete Avatar', 'buddypress' ) ) ); ?>
+				<?php bp_button( array( 'id' => 'delete_group_avatar', 'component' => 'groups', 'wrapper_id' => 'delete-group-avatar-button', 'link_class' => 'edit', 'link_href' => bp_get_group_avatar_delete_link(), 'link_title' => __( 'Smazat náhledový obrázek', 'buddypress' ), 'link_text' => __( 'Delete Avatar', 'buddypress' ) ) ); ?>
 
 			<?php endif; ?>
 
@@ -146,12 +146,12 @@
 
 	<?php if ( 'crop-image' == bp_get_avatar_admin_step() ) : ?>
 
-		<h3><?php _e( 'Crop Avatar', 'buddypress' ); ?></h3>
+		<h3><?php _e( 'Oříznout náhledový obrázek', 'buddypress' ); ?></h3>
 
-		<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-to-crop" class="avatar" alt="<?php esc_attr_e( 'Avatar to crop', 'buddypress' ); ?>" />
+		<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-to-crop" class="avatar" alt="<?php esc_attr_e( 'Náhledový obrázek k oříznutí', 'buddypress' ); ?>" />
 
 		<div id="avatar-crop-pane">
-			<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php esc_attr_e( 'Avatar preview', 'buddypress' ); ?>" />
+			<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php esc_attr_e( 'Zobrazení náhledového obrázku', 'buddypress' ); ?>" />
 		</div>
 
 		<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php esc_attr_e( 'Crop Image', 'buddypress' ); ?>" />
@@ -370,4 +370,3 @@
 <?php do_action( 'bp_after_group_admin_content' ); ?>
 
 </form><!-- #group-settings-form -->
-

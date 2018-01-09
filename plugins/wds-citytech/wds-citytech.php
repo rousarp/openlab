@@ -677,9 +677,9 @@ function wds_load_group_type( $group_type ) {
 
 	$return = '<div class="panel panel-default">';
 
-	$return .= '<div class="panel-heading">School(s)';
+	$return .= '<div class="panel-heading">Témata';
 	if ( openlab_is_school_required_for_group_type( $group_type ) && ( 'staff' != strtolower( $account_type ) || is_super_admin( get_current_user_id() ) ) ) {
-		$return .= ' <span class="required">(required)</span>';
+		$return .= ' <span class="required">(vyžadováno)</span>';
 	}
 	$return .= '</div><div class="panel-body">';
 	$return .= '<table>';
@@ -766,9 +766,9 @@ function wds_load_group_type( $group_type ) {
 
 	$return .= '<tr class="department-title">';
 
-	$return .= '<td colspan="2" class="block-title italics">Department(s)';
+	$return .= '<td colspan="2" class="block-title italics">Oblasti';
 	if ( openlab_is_school_required_for_group_type( $group_type ) && 'staff' != strtolower( $account_type ) ) {
-		$return .= ' <span class="required">(required)</span>';
+		$return .= ' <span class="required">(vyžadováno)</span>';
 	}
 	$return .= '</td></tr>';
 	$return .= '<tr class="departments"><td id="departments_html" colspan="2" aria-live="polite"></td>';
@@ -779,25 +779,25 @@ function wds_load_group_type( $group_type ) {
 	if ( 'course' == $group_type ) {
 
 		$return .= '<div class="panel panel-default">';
-		$return .= '<div class="panel-heading">Course Information</div>';
+		$return .= '<div class="panel-heading">Informace ke kurzu</div>';
 		$return .= '<div class="panel-body"><table>';
 
-		$return .= '<tr><td colspan="2"><p class="ol-tooltip">The following fields are not required, but including this information will make it easier for others to find your Course.</p></td></tr>';
+		$return .= '<tr><td colspan="2"><p class="ol-tooltip">Následující pole nejsou povinné, ale s těchto informacemi bude pro ostatní snazší tento kurz najít.</p></td></tr>';
 
 		$return .= '<tr class="additional-field course-code-field">';
-		$return .= '<td class="additional-field-label"><label class="passive" for="wds_course_code">Course Code:</label></td>';
+		$return .= '<td class="additional-field-label"><label class="passive" for="wds_course_code">Kód kurzu:</label></td>';
 		$return .= '<td><input class="form-control" type="text" id="wds_course_code" name="wds_course_code" value="' . $wds_course_code . '"></td>';
 		$return .= '</tr>';
 
 		$return .= '<tr class="additional-field section-code-field">';
-		$return .= '<td class="additional-field-label"><label class="passive" for="wds_section_code">Section Code:</label></td>';
+		$return .= '<td class="additional-field-label"><label class="passive" for="wds_section_code">Typ:</label></td>';
 		$return .= '<td><input class="form-control" type="text" id="wds_section_code" name="wds_section_code" value="' . $wds_section_code . '"></td>';
 		$return .= '</tr>';
 
 		$return .= '<tr class="additional-field semester-field">';
-		$return .= '<td class="additional-field-label"><label class="passive" for="wds_semester">Semester:</label></td>';
+		$return .= '<td class="additional-field-label"><label class="passive" for="wds_semester">Kvartál:</label></td>';
 		$return .= '<td><select class="form-control" id="wds_semester" name="wds_semester">';
-		$return .= '<option value="">--select one--';
+		$return .= '<option value="">--zvolte--';
 
 		$checked = $Spring = $Summer = $Fall = $Winter = '';
 
@@ -819,12 +819,12 @@ function wds_load_group_type( $group_type ) {
 		$return .= '</tr>';
 
 		$return .= '<tr class="additional-field year-field">';
-		$return .= '<td class="additional-field-label"><label class="passive" for="wds_year">Year:</label></td>';
+		$return .= '<td class="additional-field-label"><label class="passive" for="wds_year">Rok:</label></td>';
 		$return .= '<td><input class="form-control" type="text" id="wds_year" name="wds_year" value="' . $wds_year . '"></td>';
 		$return .= '</tr>';
 
 		$return .= '<tr class="additional-field additional-description-field">';
-		$return .= '<td colspan="2" class="additional-field-label"><label class="passive" for="additional-desc-html">Additional Description/HTML:</label></td></tr>';
+		$return .= '<td colspan="2" class="additional-field-label"><label class="passive" for="additional-desc-html">Doplňující popis/HTML:</label></td></tr>';
 		$return .= '<tr><td colspan="2"><textarea class="form-control" name="wds_course_html" id="additional-desc-html">' . $wds_course_html . '</textarea></td></tr>';
 		$return .= '</tr>';
 

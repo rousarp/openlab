@@ -65,7 +65,7 @@
                     <?php /* Create vs Clone for Courses */ ?>
                     <?php if ('course' == $group_type) : ?>
                         <div class="panel panel-default create-or-clone-selector">
-                            <div class="panel-heading semibold">Create New or Clone Existing?</div>
+                            <div class="panel-heading semibold">Vytvořit nový kurz nebo duplikovat již stávající?</div>
                             <div class="panel-body">
                             <p class="ol-tooltip clone-course-tooltip" id="clone-course-tooltip-2">Pokud vyučujete stejný kurz v předchozím semestru nebo v roce, může klonování ušetřit čas.</p>
 
@@ -89,7 +89,7 @@
 
                                 <li class="disable-if-js form-group radio form-inline">
                                     <label for="create-or-clone-clone" <?php echo ($course_num < 1 ? 'class="disabled-opt"' : ''); ?>><input type="radio" name="create-or-clone" id="create-or-clone-clone" value="clone" <?php checked((bool) $group_id_to_clone) ?> <?php echo ($course_num < 1 ? 'disabled' : ''); ?> />
-                                        Clone an Existing Course</label>
+                                        Duplikovat stávající kurz</label>
 
                                     <?php $user_groups = openlab_get_courses_owned_by_user(get_current_user_id()) ?>
 
@@ -104,7 +104,7 @@
                                 </li>
                             </ul>
 
-                            <p class="ol-clone-description italics" id="ol-clone-description">Note: The cloned course will copy the course profile, site set-up, and all docs, files, discussions, posts, and pages you've created. Posts and pages will be set to "draft" mode and menus will need to be reactivated. The cloned course will not copy course membership or member-created documents, files, discussions, comments or posts.</p>
+                            <p class="ol-clone-description italics" id="ol-clone-description">Poznámka: Duplikováním kurzu bude zkopírován profil kurzu, nastavení webu a všechny dokumenty, soubory, diskuse, příspěvky a stránky, které jste vytvořili. Pole a stránky budou nastaveny na režim "draft" a menu bude třeba znovu aktivovat. U duplikovaného kurzu nebudou kopírovány členové v kurzu ani dokumenty a soubory vytvořené členy, dále diskuze, komentáře nebo příspěvky.</p>
                             </div>
                         </div>
 
@@ -113,29 +113,29 @@
                     <?php /* Name/Description */ ?>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading semibold"><label for="group-name"><?php echo ucfirst($group_type); ?> Name <?php _e('(required)', 'buddypress') ?></label></div>
+                        <div class="panel-heading semibold"><label for="group-name"><?php echo ucfirst($group_type); ?> Název <?php _e('(required)', 'buddypress') ?></label></div>
                             <div class="panel-body">
                     <?php if ('course' == $group_type) : ?>
-                        <p class="ol-tooltip clone-course-tooltip" id="clone-course-tooltip-4">Please take a moment to consider the name of your new or cloned Course. We recommend keeping your Course Name under 50 characters. You can always change it later. We recommend the following format:</p>
+                        <p class="ol-tooltip clone-course-tooltip" id="clone-course-tooltip-4">Věnujte prosím chvíli, abyste zvážili název nového nebo klonovaného kurzu. Doporučujeme, abyste vedli jméno kurzu pod 50 znaků. Vždy jej můžete později změnit. Doporučujeme následující formát:</p>
                         <ul class="ol-tooltip" id="clone-course-tooltip-3">
-                            <li>CourseCode CourseName, Semester Year</li>
-                            <li>ARCH3522 NYC Arch, FA2013</li>
+                            <li>Kód kurzu Název Kurzu, Kvartál Rok</li>
+                            <li>ARCH3522 NYC Arch, I2018</li>
                         </ul>
 
                         <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" placeholder="Course Name" required />
 
                     <?php elseif ('portfolio' == $group_type) : ?>
-                        <p class="ol-tooltip">The suggested <?php echo $group_label ?> Name below uses your first and last name. If you do not wish to use your full name, you may change it now or at any time in the future.</p>
+                        <p class="ol-tooltip">Níže navrhovaný název používá vaše jméno a příjmení.Pokud nechcete používat celé jméno, můžete jej nyní nebo kdykoli změnit.</p>
 
                         <ul class="ol-tooltip">
-                            <li>FirstName LastName's <?php echo $group_label ?> </li>
-                            <li>Jane Smith's <?php echo $group_label ?> (Example)</li>
+                            <li>Portfolio - Jméno Příjmení <?php echo $group_label ?> </li>
+                            <li>Portfolio - Jan Novák <?php echo $group_label ?> (Příklad)</li>
                         </ul>
 
                         <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" required />
 
                     <?php else : ?>
-                        <p class="ol-tooltip">Please take a moment to consider the name of your <?php echo ucwords($group_type) ?>.  Choosing a name that clearly identifies your  <?php echo ucwords($group_type) ?> will make it easier for others to find your <?php echo ucwords($group_type) ?> profile. We recommend keeping your  <?php echo ucwords($group_type) ?> name under 50 characters.</p>
+                        <p class="ol-tooltip">Věnujte prosím chvilku pozornost názvu vaší / vašeho <?php echo ucwords($group_type) ?>.  Výběrem názvu, který jasně identifikuje váš / vaši  <?php echo ucwords($group_type) ?> usnadníte ostatním, aby našli profil vaší / vašeho <?php echo ucwords($group_type) ?>.Doporučujeme, aby název vaší / vašeho  <?php echo ucwords($group_type) ?> byl méně než 50 znaků.</p>
                         <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" required />
 
                     <?php endif ?>
@@ -143,7 +143,7 @@
                     </div>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading semibold"><label for="group-desc"><?php echo ucfirst($group_type); ?> Description <?php _e('(required)', 'buddypress') ?></label></div>
+                        <div class="panel-heading semibold"><label for="group-desc"><?php echo ucfirst($group_type); ?> Popis <?php _e('(required)', 'buddypress') ?></label></div>
                         <div class="panel-body">
                             <textarea class="form-control" name="group-desc" id="group-desc" required><?php bp_new_group_description() ?></textarea>
                         </div>
@@ -153,7 +153,7 @@
 
 					<?php if ( 'course' === $group_type ) : ?>
 						<p class="copyright-notice italics">
-							<strong>Copyright Note:</strong> Any content that you or your students create and post on the OpenLab, including for this Course, is automatically protected under the terms and conditions of a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution NonCommercial Share-Alike 3.0 license</a>, or any successor Creative Commons license. However, you are free to specify other copyright conditions (<a href="https://creativecommons.org/faq/">Learn more here</a>). You will need to specify the license on your Course Profile and Site if it differs from the general <a href="https://openlab.citytech.cuny.edu/about/terms-of-service/#license-to-site-users">OpenLab license</a>. Please <a href="https://openlab.citytech.cuny.edu/blog/help/contact-us">contact us</a> with any questions or <a href="https://openlab.citytech.cuny.edu/blog/help/copyright-and-fair-use-2/">read more in our Help section</a>.
+							<strong>Copyright Note:</strong> Jakýkoli obsah, který vy nebo vaši studenti vytvoříte a zveřejníte v OpenLabu, včetně tohoto kurzu, je automaticky chráněn za podmínek  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">licence Creative Commons Attribution NonCommercial Share-Alike 3.0</a>, nebo jakékoli následné licence Creative Commons. Můžete však určit další podmínky autorských práv (<a href="https://creativecommons.org/faq/">Další informace naleznete zde</a>). Budete muset zadat licenci na profilu kurzu a souvisejících webových stránek, pokud se liší od obecné <a href = "https://openlab.citytech.cuny.edu/about/terms-of-service/#license-to-site -user "> licence OpenLab </a>. Prosíme <a href="https://openlab.citytech.cuny.edu/blog/help/contact-us">kontaktujte nás </a> s dotazem nebo <a href ="https://openlab.citytech.cuny.edu/blog/help/copyright-and-fair-use-2/">čtěte více v sekci nápovědy </a>.
 						</p>
 					<?php endif; ?>
 
@@ -183,7 +183,7 @@
     <?php if (!bp_get_avatar_admin_step() || 'upload-image' == bp_get_avatar_admin_step()) : ?>
 
                         <div class="panel panel-default">
-                        <div class="panel-heading">Upload Avatar</div>
+                        <div class="panel-heading">Nahrát náhledový obrázek</div>
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-8">
@@ -205,7 +205,7 @@
                                     </div>
                                 </p>
 
-                                <p class="italics">To skip the avatar upload process, click the "Next Step" button.</p>
+                                <p class="italics">Chcete-li přeskočit proces nahrávání náhledového obrázku, klikněte na tlačítko "Další krok".</p>
                             </div>
                         </div>
                 </div>
@@ -216,13 +216,13 @@
     <?php if ('crop-image' == bp_get_avatar_admin_step()) : ?>
 
                         <div class="panel panel-default">
-                        <div class="panel-heading">Crop Avatar</div>
+                        <div class="panel-heading">Oříznout náhledový obrázek</div>
                         <div class="panel-body">
 
-                            <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Avatar to crop', 'buddypress') ?>" />
+                            <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Náhledový obrázek k oříznutí', 'buddypress') ?>" />
 
                             <div id="avatar-crop-pane">
-                                <img src="<?php bp_avatar_to_crop() ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Avatar preview', 'buddypress') ?>" />
+                                <img src="<?php bp_avatar_to_crop() ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Zobrazení náhledového obrázku', 'buddypress') ?>" />
                             </div>
 
                             <input class="btn btn-primary" type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e('Crop Image', 'buddypress') ?>" />

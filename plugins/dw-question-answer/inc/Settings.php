@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 // Callback for dwqa-general-settings Option
 function dwqa_question_registration_setting_display() {
@@ -11,7 +11,7 @@ function dwqa_question_registration_setting_display() {
 
 function dwqa_pages_settings_display() {
 	global  $dwqa_general_settings;
-	$archive_question_page = isset( $dwqa_general_settings['pages']['archive-question'] ) ? $dwqa_general_settings['pages']['archive-question'] : 0; 
+	$archive_question_page = isset( $dwqa_general_settings['pages']['archive-question'] ) ? $dwqa_general_settings['pages']['archive-question'] : 0;
 	?>
 	<p>
 		<?php
@@ -26,19 +26,19 @@ function dwqa_pages_settings_display() {
 	<?php
 }
 
-function dwqa_question_new_time_frame_display() { 
+function dwqa_question_new_time_frame_display() {
 	global  $dwqa_general_settings;
 	echo '<p><input type="text" name="dwqa_options[question-new-time-frame]" id="dwqa_options_question_new_time_frame" value="'.( isset( $dwqa_general_settings['question-new-time-frame'] ) ? $dwqa_general_settings['question-new-time-frame'] : 4 ).'" class="small-text" /><span class="description"> '.__( 'hours','dwqa' ).'<span title="'.__( 'A period of time in which new questions are highlighted and marked as New','dwqa' ).'">( ? )</span></span></p>';
 }
 
-function dwqa_question_overdue_time_frame_display() { 
+function dwqa_question_overdue_time_frame_display() {
 	global  $dwqa_general_settings;
 	echo '<p><input type="text" name="dwqa_options[question-overdue-time-frame]" id="dwqa_options_question_new_time_frame" value="'.( isset( $dwqa_general_settings['question-overdue-time-frame'] ) ? $dwqa_general_settings['question-overdue-time-frame'] : 2 ).'" class="small-text" /><span class="description"> '.__( 'days','dwqa' ).'<span title="'.__( 'A Question will be marked as overdue if it passes this period of time, starting from the time the question was submitted','dwqa' ).'">( ? )</span></span></p>';
 }
 
 function dwqa_submit_question_page_display(){
 	global  $dwqa_general_settings;
-	$submit_question_page = isset( $dwqa_general_settings['pages']['submit-question'] ) ? $dwqa_general_settings['pages']['submit-question'] : 0; 
+	$submit_question_page = isset( $dwqa_general_settings['pages']['submit-question'] ) ? $dwqa_general_settings['pages']['submit-question'] : 0;
 	?>
 	<p>
 		<?php
@@ -56,7 +56,7 @@ function dwqa_submit_question_page_display(){
 
 function dwqa_404_page_display(){
 	global  $dwqa_general_settings;
-	$submit_question_page = isset( $dwqa_general_settings['pages']['404'] ) ? $dwqa_general_settings['pages']['404'] : 0; 
+	$submit_question_page = isset( $dwqa_general_settings['pages']['404'] ) ? $dwqa_general_settings['pages']['404'] : 0;
 	?>
 	<p>
 		<?php
@@ -127,7 +127,7 @@ function dwqa_subscrible_enable_new_question_notification(){
 }
 // New Question - Enable Notification
 
-function dwqa_subscrible_new_question_email_subject_display(){ 
+function dwqa_subscrible_new_question_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_question_email_subject" name="dwqa_subscrible_new_question_email_subject" value="'.get_option( 'dwqa_subscrible_new_question_email_subject' ).'" class="regular-text" /></span></td>';
 }
 // New Question - Email subject
@@ -142,15 +142,15 @@ function dwqa_subscrible_new_question_email_display(){
 	) );
 	echo '<p><input data-template="new-question.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new question on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{user_avatar}</strong> - Question Author Avatar. <br />
-		<strong>{username}</strong> - Question Author Name. <br />
-		<strong>{user_link}</strong> - Question Author Posts Link.<br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{question_content}</strong> - Question Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové otázky na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Jméno webu. <br />
+		<strong>{user_avatar}</strong> -Náhledový obrázek autora dotazu. <br />
+		<strong>{username}</strong> - Jméno autora dotazu. <br />
+		<strong>{user_link}</strong> - Odkaz na příspěvky autora dotazu.<br />
+		<strong>{question_title}</strong> - Název dotazu. <br />
+		<strong>{question_link}</strong> - Odkaz na dotaz. <br />
+		<strong>{question_content}</strong> - Obsah dotazu. <br />
 	</div>';
 	echo '</td>';
 }
@@ -162,7 +162,7 @@ function dwqa_subscrible_enable_new_answer_notification(){
 }
 // New Answer - Enable Notification
 
-function dwqa_subscrible_new_answer_email_subject_display(){ 
+function dwqa_subscrible_new_answer_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_answer_email_subject" name="dwqa_subscrible_new_answer_email_subject" value="'.get_option( 'dwqa_subscrible_new_answer_email_subject' ).'" class="regular-text" /></span></td>';
 }
 // New Answer - Email Subject
@@ -177,16 +177,16 @@ function dwqa_subscrible_new_answer_email_display(){
 	) );
 	echo '<p><input data-template="new-answer.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new answer on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{site_description}</strong> - Your site description. <br />
-		<strong>{answer_avatar}</strong> - Answer Author Avatar. <br />
-		<strong>{answer_author}</strong> - Answer Author Name. <br />
-		<strong>{answer_author_link}</strong> - Answer Author Link. <br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{answer_content}</strong> - Answer Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové otázky na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Jméno webu. <br />
+		<strong>{site_description}</strong> - Popis webu. <br />
+		<strong>{answer_avatar}</strong> - Náhledový obrázek autora odpovědi. <br />
+		<strong>{answer_author}</strong> - Jméno autora odpovědi. <br />
+		<strong>{answer_author_link}</strong> - Odkaz na autora dotazu. <br />
+		<strong>{question_title}</strong> - Název dotazu. <br />
+		<strong>{question_link}</strong> - Odkaz na dotaz. <br />
+		<strong>{answer_content}</strong> - Obsah odpovědi. <br />
 
 	</div>';
 	echo '</td>';
@@ -198,7 +198,7 @@ function dwqa_subscrible_enable_new_answer_followers_notification(){
 }
 // New Answer - Follow - Enable Notification
 
-function dwqa_subscrible_new_answer_followers_email_subject_display(){ 
+function dwqa_subscrible_new_answer_followers_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_answer_followers_email_subject" name="dwqa_subscrible_new_answer_followers_email_subject" value="'.get_option( 'dwqa_subscrible_new_answer_followers_email_subject' ).'" class="regular-text" /></span></td>';
 }
 // New Answer - Follow - Email Subject
@@ -213,16 +213,16 @@ function dwqa_subscrible_new_answer_followers_email_display(){
 	) );
 	echo '<p><input data-template="new-answer-followers.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new answer on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{site_description}</strong> - Your site description. <br />
-		<strong>{answer_avatar}</strong> - Answer Author Avatar. <br />
-		<strong>{answer_author}</strong> - Answer Author Name. <br />
-		<strong>{answer_author_link}</strong> - Answer Author Link. <br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{answer_content}</strong> - Answer Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové otázky na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Název webu. <br />
+		<strong>{site_description}</strong> - Popis webu. <br />
+		<strong>{answer_avatar}</strong> - Náhledový obrázek autora odpovědi. <br />
+		<strong>{answer_author}</strong> - Jméno autora odpovědi. <br />
+		<strong>{answer_author_link}</strong> - Odkaz na autora odpovědi. <br />
+		<strong>{question_title}</strong> - Název otázky. <br />
+		<strong>{question_link}</strong> - Odkaz na otázku. <br />
+		<strong>{answer_content}</strong> - Obsah odpovědi. <br />
 
 	</div>';
 	echo '</td>';
@@ -234,7 +234,7 @@ function dwqa_subscrible_enable_new_comment_question_notification(){
 }
 // New Comment - Question - Enable Notification
 
-function dwqa_subscrible_new_comment_question_email_subject_display(){ 
+function dwqa_subscrible_new_comment_question_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_comment_question_email_subject" name="dwqa_subscrible_new_comment_question_email_subject" value="'.get_option( 'dwqa_subscrible_new_comment_question_email_subject' ).'" class="regular-text" /></td>';
 }
 // New Comment - Question - Email subject
@@ -248,17 +248,17 @@ function dwqa_subscrible_new_comment_question_email_display(){
 	) );
 	echo '<p><input data-editor="dwqa_subscrible_new_comment_question_email" data-template="new-comment-question.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new answer on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{site_description}</strong> - Your site description. <br />
-		<strong>{question_author}</strong> - Question Author Name. <br />
-		<strong>{comment_author}</strong> - Comment Author Name. <br />
-		<strong>{comment_author_avatar}</strong> - Comment Author Avatar. <br />
-		<strong>{comment_author_link}</strong> - Comment Author Link. <br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{comment_content}</strong> - Comment Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové odpovědi na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Název webu. <br />
+		<strong>{site_description}</strong> - Popis webu. <br />
+		<strong>{question_author}</strong> - Jméno autora otázky. <br />
+		<strong>{comment_author}</strong> - Jméno autora komentáře. <br />
+		<strong>{comment_author_avatar}</strong> - Náhledový obrázek autora komentáře. <br />
+		<strong>{comment_author_link}</strong> - Odkaz na autora komentáře. <br />
+		<strong>{question_title}</strong> - Název otázeky. <br />
+		<strong>{question_link}</strong> - Odkaz na otázku. <br />
+		<strong>{comment_content}</strong> - Obsah komentáře. <br />
 	</div>';
 	echo '</td>';
 }
@@ -269,7 +269,7 @@ function dwqa_subscrible_enable_new_comment_question_followers_notification(){
 }
 // New Comment - Question - Follow - Enable Notification
 
-function dwqa_subscrible_new_comment_question_followers_email_subject_display(){ 
+function dwqa_subscrible_new_comment_question_followers_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_comment_question_followers_email_subject" name="dwqa_subscrible_new_comment_question_followers_email_subject" value="'.get_option( 'dwqa_subscrible_new_comment_question_followers_email_subject' ).'" class="widefat" /></td>';
 }
 // New Comment - Question - Follow - Email subject
@@ -283,17 +283,17 @@ function dwqa_subscrible_new_comment_question_followers_email_display(){
 	) );
 	echo '<p><input data-template="new-comment-question-followers.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new answer on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{site_description}</strong> - Your site description. <br />
-		<strong>{question_author}</strong> - Question Author Name. <br />
-		<strong>{comment_author}</strong> - Comment Author Name. <br />
-		<strong>{comment_author_avatar}</strong> - Comment Author Avatar. <br />
-		<strong>{comment_author_link}</strong> - Comment Author Link. <br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{comment_content}</strong> - Comment Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové odpovědi na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Název webu. <br />
+		<strong>{site_description}</strong> - Popis webu. <br />
+		<strong>{question_author}</strong> - Jméno autora otázky. <br />
+		<strong>{comment_author}</strong> - Jméno autora komentáře. <br />
+		<strong>{comment_author_avatar}</strong> - Náhledový obrázek autora komentáře. <br />
+		<strong>{comment_author_link}</strong> - Okaz na autora komentáře. <br />
+		<strong>{question_title}</strong> - Název otázky. <br />
+		<strong>{question_link}</strong> - Odkaz na otázku. <br />
+		<strong>{comment_content}</strong> - Obsah komentáře. <br />
 	</div>';
 	echo '</td>';
 }
@@ -304,7 +304,7 @@ function dwqa_subscrible_enable_new_comment_answer_notification(){
 }
 // New Comment - Answer - Enable Notification
 
-function dwqa_subscrible_new_comment_answer_email_subject_display(){ 
+function dwqa_subscrible_new_comment_answer_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_comment_answer_email_subject" name="dwqa_subscrible_new_comment_answer_email_subject" value="'.get_option( 'dwqa_subscrible_new_comment_answer_email_subject' ).'" class="regular-text" /></td>';
 }
 // New Comment - Answer - Email Subject
@@ -318,17 +318,17 @@ function dwqa_subscrible_new_comment_answer_email_display(){
 	) );
 	echo '<p><input data-template="new-comment-answer.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new answer on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{site_description}</strong> - Your site description. <br />
-		<strong>{answer_author}</strong> - Answer Author Name. <br />
-		<strong>{comment_author}</strong> - Comment Author Name. <br />
-		<strong>{comment_author_avatar}</strong> - Comment Author Avatar. <br />
-		<strong>{comment_author_link}</strong> - Comment Author Link. <br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{comment_content}</strong> - Comment Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové odpovědi na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Název webu. <br />
+		<strong>{site_description}</strong> - Popis webu. <br />
+		<strong>{answer_author}</strong> - Jméno autora odpovědi. <br />
+		<strong>{comment_author}</strong> - Jméno autora komentáře. <br />
+		<strong>{comment_author_avatar}</strong> - Náhledový obrázek autora komentáře. <br />
+		<strong>{comment_author_link}</strong> - Odkaz na autora komentáře. <br />
+		<strong>{question_title}</strong> - Název otázky. <br />
+		<strong>{question_link}</strong> - Odkaz na otázku. <br />
+		<strong>{comment_content}</strong> - Obsah komentáře. <br />
 	</div>';
 	echo '</td>';
 }
@@ -339,7 +339,7 @@ function dwqa_subscrible_enable_new_comment_answer_followers_notification(){
 }
 // New Comment - Answer - Follow - Enable Notification
 
-function dwqa_subscrible_new_comment_answer_followers_email_subject_display(){ 
+function dwqa_subscrible_new_comment_answer_followers_email_subject_display(){
 	echo '<th>'.__( 'Email subject','dwqa' ).'</th><td><input type="text" id="dwqa_subscrible_new_comment_answer_followers_email_subject" name="dwqa_subscrible_new_comment_answer_followers_email_subject" value="'.get_option( 'dwqa_subscrible_new_comment_answer_followers_email_subject' ).'" class="regular-text" /></td>';
 }
 // New Comment - Answer - Follow - Email Subject
@@ -353,23 +353,23 @@ function dwqa_subscrible_new_comment_answer_followers_email_display(){
 	) );
 	echo '<p><input data-template="new-comment-answer-followers.html" type="button" class="button dwqa-reset-email-template" value="Reset Template"></p>';
 	echo '<div class="description">
-		Enter the email that is sent to Administrator when have new answer on your site. HTML is accepted. Available template settings:<br>
-		<strong>{site_logo}</strong> - Your site logo. <br />
-		<strong>{site_name}</strong> - Your site name. <br />
-		<strong>{site_description}</strong> - Your site description. <br />
-		<strong>{answer_author}</strong> - Answer Author Name. <br />
-		<strong>{comment_author}</strong> - Comment Author Name. <br />
-		<strong>{comment_author_avatar}</strong> - Comment Author Avatar. <br />
-		<strong>{comment_author_link}</strong> - Comment Author Link. <br />
-		<strong>{question_title}</strong> - Question Title. <br />
-		<strong>{question_link}</strong> - Question Link. <br />
-		<strong>{comment_content}</strong> - Comment Content. <br />
+		Zadejte e-mail, který je odeslán administrátorovi, pokud máte nové odpovědi na vašem webu. HTML je povoleno. Dostupné nastavení šablony:<br>
+		<strong>{site_logo}</strong> - Logo vašeho webu. <br />
+		<strong>{site_name}</strong> - Název webu. <br />
+		<strong>{site_description}</strong> - Popis webu. <br />
+		<strong>{answer_author}</strong> - Jméno autora odpovědi. <br />
+		<strong>{comment_author}</strong> - Jméno autora komentáře. <br />
+		<strong>{comment_author_avatar}</strong> - Náhledový obrázek autora komentáře. <br />
+		<strong>{comment_author_link}</strong> - Odkaz na autora komentáře. <br />
+		<strong>{question_title}</strong> - Název otázky. <br />
+		<strong>{question_link}</strong> - Odkaz na otázku. <br />
+		<strong>{comment_content}</strong> - Obsah komentáře. <br />
 	</div>';
 	echo '</td>';
 }
 // New Comment - Answer - Follow - Email Content
 
-// End email setting html 
+// End email setting html
 
 function dwqa_question_rewrite_display(){
 	global  $dwqa_general_settings;
@@ -412,7 +412,7 @@ function dwqa_permission_display(){
 				<td><input type="checkbox" <?php checked( true, ( isset( $perms[$key]['question']['post'] ) ? $perms[$key]['question']['post'] : false ) ); ?> name="dwqa_permission[<?php echo $key ?>][question][post]" value="1"></td>
 				<td><input type="checkbox" <?php checked( true, ( isset( $perms[$key]['question']['edit'] ) ? $perms[$key]['question']['edit'] : false ) ); ?> name="dwqa_permission[<?php echo $key ?>][question][edit]" value="1"></td>
 				<td><input type="checkbox" <?php checked( true, ( isset( $perms[$key]['question']['delete'] ) ? $perms[$key]['question']['delete'] : false ) ); ?> name="dwqa_permission[<?php echo $key ?>][question][delete]" value="1"></td>
-			   
+
 			</tr>
 		<?php endforeach; ?>
 			<tr class="group available">
@@ -511,7 +511,7 @@ function dwqa_captcha_in_question_display() {
 
 function dwqa_captcha_in_single_question_display() {
 	global $dwqa_general_settings;
-	
+
 	echo '<p><input type="checkbox" name="dwqa_options[captcha-in-single-question]"  id="dwqa_options_captcha_in_question" value="1" '.checked( 1, (isset($dwqa_general_settings['captcha-in-single-question'] ) ? $dwqa_general_settings['captcha-in-single-question'] : false ) , false ) .'><span class="description">'.__( 'Enable captcha on single question page.','dwqa' ).'</span></p>';
 }
 
@@ -554,13 +554,13 @@ function dwqa_answer_per_page_display() {
 
 function dwqa_allow_anonymous_vote() {
 	global $dwqa_general_settings;
-	
+
 	echo '<p><label for="dwqa_options_allow_anonymous_vote"><input type="checkbox" name="dwqa_options[allow-anonymous-vote]"  id="dwqa_options_allow_anonymous_vote" value="1" '.checked( 1, (isset($dwqa_general_settings['allow-anonymous-vote'] ) ? $dwqa_general_settings['allow-anonymous-vote'] : false ) , false ) .'><span class="description">'.__( 'Allow anonymous vote.', 'dwqa' ).'</span></label></p>';
 }
 
 function dwqa_use_akismet_antispam() {
 	global $dwqa_general_settings;
-	
+
 	echo '<p><label for="dwqa_options_use_akismet_antispam"><input type="checkbox" name="dwqa_options[use-akismet-antispam]"  id="dwqa_options_use_akismet_antispam" value="1" '.checked( 1, (isset($dwqa_general_settings['use-akismet-antispam'] ) ? $dwqa_general_settings['use-akismet-antispam'] : false ) , false ) .'><span class="description">'.__( 'Enable Akismet', 'dwqa' ).'</span></label></p>';
 }
 
@@ -573,9 +573,9 @@ function dwqa_akismet_api_key() {
 
 function dwqa_akismet_connection_status() {
 	global $dwqa_general_settings;
-	
+
 	$status = __( 'Not Connected', 'dwqa' );
-	
+
 	if(isset($dwqa_general_settings['use-akismet-antispam']) && $dwqa_general_settings['use-akismet-antispam']){
 		//enable akismet
 		if ( class_exists( 'DWQA_Akismet' ) ){
@@ -590,7 +590,7 @@ function dwqa_akismet_connection_status() {
 
 function dwqa_use_auto_closure() {
 	global $dwqa_general_settings;
-	
+
 	echo '<p><label for="dwqa_options_use_auto_closure"><input type="checkbox" name="dwqa_options[use-auto-closure]"  id="dwqa_options_use_auto_closure" value="1" '.checked( 1, (isset($dwqa_general_settings['use-auto-closure'] ) ? $dwqa_general_settings['use-auto-closure'] : false ) , false ) .'><span class="description">'.__( 'Enable Auto Closure', 'dwqa' ).'</span></label></p>';
 }
 function dwqa_number_day_auto_closure() {
@@ -603,13 +603,13 @@ function dwqa_number_day_auto_closure() {
 
 function dwqa_enable_private_question_display() {
 	global $dwqa_general_settings;
-	
+
 	echo '<p><label for="dwqa_options_enable_private_question"><input type="checkbox" name="dwqa_options[enable-private-question]"  id="dwqa_options_enable_private_question" value="1" '.checked( 1, (isset($dwqa_general_settings['enable-private-question'] ) ? $dwqa_general_settings['enable-private-question'] : false ) , false ) .'><span class="description">'.__( 'Allow members to post private question.','dwqa' ).'</span></label></p>';
 }
 
 function dwqa_enable_review_question_mode() {
 	global $dwqa_general_settings;
-	
+
 	echo '<p><label for="dwqa_options_enable_review_question"><input type="checkbox" name="dwqa_options[enable-review-question]"  id="dwqa_options_enable_review_question" value="1" '.checked( 1, (isset($dwqa_general_settings['enable-review-question'] ) ? $dwqa_general_settings['enable-review-question'] : false ) , false ) .'><span class="description">'.__( 'Question must be manually approved.','dwqa' ).'</span></label></p>';
 }
 
@@ -659,7 +659,7 @@ function dwqa_permalink_section_layout() {
 function dwqa_get_rewrite_slugs() {
 	global  $dwqa_general_settings;
 	$dwqa_general_settings = get_option( 'dwqa_options' );
-	
+
 	$rewrite_slugs = array();
 
 	$question_rewrite = get_option( 'dwqa-question-rewrite', 'question' );
@@ -706,7 +706,7 @@ function dwqa_is_captcha_enable() {
 function dwqa_is_captcha_enable_in_submit_question() {
 	global $dwqa_general_settings;
 	$captcha_in_question = isset( $dwqa_general_settings['captcha-in-question'] ) ? $dwqa_general_settings['captcha-in-question'] : false;
-	
+
 	if ( $captcha_in_question ) {
 		return true;
 	}
@@ -718,7 +718,7 @@ function dwqa_is_captcha_enable_in_single_question() {
 	$captcha_in_single_question = isset( $dwqa_general_settings['captcha-in-single-question'] ) ? $dwqa_general_settings['captcha-in-single-question'] : false;
 	if ( $captcha_in_single_question ) {
 		return true;
-	} 
+	}
 	return false;
 }
 
@@ -769,7 +769,7 @@ class DWQA_Settings {
 					) );
 				}
 			}
-			
+
 			// Flush rewrite when rewrite rule settings change
 			flush_rewrite_rules();
 		}
@@ -779,11 +779,11 @@ class DWQA_Settings {
 	public function admin_menu(){
 		global $dwqa_setting_page;
 		$dwqa_setting_page = add_submenu_page( 'edit.php?post_type=dwqa-question', __( 'Plugin Settings','dwqa' ), __( 'Settings','dwqa' ), 'manage_options', 'dwqa-settings', array( $this, 'settings_display' )  );
-	}   
+	}
 
 	public function init_options(){
 		global $dwqa_options, $dwqa_general_settings;
-		$dwqa_general_settings = $dwqa_options = wp_parse_args( get_option( 'dwqa_options' ), array( 
+		$dwqa_general_settings = $dwqa_options = wp_parse_args( get_option( 'dwqa_options' ), array(
 			'pages'     => array(
 					'submit-question'   => 0,
 					'archive-question'  => 0,
@@ -828,60 +828,60 @@ class DWQA_Settings {
 		global  $dwqa_general_settings;
 
 		//Register Setting Sections
-		add_settings_section( 
-			'dwqa-general-settings', 
+		add_settings_section(
+			'dwqa-general-settings',
 			__( 'Page Settings', 'dwqa' ),
-			null, 
-			'dwqa-settings' 
+			null,
+			'dwqa-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[pages][archive-question]', 
-			__( 'Question List Page', 'dwqa' ), 
-			'dwqa_pages_settings_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[pages][archive-question]',
+			__( 'Question List Page', 'dwqa' ),
+			'dwqa_pages_settings_display',
+			'dwqa-settings',
 			'dwqa-general-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[pages][submit-question]', 
-			__( 'Ask Question Page', 'dwqa' ), 
-			'dwqa_submit_question_page_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[pages][submit-question]',
+			__( 'Ask Question Page', 'dwqa' ),
+			'dwqa_submit_question_page_display',
+			'dwqa-settings',
 			'dwqa-general-settings'
 		);
 
-		// add_settings_field( 
-		// 	'dwqa_options[single-template]', 
-		// 	__( 'Single Question Template', 'dwqa' ), 
-		// 	'dwqa_single_template_options', 
-		// 	'dwqa-settings', 
-		// 	'dwqa-general-settings' 
+		// add_settings_field(
+		// 	'dwqa_options[single-template]',
+		// 	__( 'Single Question Template', 'dwqa' ),
+		// 	'dwqa_single_template_options',
+		// 	'dwqa-settings',
+		// 	'dwqa-general-settings'
 		// );
 
 		do_action( 'dwqa_register_setting_section' );
 
 		//Time setting
-//		add_settings_section( 
-//			'dwqa-time-settings', 
-//			__( 'Time settings','dwqa' ), 
-//			null, 
-//			'dwqa-settings' 
+//		add_settings_section(
+//			'dwqa-time-settings',
+//			__( 'Time settings','dwqa' ),
+//			null,
+//			'dwqa-settings'
 //		);
 //
-//		add_settings_field( 
-//			'dwqa_options[question-new-time-frame]', 
-//			__( 'New Question Time Frame', 'dwqa' ), 
-//			'dwqa_question_new_time_frame_display', 
-//			'dwqa-settings', 
+//		add_settings_field(
+//			'dwqa_options[question-new-time-frame]',
+//			__( 'New Question Time Frame', 'dwqa' ),
+//			'dwqa_question_new_time_frame_display',
+//			'dwqa-settings',
 //			'dwqa-time-settings'
 //		);
 //
-//		add_settings_field( 
-//			'dwqa_options[question-overdue-time-frame]', 
-//			__( 'Question Overdue - Time Frame', 'dwqa' ), 
-//			'dwqa_question_overdue_time_frame_display', 
-//			'dwqa-settings', 
+//		add_settings_field(
+//			'dwqa_options[question-overdue-time-frame]',
+//			__( 'Question Overdue - Time Frame', 'dwqa' ),
+//			'dwqa_question_overdue_time_frame_display',
+//			'dwqa-settings',
 //			'dwqa-time-settings'
 //		);
 
@@ -893,27 +893,27 @@ class DWQA_Settings {
 			'dwqa-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[posts-per-page]', 
-			__( 'Archive Page Show At Most','dwqa' ), 
-			'dwqa_posts_per_page_display', 
-			'dwqa-settings', 
-			'dwqa-misc-settings' 
-		);
-
-		add_settings_field( 
-			'dwqa_options[enable-review-question]', 
-			__( 'Before A Question Appears', 'dwqa' ), 
-			'dwqa_enable_review_question_mode', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[posts-per-page]',
+			__( 'Archive Page Show At Most','dwqa' ),
+			'dwqa_posts_per_page_display',
+			'dwqa-settings',
 			'dwqa-misc-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[enable-private-question]', 
-			__( 'Other Question Settings', 'dwqa' ), 
-			'dwqa_enable_private_question_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[enable-review-question]',
+			__( 'Before A Question Appears', 'dwqa' ),
+			'dwqa_enable_review_question_mode',
+			'dwqa-settings',
+			'dwqa-misc-settings'
+		);
+
+		add_settings_field(
+			'dwqa_options[enable-private-question]',
+			__( 'Other Question Settings', 'dwqa' ),
+			'dwqa_enable_private_question_display',
+			'dwqa-settings',
 			'dwqa-misc-settings'
 		);
 
@@ -949,14 +949,14 @@ class DWQA_Settings {
 			'dwqa-answer-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[answer-per-page]', 
-			false, 
-			'dwqa_answer_per_page_display', 
-			'dwqa-settings', 
-			'dwqa-answer-settings' 
+		add_settings_field(
+			'dwqa_options[answer-per-page]',
+			false,
+			'dwqa_answer_per_page_display',
+			'dwqa-settings',
+			'dwqa-answer-settings'
 		);
-		
+
 		// Vote Settings
 		add_settings_section(
 			'dwqa-vote-settings',
@@ -1002,7 +1002,7 @@ class DWQA_Settings {
 			'dwqa-settings',
 			'dwqa-akismet-settings'
 		);
-		
+
 		//Auto closure Settings
 		add_settings_section(
 			'dwqa-auto-closure-settings',
@@ -1025,37 +1025,37 @@ class DWQA_Settings {
 			'dwqa-settings',
 			'dwqa-auto-closure-settings'
 		);
-		
+
 		//Captcha Setting
 
-		add_settings_section( 
-			'dwqa-captcha-settings', 
-			__( 'Captcha Settings','dwqa' ), 
-			null, 
-			'dwqa-settings' 
+		add_settings_section(
+			'dwqa-captcha-settings',
+			__( 'Captcha Settings','dwqa' ),
+			null,
+			'dwqa-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[captcha-type]', 
-			__( 'Type', 'dwqa' ), 
+		add_settings_field(
+			'dwqa_options[captcha-type]',
+			__( 'Type', 'dwqa' ),
 			'dwqa_captcha_select_type_display',
-			'dwqa-settings', 
-			'dwqa-captcha-settings'
-		);
-
-		add_settings_field( 
-			'dwqa_options[captcha-in-question]', 
-			__( 'Ask Question Page', 'dwqa' ), 
-			'dwqa_captcha_in_question_display', 
 			'dwqa-settings',
 			'dwqa-captcha-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[captcha-in-single-question]', 
-			__( 'Single Question Page', 'dwqa' ), 
-			'dwqa_captcha_in_single_question_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[captcha-in-question]',
+			__( 'Ask Question Page', 'dwqa' ),
+			'dwqa_captcha_in_question_display',
+			'dwqa-settings',
+			'dwqa-captcha-settings'
+		);
+
+		add_settings_field(
+			'dwqa_options[captcha-in-single-question]',
+			__( 'Single Question Page', 'dwqa' ),
+			'dwqa_captcha_in_single_question_display',
+			'dwqa-settings',
 			'dwqa-captcha-settings'
 		);
 
@@ -1063,44 +1063,44 @@ class DWQA_Settings {
 
 
 		//Permalink
-		add_settings_section( 
-			'dwqa-permalink-settings', 
-			__( 'Permalink Settings','dwqa' ), 
+		add_settings_section(
+			'dwqa-permalink-settings',
+			__( 'Permalink Settings','dwqa' ),
 			'dwqa_permalink_section_layout',
-			'dwqa-settings' 
+			'dwqa-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[question-rewrite]', 
-			__( 'Question Base', 'dwqa' ), 
-			'dwqa_question_rewrite_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[question-rewrite]',
+			__( 'Question Base', 'dwqa' ),
+			'dwqa_question_rewrite_display',
+			'dwqa-settings',
 			'dwqa-permalink-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[question-category-rewrite]', 
-			__( 'Question Category Base', 'dwqa' ), 
-			'dwqa_question_category_rewrite_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[question-category-rewrite]',
+			__( 'Question Category Base', 'dwqa' ),
+			'dwqa_question_category_rewrite_display',
+			'dwqa-settings',
 			'dwqa-permalink-settings'
 		);
 
-		add_settings_field( 
-			'dwqa_options[question-tag-rewrite]', 
-			__( 'Question Tag Base', 'dwqa' ), 
-			'dwqa_question_tag_rewrite_display', 
-			'dwqa-settings', 
+		add_settings_field(
+			'dwqa_options[question-tag-rewrite]',
+			__( 'Question Tag Base', 'dwqa' ),
+			'dwqa_question_tag_rewrite_display',
+			'dwqa-settings',
 			'dwqa-permalink-settings'
 		);
 
 		register_setting( 'dwqa-settings', 'dwqa_options' );
-		
-		add_settings_section( 
-			'dwqa-subscribe-settings', 
+
+		add_settings_section(
+			'dwqa-subscribe-settings',
 			false,
 			false,
-			'dwqa-email' 
+			'dwqa-email'
 		);
 
 		add_settings_section(
@@ -1125,61 +1125,61 @@ class DWQA_Settings {
 		);
 
 		// Send to address setting
-		// add_settings_field( 
-		//     'dwqa_subscrible_sendto_address', 
-		//     __( 'Admin Email', 'dwqa' ), 
-		//     array( $this, 'email_sendto_address_display' ), 
-		//     'dwqa-email', 
+		// add_settings_field(
+		//     'dwqa_subscrible_sendto_address',
+		//     __( 'Admin Email', 'dwqa' ),
+		//     array( $this, 'email_sendto_address_display' ),
+		//     'dwqa-email',
 		//     'dwqa-subscribe-settings'
 		// );
 		register_setting( 'dwqa-subscribe-settings-new-question', 'dwqa_subscrible_sendto_address' );
 
 		// Cc address setting
-		// add_settings_field( 
-		//     'dwqa_subscrible_cc_address', 
-		//     __( 'Cc', 'dwqa' ), 
-		//     array( $this, 'email_cc_address_display' ), 
-		//     'dwqa-email', 
+		// add_settings_field(
+		//     'dwqa_subscrible_cc_address',
+		//     __( 'Cc', 'dwqa' ),
+		//     array( $this, 'email_cc_address_display' ),
+		//     'dwqa-email',
 		//     'dwqa-subscribe-settings'
 		// );
 		register_setting( 'dwqa-subscribe-settings-new-question', 'dwqa_subscrible_cc_address' );
 
 		// Bcc address setting
-		// add_settings_field( 
-		//     'dwqa_subscrible_bcc_address', 
-		//     __( 'Bcc', 'dwqa' ), 
-		//     array( $this, 'email_bcc_address_display' ), 
-		//     'dwqa-email', 
+		// add_settings_field(
+		//     'dwqa_subscrible_bcc_address',
+		//     __( 'Bcc', 'dwqa' ),
+		//     array( $this, 'email_bcc_address_display' ),
+		//     'dwqa-email',
 		//     'dwqa-subscribe-settings'
 		// );
 		register_setting( 'dwqa-subscribe-settings-new-question', 'dwqa_subscrible_bcc_address' );
 
 		// Bcc address setting
-		add_settings_field( 
-			'dwqa_subscrible_from_address', 
-			__( 'From Email', 'dwqa' ), 
-			array( $this, 'email_from_address_display' ), 
-			'dwqa-email', 
+		add_settings_field(
+			'dwqa_subscrible_from_address',
+			__( 'From Email', 'dwqa' ),
+			array( $this, 'email_from_address_display' ),
+			'dwqa-email',
 			'dwqa-subscribe-settings'
 		);
 		register_setting( 'dwqa-subscribe-settings', 'dwqa_subscrible_from_address' );
 
 		// Send copy
-		add_settings_field( 
-			'dwqa_subscrible_send_copy_to_admin', 
-			false, 
-			array( $this, 'email_send_copy_to_admin' ), 
-			'dwqa-email', 
+		add_settings_field(
+			'dwqa_subscrible_send_copy_to_admin',
+			false,
+			array( $this, 'email_send_copy_to_admin' ),
+			'dwqa-email',
 			'dwqa-subscribe-settings'
 		);
 		register_setting( 'dwqa-subscribe-settings', 'dwqa_subscrible_send_copy_to_admin' );
 
 		// Logo setting in for email template
-		// add_settings_field( 
-		//     'dwqa_subscrible_email_logo', 
-		//     __( 'Email Logo', 'dwqa' ), 
-		//     'dwqa_subscrible_email_logo_display', 
-		//     'dwqa-email', 
+		// add_settings_field(
+		//     'dwqa_subscrible_email_logo',
+		//     __( 'Email Logo', 'dwqa' ),
+		//     'dwqa_subscrible_email_logo_display',
+		//     'dwqa-email',
 		//     'dwqa-subscribe-settings'
 		// );
 		register_setting( 'dwqa-subscribe-settings', 'dwqa_subscrible_email_logo' );
@@ -1223,22 +1223,22 @@ class DWQA_Settings {
 		register_setting( 'dwqa-subscribe-settings-new-comment', 'dwqa_subscrible_enable_new_comment_answer_followers_notification' );
 
 
-		add_settings_section( 
-			'dwqa-permission-settings', 
+		add_settings_section(
+			'dwqa-permission-settings',
 			__( 'Group Permission','dwqa' ),
 			false,
-			'dwqa-permission' 
+			'dwqa-permission'
 		);
 
-		add_settings_field( 
-			'dwqa_permission', 
-			__( 'Group Permission','dwqa' ), 
-			'dwqa_permission_display', 
-			'dwqa-permission', 
-			'dwqa-permission-settings' 
+		add_settings_field(
+			'dwqa_permission',
+			__( 'Group Permission','dwqa' ),
+			'dwqa_permission_display',
+			'dwqa-permission',
+			'dwqa-permission-settings'
 		);
 
-		register_setting( 'dwqa-permission-settings', 'dwqa_permission' );    
+		register_setting( 'dwqa-permission-settings', 'dwqa_permission' );
 	}
 
 	public function settings_display(){
@@ -1261,21 +1261,21 @@ class DWQA_Settings {
 		</style>
 		<div class="wrap">
 			<h2><?php _e( 'DWQA Settings', 'dwqa' ) ?></h2>
-			<?php settings_errors(); ?>  
-			<?php $active_tab = isset( $_GET[ 'tab' ] ) ? esc_html( $_GET['tab'] ) : 'general'; ?>  
-			<h2 class="nav-tab-wrapper">  
-				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=general" class="nav-tab <?php echo $active_tab == 'general' ? 'nav-tab-active' : ''; ?>"><?php _e( 'General','dwqa' ); ?></a> 
-				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=email" class="nav-tab <?php echo $active_tab == 'email' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Emails','dwqa' ); ?></a> 
+			<?php settings_errors(); ?>
+			<?php $active_tab = isset( $_GET[ 'tab' ] ) ? esc_html( $_GET['tab'] ) : 'general'; ?>
+			<h2 class="nav-tab-wrapper">
+				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=general" class="nav-tab <?php echo $active_tab == 'general' ? 'nav-tab-active' : ''; ?>"><?php _e( 'General','dwqa' ); ?></a>
+				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=email" class="nav-tab <?php echo $active_tab == 'email' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Emails','dwqa' ); ?></a>
 				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=permission" class="nav-tab <?php echo $active_tab == 'permission' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Permissions','dwqa' ); ?></a>
-				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=licenses" class="nav-tab <?php echo $active_tab == 'licenses' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Licenses','dwqa' ); ?></a> 
-			</h2>  
-			  
-			<form method="post" action="options.php">  
-			<?php 
+				<a href="?post_type=dwqa-question&amp;page=dwqa-settings&amp;tab=licenses" class="nav-tab <?php echo $active_tab == 'licenses' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Licenses','dwqa' ); ?></a>
+			</h2>
+
+			<form method="post" action="options.php">
+			<?php
 
 			switch ($active_tab) {
 				case 'email':
-					
+
 					echo '<div class="dwqa-notification-settings">';
 					echo $this->email_tabs();
 					// email setup section
@@ -1292,7 +1292,7 @@ class DWQA_Settings {
 					echo '<div class="dwqa-mail-templates">';
 					echo '<div class="progress-bar"><div class="progress-bar-inner"></div></div>';
 
-					echo '<div class="tab-content">'; 
+					echo '<div class="tab-content">';
 
 					if ( $email_section == 'new-question' ) :
 						settings_fields( 'dwqa-subscribe-settings-new-question' );
@@ -1392,7 +1392,7 @@ class DWQA_Settings {
 						echo '<hr>';
 						echo '</div>'; //End tab for New Comment to Question Notification
 
-						
+
 						echo '<div id="new-comment-answer-followers" class="tab-pane">';
 						echo '<h3>'.__( 'New Comment to Answer Notifications (to Followers)','dwqa' ). '</h3>';
 						echo '<table class="form-table">';
@@ -1409,7 +1409,7 @@ class DWQA_Settings {
 						echo '<hr>';
 						echo '</div>'; //End tab for New Comment to Answer Notification
 
-						
+
 						echo '<div id="new-comment-answer" class="tab-pane">';
 						echo '<h3>'.__( 'New Comment to Answer Notifications (to Admin)','dwqa' ). '</h3>';
 						echo '<table class="form-table">';
@@ -1455,7 +1455,7 @@ class DWQA_Settings {
 			}
 
 			?>
-			</form>  
+			</form>
 		</div>
 		<?php
 	}
@@ -1495,7 +1495,7 @@ class DWQA_Settings {
 	}
 
 	public function email_send_copy_to_admin(){
-		$this->input_checkbox_field( 
+		$this->input_checkbox_field(
 			'dwqa_subscrible_send_copy_to_admin',
 			__( 'Send a copy of every email to admin.','dwqa' )
 		);

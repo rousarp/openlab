@@ -11,7 +11,7 @@ get_header( 'buddypress' ); ?>
 
 	<div id="content">
 		<div class="padder">
-		
+
 		<?php do_action( 'bp_before_create_group_content_template' ); ?>
 
 		<form action="<?php bp_group_creation_form_action(); ?>" method="post" id="create-group-form" class="standard-form" enctype="multipart/form-data">
@@ -161,12 +161,12 @@ get_header( 'buddypress' ); ?>
 
 					<?php if ( 'crop-image' == bp_get_avatar_admin_step() ) : ?>
 
-						<h3><?php _e( 'Crop Group Avatar', 'buddypress' ); ?></h3>
+						<h3><?php _e( 'Oříznout náhledový obrázek skupiny', 'buddypress' ); ?></h3>
 
-						<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-to-crop" class="avatar" alt="<?php esc_attr_e( 'Avatar to crop', 'buddypress' ); ?>" />
+						<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-to-crop" class="avatar" alt="<?php esc_attr_e( 'Náhledový obrázek k oříznutí', 'buddypress' ); ?>" />
 
 						<div id="avatar-crop-pane">
-							<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php esc_attr_e( 'Avatar preview', 'buddypress' ); ?>" />
+							<img src="<?php bp_avatar_to_crop(); ?>" id="avatar-crop-preview" class="avatar" alt="<?php esc_attr_e( 'Zobrazení náhledového obrázku', 'buddypress' ); ?>" />
 						</div>
 
 						<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php esc_attr_e( 'Crop Image', 'buddypress' ); ?>" />
@@ -305,7 +305,7 @@ get_header( 'buddypress' ); ?>
 			<?php do_action( 'bp_after_create_group' ); ?>
 
 		</form>
-		
+
 		<?php do_action( 'bp_after_create_group_content_template' ); ?>
 
 		</div><!-- .padder -->

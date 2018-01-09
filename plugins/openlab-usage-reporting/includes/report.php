@@ -9,55 +9,55 @@ function olur_report_callbacks() {
 	$callbacks = array(
 		// Users.
 		'User' => array(
-			'Students' => array( 'label' => 'Students', 'type' => 'student' ),
-			'Faculty'  => array( 'label' => 'Faculty', 'type' => 'faculty' ),
-			'Staff'    => array( 'label' => 'Staff', 'type' => 'staff' ),
-			'Alumni'   => array( 'label' => 'Alumni', 'type' => 'alumni' ),
-			'Other'    => array( 'label' => 'Other', 'type' => 'other' ),
-			'Total'    => array( 'label' => 'Total', 'type' => 'total' ),
+			'Students' => array( 'label' => 'Studenti', 'type' => 'student' ),
+			'Faculty'  => array( 'label' => 'Fakulty', 'type' => 'faculty' ),
+			'Staff'    => array( 'label' => 'Zaměstnanci', 'type' => 'staff' ),
+			'Alumni'   => array( 'label' => 'Absolventi', 'type' => 'alumni' ),
+			'Other'    => array( 'label' => 'Ostatní', 'type' => 'other' ),
+			'Total'    => array( 'label' => 'Celkem', 'type' => 'total' ),
 		),
 
 		// Groups.
 		'Group' => array(
-			array( 'label' => 'Courses (Public)', 'type' => 'course', 'status' => 'public' ),
-			array( 'label' => 'Courses (Private)', 'type' => 'course', 'status' => 'private' ),
-			array( 'label' => 'Courses (Hidden)', 'type' => 'course', 'status' => 'hidden' ),
-			array( 'label' => 'Courses (Total)', 'type' => 'course', 'status' => 'any' ),
+			array( 'label' => 'Kurzy (Veřejné)', 'type' => 'course', 'status' => 'public' ),
+			array( 'label' => 'Kurzy (Soukromé)', 'type' => 'course', 'status' => 'private' ),
+			array( 'label' => 'Kurzy (Skryté)', 'type' => 'course', 'status' => 'hidden' ),
+			array( 'label' => 'Kurzy (Celkem)', 'type' => 'course', 'status' => 'any' ),
 			'',
 
-			array( 'label' => 'Clubs (Public)', 'type' => 'club', 'status' => 'public' ),
-			array( 'label' => 'Clubs (Private)', 'type' => 'club', 'status' => 'private' ),
-			array( 'label' => 'Clubs (Hidden)', 'type' => 'club', 'status' => 'hidden' ),
-			array( 'label' => 'Clubs (Total)', 'type' => 'club', 'status' => 'any' ),
+			array( 'label' => 'Skupiny (Veřejné)', 'type' => 'club', 'status' => 'public' ),
+			array( 'label' => 'Skupiny (Private)', 'type' => 'club', 'status' => 'private' ),
+			array( 'label' => 'Skupiny (Skryté)', 'type' => 'club', 'status' => 'hidden' ),
+			array( 'label' => 'Skupiny (Celkem)', 'type' => 'club', 'status' => 'any' ),
 
 			'',
 
-			array( 'label' => 'Projects (Public)', 'type' => 'project', 'status' => 'public' ),
-			array( 'label' => 'Projects (Private)', 'type' => 'project', 'status' => 'private' ),
-			array( 'label' => 'Projects (Hidden)', 'type' => 'project', 'status' => 'hidden' ),
-			array( 'label' => 'Projects (Total)', 'type' => 'project', 'status' => 'any' ),
+			array( 'label' => 'Projekty (Veřejné)', 'type' => 'project', 'status' => 'public' ),
+			array( 'label' => 'Projekty (Soukromé)', 'type' => 'project', 'status' => 'private' ),
+			array( 'label' => 'Projekty (Skryté)', 'type' => 'project', 'status' => 'hidden' ),
+			array( 'label' => 'Projekty (Celkem)', 'type' => 'project', 'status' => 'any' ),
 		),
 
 		// Portfolios.
 		'Portfolio' => array(
-			array( 'label' => 'Student ePortfolios (Public)', 'type' => 'student', 'status' => 'public' ),
-			array( 'label' => 'Student ePortfolios (Private)', 'type' => 'student', 'status' => 'private' ),
-			array( 'label' => 'Student ePortfolios (Hidden)', 'type' => 'student', 'status' => 'hidden' ),
-			array( 'label' => 'Student ePortfolios (Total)', 'type' => 'student', 'status' => 'any' ),
+			array( 'label' => 'Studentské portfolio (Veřejné)', 'type' => 'student', 'status' => 'public' ),
+			array( 'label' => 'Studentské portfolio (Soukromé)', 'type' => 'student', 'status' => 'private' ),
+			array( 'label' => 'Studentské portfolio (Skryté)', 'type' => 'student', 'status' => 'hidden' ),
+			array( 'label' => 'Studentské portfolio (Celkem)', 'type' => 'student', 'status' => 'any' ),
 
 			'',
 
-			array( 'label' => 'Faculty Portfolios (Public)', 'type' => 'faculty', 'status' => 'public' ),
-			array( 'label' => 'Faculty Portfolios (Private)', 'type' => 'faculty', 'status' => 'private' ),
-			array( 'label' => 'Faculty Portfolios (Hidden)', 'type' => 'faculty', 'status' => 'hidden' ),
-			array( 'label' => 'Faculty Portfolios (Total)', 'type' => 'faculty', 'status' => 'any' ),
+			array( 'label' => 'Fakultní portfolio (Veřejné)', 'type' => 'faculty', 'status' => 'public' ),
+			array( 'label' => 'Fakultní portfolio (Soukromé)', 'type' => 'faculty', 'status' => 'private' ),
+			array( 'label' => 'Fakultní portfolio (Skryté)', 'type' => 'faculty', 'status' => 'hidden' ),
+			array( 'label' => 'Fakultní portfolio (Celkem)', 'type' => 'faculty', 'status' => 'any' ),
 
 			'',
 
-			array( 'label' => 'Staff Portfolios (Public)', 'type' => 'staff', 'status' => 'public' ),
-			array( 'label' => 'Staff Portfolios (Private)', 'type' => 'staff', 'status' => 'private' ),
-			array( 'label' => 'Staff Portfolios (Hidden)', 'type' => 'staff', 'status' => 'hidden' ),
-			array( 'label' => 'Staff Portfolios (Total)', 'type' => 'staff', 'status' => 'any' ),
+			array( 'label' => 'Portfolio zaměstnance (Veřejné)', 'type' => 'staff', 'status' => 'public' ),
+			array( 'label' => 'Portfolio zaměstnance (Soukromé)', 'type' => 'staff', 'status' => 'private' ),
+			array( 'label' => 'Portfolio zaměstnance (Skryté)', 'type' => 'staff', 'status' => 'hidden' ),
+			array( 'label' => 'Portfolio zaměstnance (Celkem)', 'type' => 'staff', 'status' => 'any' ),
 		),
 
 		// Activity.

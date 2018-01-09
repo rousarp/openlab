@@ -2,14 +2,17 @@
 # This file is distributed under the same license as the Plugins - Duplicate Post - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-04-30 07:35:43+0000\n"
+"PO-Revision-Date: 2018-01-09 22:49+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: Poedit 2.0.5\n"
 "Language: cs_CZ\n"
 "Project-Id-Version: Plugins - Duplicate Post - Stable (latest release)\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
 #. Plugin URI of the plugin/theme
 msgid "https://duplicate-post.lopo.it/"
@@ -195,7 +198,7 @@ msgstr "Enrico Battocchi"
 
 #. Description of the plugin/theme
 msgid "Clone posts and pages."
-msgstr "Klonuje příspěvky a stránky."
+msgstr "Duplikovat příspěvky a stránky."
 
 #: duplicate-post.php:49
 msgid "Settings"
@@ -261,7 +264,6 @@ msgstr "Čárkami oddělený seznam metadat, které nesmí být zkopírovány"
 msgid "Do not copy these fields"
 msgstr "Nekopírovat tyto uživatelská pole"
 
-#. #-#-#-#-#  tmp-duplicate-post.pot (Duplicate Post 3.2)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: duplicate-post-options.php:46
 msgid "Duplicate Post"
@@ -303,4 +305,4 @@ msgstr "Duplikovat"
 
 #: duplicate-post-admin.php:233
 msgid "Clone this item"
-msgstr "Klonovat tuto položku"
+msgstr "Duplikovat tuto položku"

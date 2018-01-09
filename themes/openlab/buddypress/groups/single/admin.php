@@ -20,7 +20,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
             <?php else: ?>
 
-                <div class="submenu-text pull-left bold"><?php echo $group_label_uc ?> Settings:</div>
+                <div class="submenu-text pull-left bold"><?php echo $group_label_uc ?> Nastavení:</div>
                 <ul class="nav nav-inline">
                     <?php openlab_group_admin_tabs(); ?>
                 </ul>
@@ -41,22 +41,22 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
             <?php do_action('template_notices') ?>
 
             <div class="panel panel-default">
-                <div class="panel-heading"><?php echo $group_label_uc; ?> Details</div>
+                <div class="panel-heading"><?php echo $group_label_uc; ?> Podrobnosti</div>
                 <div class="panel-body">
 
                     <?php do_action('bp_before_group_details_admin'); ?>
 
-                    <label for="group-name"><?php echo $group_label_uc . ' Name' ?> (required)</label>
+                    <label for="group-name"><?php echo $group_label_uc . ' Název' ?> (vyžadováno)</label>
                     <input class="form-control" type="text" name="group-name" id="group-name" value="<?php bp_group_name() ?>" />
 
-                    <label for="group-desc"><?php echo $group_label_uc . ' Description' ?> (required)</label>
+                    <label for="group-desc"><?php echo $group_label_uc . ' Popis' ?> (vyžadováno)</label>
                     <textarea class="form-control" name="group-desc" id="group-desc"><?php bp_group_description_editable() ?></textarea>
 
                     <?php do_action('groups_custom_group_fields_editable') ?>
 
                     <?php if (!openlab_is_portfolio()) : ?>
                         <div class="notify-settings">
-                            <p class="ol-tooltip notify-members"><?php _e('Notify group members of changes via email', 'buddypress'); ?></p>
+                            <p class="ol-tooltip notify-members"><?php _e('Notify group members of these changes via email', 'buddypress'); ?></p>
                             <div class="radio">
                                 <label><input type="radio" name="group-notify-members" value="1" /> <?php _e('Yes', 'buddypress'); ?></label>
                                 <label><input type="radio" name="group-notify-members" value="0" checked="checked" /> <?php _e('No', 'buddypress'); ?></label>
@@ -90,9 +90,9 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                 <div class="panel panel-default">
                     <div class="panel-heading">Nastavení diskuse</div>
                     <div class="panel-body">
-                        <p id="discussion-settings-tag">Toto nastavení povoluje nebo zakazuje diskusní fórum na vašem <?php echo $group_label_uc ?> profilu.</p>
+                        <p id="discussion-settings-tag">Toto nastavení povoluje nebo zakazuje diskusní fórum na profilu vaší/vašeho <?php echo $group_label_uc ?>.</p>
                         <div class="checkbox">
-                            <label><input type="checkbox" name="openlab-edit-group-forum" id="group-show-forum" value="1"<?php checked($forum_enabled) ?> /> <?php _e('Povolit diskuzní fórum', 'buddypress') ?></label>
+                            <label><input type="checkbox" name="openlab-edit-group-forum" id="group-show-forum" value="1"<?php checked($forum_enabled) ?> /> <?php _e('Enable discussion forum', 'buddypress') ?></label>
                         </div>
                     </div>
                 </div>
@@ -222,7 +222,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
                                 <?php if (bp_get_user_has_avatar()) : ?>
                                     <p class="italics"><?php _e("If you'd like to remove the existing avatar but not upload a new one, please use the delete avatar button.", 'buddypress') ?></p>
-                                    <a class="btn btn-primary no-deco" href="<?php echo bp_get_group_avatar_delete_link() ?>" title="<?php _e('Delete Avatar', 'buddypress') ?>"><?php _e('Delete Avatar', 'buddypress') ?></a>
+                                    <a class="btn btn-primary no-deco" href="<?php echo bp_get_group_avatar_delete_link() ?>" title="<?php _e('Smazat náhledový obrázek', 'buddypress') ?>"><?php _e('Delete Avatar', 'buddypress') ?></a>
                                 <?php endif; ?>
 
         <?php wp_nonce_field('bp_avatar_upload') ?>
@@ -239,10 +239,10 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                     <div class="panel-heading">Oříznout ilustrační obrázek</div>
                     <div class="panel-body">
 
-                        <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Avatar to crop', 'buddypress') ?>" />
+                        <img src="<?php bp_avatar_to_crop() ?>" id="avatar-to-crop" class="avatar" alt="<?php _e('Náhledový obráhek k oříznutí', 'buddypress') ?>" />
 
                         <div id="avatar-crop-pane">
-                            <img src="<?php bp_avatar_to_crop() ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Avatar preview', 'buddypress') ?>" />
+                            <img src="<?php bp_avatar_to_crop() ?>" id="avatar-crop-preview" class="avatar" alt="<?php _e('Zobrazení náhledového obrázku', 'buddypress') ?>" />
                         </div>
 
                         <input class="btn btn-primary" type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php _e('Crop Image', 'buddypress') ?>" />

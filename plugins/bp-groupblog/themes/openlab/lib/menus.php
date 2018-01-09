@@ -409,13 +409,13 @@ function openlab_my_groups_submenu($group) {
         if (is_super_admin(get_current_user_id()) || $faculty == "Faculty") {
             //have to add extra conditional in here for submenus on editing pages
             $menu_list = array(
-                $create_link => 'Create / Clone a ' . ucfirst($group),
+                $create_link => 'Vytvořit / Duplikovat ' . ucfirst($group),
             );
         }
     } else {
         //have to add extra conditional in here for submenus on editing pages
         $menu_list = array(
-            $create_link => 'Create a ' . ucfirst($group),
+            $create_link => 'Vytvořit ' . ucfirst($group),
         );
     }
 
@@ -434,23 +434,23 @@ function openlab_create_group_menu($grouptype) {
 
     switch ($current_step) {
         case 'group-details':
-            $step_name = 'Step One: Profile';
+            $step_name = 'První krok: Profil';
             break;
         case 'group-settings':
-            $step_name = 'Step Two: Privacy Settings';
+            $step_name = 'Druhý krok: Nastavení ochrany osobních údajů';
             break;
         case 'group-avatar':
-            $step_name = 'Step Three: Avatar';
+            $step_name = 'Třetí krok: Profilový obrázek';
             break;
         case 'invite-anyone' :
-            $step_name = 'Step Four: Invite Members';
+            $step_name = 'Krok čtvrtý: Pozvánka ke členství';
             break;
     }
 
     if ($grouptype == 'course') {
-        $title = 'Create/Clone a Course: ';
+        $title = 'Vytviřut/Duplikovat kurz: ';
     } else {
-        $title = 'Create a ' . ucfirst($grouptype) . ': ';
+        $title = 'Vytvořit ' . ucfirst($grouptype) . ': ';
     }
 
     $menu_mup = <<<HTML
@@ -505,7 +505,7 @@ function openlab_my_friends_submenu($count = true) {
     }
 
     $menu_out['menu'] = openlab_submenu_gen($menu_list);
-    $menu_out['submenu_text'] = '<a class="' . $submenu_class . '" href="' . $my_friends . '">My Friends</a>';
+    $menu_out['submenu_text'] = '<a class="' . $submenu_class . '" href="' . $my_friends . '">Moji přátelé</a>';
 
     return $menu_out;
 }
@@ -594,10 +594,10 @@ function openlab_submenu_gen($items, $timestamp = false) {
         } else if ($page_identify == "general" && $title == "Account Settings") {
             //special case just for account settings page
             $item_classes .= " current-menu-item";
-        } else if ($page_identify == "my-friends" && $title == "My Friends") {
+        } else if ($page_identify == "my-friends" && $title == "Moji přátelé") {
             //special case just for my friends page
             $item_classes .= " current-menu-item bold";
-        } else if ($page_identify == "invite-new-members" && $title == "Invite New Members") {
+        } else if ($page_identify == "invite-new-members" && $title == "Pozvat nové členy") {
             //special case just for Invite New Members page
             $item_classes .= " current-menu-item";
         } else if ($page_identify == 'my-groups') {
@@ -664,7 +664,7 @@ function openlab_filter_subnav_home($subnav_item) {
 
     $displayed_user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
     $group_label = openlab_get_group_type_label('case=upper');
-    $new_label = '<span class="inline-visible-xs">' . $group_label . '</span> Profile';
+    $new_label = '<span class="inline-visible-xs">' . $group_label . '</span> Profil';
 
     $new_item = str_replace("Home", $new_label, $subnav_item);
 
@@ -1002,7 +1002,7 @@ function openlab_group_admin_tabs($group = false) {
             return false;
         ?>
 
-        --><li<?php if ('group-avatar' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-avatar"><?php _e('Change Avatar', 'buddypress'); ?></a></li><!--
+      --><li<?php if ('group-avatar' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-avatar"><?php _e('Změnit náhledový obrázek', 'buddypress'); ?></a></li><!--
 
         --><li<?php if ('group-settings' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-settings"><?php _e('Settings', 'buddypress'); ?></a></li><!--
 
@@ -1046,7 +1046,7 @@ function openlab_group_membership_tabs($group = false) {
             --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Member Requests', 'buddypress'); ?></a></li><!--
         <?php endif; ?>
     <?php else: ?>
-        --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Membership', 'buddypress'); ?></a></li><!--
+    --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Memberships', 'buddypress'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && invite_anyone_access_test() && openlab_is_admin_truly_member()): ?>

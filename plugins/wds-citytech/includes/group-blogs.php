@@ -447,7 +447,7 @@ function wds_bp_group_meta() {
 		<?php $group_site_url = openlab_get_group_site_url( $the_group_id ); ?>
 
 		<div class="panel panel-default">
-			<div class="panel-heading">Site Details</div>
+			<div class="panel-heading">Podrobnosti webových stránek</div>
 			<div class="panel-body">
 
 				<?php if ( ! empty( $group_site_url ) ) : ?>
@@ -504,7 +504,7 @@ function wds_bp_group_meta() {
 							<?php $show_website = 'none' ?>
 							<div class="form-field form-required">
 								<div scope='row' class="site-details-query">
-									<label><input type="checkbox" id="wds_website_check" name="wds_website_check" value="yes" /> Set up a site?</label>
+									<label><input type="checkbox" id="wds_website_check" name="wds_website_check" value="yes" /> Nastavit webové stránky?</label>
 								</div>
 							</div>
 						<?php else : ?>
@@ -641,12 +641,12 @@ function wds_bp_group_meta() {
                                     <div class="col-sm-18">
                                         <label class="sr-only" for="external-site-url">Zadejte adresu URL externího webu</label>
                                         <input class="form-control pull-left" type="text" name="external-site-url" id="external-site-url" placeholder="http://" />
-                                        <a class="btn btn-primary no-deco top-align pull-right" id="find-feeds" href="#" display="none">Check<span class="sr-only"> external site for Post and Comment feeds</span></a>
+                                        <a class="btn btn-primary no-deco top-align pull-right" id="find-feeds" href="#" display="none">Zkontrolovat<span class="sr-only"> external site for Post and Comment feeds</span></a>
                                     </div>
                                 </div>
 							</div>
 						</div>
-						<div id="check-note-wrapper" style="display:<?php echo $show_website; ?>"><div colspan="2"><p id="check-note" class="italics disabled-opt">Poznámka: Klepnutím na tlačítko Kontrola vyhledáte zdroje a komentáře pro externí web. Pokud tak učiníte, dojde k načtení aktivit do profilové stránky tohoto <?php echo ucfirst( $group_type ); ?>. Pokud nejsou zjištěny žádné kanály, můžete zadat adresy URL zdroje příspěvků a komentářů přímo nebo jen nechat prázdné.</p></div></div>
+						<div id="check-note-wrapper" style="display:<?php echo $show_website; ?>"><div colspan="2"><p id="check-note" class="italics disabled-opt">Poznámka: Klepnutím na tlačítko Zkontrolovat vyhledáte zdroje a komentáře pro externí web. Pokud tak učiníte, dojde k načtení aktivit do profilové stránky tohoto <?php echo ucfirst( $group_type ); ?>. Pokud nejsou zjištěny žádné kanály, můžete zadat adresy URL zdroje příspěvků a komentářů přímo nebo jen nechat prázdné.</p></div></div>
 					</div>
 
 				<?php endif; ?>

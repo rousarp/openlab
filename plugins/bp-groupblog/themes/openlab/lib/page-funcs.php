@@ -20,7 +20,7 @@ function cuny_home_login() {
         <div id="sidebar-me" class="clearfix">
             <div id="user-info">
                 <a class="avatar" href="<?php echo bp_loggedin_user_domain() ?>">
-                    <img class="img-responsive" src="<?php bp_loggedin_user_avatar(array('type' => 'full', 'html' => false)); ?>" alt="Avatar for <?php echo bp_core_get_user_displayname(bp_loggedin_user_id()); ?>" />
+                    <img class="img-responsive" src="<?php bp_loggedin_user_avatar(array('type' => 'full', 'html' => false)); ?>" alt="Náhledový obrázek pro <?php echo bp_core_get_user_displayname(bp_loggedin_user_id()); ?>" />
                 </a>
 
                 <ul class="content-list">

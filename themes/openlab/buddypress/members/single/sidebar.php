@@ -76,7 +76,7 @@ $activity_args = array(
             <div class="sidebar-block">
                 <div class="row activity-row">
                     <div id="message" class="info col-sm-24">
-                        <p><?php _e('No recent activity.', 'buddypress') ?></p>
+                        <p><?php _e('Žádná nedávná aktivita.', 'buddypress') ?></p>
                     </div>
                 </div>
             </div>

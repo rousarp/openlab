@@ -44,7 +44,7 @@ function cuny_home_login() {
     <?php else : ?>
         <?php echo '<div id="open-lab-join" class="log-box links-lighter-hover">'; ?>
         <?php echo '<h1 class="title"><span class="fa fa-plus-circle flush-left"></span> Připojit se k OpenLab</h1>'; ?>
-        <?php _e('<p><a class="btn btn-default btn-primary link-btn pull-right semibold" href="' . site_url() . '/register/">Sign up</a> <span class="font-size font-14">Nemáte účet?<br />Registrujte se a staňte se členem!</span></p>', 'buddypress') ?>
+        <?php _e('<p><a class="btn btn-default btn-primary link-btn pull-right semibold" href="' . site_url() . '/register/">Registrovat se</a> <span class="font-size font-14">Nemáte účet?<br />Registrujte se a staňte se členem!</span></p>', 'buddypress') ?>
         <?php echo '</div>'; ?>
 
         <?php echo '<div id="open-lab-login" class="log-box">'; ?>
@@ -66,7 +66,7 @@ function cuny_home_login() {
                 <div id="keep-logged-in" class="small-text clearfix">
                     <div class="password-wrapper">
                         <a class="forgot-password-link small-text roll-over-loss" href="<?php echo site_url('wp-login.php?action=lostpassword', 'login') ?>">Zapomněli jste heslo?</a>
-                        <span class="keep-logged-in-checkbox"><input class="no-margin no-margin-top" name="rememberme" type="checkbox" id="sidebar-rememberme" value="forever" tabindex="0" /><label class="regular no-margin no-margin-bottom" for="sidebar-rememberme"><?php _e('Keep me logged in', 'buddypress') ?></label></span>
+                        <span class="keep-logged-in-checkbox"><input class="no-margin no-margin-top" name="rememberme" type="checkbox" id="sidebar-rememberme" value="forever" tabindex="0" /><label class="regular no-margin no-margin-bottom" for="sidebar-rememberme"><?php _e('Neodhlašovat', 'buddypress') ?></label></span>
                     </div>
                     <input class="btn btn-default btn-primary link-btn pull-right semibold" type="submit" name="wp-submit" id="sidebar-wp-submit" value="<?php _e('Log In'); ?>" tabindex="0" />
                 </div>

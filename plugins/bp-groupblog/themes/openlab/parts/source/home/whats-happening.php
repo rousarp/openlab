@@ -29,7 +29,7 @@
             <div class="row activity-row">
                 <div class="activity-avatar col-sm-24">
                     <div class="activity-header">
-                        <p>No recent activity</p>
+                        <p>Žádná nedávná aktivita</p>
                     </div>
                 </div>
             </div>

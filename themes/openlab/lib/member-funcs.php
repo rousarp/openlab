@@ -644,23 +644,23 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                             if ($type != "course") {
                                 if ($bp->loggedin_user->id == $bp->displayed_user->id) {
                                     ?>
-                                    You aren't participating in any <?php echo $type; ?>s on the OpenLab yet. Why not <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">create a <?php echo $type; ?></a>?
+                                    Na Open Lab doposud nejste připojeni do žádné skupiny typu <?php echo $type; ?>. Proč si <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">nevytvořit vlastní skupinu typu <?php echo $type; ?></a>?
                                     <?php
                                 } else {
                                     echo $bp->displayed_user->fullname;
                                     ?>
-                                    hasn't created or joined any <?php echo $type ?>s yet.
+                                    nevytvořil ani se doposud nepřipojil k žádné skupině typu <?php echo $type ?>.
                                     <?php
                                 }
                             } else {
                                 if ($bp->loggedin_user->id == $bp->displayed_user->id) {
                                     ?>
-                                    You haven't created any courses yet.
+                                    Dosud jste nevytvořili žádné kurzy.
                                     <?php
                                 } else {
                                     echo $bp->displayed_user->fullname;
                                     ?>
-                                    hasn't joined any <?php echo $type ?>s yet.
+                                    dosud se nepřipojil k žádné skupině typu <?php echo $type ?>.
                                     <?php
                                 }
                             }

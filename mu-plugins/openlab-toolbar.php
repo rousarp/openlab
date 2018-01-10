@@ -345,8 +345,8 @@ HTML;
                     $username_small = $username;
                 }
 
-                $howdy = '<span class="small-size">'.sprintf(__('Hi, %1$s'), $username).'</span>';
-                $howdy_small = '<span class="very-small-size">'.sprintf(__('Hi, %1$s'), $username_small).'</span>';
+                $howdy = '<span class="small-size">'.sprintf(__('Vítejte, %1$s'), $username).'</span>';
+                $howdy_small = '<span class="very-small-size">'.sprintf(__('Vítejte, %1$s'), $username_small).'</span>';
 
  		$wp_admin_bar->add_menu( array(
                         'parent' => 'mobile-centered',
@@ -366,7 +366,7 @@ HTML;
 
                 $current_user = wp_get_current_user();
 
-                $howdy = sprintf(__('Hi, %1$s'), $current_user->display_name);
+                $howdy = sprintf(__('Zdravíme, %1$s'), $current_user->display_name);
 
  		$wp_admin_bar->add_node( array(
 			'id'    => 'my-openlab',
@@ -443,7 +443,7 @@ HTML;
 		global $bp;
 		$wp_admin_bar->add_node( array(
 			'id'    => 'my-account',
-			'title' => sprintf( "Hi, %s", $bp->loggedin_user->userdata->display_name ),
+			'title' => sprintf( "Zdravíme, %s", $bp->loggedin_user->userdata->display_name ),
 			'meta'  => array(
                             'class' => 'user-display-name truncation-obfuscation', //add in truncation obfuscation (hides truncation processing on page load)
                         ),
@@ -924,9 +924,9 @@ HTML;
                     $blogname = preg_replace( '#^(https?://)?(www.)?#', '', get_home_url() );
 
             if ( is_network_admin() ) {
-                    $blogname = sprintf( __('Network Admin: %s'), esc_html( get_current_site()->site_name ) );
+                    $blogname = sprintf( __('Administrátor sítě: %s'), esc_html( get_current_site()->site_name ) );
             } elseif ( is_user_admin() ) {
-                    $blogname = sprintf( __('Global Dashboard: %s'), esc_html( get_current_site()->site_name ) );
+                    $blogname = sprintf( __('Souhrná nástěnka: %s'), esc_html( get_current_site()->site_name ) );
             }
 
             $display_string = "<span class='truncate-sizer'><span class='truncate-on-the-fly hyphenate hidden-sm' data-minvalue='5' data-basewidth='calculate' aria-hidden='true'>$blogname</span> <span class='fa fa-caret-down hidden-sm' aria-hidden='true'></span><span class='fa fa-desktop visible-sm' aria-hidden='true'></span><span class='original-copy hidden' aria-hidden='true'>$blogname</span><span class='sr-only'>$blogname</span></span>";
@@ -1226,7 +1226,7 @@ HTML;
 			'parent' => 'top-secondary',
 			'id'     => 'top-logout',
 			'href'   => add_query_arg( 'redirect_to', bp_get_root_domain(), wp_logout_url() ),
-			'title'  => 'Log Out',
+			'title'  => 'Odhlásit se',
                         'meta'   => array(
                             'class' => 'bold pull-right',
                         ),
@@ -1242,7 +1242,7 @@ HTML;
                 if (!$user_id)
                     return;
 
-                $howdy = sprintf(__('Hi, %1$s'), $current_user->display_name);
+                $howdy = sprintf(__('Zdravíme, %1$s'), $current_user->display_name);
                 $display_string = "<span class='truncate-sizer'><span class='truncate-on-the-fly hyphenate' data-basevalue='40' data-minvalue='5' data-basewidth='calculate' aria-hidden='true'>$howdy</span><span class='original-copy hidden' aria-hidden='true'>$howdy</span><span class='sr-only'>$howdy</span></span>";
 
                 $parent = 'top-secondary';
@@ -1263,7 +1263,7 @@ HTML;
                     'href' => $profile_url,
                     'meta' => array(
                         'class' => $class,
-                        'title' => __('My Account'),
+                        'title' => __('Můj účet'),
                     ),
                 ));
         }
@@ -1295,7 +1295,7 @@ HTML;
 
 
             // accept/reject buttons
-            $user_info .= '<p class="actions clearfix inline-links"><a href="' . $profile_url . '">' . __( 'Upravit můj profil' ) . '</a> | <span class="exit"><a href="' . wp_logout_url() . '">' . __( 'Odhlásit se' ) . '</a></span></p></div></div>';
+            $user_info .= '<p class="actions clearfix inline-links"><a href="' . $profile_url . '">' . __( 'Upravit svůj profil' ) . '</a> | <span class="exit"><a href="' . wp_logout_url() . '">' . __( 'Odhlásit se' ) . '</a></span></p></div></div>';
 
             $wp_admin_bar->add_node( array(
                     'parent' => 'my-account',

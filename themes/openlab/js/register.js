@@ -6,7 +6,7 @@
             return value === value.toLowerCase();
         },
         messages: {
-            en: 'This field supports lowercase letters only.'
+            en: 'Toto pole podporuje pouze malá písmena.'
         }
     });
 
@@ -15,7 +15,7 @@
             return !value.match(/[^a-zA-Z0-9]/);
         },
         messages: {
-            en: 'This field supports alphanumeric characters only.'
+            en: 'Toto pole podporuje pouze alfanumerické znaky.'
         }
     });
 
@@ -198,22 +198,22 @@
                                  *   7: Is a student email
                                  */
                                 case "6" :
-                                    message = 'An account already exists using that email address.';
+                                    message = 'Účet s touto e-mailovou adresou již existuje.';
                                     break;
                                 case "5" :
                                 case "4" :
-                                    message = 'Must be a City Tech email address.';
+                                    message = 'E-mailová adresa musí být z City Tech.';
                                     show_validation = true;
                                     break;
                                 case "3" :
-                                    message = 'Not a well-formed email address. Please try again.';
+                                    message = 'E-mailová adresa není ve správném tvaru. Prosím zkuste to znovu.';
                                     break;
                                 case "2" :
-                                    message = 'The Email Address field is required.';
+                                    message = 'Zadání e-mailové adresy je povinné.';
                                     break;
 
                                 case '1' :
-                                    message = '&mdash; OK!';
+                                    message = '&mdash; SPRÁVNĚ!';
                                     break;
                                 default :
                                     message = '';
@@ -356,7 +356,7 @@
 
                     if (thisElem.hasClass('btn-disabled')) {
                         e.preventDefault();
-                        var message = 'Please Complete Required Fields To Continue';
+                        var message = 'Pro pokračování vyplňte požadovaná pole';
                         $('#submitSrMessage').text(message);
                     }
 
@@ -377,7 +377,7 @@
 
                         load_error_messages();
 
-                        if (response !== 'Please select an Account Type.') {
+                        if (response !== 'Zvolte typ účtu.') {
 
                             asyncLoaded = true;
                             //reset validation
@@ -412,7 +412,7 @@
 
             if (initValidation) {
                 $('#signup_submit').removeClass('btn-disabled');
-                $('#signup_submit').val('Complete Sign Up');
+                $('#signup_submit').val('Dokončit registraci');
             } else if (!$('#signup_submit').hasClass('btn-disabled')) {
                 $('#signup_submit').addClass('btn-disabled');
                 $('#signup_submit').val('Please Complete Required Fields');

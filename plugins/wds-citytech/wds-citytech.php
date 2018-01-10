@@ -285,7 +285,7 @@ function wds_load_account_type() {
 	if ( $account_type ) {
 		$return .= '<div class="sr-only">' . $account_type . ' selected.</div>' . wds_get_register_fields( $account_type, $post_data );
 	} else {
-		$return = 'Please select an Account Type.';
+		$return = 'Zvolte typ účtu.';
 	}
         //@to-do: determine why this is here, and if it can be deprecated
 	//$return = str_replace( "'", "\'", $return );

@@ -377,7 +377,7 @@
 
                         load_error_messages();
 
-                        if (response !== 'Please select an Account Type.') {
+                        if (response !== 'Zvolte typ účtu.') {
 
                             asyncLoaded = true;
                             //reset validation
@@ -412,7 +412,7 @@
 
             if (initValidation) {
                 $('#signup_submit').removeClass('btn-disabled');
-                $('#signup_submit').val('Complete Sign Up');
+                $('#signup_submit').val('Dokončit registraci');
             } else if (!$('#signup_submit').hasClass('btn-disabled')) {
                 $('#signup_submit').addClass('btn-disabled');
                 $('#signup_submit').val('Please Complete Required Fields');

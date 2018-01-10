@@ -1,0 +1,962 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-01-10 02:51+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+# @ bp-rbe
+#: bp-rbe-core.php:140
+msgid ""
+"BuddyPress Reply By Email cannot initialize.  Please navigate to "
+"\"BuddyPress > Reply By Email\" to fill in the required fields and address "
+"the webhost warnings."
+msgstr ""
+"Odpověď BuddyPress Emailem nelze inicializovat. Prosím, přejděte na "
+"\"BuddyPress> Odpovědět e-mailem\" pro vyplnění požadovaných polí a adresy "
+"varování webhostingu."
+
+# @ bp-rbe
+#: bp-rbe-core.php:208 includes/bp-rbe-classes.php:738
+#: includes/bp-rbe-functions.php:792
+msgid "--- Reply ABOVE THIS LINE to add a comment ---"
+msgstr "--- Komentář přidáte odesláním textu  NAD TUTO ČAROU ---"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:63
+msgid "BuddyPress Reply By Email"
+msgstr "Odpovědět BuddyPress emailem"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:63
+msgid "BP Reply By Email"
+msgstr "BP Odpovědět emailem"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:89
+msgid "Settings"
+msgstr "Nastavení"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:234
+#, php-format
+msgid "Error: Unable to connect to inbox - %s"
+msgstr "Chyba: Nelze se připojit k doručené poště -%s"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:253
+msgid "Error: <strong>Address tag</strong> must only be one character."
+msgstr "Chyba: <strong>Oddělovač adresy</strong> musí být pouze jeden znak."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:256
+msgid "Error: <strong>Port</strong> must be numeric."
+msgstr "Chyba: <strong>Port</strong> musí být číslo."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:259
+msgid "Error: <strong>Key</strong> must only contain letters and / or numbers."
+msgstr ""
+"Chyba: <strong>Klíč</strong> musí obsahovat pouze písmena a / nebo čísla."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:262
+msgid ""
+"Error: <strong>Keep Alive Connection</strong> value must be less than 30."
+msgstr ""
+"Chyba: Hodnota <strong>Keep Alive Connection</strong> musí být menší než 30."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:278
+msgid "BP Reply By Email Settings"
+msgstr "BP Odpovědět podle nastavení e-mailu"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:291
+msgid ""
+"Please enter the IMAP settings for your email account.  Fields marked with * "
+"are required."
+msgstr ""
+"Zadejte nastavení IMAP pro váš e-mailový účet. Pole označená * jsou povinná."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:298
+msgid "GMail / Google Apps Mail"
+msgstr "GMail / Google Apps Mail"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:299
+#, php-format
+msgid ""
+"Using GMail? (This will override the Server Name, Port and Address Tag "
+"fields on save.) Also make sure to <a href=\"%s\" target=\"_blank\">enable "
+"IMAP in GMail</a>."
+msgstr ""
+"Používáte GMail? (Tím se při ukládání přepíše pole Název serveru, port a "
+"adresa). Ujistěte se také, že <a href=\"%s\" target=\"_blank\"> povolíte "
+"IMAP v nastavení GMailu</a>."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:305
+msgid "Mail Server *"
+msgstr "Mail Server *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:311
+msgid "Port *"
+msgstr "Port *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:318
+msgid "Address Tag Separator *"
+msgstr "Separátor značek adresy *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:319
+#, php-format
+msgid ""
+"Example: test@gmail.com is my email address, I can also receive email that "
+"is sent to test+anything@gmail.com.  The address tag separator for GMail is "
+"\"+\".  For other email providers, <a href=\"%s\" target=\"_blank\">view "
+"this page</a>."
+msgstr ""
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:326
+msgid "Username *"
+msgstr "Uživatelské jméno *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:327
+msgid ""
+"For GMail users, enter your <strong>full email address</strong> as your "
+"username."
+msgstr ""
+"U uživatelů služby GMail zadejte jako své uživatelské jméno svou "
+"<strong>úplnou e-mailovou adresu</strong>."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:334
+msgid "Password *"
+msgstr "Heslo *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:340
+msgid "Email Address"
+msgstr "Emailová adresa"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:341
+msgid ""
+"If your username is <strong>not</strong> the same as your email address, "
+"please fill in this field as well."
+msgstr ""
+"Pokud je vaše uživatelské jméno <strong>není</strong> stejné jako vaše e-"
+"mailová adresa, vyplňte toto pole také."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:346
+msgid "Other Settings"
+msgstr "Další nastavení"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:352
+msgid "Key *"
+msgstr "Klíč *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:353
+msgid ""
+"This key is used to verify incoming emails before anything is posted to "
+"BuddyPress.  By default, a key is randomly generated for you.  You should "
+"rarely have to change your key.  However, if you want to change it, please "
+"type in an alphanumeric key of your choosing."
+msgstr ""
+"Tento klíč slouží k ověření příchozích e-mailů dříve, než je vše uveřejněno "
+"v BuddyPress. Ve výchozím nastavení je pro vás klíč vytvořen náhodně. Měli "
+"byste zřídkakdy změnit klíč. Chcete-li jej však změnit, zadejte prosím "
+"alfanumerické tlačítko podle vašeho výběru."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:359
+msgid "Keep Alive Connection *"
+msgstr "Keep Alive Connection *"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:360
+#, php-format
+msgid ""
+"The length in minutes to stay connected to your inbox. Due to <a href=\"%s\" "
+"target=\"_blank\">RFC 2177 protocol</a>, this value cannot be larger than "
+"29. If this value is changed, this will take effect on the next scheduled "
+"update."
+msgstr ""
+"Délka v minutách, abyste zůstali připojeni k doručené poště. Vzhledem k <a "
+"href=\"%s\" target=\"_blank\"> protokolu RFC 2177 </a>, tato hodnota nemůže "
+"být větší než 29. Pokud se změní tato hodnota, projeví se to při příští "
+"naplánované aktualizaci."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:367
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:375
+msgid ""
+"If you're a fan of this plugin, support further development with a donation!"
+msgstr "Pokud jste fanouškem tohoto pluginu, podpořte další vývoj s darováním!"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:379
+msgid "Need Help?"
+msgstr "Potřebujete pomoc?"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:381
+#, php-format
+msgid ""
+"<a href=\"%s\">Check out the BP Reply By Email wiki</a> for articles, FAQs "
+"and more information."
+msgstr ""
+"<a href=\"%s\">Podívejte se na článek BP Reply by Email wiki</a> pro články, "
+"nejčastější dotazy a další informace."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:412
+msgid "Settings updated successfully!"
+msgstr "Nastavení byla úspěšně aktualizována!"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:425
+msgid ""
+"IMAP extension for PHP is <strong>disabled</strong>.  This plugin will not "
+"run without it.  Please contact your webhost to enable this."
+msgstr ""
+"Rozšíření IMAP pro PHP je <strong>zakázáno</strong>. Tento plugin nebude "
+"fungovat bez něj. Kontaktujte prosím svého webhostingu."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:428
+#, php-format
+msgid ""
+"PHP Safe Mode is <strong>on</strong>.  This is not a dealbreaker, but this "
+"means you cannot set the Keep Alive Connection value larger than %d minutes."
+msgstr ""
+"Bezpečný režim PHP je <strong>zapnut</strong>. Nejedná se o transakční "
+"řešení, ale to znamená, že nemůžete nastavit hodnotu Keep Alive Connection "
+"větší než %d minut(y)."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:431
+msgid "Webhost Warnings"
+msgstr "Webhost varování"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:450
+msgid "Schedule Info"
+msgstr "Plán pro"
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:454
+#, php-format
+msgid ""
+"<strong>Reply By Email</strong> is currently <span>CONNECTED</span> and "
+"checking your inbox continuously. The next scheduled stop and restart is "
+"<strong>%s</strong>."
+msgstr ""
+"Volba <strong>Odpovědět e-mailem</strong> je momentálně <span>ZAPNUTÁ</span> "
+"a nepřetržitě se kontroluje doručená pošta. Další plánované zastavení a "
+"restartování je <strong>%s</strong>."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:456
+#, php-format
+msgid ""
+"<strong>Reply By Email</strong> is currently <span>NOT CONNECTED</span>. The "
+"next scheduled inbox check is <strong>%s</strong>."
+msgstr ""
+"Volba <strong>Odpovědět e-mailem</strong> je momentálně <span>VYPNUTÁ</"
+"span>. Další plánované zastavení a restartování je <strong>%s</strong>."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:461
+#, php-format
+msgid ""
+"What this means is a user will need to visit your website after %s in order "
+"for the plugin to check your inbox again. This is a limitation of Wordpress' "
+"scheduling API."
+msgstr ""
+"To znamená, že uživatel bude muset navštívit vaše webové stránky %s, v "
+"souvislosti s tím, aby plugin znovu zkontroloval doručenou poštu. Toto je "
+"omezení aplikace Wordpress API."
+
+# @ bp-rbe
+#: includes/bp-rbe-admin.php:465
+#, php-format
+msgid "<a href=\"%s\">View this article</a> for a potential solution."
+msgstr "<a href=\"%s\">Zobrazit tento článek</a> pro případné řešení."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:258
+msgid "error - BP doc parent comment was deleted before this could be posted."
+msgstr ""
+"chyba - BP doc parent parent komentář byl odstraněn předtím, než by mohl být "
+"vyslán."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:263
+msgid ""
+"error - BP doc parent comment was marked as spam before this could be posted."
+msgstr ""
+"error - BP doc nadřazený komentář byl označen jako spam před tím, než by "
+"mohl být odeslán."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:268
+msgid ""
+"error - BP doc parent comment was unapproved before this could be posted."
+msgstr ""
+"chyba - BP doc rodičovský komentář nebyl schválen dříve, než by to mohlo být "
+"zveřejněno."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:273
+msgid "error - BP doc's comment settings changed to 'no-one'"
+msgstr "error - nastavení komentářů BP doc změněno na 'no one'"
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:278
+msgid "error - this BP doc's comment setting is set to admins and mods only"
+msgstr ""
+"error - nastavení tohoto komentáře BP doc je nastaveno pouze na "
+"administrátory a moderátory"
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:283
+msgid "error - user is not a member of the group"
+msgstr "error - uživatel není členem skupiny"
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:288
+msgid "notice - user is banned from group. BP doc comment not posted."
+msgstr ""
+"upozornění - uživatel je zakázán ze skupiny. BP doc comment nebyl zveřejněn."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:293
+msgid "error - BP doc comment failed to post"
+msgstr "error - BP doc comment failed to post"
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:314
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the parent comment you were replying to no "
+"longer exists.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupinovému dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože nadřazený komentář, na který jste odpovídali, již "
+"neexistuje.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:327
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the parent comment you were replying to was "
+"marked as spam.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupinovému dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože nadřazený komentář, na který odpovídal, byl označen "
+"jako spam.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:340
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the parent comment you were replying was "
+"unapproved.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupinovému dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože nadřazený komentář, na který jste odpověděli, byl "
+"neschválen.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:353
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the comment setting for this group document "
+"recently changed to \"No One\".\n"
+"This means that no other comments can be posted for the group document in "
+"question.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupině dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože nastavení poznámky pro tento dokument skupiny se "
+"změnilo na \"Správce a moderátoři\".\n"
+"Protože nejste správcem skupiny nebo moderátorem skupiny, znamená to, že váš "
+"komentář může být zveřejněn.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které by mohly způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:367
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the comment setting for this group document "
+"recently changed to \"Admin and moderators only\".\n"
+"Since you are not a group administrator or a group moderator, this means "
+"your comment could be posted.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupinovému dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože nastavení poznámky pro tento dokument skupiny se "
+"nedávno změnilo na \"Správce a moderátoři\".\n"
+"Protože nejste správcem skupiny nebo moderátorem skupiny, znamená to, že váš "
+"komentář může být zveřejněn.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:381
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because you are no longer a member of this group.  To "
+"comment on this group document, please rejoin the group.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupinovému dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože již nejste členem této skupiny. Chcete-li tento "
+"skupinový dokument komentovat, znovu se připojte ke skupině.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:394
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your comment to the group document:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted due to an error.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Váš komentář ke skupinovému dokumentu:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat kvůli chybě.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-extend-bpdocs.php:526 includes/bp-rbe-functions.php:1036
+msgid "via email"
+msgstr "emailem"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:420
+#, php-format
+msgid "%s posted a new activity comment via email:"
+msgstr "uživatel %s zveřejnil nový komentář aktivity prostřednictvím e-mailu:"
+
+# @ buddypress
+#: includes/bp-rbe-functions.php:437
+msgid "View Discussion"
+msgstr "Zobrazit příspěvek"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:751
+msgid "error - no address tag could be found"
+msgstr "chyba - nebyla nalezena žádná značka adresy"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:756
+msgid "error - no user ID could be found"
+msgstr "error - nebylo nalezeno žádné ID uživatele"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:760
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"You tried to use the email address - %s - to reply by email.  Unfortunately, "
+"we could not find this email address in our system.\n"
+"\n"
+"This can happen in a couple of different ways:\n"
+"* You have configured your email client to reply with a custom \"From:\" "
+"email address.\n"
+"* You read email addressed to more than one account inside of a single "
+"Inbox.\n"
+"\n"
+"Make sure that, when replying by email, your \"From:\" email address is the "
+"same as the address you've registered at %s.\n"
+"\n"
+"If you have any questions, please let us know."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"pokusili jste se použít e-mailovou adresu -% s - odpovědět emailem. Tuto e-"
+"mailovou adresu jsme v našem systému bohužel nenalezli.\n"
+"\n"
+"To se může stát z několika důvodů:\n"
+"* Váš e-mailový klient jste nakonfigurovali, abyste odpověděli vlastní e-"
+"mailovou adresou \"Od:\".\n"
+"* Čtete e-mail adresovaný více než jednom účtu uvnitř doručené pošty.\n"
+"\n"
+"Ujistěte se, že při odpovědi e-mailem je vaše e-mailová adresa \"Od:\" "
+"stejná jako adresa, kterou jste zaregistrovali v% s.\n"
+"\n"
+"Máte-li jakékoli dotazy, dejte nám prosím vědět."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:774
+msgid "notice - user is marked as a spammer.  reply not posted!"
+msgstr ""
+"upozornění - uživatel je označen jako spammer. odpověď nebyla zveřejněna!"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:779
+msgid "error - no parameters were found"
+msgstr "chyba - nebyly nalezeny žádné parametry"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:784
+msgid "error - body message for reply was empty"
+msgstr "chyba - zpráva o těle pro odpověď byla prázdná"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:786
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your reply could not be posted because we could not find the \"%s\" marker "
+"in the body of your email.\n"
+"\n"
+"In the future, please make sure you reply *above* this line for your comment "
+"to be posted on the site.\n"
+"\n"
+"If you have any questions, please let us know."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše odpověď nemohla být zaslána, protože nebylo možné najít značku \"%s\" v "
+"těle e-mailu.\n"
+"\n"
+"V budoucnu se ujistěte, že odpovídáte * nad * tímto řádkem, aby byl váš "
+"komentář zveřejněn na webu.\n"
+"\n"
+"Máte-li jakékoli dotazy, dejte nám prosím vědět .."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:799
+msgid "error - root activity update was deleted before this could be posted"
+msgstr ""
+"chyba - aktualizace kořenové aktivity byla odstraněna předtím, než by se "
+"mohla odeslat"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:801 includes/bp-rbe-functions.php:816
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your reply:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the activity entry you were replying to no "
+"longer exists.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše odpověď:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože položka aktivity, na kterou jste odpověděli, již "
+"neexistuje.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:814
+msgid ""
+"error - root or parent activity update was deleted before this could be "
+"posted"
+msgstr ""
+"chyba - aktualizace kořenové nebo nadřazené aktivity byla odstraněna "
+"předtím, než by to mohlo být zveřejněno"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:831
+msgid "error - user is not a member of the group. forum reply not posted."
+msgstr "error - uživatel není členem skupiny. odpověď fóra nebylo odesláno."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:833
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your forum reply:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because you are no longer a member of this group.  To "
+"comment on the forum thread, please rejoin the group.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše odpověď na fórum:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože již nejste členem této skupiny. Chcete-li komentovat "
+"vlákno fóra, znovu se připojte ke skupině.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:846
+msgid "notice - user is banned from group. forum reply not posted."
+msgstr ""
+"upozornění - uživatel je ve skupině zakázán. Odpověď fóra nebyla zveřejněna."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:851
+msgid "error - body message for new forum topic was empty"
+msgstr "chyba - zpráva o novém tématu fóra byla prázdná"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:853
+msgid ""
+"Hi there,\n"
+"\n"
+"We could not post your new forum topic by email because we could not find "
+"any text in the body of the email.\n"
+"\n"
+"In the future, please make sure to type something in your email! :)\n"
+"\n"
+"If you have any questions, please let us know."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"nemohli jsme odeslat nové téma fóra e-mailem, protože v těle e-mailu jsme "
+"nenalezli žádný text.\n"
+"\n"
+"V budoucnu nezapomeňte do svého e-mailu něco zadat! :)\n"
+"\n"
+"Máte-li jakékoli dotazy, dejte nám prosím vědět."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:864
+msgid "error - forum topic was deleted before reply could be posted"
+msgstr "chyba - téma fóra bylo smazáno před odesláním odpovědi"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:866
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your forum reply:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the forum topic you were replying to no longer "
+"exists.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše odpověď na fórum:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože téma fóra, na které jste odpověděli, již neexistuje.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:879
+msgid "error - forum topic failed to be created"
+msgstr "chyba - téma fóra se nepodařilo vytvořit"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:882
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your forum topic titled \"%s\" could not be posted due to an error.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše téma s názvem \"%s\" nelze odeslat kvůli chybě.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:894
+msgid "error - user is not a part of the existing PM conversation"
+msgstr "chyba - uživatel není součástí stávající konverzace PM (osobní zprávy)"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:899
+msgid ""
+"error - private message thread was deleted by all parties before this could "
+"be posted"
+msgstr ""
+"chyba - podpis soukromé zprávy byl smazán všemi stranami předtím, než by to "
+"mohlo být zveřejněno"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:901
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your private message reply:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted because the private message thread you were replying to "
+"no longer exists.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše soukromá odpověď:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat, protože podprogram soukromé zprávy, na který jste odpovídali, "
+"již neexistuje.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:914
+msgid "error - private message failed to post"
+msgstr "error - soukromá zpráva se nepodařilo odeslat"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:915
+#, php-format
+msgid ""
+"Hi there,\n"
+"\n"
+"Your reply:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Could not be posted due to an error.\n"
+"\n"
+"We apologize for any inconvenience this may have caused."
+msgstr ""
+"Dobrý den,\n"
+"\n"
+"Vaše odpověď:\n"
+"\n"
+"\"%s\"\n"
+"\n"
+"Nelze odeslat kvůli chybě.\n"
+"\n"
+"Omlouváme se za případné nepříjemnosti, které to mohlo způsobit."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:937
+#, php-format
+msgid "Message #%d: %s"
+msgstr "Zpráva #%d: %s"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:946
+#, php-format
+msgid "[%s] Your Reply By Email message could not be posted"
+msgstr "[%s] Vaše odpověď e-mailem nemohla být zaslána"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1076
+msgid "Post New Topics via Email"
+msgstr "Odeslat nové témata prostřednictvím e-mailu"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1078
+msgid ""
+"You can post new topics to this group from the comfort of your email inbox."
+msgstr ""
+"Můžete posílat nová témata do této skupiny z pohodlí vaší e-mailové schránky."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1078
+msgid "Find out how!"
+msgstr "Zjistit jak!"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1081
+#, php-format
+msgid ""
+"Send an email to <strong><a href=\"%s\">%s</strong></a> and a new forum "
+"topic will be posted in %s."
+msgstr ""
+"Odeslat e-mail na adresu <strong><a href=\"%s\">%s </strong></a> a téma "
+"nového fóra bude zveřejněno v %s."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1084
+#, php-format
+msgid ""
+"Compose a new email from the same email address you registered with &ndash; "
+"%s"
+msgstr ""
+"Pošlete nový e-mail ze stejné e-mailové adresy, kterou jste zaregistrovali v "
+"&ndash; %s"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1085
+msgid "Put the address above in the \"To:\" field of the email."
+msgstr "Do pole \"Komu:\" zadejte e-mailovou adresu."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1086
+msgid "The email subject will become the topic title."
+msgstr "Předmět e-mailu se stane názvem tématu."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1090
+msgid ""
+"<strong>Note:</strong> The email address above is unique to you and this "
+"group. Do not share this email address with anyone else! (Each group member "
+"will have their own unique email address.)"
+msgstr ""
+"<strong>Poznámka:</strong> Výše uvedená e-mailová adresa je pro vás a pro "
+"tuto skupinu jedinečná. Neposílejte tuto e-mailovou adresu nikomu jinému! "
+"(Každý člen skupiny bude mít svou vlastní e-mailovou adresu.)"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1117
+#, php-format
+msgid "Every %s minutes"
+msgstr "Pokaždé po %s min."
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1262
+#, php-format
+msgid "%s replied to the forum topic %s in the group %s via email:"
+msgstr ""
+"uživatel %s odpověděl na téma fóra %s ve skupině %s prostřednictvím e-mailu:"
+
+# @ bp-rbe
+#: includes/bp-rbe-functions.php:1360
+#, php-format
+msgid "%s started the forum topic %s in the group %s via email:"
+msgstr ""
+"uživatel %s spustil téma fóra %s ve skupině %s prostřednictvím e-mailu:"

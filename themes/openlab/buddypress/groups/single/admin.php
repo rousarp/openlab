@@ -404,7 +404,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php else: ?>
 
                     <div id="message" class="info">
-                        <p class="bold"><?php _e('This group has no members.', 'buddypress'); ?></p>
+                        <p class="bold"><?php _e('Tato skupina nemá žádné členy', 'buddypress'); ?></p>
                     </div>
 
     <?php endif; ?>

@@ -1040,25 +1040,25 @@ function openlab_group_membership_tabs($group = false) {
     ?>
     <!--
     <?php if ($bp->is_item_admin || $bp->is_item_mod): ?>
-        --><li<?php if ($current_tab == 'manage-members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/manage-members"><?php _e('Membership', 'buddypress'); ?></a></li><!--
+        --><li<?php if ($current_tab == 'manage-members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/manage-members"><?php _e('Membership', 'invite-anyone'); ?></a></li><!--
 
         <?php if ($group->status == 'private'): ?>
-            --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Member Requests', 'buddypress'); ?></a></li><!--
+            --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Member Requests', 'invite-anyone'); ?></a></li><!--
         <?php endif; ?>
     <?php else: ?>
     --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Memberships', 'buddypress'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && invite_anyone_access_test() && openlab_is_admin_truly_member()): ?>
-        --><li<?php if ($bp->current_action == 'invite-anyone') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/invite-anyone"><?php _e('Invite New Members', 'buddypress'); ?></a></li><!--
+    --><li<?php if ($bp->current_action == 'invite-anyone') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/invite-anyone"><?php _e('Invite New Members', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if ($bp->is_item_admin || $bp->is_item_mod): ?>
-        --><li<?php if ('notifications' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/notifications"><?php _e('Email Members', 'buddypress'); ?></a></li><!--
+        --><li<?php if ('notifications' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/notifications"><?php _e('Email Members', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && openlab_is_admin_truly_member()): ?>
-        --><li<?php if ($bp->current_action == 'notifications') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/notifications"><?php _e('Your Email Options', 'buddypress'); ?></a></li><!--
+        --><li<?php if ($bp->current_action == 'notifications') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/notifications"><?php _e('Your Email Options', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
     -->
     <?php

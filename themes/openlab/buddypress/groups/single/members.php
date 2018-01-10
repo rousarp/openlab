@@ -6,7 +6,7 @@
 		<ul class="nav nav-inline">
 			<?php openlab_group_membership_tabs(); ?>
 		</ul>
-	</div><!-- .item-list-tabs --> 
+	</div><!-- .item-list-tabs -->
         <div id="member-count" class="pag-count col-sm-8 align-right">
 			<?php bp_group_member_pagination_count() ?>
 		</div>
@@ -62,7 +62,7 @@
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p class="bold"><?php _e( 'This group has no members.', 'buddypress' ); ?></p>
+		<p class="bold"><?php _e( 'Tato skupina nemá žádné členy.', 'buddypress' ); ?></p>
 	</div>
 
 <?php endif; ?>

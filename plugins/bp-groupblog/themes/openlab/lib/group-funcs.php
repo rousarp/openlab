@@ -931,7 +931,7 @@ function openlab_group_profile_activity_list() {
                         <?php else: ?>
 
                             <div id="message" class="info">
-                                <p>This group has no members.</p>
+                                <p>Tato skupina nemá žádné členy.</p>
                             </div>
 
                         <?php endif; ?>

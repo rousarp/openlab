@@ -39,9 +39,9 @@ function openlab_invite_anyone_screen_one_content() {
         if ($sent_invites_count >= $iaoptions['limit_invites_per_user']) :
             ?>
 
-            <h4><?php _e('Invite New Members', 'bp-invite-anyone'); ?></h4>
+            <h4><?php _e('Invite New Members', 'invite-anyone'); ?></h4>
 
-            <p id="welcome-message"><?php _e('You have sent the maximum allowed number of invitations.', 'bp-invite-anyone'); ?></em></p>
+            <p id="welcome-message"><?php _e('You have sent the maximum allowed number of invitations.', 'invite-anyone'); ?></em></p>
 
             <?php
             return;
@@ -94,7 +94,7 @@ function openlab_invite_anyone_screen_one_content() {
     <form id="invite-anyone-by-email" class="form-panel" action="<?php echo $bp->displayed_user->domain . $bp->invite_anyone->slug . '/sent-invites/send/' ?>" method="post">
 
         <div class="panel panel-default">
-            <div class="panel-heading"><?php _e('Invite New Members', 'bp-invite-anyone'); ?></div>
+            <div class="panel-heading"><?php _e('Invite New Members', 'invite-anyone'); ?></div>
             <div class="panel-body">
 
                 <?php

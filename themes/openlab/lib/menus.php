@@ -518,9 +518,9 @@ function openlab_my_messages_submenu() {
     }
 
     $menu_list = array(
-        $dud . 'messages/inbox/' => 'Inbox',
-        $dud . 'messages/sentbox/' => 'Sent',
-        $dud . 'messages/compose' => 'Compose',
+        $dud . 'messages/inbox/' => 'Přijaté',
+        $dud . 'messages/sentbox/' => 'Odeslané',
+        $dud . 'messages/compose' => 'Nová zpráva',
     );
     return openlab_submenu_gen($menu_list);
 }
@@ -533,9 +533,9 @@ function openlab_my_invitations_submenu() {
     }
 
     $menu_list = array(
-        $dud . 'groups/invites/' => 'Invitations Received',
-        $dud . 'invite-anyone/' => 'Invite New Members',
-        $dud . 'invite-anyone/sent-invites/' => 'Sent Invitations',
+        $dud . 'groups/invites/' => 'Přijaté pozvánky',
+        $dud . 'invite-anyone/' => 'Pozvat nové členy',
+        $dud . 'invite-anyone/sent-invites/' => 'Odeslané pozvánky',
     );
     return openlab_submenu_gen($menu_list);
 }
@@ -584,20 +584,20 @@ function openlab_submenu_gen($items, $timestamp = false) {
         }
 
         //special case for send invitations page hitting the same time as invitations received
-        if ($page_identify == "invites" && $title == "Sent Invitations") {
+        if ($page_identify == "invites" && $title == "Odeslat pozvánky") {
             $current_check = false;
         }
 
         //adding the current-menu-item class - also includes special cases, parsed out to make them easier to identify
         if ($current_check !== false) {
             $item_classes .= " current-menu-item";
-        } else if ($page_identify == "general" && $title == "Account Settings") {
+        } else if ($page_identify == "general" && $title == "Nastavení účtu") {
             //special case just for account settings page
             $item_classes .= " current-menu-item";
-        } else if ($page_identify == "my-friends" && $title == "My Friends") {
+        } else if ($page_identify == "my-friends" && $title == "Moji přátelé") {
             //special case just for my friends page
             $item_classes .= " current-menu-item bold";
-        } else if ($page_identify == "invite-new-members" && $title == "Invite New Members") {
+        } else if ($page_identify == "invite-new-members" && $title == "Pozvat nové členy") {
             //special case just for Invite New Members page
             $item_classes .= " current-menu-item";
         } else if ($page_identify == 'my-groups') {
@@ -664,7 +664,7 @@ function openlab_filter_subnav_home($subnav_item) {
 
     $displayed_user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
     $group_label = openlab_get_group_type_label('case=upper');
-    $new_label = '<span class="inline-visible-xs">' . $group_label . '</span> Profile';
+    $new_label = '<span class="inline-visible-xs">' . $group_label . '</span> profil';
 
     $new_item = str_replace("Home", $new_label, $subnav_item);
 
@@ -679,11 +679,11 @@ function openlab_filter_subnav_home($subnav_item) {
     $site_link = '';
 
     if (!empty($group_site_settings['site_url']) && $group_site_settings['is_visible']) {
-        $site_link = '<li id="site-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '" id="site">' . $group_label . ' Site</a></li>';
+        $site_link = '<li id="site-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '" id="site">' . $group_label . ' webové stránky</a></li>';
 
         if ($group_site_settings['is_local'] && ((openlab_is_portfolio() && openlab_is_my_portfolio()) || (!openlab_is_portfolio() && groups_is_user_member(bp_loggedin_user_id(), bp_get_current_group_id())) || $bp->is_item_admin || is_super_admin())) {
 
-            $site_link .= '<li id="site-admin-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . 'wp-admin/" id="site-admin">Site Dashboard</a></li>';
+            $site_link .= '<li id="site-admin-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . 'wp-admin/" id="site-admin"> Nástěnka webu</a></li>';
         }
     }
 
@@ -1040,25 +1040,25 @@ function openlab_group_membership_tabs($group = false) {
     ?>
     <!--
     <?php if ($bp->is_item_admin || $bp->is_item_mod): ?>
-        --><li<?php if ($current_tab == 'manage-members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/manage-members"><?php _e('Membership', 'buddypress'); ?></a></li><!--
+    --><li<?php if ($current_tab == 'manage-members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/manage-members"><?php _e('Členství', 'buddypress'); ?></a></li><!--
 
         <?php if ($group->status == 'private'): ?>
-            --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Member Requests', 'buddypress'); ?></a></li><!--
+        --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Požadavky na členství', 'buddypress'); ?></a></li><!--
         <?php endif; ?>
     <?php else: ?>
-        --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Membership', 'buddypress'); ?></a></li><!--
+    --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Členství', 'buddypress'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && invite_anyone_access_test() && openlab_is_admin_truly_member()): ?>
-        --><li<?php if ($bp->current_action == 'invite-anyone') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/invite-anyone"><?php _e('Invite New Members', 'buddypress'); ?></a></li><!--
+        --><li<?php if ($bp->current_action == 'invite-anyone') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/invite-anyone"><?php _e('Invite New Members', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if ($bp->is_item_admin || $bp->is_item_mod): ?>
-        --><li<?php if ('notifications' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/notifications"><?php _e('Email Members', 'buddypress'); ?></a></li><!--
+    --><li<?php if ('notifications' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/notifications"><?php _e('Odeslat mail členům', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && openlab_is_admin_truly_member()): ?>
-        --><li<?php if ($bp->current_action == 'notifications') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/notifications"><?php _e('Your Email Options', 'buddypress'); ?></a></li><!--
+        --><li<?php if ($bp->current_action == 'notifications') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/notifications"><?php _e('Možnosti e-mailu', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
     -->
     <?php

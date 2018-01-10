@@ -1476,7 +1476,7 @@ class buddypress_Translation_Mangler {
 				return $translations->translate( 'Create a ' . $uc_grouptype );
 				break;
 			case 'Manage' :
-				return $translations->translate( 'Settings' );
+				return $translations->translate( 'Nastavení' );
 				break;
 		}
 		return $translation;
@@ -1499,7 +1499,7 @@ function openlab_gettext_with_context( $translations, $text, $context, $domain )
 	switch ( $text ) {
 		case 'Manage' :
 			if ( 'My Group screen nav' === $context ) {
-				return 'Settings';
+				return 'Nastavení';
 			}
 			break;
 	}
@@ -1515,7 +1515,7 @@ class bbPress_Translation_Mangler {
 		$translations = get_translations_for_domain( 'buddypress' );
 		switch ( $text ) {
 			case 'Forum':
-				return $translations->translate( 'Discussion' );
+				return $translations->translate( 'Diskusní fórum' );
 				break;
 		}
 		return $translation;

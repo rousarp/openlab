@@ -1463,12 +1463,12 @@ function openlab_bp_group_site_pages() {
                 <?php if (openlab_is_my_portfolio() || is_super_admin()) : ?>
                     <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                         <li class="portfolio-site-link bold">
-                            <a class="bold no-deco" href="<?php echo esc_url($group_site_settings['site_url']) ?>">Visit <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> Site <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+                            <a class="bold no-deco" href="<?php echo esc_url($group_site_settings['site_url']) ?>">Visit <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> Web <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
                         </li>
 
                         <?php if (openlab_user_portfolio_site_is_local($displayed_user_id)) : ?>
                             <li class="portfolio-dashboard-link">
-                                <a class="line-height height-200 font-size font-13" href="<?php openlab_user_portfolio_url($displayed_user_id) ?>/wp-admin">Site Dashboard</a>
+                                <a class="line-height height-200 font-size font-13" href="<?php openlab_user_portfolio_url($displayed_user_id) ?>/wp-admin">Nástěnka webu</a>
                             </li>
                         <?php endif ?>
                     </ul>
@@ -1476,7 +1476,7 @@ function openlab_bp_group_site_pages() {
 
                     <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                         <li class="portfolio-site-link">
-                            <a class="bold no-deco" href="<?php echo trailingslashit(esc_attr($group_site_settings['site_url'])); ?>">Visit <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> Site <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+                            <a class="bold no-deco" href="<?php echo trailingslashit(esc_attr($group_site_settings['site_url'])); ?>">Navštívit <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> web <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
                         </li>
                     </ul>
 
@@ -1487,11 +1487,11 @@ function openlab_bp_group_site_pages() {
             <div class="sidebar-block">
                 <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                     <li class="portfolio-site-link">
-                        <?php echo '<a class="bold no-deco" href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '">Visit ' . ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Site <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>'; ?>
+                        <?php echo '<a class="bold no-deco" href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '">Navštívit ' . ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Site <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>'; ?>
                     </li>
                     <?php if ($group_site_settings['is_local'] && ($bp->is_item_admin || is_super_admin() || groups_is_user_member(bp_loggedin_user_id(), bp_get_current_group_id()))) : ?>
                         <li class="portfolio-dashboard-link">
-                            <?php echo '<a class="line-height height-200 font-size font-13" href="' . esc_attr(trailingslashit($group_site_settings['site_url'])) . 'wp-admin/">Site Dashboard</a>'; ?>
+                            <?php echo '<a class="line-height height-200 font-size font-13" href="' . esc_attr(trailingslashit($group_site_settings['site_url'])) . 'wp-admin/">Nástěnka webu</a>'; ?>
                         </li>
                     <?php endif; ?>
                 </ul>

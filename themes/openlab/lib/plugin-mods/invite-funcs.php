@@ -41,7 +41,7 @@ function openlab_invite_anyone_screen_one_content() {
 
             <h4><?php _e('Invite New Members', 'invite-anyone'); ?></h4>
 
-            <p id="welcome-message"><?php _e('You have sent the maximum allowed number of invitations.', 'bp-invite-anyone'); ?></em></p>
+            <p id="welcome-message"><?php _e('You have sent the maximum allowed number of invitations.', 'invite-anyone'); ?></em></p>
 
             <?php
             return;
@@ -89,7 +89,7 @@ function openlab_invite_anyone_screen_one_content() {
     $returned_message = !empty($returned_data['message']) ? stripslashes($returned_data['message']) : false;
 
     $blogname = get_bloginfo('name');
-    $welcome_message = sprintf(__('Invite friends to join %s by following these steps:', 'bp-invite-anyone'), $blogname);
+    $welcome_message = sprintf(__('Invite friends to join %s by following these steps:', 'invite-anyone'), $blogname);
     ?>
     <form id="invite-anyone-by-email" class="form-panel" action="<?php echo $bp->displayed_user->domain . $bp->invite_anyone->slug . '/sent-invites/send/' ?>" method="post">
 
@@ -101,7 +101,7 @@ function openlab_invite_anyone_screen_one_content() {
                 if (!empty($returned_data['error_message'])) {
                     ?>
                     <div class="invite-anyone-error bp-template-notice error">
-                        <p><?php _e("Some of your invitations were not sent. Please see the errors below and resubmit the failed invitations.", 'bp-invite-anyone') ?></p>
+                        <p><?php _e("Some of your invitations were not sent. Please see the errors below and resubmit the failed invitations.", 'invite-anyone') ?></p>
                     </div>
                     <?php
                 }
@@ -126,7 +126,7 @@ function openlab_invite_anyone_screen_one_content() {
                     }
                     ?>
 
-                    <p class="description"><?php printf(__('The site administrator has limited each user to %1$d invitations. You have %2$d invitations remaining.', 'bp-invite-anyone'), (int) $iaoptions['limit_invites_per_user'], (int) $limit_invite_count) ?></p>
+                    <p class="description"><?php printf(__('The site administrator has limited each user to %1$d invitations. You have %2$d invitations remaining.', 'invite-anyone'), (int) $iaoptions['limit_invites_per_user'], (int) $limit_invite_count) ?></p>
 
                     <?php
                 }
@@ -139,12 +139,12 @@ function openlab_invite_anyone_screen_one_content() {
                     <li>
                         <div class="manual-email">
                             <p>
-                                <?php _e('Enter email addresses below, one per line.', 'bp-invite-anyone') ?>
-                                <?php if (invite_anyone_allowed_domains()) : ?> <?php _e('You can only invite people whose email addresses end in one of the following domains:', 'bp-invite-anyone') ?> <?php echo invite_anyone_allowed_domains(); ?><?php endif; ?>
+                                <?php _e('Enter email addresses below, one per line.', 'invite-anyone') ?>
+                                <?php if (invite_anyone_allowed_domains()) : ?> <?php _e('You can only invite people whose email addresses end in one of the following domains:', 'invite-anyone') ?> <?php echo invite_anyone_allowed_domains(); ?><?php endif; ?>
                             </p>
 
                             <?php if (false !== $max_no_invites = invite_anyone_max_invites()) : ?>
-                                <p class="description"><?php printf(__('You can invite a maximum of %s people at a time.', 'bp-invite-anyone'), $max_no_invites) ?></p>
+                                <p class="description"><?php printf(__('You can invite a maximum of %s people at a time.', 'invite-anyone'), $max_no_invites) ?></p>
                             <?php endif ?>
                             <?php openlab_invite_anyone_email_fields($returned_data['error_emails']) ?>
                         </div>
@@ -156,10 +156,10 @@ function openlab_invite_anyone_screen_one_content() {
 
                     <li>
                         <?php if ($iaoptions['subject_is_customizable'] == 'yes') : ?>
-                            <label for="invite-anyone-custom-subject"><?php _e('(optional) Customize the subject line of the invitation email.', 'bp-invite-anyone') ?></label>
+                            <label for="invite-anyone-custom-subject"><?php _e('(optional) Customize the subject line of the invitation email.', 'invite-anyone') ?></label>
                             <textarea name="invite_anyone_custom_subject" id="invite-anyone-custom-subject" class="form-control" rows="3" cols="10" ><?php echo invite_anyone_invitation_subject($returned_subject) ?></textarea>
                         <?php else : ?>
-                            <label for="invite-anyone-custom-subject"><h4><?php _e('Subject: <span class="disabled-subject">Subject line is fixed</span>', 'bp-invite-anyone') ?></h4></label>
+                            <label for="invite-anyone-custom-subject"><h4><?php _e('Subject: <span class="disabled-subject">Subject line is fixed</span>', 'invite-anyone') ?></h4></label>
                             <textarea name="invite_anyone_custom_subject" id="invite-anyone-custom-subject" class="form-control" rows="3" cols="10" disabled="disabled"><?php echo invite_anyone_invitation_subject($returned_subject) ?> </textarea>
 
                             <input type="hidden" id="invite-anyone-customised-subject" name="invite_anyone_custom_subject" value="<?php echo invite_anyone_invitation_subject() ?>" />
@@ -168,11 +168,11 @@ function openlab_invite_anyone_screen_one_content() {
 
                     <li>
                         <?php if ($iaoptions['message_is_customizable'] == 'yes') : ?>
-                            <label for="invite-anyone-custom-message"><h4><?php _e('(optional) Customize the text of the invitation.', 'bp-invite-anyone') ?></h4></label>
-                            <p class="description"><?php _e('The message will also contain a custom footer containing links to accept the invitation or opt out of further email invitations from this site.', 'bp-invite-anyone') ?></p>
+                            <label for="invite-anyone-custom-message"><h4><?php _e('(optional) Customize the text of the invitation.', 'invite-anyone') ?></h4></label>
+                            <p class="description"><?php _e('The message will also contain a custom footer containing links to accept the invitation or opt out of further email invitations from this site.', 'invite-anyone') ?></p>
                             <textarea name="invite_anyone_custom_message" id="invite-anyone-custom-message" class="form-control" cols="40" rows="7"><?php echo invite_anyone_invitation_message($returned_message) ?></textarea>
                         <?php else : ?>
-                            <label for="invite-anyone-custom-message"><?php _e('Message:', 'bp-invite-anyone') ?></label>
+                            <label for="invite-anyone-custom-message"><?php _e('Message:', 'invite-anyone') ?></label>
                             <textarea name="invite_anyone_custom_message" id="invite-anyone-custom-message" class="form-control" disabled="disabled" ><?php echo invite_anyone_invitation_message($returned_message) ?></textarea>
 
                             <input type="hidden" name="invite_anyone_custom_message" value="<?php echo invite_anyone_invitation_message() ?>" />
@@ -183,7 +183,7 @@ function openlab_invite_anyone_screen_one_content() {
                     <?php if (invite_anyone_are_groups_running()) : ?>
                         <?php if ($iaoptions['can_send_group_invites_email'] == 'yes' && bp_has_groups("per_page=10000&type=alphabetical&user_id=" . bp_loggedin_user_id())) : ?>
                             <li>
-                                <p><?php _e('(optional) Select some groups. Invitees will receive invitations to these groups when they join the site.', 'bp-invite-anyone') ?></p>
+                                <p><?php _e('(optional) Select some groups. Invitees will receive invitations to these groups when they join the site.', 'invite-anyone') ?></p>
                                 <ul id="invite-anyone-group-list" class="inline-element-list row group-list">
                                     <?php while (bp_groups()) : bp_the_group(); ?>
                                         <?php
@@ -270,15 +270,15 @@ function openlab_invite_anyone_screen_two_content() {
     <?php if ($invites->have_posts()) : ?>
     <div class="form-panel sent-invites-panel">
     <div class="panel panel-default">
-        <div class="panel-heading"><span class="bold"><?php _e('Sent Invites', 'bp-invite-anyone'); ?></span><div class="pull-right pagination-viewing"><?php $pagination->currently_viewing_text() ?></div></div>
+        <div class="panel-heading"><span class="bold"><?php _e('Sent Invites', 'invite-anyone'); ?></span><div class="pull-right pagination-viewing"><?php $pagination->currently_viewing_text() ?></div></div>
         <div class="panel-body">
 
-                <p id="sent-invites-intro"><?php _e('You have sent invitations to the following people.', 'bp-invite-anyone') ?></p>
+                <p id="sent-invites-intro"><?php _e('You have sent invitations to the following people.', 'invite-anyone') ?></p>
 
                 <table class="invite-anyone-sent-invites zebra table no-margin no-margin-bottom"
                        summary="<?php _e('This table displays a list of all your sent invites.
 			Invites that have been accepted are highlighted in the listings.
-			You may clear any individual invites, all accepted invites or all of the invites from the list.', 'bp-invite-anyone') ?>">
+			You may clear any individual invites, all accepted invites or all of the invites from the list.', 'invite-anyone') ?>">
                     <thead>
                         <tr>
 				<th scope="col" class="col-delete-invite"></th>
@@ -293,8 +293,8 @@ function openlab_invite_anyone_screen_two_content() {
                         <tr id="batch-clear">
                             <td colspan="5" >
                                 <div id="invite-anyone-clear-links" class="inline-element-list">
-                                    <a title="<?php _e('Clear all accepted invites from the list', 'bp-invite-anyone') ?>" class="confirm btn btn-primary link-btn" href="<?php echo wp_nonce_url($base_url . '?clear=accepted', 'invite_anyone_clear') ?>"><?php _e('Clear all accepted invitations', 'bp-invite-anyone') ?></a>
-                                    <a title="<?php _e('Clear all your listed invites', 'bp-invite-anyone') ?>" class="confirm btn btn-primary link-btn" href="<?php echo wp_nonce_url($base_url . '?clear=all', 'invite_anyone_clear') ?>"><?php _e('Clear all invitations', 'bp-invite-anyone') ?></a>
+                                    <a title="<?php _e('Clear all accepted invites from the list', 'invite-anyone') ?>" class="confirm btn btn-primary link-btn" href="<?php echo wp_nonce_url($base_url . '?clear=accepted', 'invite_anyone_clear') ?>"><?php _e('Clear all accepted invitations', 'invite-anyone') ?></a>
+                                    <a title="<?php _e('Clear all your listed invites', 'invite-anyone') ?>" class="confirm btn btn-primary link-btn" href="<?php echo wp_nonce_url($base_url . '?clear=all', 'invite_anyone_clear') ?>"><?php _e('Clear all invitations', 'invite-anyone') ?></a>
                                 </div>
                             </td>
                         </tr>
@@ -320,7 +320,7 @@ function openlab_invite_anyone_screen_two_content() {
 
                             $clear_url = ( $query_string ) ? $base_url . '?' . $query_string . '&clear=' . $post_id : $base_url . '?clear=' . $post_id;
                             $clear_url = wp_nonce_url($clear_url, 'invite_anyone_clear');
-                            $clear_link = '<a class="clear-entry confirm" title="' . __('Clear this invitation', 'bp-invite-anyone') . '" href="' . $clear_url . '">x<span></span></a>';
+                            $clear_link = '<a class="clear-entry confirm" title="' . __('Clear this invitation', 'invite-anyone') . '" href="' . $clear_url . '">x<span></span></a>';
 
                             $groups = wp_get_post_terms(get_the_ID(), invite_anyone_get_invited_groups_tax_name());
                             if (!empty($groups)) {
@@ -374,7 +374,7 @@ function openlab_invite_anyone_screen_two_content() {
 
         <div class="info group-list row" id="message">
             <div class="col-md-24">
-		<p class="bold"><?php _e("You haven't sent any email invitations yet.", 'bp-invite-anyone') ?></p>
+		<p class="bold"><?php _e("You haven't sent any email invitations yet.", 'invite-anyone') ?></p>
             </div>
 	</div>
 

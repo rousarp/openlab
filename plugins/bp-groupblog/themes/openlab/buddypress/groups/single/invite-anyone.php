@@ -22,7 +22,7 @@
 
             <?php do_action('template_notices') ?>
 
-            <label><?php _e("Search for members to invite:", 'bp-invite-anyone') ?></label>
+            <label><?php _e("Search for members to invite:", 'invite-anyone') ?></label>
 
             <ul class="first acfb-holder invite-search inline-element-list">
                 <li>

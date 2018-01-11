@@ -110,7 +110,7 @@ function bp_nonmember_comment_content( $content ) {
 		return $content;
 
 	/* Todo: Add patch to core that makes these buttons not appear for user_id=0 */
-	$content = preg_replace( "|(View</a>).*?<a href=.+?>Delete</a></span>|", '$1</span>', $content ); // for bp-default 1.2+
+	$content = preg_replace( "|(View</a>).*?<a href=.+?>Smazat</a></span>|", '$1</span>', $content ); // for bp-default 1.2+
 	$content = preg_replace( "|<span class=\"activity-delete-link.+?</span>|", '', $content ); // for bp-classic
 
 	return $content;

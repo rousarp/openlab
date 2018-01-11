@@ -46,14 +46,14 @@ $field_ids = array(1);
         <div class="clear"></div>
 
         <div class="panel panel-default">
-            <div class="panel-heading">Edit Profile</div>
+            <div class="panel-heading">Upravit profil</div>
             <div class="panel-body">
 
                 <?php do_action('template_notices'); ?>
 
                 <?php if (!$display_name_shown) { ?>
                     <div class="editfield field_1 field_name alt form-group">
-                        <label for="field_1">Display Name (required)</label>
+                        <label for="field_1">Jméno pro zobrazování (vyžadováno)</label>
                         <input class="form-control" type="text" value="<?php echo $display_name; ?>" id="field_1" name="field_1">
                         <p class="description"></p>
                     </div>

@@ -13,7 +13,7 @@
 
         <form action="<?php echo bp_displayed_user_domain() . bp_get_settings_slug() . '/delete-account'; ?>" name="account-delete-form" id="account-delete-form" class="standard-form" method="post">
             <div class="bp-template-notice error margin-bottom">
-                <p><?php _e('WARNING: Deleting your account will completely remove ALL content associated with it. There is no way back, please be careful with this option.', 'buddypress'); ?></p>
+                <p><?php //_e('WARNING: Deleting your account will completely remove ALL content associated with it. There is no way back, please be careful with this option.', 'buddypress'); ?><?php _e('UPOZORNĚNÍ: Při mazání účtu bude zcela odstraněn veškerý obsah s ním spojený. Neexistuje žádná cesta zpět, prosím, dávejte pozor na tuto možnost.', 'buddypress'); ?></p>
             </div>
             <div class="checkbox no-margin no-margin-bottom">
                 <label>
@@ -21,13 +21,13 @@
                                 document.getElementById('delete-account-button').disabled = '';
                             } else {
                                 document.getElementById('delete-account-button').disabled = 'disabled';
-                            }" /> 
-                            <?php _e('I understand the consequences of deleting my account.', 'buddypress'); ?>
+                            }" />
+                            <?php //_e('I understand the consequences of deleting my account.', 'buddypress'); ?><?php _e('Chápu důsledky odstranění mého účtu.', 'buddypress'); ?>
                     </label>
                     </div>
             <?php do_action('bp_members_delete_account_before_submit'); ?>
             <div class="submit">
-                <input type="submit" disabled="disabled" value="<?php _e('Delete My Account', 'buddypress') ?>" id="delete-account-button" class="btn btn-primary btn-margin btn-margin-top" name="delete-account-button" />
+                <input type="submit" disabled="disabled" value="<?php //_e('Delete My Account', 'buddypress') ?><?php _e('Smazat můj účet', 'buddypress') ?>" id="delete-account-button" class="btn btn-primary btn-margin btn-margin-top" name="delete-account-button" />
             </div>
 
     <?php do_action('bp_members_delete_account_after_submit');

@@ -29,7 +29,7 @@
 
 				<?php else : ?>
 
-					<div class="panel-heading"><?php _e( 'Activate your Account', 'buddypress' ) ?></div>
+					<div class="panel-heading"><?php _e( 'Activate Your Account', 'buddypress' ) ?></div>
 					<div class="panel-body">
 
 						<?php do_action( 'bp_before_activate_content' ) ?>

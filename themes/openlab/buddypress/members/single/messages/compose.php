@@ -1,7 +1,7 @@
 <form action="<?php bp_messages_form_action('compose') ?>" method="post" id="send_message_form" class="standard-form form-panel">
-    
+
     <div class="panel panel-default">
-        <div class="panel-heading semibold">Compose Message</div>
+        <div class="panel-heading semibold">Odeslat zprávu</div>
         <div class="panel-body">
 
 	<?php do_action( 'bp_before_messages_compose_content' ) ?>
@@ -43,4 +43,3 @@
 <script type="text/javascript">
 	document.getElementById("send-to-input").focus();
 </script>
-

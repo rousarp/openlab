@@ -19,9 +19,9 @@ add_action( 'admin_menu', 'bp_group_documents_group_admin_nav', 2 );
 
 /*
  * bp_group_documents_group_admin_setting()
- * 
+ *
  * This function catches the URL for the Group Administrator screen
- * it will then check to see if we're looking at group docs admin, 
+ * it will then check to see if we're looking at group docs admin,
  * and check for updates and display options accordingly
  */
 function bp_group_documents_group_admin_settings() {
@@ -99,7 +99,7 @@ function bp_group_documents_group_admin_edit() {
 		//this way we don't need to distinguish between not set or false, which could be problematic.
 		$documents_disabled = groups_get_groupmeta( $bp->groups->current_group->id, 'group_documents_documents_disabled' ); ?>
 		<p><label><?php _e('Enable documents for this group:','bp-group-documents'); ?></label>
-		<input type="radio" name="group_documents_documents_disabled" value="0" <?php if( !$documents_disabled ) echo 'checked="checked"' ?> /><?php _e('Yes','bp-group-documents') ?><br /> 
+		<input type="radio" name="group_documents_documents_disabled" value="0" <?php if( !$documents_disabled ) echo 'checked="checked"' ?> /><?php _e('Yes','bp-group-documents') ?><br />
 		<input type="radio" name="group_documents_documents_disabled" value="1" <?php if( $documents_disabled ) echo 'checked="checked"' ?> /><?php _e('No','bp-group-documents') ?>
 		</p>
 
@@ -133,8 +133,8 @@ function bp_group_documents_group_admin_edit() {
 				$delete_link = wp_nonce_url($action_link . '?delete=' . $category->term_id,'group-documents-category-delete');
 					 ?>
 				<li id="category-<?php echo $category->term_id; ?>"><?php echo $category->name; ?>
-				 &nbsp; <a class="group-documents-category-edit" href="<?php echo $edit_link; ?>">Edit</a>
-				  | <a class="group-documents-category-delete" href="<?php echo $delete_link; ?>">Delete</a></li>
+				 &nbsp; <a class="group-documents-category-edit" href="<?php echo $edit_link; ?>">Upravit</a>
+				  | <a class="group-documents-category-delete" href="<?php echo $delete_link; ?>">Smazat</a></li>
 				<?php } ?>
 			<?php } ?>
 				<li><input type="text" name="bp_group_documents_new_category" class="bp-group-documents-new-category" />
@@ -157,7 +157,7 @@ function bp_group_documents_group_admin_edit() {
  */
 function bp_group_documents_group_admin_save() {
 	global $bp;
-	
+
 	do_action('bp_group_documents_group_admin_save');
 
 	$success = false;
@@ -168,15 +168,15 @@ function bp_group_documents_group_admin_save() {
 		term_exists( (int)$_POST['group_documents_category_edit_id'], 'group-documents-category') ) {
 
 		check_admin_referer('groups-edit-group-documents');
-	
+
 		$success = wp_update_term( (int)$_POST['group_documents_category_edit_id'], 'group-documents-category',
 			array('name'=>$_POST['group_documents_category_edit']));
 	}
 
 
 	//check if category was deleted
-	if( isset($_GET['delete'] ) && 
-		ctype_digit( $_GET['delete']) && 
+	if( isset($_GET['delete'] ) &&
+		ctype_digit( $_GET['delete']) &&
 		term_exists( (int)$_GET['delete'],'group-documents-category' ) ) {
 
 		check_admin_referer('group-documents-category-delete');
@@ -210,10 +210,9 @@ function bp_group_documents_group_admin_save() {
 
 	}
 
-	//If something was updated, post a success 
+	//If something was updated, post a success
 	if ( $success !== false ) {
 		bp_core_add_message( __( 'Settings saved successfully', 'buddypress' ) );
 		bp_core_redirect( bp_get_group_permalink( $bp->groups->current_group ) . '/admin/' . $bp->group_documents->slug );
 	}
 }
-

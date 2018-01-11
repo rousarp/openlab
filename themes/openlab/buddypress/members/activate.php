@@ -23,13 +23,13 @@
 						<?php if ( isset( $_GET['e'] ) ) : ?>
 							<p class="bp-template-notice updated no-margin no-margin-bottom"><?php _e( 'Your account was activated successfully! Your account details have been sent to you in a separate email.', 'buddypress' ) ?></p>
 						<?php else : ?>
-							<p class="bp-template-notice updated no-margin no-margin-bottom"><?php _e( 'Your account was activated successfully! You can now log in with the username and password you provided when you signed up.', 'buddypress' ) ?></p>
+							<p class="bp-template-notice updated no-margin no-margin-bottom"><?php //_e( 'Your account was activated successfully! You can now log in with the username and password you provided when you signed up.', 'buddypress' ) ?><?php printf( __( 'Your account was activated successfully! You can now <a href="%s">log in</a> with the username and password you provided when you signed up.', 'buddypress' ), wp_login_url( bp_get_root_domain() ) ); ?></p>
 						<?php endif; ?>
 					</div>
 
 				<?php else : ?>
 
-					<div class="panel-heading"><?php _e( 'Activate your Account', 'buddypress' ) ?></div>
+					<div class="panel-heading"><?php _e( 'Activate Your Account', 'buddypress' ) ?></div>
 					<div class="panel-body">
 
 						<?php do_action( 'bp_before_activate_content' ) ?>

@@ -433,10 +433,10 @@ function dwqa_permission_display(){
 		<thead>
 			<tr>
 				<th width="20%"></th>
-				<th>Read</th>
-				<th>Post</th>
-				<th>Edit</th>
-				<th>Delete</th>
+				<th>Číst</th>
+				<th>Napsat</th>
+				<th>Upravit/th>
+				<th>Smazat</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -469,10 +469,10 @@ function dwqa_permission_display(){
 		<thead>
 			<tr>
 				<th width="20%"></th>
-				<th>Read</th>
-				<th>Post</th>
-				<th>Edit</th>
-				<th>Delete</th>
+				<th>Číst</th>
+				<th>Napsat</th>
+				<th>Upravit</th>
+				<th>Smazat</th>
 			</tr>
 		</thead>
 		<tbody>

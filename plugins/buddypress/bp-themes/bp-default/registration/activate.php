@@ -10,7 +10,7 @@
 			<h3><?php if ( bp_account_was_activated() ) :
 				_e( 'Account Activated', 'buddypress' );
 			else :
-				_e( 'Activate your Account', 'buddypress' );
+				_e( 'Activate Your Account', 'buddypress' );
 			endif; ?></h3>
 
 			<?php do_action( 'template_notices' ); ?>

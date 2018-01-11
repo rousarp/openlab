@@ -244,7 +244,7 @@ function openlab_profile_field_input_attributes() {
     switch (bp_get_the_profile_field_name()) {
         case 'Name' :
             $attributes[] = 'data-parsley-required';
-            $attributes[] = 'data-parsley-required-message="Display Name is required."';
+            $attributes[] = 'data-parsley-required-message="Pole Jméno k zobrazení je vyžadováno."';
             $attributes[] = "data-parsley-errors-container='#{$field_name}_confirm_error'";
             break;
 

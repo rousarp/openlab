@@ -3388,17 +3388,17 @@ function bp_email_get_schema() {
 			/* translators: do not remove {} brackets or translate its contents. */
 			'post_title'   => __( '[{{{site.name}}}] Activate your account', 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
-			'post_content' => __( "Thanks for registering!\n\nTo complete the activation of your account, go to the following link: <a href=\"{{{activate.url}}}\">{{{activate.url}}}</a>", 'buddypress' ),
+			'post_content' => __( 'Thanks for registering!\n\nTo complete the activation of your account, go to the following link: <a href=\"{{{activate.url}}}\">{{{activate.url}}}</a>', 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
-			'post_excerpt' => __( "Thanks for registering!\n\nTo complete the activation of your account, go to the following link: {{{activate.url}}}", 'buddypress' ),
+			'post_excerpt' => __( 'Thanks for registering!\n\nTo complete the activation of your account, go to the following link: {{{activate.url}}}', 'buddypress' ),
 		),
 		'core-user-registration-with-blog' => array(
 			/* translators: do not remove {} brackets or translate its contents. */
 			'post_title'   => __( '[{{{site.name}}}] Activate {{{user-site.url}}}', 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
-			'post_content' => __( "Thanks for registering!\n\nTo complete the activation of your account and site, go to the following link: <a href=\"{{{activate-site.url}}}\">{{{activate-site.url}}}</a>.\n\nAfter you activate, you can visit your site at <a href=\"{{{user-site.url}}}\">{{{user-site.url}}}</a>.", 'buddypress' ),
+			'post_content' => __( 'Thanks for registering!\n\nTo complete the activation of your account and site, go to the following link: <a href=\"{{{activate-site.url}}}\">{{{activate-site.url}}}</a>.\n\nAfter you activate, you can visit your site at <a href=\"{{{user-site.url}}}\">{{{user-site.url}}}</a>.', 'buddypress' ),
 			/* translators: do not remove {} brackets or translate its contents. */
-			'post_excerpt' => __( "Thanks for registering!\n\nTo complete the activation of your account and site, go to the following link: {{{activate-site.url}}}\n\nAfter you activate, you can visit your site at {{{user-site.url}}}.", 'buddypress' ),
+			'post_excerpt' => __( 'Thanks for registering!\n\nTo complete the activation of your account and site, go to the following link: {{{activate-site.url}}}\n\nAfter you activate, you can visit your site at {{{user-site.url}}}.', 'buddypress' ),
 		),
 		'friends-request' => array(
 			/* translators: do not remove {} brackets or translate its contents. */

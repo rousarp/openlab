@@ -16,18 +16,18 @@ wp_tiny_mce();
 </div>
 
 <form action="" method="post" class="standard-form" id="doc-form">
-    <div class="doc-header">	
+    <div class="doc-header">
 	<?php if ( bp_docs_is_existing_doc() ) : ?>
 		<input type="hidden" id="existing-doc-id" value="<?php the_ID() ?>" />
 	<?php endif ?>
     </div>
     <div class="doc-content-wrapper">
         <div id="doc-content-title">
-		<label for="doc[title]"><?php _e( 'Title', 'bp-docs' ) ?></label>        	
+		<label for="doc[title]"><?php _e( 'Title', 'bp-docs' ) ?></label>
 		<input type="text" id="doc-title" name="doc[title]" class="long" value="<?php bp_docs_edit_doc_title() ?>" />
         </div>
         <div id="doc-content-textarea">
-		<label id="content-label" for="doc[content]"><?php _e( 'Content', 'bp-docs' ) ?></label>        
+		<label id="content-label" for="doc[content]"><?php _e( 'Content', 'bp-docs' ) ?></label>
 		<div id="editor-toolbar">
 			<?php /* No media support for now
 			<div id="media-toolbar">
@@ -37,12 +37,12 @@ wp_tiny_mce();
 			<?php the_editor( bp_docs_get_edit_doc_content(), 'doc[content]', 'doc[title]', false ); ?>
 		</div>
         </div>
-        
+
         <div id="doc-meta">
         	<div id="doc-tax" class="doc-meta-box">
 			<div class="toggleable">
 				<p id="tags-toggle-edit" class="toggle-switch"><?php _e( 'Tags', 'bp-docs' ) ?></p>
-				
+
 				<div class="toggle-content">
 					<table class="toggle-table" id="toggle-table-tags">
 						<tr>
@@ -50,7 +50,7 @@ wp_tiny_mce();
 								<label for="bp_docs_tag"><?php _e( 'Tags are words or phrases that help to describe and organize your Docs.', 'bp-docs' ) ?></label>
 								<span class="description"><?php _e( 'Separate tags with commas (for example: <em>orchestra, snare drum, piccolo, Brahms</em>)', 'bp-docs' ) ?></span>
 							</td>
-							
+
 							<td>
 								<?php bp_docs_post_tags_meta_box() ?>
 							</td>
@@ -59,21 +59,21 @@ wp_tiny_mce();
 				</div>
 			</div>
         	</div>
-		
+
 		<div id="doc-parent" class="doc-meta-box">
 			<div class="toggleable">
 				<p class="toggle-switch" id="parent-toggle"><?php _e( 'Parent', 'bp-docs' ) ?></p>
-	
+
 				<div class="toggle-content">
 					<table class="toggle-table" id="toggle-table-parent">
 						<tr>
 							<td class="desc-column">
 								<label for="parent_id"><?php _e( 'Select a parent for this Doc.', 'bp-docs' ) ?></label>
-								
-								<span class="description"><?php _e( '(Optional) Assigning a parent Doc means that a link to the parent will appear at the bottom of this Doc, and a link to this Doc will appear at the bottom of the parent.', 'bp-docs' ) ?></span> 
+
+								<span class="description"><?php _e( '(Optional) Assigning a parent Doc means that a link to the parent will appear at the bottom of this Doc, and a link to this Doc will appear at the bottom of the parent.', 'bp-docs' ) ?></span>
 							</td>
-							
-							<td class="content-column">							
+
+							<td class="content-column">
 								<?php bp_docs_edit_parent_dropdown() ?>
 							</td>
 						</tr>
@@ -81,12 +81,12 @@ wp_tiny_mce();
 				</div>
 			</div>
 		</div>
-		
+
 		<?php if ( bp_docs_current_user_can( 'manage' ) ) : ?>
 			<div id="doc-settings" class="doc-meta-box">
 				<div class="toggleable">
 					<p class="toggle-switch" id="settings-toggle"><?php _e( 'Settings', 'bp-docs' ) ?></p>
-		
+
 					<div class="toggle-content">
 						<table class="toggle-table" id="toggle-table-settings">
 							<?php bp_docs_doc_settings_markup() ?>
@@ -96,19 +96,19 @@ wp_tiny_mce();
 			</div>
 		<?php endif ?>
         </div>
-        
+
         <div style="clear: both"> </div>
-        
+
         <div id="doc-submit-options">
-        
+
         	<?php wp_nonce_field( 'bp_docs_save' ) ?>
-        
+
 		<input type="submit" name="doc-edit-submit" id="doc-edit-submit" value="<?php _e( 'Save', 'bp-docs' ) ?>"> <a href="<?php bp_docs_cancel_edit_link() ?>" class="action safe"><?php _e( 'Cancel', 'bp-docs' ); ?></a>
-            
-            	<?php if ( bp_docs_current_user_can( 'manage' ) ) : ?><a class="delete-doc-button confirm" href="<?php bp_docs_delete_doc_link() ?>">Delete</a><?php endif ?>
+
+            	<?php if ( bp_docs_current_user_can( 'manage' ) ) : ?><a class="delete-doc-button confirm" href="<?php bp_docs_delete_doc_link() ?>">Smazat</a><?php endif ?>
         </div>
-        
-        
+
+
         <div style="clear: both"> </div>
     </div>
 </form>
@@ -125,10 +125,10 @@ wp_tiny_mce();
 <div id="still_working_content" name="still_working_content" style="display:none;">
 	<br />
 	<h3><?php _e( 'Are you still there?', 'bp-docs' ) ?></h3>
-	
+
 	<p><?php _e( 'In order to prevent overwriting content, only one person can edit a given doc at a time. For that reason, you must periodically ensure the system that you\'re still actively editing. If you are idle for more than 30 minutes, your changes will be auto-saved, and you\'ll be sent out of Edit mode so that others can access the doc.', 'bp-docs' ) ?></p>
-	
+
 	<a href="#" onclick="tb_remove(); return false" class="button"><?php _e( 'I\'m still editing!', 'bp-docs' ) ?></a>
-	
-	
+
+
 </div>

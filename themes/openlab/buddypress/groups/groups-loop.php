@@ -117,7 +117,7 @@ if ( !empty( $_GET['group_sequence'] ) ) {
 		?>
 </div>
 	<div class="widget-error">
-		<?php _e('There are no '.$group_type.' to display.', 'buddypress') ?>
+		<?php _e('Nejsou k dispozici žádné '.$group_type.' k zobrazení.', 'buddypress') ?>
 	</div>
 
 <?php endif; ?>

@@ -46,7 +46,7 @@
 					</div>
 
 					<div class="message-actions">
-						<?php if ( bp_message_thread_has_unread() ) : ?> <span class="message-unread">Unread</span> <span class="sep">|</span><?php endif; ?><a class="delete-button confirm" href="<?php bp_message_thread_delete_link() ?>" title="<?php _e( 'Delete Message', 'buddypress' ); ?>"><i class="fa fa-minus-circle"></i>Delete</a>
+						<?php if ( bp_message_thread_has_unread() ) : ?> <span class="message-unread">Nepřečtené</span> <span class="sep">|</span><?php endif; ?><a class="delete-button confirm" href="<?php bp_message_thread_delete_link() ?>" title="<?php _e( 'Delete Message', 'buddypress' ); ?>"><i class="fa fa-minus-circle"></i>Smazat</a>
 					</div>
 			</div>
 			</div>

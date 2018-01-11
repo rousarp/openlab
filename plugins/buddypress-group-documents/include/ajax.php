@@ -3,7 +3,7 @@
 /*
  * bp_group_documents_increment_download_count()
  *
- * instanciates a document object based on the POST id, 
+ * instanciates a document object based on the POST id,
  * then increments the download_count field in the database by 1.
  *
  * This fires in the background when a user clicks on a document link
@@ -53,8 +53,8 @@ function bp_group_documents_add_category() {
 	$edit_link = wp_nonce_url('?edit=' . $term_id, 'group-documents-category-edit');
 	$delete_link = wp_nonce_url('?delete=' . $term_id,'group-documents-category-delete');
 
-	$output .= '&nbsp; <a class="group-documents-category-edit" href="' . $edit_link . '">Edit</a>';
-	$output .= ' | <a class="group-documents-category-delete" href="' . $delete_link . '">Delete</a>';
+	$output .= '&nbsp; <a class="group-documents-category-edit" href="' . $edit_link . '">Upravit</a>';
+	$output .= ' | <a class="group-documents-category-delete" href="' . $delete_link . '">Smazat</a>';
 
 	$output .= '</li>';
 

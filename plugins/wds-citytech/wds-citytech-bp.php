@@ -505,14 +505,14 @@ add_action( 'groups_join_group', 'openlab_send_group_join_admin_notification', 1
 function openlab_get_xprofile_field_id( $field_name ) {
 	switch ( $field_name ) {
 		case 'First Name' :
-			return 241;
+			return 8;
 
 		case 'Last Name' :
-			return 3;
+			return 9;
 
 		// On the 'Student' field group.
 		case 'Phone' :
-			return 194;
+			return 21;
 	}
 }
 

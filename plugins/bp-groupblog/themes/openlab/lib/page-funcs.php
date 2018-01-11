@@ -24,7 +24,7 @@ function cuny_home_login() {
                 </a>
 
                 <ul class="content-list">
-                    <li class="no-margin no-margin-bottom"><a class="button logout font-size font-12 roll-over-loss" href="<?php echo wp_logout_url(bp_get_root_domain()) ?>">Not <?php echo bp_core_get_username(bp_loggedin_user_id()); ?>?</a></li>
+                    <li class="no-margin no-margin-bottom"><a class="button logout font-size font-12 roll-over-loss" href="<?php echo wp_logout_url(bp_get_root_domain()) ?>">Není <?php echo bp_core_get_username(bp_loggedin_user_id()); ?>?</a></li>
                     <li class="no-margin no-margin-bottom"><a class="button logout font-size font-12 roll-over-loss" href="<?php echo wp_logout_url(bp_get_root_domain()) ?>"><?php _e('Log Out', 'buddypress') ?></a></li>
                 </ul>
                 </span><!--user-info-->
@@ -37,7 +37,7 @@ function cuny_home_login() {
         <?php echo '</div>'; ?>
 
         <div id="login-help" class="log-box">
-            <h4 class="title">Need Help?</h4>
+            <h4 class="title">Potřebujete pomoci?</h4>
             <p class="font-size font-14">Navštivte <a class="roll-over-loss" href="<?php echo site_url(); ?>/blog/help/openlab-help/">sekci nápovědy</a> nebo <a class="roll-over-loss" href='<?php echo site_url(); ?>/about/contact-us/'>kontaktujte nás</a> s vašimi otázkami.</p>
         </div><!--login-help-->
 
@@ -57,15 +57,15 @@ function cuny_home_login() {
             <?php do_action('bp_before_sidebar_login_form') ?>
 
             <form name="login-form" class="standard-form" action="<?php echo site_url('wp-login.php', 'login_post') ?>" method="post">
-                <label class="sr-only" for="sidebar-user-login">Username</label>
+                <label class="sr-only" for="sidebar-user-login">Uživatelské jméno</label>
                 <input class="form-control input" type="text" name="log" id="sidebar-user-login" value="" placeholder="Username" tabindex="0" />
 
-                <label class="sr-only" for="sidebar-user-pass">Password</label>
+                <label class="sr-only" for="sidebar-user-pass">Heslo</label>
                 <input class="form-control input" type="password" name="pwd" id="sidebar-user-pass" value="" placeholder="Password" tabindex="0" />
 
                 <div id="keep-logged-in" class="small-text clearfix">
                     <div class="password-wrapper">
-                        <a class="forgot-password-link small-text roll-over-loss" href="<?php echo site_url('wp-login.php?action=lostpassword', 'login') ?>">Forgot Password?</a>
+                        <a class="forgot-password-link small-text roll-over-loss" href="<?php echo site_url('wp-login.php?action=lostpassword', 'login') ?>">Zapomenuté heslo?</a>
                         <span class="keep-logged-in-checkbox"><input class="no-margin no-margin-top" name="rememberme" type="checkbox" id="sidebar-rememberme" value="forever" tabindex="0" /><label class="regular no-margin no-margin-bottom" for="sidebar-rememberme"><?php _e('Neodhlašovat', 'buddypress') ?></label></span>
                     </div>
                     <input class="btn btn-default btn-primary link-btn pull-right semibold" type="submit" name="wp-submit" id="sidebar-wp-submit" value="<?php _e('Log In'); ?>" tabindex="0" />
@@ -94,11 +94,11 @@ function cuny_home_new_members() {
         <div id="new-members-text">
             <p><span class="new-member-navigation pull-right">
                     <button class="prev btn btn-link">
-                        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i><span class="sr-only">Previous New Members</span></button>
+                        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i><span class="sr-only">Předchozí noví členové</span></button>
                     <button class="next btn btn-link" href="#">
-                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i><span class="sr-only">Next New Members</span></button>
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i><span class="sr-only">Další nové členové</span></button>
                 </span>
-                Browse through and say "Hello!" to the<br />newest members of the OpenLab.</p>
+                Procházejte a řekněte "Dobrý den!" pro <br/> nejnovějším členům OpenLab.</p>
         </div>
         <div class="clearfloat"></div>
     </div><!--members-top-wrapper-->
@@ -340,13 +340,13 @@ function openlab_registration_page() {
             <?php if ('request-details' == bp_get_current_signup_step()) : ?>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading semibold">Account Details</div>
+                    <div class="panel-heading semibold">Podrobnosti účtu</div>
                     <div class="panel-body">
 
                         <?php do_action('template_notices') ?>
 
                         <p><?php _e('Registering for the City Tech OpenLab is easy. Just fill in the fields below and we\'ll get a new account set up for you in no time.', 'buddypress') ?></p>
-                        <p>Because the OpenLab is a space for collaboration between members of the City Tech community, a City Tech email address is required to use the site.</p>
+                        <p>Vzhledem k tomu, že OpenLab je prostor pro spolupráci mezi členy komunity City Tech, pro použití webu je vyžadována e-mailová adresa City Tech.</p>
                         <?php do_action('bp_before_account_details_fields') ?>
 
                         <div class="register-section" id="basic-details-section">
@@ -354,7 +354,7 @@ function openlab_registration_page() {
                             <?php /* Basic Account Details */ ?>
 
                             <div class="form-group">
-                                <label class="control-label" for="signup_username"><?php _e('Username', 'buddypress') ?> <?php _e('(required)', 'buddypress') ?> (lowercase & no special characters)</label>
+                                <label class="control-label" for="signup_username"><?php _e('Username', 'buddypress') ?> <?php _e('(required)', 'buddypress') ?> (malé písmena a žádné speciální znaky)</label>
                                 <div id="signup_username_error" class="error-container"></div>
                                 <?php do_action('bp_signup_username_errors') ?>
                                 <input
@@ -380,7 +380,7 @@ function openlab_registration_page() {
                             </div>
 
 							<div class="form-group">
-								<label class="control-label" for="field_<?php echo intval( $first_name_field_id ); ?>">First Name (required, but not displayed on Public Profile)</label>
+								<label class="control-label" for="field_<?php echo intval( $first_name_field_id ); ?>">Jméno (požadováno, ale nezobrazeno ve veřejném profilu)</label>
 								<div id="field_<?php echo esc_attr( $first_name_field_id ); ?>_error" class="error-container"></div>
 								<?php do_action( 'bp_field_' . $first_name_field_id . '_errors' ) ?>
 								<input
@@ -396,7 +396,7 @@ function openlab_registration_page() {
 							</div>
 
 							<div class="form-group">
-								<label class="control-label" for="field_<?php echo intval( $last_name_field_id ); ?>">Last Name (required, but not displayed on Public Profile)</label>
+								<label class="control-label" for="field_<?php echo intval( $last_name_field_id ); ?>">Příjmení (požadováno, ale nezobrazeno ve veřejném profilu)</label>
 								<div id="field_<?php echo esc_attr( $last_name_field_id ); ?>_error" class="error-container"></div>
 								<?php do_action( 'bp_field_' . $last_name_field_id . '_errors' ) ?>
 								<input
@@ -412,7 +412,7 @@ function openlab_registration_page() {
 							</div>
 
                             <div class="form-group">
-                                <label class="control-label" for="signup_email"><?php _e('Email Address (required) <div class="email-requirements">Please use your City Tech email address to register</div>', 'buddypress') ?> </label>
+                                <label class="control-label" for="signup_email"><?php _e('E-mailová adresa (požadováno) <div class="email-requirements">Pro registraci použijte prosím e-mailovou adresu City Tech</div>', 'buddypress') ?> </label>
                                 <div id="signup_email_error" class="error-container"></div>
                                 <?php do_action('bp_signup_email_errors') ?>
                                 <input
@@ -431,7 +431,7 @@ function openlab_registration_page() {
                                     data-parsley-errors-container="#signup_email_error"
                                     />
 
-                                <label class="control-label" for="signup_email_confirm">Confirm Email Address (required)</label>
+                                <label class="control-label" for="signup_email_confirm">Potvrďte e-mailovou adresu (povinné)</label>
                                 <div id="signup_email_confirm_error" class="error-container"></div>
                                 <input
                                     class="form-control"
@@ -463,7 +463,7 @@ function openlab_registration_page() {
                                         value=""
                                         data-parsley-trigger="blur"
                                         data-parsley-required
-                                        data-parsley-required-message="Password is required."
+                                        data-parsley-required-message="Heslo je vyžadováno."
                                         data-parsley-group="password"
                                         data-parsley-iff="#signup_password_confirm"
                                         data-parsley-iff-message=""
@@ -484,7 +484,7 @@ function openlab_registration_page() {
                                     value=""
                                     data-parsley-trigger="blur"
                                     data-parsley-required
-                                    data-parsley-required-message="Confirming your password is required."
+                                    data-parsley-required-message="Potvrzení vašeho hesla je vyžadováno."
                                     data-parsley-group="password"
                                     data-parsley-iff="#signup_password"
                                     data-parsley-iff-message="Passwords must match."
@@ -503,14 +503,14 @@ function openlab_registration_page() {
                 <?php if (bp_is_active('xprofile')) : ?>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading semibold">Public Profile Details</div>
+                        <div class="panel-heading semibold">Podrobnosti veřejného profilu</div>
                         <div class="panel-body">
 
                             <?php do_action('bp_before_signup_profile_fields') ?>
 
                             <div class="register-section" id="profile-details-section">
 
-                                <p>Your responses in the form fields below will be displayed on your profile page, which is open to the public. You can always add, edit, or remove information at a later date.</p>
+                                <p>Vaše odpovědi v níže uvedených polích formuláře se zobrazí na stránce vašeho profilu, která je přístupná veřejnosti. Informace můžete později přidat, upravit nebo odstranit.</p>
 
                                 <?php echo wds_get_register_fields('Base'); ?>
 
@@ -527,7 +527,7 @@ function openlab_registration_page() {
                 <?php do_action('bp_before_registration_submit_buttons') ?>
 
                 <p class="sign-up-terms">
-                    By clicking "Complete Sign Up", I agree to the <a class="underline" href="<?php echo home_url('about/terms-of-service') ?>" target="_blank">OpenLab Terms of Use</a> and <a class="underline" href="http://cuny.edu/website/privacy.html" target="_blank">Privacy Policy</a>.
+                  Kliknutím na tlačítko 'Dokončit registraci' souhlasím <a class="underline" href="<?php echo home_url('about/terms-of-service') ?>" target="_blank">s Podmínkami použití na OpenLab </a> a <a class="underline" href="http://cuny.edu/website/privacy.html" target="_blank">a s podmínkami ochrany osobních údajů</a>.
                 </p>
 
                 <p id="submitSrMessage" class="sr-only submit-alert" aria-live="polite"></p>

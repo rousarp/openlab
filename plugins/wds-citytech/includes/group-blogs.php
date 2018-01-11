@@ -641,7 +641,7 @@ function wds_bp_group_meta() {
                                     <div class="col-sm-18">
                                         <label class="sr-only" for="external-site-url">Zadejte adresu URL externího webu</label>
                                         <input class="form-control pull-left" type="text" name="external-site-url" id="external-site-url" placeholder="http://" />
-                                        <a class="btn btn-primary no-deco top-align pull-right" id="find-feeds" href="#" display="none">Zkontrolovat<span class="sr-only"> external site for Post and Comment feeds</span></a>
+                                        <a class="btn btn-primary no-deco top-align pull-right" id="find-feeds" href="#" display="none">Zkontrolovat<span class="sr-only"> externí stránky pro příspěvky a komentáře</span></a>
                                     </div>
                                 </div>
 							</div>

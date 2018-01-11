@@ -132,7 +132,7 @@ function openlab_add_missing_label_element_to_comment_form_for_hemingway($fields
         return $fields;
     }
 
-    $fields['comment'] .= '<label for="comment" class="sr-only">Comment Text</label>';
+    $fields['comment'] .= '<label for="comment" class="sr-only">Text příspěvku</label>';
 
     return $fields;
 }

@@ -420,7 +420,7 @@ HTML;
 
             $hamburger = <<<HTML
                     <button type="button" class="navbar-toggle mobile-toggle direct-toggle mol-menu" data-target="#wp-admin-bar-my-openlab .ab-sub-wrapper" data-plusheight="19">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">Přepnout navigaci</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -994,7 +994,7 @@ HTML;
                         {
                                 $wp_admin_bar->add_menu( array(
                                     'id' => 'view',
-                                    'title' => '<span class="fa fa-eye" aria-hidden="true"></span><span class="sr-only">View ' . $post_label . '</span>',
+                                    'title' => '<span class="fa fa-eye" aria-hidden="true"></span><span class="sr-only">Zobrazit ' . $post_label . '</span>',
                                     'href' => get_permalink($post->ID),
                                     'meta' => array(
                                         'tabindex' => 0
@@ -1007,7 +1007,7 @@ HTML;
                         {
                                 $wp_admin_bar->add_menu( array(
                                         'id' => 'view',
-                                        'title' => '<span class="fa fa-eye" aria-hidden="true"></span><span class="sr-only">View '.$post_label.'</span>',
+                                        'title' => '<span class="fa fa-eye" aria-hidden="true"></span><span class="sr-only">Zobrazit '.$post_label.'</span>',
                                         'href' => get_term_link( $tag ),
                                         'meta' => array(
                                             'tabindex' => 0
@@ -1151,7 +1151,7 @@ HTML;
 
             $wp_admin_bar->add_menu(array(
                 'id' => 'dashboard-link',
-                'title' => $title.'<span class="sr-only">Home</span>',
+                'title' => $title.'<span class="sr-only">Úvod</span>',
                 'href' => $href,
                 'meta' => array(
                     'title' => _x('Dashboard', 'admin bar menu group label'),

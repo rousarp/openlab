@@ -25,16 +25,16 @@ wp_nav_menu($args);
     <form method="get" action="<?php echo esc_url( openlab_get_help_search_url() ); ?>">
             <label class="sr-only" for="helpSearch">Help Search</label>
 	    <input type="text" name="help-search" class="help-search" id="helpSearch" />
-            <button class="btn btn-default btn-block btn-primary" type="submit">Search<span class="sr-only"> Help</span></button>
+            <button class="btn btn-default btn-block btn-primary" type="submit">Search<span class="sr-only"> Nápověda</span></button>
     </form>
     <div class="clearfloat"></div>
 </div>
 </div>
 
-<h2 class="sidebar-help-title support-team-title">Community Team</h2>
+<h2 class="sidebar-help-title support-team-title">Komunitní tým</h2>
 <div class="sidebar-block padded-block">
 <div id="support-team">
-    <div class="help-tags-copy"><p>The Community Team is here to answer all your OpenLab questions.</p></div>
+    <div class="help-tags-copy"><p>Komunitní tým zde odpovídá na všechny vaše otázky OpenLab.</p></div>
     <?php
 	$args = array(
 		'name' => 'contact-us',
@@ -89,9 +89,9 @@ wp_nav_menu($args);
 </div><!--support team-->
 </div>
 
-<h2 class="sidebar-help-title help-tags-title">Find a Help Topic With Tags</h2>
+<h2 class="sidebar-help-title help-tags-title">Najděte téma nápovědy podle štítků</h2>
 <div class="sidebar-block padded-block">
-<div class="help-tags-copy"><p>Find answers throughout Help that correspond to the tags below:</p></div>
+<div class="help-tags-copy"><p>Najděte odpovědi v nápovědě, které odpovídají níže uvedeným šítkům:</p></div>
 <div id="help-tags">
     <?php
     $args = array(
@@ -116,8 +116,8 @@ wp_nav_menu($args);
 
 <h2 class="sidebar-title">Creative Commons</h2>
 <div class="sidebar-block padded-block">
-<p>Our help is licensed under Creative Commons copyright.<br />
-<span class="italics cc-gloss">Attribution &mdash; NonCommercial &mdash; ShareAlike</span></p>
+<p>Naše nápověda je licencována pod autorskými právy Creative Commons.<br />
+<span class="italics cc-gloss">Uveďte původ &mdash; Neužívejte dílo komerčně &mdash; Zachovejte licenci </span></p>
 <div id="creative-commons">
     <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">Creative Commons</a>
 </div>

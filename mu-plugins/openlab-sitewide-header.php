@@ -16,7 +16,7 @@ function openlab_sitewide_header($location = 'header') {
                 <header class="menu-title pull-left"><a href="<?php echo bp_get_root_domain(); ?>" title="<?php _ex('Home', 'Home page banner link title', 'buddypress'); ?>"><?php bp_site_name(); ?></a></header>
                 <div class="pull-right search">
                     <div class="search-trigger-wrapper">
-                        <button  class="search-trigger btn-link" data-mode="mobile" data-location="<?= $location ?>" href="#"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">Open Search</span></button>
+                        <button  class="search-trigger btn-link" data-mode="mobile" data-location="<?= $location ?>" href="#"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">Otevřít vyhledávání</span></button>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ function openlab_mu_site_wide_bp_search($mode = 'desktop', $location) {
 
         $mobile_mup .= <<<HTML
 <div class="search-trigger-wrapper">
-    <button class="search-trigger btn-link" data-mode="desktop" data-location={$location} href="#"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">Open Search</span></button>
+    <button class="search-trigger btn-link" data-mode="desktop" data-location={$location} href="#"><span class="fa fa-search" aria-hidden="true"></span><span class="sr-only">Otevřít vyhledávání</span></button>
 </div>
 HTML;
     endif;
@@ -64,11 +64,11 @@ HTML;
     <div class="search-form-wrapper search-mode-{$mode} search-form-location-{$location}">
     <form action="{$form_action}" method="post" id="search-form-{$mode}-{$location}" class="form-inline">
         <div class="form-group">
-        <div class="sr-only">Search by People or Group Type</div>
-        <label for="search-terms-{$mode}-{$location}" class="sr-only">Search by People or Group Type</label>
-        <input id="search-terms-{$mode}-{$location}" class="form-control search-terms search-terms-{$mode}" type="text" name="search" placeholder="Search" />
+        <div class="sr-only">Vyhledávání podle typu lidí nebo skupiny</div>
+        <label for="search-terms-{$mode}-{$location}" class="sr-only">Vyhledávání podle typu lidí nebo skupiny</label>
+        <input id="search-terms-{$mode}-{$location}" class="form-control search-terms search-terms-{$mode}" type="text" name="search" placeholder="Hledat" />
 
-        <label for="search-which-{$mode}-{$location}" class="sr-only">Select the Item Type to Search</label>
+        <label for="search-which-{$mode}-{$location}" class="sr-only">Vyberte typ položky pro vyhledávání</label>
         <select id="search-which-{$mode}-{$location}" name="search-which" class="form-control search-which search-which-{$mode}">
             <option value="members">People</option>
             <option value="courses">Courses</option>
@@ -77,7 +77,7 @@ HTML;
             <option value="portfolios">Portfolios</option>
         </select>
 
-        <button class="btn btn-primary top-align search-submit" id="search-submit-{$mode}-{$location}" type="submit"><i class="fa fa-search"></i><span class="sr-only">Submit</span></button>
+        <button class="btn btn-primary top-align search-submit" id="search-submit-{$mode}-{$location}" type="submit"><i class="fa fa-search"></i><span class="sr-only">Odeslat</span></button>
         <input type="hidden" id="_bp_search_nonce_{$mode }_{$location}" name="_bp_search_nonce" value="{$nonce}" />
         </div>
     </form><!-- #search-form -->

@@ -8,7 +8,7 @@ add_action( 'bp_core_activated_user', function( $user_id ) {
 } );
 
 function cac_set_return_path_header( $phpmailer ) {
-       $phpmailer->Sender = 'wordpress@openlab.citytech.cuny.edu';
+       $phpmailer->Sender = 'openlab@urad.online';
        return $phpmailer;
 }
 add_action( 'phpmailer_init', 'cac_set_return_path_header' );
@@ -31,4 +31,3 @@ function openlab_hypothesis_hotfix() {
 	) );
 }
 add_action( 'wp', 'openlab_hypothesis_hotfix', 20 );
-

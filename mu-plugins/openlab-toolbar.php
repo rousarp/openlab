@@ -1381,10 +1381,10 @@ HTML;
             global $wpdb;
 
             //getting the theme folder for the main site
-            $main_site_theme = $wpdb->get_var('SELECT option_value FROM wplb_options WHERE option_name = "template"');
+            $main_site_theme = $wpdb->get_var('SELECT option_value FROM wp_options WHERE option_name = "template"');
 
 //nefunguje, nastaveno na openlab �ablonu
-	    $main_site_theme = "openlab";
+//	    $main_site_theme = "openlab";
             wp_register_style('google-open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic', array(), '2014', 'all');
             wp_enqueue_style('google-open-sans');
 

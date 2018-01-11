@@ -80,7 +80,7 @@ function wds_email_error() {
 	echo 'Validate Error!';
 	?>
 		<div class="email-validate error">
-			You must register with a @citytech.cuny.edu e-mail address!
+			Musíte se zaregistrovat s e-mailovou adresou @citytech.cuny.edu!
 		</div>
 	<?php
 }
@@ -101,14 +101,14 @@ function wds_email_validate() {
 			case 'Student':
 			case 'Alumni':
 				if ( 'mail.citytech.cuny.edu' !== $domain ) {
-					$bp->signup->errors['signup_email'] = 'Students must register with an @mail.citytech.cuny.edu e-mail address!';
+					$bp->signup->errors['signup_email'] = 'Studenti se musí registrovat s e-mailovou adresou @mail.citytech.cuny.edu!';
 				}
 				break;
 
 			case 'Faculty':
 			case 'Staff':
 				if ( 'citytech.cuny.edu' !== $domain ) {
-					$bp->signup->errors['signup_email'] = 'You must register with an @citytech.cuny.edu e-mail address!';
+					$bp->signup->errors['signup_email'] = 'Musíte se zaregistrovat s e-mailovou adresou @citytech.cuny.edu!';
 				}
 
 				break;
@@ -120,7 +120,7 @@ function wds_email_validate() {
 				}
 
 				if ( ! cac_ncs_validate_code( $code ) ) {
-					$bp->signup->errors['signup_email'] = 'Non-City Tech addresses need a valid registration code to sign up for the OpenLab.';
+					$bp->signup->errors['signup_email'] = 'Non-City Tech e-mailové adresy potřebují pro registraci na OpenLabu platný registrační kód.';
 
 				}
 				break;
@@ -129,9 +129,9 @@ function wds_email_validate() {
 
 	// Check that the email addresses match
 	if ( empty( $_POST['signup_email_confirm'] ) ) {
-		$bp->signup->errors['signup_email'] = 'Please confirm your email address.';
+		$bp->signup->errors['signup_email'] = 'Potvrďte svou e-mailovou adresu.';
 	} elseif ( trim( $_POST['signup_email'] ) != trim( $_POST['signup_email_confirm'] ) ) {
-		$bp->signup->errors['signup_email'] = 'Email addresses do not match. Please double check and resubmit.';
+		$bp->signup->errors['signup_email'] = 'Emailová adresa nesouhlasí. Zkontrolujte prosím znovu a znovu odešlete.';
 	}
 
 	// check if privacy policy is checked
@@ -188,15 +188,15 @@ function wds_get_register_fields( $account_type, $post_data = array()) {
 					$return .= '<div class="editfield form-group">';
 					if ( 'textbox' == bp_get_the_profile_field_type() ) :
 						if (bp_get_the_profile_field_name() == 'Name') {
-							$return .= '<label class="control-label" for="' . bp_get_the_profile_field_input_name() . '">Display Name';
+							$return .= '<label class="control-label" for="' . bp_get_the_profile_field_input_name() . '">Zobrazit jméno';
 						} else {
 							$return .= '<label class="control-label" for="' . bp_get_the_profile_field_input_name() . '">' . bp_get_the_profile_field_name();
 						}
 						if ( bp_get_the_profile_field_is_required() ) {
 							if (bp_get_the_profile_field_name() == 'First Name' || bp_get_the_profile_field_name() == 'Last Name') {
-								$return .= ' (required, but not displayed on Public Profile)';
+								$return .= ' (požadováno, ale nezobrazeno ve veřejném profilu)';
 							} else {
-								$return .= ' (required)';
+								$return .= ' (požadováno)';
 							}
 						}
 						$return .= '</label>';
@@ -218,7 +218,7 @@ function wds_get_register_fields( $account_type, $post_data = array()) {
 
 						$placeholder = '';
 						if ( bp_get_the_profile_field_id() === openlab_get_xprofile_field_id( 'Phone' ) ) {
-							$placeholder = 'Note: Your phone number will be public.';
+							$placeholder = 'Poznámka: Vaše telefonní číslo bude veřejné.';
 						}
 
 						$return .= '<input

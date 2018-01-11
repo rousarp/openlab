@@ -22,7 +22,7 @@
                             </div>
                             <div class="col-sm-16">
 
-                                <p class="italics"><?php _e( 'Your avatar will be used on your profile and throughout the site. If there is a Gravatar associated with your account email we will use that, or you can upload an image from your computer. Click below to select a JPG, GIF or PNG format photo from your computer and then click "Upload Image" to proceed.', 'buddypress') ?></p>
+                                <p class="italics"><?php _e( 'Your profile photo will be used on your profile and throughout the site. If there is a <a href="http://gravatar.com">Gravatar</a> associated with your account email we will use that, or you can upload an image from your computer.', 'buddypress') ?> <?php _e( "Click below to select a JPG, GIF or PNG format photo from your computer and then click 'Upload Image' to proceed.", 'buddypress') ?></p>
 
                                 <p id="avatar-upload">
                                     <div class="form-group form-inline">
@@ -36,7 +36,7 @@
 
                                 <?php if ( bp_get_user_has_avatar() ) : ?>
                                         <p class="italics"><?php _e( "If you'd like to delete your current avatar but not upload a new one, please use the delete avatar button.", 'buddypress' ) ?></p>
-                                        <a class="btn btn-primary no-deco" href="<?php bp_avatar_delete_link() ?>" title="<?php _e( 'Smazat náhledový obrázek', 'buddypress' ) ?>"><?php _e( 'Delete My Avatar', 'buddypress' ) ?></a>
+                                        <a class="btn btn-primary no-deco" href="<?php bp_avatar_delete_link() ?>" title="<?php _e( 'Smazat náhledový obrázek', 'buddypress' ) ?>"><?php _e( 'Delete My Profile Photo', 'buddypress' ) ?></a>
                                 <?php endif; ?>
 
                                 <?php wp_nonce_field( 'bp_avatar_upload' ) ?>

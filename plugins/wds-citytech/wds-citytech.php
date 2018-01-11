@@ -1335,12 +1335,12 @@ class OpenLab_Change_User_Type {
 		$options = $field->get_children();
 		?>
 
-		<h3>OpenLab Account Type</h3>
+		<h3>Typ účtu na OpenLab</h3>
 
 		<table class="form-table">
 			<tr>
 				<th>
-					<label for="openlab_account_type">Account Type</label>
+					<label for="openlab_account_type">Typ účtu</label>
 				</th>
 
 				<td>
@@ -2143,15 +2143,15 @@ class OpenLab_Course_Portfolios_Widget extends WP_Widget {
 
 					<p>
 			<input name="<?php echo $this->get_field_name( 'display_as_dropdown' ) ?>" id="<?php echo $this->get_field_name( 'display_as_dropdown' ) ?>" value="1" <?php checked( $settings['display_as_dropdown'], '1' ) ?> type="checkbox" />
-			<label for="<?php echo $this->get_field_id( 'display_as_dropdown' ) ?>">Display as dropdown</label>
+			<label for="<?php echo $this->get_field_id( 'display_as_dropdown' ) ?>">Zobrazit jako rozbalovací seznam</label>
 					</p>
 
 					<p>
-			<label for="<?php echo $this->get_field_id( 'sort_by' ) ?>">Sort by:</label><br />
+			<label for="<?php echo $this->get_field_id( 'sort_by' ) ?>">Třídit podle:</label><br />
 			<select name="<?php echo $this->get_field_name( 'sort_by' ) ?>" id="<?php echo $this->get_field_name( 'sort_by' ) ?>">
-				<option value="title" <?php selected( $settings['sort_by'], 'title' ) ?>>Portfolio title</option>
-				<option value="display_name" <?php selected( $settings['sort_by'], 'display_name' ) ?>>Member name</option>
-				<option value="random" <?php selected( $settings['sort_by'], 'random' ) ?>>Random</option>
+				<option value="title" <?php selected( $settings['sort_by'], 'title' ) ?>>Název portfolia</option>
+				<option value="display_name" <?php selected( $settings['sort_by'], 'display_name' ) ?>>Jméno člena</option>
+				<option value="random" <?php selected( $settings['sort_by'], 'random' ) ?>>Náhodně</option>
 			</select>
 					</p>
 

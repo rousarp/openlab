@@ -73,7 +73,7 @@ $field_ids = array(1);
 								<?php
 								$placeholder = '';
 								if ( bp_get_the_profile_field_id() === openlab_get_xprofile_field_id( 'Phone' ) ) {
-									$placeholder = 'Note: Your phone number will be public.';
+									$placeholder = 'Poznámka: Vaše telefonní číslo bude veřejné.';
 								}
 								?>
 

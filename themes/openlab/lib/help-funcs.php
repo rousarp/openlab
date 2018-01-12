@@ -69,7 +69,7 @@ function openlab_help_loop() {
         if ($prev_post) {
             $back_next_nav .= '--><span class="nav-previous">';
             $back_next_nav .= '<span class="fa fa-chevron-circle-left"></span>';
-            $back_next_nav .= sprintf('<a href="%s">Back</a>', esc_url(get_permalink($prev_post)));
+            $back_next_nav .= sprintf('<a href="%s">Zpět</a>', esc_url(get_permalink($prev_post)));
             $back_next_nav .= '</span><!--';
         }
 
@@ -86,7 +86,7 @@ function openlab_help_loop() {
         <?php if ($help_cats): ?>
             <h1 class="entry-title help-entry-title"><a class="no-deco" href="<?php echo get_term_link($parent_cat); ?>"><span class="profile-name hyphenate"><?php echo $parent_cat_name; ?></span></a>
                 <?php echo openlab_toggle_button('#sidebar-menu-wrapper', true); ?>
-                <span class="print-link pull-right hidden-xs"><a class="print-page" href="#"><span class="fa fa-print"></span> Print this page</a></span></h1>
+                <span class="print-link pull-right hidden-xs"><a class="print-page" href="#"><span class="fa fa-print"></span> Vytisknout tuto stránku</a></span></h1>
 
             <?php
             $nav_links = array(
@@ -103,7 +103,7 @@ function openlab_help_loop() {
             <div class="row help-nav">
                 <div class="col-md-24">
                     <div class="submenu">
-                        <div class="submenu-text pull-left bold">Topics: </div>
+                        <div class="submenu-text pull-left bold">Témata: </div>
                         <ul class="nav nav-inline"><!--
                             <?php foreach ($nav_links as $nav_link) :
                                 ?>--><li><?php echo $nav_link ?></li><!--<?php endforeach; ?>

@@ -40,7 +40,7 @@ get_header(); ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 
 			</header><!-- .entry-header -->
-	
+
 			<div class="entry-content">
 				<!-- Get event information, see template: event-meta-event-single.php -->
 				<?php eo_get_template_part( 'event-meta', 'event-single' ); ?>
@@ -66,7 +66,7 @@ get_header(); ?>
 			);
 			?>
 
-			<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Upravit' ), '<span class="edit-link">', '</span>' ); ?>
 			</footer><!-- .entry-meta -->
 
 			</article><!-- #post-<?php the_ID(); ?> -->
@@ -74,7 +74,7 @@ get_header(); ?>
 			<!-- If comments are enabled, show them -->
 			<div class="comments-template">
 				<?php comments_template(); ?>
-			</div>				
+			</div>
 
 		<?php endwhile; // end of the loop. ?>
 

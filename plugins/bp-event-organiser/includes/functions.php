@@ -295,16 +295,16 @@ function bpeo_the_single_event_action_links( $post = 0 ) {
 
 		$links = array();
 
-		$links['back'] = '<a href="' . esc_url( $back ) . '">' . __( '&larr; Back', 'bp-events-organiser' ). '</a>';
+		$links['back'] = '<a href="' . esc_url( $back ) . '">' . __( '&larr; Back', 'bp-event-organiser' ). '</a>';
 
 		// @todo make 'edit' slug changeable
 		if ( current_user_can( 'edit_event', $post->ID ) ) {
-			$links['edit'] = '<a href="' . esc_url( $root ) . $post->post_name . '/edit/">' . __( 'Edit', 'bp-events-organiser' ). '</a>';
+			$links['edit'] = '<a href="' . esc_url( $root ) . $post->post_name . '/edit/">' . __( 'Edit', 'bp-event-organiser' ). '</a>';
 		}
 
 		// @todo make 'delete' slug changeable
 		if ( current_user_can( 'delete_event', $post->ID ) ) {
-			$links['delete'] = '<a class="confirm" href="' . esc_url( $root ) . $post->post_name . '/delete/' . wp_create_nonce( "bpeo_delete_event_{$post->ID}" ). '/">' . __( 'Delete', 'bp-events-organiser' ). '</a>';
+			$links['delete'] = '<a class="confirm" href="' . esc_url( $root ) . $post->post_name . '/delete/' . wp_create_nonce( "bpeo_delete_event_{$post->ID}" ). '/">' . __( 'Delete', 'bp-event-organiser' ). '</a>';
 		}
 
 		return implode( ' | ', (array) apply_filters( 'bpeo_get_the_single_event_action_links', $links ) );

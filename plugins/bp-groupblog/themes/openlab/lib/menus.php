@@ -291,7 +291,7 @@ function openlab_submenu_markup($type = '', $opt_var = NULL, $row_wrapper = true
 
     switch ($type) {
         case 'invitations':
-            $submenu_text = 'My Invitations<span aria-hidden="true">:</span> ';
+            $submenu_text = 'Moje pozvánky<span aria-hidden="true">:</span> ';
             $menu = openlab_my_invitations_submenu();
             break;
         case 'friends':
@@ -304,7 +304,7 @@ function openlab_submenu_markup($type = '', $opt_var = NULL, $row_wrapper = true
 
             break;
         case 'messages':
-            $submenu_text = 'My Messages<span aria-hidden="true">:</span> ';
+            $submenu_text = 'Moje zprávy<span aria-hidden="true">:</span> ';
             $menu = openlab_my_messages_submenu();
             break;
         case 'groups':
@@ -320,7 +320,7 @@ function openlab_submenu_markup($type = '', $opt_var = NULL, $row_wrapper = true
 
             break;
         default:
-            $submenu_text = 'My Settings<span aria-hidden="true">:</span> ';
+            $submenu_text = 'Moje nastavení<span aria-hidden="true">:</span> ';
             $menu = openlab_profile_settings_submenu();
     }
 
@@ -398,7 +398,7 @@ function openlab_my_groups_submenu($group) {
     //get account type to see if they're faculty
     $faculty = xprofile_get_field_data('Account Type', get_current_user_id());
 
-    $submenu_text = 'My ' . ucfirst($group) . 's';
+    $submenu_text = 'Můj/moje ' . ucfirst($group) . '';
 
     //if the current user is faculty or a super admin, they can create a course, otherwise no dice
     if ($group == "course") {

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-25 22:52+0000\n"
-"PO-Revision-Date: 2018-01-05 02:11+0100\n"
+"PO-Revision-Date: 2018-01-12 20:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -47,7 +47,7 @@ msgstr "Měsíc"
 
 #: classes/class-eo-agenda-widget.php:50
 msgid "Group date format"
-msgstr "Formát data skupiny."
+msgstr "Formát data skupiny"
 
 #: classes/class-eo-agenda-widget.php:55
 msgid "Event date/time format"
@@ -99,7 +99,7 @@ msgstr "Kategorie události"
 #: classes/class-eo-calendar-widget.php:96
 #: classes/class-eo-event-list-widget.php:112
 msgid "List category slug(s), seperate by comma. Leave blank for all"
-msgstr "Seznam slugů, oddělený čárkou. Nechte prázdné pro (zobrazení) všech."
+msgstr "Seznam slugů, oddělený čárkou. Nechte prázdné pro (zobrazení) všech"
 
 #: classes/class-eo-calendar-widget.php:105
 msgid "Event venue"
@@ -346,15 +346,15 @@ msgstr "jít na datum"
 
 #: event-organiser-calendar.php:125
 msgid "You do not have sufficient permissions to create events. "
-msgstr "Pro vytvoření události nemáte dostatečná oprávnění."
+msgstr "Pro vytvoření události nemáte dostatečná oprávnění. "
 
 #: event-organiser-calendar.php:181
 msgid "You do not have sufficient permissions to edit this event. "
-msgstr "Pro úpravuí události nemáte dostatečná oprávnění."
+msgstr "Pro úpravuí události nemáte dostatečná oprávnění. "
 
 #: event-organiser-calendar.php:199
 msgid "You do not have sufficient permissions to delete this event. "
-msgstr "Pro smazání události nemáte dostatečná oprávnění."
+msgstr "Pro smazání události nemáte dostatečná oprávnění. "
 
 #: event-organiser-calendar.php:213
 msgid "Event deleted."
@@ -540,7 +540,7 @@ msgstr "Plánovač"
 
 #: event-organiser-edit.php:80
 msgid "This is a recurring event. Check to edit this event and its recurrences"
-msgstr "Zaškrtněte pro editaci této události a jejích dalších výskytů."
+msgstr "Zaškrtněte pro editaci této události a jejích dalších výskytů"
 
 #: event-organiser-edit.php:99
 #, php-format
@@ -577,7 +577,7 @@ msgstr "Datum ukončení"
 
 #: event-organiser-edit.php:139
 msgid "End Time"
-msgstr "čas ukončení"
+msgstr "Čas ukončení"
 
 #: event-organiser-edit.php:160
 msgid "Recurrence:"
@@ -649,7 +649,7 @@ msgstr "Opakovat tuto událost do:"
 
 #: event-organiser-edit.php:237
 msgid "Include/Exclude occurrences:"
-msgstr "Přidat/Ubrat opakování"
+msgstr "Přidat/Ubrat opakování:"
 
 #: event-organiser-edit.php:240 includes/event-organiser-register.php:253
 msgid "Show dates"
@@ -675,7 +675,7 @@ msgstr ""
 
 #: event-organiser-edit.php:495
 msgid "Event dates were not saved."
-msgstr "Data události nebyla uložena"
+msgstr "Data události nebyla uložena."
 
 #: event-organiser-go-pro.php:23
 msgid "Get Event Organiser Pro Add-On"
@@ -713,14 +713,13 @@ msgid ""
 msgstr ""
 "Prodávat lístky pro specifická data nebo prodávat lístky pro všechna data "
 "dané události - např. zamluvení místa na kurzech. Můžete nabídnout rozličné "
-"lístky a upravit rezervovací formulář, aby vyhovoval vašim požadavkům"
+"lístky a upravit rezervovací formulář, aby vyhovoval vašim požadavkům."
 
 #: event-organiser-go-pro.php:75
 msgid "Additional shortcodes & improved UI"
 msgstr "Další shortcody a vylepšené UI"
 
 #: event-organiser-go-pro.php:76
-#, fuzzy
 msgid ""
 "Give your users the ability to search and filter through your events with "
 "the event search shortcode. Event Organiser Pro also adds a text editor "
@@ -728,7 +727,7 @@ msgid ""
 msgstr ""
 "Dát vašim uživatelům možnost vyhledávat a filtrovat události s pomocí "
 "shortcodu pro vyhledávání. Event Organiser Pro také přidává tlačítko "
-"textového editoru pro zlehčení vkládání a konfigurace shortcodů."
+"textového editoru pro zlehčení vkládání a konfigurace shortcodů. "
 
 #: event-organiser-go-pro.php:80
 msgid "Venue custom fields & thumbnails"
@@ -1174,7 +1173,7 @@ msgid ""
 "enabled on WordPress in Settings > Permalinks."
 msgstr ""
 "Pro zapnutí těchto struktur musíte mít nejdříve povoleny pěkné trvalé odkazy "
-"ve Wordpress v nastavení > Trvalé odkazy"
+"ve Wordpress v nastavení > Trvalé odkazy."
 
 #: event-organiser-settings.php:716
 msgid ""
@@ -1182,7 +1181,7 @@ msgid ""
 "Changes' before any changes will take effect."
 msgstr ""
 "Možná budete muset také jít do Nastavení WordPressu > Trvalé odkazy a "
-"kliknout na 'Uložit změny' než se změny projeví"
+"kliknout na 'Uložit změny' než se změny projeví."
 
 #: event-organiser-settings.php:752
 msgid "Do not add to menu"
@@ -1337,7 +1336,7 @@ msgstr "File Error encountered: %d"
 
 #: includes/class-event-organiser-im-export.php:68
 msgid "No file detected."
-msgstr "Nezjištěn žádný soubor"
+msgstr "Nezjištěn žádný soubor."
 
 #: includes/class-event-organiser-im-export.php:71
 msgid ""
@@ -1370,7 +1369,7 @@ msgstr "Stažení exportovaného souboru"
 
 #: includes/class-event-organiser-im-export.php:100
 msgid "Import Events"
-msgstr "Importovat události."
+msgstr "Importovat události"
 
 #: includes/class-event-organiser-im-export.php:103
 msgid "Import an ICS file."
@@ -1846,7 +1845,7 @@ msgstr ""
 
 #: includes/event-organiser-cpt.php:535
 msgid "Repeating events"
-msgstr "Opakující se události."
+msgstr "Opakující se události"
 
 #: includes/event-organiser-cpt.php:536
 msgid ""
@@ -1878,7 +1877,8 @@ msgid ""
 "third Tuesday) "
 msgstr ""
 "Pokud je vybráno měsíční opakování události, vyberte, zda se má událost "
-"opakovat v dané datum (např. 24) nebo v daný den měsíce (např. třetí čtvrtek)"
+"opakovat v dané datum (např. 24) nebo v daný den měsíce (např. třetí "
+"čtvrtek) "
 
 #: includes/event-organiser-cpt.php:541
 msgid ""
@@ -1888,7 +1888,7 @@ msgid ""
 msgstr ""
 "Pokud je zvoleno týdení opakování, vyberte, které dny v týdnu by se měla "
 "událost opakovat. Pokud nejsou žádné dny vybrány, bude vybrán den, kdy "
-"událost začala."
+"událost začala"
 
 #: includes/event-organiser-cpt.php:546 includes/event-organiser-cpt.php:547
 msgid "Selecting a venue"
@@ -2221,7 +2221,7 @@ msgstr "Naplánování nerozpoznáno."
 
 #: includes/event.php:626
 msgid "Start date not provided."
-msgstr "Počáteční datum nestanoveno"
+msgstr "Počáteční datum nestanoveno."
 
 #: includes/event.php:647
 msgid "Start date occurs after end date."
@@ -2259,7 +2259,7 @@ msgstr ""
 #: templates/archive-event.php:32 templates/archive-event.php:35
 #: templates/archive-event.php:38
 msgid "Events: "
-msgstr "Události:"
+msgstr "Události: "
 
 #: templates/eo-events-nav.php:5
 msgid "Later events <span class=\"meta-nav\">&rarr;</span>"
@@ -2267,7 +2267,7 @@ msgstr "Pozdější události <span class=\"meta-nav\">→</span>"
 
 #: templates/eo-events-nav.php:6
 msgid " <span class=\"meta-nav\">&larr;</span> Newer events"
-msgstr "<span class=\"meta-nav\">&larr;</span> Novější události"
+msgstr " <span class=\"meta-nav\">&larr;</span> Novější události"
 
 #: templates/eo-loop-events.php:37
 msgid "Nothing Found"
@@ -2275,7 +2275,7 @@ msgstr "Nenalezeno"
 
 #: templates/eo-loop-events.php:41
 msgid "Apologies, but no results were found for the requested archive. "
-msgstr "Omlouváme se, ale pro tento archiv nebyly nalezeny žádné záznamy."
+msgstr "Omlouváme se, ale pro tento archiv nebyly nalezeny žádné záznamy. "
 
 #: templates/event-meta-event-single.php:41
 #, php-format

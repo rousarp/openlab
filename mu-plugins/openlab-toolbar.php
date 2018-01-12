@@ -545,7 +545,7 @@ HTML;
 			$wp_admin_bar->add_node( array(
 				'parent' => 'my-openlab',
 				'id'     => 'my-messages',
-				'title'  => sprintf( 'My Messages %s', $messages_count ),
+				'title'  => sprintf( 'Moje zprávy %s', $messages_count ),
 				'href'   => trailingslashit( bp_loggedin_user_domain() . bp_get_messages_slug() ),
                                 'meta' => array(
                                     'class' => 'admin-bar-menu-item mobile-no-hover'

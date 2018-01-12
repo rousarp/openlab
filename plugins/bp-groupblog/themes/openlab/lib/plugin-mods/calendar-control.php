@@ -104,7 +104,7 @@ function openlab_control_event_action_links($links) {
     if ($post->post_type === 'event' && !bp_current_action()) {
         $links = array();
         $back_link = get_permalink(get_page_by_path('about/calendar'));
-        $links['back'] = "<a href='$back_link'>← Back</a>";
+        $links['back'] = "<a href='$back_link'>← Zpět</a>";
     }
 
     return $links;
@@ -404,7 +404,7 @@ add_action('groups_group_settings_edited', 'openlab_process_group_calendar_setti
 function openlab_group_calendar_media_settings($settings, $post) {
 
     if ($post->post_type === 'event') {
-        
+
     }
 
     return $settings;

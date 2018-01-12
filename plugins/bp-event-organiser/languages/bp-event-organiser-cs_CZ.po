@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-01-05 01:44+0100\n"
-"PO-Revision-Date: 2018-01-05 16:13+0100\n"
+"PO-Revision-Date: 2018-01-12 20:24+0100\n"
 "Last-Translator: admin <admin@localhost.dev>\n"
 "Language-Team: Czech\n"
 "Language: cs_CZ\n"
@@ -293,7 +293,7 @@ msgstr "Datum publikace"
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:940
 #: includes/wp-frontend-admin-screen/abstraction-metabox.php:1008
 msgid "Edit"
-msgstr "Editovat"
+msgstr "Upravit"
 
 #: includes/component.php:526
 msgid "Restore"
@@ -323,7 +323,7 @@ msgstr "Filtrováno podle štítku '%s'"
 
 #: includes/functions.php:298
 msgid "&larr; Back"
-msgstr "&larr; Back"
+msgstr "&larr; Zpět"
 
 #: includes/functions.php:344
 #, php-format

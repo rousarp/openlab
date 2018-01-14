@@ -1,18 +1,18 @@
-<?php  
+<?php
 
 function dwqa_get_following_user( $question_id = false ) {
 	if ( ! $question_id ) {
 		$question_id = get_the_ID();
 	}
 	$followers = get_post_meta( $question_id, '_dwqa_followers' );
-	
+
 	if ( empty( $followers ) ) {
 		return false;
 	}
-	
+
 	return $followers;
 }
-/** 
+/**
  * Did user flag this post ?
  */
 function dwqa_is_user_flag( $post_id, $user_id = null ) {
@@ -71,7 +71,7 @@ function dwqa_user_comment_count( $user_id ) {
 		wp_cache_set( 'dwqa-user-comment-count', $results );
 	}
 
-	$users_comment_count = array_filter( $results, create_function( '$a', 'return $a["user_id"] == '.$user_id.';' ) ); 
+	$users_comment_count = array_filter( $results, create_function( '$a', 'return $a["user_id"] == '.$user_id.';' ) );
 	if ( ! empty( $users_comment_count ) ) {
 		$user_comment_count = array_shift( $users_comment_count );
 		return $user_comment_count['number_comment'];
@@ -81,10 +81,10 @@ function dwqa_user_comment_count( $user_id ) {
 
 function dwqa_user_most_answer( $number = 10, $from = false, $to = false ) {
 	global $wpdb;
-	
-	$query = "SELECT post_author, count( * ) as `answer_count` 
-				FROM `{$wpdb->prefix}posts` 
-				WHERE post_type = 'dwqa-answer' 
+
+	$query = "SELECT post_author, count( * ) as `answer_count`
+				FROM `{$wpdb->prefix}posts`
+				WHERE post_type = 'dwqa-answer'
 					AND post_status = 'publish'
 					AND post_author <> 0";
 	if ( $from ) {
@@ -101,14 +101,14 @@ function dwqa_user_most_answer( $number = 10, $from = false, $to = false ) {
 		$prefix = '-' . ( $form - $to );
 	}
 
-	$query .= " GROUP BY post_author 
+	$query .= " GROUP BY post_author
 				ORDER BY `answer_count` DESC LIMIT 0,{$number}";
 	$users = wp_cache_get( 'dwqa-most-answered' . $prefix );
 	if ( false == $users ) {
 		$users = $wpdb->get_results( $query, ARRAY_A  );
 		wp_cache_set( 'dwqa-most-answered', $users );
 	}
-	return $users;            
+	return $users;
 }
 
 function dwqa_user_most_answer_this_month( $number = 10 ) {
@@ -176,7 +176,8 @@ function dwqa_get_author_link( $user_id = false ) {
 	$question_link = isset( $dwqa_general_settings['pages']['archive-question'] ) ? get_permalink( $dwqa_general_settings['pages']['archive-question'] ) : false;
 	$url = get_the_author_link( $user_id );
 	if ( $question_link ) {
-		$url = add_query_arg( array( 'user' => urlencode( $user->user_nicename ) ), $question_link );
+		// $url = add_query_arg( array( 'user' => urlencode( $user->user_nicename ) ), $question_link );
+		return add_query_arg( array( 'user' => urlencode( $user->user_login ), 'post_type' => 'dwqa'), $question_link );
 	}
 
 	return apply_filters( 'dwqa_get_author_link', $url, $user_id, $user );
@@ -254,7 +255,7 @@ function dwqa_print_user_badge( $user_id = false, $echo = false ) {
 	return $result;
 }
 
-class DWQA_User { 
+class DWQA_User {
 	public function __construct() {
 		// Do something about user roles, permission login, profile setting
 		add_action( 'wp_ajax_dwqa-follow-question', array( $this, 'follow_question' ) );

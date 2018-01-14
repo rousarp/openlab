@@ -42,6 +42,12 @@ require_once( STYLESHEETPATH . '/lib/page-funcs.php' );
 require_once( STYLESHEETPATH . '/lib/sidebar-funcs.php' );
 require_once( STYLESHEETPATH . '/lib/plugin-hooks.php' );
 require_once( STYLESHEETPATH . '/lib/theme-hooks.php' );
+// doplněná integrace s dwqa - plugin dw question - answer
+require_once( STYLESHEETPATH . '/lib/dwqa-custom.php' );
+
+
+// přesměrovat profil uživatele dwqa na profil uživatele OpenLab
+add_action( 'template_redirect', 'dwqa_redirect_author_archive_to_profile' );
 
 function openlab_load_scripts() {
     $stylesheet_dir_uri = get_stylesheet_directory_uri();

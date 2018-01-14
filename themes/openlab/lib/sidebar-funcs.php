@@ -191,6 +191,17 @@ function openlab_member_sidebar_menu($mobile = false) {
                     <li class="sq-bullet <?php if (bp_is_current_action('invites') || bp_is_current_action('sent-invites') || bp_is_current_action('invite-new-members')) : ?>selected-page<?php endif ?> mol-invites my-invites"><a href="<?php echo $dud . bp_get_groups_slug() ?>/invites/">Mé pozvánky <?php echo openlab_get_menu_count_mup($invite_count); ?></a></li>
                 <?php endif ?>
 
+                <?php /* odkaz na DW otázky a odpovědi */ ?>
+                <?php //if (bp_is_active('messages')) : ?><?php if (1) : ?>
+                    <?php $question_count = dw_question_user_count() ?>
+                    <li class="sq-bullet <?php if ($question_count) : ?>selected-page<?php endif ?> mol-question my-question"><a href="<?php echo bp_get_dw_questions_user_slug() ?><?php //echo $dud . 'dwqa-questions' ?>">Moje otázky <?php echo openlab_get_menu_count_mup($question_count); ?></a></li>
+                <?php endif; ?>
+
+
+
+
+
+
                 <?php
                 // My Dashboard points to the my-sites.php Dashboard panel for this user. However,
                 // this panel only works if looking at a site where the user has Dashboard-level

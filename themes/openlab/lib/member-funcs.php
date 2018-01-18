@@ -773,7 +773,7 @@ function cuny_member_profile_header() {
                         'wrapper_id' => 'send-private-message',
                         'link_href' => bp_get_send_private_message_link(),
                         'link_title' => __('Send a private message to this user.', 'buddypress'),
-                        'link_text' => __('<i class="fa fa-envelope" aria-hidden="true"></i> Send Message', 'buddypress'),
+                        'link_text' => __('<i class="fa fa-envelope" aria-hidden="true"></i> Poslat zprávu', 'buddypress'),
                         'link_class' => 'send-message btn btn-default btn-block btn-primary link-btn',
                     ))
                     ?>

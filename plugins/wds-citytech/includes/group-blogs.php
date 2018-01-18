@@ -1044,7 +1044,7 @@ function openlab_convert_feed_to_activity( $items = array(), $item_type = 'posts
 			$group_type = openlab_group_type( 'lower', 'single', $group->id );
 
 			if ( 'posts' == $item_type ) {
-				$action = sprintf( 'A new post %s was published in the ' . $group_type . ' %s', '<a href="' . esc_attr( $item['permalink'] ) . '">' . esc_html( $item['title'] ) . '</a>', '<a href="' . $group_permalink . '">' . $group_name . '</a>'
+				$action = sprintf( 'Byl publikován nový příspěvek %s ve skupině ' . $group_type . ' %s', '<a href="' . esc_attr( $item['permalink'] ) . '">' . esc_html( $item['title'] ) . '</a>', '<a href="' . $group_permalink . '">' . $group_name . '</a>'
 				);
 			} else if ( 'comments' == $item_type ) {
 				$action = sprintf( 'A new comment was posted on the post %s in the ' . $group_type . ' %s', '<a href="' . esc_attr( $item['permalink'] ) . '">' . esc_html( $item['title'] ) . '</a>', '<a href="' . $group_permalink . '">' . $group_name . '</a>'

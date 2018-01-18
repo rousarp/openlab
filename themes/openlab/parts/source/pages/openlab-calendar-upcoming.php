@@ -9,7 +9,7 @@
             </ul>
         </div>
 
-        <h2><?php echo __('Upcoming Events', 'bp-event-organiser'); ?></h2>
+        <h2><?php echo __('Upcoming Events', 'events-manager'); ?></h2>
         <?php if (!empty($events)) : ?>
             <ul class="bpeo-upcoming-events">
                 <?php

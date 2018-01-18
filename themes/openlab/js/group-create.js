@@ -154,9 +154,9 @@ jQuery(document).ready(function($){
 				}
 
 				if ( "posts" in robj ) {
-					$(efr).append( '<p class="feed-url-tip">We found the following feed URLs for your external site, which we\'ll use to pull posts and comments into your activity stream.</p>' );
+					$(efr).append( '<p class="feed-url-tip">Na vašich externích stránkách jsme zjistili následující adresy URL zdrojů, které budeme používat k vytáčení příspěvků a komentářů do vašeho streamu aktivit.</p>' );
 				} else {
-					$(efr).append( '<p class="feed-url-tip">We couldn\'t find any feed URLs for your external site, which we use to pull posts and comments into your activity stream. If your site has feeds, you may enter the URLs below.</p>' );
+					$(efr).append( '<p class="feed-url-tip">Pro vaše externí weby nebyly nalezeny žádné adresy URL zdrojů, které používáme k vytáčení příspěvků a komentářů do vašeho streamu aktivit. Pokud vaše stránky obsahují zdroje, můžete zadat níže uvedené adresy URL.</p>' );
 				}
 
 				var posts = "posts" in robj ? robj.posts : '';
@@ -165,7 +165,7 @@ jQuery(document).ready(function($){
 
 				$(efr).append( '<p class="feed-url posts-feed-url"><label for="external-posts-url">Posts:</label> <input name="external-posts-url" id="external-posts-url" value="' + posts + '" /></p>' );
 
-				$(efr).append( '<p class="feed-url comments-feed-url"><label for="external-comments-url">Comments:</label> <input name="external-comments-url" id="external-comments-url" value="' + comments + '" /></p>' );
+				$(efr).append( '<p class="feed-url comments-feed-url"><label for="external-comments-url">Poznámky:</label> <input name="external-comments-url" id="external-comments-url" value="' + comments + '" /></p>' );
 
 				$(efr).append( '<input name="external-site-type" id="external-site-type" type="hidden" value="' + type + '" />' );
 
@@ -270,7 +270,7 @@ jQuery(document).ready(function($){
 					$('#new_or_old_clone').trigger('click');
 
 					// Site URL
-					$('#cloned-site-url').html( 'Your original address was: ' + r.site_url );
+					$('#cloned-site-url').html( 'Vaše původní adresa byla: ' + r.site_url );
 					$('#blog-id-to-clone').val( r.site_id );
 				} else {
 					// Grey out the website clone options
@@ -367,11 +367,11 @@ jQuery(document).ready(function($){
 		if ( 'course' == new_group_type ) {
 			var school_tech = document.getElementById( 'school_tech' );
 			var is_school_selected = $( '.school-inputs input:checked' ).length > 0;
-			school_tech.setCustomValidity( is_school_selected ? '' : 'You must select a School.' );
+			school_tech.setCustomValidity( is_school_selected ? '' : 'Musíte vybrat téma.' );
 
 			if ( is_school_selected ) {
 				var is_department_selected = $( '.departments input:checked' ).length > 0;
-				document.getElementsByClassName( 'wds-department' )[0].setCustomValidity( is_department_selected ? '' : 'You must select a Department.' );
+				document.getElementsByClassName( 'wds-department' )[0].setCustomValidity( is_department_selected ? '' : 'Musíte vybrat oblast.' );
 			}
 		}
 	} );
@@ -427,7 +427,7 @@ jQuery(document).ready(function($){
 		}
 
 		if ( 0 == domain.length ) {
-			$domain_field.after('<div class="ajax-warning bp-template-notice error">This field cannot be blank.</div>');
+			$domain_field.after('<div class="ajax-warning bp-template-notice error">Toto pole nemůže být prázdné.</div>');
 			return false;
 		}
 
@@ -438,7 +438,7 @@ jQuery(document).ready(function($){
 			},
 			function( response ) {
 				if ( 'exists' == response ) {
-					$domain_field.after('<div class="ajax-warning bp-template-notice error">Sorry, that URL is already taken.</div>');
+					$domain_field.after('<div class="ajax-warning bp-template-notice error">Je nám líto, tato adresa URL již byla přijata.</div>');
 					return false;
 				} else {
 					// We're done validating.

@@ -60,7 +60,7 @@
 					<div class="ac-textarea">
 						<textarea id="ac-input-<?php bp_activity_id() ?>" class="ac-input" name="ac_input_<?php bp_activity_id() ?>"></textarea>
 					</div>
-					<input type="submit" name="ac_form_submit" value="<?php _e( 'Post', 'buddypress' ) ?> &rarr;" /> &nbsp; <?php _e( 'or press esc to cancel.', 'buddypress' ) ?>
+					<input type="submit" name="ac_form_submit" value="<?php _e( 'Publikovat', 'buddypress' ) ?> &rarr;" /> &nbsp; <?php //_e( 'or press esc to cancel.', 'buddypress' ); ?><?php _e( 'nebo stiskněte esc pro zrušení.', 'buddypress' ); ?>
 					<input type="hidden" name="comment_form_id" value="<?php bp_activity_id() ?>" />
 				</div>
 				<?php wp_nonce_field( 'new_activity_comment', '_wpnonce_new_activity_comment' ) ?>
@@ -73,4 +73,3 @@
 </li>
 
 <?php do_action( 'bp_after_activity_entry' ) ?>
-

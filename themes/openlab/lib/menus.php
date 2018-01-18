@@ -40,7 +40,7 @@ function openlab_wp_menu_customizations($items, $args) {
                 $items[$key]->classes[] = 'external-link';
             }
 
-            if ($item->title === 'OpenLab Calendar') {
+            if ($item->title === 'OpenLab Kalendář') {
 
                 $items[$key]->classes[] = 'hidden-xs';
 
@@ -60,7 +60,7 @@ function openlab_wp_menu_customizations($items, $args) {
         }
 
         //then we create the menu item and inject it into the menu items array
-        $new_menu_item = openlab_custom_nav_menu_item('OpenLab Calendar', get_permalink($upcoming_page_obj->ID), $order, 0, array('visible-xs'));
+        $new_menu_item = openlab_custom_nav_menu_item('OpenLab Kalendář', get_permalink($upcoming_page_obj->ID), $order, 0, array('visible-xs'));
 
         $new_items[$order] = $new_menu_item;
         ksort($new_items);
@@ -80,11 +80,11 @@ add_filter('wp_nav_menu_objects', 'openlab_wp_menu_customizations', 11, 2);
 function openlab_modify_options_nav() {
     if (bp_is_group() && openlab_is_portfolio() && !bp_is_group_create()) {
         buddypress()->groups->nav->edit_nav(array(
-            'name' => 'Profile',
+            'name' => 'Profil',
                 ), 'home', bp_get_current_group_slug());
 
         buddypress()->groups->nav->edit_nav(array(
-            'name' => 'Settings',
+            'name' => 'Nastavení',
                 ), 'admin', bp_get_current_group_slug());
 
         // Keep the following tabs as-is

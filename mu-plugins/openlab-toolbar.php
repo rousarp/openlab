@@ -691,7 +691,7 @@ HTML;
 		 * INVITATIONS
 		 */
 
-                $title = 'Invitations';
+                $title = 'Pozvánky';
                 if ( !empty( $invites['groups'] )){
                     $title .= '<span class="see-all pull-right"><a class="regular" href="'.trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug()) . '/invites">Zobrazit všechny pozvánky</a></span>';
                 }

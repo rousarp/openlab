@@ -161,7 +161,7 @@ function openlab_process_status_messages($message, $type) {
     //invite anyone page
     if (bp_current_action() === 'invite-anyone') {
         if (trim($message) === '<p>Group invites sent.</p>') {
-            $message = '<p>Your invitation was sent!</p>';
+            $message = '<p>Pozvánka byla odeslána!</p>';
         }
     }
 

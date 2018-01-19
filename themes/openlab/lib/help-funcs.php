@@ -69,13 +69,13 @@ function openlab_help_loop() {
         if ($prev_post) {
             $back_next_nav .= '--><span class="nav-previous">';
             $back_next_nav .= '<span class="fa fa-chevron-circle-left"></span>';
-            $back_next_nav .= sprintf('<a href="%s">Zpět</a>', esc_url(get_permalink($prev_post)));
+            $back_next_nav .= sprintf('<a href="%s">Předchozí</a>', esc_url(get_permalink($prev_post)));
             $back_next_nav .= '</span><!--';
         }
 
         if ($next_post) {
             $back_next_nav .= '--><span class="nav-previous">';
-            $back_next_nav .= sprintf('<a href="%s">Next</a>', esc_url(get_permalink($next_post)));
+            $back_next_nav .= sprintf('<a href="%s">Následující</a>', esc_url(get_permalink($next_post)));
             $back_next_nav .= '<span class="nav-next fa fa-chevron-circle-right"></span>';
             $back_next_nav .= '</span><!--';
         }

@@ -319,7 +319,7 @@ class BB_Install
 			$language = str_replace( '.mo', '', basename( $language ) );
 			$this->languages[$language] = $language;
 		}
-		
+
 		return $this->languages;
 	}
 
@@ -612,6 +612,7 @@ class BB_Install
 		 * Should be exactly the same as the default value of the KEYS in bb-config-sample.php
 		 * @since 1.0
 		 */
+		 global $table_prefix;
 		$_bb_default_secret_key = 'put your unique phrase here';
 
 		$this->data = array(
@@ -809,7 +810,7 @@ class BB_Install
 						'prerequisite' => 'toggle_2_0'
 					),
 					'wp_table_prefix' => array(
-						'value' => 'wp_',
+						'value' => $table_prefix,
 						'default_value' => '', // Used when setting is ignored
 						'label' => __( 'User database table prefix' ),
 						'note'  => __( 'If your bbPress and WordPress sites share the same database, then this is the same value as <code>$table_prefix</code> in your WordPress <code>wp-config.php</code> file. It is usually <strong>wp_</strong>.' ),
@@ -1231,7 +1232,7 @@ class BB_Install
 		$this->inject_form_values_into_data( 1 );
 
 		$data =& $this->data[1]['form'];
-		
+
 		if ( 'en_US' == $data['bb_lang']['value'] ) {
 			$data['bb_lang']['value'] = '';
 		}
@@ -1349,6 +1350,7 @@ class BB_Install
 	 **/
 	function process_form_wordpress_integration()
 	{
+		global $table_prefix;
 		// Check the referer
 		bb_check_admin_referer( 'bbpress-installer' );
 
@@ -1421,7 +1423,7 @@ class BB_Install
 
 				// Make the wp_table_prefix valid
 				$data['wp_table_prefix']['value'] = preg_replace( '/[^0-9a-zA-Z_]/', '', $data['wp_table_prefix']['value'] );
-				$data['wp_table_prefix']['value'] = empty( $data['wp_table_prefix']['value'] ) ? 'wp_' : $data['wp_table_prefix']['value'];
+				$data['wp_table_prefix']['value'] = empty( $data['wp_table_prefix']['value'] ) ? $table_prefix : $data['wp_table_prefix']['value'];
 
 				// Make the wordpress_mu_primary_blog_id valid
 				$data['wordpress_mu_primary_blog_id']['value'] = preg_replace( '/[^0-9]/', '', $data['wordpress_mu_primary_blog_id']['value'] );

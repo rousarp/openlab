@@ -832,6 +832,7 @@ add_filter( 'bp_blogs_get_blogs', 'openlab_filter_groupblogs_from_my_sites', 10,
  */
 function wds_site_can_be_viewed() {
 	global $user_ID;
+	global $table_prefix;
 
 	// External sites can always be viewed
 	if ( openlab_get_external_site_url_by_group_id() ) {
@@ -848,7 +849,7 @@ function wds_site_can_be_viewed() {
 		switch ( $blog_private ) {
 			case '-3' :
 				if ( is_user_logged_in() ) {
-					$user_capabilities = get_user_meta( $user_ID, 'wp_' . $wds_bp_group_site_id . '_capabilities', true );
+					$user_capabilities = get_user_meta( $user_ID, $table_prefix . $wds_bp_group_site_id . '_capabilities', true );
 					if ( isset( $user_capabalities['administrator'] ) ) {
 						$blog_public = true;
 					}
@@ -857,7 +858,7 @@ function wds_site_can_be_viewed() {
 
 			case '-2' :
 				if ( is_user_logged_in() ) {
-					$user_capabilities = get_user_meta( $user_ID, 'wp_' . $wds_bp_group_site_id . '_capabilities', true );
+					$user_capabilities = get_user_meta( $user_ID, $table_prefix . $wds_bp_group_site_id . '_capabilities', true );
 					if ( $user_capabilities != "" ) {
 						$blog_public = true;
 					}

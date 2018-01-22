@@ -7,6 +7,7 @@
  */
 function bp_mpo_activity_filter( $a, $activities ) {
 	global $bp;
+	global $table_prefix;
 
 	if ( is_super_admin() )
 		return $activities;
@@ -53,7 +54,7 @@ function bp_mpo_activity_filter( $a, $activities ) {
 
 				case '-2':
 					if ( is_user_logged_in() ) {
-						$meta_key = 'wp_' . $blog_id . '_capabilities';
+						$meta_key = $table_prefix . $blog_id . '_capabilities';
 						$caps = get_user_meta( $current_user, $meta_key, true );
 
 						if ( !empty( $caps ) ) {

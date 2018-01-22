@@ -1530,7 +1530,7 @@ function openlab_get_faculty_list() {
 }
 
 function openlab_get_group_site_settings($group_id) {
-
+    global $table_prefix;
     // Set up data. Look for local site first. Fall back on external site.
     $site_id = openlab_get_site_id_by_group_id($group_id);
 
@@ -1555,7 +1555,7 @@ function openlab_get_group_site_settings($group_id) {
                 break;
 
             case -3 :
-                $caps = get_user_meta(get_current_user_id(), 'wp_' . $site_id . '_capabilities', true);
+                $caps = get_user_meta(get_current_user_id(), $table_prefix . $site_id . '_capabilities', true);
                 $is_visible = isset($caps['administrator']);
                 break;
         }

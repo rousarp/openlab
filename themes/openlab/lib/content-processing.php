@@ -208,6 +208,65 @@ function openlab_generate_school_name($group_id) {
                 case "az-seznam":
                       $school_out[] = "A-Z seznam";
                       break;
+                case "ekonomika-a-spolecnost":
+                      $school_out[] = "Ekonomika a společnost";
+                      break;
+                case "lokalni-partneri":
+                      $school_out[] = "Lokální partneři";
+                      break;
+                case "organizace-poskytujici-sluzby":
+                      $school_out[] = "Organizace poskytující služby";
+                      break;
+                case "lokalni-organy":
+                      $school_out[] = "Lokální orgány";
+                      break;
+                case "stycni-pracovnici":
+                      $school_out[] = "Styční pracovníci";
+                      break;
+                case "rodina-pratele-pecovatele":
+                      $school_out[] = "Rodina, přátelé a pečovatelé";
+                      break;
+                case "vyloucene-skupiny":
+                      $school_out[] = "Vyloučené skupiny";
+                      break;
+                case "pristup-k-digitalnim-technologiim":
+                      $school_out[] = "Přístup k digitálním technologiím";
+                      break;
+                case "zamestnanost-a-ekonomika":
+                      $school_out[] = "Zaměstnanost a ekonomika";
+                      break;
+                case "rovnost-a-postaveni":
+                      $school_out[] = "Rovnost a postavení";
+                      break;
+                case "zivotni-podminky":
+                      $school_out[] = "Životní podmínky";
+                      break;
+                case "komunita":
+                      $school_out[] = "Komunita";
+                      break;
+                case "zivotni-prostredi":
+                      $school_out[] = "Životní prostředí";
+                      break;
+                case "kriminalita-a-bezpecnost":
+                      $school_out[] = "Kriminalita a bezpečnost";
+                      break;
+                case "sluzby":
+                      $school_out[] = "Služby";
+                      break;
+                case "bydleni":
+                      $school_out[] = "Bydlení";
+                      break;
+                case "zdravi-a-pece":
+                      $school_out[] = "Zdraví a péče";
+                      break;
+                case "vzdelani-a-dovednosti":
+                      $school_out[] = "Vzdělání a dovednosti";
+                      break;
+                case "financni-prostredky":
+                      $school_out[] = "Finanční prostředky";
+                      break;
+
+
             }
         }
 

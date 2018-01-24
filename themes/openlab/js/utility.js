@@ -442,11 +442,11 @@ OpenLab.utility = (function ($) {
                 $('#dept-select').html('<option value=""></option>');
 
                 if (school == "" || school == "school_all") {
-                    var defaultOption = '<option value="dept_all" selected="selected">All Departments</option>';
+                    var defaultOption = '<option value="dept_all" selected="selected">Všechny oblasti</option>';
                     $('#dept-select').html(defaultOption);
                     $('#dept-select').trigger('render');
-                    $('#select2-dept-select-container').text('All Departments');
-                    $('#select2-dept-select-container').attr('title', 'All Departments');
+                    $('#select2-dept-select-container').text('Všechny oblasti');
+                    $('#select2-dept-select-container').attr('title', 'Všechny oblasti');
                     return;
                 }
 
@@ -466,8 +466,8 @@ OpenLab.utility = (function ($) {
                         $('#dept-select').removeClass('processing');
                         $('#dept-select').html(data);
                         $('#dept-select').trigger('render');
-                        $('#select2-dept-select-container').text('All Departments');
-                        $('#select2-dept-select-container').attr('title', 'All Departments');
+                        $('#select2-dept-select-container').text('Všechny oblasti');
+                        $('#select2-dept-select-container').attr('title', 'Všechny oblasti');
                     },
                     error: function (MLHttpRequest, textStatus, errorThrown) {
                         console.log(errorThrown);

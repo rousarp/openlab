@@ -190,10 +190,28 @@ function openlab_generate_school_name($group_id) {
                 case "arts":
                     $school_out[] = "Arts & Sciences";
                     break;
+                case "procesy":
+                    $school_out[] = "Procesy";
+                    break;
+                case "funkce":
+                    $school_out[] = "Funkce";
+                    break;
+                case "funkce":
+                    $school_out[] = "Navigace";
+                    break;
+                case "typ-organizace":
+                    $school_out[] = "Typ organizace";
+                    break;
+                case "potreby":
+                    $school_out[] = "Potřeby";
+                    break;
+                case "az-seznam":
+                      $school_out[] = "A-Z seznam";
+                      break;
             }
         }
 
-        $schools_out = implode(', ', $school_out);
+        $schools_out = implode(' | ', $school_out);
     }
 
     return $schools_out;
@@ -206,7 +224,7 @@ function openlab_generate_department_name($group_id) {
     $departments_ary = explode(',', $departments);
 
     if (!empty($departments_ary)) {
-        $departments_out = implode(', ', $departments_ary);
+        $departments_out = implode(' | ', $departments_ary);
     }
 
     return $departments_out;

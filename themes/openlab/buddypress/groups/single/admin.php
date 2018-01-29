@@ -470,7 +470,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php do_action('template_notices'); ?>
 
             <div id="message" class="bp-template-notice error margin-bottom">
-                <p><?php printf('WARNING: Deleting this %s will completely remove ALL content associated with it. There is no way back, please be careful with this option.', openlab_get_group_type()); ?></p>
+                <p><?php printf('UPOZORNĚNÍ: Smazáním zcela odstraníme veškerý obsah. Neexistuje žádná cesta zpět, prosím, dávejte pozor na tuto možnost.', openlab_get_group_type()); ?></p>
             </div>
 
             <div class="checkbox no-margin no-margin-bottom">
@@ -480,7 +480,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                                 } else {
                                     document.getElementById('delete-group-button').disabled = 'disabled';
                                 }" />
-    <?php printf('I understand the consequences of deleting this %s.', openlab_get_group_type()); ?>
+    <?php printf('Chápu důsledky tohoto odstranění', openlab_get_group_type()); ?>
                 </label>
             </div>
 

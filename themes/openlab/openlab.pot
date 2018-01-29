@@ -407,3 +407,15 @@ msgstr ""
 msgctxt "4J-vy"
 msgid "porfolio"
 msgstr ""
+
+msgctxt "1M"
+msgid "people"
+msgstr ""
+
+msgctxt "1M"
+msgid "People"
+msgstr ""
+
+msgctxt "6M"
+msgid "not-archive"
+msgstr ""

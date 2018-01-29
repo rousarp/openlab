@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
+"POT-Creation-Date: 2018-01-29 16:59+0000\n"
+"PO-Revision-Date: 2018-01-29 17:00+0000\n"
+"Last-Translator: admin <admin@urad.online>\n"
+"Language-Team: Czech\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:"
+"1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-Bookmarks: \n"
+"Language: cs-CZ\n"
+"X-Generator: Loco - https://localise.biz/"
+
+msgctxt "1M"
+msgid "people"
+msgstr "lidé"
+
+msgctxt "1M"
+msgid "People"
+msgstr "Lidé"
+
+msgctxt "1M"
+msgid "project"
+msgstr "projekty"
+
+msgctxt "2M"
+msgid "project"
+msgstr "projektů"
+
+msgctxt "3M"
+msgid "project"
+msgstr "projektům"
+
+msgctxt "4M"
+msgid "project"
+msgstr "projekty"
+
+msgctxt "5M"
+msgid "project"
+msgstr "projekty"
+
+msgctxt "6M"
+msgid "project"
+msgstr "projektech"
+
+msgctxt "7M"
+msgid "project"
+msgstr "projekty"
+
+msgctxt "1J"
+msgid "project"
+msgstr "projekt"
+
+msgctxt "2J"
+msgid "project"
+msgstr "projektu"
+
+msgctxt "3J"
+msgid "project"
+msgstr "projektu"
+
+msgctxt "4J"
+msgid "project"
+msgstr "projekt"
+
+msgctxt "5J"
+msgid "project"
+msgstr "projekt"
+
+msgctxt "6J"
+msgid "project"
+msgstr "projektu"
+
+msgctxt "7J"
+msgid "project"
+msgstr "projektem"
+
+msgctxt "1M"
+msgid "club"
+msgstr "skupiny"
+
+msgctxt "2M"
+msgid "club"
+msgstr "skupin"
+
+msgctxt "3M"
+msgid "club"
+msgstr "skupinám"
+
+msgctxt "4M"
+msgid "club"
+msgstr "skupiny"
+
+msgctxt "5M"
+msgid "club"
+msgstr "skupiny"
+
+msgctxt "6M"
+msgid "club"
+msgstr "skupinách"
+
+msgctxt "7M"
+msgid "club"
+msgstr "skupinami"
+
+msgctxt "1J"
+msgid "club"
+msgstr "skupina"
+
+msgctxt "2J"
+msgid "club"
+msgstr "skupiny"
+
+msgctxt "3J"
+msgid "club"
+msgstr "skupině"
+
+msgctxt "4J"
+msgid "club"
+msgstr "skupinu"
+
+msgctxt "5J"
+msgid "club"
+msgstr "skupino"
+
+msgctxt "6J"
+msgid "club"
+msgstr "skupině"
+
+msgctxt "7J"
+msgid "club"
+msgstr "skupinou"
+
+msgctxt "1M"
+msgid "course"
+msgstr "kurzy"
+
+msgctxt "2M"
+msgid "course"
+msgstr "kurzů"
+
+msgctxt "3M"
+msgid "course"
+msgstr "kurzům"
+
+msgctxt "4M"
+msgid "course"
+msgstr "kurzy"
+
+msgctxt "5M"
+msgid "course"
+msgstr "kurzy"
+
+msgctxt "6M"
+msgid "course"
+msgstr "kurzech"
+
+msgctxt "7M"
+msgid "course"
+msgstr "kurzy"
+
+msgctxt "1J"
+msgid "course"
+msgstr "kurz"
+
+msgctxt "2J"
+msgid "course"
+msgstr "kurzu"
+
+msgctxt "3J"
+msgid "course"
+msgstr "kurzu"
+
+msgctxt "4J"
+msgid "course"
+msgstr "kurz"
+
+msgctxt "5J"
+msgid "course"
+msgstr "kurze"
+
+msgctxt "6J"
+msgid "course"
+msgstr "kurzu"
+
+msgctxt "7J"
+msgid "course"
+msgstr "kurzem"
+
+msgctxt "1M"
+msgid "portfolio"
+msgstr "porfolia"
+
+msgctxt "2M"
+msgid "portfolio"
+msgstr "porfolií"
+
+msgctxt "3M"
+msgid "portfolio"
+msgstr "portfoliím"
+
+msgctxt "4M"
+msgid "portfolio"
+msgstr "portvolia"
+
+msgctxt "5M"
+msgid "portfolio"
+msgstr "portfolia"
+
+msgctxt "6M"
+msgid "portfolio"
+msgstr "portfoliích"
+
+msgctxt "7M"
+msgid "portfolio"
+msgstr "portfoliemi"
+
+msgctxt "1J"
+msgid "portfolio"
+msgstr "portfolio"
+
+msgctxt "2J"
+msgid "portfolio"
+msgstr "porfolia"
+
+msgctxt "3J"
+msgid "portfolio"
+msgstr "portfoliu"
+
+msgctxt "4J"
+msgid "portfolio"
+msgstr "porfolio"
+
+msgctxt "5J"
+msgid "portfolio"
+msgstr "potfolie"
+
+msgctxt "6J"
+msgid "portfolio"
+msgstr "portfoliu"
+
+msgctxt "7J"
+msgid "portfolio"
+msgstr "portfoliem"
+
+msgctxt "2J-vy"
+msgid "project"
+msgstr "vašeho projektu"
+
+msgctxt "2J-vy"
+msgid "curse"
+msgstr "vašeho kurzu"
+
+msgctxt "2J-vy"
+msgid "club"
+msgstr "vaší skupiny"
+
+msgctxt "2J-vy"
+msgid "porfolio"
+msgstr "vašeho portfolia"
+
+msgctxt "2J-tento"
+msgid "project"
+msgstr "tohoto projektu"
+
+msgctxt "2J-tento"
+msgid "curse"
+msgstr "tohoto kurzu"
+
+msgctxt "2J-tento"
+msgid "club"
+msgstr "této skupiny"
+
+msgctxt "2J-tento"
+msgid "porfolio"
+msgstr "tohoto portfolia"
+
+msgctxt "1J-soukromý"
+msgid "project"
+msgstr "Soukromý projekt"
+
+msgctxt "1J-soukromý"
+msgid "curse"
+msgstr "Soukromý kurz"
+
+msgctxt "1J-soukromý"
+msgid "club"
+msgstr "Soukromá skupina"
+
+msgctxt "1J-soukromý"
+msgid "porfolio"
+msgstr "Soukromé porfolio"
+
+msgctxt "1J-veřejný"
+msgid "project"
+msgstr "Veřejný projekt"
+
+msgctxt "1J-veřejný"
+msgid "curse"
+msgstr "Veřejný kurz"
+
+msgctxt "1J-veřejný"
+msgid "club"
+msgstr "Veřejná skupina"
+
+msgctxt "1J-veřejný"
+msgid "porfolio"
+msgstr "Veřejné portfolio"
+
+msgctxt "1J-skrytý"
+msgid "project"
+msgstr "Skrytý projekt"
+
+msgctxt "1J-skrytý"
+msgid "curse"
+msgstr "Skrytý kurz"
+
+msgctxt "1J-skrytý"
+msgid "club"
+msgstr "Skrytá skupina"
+
+msgctxt "1J-skrytý"
+msgid "porfolio"
+msgstr "Skryté portfolio"
+
+msgctxt "2J-soukromý"
+msgid "project"
+msgstr "soukromého projektu"
+
+msgctxt "2J-soukromý"
+msgid "curse"
+msgstr "soukromého kurzu"
+
+msgctxt "2J-soukromý"
+msgid "club"
+msgstr "soukromé skupiny"
+
+msgctxt "2J-soukromý"
+msgid "porfolio"
+msgstr "soukromého portfolia"
+
+msgctxt "2J-veřejný"
+msgid "project"
+msgstr "veřejného projektu"
+
+msgctxt "2J-veřejný"
+msgid "curse"
+msgstr "veřejného kurzu"
+
+msgctxt "2J-veřejný"
+msgid "club"
+msgstr "veřejné skupiny"
+
+msgctxt "2J-veřejný"
+msgid "porfolio"
+msgstr "veřejného portfolia"
+
+msgctxt "2J-skrytý"
+msgid "project"
+msgstr "skrytého projektu"
+
+msgctxt "2J-skrytý"
+msgid "curse"
+msgstr "skrytého kurzu"
+
+msgctxt "2J-skrytý"
+msgid "club"
+msgstr "skryté skupiny"
+
+msgctxt "2J-skrytý"
+msgid "porfolio"
+msgstr "skrytého portfolia"
+
+msgctxt "1J-tento"
+msgid "project"
+msgstr "tento projekt"
+
+msgctxt "1J-tento"
+msgid "curse"
+msgstr "tento kurz"
+
+msgctxt "1J-tento"
+msgid "club"
+msgstr "tato skupina"
+
+msgctxt "1J-tento"
+msgid "porfolio"
+msgstr "toto portfolio"
+
+msgctxt "4J-vy"
+msgid "project"
+msgstr "váš projekt"
+
+msgctxt "4J-vy"
+msgid "curse"
+msgstr "váš kurz"
+
+msgctxt "4J-vy"
+msgid "club"
+msgstr "vaší skupinu"
+
+msgctxt "4J-vy"
+msgid "porfolio"
+msgstr "vaše portfolio"

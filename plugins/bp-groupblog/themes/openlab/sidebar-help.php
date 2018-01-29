@@ -70,7 +70,7 @@ wp_nav_menu($args);
             $src = wp_get_attachment_image_src($attachment->ID, 'full');
 
             echo '<a href="' . bp_get_root_domain() . '/blog/help/contact-us">';
-            echo '<img alt="Contact Us" class="img-responsive" src="' . $src[0] . '" />';
+            echo '<img alt="Kontaktute nás" class="img-responsive" src="' . $src[0] . '" />';
             echo '</a>';
             echo '</div>';
 
@@ -85,7 +85,7 @@ wp_nav_menu($args);
         echo '</div>';
     } //end if
     ?>
-    <a class="btn btn-default btn-block btn-primary link-btn" href="<?php echo bp_get_root_domain() . '/blog/help/contact-us'; ?>"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Contact Us</a>
+    <a class="btn btn-default btn-block btn-primary link-btn" href="<?php echo bp_get_root_domain() . '/blog/help/contact-us'; ?>"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Kontaktujte nás</a>
 </div><!--support team-->
 </div>
 

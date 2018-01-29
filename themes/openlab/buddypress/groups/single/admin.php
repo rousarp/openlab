@@ -41,22 +41,22 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
             <?php do_action('template_notices') ?>
 
             <div class="panel panel-default">
-                <div class="panel-heading"><?php echo $group_label_uc; ?> Podrobnosti</div>
+                <div class="panel-heading">Podrobnosti <?php echo _x(strtolower($group_label_uc),'2J', 'openlab'); ?></div>
                 <div class="panel-body">
 
                     <?php do_action('bp_before_group_details_admin'); ?>
 
-                    <label for="group-name"><?php echo $group_label_uc . ' Název' ?> (vyžadováno)</label>
+                    <label for="group-name"><?php echo 'Název ' .  _x(strtolower($group_label_uc),'2J','openlab') ?> (vyžadováno)</label>
                     <input class="form-control" type="text" name="group-name" id="group-name" value="<?php bp_group_name() ?>" />
 
-                    <label for="group-desc"><?php echo $group_label_uc . ' Popis' ?> (vyžadováno)</label>
+                    <label for="group-desc"><?php echo  'Popis ' .  _x(strtolower($group_label_uc),'2J','openlab') ?> (vyžadováno)</label>
                     <textarea class="form-control" name="group-desc" id="group-desc"><?php bp_group_description_editable() ?></textarea>
 
                     <?php do_action('groups_custom_group_fields_editable') ?>
 
                     <?php if (!openlab_is_portfolio()) : ?>
                         <div class="notify-settings">
-                            <p class="ol-tooltip notify-members"><?php _e('Notify group members of these changes via email', 'buddypress'); ?></p>
+                            <p class="ol-tooltip notify-members"><?php echo ('Informujte členy '.  _x(strtolower($group_label_uc),'2J','openlab') .' o těchto změnách.'); ?></p>
                             <div class="radio">
                                 <label><input type="radio" name="group-notify-members" value="1" /> <?php _e('Yes', 'buddypress'); ?></label>
                                 <label><input type="radio" name="group-notify-members" value="0" checked="checked" /> <?php _e('No', 'buddypress'); ?></label>
@@ -470,7 +470,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
     <?php do_action('template_notices'); ?>
 
             <div id="message" class="bp-template-notice error margin-bottom">
-                <p><?php printf('WARNING: Deleting this %s will completely remove ALL content associated with it. There is no way back, please be careful with this option.', openlab_get_group_type()); ?></p>
+                <p><?php printf('UPOZORNĚNÍ: Smazáním zcela odstraníme veškerý obsah. Neexistuje žádná cesta zpět, prosím, dávejte pozor na tuto možnost.', openlab_get_group_type()); ?></p>
             </div>
 
             <div class="checkbox no-margin no-margin-bottom">
@@ -480,7 +480,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                                 } else {
                                     document.getElementById('delete-group-button').disabled = 'disabled';
                                 }" />
-    <?php printf('I understand the consequences of deleting this %s.', openlab_get_group_type()); ?>
+    <?php printf('Chápu důsledky tohoto odstranění', openlab_get_group_type()); ?>
                 </label>
             </div>
 

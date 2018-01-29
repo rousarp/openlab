@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-01-27 00:51+0100\n"
+"PO-Revision-Date: 2018-01-27 01:03+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ../../themes/hemingway\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:12
+#, php-format
+msgid "Date: %s"
+msgstr "Datum: %s"
+
+#: archive.php:14
+#, php-format
+msgid "Month: %s"
+msgstr "Měsíc: %s"
+
+#: archive.php:16
+#, php-format
+msgid "Year: %s"
+msgstr "Rok: %s"
+
+#: archive.php:18
+#, php-format
+msgid "Category: %s"
+msgstr "Kategorie: %s"
+
+#: archive.php:20
+#, php-format
+msgid "Tag: %s"
+msgstr "Štítek: %s"
+
+#: archive.php:23
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: archive.php:32 search.php:21 search.php:73
+#, php-format
+msgid "(page %s of %s)"
+msgstr "(strana %s z %s)"
+
+#: archive.php:70
+msgid "Older<span> posts</span>"
+msgstr "Starší<span> příspěvky</span>"
+
+#: archive.php:72
+msgid "Newer<span> posts</span>"
+msgstr "Novější<span> příspěvky</span>"
+
+#: comments.php:56
+msgid "&laquo; Older<span> Comments</span>"
+msgstr "&laquo; Starší<span> Komentáře</span>"
+
+#: comments.php:58
+msgid "Newer<span> Comments</span> &raquo;"
+msgstr "Novější<span> Komentáře</span> &raquo;"
+
+#: comments.php:79
+msgid "Your email address will not be published."
+msgstr "Vaše e-mailová adresa nebude zveřejněna."
+
+#: comments.php:88
+msgid "Name"
+msgstr "Název"
+
+#: comments.php:91
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:94
+msgid "Website"
+msgstr "Webové stránky"
+
+#: content-aside.php:17 content-quote.php:17 content-video.php:17
+#: content.php:55 functions.php:331 page.php:49 single.php:84
+#: template-archives.php:133 template-fullwidth.php:53
+#: template-nosidebar.php:53
+msgid "Edit"
+msgstr "Upravit"
+
+#: content.php:41 single.php:78
+msgid "0 Comments"
+msgstr "Žádné komentáře"
+
+#: content.php:41 single.php:78
+msgid "1 Comment"
+msgstr "1 komentář"
+
+#: content.php:41 single.php:78
+msgid "% Comments"
+msgstr "% Komentářů"
+
+#: footer.php:65
+#, php-format
+msgid "Theme by <a href=\"%s\">Anders Noren</a>"
+msgstr "Atorem šablony je <a href=\"%s\">Anders Noren</a>"
+
+#: functions.php:124
+msgid "Footer A"
+msgstr "Patička A"
+
+#: functions.php:126
+msgid "Widgets in this area will be shown in the left column in the footer."
+msgstr "Widgety v této oblasti se zobrazí v levém sloupci v zápatí."
+
+#: functions.php:134
+msgid "Footer B"
+msgstr "Patička B"
+
+#: functions.php:136
+msgid "Widgets in this area will be shown in the middle column in the footer."
+msgstr "Widgety v této oblasti se zobrazí ve středním sloupci v zápatí."
+
+#: functions.php:144
+msgid "Footer C"
+msgstr "Patička C"
+
+#: functions.php:146
+msgid "Widgets in this area will be shown in the right column in the footer."
+msgstr "Widgety v této oblasti se zobrazí v pravém sloupci v zápatí."
+
+#: functions.php:154
+msgid "Sidebar"
+msgstr "Postranní panel"
+
+#: functions.php:156
+msgid "Widgets in this area will be shown in the sidebar."
+msgstr "Widgety v této oblasti se zobrazí v postranním panelu."
+
+#: functions.php:247
+msgid "Continue reading"
+msgstr "Pokračujte ve čtení"
+
+#: functions.php:290
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:290
+msgid "(Edit)"
+msgstr "(upravit)"
+
+#: functions.php:310
+msgid "(Post author)"
+msgstr "(Autor příspěvku)"
+
+#: functions.php:333
+msgid "Reply"
+msgstr "Odpovědět"
+
+#: functions.php:361
+msgid "Hemingway Options"
+msgstr "Hemingway volby"
+
+#: functions.php:364
+msgid "Allows you to customize some settings for Hemingway."
+msgstr "Umožňuje vám přizpůsobit některá nastavení pro Hemingway."
+
+#: functions.php:369 functions.php:407
+msgid "Logo"
+msgstr "Logo"
+
+#: functions.php:371
+msgid "Upload a logo to replace the default site name and description in the header"
+msgstr "Nahrajte logo, které nahradí výchozí název a popis místa v hlavičce"
+
+#: functions.php:399
+msgid "Accent Color"
+msgstr "Accent barva"
+
+#: index.php:21
+#, php-format
+msgid "Page %s of %s"
+msgstr "Strana %s z %s"
+
+#: index.php:47 search.php:47
+msgid "&laquo; Older<span> posts</span>"
+msgstr "&laquo; Starší<span> příspěvky</span>"
+
+#: index.php:49 search.php:49
+msgid "Newer<span> posts</span> &raquo;"
+msgstr "Novější<span> příspěvky</span> &raquo;"
+
+#: search.php:15 search.php:67
+#, php-format
+msgid "Search results: \"%s\""
+msgstr "Výsledek hledání: \"%s\""
+
+#: single.php:117
+#, php-format
+msgid "Previous post: %s"
+msgstr "Předchozí příspěvek: %s"
+
+#: single.php:129
+msgid "Next post:"
+msgstr "Následující příspěvek:"
+
+#: template-archives.php:90
+#, php-format
+msgid "View all posts in %s"
+msgstr "Zobrazit všechny příspěvky v %s"
+
+#: widgets/dribbble-widget.php:10
+msgid "Displays your latest Dribbble photos."
+msgstr "Zobrazí vaše nejnovější fotky Dribbble."
+
+#: widgets/dribbble-widget.php:11
+msgid "Dribbble Widget"
+msgstr "Dribbble Widget"
+
+#: widgets/dribbble-widget.php:53
+#, php-format
+msgid "Follow %s on Dribbble &raquo;"
+msgstr "Sledujte %s na Dribbble &raquo;"
+
+#: widgets/flickr-widget.php:8
+msgid "Displays your latest Flickr photos."
+msgstr "Zobrazí vaše nejnovější fotografie ve službě Flickr."
+
+#: widgets/flickr-widget.php:9
+msgid "Flickr Widget"
+msgstr "Flickr Widget"

@@ -264,7 +264,7 @@ function openlab_group_archive() {
             <div class="current-group-filters current-portfolio-filters col-lg-19 col-md-18 col-sm-16">
                 <?php openlab_current_directory_filters(); ?>
             </div>
-            <div class="group-count col-lg-5 col-md-6 col-sm-8"><?php cuny_groups_pagination_count(ucwords($group_type) . 's'); ?></div>
+            <div class="group-count col-lg-5 col-md-6 col-sm-8"><?php cuny_groups_pagination_count($group_type); ?></div>
         </div>
         <div id="group-list" class="item-list group-list row">
             <?php
@@ -432,7 +432,7 @@ function cuny_groups_pagination_count($group_name) {
     $to_num = bp_core_number_format(( $start_num + ( $groups_template->pag_num - 1 ) > $groups_template->total_group_count ) ? $groups_template->total_group_count : $start_num + ( $groups_template->pag_num - 1 ));
     $total = bp_core_number_format($groups_template->total_group_count);
 
-    echo sprintf(__('%1$s to %2$s (of %3$s ' . $group_name . ')', 'buddypress'), $from_num, $to_num, $total);
+    echo sprintf('%1$s až %2$s (z %3$s ' . _x($group_name,'1M','openlab') . ')', $from_num, $to_num, $total);
 }
 
 /**
@@ -910,7 +910,7 @@ function openlab_group_profile_activity_list() {
                         endif;
                         ?>
 
-                        <h2 class="title activity-title"><a class="no-deco" href="<?php echo $href; ?>">Members<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
+                        <h2 class="title activity-title"><a class="no-deco" href="<?php echo $href; ?>">Členové<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
                         <?php $member_arg = Array("exclude_admins_mods" => false); ?>
                         <?php if (bp_group_has_members($member_arg)) : ?>
 

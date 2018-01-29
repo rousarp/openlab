@@ -121,7 +121,7 @@ function openlab_page_crumb_overrides($crumb, $args) {
     if ( bp_is_group() && ! bp_is_group_create() ) {
 
         $group_type = openlab_get_group_type();
-        $crumb = '<a href="' . site_url() . '/' . $group_type . 's/">' . ucfirst($group_type) . 's</a> / ' . bp_get_group_name();
+        $crumb = '<a href="' . site_url() . '/' . $group_type . 's/">' . _x($group_type,'1M','openlab') . '</a> / ' . bp_get_group_name();
     }
 
     if (bp_is_user()) {

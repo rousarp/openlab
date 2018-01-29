@@ -1,4 +1,4 @@
-Mal8 zmena.
+Mala zmena.
 git init
 git remote add origin PATH/TO/REPO
 git fetch

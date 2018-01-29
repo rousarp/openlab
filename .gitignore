@@ -1,3 +1,4 @@
 uploads/
 *.log
 .remote-sync.json
+blogs.dir

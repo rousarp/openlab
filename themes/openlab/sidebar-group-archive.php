@@ -10,7 +10,7 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
     $group_slug = $group_type;
     $sidebar_title = 'Hledání osob';
 } else {
-    $sidebar_title = 'Hledání ' . ucfirst($group_type);
+    $sidebar_title = 'Hledání v ' . _x($group_type,'6M','openlab');
 }
 ?>
 

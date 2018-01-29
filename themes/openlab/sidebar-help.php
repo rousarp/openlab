@@ -85,7 +85,7 @@ wp_nav_menu($args);
         echo '</div>';
     } //end if
     ?>
-    <a class="btn btn-default btn-block btn-primary link-btn" href="<?php echo bp_get_root_domain() . '/blog/help/contact-us'; ?>"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Kontaktujte nás</a>
+    <a class="btn btn-default btn-block btn-primary link-btn" href="<?php echo bp_get_root_domain() . '/blog/help/contact-us'; ?>"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Kontaktujte nás</a>
 </div><!--support team-->
 </div>
 

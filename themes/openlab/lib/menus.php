@@ -398,7 +398,7 @@ function openlab_my_groups_submenu($group) {
     //get account type to see if they're faculty
     $faculty = xprofile_get_field_data('Account Type', get_current_user_id());
 
-    $submenu_text = 'Moje ' . ucfirst($group) . '';
+    $submenu_text = 'Moje ' . _x($group,'1M','openlab') . '';
 
     //if the current user is faculty or a super admin, they can create a course, otherwise no dice
     if ($group == "course") {
@@ -409,13 +409,13 @@ function openlab_my_groups_submenu($group) {
         if (is_super_admin(get_current_user_id()) || $faculty == "Faculty") {
             //have to add extra conditional in here for submenus on editing pages
             $menu_list = array(
-                $create_link => 'Vytvořit / duplikovat ' . ucfirst($group),
+                $create_link => 'Vytvořit / duplikovat ' . _x($group,'4J','openlab'),
             );
         }
     } else {
         //have to add extra conditional in here for submenus on editing pages
         $menu_list = array(
-            $create_link => 'Vytvořit ' . ucfirst($group),
+            $create_link => 'Vytvořit ' . _x($group,'4J','openlab'),
         );
     }
 
@@ -450,7 +450,7 @@ function openlab_create_group_menu($grouptype) {
     if ($grouptype == 'course') {
         $title = 'Vytvořit/duplikovat kurz: ';
     } else {
-        $title = 'Vytvořit ' . ucfirst($grouptype) . ': ';
+        $title = 'Vytvořit ' . _x($grouptype,'4J','openlab') . ': ';
     }
 
     $menu_mup = <<<HTML
@@ -604,7 +604,7 @@ function openlab_submenu_gen($items, $timestamp = false) {
             //special case for my-<groups> pages
             if (isset($_GET['type'])) {
                 $type = $_GET['type'];
-                $type_title = 'My ' . ucfirst(str_replace('-', ' ', $type)) . 's';
+                $type_title = 'Moje ' . _x(str_replace('-', ' ', $type),'1M','openlab') . '';
                 if ($title == $type_title) {
                     $item_classes .= " current-menu-item";
                 }
@@ -1009,10 +1009,10 @@ function openlab_group_admin_tabs($group = false) {
         <?php //do_action( 'groups_admin_tabs', $current_tab, $group->slug )             ?>
 
         <?php if ('course' === openlab_get_group_type(bp_get_current_group_id())) : ?>
-        --><li class="clone-button <?php if ('clone-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-plus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create/step/group-details?type=course&clone=' . bp_get_current_group_id() ?>"><?php _e('Duplikovat ' . ucfirst($group_type), 'buddypress'); ?></a></li><!--
+        --><li class="clone-button <?php if ('clone-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-plus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create/step/group-details?type=course&clone=' . bp_get_current_group_id() ?>"><?php _e('Duplikovat ' . _x($group_type,'4J','openlab'), 'buddypress'); ?></a></li><!--
         <?php endif ?>
 
-        --><li class="delete-button last-item <?php if ('delete-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-minus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/delete-group"><?php _e('Delete ' . ucfirst($group_type), 'buddypress'); ?></a></li><!--
+      --><li class="delete-button last-item <?php if ('delete-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-minus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/delete-group"><?php _e('Smazat ' . _x($group_type,'4J','openlab'), 'buddypress'); ?></a></li><!--
 
         <?php if ($group_type == "portfolio") : ?>
                                                                                                                                                                                                                                                                                                                                                                <li class="portfolio-displayname pull-right"><span class="highlight"><?php echo bp_core_get_userlink(openlab_get_user_id_from_portfolio_group_id(bp_get_group_id())); ?></span></li>

@@ -247,3 +247,147 @@ msgstr ""
 msgctxt "7J"
 msgid "portfolio"
 msgstr ""
+
+msgctxt "2J-vy"
+msgid "project"
+msgstr ""
+
+msgctxt "2J-vy"
+msgid "curse"
+msgstr ""
+
+msgctxt "2J-vy"
+msgid "club"
+msgstr ""
+
+msgctxt "2J-vy"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "2J-tento"
+msgid "project"
+msgstr ""
+
+msgctxt "2J-tento"
+msgid "curse"
+msgstr ""
+
+msgctxt "2J-tento"
+msgid "club"
+msgstr ""
+
+msgctxt "2J-tento"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "1J-soukromý"
+msgid "project"
+msgstr ""
+
+msgctxt "1J-soukromý"
+msgid "curse"
+msgstr ""
+
+msgctxt "1J-soukromý"
+msgid "club"
+msgstr ""
+
+msgctxt "1J-soukromý"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "1J-veřejný"
+msgid "project"
+msgstr ""
+
+msgctxt "1J-veřejný"
+msgid "curse"
+msgstr ""
+
+msgctxt "1J-veřejný"
+msgid "club"
+msgstr ""
+
+msgctxt "1J-veřejný"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "1J-skrytý"
+msgid "project"
+msgstr ""
+
+msgctxt "1J-skrytý"
+msgid "curse"
+msgstr ""
+
+msgctxt "1J-skrytý"
+msgid "club"
+msgstr ""
+
+msgctxt "1J-skrytý"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "2J-soukromý"
+msgid "project"
+msgstr ""
+
+msgctxt "2J-soukromý"
+msgid "curse"
+msgstr ""
+
+msgctxt "2J-soukromý"
+msgid "club"
+msgstr ""
+
+msgctxt "2J-soukromý"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "2J-veřejný"
+msgid "project"
+msgstr ""
+
+msgctxt "2J-veřejný"
+msgid "curse"
+msgstr ""
+
+msgctxt "2J-veřejný"
+msgid "club"
+msgstr ""
+
+msgctxt "2J-veřejný"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "2J-skrytý"
+msgid "project"
+msgstr ""
+
+msgctxt "2J-skrytý"
+msgid "curse"
+msgstr ""
+
+msgctxt "2J-skrytý"
+msgid "club"
+msgstr ""
+
+msgctxt "2J-skrytý"
+msgid "porfolio"
+msgstr ""
+
+msgctxt "1J-tento"
+msgid "project"
+msgstr ""
+
+msgctxt "1J-tento"
+msgid "curse"
+msgstr ""
+
+msgctxt "1J-tento"
+msgid "club"
+msgstr ""
+
+msgctxt "1J-tento"
+msgid "porfolio"
+msgstr ""

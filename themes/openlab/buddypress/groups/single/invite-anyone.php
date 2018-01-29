@@ -62,7 +62,7 @@
             </div>
 
             <p class="invite-copy italics">
-                <?php echo 'Těmto členům bude zaslána pozvánka do vašeho  ' . ucfirst($group_type) . '.'; ?>
+                <?php echo 'Těmto členům bude zaslána pozvánka do ' . _x($group_type,'2J-vy','openlab') . '.'; ?>
 
                 <?php if (bp_is_group_create()) : ?>
                     Kliknutím na 'Dokončit' pokračujte.

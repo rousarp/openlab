@@ -31,7 +31,7 @@ function openlab_group_privacy_settings($group_type) {
     global $bp;
 
     $group_type_name = $group_type;
-    $group_type_name_uc = ucfirst($group_type);
+    $group_type_name_uc = $group_type;
 
     if ('portfolio' === $group_type) {
         $group_type_name = openlab_get_portfolio_label(array(
@@ -59,14 +59,14 @@ function openlab_group_privacy_settings($group_type) {
     }
     ?>
     <div class="panel panel-default">
-        <div class="panel-heading semibold"><?php _e('Privacy Options', 'buddypress'); ?><?php if ($bp->current_action == 'admin' || $bp->current_action == 'create' || openlab_is_portfolio()): ?>: <?php echo $group_type_name_uc ?> Profile<?php endif; ?></div>
+        <div class="panel-heading semibold"><?php _e('Privacy Options', 'buddypress'); ?><?php if ($bp->current_action == 'admin' || $bp->current_action == 'create' || openlab_is_portfolio()): ?>: Profil <?php echo _x($group_type_name_uc,'2J','openlab') ?><?php endif; ?></div>
 
         <div class="radio group-profile panel-body">
 
             <?php if ($bp->current_action == 'create'): ?>
-                <p id="privacy-settings-tag-b"><?php _e('These settings affect how others view your ' . $group_type_name . ' Profile. You may change these settings later in the course Profile Settings.', 'buddypress'); ?></p>
+                <p id="privacy-settings-tag-b"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil' . _x($group_type_name,'2J-tento','openlab') . '. Tato nastavení můžete později změnit v sekci Nastavení profilu.'); ?></p>
             <?php else: ?>
-                <p class="privacy-settings-tag-c"><?php _e('These settings affect how others view your ' . $group_type_name_uc . ' Profile.') ?></p>
+                <p class="privacy-settings-tag-c"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil ' .  _x($group_type_name,'2J-tento','openlab'). '.') ?></p>
             <?php endif; ?>
 
             <?php
@@ -78,27 +78,27 @@ function openlab_group_privacy_settings($group_type) {
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
                     <label><input type="radio" name="group-status" value="public" <?php checked('public', $new_group_status) ?> />
-                        This is a public <?php echo $group_type_name_uc ?></label>
+                        Toto je  <?php echo _x($group_type_name_uc, '1J-veřejný','openlab')?></label>
                     <ul>
-                        <li>This <?php echo $group_type_name_uc ?> Profil a související obsah a aktivita budou veřejnosti viditelné.</li>
-                        <li><?php _e('This ' . $group_type_name_uc . ' will be listed in the ' . $group_type_name_uc . 's directory, search results, and may be displayed on the OpenLab home page.', 'buddypress') ?></li>
-                        <li><?php _e('Any OpenLab member may join this ' . $group_type_name_uc . '.', 'buddypress') ?></li>
+                        <li>Profil <?php echo _x($group_type_name_uc, '2J-veřejný','openlab')?> včetně souvisejícího obsahu a aktivit budou veřejnosti viditelné.</li>
+                        <li><?php echo( ucfirst(_x($group_type_name_uc, '1J-tento','openlab')) . ' bude uveden v seznamu ' ._x($group_type_name_uc, '2M','openlab') . ', ve výsledcích vyhledávání a může být zobrazen na domovské webové stránce OpenLab.') ?></li>
+                        <li><?php echo('Do  ' . _x($group_type_name_uc, '2J-tento','openlab') . ' se může přihlásit kterýkoliv člen OpenLab.') ?></li>
                     </ul>
 
                     <label><input type="radio" name="group-status" value="private" <?php checked('private', $new_group_status) ?> />
-                        <?php _e('This is a private ' . $group_type_name_uc, 'buddypress') ?></label>
+                        <?php echo('Toto je  ' . _x($group_type_name_uc, '1J-soukromý','openlab')) ?></label>
                     <ul>
-                        <li><?php _e('This ' . $group_type_name_uc . ' Profile and related content and activity will only be visible to members of the group.', 'buddypress') ?></li>
-                        <li><?php _e('This ' . $group_type_name_uc . ' will be listed in the ' . $group_type_name_uc . ' directory, search results, and may be displayed on the OpenLab home page.', 'buddypress') ?></li>
-                        <li><?php _e('Only OpenLab members who request membership and are accepted may join this ' . $group_type_name_uc . '.', 'buddypress') ?></li>
+                        <li><?php echo('Profil ' . _x($group_type_name_uc, '2J-tento','openlab') . ' včetně souvisejícího obsahu a aktivit bude viditelný pouze členům ' ._x($group_type_name_uc, '2J-tento','openlab')) ?></li>
+                        <li><?php echo(ucfirst(_x($group_type_name_uc, '1J-tento','openlab')) . ' bude uveden v seznamu ' . _x($group_type_name_uc, '2M','openlab') . ', ve výsledcích vyhledávání a může být zobrazen na domovské webové stránce OpenLab.') ?></li>
+                        <li><?php echo('Do ' .  _x($group_type_name_uc, '2J-tento','openlab') . ' se mohou připojit pouze členové OpenLab, kteří požádali o členství a jsou přijati.') ?></li>
                     </ul>
-
                     <label><input type="radio" name="group-status" value="hidden" <?php checked('hidden', $new_group_status) ?> />
-                        <?php _e('This is a hidden ' . $group_type_name_uc, 'buddypress') ?></label>
+
+                        <?php echo('Toto je  ' . _x($group_type_name_uc, '1J-skrytý','openlab')) ?></label>
                     <ul>
-                        <li><?php _e('This ' . $group_type_name_uc . ' Profile, related content and activity will only be visible only to members of the ' . $group_type_name_uc . '.', 'buddypress') ?></li>
-                        <li><?php _e('This ' . $group_type_name_uc . ' Profile will NOT be listed in the ' . $group_type_name_uc . ' directory, search results, or OpenLab home page.', 'buddypress') ?></li>
-                        <li><?php _e('Only OpenLab members who are invited may join this ' . $group_type_name_uc . '.', 'buddypress') ?></li>
+                        <li><?php echo('Profil ' ._x($group_type_name_uc, '2J-tento','openlab') . ' včetně souvisejícího obsahu a aktivit bude viditelný pouze členům ' . _x($group_type_name_uc, '2J-tento','openlab')) ?></li>
+                        <li><?php echo('Profil ' ._x($group_type_name_uc, '2J-tento','openlab') . ' NEBUDE uveden v seznamu ' .  _x($group_type_name_uc, '2M','openlab') . ' ve výsledcích vyhledávání a může být zobrazen na domovské webové stránce OpenLab.') ?></li>
+                        <li><?php echo('Do ' . _x($group_type_name_uc, '2J-tento','openlab') . '. se mohou přihlásit pouze pozvaní členové OpenLab') ?></li>
                     </ul>
                 </div>
             </div>
@@ -109,9 +109,9 @@ function openlab_group_privacy_settings($group_type) {
 
     <?php if ($site_id = openlab_get_site_id_by_group_id()) : ?>
         <div class="panel panel-default">
-            <div class="panel-heading semibold"><?php _e($group_type_name_uc . ' Site') ?></div>
+            <div class="panel-heading semibold"><?php _e('Webové stránky ' . _x($group_type_name_uc,'2J','openlab'))?></div>
             <div class="panel-body">
-                <p class="privacy-settings-tag-c"><?php _e('These settings affect how others view your ' . $group_type_name_uc . ' Site.') ?></p>
+                <p class="privacy-settings-tag-c"><?php _e('Tato nastavení ovlivňují to, jak ostatní zobrazují vaše webové stránky '  . _x($group_type_name_uc,'2J','openlab')) ?></p>
                 <?php openlab_site_privacy_settings_markup($site_id) ?>
             </div>
         </div>
@@ -494,46 +494,46 @@ function openlab_site_privacy_settings_markup($site_id = 0) {
 
     $blog_name = get_blog_option($site_id, 'blogname');
     $blog_public = get_blog_option($site_id, 'blog_public');
-    $group_type = openlab_get_current_group_type('case=upper');
+    $group_type = openlab_get_current_group_type();
     ?>
 
     <div class="radio group-site">
 
-        <h5><?php _e('Public', 'buddypress') ?></h5>
+        <h5><?php echo(_x($group_type,'1J-veřejný','openlab')) ?></h5>
         <p id="search-setting-note" class="italics note">Poznámka: Tyto možnosti nebudou blokovat přístup k vašemu webu. Je na vyhledávačích, aby vyhovovaly vaší žádosti.</p>
         <div class="row">
             <div class="col-sm-23 col-sm-offset-1">
-                <p><label for="blog-private1"><input id="blog-private1" type="radio" name="blog_public" value="1" <?php checked('1', $blog_public); ?> /><?php _e('Allow search engines to index this site. Your site will show up in web search results.'); ?></label></p>
+                <p><label for="blog-private1"><input id="blog-private1" type="radio" name="blog_public" value="1" <?php checked('1', $blog_public); ?> /><?php echo('Povolit vyhledávačům indexovat tyto stránky. Vaše stránky se budou zobrazovat ve výsledcích vyhledávání na webu.'); ?></label></p>
 
-                <p><label for="blog-private0"><input id="blog-private0" type="radio" name="blog_public" value="0" <?php checked('0', $blog_public); ?> /><?php _e('Ask search engines not to index this site. Your site should not show up in web search results.'); ?></label></p>
+                <p><label for="blog-private0"><input id="blog-private0" type="radio" name="blog_public" value="0" <?php checked('0', $blog_public); ?> /><?php _e('Požádejte vyhledávače, aby tuto stránku indexovali. Vaše stránky by se neměly zobrazovat ve výsledcích vyhledávání na webu.'); ?></label></p>
             </div>
         </div>
 
         <?php if (!openlab_is_portfolio() && (!isset($_GET['type']) || 'portfolio' != $_GET['type'] )): ?>
 
-            <h5><?php _e('Private', 'buddypress') ?></h5>
+            <h5><?php echo(_x($group_type,'1J-soukromý','openlab')) ?></h5>
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
-                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php _e('I would like my site to be visible only to registered users of City Tech OpenLab.', 'buddypress'); ?></label></p>
+                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php echo('Požaduji, aby byl můj web viditelný pouze pro registrované uživatele OpenLab.'); ?></label></p>
 
-                    <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>><?php _e('I would like my site to be visible to registered users of this ' . ucfirst($group_type) . '.'); ?></label></p>
+                    <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>><?php echo('Požaduji, aby byl můj web viditelný pro registrované uživatele ' . _x($group_type,'2J-tento','openlab') . '.'); ?></label></p>
                 </div>
             </div>
 
-            <h5><?php _e('Hidden', 'buddypress') ?></h5>
+            <h5><?php echo(_x($group_type,'1J-skrytý','openlab')) ?></h5>
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
-                    <p><label for="blog-private-3"><input id="blog-private-3" type="radio" name="blog_public" value="-3" <?php checked('-3', $blog_public); ?>><?php _e('I would like my site to be visible only to site administrators.'); ?></label></p>
+                    <p><label for="blog-private-3"><input id="blog-private-3" type="radio" name="blog_public" value="-3" <?php checked('-3', $blog_public); ?>><?php echo('Požaduji, aby byl web viditelný pouze pro správce webu.'); ?></label></p>
                 </div>
             </div>
 
         <?php else : ?>
 
             <?php /* Portfolios */ ?>
-            <h5>Private</h5>
+            <h5>Privátní porfolio</h5>
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
-                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php _e('I would like my site to be visible only to registered users of City Tech OpenLab.', 'buddypress'); ?></label></p>
+                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php echo('Požaduji, aby byl můj web viditelný pouze pro registrované uživatele OpenLab.'); ?></label></p>
 
                     <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>>Chci, aby byl web viditelný pouze pro registrované uživatele, kterým jsem udělil(a) přístup.</label></p>
                     <p class="description private-portfolio-gloss italics note">Poznámka: Pokud chcete, aby uživatelé, kteří nejsou členy Open Lab, viděli vaše soukromé stránky, budete muset vaše stránky zveřejnit.</p>
@@ -766,7 +766,7 @@ function cuny_group_single() {
 
             <?php do_action('bp_after_group_header') ?>
 
-                                                                                                                                                                                                                                                                            </div><!--<?php echo $group_type; ?>-header -->
+        </div><!--<?php echo $group_type; ?>-header -->
 
     <?php endif; ?>
 

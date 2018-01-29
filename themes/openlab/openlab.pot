@@ -391,3 +391,19 @@ msgstr ""
 msgctxt "1J-tento"
 msgid "porfolio"
 msgstr ""
+
+msgctxt "4J-vy"
+msgid "project"
+msgstr ""
+
+msgctxt "4J-vy"
+msgid "curse"
+msgstr ""
+
+msgctxt "4J-vy"
+msgid "club"
+msgstr ""
+
+msgctxt "4J-vy"
+msgid "porfolio"
+msgstr ""

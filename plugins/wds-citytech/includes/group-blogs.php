@@ -465,7 +465,7 @@ function wds_bp_group_meta() {
 							$group_site_url_out = '<a class="bold" href="' . $group_site_url . '">' . $group_site_url . '</a>';
 						}
 						?>
-						<p>Tento <?php echo openlab_get_group_type_label() ?> je aktuálně přidružen k webu <?php echo $group_site_text ?></p>
+						<p><?php echo _x(openlab_get_group_type_label(),'1J-tento','openlab') ?> je aktuálně přidružen k webovým stránkám <?php echo $group_site_text ?></p>
 						<ul id="change-group-site"><li><?php echo $group_site_url_out ?> <a class="button underline confirm" href="<?php echo wp_nonce_url( bp_get_group_permalink( groups_get_current_group() ) . 'admin/edit-details/unlink-site/', 'unlink-site' ) ?>" id="change-group-site-toggle">Odpojit</a></li></ul>
 
 					</div>

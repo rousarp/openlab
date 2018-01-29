@@ -3,7 +3,7 @@
         <table>
             <tbody>
                 <tr class="school-tooltip">
-                    <td colspan="2"><p class="ol-tooltip">Vyberte prosím jednu z následujících kategorií. Zahrnutí těchto informací usnadní ostatním, aby našli váš <?php echo ' '.$group_type; ?></p></td>
+                    <td colspan="2"><p class="ol-tooltip">Vyberte prosím jednu z následujících kategorií. Zahrnutí těchto informací usnadní ostatním, aby našli <?php echo _x($group_type,'4J-vy','openlab'); ?></p></td>
                 </tr>
                 <tr class="bp-categories">
                     <td colspan="2" id="bp_group_categories">

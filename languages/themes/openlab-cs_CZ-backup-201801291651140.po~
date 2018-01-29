@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Blank Pot v1.0.0\n"
-"POT-Creation-Date: 2018-01-29 14:51+0000\n"
-"PO-Revision-Date: 2018-01-29 14:53+0000\n"
+"POT-Creation-Date: 2018-01-29 15:11+0000\n"
+"PO-Revision-Date: 2018-01-29 15:11+0000\n"
 "Last-Translator: admin <admin@urad.online>\n"
 "Language-Team: Czech\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
@@ -24,53 +24,21 @@ msgstr ""
 "Language: cs-CZ\n"
 "X-Generator: Loco - https://localise.biz/"
 
-msgctxt "2J-soukromý"
+msgctxt "1J-tento"
 msgid "project"
-msgstr "soukromého projektu"
+msgstr "tento projekt"
 
-msgctxt "2J-soukromý"
+msgctxt "1J-tento"
 msgid "curse"
-msgstr "soukromého kurzu"
+msgstr "tento kurz"
 
-msgctxt "2J-soukromý"
+msgctxt "1J-tento"
 msgid "club"
-msgstr "soukromé skupiny"
+msgstr "tato skupina"
 
-msgctxt "2J-soukromý"
+msgctxt "1J-tento"
 msgid "porfolio"
-msgstr "soukromého portfolia"
-
-msgctxt "2J-veřejný"
-msgid "project"
-msgstr "veřejného projektu"
-
-msgctxt "2J-veřejný"
-msgid "curse"
-msgstr "veřejného kurzu"
-
-msgctxt "2J-veřejný"
-msgid "club"
-msgstr "veřejné skupiny"
-
-msgctxt "2J-veřejný"
-msgid "porfolio"
-msgstr "veřejného portfolia"
-
-msgctxt "2J-skrytý"
-msgid "project"
-msgstr "skrytého projektu"
-
-msgctxt "2J-skrytý"
-msgid "curse"
-msgstr "skrytého kurzu"
-
-msgctxt "2J-skrytý"
-msgid "club"
-msgstr "skryté skupiny"
-
-msgctxt "2J-skrytý"
-msgid "porfolio"
-msgstr "skrytého portfolia"
+msgstr "toto portfolio"
 
 msgctxt "1M"
 msgid "project"
@@ -375,3 +343,51 @@ msgstr "Skrytá skupina"
 msgctxt "1J-skrytý"
 msgid "porfolio"
 msgstr "Skryté portfolio"
+
+msgctxt "2J-soukromý"
+msgid "project"
+msgstr "soukromého projektu"
+
+msgctxt "2J-soukromý"
+msgid "curse"
+msgstr "soukromého kurzu"
+
+msgctxt "2J-soukromý"
+msgid "club"
+msgstr "soukromé skupiny"
+
+msgctxt "2J-soukromý"
+msgid "porfolio"
+msgstr "soukromého portfolia"
+
+msgctxt "2J-veřejný"
+msgid "project"
+msgstr "veřejného projektu"
+
+msgctxt "2J-veřejný"
+msgid "curse"
+msgstr "veřejného kurzu"
+
+msgctxt "2J-veřejný"
+msgid "club"
+msgstr "veřejné skupiny"
+
+msgctxt "2J-veřejný"
+msgid "porfolio"
+msgstr "veřejného portfolia"
+
+msgctxt "2J-skrytý"
+msgid "project"
+msgstr "skrytého projektu"
+
+msgctxt "2J-skrytý"
+msgid "curse"
+msgstr "skrytého kurzu"
+
+msgctxt "2J-skrytý"
+msgid "club"
+msgstr "skryté skupiny"
+
+msgctxt "2J-skrytý"
+msgid "porfolio"
+msgstr "skrytého portfolia"

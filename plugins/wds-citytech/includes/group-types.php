@@ -564,9 +564,9 @@ function openlab_group_contact_field() {
 	?>
 
 	<div id="group-contact-admin" class="panel panel-default">
-            <div class="panel-heading"><label for="group-contact-autocomplete"><?php //echo ucwords( $group_type ); ?> Kontaktní osoby</label></div>
+            <div class="panel-heading"><label for="group-contact-autocomplete"><?php //echo ucwords( $group_type ); ?>Kontaktní osoby</label></div>
             <div class="panel-body">
-		<p>Standardně jste kontaktní osobou vy. Pokud bude mít <?php echo $group_type; ?> více členů, můžete kohokoliv doplnit.</p>
+		<p>Standardně jste kontaktní osobou vy. Pokud bude mít <?php echo _x($group_type,'1J-tento','openlab'); ?> více členů, můžete kohokoliv doplnit.</p>
 
 		<label for="group-contact-autocomplete"><?php //echo ucwords( $group_type ); ?> Kontaktní osoby</label>
 		<input class="hide-if-no-js form-control" type="textbox" id="group-contact-autocomplete" value="" <?php disabled( bp_is_group_create() ); ?> />

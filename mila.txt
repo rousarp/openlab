@@ -1,4 +1,4 @@
-Mala dalsi zmena.
+Mala dalsi udelana jinde zmena.
 git init
 git remote add origin PATH/TO/REPO
 git fetch

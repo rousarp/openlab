@@ -644,12 +644,12 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                             if ($type != "course") {
                                 if ($bp->loggedin_user->id == $bp->displayed_user->id) {
                                     ?>
-                                    Na Open Lab doposud nejste připojeni do žádné skupiny typu <?php echo $type; ?>. Proč si <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">nevytvořit vlastní skupinu typu <?php echo $type; ?></a>?
+                                    Na Open Lab doposud nejste připojeni do žádné skupiny typu <?php _ex( $type,'1M','openlab'); ?>. Proč si <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">nevytvořit vlastní skupinu typu <?php echo $type; ?></a>?
                                     <?php
                                 } else {
                                     echo $bp->displayed_user->fullname;
                                     ?>
-                                    nevytvořil ani se doposud nepřipojil k žádné skupině typu <?php echo $type ?>.
+                                    nevytvořil ani se doposud nepřipojil k žádné skupině typu <?php _ex( $type,'1M','openlab'); ?>.
                                     <?php
                                 }
                             } else {
@@ -660,7 +660,7 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                                 } else {
                                     echo $bp->displayed_user->fullname;
                                     ?>
-                                    dosud se nepřipojil k žádné skupině typu <?php echo $type ?>.
+                                    dosud se nepřipojil k žádné skupině typu <?php _ex( $type,'1M','openlab'); ?>.
                                     <?php
                                 }
                             }

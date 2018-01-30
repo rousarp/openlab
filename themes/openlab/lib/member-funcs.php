@@ -365,7 +365,7 @@ function openlab_group_status_message($group = null) {
     if (!$group)
         $group = & $groups_template->group;
 
-    $group_label = openlab_get_group_type_label('group_id=' . $group->id . '&case=upper');
+    $group_label = openlab_get_group_type_label('group_id=' . $group->id );
 
     $site_id = openlab_get_site_id_by_group_id($group->id);
     $site_url = openlab_get_group_site_url($group->id);
@@ -389,24 +389,24 @@ function openlab_group_status_message($group = null) {
         case 1 :
         case 0 :
             if ('public' === $group->status) {
-                $message = '' . $group_label . ' je VEŘEJNÁ.';
+                $message = '' . _x($group_label,'1J-veřejný','openlab') . '';
             } else if (!$site_url) {
                 // Special case: $site_status will be 0 when the
                 // group does not have an associated site. When
                 // this is the case, and the group is not
                 // public, don't mention anything about the Site.
-                $message = '' . $group_label . ' je PRIVÁTNÍ.';
+                $message = '' . _x($group_label,'1J','openlab') . ' je PRIVÁTNÍ.';
             } else {
-                $message = 'This profil ' . $group_label . ' je PRIVÁTNÍ, ale web ' . $group_label . ' je VEŘEJNÝ pro všechny návštěvníky.';
+                $message = 'Profil ' . _x($group_label,'2J','openlab') . ' je PRIVÁTNÍ, ale webové stránky ' . _x($group_label,'2J','openlab') . ' jsou VEŘEJNÉ pro všechny návštěvníky.';
             }
 
             break;
 
         case -1 :
             if ('public' === $group->status) {
-                $message = 'Profil ' . $group_label . 'je VEŘEJNÝ, ale pouze přihlášení členové OpenLab mohou zobrazit web ' . $group_label . '.';
+                $message = 'Profil ' . _x($group_label,'2J','openlab') . ' je VEŘEJNÝ, ale pouze přihlášení členové OpenLab mohou zobrazit webové stránky ' . _x($group_label,'2J','openlab') . '.';
             } else {
-                $message = 'Profil ' . $group_label . ' Profil je PRIVÁTNÍ, ale všichni přihlášení členové OpenLab mohou zobrazit web ' . $group_label . '.';
+                $message = 'Profil ' . _x($group_label,'2J','openlab') . ' je PRIVÁTNÍ, ale všichni přihlášení členové OpenLab mohou zobrazit webové stránky ' . _x($group_label,'2J','openlab') . '.';
             }
 
             break;
@@ -414,9 +414,9 @@ function openlab_group_status_message($group = null) {
         case -2 :
         case -3 :
             if ('public' === $group->status) {
-                $message = 'Profil ' . $group_label . ' je veřejný, ale web ' . $group_label . ' je PRIVÁTNÍ.';
+                $message = 'Profil ' . _x($group_label,'1J','openlab') . ' je veřejný, ale webové stránky ' . _x($group_label,'2J','openlab') . ' jsou PRIVÁTNÍ.';
             } else {
-                $message = 'Profil ' . $group_label . ' je PRIVÁTNÍ. Musíte být členem ' . $group_label . ' pro navštívení webu ' . $group_label . '.';
+                $message = 'Profil ' . _x($group_label,'1J','openlab') . ' je PRIVÁTNÍ. Musíte být členem ' .  _x($group_label,'2J','openlab') . ' pro navštívení webových stránek ' .  _x($group_label,'2J','openlab') . '.';
             }
 
             break;
@@ -702,9 +702,9 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                 <?php endforeach ?>
             <?php else : ?>
                 <?php if (bp_is_my_profile()) : ?>
-                    Dosud jste nevytvořili ani jste nepřipojili připojili.
+                    Dosud jste nic nevytvořili ani jste se k ničemu nepřipojili.
                 <?php else : ?>
-                    <?php echo $bp->displayed_user->fullname ?> dosud nevytvořil ani se nepřipojil k žádným stránkám.
+                    <?php echo $bp->displayed_user->fullname ?> Dosud jste nevytvořili a nepřipojili jste se k žádným stránkám.
                 <?php endif ?>
 
             <?php endif ?>

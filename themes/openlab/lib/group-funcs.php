@@ -862,7 +862,7 @@ function openlab_group_profile_activity_list() {
                                                 </div></div>                                            <?php endwhile; ?>
                                     <?php else: ?>
                                         <div class="panel panel-default"><div class="panel-body">
-                                                <p><?php _e('Je nám líto, nebyly nalezeny žádné témata pro diskusi.', 'buddypress') ?></p>
+                                                <p><?php echo('Je nám líto, v diskusi nebylo založeno žádné téma.') ?></p>
                                             </div></div>
                                     <?php endif; ?>
                                 </div><!-- .recent-post -->
@@ -893,7 +893,7 @@ function openlab_group_profile_activity_list() {
                                             <?php
                                         endwhile;
                                     } else {
-                                        echo '<div class="panel panel-default"><div class="panel-body"><p>Žádné nedávné dokumenty</p></div></div>';
+                                        echo '<div class="panel panel-default"><div class="panel-body"><p>Doposud nebyly vytvořeny žádné dokumenty.</p></div></div>';
                                     }
                                     ?>
                                 </div>

@@ -435,3 +435,19 @@ msgstr ""
 msgctxt "3J-žádný"
 msgid "portfolio"
 msgstr ""
+
+msgctxt "3J-tento"
+msgid "project"
+msgstr ""
+
+msgctxt "3J-tento"
+msgid "course"
+msgstr ""
+
+msgctxt "3J-tento"
+msgid "club"
+msgstr ""
+
+msgctxt "3J-tento"
+msgid "portfolio"
+msgstr ""

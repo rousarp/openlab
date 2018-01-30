@@ -2652,7 +2652,7 @@ class OpenLab_Change_User_Type {
 		$options = $field->get_children();
 		?>
 
-		<h3>Typ účtu na OpenLab</h3>
+		<h3>Typ účtu na portále OpenLab</h3>
 
 		<table class="form-table">
 			<tr>

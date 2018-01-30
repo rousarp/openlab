@@ -208,7 +208,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                             </div>
                             <div class="col-sm-16">
 
-                                <p class="italics"><?php _e('Upload an image to use as an avatar for this ' . bp_get_group_type() . '. The image will be shown on the main ' . bp_get_group_type() . ' page, and in search results.', 'buddypress') ?></p>
+                                <p class="italics"><?php echo('Nahrajte obrázek, který chcete použít jako náhledový obrázek pro  ' . _x(bp_get_group_type(),'4J-tento','openlab') . '. Obrázek bude zobrazen na hlavním profilu ' . _x(bp_get_group_type(),'3J-tento','openlab') . ' a ve výsledcích vyhledávání.') ?></p>
 
                                 <p id="avatar-upload">
                                 <div class="form-group form-inline">

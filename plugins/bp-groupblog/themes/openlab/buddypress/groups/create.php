@@ -193,7 +193,7 @@
                             </div>
                             <div class="col-sm-16">
 
-                                <p class="italics"><?php _e("Upload an image to use as an avatar for this " . $group_type . ". The image will be shown on the main " . $group_type . " page, and in search results.", 'buddypress') ?></p>
+                                <p class="italics"><?php echo("Nahrajte obrázek, který chcete použít jako náhledový obrázek pro " . _x($group_type,'4J-tento','openlab') . ". Obrázek bude zobrazen na hlavním profilu " . _x($group_type,'3J-tento','openlab') . " a ve výsledcích vyhledávání.")  ?></p>
 
                                 <p id="avatar-upload">
                                     <div class="form-group form-inline">

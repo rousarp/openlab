@@ -1,0 +1,1413 @@
+# Copyright (C) 2017 WordPress Meetings
+# This file is distributed under the same license as the WordPress Meetings package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Meetings 2.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wordpress-"
+"meetings\n"
+"POT-Creation-Date: 2018-01-30 19:51+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-01-30 20:30+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.5\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: cs_CZ\n"
+
+#: assets/templates/admin/metabox-meeting-info.php:4
+msgid "Meeting Date"
+msgstr "Datum jednání"
+
+#: assets/templates/admin/metabox-meeting-info.php:8
+msgid "Start Time"
+msgstr "Počáteční čas"
+
+#: assets/templates/admin/metabox-meeting-info.php:12
+msgid "End Time"
+msgstr "Čas ukončení"
+
+#: assets/templates/admin/metabox-proposal-info.php:4
+#: assets/templates/theme/wordpress-meetings/content-single-footer.php:39
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr "Stav"
+
+#: assets/templates/admin/metabox-proposal-info.php:8
+msgid "No status"
+msgstr "Žádný stav"
+
+#: assets/templates/admin/metabox-proposal-info.php:16
+msgid "Date Accepted"
+msgstr "Datum schválení"
+
+#: assets/templates/admin/metabox-proposal-info.php:20
+msgid "Date Effective"
+msgstr "Datum účinnosti"
+
+#: assets/templates/admin/migrate.php:4
+msgid "WordPress Meetings Migration"
+msgstr "WordPress Meetings migrace"
+
+#: assets/templates/admin/migrate.php:14
+msgid ""
+"To continue using this plugin, we need to migrate the Activist Network "
+"Meetings settings."
+msgstr ""
+
+#: assets/templates/admin/migrate.php:16
+msgid ""
+"After this is done, this plugin will try and deactivate the Activist Network "
+"Meetings plugin."
+msgstr ""
+"Poté se tento plugin vyzkouší a deaktivuje plugin Activist Network Meetings."
+
+#: assets/templates/admin/migrate.php:18
+msgid ""
+"Please ensure that the Activist Network Meetings plugin has indeed been "
+"deactivated to continue to use this plugin."
+msgstr ""
+"Ujistěte se, že plugin Activist Network Meetings byl skutečně deaktivován, "
+"abyste mohli pokračovat v používání tohoto pluginu."
+
+#: assets/templates/admin/migrate.php:23
+msgid "Migrate"
+msgstr "Migrovat"
+
+#: assets/templates/admin/settings.php:4
+msgid "WordPress Meetings Settings"
+msgstr "Nastavení WordPress Meetings"
+
+#: assets/templates/admin/settings.php:17
+msgid "Include styles"
+msgstr ""
+
+#: assets/templates/admin/settings.php:20
+msgid "Check this to include the stylesheet supplied with this plugin."
+msgstr ""
+
+#: assets/templates/admin/settings.php:29
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: assets/templates/theme/wordpress-meetings/archive.php:29
+msgid "Title"
+msgstr "Název"
+
+#: assets/templates/theme/wordpress-meetings/archive.php:30
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: assets/templates/theme/wordpress-meetings/archive.php:48
+msgid "Previous page"
+msgstr "Předchozí strana"
+
+#: assets/templates/theme/wordpress-meetings/archive.php:49
+msgid "Next page"
+msgstr "Další strana"
+
+#: assets/templates/theme/wordpress-meetings/archive.php:50
+msgid "Page"
+msgstr "Strana"
+
+#: assets/templates/theme/wordpress-meetings/content-archive.php:37
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:73
+msgid "Date:"
+msgstr "Datum:"
+
+#: assets/templates/theme/wordpress-meetings/content-archive.php:43
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:97
+msgid "Organization:"
+msgstr "Organizace:"
+
+#: assets/templates/theme/wordpress-meetings/content-archive.php:49
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:85
+msgid "Type:"
+msgstr "Typ:"
+
+#: assets/templates/theme/wordpress-meetings/content-archive.php:55
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:91
+msgid "Tags:"
+msgstr "Štítky:"
+
+#: assets/templates/theme/wordpress-meetings/content-event-meta.php:3
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:67
+msgid "Meeting:"
+msgstr "Jednání:"
+
+#: assets/templates/theme/wordpress-meetings/content-event-meta.php:7
+msgid "Meeting Type:"
+msgstr "Typ jednání:"
+
+#: assets/templates/theme/wordpress-meetings/content-single-footer.php:29
+msgid "Proposals for %s"
+msgstr ""
+
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:63
+msgid "Meeting Details"
+msgstr "Podrobnosti jednání"
+
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:79
+msgid "Time:"
+msgstr "Čas:"
+
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:109
+msgid "Proposal Details"
+msgstr "Podrobnosti návrhu"
+
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:113
+msgid "Status:"
+msgstr "stav:"
+
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:119
+msgid "Date Appoved:"
+msgstr "Datum schválení:"
+
+#: assets/templates/theme/wordpress-meetings/content-single-meta.php:125
+msgid "Date Effective:"
+msgstr "Datum účinnosti:"
+
+#. Plugin Name of the plugin/theme
+#: includes/admin/class-admin-base.php:199
+msgid "WordPress Meetings"
+msgstr "WordPress Meetings"
+
+#: includes/admin/class-admin-base.php:220
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis "
+"leo. Fusce eget erat vitae justo vestibulum tincidunt efficitur id nunc. "
+"Vivamus id quam tempus, aliquam tortor nec, volutpat nisl. Ut venenatis "
+"aliquam enim, a placerat libero vehicula quis. Etiam neque risus, vestibulum "
+"facilisis erat a, tincidunt vestibulum nulla. Sed ultrices ante nulla. Class "
+"aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos "
+"himenaeos. Praesent maximus purus ac lacinia vulputate. Aenean ex quam, "
+"aliquet id feugiat et, cursus vel magna. Cras id congue ipsum, vel consequat "
+"libero."
+msgstr ""
+
+#: includes/admin/class-admin-base.php:475
+#: includes/admin/class-admin-migrate.php:286
+#: includes/admin/class-admin-settings.php:47
+#: includes/cpts/class-cpt-event.php:296
+#: includes/cpts/class-cpt-meeting.php:133
+msgid "Meetings"
+msgstr "Všechna jednání"
+
+#: includes/admin/class-admin-base.php:486
+msgid "A category for Events associated with Meetings."
+msgstr ""
+
+#: includes/admin/class-admin-base.php:500
+msgid "Could not create term."
+msgstr ""
+
+#: includes/admin/class-admin-migrate.php:46
+msgid "WordPress Meetings: Migrate"
+msgstr "WordPress Meetings: Migrace"
+
+#: includes/admin/class-admin-migrate.php:47
+msgid "Meetings: Migrate"
+msgstr "Všechna jednání: Migrovat"
+
+#: includes/admin/class-admin-settings.php:46
+msgid "WordPress Meetings: Settings"
+msgstr "WordPress Meetings: Nastavení"
+
+#: includes/admin/class-p2p-connections.php:75
+#: includes/admin/class-p2p-connections.php:85
+#: includes/cpts/class-cpt-agenda.php:97 includes/cpts/class-cpt-agenda.php:133
+msgid "Agenda"
+msgstr "Program"
+
+#: includes/admin/class-p2p-connections.php:76
+#: includes/admin/class-p2p-connections.php:79
+#: includes/admin/class-p2p-connections.php:103
+#: includes/admin/class-p2p-connections.php:106
+#: includes/admin/class-p2p-connections.php:131
+#: includes/admin/class-p2p-connections.php:134
+#: includes/admin/class-p2p-connections.php:162
+#: includes/admin/class-p2p-connections.php:165
+#: includes/cpts/class-cpt-meeting.php:134
+#: includes/cpts/class-cpt-meeting.php:173
+#: includes/wordpress-meetings-functions.php:80
+msgid "Meeting"
+msgstr "Jednání"
+
+#: includes/admin/class-p2p-connections.php:80
+#: includes/admin/class-p2p-connections.php:107
+#: includes/admin/class-p2p-connections.php:135
+#: includes/admin/class-p2p-connections.php:166
+msgid "Search meetings"
+msgstr "Vyhledat jednání"
+
+#: includes/admin/class-p2p-connections.php:81
+#: includes/admin/class-p2p-connections.php:108
+#: includes/admin/class-p2p-connections.php:136
+#: includes/admin/class-p2p-connections.php:167
+msgid "No meetings found."
+msgstr "Nebyla nalezena žádná jednání."
+
+#: includes/admin/class-p2p-connections.php:82
+#: includes/admin/class-p2p-connections.php:109
+#: includes/admin/class-p2p-connections.php:137
+#: includes/admin/class-p2p-connections.php:168
+msgid "Add meeting"
+msgstr "Přidat jednání"
+
+#: includes/admin/class-p2p-connections.php:86
+msgid "Search agendas"
+msgstr "Vyhledat agendy"
+
+#: includes/admin/class-p2p-connections.php:87
+msgid "No agendas found."
+msgstr "Nebyly nalezeny žádné agendy."
+
+#: includes/admin/class-p2p-connections.php:88
+msgid "Add agenda"
+msgstr "Přidat program"
+
+#: includes/admin/class-p2p-connections.php:102
+#: includes/admin/class-p2p-connections.php:112
+#: includes/cpts/class-cpt-summary.php:97
+#: includes/cpts/class-cpt-summary.php:134
+msgid "Summary"
+msgstr "Zápis"
+
+#: includes/admin/class-p2p-connections.php:113
+msgid "Search summaries"
+msgstr ""
+
+#: includes/admin/class-p2p-connections.php:114
+msgid "No summaries found."
+msgstr "Žádné zápisy nebyly nalezeny."
+
+#: includes/admin/class-p2p-connections.php:115
+msgid "Add summary"
+msgstr "Přidat zápis"
+
+#: includes/admin/class-p2p-connections.php:130
+#: includes/cpts/class-cpt-proposal.php:126
+msgid "Proposals"
+msgstr "Návrhy"
+
+#: includes/admin/class-p2p-connections.php:140
+#: includes/cpts/class-cpt-proposal.php:127
+#: includes/cpts/class-cpt-proposal.php:166
+msgid "Proposal"
+msgstr "Návrh"
+
+#: includes/admin/class-p2p-connections.php:141
+msgid "Search proposals"
+msgstr ""
+
+#: includes/admin/class-p2p-connections.php:142
+msgid "No proposals found."
+msgstr "Nebyly nalezeny žádné návrhy."
+
+#: includes/admin/class-p2p-connections.php:143
+msgid "Add proposal"
+msgstr "Přidat návrh"
+
+#: includes/admin/class-p2p-connections.php:161
+#: includes/admin/class-p2p-connections.php:171
+msgid "Event"
+msgstr "Událost"
+
+#: includes/admin/class-p2p-connections.php:172
+msgid "Search events"
+msgstr "Vyhledat události"
+
+#: includes/admin/class-p2p-connections.php:173
+msgid "No events found."
+msgstr "Nebyly nalezeny žádné události."
+
+#: includes/admin/class-p2p-connections.php:174
+msgid "Add event"
+msgstr "Přidat událost"
+
+#: includes/admin/required-plugins.php:66
+msgid "The Meetings plugin requires the following plugin: %1$s."
+msgid_plural "The Meetings plugin requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: includes/cpts/class-cpt-agenda.php:94
+msgctxt "Post Type General Name"
+msgid "Agendas"
+msgstr "Agendy"
+
+#: includes/cpts/class-cpt-agenda.php:95
+msgctxt "Post Type Singular Name"
+msgid "Agenda"
+msgstr "Program"
+
+#: includes/cpts/class-cpt-agenda.php:96
+msgid "Agendas"
+msgstr "Agendy"
+
+#: includes/cpts/class-cpt-agenda.php:98
+msgid "Parent Agenda:"
+msgstr "Nadřazený program:"
+
+#: includes/cpts/class-cpt-agenda.php:99 includes/cpts/class-cpt-agenda.php:286
+#: includes/cpts/class-cpt-agenda.php:287
+msgid "All Agendas"
+msgstr "Všechny agendy"
+
+#: includes/cpts/class-cpt-agenda.php:100
+#: includes/cpts/class-cpt-agenda.php:101
+msgid "Add New Agenda"
+msgstr "Přidat nový program"
+
+#: includes/cpts/class-cpt-agenda.php:102
+#: includes/cpts/class-cpt-agenda.php:294
+#: includes/cpts/class-cpt-agenda.php:295
+msgid "New Agenda"
+msgstr "Nový program"
+
+#: includes/cpts/class-cpt-agenda.php:103
+msgid "Edit Agenda"
+msgstr "Upravit program"
+
+#: includes/cpts/class-cpt-agenda.php:104
+msgid "Update Agenda"
+msgstr "Upravit program"
+
+#: includes/cpts/class-cpt-agenda.php:105
+msgid "View Agenda"
+msgstr "Zobrazit program"
+
+#: includes/cpts/class-cpt-agenda.php:106
+msgid "Search Agendas"
+msgstr "vyhledat agendy"
+
+#: includes/cpts/class-cpt-agenda.php:107
+#: includes/cpts/class-cpt-meeting.php:144
+#: includes/cpts/class-cpt-proposal.php:137
+#: includes/cpts/class-cpt-summary.php:107
+msgid "Not found"
+msgstr "Nenalezeno"
+
+#: includes/cpts/class-cpt-agenda.php:108
+#: includes/cpts/class-cpt-meeting.php:145
+#: includes/cpts/class-cpt-proposal.php:138
+#: includes/cpts/class-cpt-summary.php:108
+msgid "Not found in Trash"
+msgstr "Nenalezeno v koši"
+
+#: includes/cpts/class-cpt-agenda.php:134
+msgid "Custom post type for agendas"
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:198
+msgid "Agenda updated. <a href=\"%s\">View agenda</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:203
+#: includes/cpts/class-cpt-meeting.php:243
+#: includes/cpts/class-cpt-proposal.php:236
+#: includes/cpts/class-cpt-summary.php:204
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:204
+#: includes/cpts/class-cpt-meeting.php:244
+#: includes/cpts/class-cpt-proposal.php:237
+#: includes/cpts/class-cpt-summary.php:205
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:205
+msgid "Agenda updated."
+msgstr "Program byl aktualizován."
+
+#. translators: %s: date and time of the revision
+#: includes/cpts/class-cpt-agenda.php:213
+msgid "Agenda restored to revision from %s"
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:222
+msgid "Agenda published. <a href=\"%s\">View agenda</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:227
+msgid "Agenda saved."
+msgstr "Program byl uložen."
+
+#: includes/cpts/class-cpt-agenda.php:231
+msgid "Agenda submitted. <a target=\"_blank\" href=\"%s\">Preview agenda</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:237
+msgid ""
+"Agenda scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview agenda</a>"
+msgstr ""
+
+#. translators: Publish box date format, see http://php.net/date
+#: includes/cpts/class-cpt-agenda.php:239
+#: includes/cpts/class-cpt-meeting.php:279
+#: includes/cpts/class-cpt-proposal.php:272
+#: includes/cpts/class-cpt-summary.php:240
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/cpts/class-cpt-agenda.php:246
+msgid ""
+"Agenda draft updated. <a target=\"_blank\" href=\"%s\">Preview agenda</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-meeting.php:131
+msgctxt "Post Type General Name"
+msgid "Meetings"
+msgstr "Jednání"
+
+#: includes/cpts/class-cpt-meeting.php:132
+msgctxt "Post Type Singular Name"
+msgid "Meeting"
+msgstr "Jednání"
+
+#: includes/cpts/class-cpt-meeting.php:135
+msgid "Parent Meeting:"
+msgstr "Nadřazené jednání:"
+
+#: includes/cpts/class-cpt-meeting.php:136
+msgid "All Meetings"
+msgstr "Všechna jednání"
+
+#: includes/cpts/class-cpt-meeting.php:137
+#: includes/cpts/class-cpt-meeting.php:138
+msgid "Add New Meeting"
+msgstr "Přidat nové jednání"
+
+#: includes/cpts/class-cpt-meeting.php:139
+msgid "New Meeting"
+msgstr "Nové jednání"
+
+#: includes/cpts/class-cpt-meeting.php:140
+msgid "Edit Meeting"
+msgstr "Upravit jednání"
+
+#: includes/cpts/class-cpt-meeting.php:141
+msgid "Update Meeting"
+msgstr "Upravit jednání"
+
+#: includes/cpts/class-cpt-meeting.php:142
+msgid "View Meeting"
+msgstr "Zobrazit jednání"
+
+#: includes/cpts/class-cpt-meeting.php:143
+msgid "Search Meetings"
+msgstr "Vyhledat jednání"
+
+#: includes/cpts/class-cpt-meeting.php:174
+msgid "Custom post type for meetings"
+msgstr ""
+
+#: includes/cpts/class-cpt-meeting.php:238
+msgid "Meeting updated. <a href=\"%s\">View meeting</a>"
+msgstr "Jednání bylo aktualizováno. <a href=\"%s\">Zobrazit jednání</a>"
+
+#: includes/cpts/class-cpt-meeting.php:245
+msgid "Meeting updated."
+msgstr "Jednání bylo aktualizováno."
+
+#. translators: %s: date and time of the revision
+#: includes/cpts/class-cpt-meeting.php:253
+msgid "Meeting restored to revision from %s"
+msgstr ""
+
+#: includes/cpts/class-cpt-meeting.php:262
+msgid "Meeting published. <a href=\"%s\">View meeting</a>"
+msgstr "Jednání bylo zveřejněno. <a href=\"%s\">Zobrazit jednání</a>"
+
+#: includes/cpts/class-cpt-meeting.php:267
+msgid "Meeting saved."
+msgstr "Jednání bylo uloženo."
+
+#: includes/cpts/class-cpt-meeting.php:271
+msgid "Meeting submitted. <a target=\"_blank\" href=\"%s\">Preview meeting</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-meeting.php:277
+msgid ""
+"Meeting scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview meeting</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-meeting.php:286
+msgid ""
+"Meeting draft updated. <a target=\"_blank\" href=\"%s\">Preview meeting</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-meeting.php:345
+msgid "Date"
+msgstr "Datum"
+
+#: includes/cpts/class-cpt-meeting.php:412
+msgid "Meeting Information"
+msgstr "Podrobnosti jednání"
+
+#: includes/cpts/class-cpt-proposal.php:124
+msgctxt "Post Type General Name"
+msgid "Proposals"
+msgstr "Návrhy"
+
+#: includes/cpts/class-cpt-proposal.php:125
+msgctxt "Post Type Singular Name"
+msgid "Proposal"
+msgstr "Návrh"
+
+#: includes/cpts/class-cpt-proposal.php:128
+msgid "Parent Proposal:"
+msgstr "Nadřazený návrh"
+
+#: includes/cpts/class-cpt-proposal.php:129
+#: includes/cpts/class-cpt-proposal.php:605
+#: includes/cpts/class-cpt-proposal.php:606
+msgid "All Proposals"
+msgstr "Všechny návrhy"
+
+#: includes/cpts/class-cpt-proposal.php:130
+#: includes/cpts/class-cpt-proposal.php:131
+msgid "Add New Proposal"
+msgstr "Přidat nový návrh"
+
+#: includes/cpts/class-cpt-proposal.php:132
+#: includes/cpts/class-cpt-proposal.php:613
+#: includes/cpts/class-cpt-proposal.php:614
+msgid "New Proposal"
+msgstr "Nový návrh"
+
+#: includes/cpts/class-cpt-proposal.php:133
+msgid "Edit Proposal"
+msgstr "Upravit návrh"
+
+#: includes/cpts/class-cpt-proposal.php:134
+msgid "Update Proposal"
+msgstr "Upravit návrh"
+
+#: includes/cpts/class-cpt-proposal.php:135
+msgid "View Proposal"
+msgstr "Zobrazit návrh"
+
+#: includes/cpts/class-cpt-proposal.php:136
+msgid "Search Proposals"
+msgstr ""
+
+#: includes/cpts/class-cpt-proposal.php:167
+msgid "Custom post type for proposals"
+msgstr ""
+
+#: includes/cpts/class-cpt-proposal.php:231
+msgid "Proposal updated. <a href=\"%s\">View proposal</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-proposal.php:238
+msgid "Proposal updated."
+msgstr "Návrh byl aktualizován."
+
+#. translators: %s: date and time of the revision
+#: includes/cpts/class-cpt-proposal.php:246
+msgid "Proposal restored to revision from %s"
+msgstr "Návrh obnoven z revize %s"
+
+#: includes/cpts/class-cpt-proposal.php:255
+msgid "Proposal published. <a href=\"%s\">View proposal</a>"
+msgstr "Návrh byl zveřejněn. <a href=\"%s\">Zobrazit návrh</a>"
+
+#: includes/cpts/class-cpt-proposal.php:260
+msgid "Proposal saved."
+msgstr "Návrh byl uložen."
+
+#: includes/cpts/class-cpt-proposal.php:264
+msgid ""
+"Proposal submitted. <a target=\"_blank\" href=\"%s\">Preview proposal</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-proposal.php:270
+msgid ""
+"Proposal scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview proposal</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-proposal.php:279
+msgid ""
+"Proposal draft updated. <a target=\"_blank\" href=\"%s\">Preview proposal</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-proposal.php:321
+msgid "Proposal Information"
+msgstr "Informace o návrhu"
+
+#: includes/cpts/class-cpt-summary.php:94
+msgctxt "Post Type General Name"
+msgid "Summaries"
+msgstr "Zápisy"
+
+#: includes/cpts/class-cpt-summary.php:95
+msgctxt "Post Type Singular Name"
+msgid "Summary"
+msgstr "Zápis"
+
+#: includes/cpts/class-cpt-summary.php:96
+msgid "Summaries"
+msgstr "Zápisy"
+
+#: includes/cpts/class-cpt-summary.php:98
+msgid "Parent Summary:"
+msgstr "Nadřazený zápis"
+
+#: includes/cpts/class-cpt-summary.php:99
+#: includes/cpts/class-cpt-summary.php:287
+#: includes/cpts/class-cpt-summary.php:288
+msgid "All Summaries"
+msgstr "Všechny zápisy"
+
+#: includes/cpts/class-cpt-summary.php:100
+#: includes/cpts/class-cpt-summary.php:101
+msgid "Add New Summary"
+msgstr "Přidat nový zápis"
+
+#: includes/cpts/class-cpt-summary.php:102
+#: includes/cpts/class-cpt-summary.php:295
+#: includes/cpts/class-cpt-summary.php:296
+msgid "New Summary"
+msgstr "Nový zápis"
+
+#: includes/cpts/class-cpt-summary.php:103
+msgid "Edit Summary"
+msgstr "Upravit zápis"
+
+#: includes/cpts/class-cpt-summary.php:104
+msgid "Update Summary"
+msgstr "Upravit zápis"
+
+#: includes/cpts/class-cpt-summary.php:105
+msgid "View Summary"
+msgstr "Zobrazit zápis"
+
+#: includes/cpts/class-cpt-summary.php:106
+msgid "Search Summaries"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:135
+msgid "Custom post type for summaries"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:199
+msgid "Summary updated. <a href=\"%s\">View summary</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:206
+msgid "Summary updated."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: includes/cpts/class-cpt-summary.php:214
+msgid "Summary restored to revision from %s"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:223
+msgid "Summary published. <a href=\"%s\">View summary</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:228
+msgid "Summary saved."
+msgstr "Zápis byl uložen."
+
+#: includes/cpts/class-cpt-summary.php:232
+msgid "Summary submitted. <a target=\"_blank\" href=\"%s\">Preview summary</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:238
+msgid ""
+"Summary scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview summary</a>"
+msgstr ""
+
+#: includes/cpts/class-cpt-summary.php:247
+msgid ""
+"Summary draft updated. <a target=\"_blank\" href=\"%s\">Preview summary</a>"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "Instalovat pluginy"
+
+#. translators: %s: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:337
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:339
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Začala instalace pluginu"
+msgstr[1] "Začala instalace pluginů"
+msgstr[2] "Začala instalace pluginů"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Začala aktualizace pluginu"
+msgstr[1] "Začala aktualizace pluginů"
+msgstr[2] "Začala aktualizace pluginů"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Začala aktivace pluginu"
+msgstr[1] "Začala aktivace pluginů"
+msgstr[2] "Začala aktivace pluginů"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:393
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:920
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2626
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:394
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr "Plugin byl úspěšně aktivován."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:395
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:399
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Plugin není aktivován. Pro toto téma je zapotřebí vyšší verze% s. "
+"Aktualizujte plugin."
+
+#. translators: 1: dashboard link.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:401
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "Zrušit toto oznámení"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "Obraťte se na správce tohoto webu a požádejte o pomoc."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr "Požadovaná aktualizace"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:1027
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Obraťte se prosím na poskytovatele pluginů a požádejte je, aby balíček svých "
+"pluginů podle pokynů WordPress."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:1214
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2075
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr "Vyžaodávno"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr "Externí zdroj"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr "Předbalené"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr "Není instalováno"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr "Instalován ale neaktivován"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr "Aktivní"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr "Aktualizace je doporučena"
+
+#. translators: 1: install status, 2: update status
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2435
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2481
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: 1: number of plugins.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2485
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: 1: number of plugins.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2489
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. translators: 1: number of plugins.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2493
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr "Nainstalovaná verze:"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr "Dostupná verze:"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr "Žádné pluginy k instalaci, aktualizaci nebo aktivaci."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr "Plugin"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr "Zdroj"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr "Typ"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr "Verze"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2696
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2701
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2707
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr "Aktualizace zprávy od autora pluginu:"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr "Instalovat"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr "Upravit"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr "Aktivován"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Nebyly vybrány žádné doplňky pro instalaci. Nebyla provedena žádná akce."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Nebyly vybrány žádné doplňky, které by byly aktualizovány. Nebyla provedena "
+"žádná akce."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr "Momentálně nejsou k dispozici žádné pluginy."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr "Momentálně nejsou k dispozici žádné aktualizace."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Nebyly aktivovány žádné zásuvné moduly. Nebyla provedena žádná akce."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr "V současné době nejsou k dispozici žádné pluginy."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr "Aktivace pluginu se nezdařila."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3591
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3594
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3596
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3602
+msgid "%1$s installed and activated successfully."
+msgstr "%1$  nainstalován a úspěšně aktivován."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3602
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3602
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr "Skrýt podrobnosti"
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr "Všechny instalace a aktivace byly dokončeny."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3605
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3610
+msgid "%1$s installed successfully."
+msgstr "%1$ byl úspěšně nainstalován."
+
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr "Všechny instalace byly dokončeny."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/libs/tgm-plugin-activation/class-tgm-plugin-activation.php:3613
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:77
+msgctxt "Taxonomy General Name"
+msgid "Meeting Tags"
+msgstr "Štítky jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:78
+msgctxt "Taxonomy Singular Name"
+msgid "Meeting Tag"
+msgstr "Štítek jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:79
+msgid "Tags"
+msgstr "Štítky"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:80
+msgid "All Tags"
+msgstr "Všechny štítky"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:81
+msgid "Parent Tag"
+msgstr "Nadřazený štítek"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:82
+msgid "Parent Tag:"
+msgstr "Nadřazený štítek:"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:83
+msgid "New Tag Name"
+msgstr "Název nového štítku"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:84
+msgid "Add New Tag"
+msgstr "Přidat nový štítek"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:85
+msgid "Edit Tag"
+msgstr "Upravit štítek"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:86
+msgid "Update Tag"
+msgstr "Upravit štítek"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:87
+msgid "View Tag"
+msgstr "Zobrazit štítek"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:88
+msgid "Separate tags with commas"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:89
+msgid "Add or remove tags"
+msgstr "Přidat nebo odebrat štítky"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:90
+#: includes/taxonomies/class-taxonomy-meeting-type.php:90
+#: includes/taxonomies/class-taxonomy-organization.php:87
+#: includes/taxonomies/class-taxonomy-proposal-status.php:90
+msgid "Choose from the most used"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:91
+msgid "Popular Tags"
+msgstr "Populární šítky"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:92
+msgid "Search Tags"
+msgstr "Vyhledat šítky"
+
+#: includes/taxonomies/class-taxonomy-meeting-tag.php:93
+#: includes/taxonomies/class-taxonomy-meeting-type.php:93
+#: includes/taxonomies/class-taxonomy-organization.php:90
+#: includes/taxonomies/class-taxonomy-proposal-status.php:93
+msgid "Not Found"
+msgstr "Nenalezeno"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:77
+msgctxt "Taxonomy General Name"
+msgid "Meeting Type"
+msgstr "Typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:78
+msgctxt "Taxonomy Singular Name"
+msgid "Meeting Type"
+msgstr "Typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:79
+msgid "Types"
+msgstr "Typy"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:80
+msgid "All Meeting Types"
+msgstr "Všechny typy jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:81
+msgid "Parent Meeting Type"
+msgstr "Nadřazený typ jednání:"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:82
+msgid "Parent Meeting Type:"
+msgstr "Nadřazený typ jednání:"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:83
+msgid "New Meeting Type Name"
+msgstr "Nový typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:84
+msgid "Add New Meeting Type"
+msgstr "Přidat nový typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:85
+msgid "Edit Meeting Type"
+msgstr "Upravit typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:86
+msgid "Update Meeting Type"
+msgstr "Upravit typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:87
+msgid "View Meeting Type"
+msgstr "Zobrazit typ jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:88
+msgid "Separate meeting types with commas"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:89
+msgid "Add or remove meeting types"
+msgstr "Přidat nebo odebrat typy jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:91
+msgid "Popular Meeting Types"
+msgstr "Populární typy jednání"
+
+#: includes/taxonomies/class-taxonomy-meeting-type.php:92
+msgid "Search Meeting Types"
+msgstr "Vyhledat typy jednání"
+
+#: includes/taxonomies/class-taxonomy-organization.php:74
+msgctxt "Taxonomy General Name"
+msgid "Organizational Group"
+msgstr "Organizační skupina"
+
+#: includes/taxonomies/class-taxonomy-organization.php:75
+msgctxt "Taxonomy Singular Name"
+msgid "Organizational Group"
+msgstr "Organizační skupina"
+
+#: includes/taxonomies/class-taxonomy-organization.php:76
+msgid "Organizations"
+msgstr "Všechny organizace:"
+
+#: includes/taxonomies/class-taxonomy-organization.php:77
+msgid "All Organizational Groups"
+msgstr "Všechny organizační skupiny"
+
+#: includes/taxonomies/class-taxonomy-organization.php:78
+msgid "Parent Organizational Group"
+msgstr "Nadřazená organizační skupina"
+
+#: includes/taxonomies/class-taxonomy-organization.php:79
+msgid "Parent Organizational Group:"
+msgstr "Nadřazená organizační skupina:"
+
+#: includes/taxonomies/class-taxonomy-organization.php:80
+msgid "New Organizational Group Name"
+msgstr "Název nové organizační skupiny"
+
+#: includes/taxonomies/class-taxonomy-organization.php:81
+msgid "Add New Organizational Group"
+msgstr "Přidat novou organizační skupinu"
+
+#: includes/taxonomies/class-taxonomy-organization.php:82
+msgid "Edit Organizational Group"
+msgstr "Upravit organizační skupinu"
+
+#: includes/taxonomies/class-taxonomy-organization.php:83
+msgid "Update Organizational Group"
+msgstr "Upravit organizační skupinu"
+
+#: includes/taxonomies/class-taxonomy-organization.php:84
+msgid "View Organizational Group"
+msgstr "Zobrazit organizační skupinu"
+
+#: includes/taxonomies/class-taxonomy-organization.php:85
+msgid "Separate organizational groups with commas"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-organization.php:86
+msgid "Add or remove organizational groups"
+msgstr "Přidat nebo odebrat organizační skupiny"
+
+#: includes/taxonomies/class-taxonomy-organization.php:88
+msgid "Popular Organizational Groups"
+msgstr "Populární organizační skupiny"
+
+#: includes/taxonomies/class-taxonomy-organization.php:89
+msgid "Search Organizational Groups"
+msgstr "Vyhledat organizační typy"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:77
+msgctxt "Taxonomy General Name"
+msgid "Proposal Statuses"
+msgstr "Stavy návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:78
+msgctxt "Taxonomy Singular Name"
+msgid "Proposal Status"
+msgstr "Stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:79
+msgid "Statuses"
+msgstr "Stavy"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:80
+msgid "All Proposal Statuses"
+msgstr "Všechny stavy návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:81
+msgid "Parent Proposal Status"
+msgstr "Nadřazený stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:82
+msgid "Parent Proposal Status:"
+msgstr "Nadřazený stav návrhu:"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:83
+msgid "New Proposal Status Name"
+msgstr "Název nového stavu návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:84
+msgid "Add New Proposal Status"
+msgstr "Přidat nový stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:85
+msgid "Edit Proposal Status"
+msgstr "Upravit stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:86
+msgid "Update Proposal Status"
+msgstr "Upravit stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:87
+msgid "View Proposal Status"
+msgstr "Zobrazit stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:88
+msgid "Separate proposal status with commas"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:89
+msgid "Add or remove proposal status"
+msgstr "Přidat nebo odebrat stav návrhu"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:91
+msgid "Popular Proposal Statuses"
+msgstr "Populární stavy návrhů"
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:92
+msgid "Search Proposal Status"
+msgstr ""
+
+#: includes/taxonomies/class-taxonomy-proposal-status.php:165
+#: includes/taxonomies/class-taxonomy-proposal-status.php:166
+msgid "Proposal Statuses"
+msgstr "Stavy návrhů"
+
+#: includes/wordpress-meetings-functions.php:99
+msgid "%1$s for %2$s"
+msgstr "%1$s pro %2$s"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/christianwach/wordpress-meetings"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Creates custom post types for Meetings with custom fields and custom "
+"taxonomies that can be used to store and display meeting notes/minutes, "
+"agendas, proposals and summaries."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pea, Glocal, needle"
+msgstr "Pea, Glocal, needle"
+
+#. Author URI of the plugin/theme
+msgid "http://glocal.coop"
+msgstr ""

@@ -24,7 +24,7 @@ get_header();
         <?php dynamic_sidebar('cac-featured') ?>
 
         <div class="box-1 left-box">
-            <h2 class="title uppercase clearfix"><i id="refreshActivity" class="fa fa-refresh pull-right" aria-hidden="true"></i>Co je nového na OpenLab?</h2>
+            <h2 class="title uppercase clearfix"><i id="refreshActivity" class="fa fa-refresh pull-right" aria-hidden="true"></i>Co je nového na portále OpenLab?</h2>
             <div id="whatsHappening" class="left-block-content whats-happening-wrapper">
                 <?php echo openlab_whats_happening(); ?>
             </div>

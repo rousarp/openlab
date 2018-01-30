@@ -92,7 +92,7 @@
 
                 <p class="invite-copy"><?php _e('Tento odkaz vás přenese na Moje pozvánky, kde můžete pozvat lidi, aby se připojili k OpenLab a tomuto ' . ucfirst($group_type)); ?></p>
 
-                <p><a class="btn btn-primary no-deco" href="<?php echo bp_loggedin_user_domain() . BP_INVITE_ANYONE_SLUG . '/invite-new-members/group-invites/' . bp_get_group_id() ?>"><?php _e('Pozvěte nové členy na OpenLab.', 'invite-anyone') ?></a></p>
+                <p><a class="btn btn-primary no-deco" href="<?php echo bp_loggedin_user_domain() . BP_INVITE_ANYONE_SLUG . '/invite-new-members/group-invites/' . bp_get_group_id() ?>"><?php _e('Pozvěte nové členy na portál OpenLab.', 'invite-anyone') ?></a></p>
 
             </div>
         </div>

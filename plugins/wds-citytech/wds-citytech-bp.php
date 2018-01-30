@@ -36,58 +36,58 @@ class bpass_Translation_Mangler {
 
    switch($text){
 	case "How do you want to read this group?":
-	     return $translations->translate( "How do you want to read this $grouptype?" );
+	     return $translations->translate( "Jak chcete číst" . _x($grouptype,'4J-tento','openlab')."?" );
 	     break;
 	case "I will read this group on the web":
-	     return $translations->translate( "I will read this $grouptype on the web" );
+	     return $translations->translate( "Budu číst " . _x($grouptype,'4J-tento','openlab') . " na webu" );
 	     break;
 	case "Send all group activity as it arrives":
-	     return $translations->translate( "Send all $grouptype activity as it arrives" );
+	     return $translations->translate( "Zaslat veškerou aktivitu" . _x($grouptype,'2J','openlab') . ", jak to přijde" );
 	     break;
 	case "Your email notifications are set to %s for this group.":
-	     return $translations->translate( "Your email notifications are set to %s for this $grouptype." );
+	     return $translations->translate( "Vaše e-mailová upozornění jsou pro " . _x($grouptype,'4J-tento','openlab') . " nastavena na %s." );
 	     break;
 	case "When new users join this group, their default email notification settings will be:":
-	     return $translations->translate( "When new users join this $grouptype, their default email notification settings will be:" );
+	     return $translations->translate( "Pokud se k " . _x($grouptype,'3J-tento','openlab') . " připojí noví uživatelé, jejich výchozí nastavení zasílání upozornění na e-mail bude:" );
 	     break;
 	case "No Email (users will read this group on the web - good for any group - the default)":
-	     return $translations->translate( "No Email (users will read this $grouptype on the web - good for any $grouptype - the default)" );
+	     return $translations->translate( "Žádné e-maily (uživatelé budou číst " . _x($grouptype,'4J-tento','openlab') . " na webu - dobré pro jakékoliv " . _x($grouptype,'4J','openlab') . " - výchozí)" );
 	     break;
 	case "Weekly Summary Email (the week's topics - good for large groups)":
-	     return $translations->translate( "Weekly Summary Email (the week\'s topics - good for large $plural_grouptype)" );
+	     return $translations->translate( "Týdenní souhrnný e-mail (týdenní témata - dobré pro velké " . _x($grouptype,'4M','openlab') . ")" );
 	     break;
 	case "Daily Digest Email (all daily activity bundles in one email - good for medium-size groups)":
-	     return $translations->translate( "Daily Digest Email (all daily activity bundles in one email - good for medium-size $plural_grouptype)" );
+	     return $translations->translate( "Souhrnný E-mail jednou denně (všechny denní aktivity v jednom e-mailu - dobré pro středně velké velikosti " . _x($grouptype,'2M','openlab') . ")" );
 	     break;
 	case "New Topics Email (new topics are sent as they arrive, but not replies - good for small groups)":
-	     return $translations->translate( "New Topics Email (new topics are sent as they arrive, but not replies - good for small $plural_grouptype)" );
+	     return $translations->translate( "E-mail o nových tématech (jsou odeslána nová témata v diskusi po jejich založení, ale ne už odpovědi na ně - dobré pro malé " . _x($grouptype,'4M','openlab') . ")" );
 	     break;
 	case "All Email (send emails about everything - recommended only for working groups)":
-	     return $translations->translate( "All Email (send emails about everything - recommended only for working $plural_grouptype)" );
+	     return $translations->translate( "Všechny emaily (budou zasílány e-mailové zprávy o všem - doporučeno pouze pro pracovní " . _x($grouptype,'4M','openlab') . ")" );
 	     break;
 	case "Group Email Settings":
 		return $translations->translate( "$uc_grouptype Email Settings" );
 	     	break;
 	case "To change the email notification settings for your groups go to %s and click change for each group.":
-	     return $translations->translate( "To change the email notification settings for your $plural_grouptype go to %s and click change for each $grouptype." );
+	     return $translations->translate( "Chcete-li změnit nastavení oznámení o e-mailu pro vaše " . _x($grouptype,'4M','openlab') . ", přejděte na %s a klikněte na změnu pro " . _x($grouptype,'4J-každý','openlab') . "." );
 	     break;
 	case "Send an email notice to everyone in the group":
-		return $translations->translate( "Send an email notice to everyone in the $grouptype" );
+		return $translations->translate( "Pošlete e-mail všem uživatelům ve skupině " . _x($grouptype,'4J','openlab') . "." );
 		break;
 	case "You can use the form below to send an email notice to all group members.":
-		return $translations->translate( "You can use the form below to send an email notice to all $grouptype members." );
+		return $translations->translate( "Pomocí níže uvedeného formuláře můžete zaslat e-mail všem členům  " . _x($grouptype,'4J','openlab') . "." );
 		break;
 	case "Everyone in the group will receive the email -- regardless of their email settings -- so use with caution":
-		return $translations->translate( "Everyone in the $grouptype will receive the email -- regardless of their email settings -- so use with caution" );
+		return $translations->translate( "Všichni v " . _x($grouptype,'6J','openlab') . " obdrží e-mail - bez ohledu na nastavení e-mailu - proto je tuto volbu potřeba používat opatrně" );
 		break;
 	case " - sent from the group ":
-		return $translations->translate( " - sent from the $grouptype " );
+		return $translations->translate( " - odesláno z " . _x($grouptype,'2J','openlab') . "" );
 		break;
 	case "Send an email when a new member join the group.":
-		return $translations->translate( "Send an email when a new member joins the $grouptype." );
+		return $translations->translate( "Pošlete e-mail, když se nový člen připojí k " . _x($grouptype,'3J','openlab') . "." );
 		break;
 	case "Email this notice to everyone in the group":
-		return $translations->translate( "Email this notice to everyone in the $grouptype" );
+		return $translations->translate( "Pošlete toto upozornění všem v  " . _x($grouptype,'6J','openlab') . "" );
 		break;
 	case "This is a notice from the group '%s':
 
@@ -99,12 +99,12 @@ To view this group log in and follow the link below:
 
 ---------------------
 ":
-		return $translations->translate( "This is a notice from the $grouptype '%s':
+		return $translations->translate( "Toto je upozornění z " . _x($grouptype,'2J','openlab') . " '%s':
 
 \"%s\"
 
 
-To view this $grouptype log in and follow the link below:
+Chcete-li zobrazit " . _x($grouptype,'4J-tento','openlab') . ", postupujte podle následujícího odkazu:
 %s
 
 ---------------------

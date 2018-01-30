@@ -346,7 +346,7 @@ function openlab_registration_page() {
 
                         <?php do_action('template_notices') ?>
 
-                        <p>Registrace na OpenLab je snadná. Stačí vyplnit níže uvedená pole a my Vám okamžitě vytvoříme nový účet.</p>
+                        <p>Registrace na portále OpenLab je snadná. Stačí vyplnit níže uvedená pole a my Vám okamžitě vytvoříme nový účet.</p>
                         <p>Vzhledem k tomu, že OpenLab je prostor pro spolupráci mezi členy veřejné správy, pro použití webu je vyžadována pracovní e-mailová adresa dané instituce registrované na https://seznam.gov.cz/ovm/welcome.do?ref=obcan.</p>
                         <?php do_action('bp_before_account_details_fields') ?>
 

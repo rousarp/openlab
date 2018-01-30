@@ -1,6 +1,6 @@
 <div id="new_post_wrapper">
 
-	<div class="generic-button" id="create_post"><a href=""><?php _e('Create Post', 'groupblog'); ?></a></div>
+	<div class="generic-button" id="create_post"><a href=""><?php _e('Create Post', 'bp-groupblog'); ?></a></div>
 
 	<form id="new_post" name="new_post" method="post" action="<?php echo site_url(); ?>" style="display:none;" />
 

@@ -39,7 +39,7 @@ function openlab_group_privacy_settings($group_type) {
         ));
         $group_type_name_uc = openlab_get_portfolio_label(array(
             'group_id' => bp_get_current_group_id(),
-            'case' => 'upper',
+        //    'case' => 'upper',
         ));
     }
 
@@ -64,7 +64,7 @@ function openlab_group_privacy_settings($group_type) {
         <div class="radio group-profile panel-body">
 
             <?php if ($bp->current_action == 'create'): ?>
-                <p id="privacy-settings-tag-b"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil' . _x($group_type_name,'2J-tento','openlab') . '. Tato nastavení můžete později změnit v sekci Nastavení profilu.'); ?></p>
+                <p id="privacy-settings-tag-b"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil ' . _x($group_type_name,'2J-tento','openlab') . '. Tato nastavení můžete později změnit v sekci Nastavení profilu.'); ?></p>
             <?php else: ?>
                 <p class="privacy-settings-tag-c"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil ' .  _x($group_type_name,'2J-tento','openlab'). '.') ?></p>
             <?php endif; ?>
@@ -862,7 +862,7 @@ function openlab_group_profile_activity_list() {
                                                 </div></div>                                            <?php endwhile; ?>
                                     <?php else: ?>
                                         <div class="panel panel-default"><div class="panel-body">
-                                                <p><?php _e('Je nám líto, nebyly nalezeny žádné témata pro diskusi.', 'buddypress') ?></p>
+                                                <p><?php echo('Je nám líto, v diskusi nebylo založeno žádné téma.') ?></p>
                                             </div></div>
                                     <?php endif; ?>
                                 </div><!-- .recent-post -->
@@ -893,7 +893,7 @@ function openlab_group_profile_activity_list() {
                                             <?php
                                         endwhile;
                                     } else {
-                                        echo '<div class="panel panel-default"><div class="panel-body"><p>Žádné nedávné dokumenty</p></div></div>';
+                                        echo '<div class="panel panel-default"><div class="panel-body"><p>Doposud nebyly vytvořeny žádné dokumenty.</p></div></div>';
                                     }
                                     ?>
                                 </div>
@@ -1476,7 +1476,7 @@ function openlab_bp_group_site_pages() {
 
                     <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                         <li class="portfolio-site-link">
-                            <a class="bold no-deco" href="<?php echo trailingslashit(esc_attr($group_site_settings['site_url'])); ?>">Navštívit stránky <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?>  <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+                            <a class="bold no-deco" href="<?php echo trailingslashit(esc_attr($group_site_settings['site_url'])); ?>">Navštívit stránky <?php echo _x(openlab_get_group_type_label('group_id=' . $group_id),'2J','openlab'); ?>  <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
                         </li>
                     </ul>
 
@@ -1487,7 +1487,7 @@ function openlab_bp_group_site_pages() {
             <div class="sidebar-block">
                 <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                     <li class="portfolio-site-link">
-                        <?php echo '<a class="bold no-deco" href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '">Navštívit stránky ' . ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . '  <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>'; ?>
+                        <?php echo '<a class="bold no-deco" href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '">Navštívit stránky ' . _x((groups_get_groupmeta(bp_get_group_id(), "wds_group_type")),'2J','openlab') . '  <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>'; ?>
                     </li>
                     <?php if ($group_site_settings['is_local'] && ($bp->is_item_admin || is_super_admin() || groups_is_user_member(bp_loggedin_user_id(), bp_get_current_group_id()))) : ?>
                         <li class="portfolio-dashboard-link">

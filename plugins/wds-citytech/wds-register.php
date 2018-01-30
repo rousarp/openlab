@@ -120,7 +120,7 @@ function wds_email_validate() {
 				}
 
 				if ( ! cac_ncs_validate_code( $code ) ) {
-					$bp->signup->errors['signup_email'] = 'Non-City Tech e-mailové adresy potřebují pro registraci na OpenLabu platný registrační kód.';
+					$bp->signup->errors['signup_email'] = 'Non-City Tech e-mailové adresy potřebují pro registraci na portále OpenLab platný registrační kód.';
 
 				}
 				break;

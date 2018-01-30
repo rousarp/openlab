@@ -3,7 +3,7 @@
 	<?php $featured = new WP_Query('showposts=1&category_name=featured'); ?>
 	<?php $nofeature = new WP_Query('showposts=1&category_name=post'); ?>
 	<?php if ( $featured->have_posts() ) : ?>
-		<div class="heading"><?php _e('Featured', 'groupblog') ?></div>
+		<div class="heading"><?php _e('Featured', 'bp-groupblog') ?></div>
 		<?php while ( $featured->have_posts() ) : $featured->the_post(); ?>	
 			<div class="post" id="post-<?php the_ID(); ?>">
 				<h2 class="posttitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ) ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
@@ -15,7 +15,7 @@
 			</div>			
 		<?php endwhile; ?>
 	<?php elseif ( $nofeature->have_posts() ) : ?>
-		<div class="heading"><?php _e('Latest Post', 'groupblog') ?></div>
+		<div class="heading"><?php _e('Latest Post', 'bp-groupblog') ?></div>
 		<?php while ( $nofeature->have_posts() ) : $nofeature->the_post(); ?>
 			<div class="post" id="post-<?php the_ID(); ?>">
 				<h2 class="posttitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ) ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
@@ -27,7 +27,7 @@
 			</div>	
 		<?php endwhile; ?>
 	<?php elseif ( have_posts() ) : ?>
-		<div class="heading"><?php _e('Latest Post', 'groupblog') ?></div>
+		<div class="heading"><?php _e('Latest Post', 'bp-groupblog') ?></div>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="post" id="post-<?php the_ID(); ?>">
 				<h2 class="posttitle"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ) ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
@@ -48,7 +48,7 @@
 <div id="statuses">
 	<?php $statuses = new WP_Query('showposts=1&category_name=status'); ?>
 	<?php if ( $statuses->have_posts() ) : ?>
-		<span class="heading"><?php _e('Status', 'groupblog') ?></span>
+		<span class="heading"><?php _e('Status', 'bp-groupblog') ?></span>
 		<?php while ( $statuses->have_posts() ) : $statuses->the_post(); ?>
 			<div class="status-content"><?php status_excerpt(); ?></div>
 		<?php endwhile; ?>	
@@ -58,7 +58,7 @@
 <div id="latest">
 	<?php $latest = new WP_Query('showposts=3&category_name=post'); ?>
 	<?php if ( $latest->have_posts() ) : ?>
-		<div class="heading"><?php _e('Latest Writings', 'groupblog') ?></div>
+		<div class="heading"><?php _e('Latest Writings', 'bp-groupblog') ?></div>
 		<ul>
 			<?php while ( $latest->have_posts() ) : $latest->the_post(); ?>
 				<li id="latest-content"> 
@@ -76,7 +76,7 @@
 <div id="photos">
 	<?php $photos = new WP_Query('showposts=4&category_name=photo'); ?>
 	<?php if ( $photos->have_posts() ) : ?>
-		<div class="heading"><?php _e('Latest Photos', 'groupblog') ?></div>
+		<div class="heading"><?php _e('Latest Photos', 'bp-groupblog') ?></div>
 		<ul>
 			<?php while ( $photos->have_posts() ) : $photos->the_post(); ?>
 				<li >
@@ -95,7 +95,7 @@
 <div id="video">	
 	<?php $videos = new WP_Query('showposts=1&category_name=video'); ?>
 	<?php if ( $videos->have_posts() ) : ?>
-		<div class="heading"><?php _e('Latest Video', 'groupblog') ?></div>
+		<div class="heading"><?php _e('Latest Video', 'bp-groupblog') ?></div>
 		<div id="video-content">
 			<?php while ( $videos->have_posts() ) : $videos->the_post(); ?>
 				<div class="post" id="post-<?php the_ID(); ?>">

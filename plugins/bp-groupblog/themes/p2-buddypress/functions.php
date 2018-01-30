@@ -40,7 +40,7 @@ function status_excerpt() {
 	$maxchar = 140;
 
 	$status .= substr( $excerpt, 0, $maxchar );
-	$status .= '... <a href="' . get_permalink() .'" title="' . __('Read On', 'groupblog') . '">&raquo;</a>';
+	$status .= '... <a href="' . get_permalink() .'" title="' . __('Read On', 'bp-groupblog') . '">&raquo;</a>';
 
 	echo $status;
 }
@@ -147,12 +147,12 @@ function bp_groupblog_options_nav() {
   ?>
 
 	  <li id="home-personal-li"<?php if ( $checks['deep_group_integration'] ) : ?> class="current selected"<?php endif; ?>>
-			<a id="home" href="<?php bp_group_permalink() ?>"><?php _e( 'Home', 'groupblog' ); ?></a>
+			<a id="home" href="<?php bp_group_permalink() ?>"><?php _e( 'Home', 'bp-groupblog' ); ?></a>
 		</li>
 
     <?php if ( groups_is_user_admin( $bp->loggedin_user->id, bp_get_group_id() ) || groups_is_user_mod( $bp->loggedin_user->id, bp_get_group_id() ) ) : ?>
 			<li id="admin-personal-li" >
-				<a id="admin" href="<?php bp_group_permalink() ?>admin/"><?php _e( 'Admin', 'groupblog' ); ?></a>
+				<a id="admin" href="<?php bp_group_permalink() ?>admin/"><?php _e( 'Admin', 'bp-groupblog' ); ?></a>
 			</li>
 		<?php endif; ?>
 
@@ -161,29 +161,29 @@ function bp_groupblog_options_nav() {
 			<?php if ( bp_groupblog_is_blog_enabled ( bp_get_group_id() ) ) : ?>
 				<?php if ( !$checks['deep_group_integration'] ) : ?>
 					<li id="<?php echo BP_GROUPBLOG_SLUG; ?>-personal-li"<?php //if ( is_page() ) : ?> class="current selected"<?php //endif; ?>>
-						<a id="<?php echo BP_GROUPBLOG_SLUG; ?>" href="<?php bp_group_permalink() ?>blog/"><?php _e( 'Blog', 'groupblog' ); ?></a>
+						<a id="<?php echo BP_GROUPBLOG_SLUG; ?>" href="<?php bp_group_permalink() ?>blog/"><?php _e( 'Blog', 'bp-groupblog' ); ?></a>
 					</li>
 				<?php endif; ?>
 		  <?php endif; ?>
 
 			<?php if ( bp_is_active( 'forums' ) && ( function_exists( 'bp_forums_is_installed_correctly' ) && bp_group_is_forum_enabled() && !(int) bp_get_option( 'bp-disable-forum-directory' ) ) && bp_forums_is_installed_correctly() ) : ?>
 				<li id="<?php echo BP_FORUMS_SLUG; ?>-personal-li" >
-					<a id="<?php echo BP_FORUMS_SLUG; ?>" href="<?php bp_group_permalink() ?>forum/"><?php _e( 'Forum', 'groupblog' ); ?></a>
+					<a id="<?php echo BP_FORUMS_SLUG; ?>" href="<?php bp_group_permalink() ?>forum/"><?php _e( 'Forum', 'bp-groupblog' ); ?></a>
 				</li>
 			<?php endif; ?>
 
 			<li id="<?php echo BP_MEMBERS_SLUG; ?>-personal-li" >
-				<a id="<?php echo BP_MEMBERS_SLUG; ?>" href="<?php bp_group_permalink() ?>members/"><?php _e( 'Members', 'groupblog' ); ?> (<?php bp_group_total_members() ?>)</a>
+				<a id="<?php echo BP_MEMBERS_SLUG; ?>" href="<?php bp_group_permalink() ?>members/"><?php _e( 'Members', 'bp-groupblog' ); ?> (<?php bp_group_total_members() ?>)</a>
 			</li>
 
 			<li id="invite-personal-li" >
-				<a id="invite" href="<?php bp_group_permalink() ?>send-invites/"><?php _e( 'Send Invites', 'groupblog' ); ?></a>
+				<a id="invite" href="<?php bp_group_permalink() ?>send-invites/"><?php _e( 'Send Invites', 'bp-groupblog' ); ?></a>
 			</li>
 
 		<?php elseif ( !bp_group_is_visible() && bp_get_group_status() != 'hidden' ) : ?>
 
 			<li id="request-membership-personal-li" >
-				<a id="request-membership" href="<?php bp_group_permalink() ?>request-membership/"><?php _e( 'Request Membership', 'groupblog' ); ?></a>
+				<a id="request-membership" href="<?php bp_group_permalink() ?>request-membership/"><?php _e( 'Request Membership', 'bp-groupblog' ); ?></a>
 			</li>
 
 		<?php endif; ?>

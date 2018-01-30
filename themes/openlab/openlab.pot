@@ -253,7 +253,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "2J-vy"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "2J-vy"
@@ -261,7 +261,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "2J-vy"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "2J-tento"
@@ -269,7 +269,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "2J-tento"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "2J-tento"
@@ -277,7 +277,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "2J-tento"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "1J-soukromý"
@@ -285,7 +285,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "1J-soukromý"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "1J-soukromý"
@@ -293,7 +293,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "1J-soukromý"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "1J-veřejný"
@@ -301,7 +301,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "1J-veřejný"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "1J-veřejný"
@@ -309,7 +309,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "1J-veřejný"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "1J-skrytý"
@@ -317,7 +317,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "1J-skrytý"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "1J-skrytý"
@@ -325,7 +325,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "1J-skrytý"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "2J-soukromý"
@@ -333,7 +333,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "2J-soukromý"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "2J-soukromý"
@@ -341,7 +341,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "2J-soukromý"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "2J-veřejný"
@@ -349,7 +349,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "2J-veřejný"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "2J-veřejný"
@@ -357,7 +357,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "2J-veřejný"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "2J-skrytý"
@@ -365,7 +365,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "2J-skrytý"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "2J-skrytý"
@@ -373,7 +373,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "2J-skrytý"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "1J-tento"
@@ -381,7 +381,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "1J-tento"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "1J-tento"
@@ -389,7 +389,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "1J-tento"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "4J-vy"
@@ -397,7 +397,7 @@ msgid "project"
 msgstr ""
 
 msgctxt "4J-vy"
-msgid "curse"
+msgid "course"
 msgstr ""
 
 msgctxt "4J-vy"
@@ -405,7 +405,7 @@ msgid "club"
 msgstr ""
 
 msgctxt "4J-vy"
-msgid "porfolio"
+msgid "portfolio"
 msgstr ""
 
 msgctxt "1M"
@@ -418,4 +418,20 @@ msgstr ""
 
 msgctxt "6M"
 msgid "not-archive"
+msgstr ""
+
+msgctxt "3J-žádný"
+msgid "project"
+msgstr ""
+
+msgctxt "3J-žádný"
+msgid "course"
+msgstr ""
+
+msgctxt "3J-žádný"
+msgid "club"
+msgstr ""
+
+msgctxt "3J-žádný"
+msgid "portfolio"
 msgstr ""

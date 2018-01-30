@@ -42,10 +42,10 @@ function openlab_group_library_settings() {
 		<div class="panel-heading">Nastavení knihovny</div>
 
 		<div class="panel-body">
-			<p>Tato nastavení umožní nebo zakazuje zobrazení nástroje knihovny na profilu vaší skupiny <?php echo esc_html( $group_type_label ); ?>.</p>
+			<p>Tato nastavení umožní nebo zakáže zobrazení nástroje knihovny na profilu <?php echo esc_html( _x(strtolower($group_type_label),'2J-vy','openlab')); ?>.</p>
 
 			<div class="checkbox">
-				<label><input type="checkbox" name="group-show-library-tools" id="group-show-library-tools" value="1" <?php checked( $setting ); ?> /> Enable library tools</label>
+				<label><input type="checkbox" name="group-show-library-tools" id="group-show-library-tools" value="1" <?php checked( $setting ); ?> /> Povolit nástroje knihovny</label>
 			</div>
 		</div>
 	</div>

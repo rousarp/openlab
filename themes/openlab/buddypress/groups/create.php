@@ -113,7 +113,7 @@
                     <?php /* Name/Description */ ?>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading semibold"><label for="group-name"><?php echo ucfirst($group_type); ?> Name <?php _e('(required)', 'buddypress') ?></label></div>
+                        <div class="panel-heading semibold"><label for="group-name">Název <?php echo _x($group_type,'2J','openlab'); ?> <?php _e('(required)', 'buddypress') ?></label></div>
                             <div class="panel-body">
                     <?php if ('course' == $group_type) : ?>
                         <p class="ol-tooltip clone-course-tooltip" id="clone-course-tooltip-4">Věnujte prosím chvíli, abyste zvážili název nového nebo klonovaného kurzu. Doporučujeme, abyste vedli jméno kurzu pod 50 znaků. Vždy jej můžete později změnit. Doporučujeme následující formát:</p>
@@ -122,7 +122,7 @@
                             <li>ARCH3522 NYC Arch, IV2017</li>
                         </ul>
 
-                        <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" placeholder="Course Name" required />
+                        <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" placeholder="Název kurzu" required />
 
                     <?php elseif ('portfolio' == $group_type) : ?>
                         <p class="ol-tooltip">Navrhované <?php echo $group_label ?> Níže uvedené jméno používá vaše jméno a příjmení. Pokud nechcete používat celé jméno, můžete jej nyní nebo kdykoli změnit.</p>
@@ -143,7 +143,7 @@
                     </div>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading semibold"><label for="group-desc"><?php echo ucfirst($group_type); ?> Popis <?php _e('(required)', 'buddypress') ?></label></div>
+                        <div class="panel-heading semibold"><label for="group-desc"> Popis <?php echo _x($group_type,'2J','openlab'); ?> <?php _e('(required)', 'buddypress') ?></label></div>
                         <div class="panel-body">
                             <textarea class="form-control" name="group-desc" id="group-desc" required><?php bp_new_group_description() ?></textarea>
                         </div>
@@ -153,7 +153,7 @@
 
 					<?php if ( 'course' === $group_type ) : ?>
 						<p class="copyright-notice italics">
-							<strong>Copyright Note:</strong> Jakýkoli obsah, který vy nebo vaši studenti vytvoříte a zveřejníte v OpenLabu, včetně tohoto kurzu, je automaticky chráněn za podmínek a podmínek <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution NonCommercial Share-Alike 3.0 license</a>, or any successor Creative Commons license. However, you are free to specify other copyright conditions (<a href="https://creativecommons.org/faq/">Další informace naleznete zde</a>). Budete muset zadat licenci na profil kurzu a na webových stránkách, pokud se liší od obecné <a href="https://openlab.citytech.cuny.edu/about/terms-of-service/#license-to-site-users">OpenLab licence</a>. Prosím <a href="https://openlab.citytech.cuny.edu/blog/help/contact-us">contactujte nás</a> s dotazy nebo <a href="https://openlab.citytech.cuny.edu/blog/help/copyright-and-fair-use-2/">získejte více informací v sekci Návody</a>.
+							<strong>Poznámka k autorským právům:</strong> Jakýkoli obsah, který vy nebo vaši studenti vytvoříte a zveřejníte v OpenLabu, včetně tohoto kurzu, je automaticky chráněn za podmínek <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution NonCommercial Share-Alike 3.0 license</a>, nebo jakékoli následné licence Creative Commons. Můžete však určit další podmínky autorských práv. (<a href="https://creativecommons.org/faq/">Další informace naleznete zde</a>). Budete muset zadat licenci na profil kurzu a na webových stránkách, pokud se liší od obecné <a href="https://openlab.citytech.cuny.edu/about/terms-of-service/#license-to-site-users">OpenLab licence</a>. Prosím <a href="https://openlab.citytech.cuny.edu/blog/help/contact-us">kontaktujte nás</a> s dotazy nebo <a href="https://openlab.citytech.cuny.edu/blog/help/copyright-and-fair-use-2/">získejte více informací v sekci Návody</a>.
 						</p>
 					<?php endif; ?>
 
@@ -193,7 +193,7 @@
                             </div>
                             <div class="col-sm-16">
 
-                                <p class="italics"><?php _e("Upload an image to use as an avatar for this " . $group_type . ". The image will be shown on the main " . $group_type . " page, and in search results.", 'buddypress') ?></p>
+                                <p class="italics"><?php echo("Nahrajte obrázek, který chcete použít jako náhledový obrázek pro " . _x($group_type,'4J','openlab') . ". Obrázek bude zobrazen na hlavním profilu " . _x($group_type,'3J','openlab') . " a ve výsledcích vyhledávání.")  ?></p>
 
                                 <p id="avatar-upload">
                                     <div class="form-group form-inline">
@@ -205,7 +205,7 @@
                                     </div>
                                 </p>
 
-                                <p class="italics">To skip the avatar upload process, click the "Next Step" button.</p>
+                                <p class="italics">Chcete-li přeskočit proces nahrávání ilustračního obrázku, klikněte na tlačítko "Další krok".</p>
                             </div>
                         </div>
                 </div>
@@ -319,7 +319,7 @@
 
                         <?php /* Create Button */ ?>
                         <?php if (bp_is_first_group_creation_step()) : ?>
-                            <input class="btn btn-primary btn-margin btn-margin-top" type="submit" value="<?php _e('Create ' . ucfirst($group_type) . ' and Continue ', 'buddypress'); ?> &#xf138;" id="group-creation-create" name="save" />
+                            <input class="btn btn-primary btn-margin btn-margin-top" type="submit" value="<?php echo('Vytvořte ' . _x($group_type,'4J','openlab') . ' a pokračujte '); ?> &#xf138;" id="group-creation-create" name="save" />
                         <?php endif; ?>
 
                         <?php /* Finish Button */ ?>

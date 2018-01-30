@@ -1,6 +1,6 @@
 <div class="activity single-group">
 
-	<h3><?php _e( 'Blog Activity', 'groupblog' ) ?></h3>
+	<h3><?php _e( 'Blog Activity', 'bp-groupblog' ) ?></h3>
 	
 	<?php if ( bp_has_activities( 'per_page=5&object=blogs&primary_id=' . get_groupblog_blog_id ( bp_get_group_id() ) ) ) : ?>
 	

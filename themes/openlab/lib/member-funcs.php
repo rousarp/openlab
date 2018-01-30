@@ -341,7 +341,7 @@ function cuny_members_pagination_count($member_name) {
     $to_num = bp_core_number_format(( $start_num + ( $members_template->pag_num - 1 ) > $members_template->total_member_count ) ? $members_template->total_member_count : $start_num + ( $members_template->pag_num - 1 ) );
     $total = bp_core_number_format($members_template->total_member_count);
 
-    $pag = sprintf(__('%1$s to %2$s (of %3$s members)', 'buddypress'), $from_num, $to_num, $total);
+    $pag = sprintf('%1$s až %2$s (z %3$s uživatelů)', $from_num, $to_num, $total);
     echo $pag;
 }
 
@@ -506,9 +506,9 @@ function cuny_student_profile() {
 
     <div id="member-item-body" class="row">
 
-        <?php echo cuny_profile_activty_block('course', 'My Courses', '', 25); ?>
-        <?php echo cuny_profile_activty_block('project', 'My Projects', ' last', 25); ?>
-        <?php echo cuny_profile_activty_block('club', 'My Clubs', ' last', 25); ?>
+        <?php echo cuny_profile_activty_block('course', 'Moje kurzy', '', 25); ?>
+        <?php echo cuny_profile_activty_block('project', 'Moje projekty', ' last', 25); ?>
+        <?php echo cuny_profile_activty_block('club', 'Moje skupiny', ' last', 25); ?>
 
         <script type='text/javascript'>(function ($) {
                 $('.activity-list').css('visibility', 'hidden');
@@ -644,12 +644,12 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                             if ($type != "course") {
                                 if ($bp->loggedin_user->id == $bp->displayed_user->id) {
                                     ?>
-                                    Na Open Lab doposud nejste připojeni do žádné skupiny typu <?php _ex( $type,'1M','openlab'); ?>. Proč si <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">nevytvořit vlastní skupinu typu <?php echo $type; ?></a>?
+                                    Na portále Open Lab  nejste doposud připojeni k <?php _ex( $type,'3J-žádný','openlab'); ?>. Proč si <a href="<?php echo site_url(); ?>/groups/create/step/group-details/?type=<?php echo $type; ?>&new=true">nevytvořit vlastní skupinu typu <?php echo $type; ?></a>?
                                     <?php
                                 } else {
                                     echo $bp->displayed_user->fullname;
                                     ?>
-                                    nevytvořil ani se doposud nepřipojil k žádné skupině typu <?php _ex( $type,'1M','openlab'); ?>.
+                                    nevytvořil ani se doposud nepřipojil k  <?php _ex( $type,'3J-žádný','openlab'); ?>.
                                     <?php
                                 }
                             } else {
@@ -660,7 +660,7 @@ function cuny_profile_activty_block($type, $title, $last, $desc_length = 135) {
                                 } else {
                                     echo $bp->displayed_user->fullname;
                                     ?>
-                                    dosud se nepřipojil k žádné skupině typu <?php _ex( $type,'1M','openlab'); ?>.
+                                    se dosud nepřipojil k <?php _ex( $type,'3J-žádný','openlab'); ?>.
                                     <?php
                                 }
                             }
@@ -857,21 +857,21 @@ function cuny_member_profile_header() {
 function openlab_custom_add_friend_button($button) {
 
     if ($button['id'] == 'not_friends') {
-        $button['link_text'] = '<span class="pull-left"><i class="fa fa-user no-margin no-margin-left" aria-hidden="true"></i> Add Friend</span><i class="fa fa-plus-circle pull-right no-margin no-margin-right" aria-hidden="true"></i>';
+        $button['link_text'] = '<span class="pull-left"><i class="fa fa-user no-margin no-margin-left" aria-hidden="true"></i> Požádat o přátelství</span><i class="fa fa-plus-circle pull-right no-margin no-margin-right" aria-hidden="true"></i>';
         if (bp_current_action() == 'my-friends') {
             $button['link_class'] = $button['link_class'] . ' btn btn-primary btn-xs link-btn clearfix';
         } else {
             $button['link_class'] = $button['link_class'] . ' btn btn-default btn-block btn-primary link-btn clearfix';
         }
     } else if ($button['id'] == 'pending') {
-        $button['link_text'] = '<span class="pull-left"><i class="fa fa-user no-margin no-margin-left" aria-hidden="true"></i> Čekající přítel</span><i class="fa fa-clock-o pull-right no-margin no-margin-right" aria-hidden="true"></i>';
+        $button['link_text'] = '<span class="pull-left"><i class="fa fa-user no-margin no-margin-left" aria-hidden="true"></i> Čekám na přijetí přátelství</span><i class="fa fa-clock-o pull-right no-margin no-margin-right" aria-hidden="true"></i>';
         if (bp_current_action() == 'my-friends') {
             $button['link_class'] = $button['link_class'] . ' btn btn-primary btn-xs link-btn clearfix';
         } else {
             $button['link_class'] = $button['link_class'] . ' btn btn-default btn-block btn-primary link-btn clearfix';
         }
     } else {
-        $button['link_text'] = '<span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i> Přítel</span><i class="fa fa-check-circle pull-right" aria-hidden="true"></i>';
+        $button['link_text'] = '<span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i> Je můj přítel</span><i class="fa fa-check-circle pull-right" aria-hidden="true"></i>';
         if (bp_current_action() == 'my-friends') {
             $button['link_class'] = $button['link_class'] . ' btn btn-primary btn-xs link-btn clearfix';
         } else {

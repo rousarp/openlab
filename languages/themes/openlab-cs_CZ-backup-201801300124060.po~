@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Blank Pot v1.0.0\n"
-"POT-Creation-Date: 2018-01-29 16:59+0000\n"
-"PO-Revision-Date: 2018-01-29 17:00+0000\n"
+"POT-Creation-Date: 2018-01-30 00:42+0000\n"
+"PO-Revision-Date: 2018-01-30 00:43+0000\n"
 "Last-Translator: admin <admin@urad.online>\n"
 "Language-Team: Czech\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
@@ -24,13 +24,49 @@ msgstr ""
 "Language: cs-CZ\n"
 "X-Generator: Loco - https://localise.biz/"
 
-msgctxt "1M"
-msgid "people"
-msgstr "lidé"
+msgctxt "2J-vy"
+msgid "portfolio"
+msgstr "vašeho portfolia"
 
-msgctxt "1M"
-msgid "People"
-msgstr "Lidé"
+msgctxt "2J-tento"
+msgid "portfolio"
+msgstr "tohoto portfolia"
+
+msgctxt "1J-soukromý"
+msgid "portfolio"
+msgstr "soukromé portfolio"
+
+msgctxt "1J-veřejný"
+msgid "portfolio"
+msgstr "veřejné portfolio"
+
+msgctxt "1J-skrytý"
+msgid "portfolio"
+msgstr "skryté portfolio"
+
+msgctxt "2J-soukromý"
+msgid "portfolio"
+msgstr "soukromého portfolia"
+
+msgctxt "2J-veřejný"
+msgid "portfolio"
+msgstr "veřejného portfolia"
+
+msgctxt "2J-skrytý"
+msgid "portfolio"
+msgstr "skrytého portfolia"
+
+msgctxt "1J-tento"
+msgid "portfolio"
+msgstr "toto portfolio"
+
+msgctxt "4J-vy"
+msgid "portfolio"
+msgstr "vaše portfolio"
+
+msgctxt "3J-žádný"
+msgid "portfolio"
+msgstr "žádnému portfoliu"
 
 msgctxt "1M"
 msgid "project"
@@ -261,157 +297,141 @@ msgid "project"
 msgstr "vašeho projektu"
 
 msgctxt "2J-vy"
-msgid "curse"
+msgid "course"
 msgstr "vašeho kurzu"
 
 msgctxt "2J-vy"
 msgid "club"
 msgstr "vaší skupiny"
 
-msgctxt "2J-vy"
-msgid "porfolio"
-msgstr "vašeho portfolia"
-
 msgctxt "2J-tento"
 msgid "project"
 msgstr "tohoto projektu"
 
 msgctxt "2J-tento"
-msgid "curse"
+msgid "course"
 msgstr "tohoto kurzu"
 
 msgctxt "2J-tento"
 msgid "club"
 msgstr "této skupiny"
 
-msgctxt "2J-tento"
-msgid "porfolio"
-msgstr "tohoto portfolia"
-
 msgctxt "1J-soukromý"
 msgid "project"
 msgstr "Soukromý projekt"
 
 msgctxt "1J-soukromý"
-msgid "curse"
-msgstr "Soukromý kurz"
+msgid "course"
+msgstr "soukromý kurz"
 
 msgctxt "1J-soukromý"
 msgid "club"
 msgstr "Soukromá skupina"
-
-msgctxt "1J-soukromý"
-msgid "porfolio"
-msgstr "Soukromé porfolio"
 
 msgctxt "1J-veřejný"
 msgid "project"
 msgstr "Veřejný projekt"
 
 msgctxt "1J-veřejný"
-msgid "curse"
-msgstr "Veřejný kurz"
+msgid "course"
+msgstr "veřejný kurz"
 
 msgctxt "1J-veřejný"
 msgid "club"
 msgstr "Veřejná skupina"
-
-msgctxt "1J-veřejný"
-msgid "porfolio"
-msgstr "Veřejné portfolio"
 
 msgctxt "1J-skrytý"
 msgid "project"
 msgstr "Skrytý projekt"
 
 msgctxt "1J-skrytý"
-msgid "curse"
-msgstr "Skrytý kurz"
+msgid "course"
+msgstr "skrytý kurz"
 
 msgctxt "1J-skrytý"
 msgid "club"
 msgstr "Skrytá skupina"
-
-msgctxt "1J-skrytý"
-msgid "porfolio"
-msgstr "Skryté portfolio"
 
 msgctxt "2J-soukromý"
 msgid "project"
 msgstr "soukromého projektu"
 
 msgctxt "2J-soukromý"
-msgid "curse"
+msgid "course"
 msgstr "soukromého kurzu"
 
 msgctxt "2J-soukromý"
 msgid "club"
 msgstr "soukromé skupiny"
 
-msgctxt "2J-soukromý"
-msgid "porfolio"
-msgstr "soukromého portfolia"
-
 msgctxt "2J-veřejný"
 msgid "project"
 msgstr "veřejného projektu"
 
 msgctxt "2J-veřejný"
-msgid "curse"
+msgid "ourse"
 msgstr "veřejného kurzu"
 
 msgctxt "2J-veřejný"
 msgid "club"
 msgstr "veřejné skupiny"
 
-msgctxt "2J-veřejný"
-msgid "porfolio"
-msgstr "veřejného portfolia"
-
 msgctxt "2J-skrytý"
 msgid "project"
 msgstr "skrytého projektu"
 
 msgctxt "2J-skrytý"
-msgid "curse"
+msgid "course"
 msgstr "skrytého kurzu"
 
 msgctxt "2J-skrytý"
 msgid "club"
 msgstr "skryté skupiny"
 
-msgctxt "2J-skrytý"
-msgid "porfolio"
-msgstr "skrytého portfolia"
-
 msgctxt "1J-tento"
 msgid "project"
 msgstr "tento projekt"
 
 msgctxt "1J-tento"
-msgid "curse"
+msgid "course"
 msgstr "tento kurz"
 
 msgctxt "1J-tento"
 msgid "club"
 msgstr "tato skupina"
 
-msgctxt "1J-tento"
-msgid "porfolio"
-msgstr "toto portfolio"
-
 msgctxt "4J-vy"
 msgid "project"
 msgstr "váš projekt"
 
 msgctxt "4J-vy"
-msgid "curse"
+msgid "course"
 msgstr "váš kurz"
 
 msgctxt "4J-vy"
 msgid "club"
 msgstr "vaší skupinu"
 
-msgctxt "4J-vy"
-msgid "porfolio"
-msgstr "vaše portfolio"
+msgctxt "1M"
+msgid "people"
+msgstr "lidé"
+
+msgctxt "1M"
+msgid "People"
+msgstr "Lidé"
+
+msgctxt "6M"
+msgid "not-archive"
+msgstr "seznamu uživatelů"
+
+msgctxt "3J-žádný"
+msgid "project"
+msgstr "žádnému projektu"
+
+msgctxt "3J-žádný"
+msgid "course"
+msgstr "žádnému kurzu"
+
+msgctxt "3J-žádný"
+msgid "club"
+msgstr "žádné skupině"

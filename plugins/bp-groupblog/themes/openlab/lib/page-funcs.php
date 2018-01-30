@@ -527,7 +527,7 @@ function openlab_registration_page() {
                 <?php do_action('bp_before_registration_submit_buttons') ?>
 
                 <p class="sign-up-terms">
-                  Kliknutím na tlačítko 'Dokončit registraci' souhlasím <a class="underline" href="<?php echo home_url('about/terms-of-service') ?>" target="_blank">s Podmínkami použití na OpenLab </a> a <a class="underline" href="http://cuny.edu/website/privacy.html" target="_blank">a s podmínkami ochrany osobních údajů</a>.
+                  Kliknutím na tlačítko 'Dokončit registraci' souhlasím <a class="underline" href="<?php echo home_url('about/terms-of-service') ?>" target="_blank">s Podmínkami použití na portále OpenLab </a> a <a class="underline" href="http://cuny.edu/website/privacy.html" target="_blank">a s podmínkami ochrany osobních údajů</a>.
                 </p>
 
                 <p id="submitSrMessage" class="sr-only submit-alert" aria-live="polite"></p>

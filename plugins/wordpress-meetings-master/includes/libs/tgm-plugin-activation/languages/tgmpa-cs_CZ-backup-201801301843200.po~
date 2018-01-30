@@ -1,18 +1,18 @@
+# Translation of TGM Plugin Activation in Czech.
+# This file is distributed under the same license as the TGMPA package.
 msgid ""
 msgstr ""
 "Project-Id-Version: TGM Plugin Activation v2.6.1\n"
 "POT-Creation-Date: 2016-05-19 02:57+0200\n"
-"PO-Revision-Date: 2018-01-30 18:43+0000\n"
-"Last-Translator: admin <admin@urad.online>\n"
-"Language-Team: Czech\n"
-"Language: cs-CZ\n"
+"PO-Revision-Date: 2016-05-19 02:58+0200\n"
+"Last-Translator: Karolína Vyskočilová <karolina@kybernaut.cz>\n"
+"Language-Team: Karolína Vyskočilová <karolina@kybernaut.cz>\n"
+"Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
-"2\n"
-"X-Generator: Loco - https://localise.biz/\n"
-"Report-Msgid-Bugs-To: "
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Poedit 1.8.7\n"
 
 #: class-tgm-plugin-activation.php:334
 msgid "Install Required Plugins"
@@ -32,7 +32,7 @@ msgstr "Instaluji plugin: %s"
 #: class-tgm-plugin-activation.php:339
 #, php-format
 msgid "Updating Plugin: %s"
-msgstr "Aktualizace pluginu: %s"
+msgstr "Aktualizace pluginu:%s"
 
 #: class-tgm-plugin-activation.php:340
 msgid "Something went wrong with the plugin API."
@@ -178,8 +178,8 @@ msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
-"Existuje jeden nebo více požadovaných nebo dorporučených pluginů k instalaci,"
-" aktualizaci nebo aktivaci."
+"Existuje jeden nebo více požadovaných nebo dorporučených pluginů k "
+"instalaci, aktualizaci nebo aktivaci."
 
 #: class-tgm-plugin-activation.php:404
 msgid "Please contact the administrator of this site for help."

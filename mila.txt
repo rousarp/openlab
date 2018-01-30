@@ -14,3 +14,5 @@ git reset origin/master
 
 # poznámka
 # zmena na serveru v pavel-dev
+
+git clone xxxxx.git .

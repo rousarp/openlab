@@ -1,0 +1,13 @@
+Mala dalsi udelana jinde zmena.
+git init
+git remote add origin PATH/TO/REPO
+git fetch
+git reset origin/master  # this is required if files in the non-empty directory are in the repo
+git checkout -t origin/master
+
+git init
+git remote add origin https://github.com/rousarp/openlab
+git fetch origin
+git checkout -b master --track origin/master
+
+git reset origin/master

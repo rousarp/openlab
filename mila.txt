@@ -11,3 +11,5 @@ git fetch origin
 git checkout -b master --track origin/master
 
 git reset origin/master
+
+# poznámka

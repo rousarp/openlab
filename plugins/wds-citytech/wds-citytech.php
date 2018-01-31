@@ -2793,7 +2793,7 @@ class buddypress_Translation_Mangler {
 				return $translations->translate( 'Create a ' . $uc_grouptype );
 				break;
 			case 'Manage' :
-				return $translations->translate( 'Nastavení' );
+				return $translations->translate( 'Detailný nastavení' );
 				break;
 		}
 		return $translation;
@@ -2816,7 +2816,7 @@ function openlab_gettext_with_context( $translations, $text, $context, $domain )
 	switch ( $text ) {
 		case 'Manage' :
 			if ( 'My Group screen nav' === $context ) {
-				return 'Nastavení';
+				return 'Podrobná nastavení';
 			}
 			break;
 	}

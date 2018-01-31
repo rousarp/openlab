@@ -20,7 +20,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
             <?php else: ?>
 
-                <div class="submenu-text pull-left bold"><?php echo $group_label_uc ?> Nastavení:</div>
+                <div class="submenu-text pull-left bold">Nastavení <?php echo _x(strtolower($group_label_uc),'2J', 'openlab') . ': '; ?></div>
                 <ul class="nav nav-inline">
                     <?php openlab_group_admin_tabs(); ?>
                 </ul>
@@ -221,8 +221,8 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
                                 </p>
 
                                 <?php if (bp_get_user_has_avatar()) : ?>
-                                    <p class="italics"><?php _e("If you'd like to remove the existing avatar but not upload a new one, please use the delete avatar button.", 'buddypress') ?></p>
-                                    <a class="btn btn-primary no-deco" href="<?php echo bp_get_group_avatar_delete_link() ?>" title="<?php _e('Smazat náhledový obrázek', 'buddypress') ?>"><?php _e('Delete Avatar', 'buddypress') ?></a>
+                                    <p class="italics"><?php echo("Chcete-li odstranit stávající ilustrační obrázek, ale nový nenahrát, použijte tlačítko Odstranit ilustrační obrázek.") ?></p>
+                                    <a class="btn btn-primary no-deco" href="<?php echo bp_get_group_avatar_delete_link() ?>" title="<?php echo('Smazat ilustrační obrázek') ?>"><?php echo('Odstranit ilustrační obrázek') ?></a>
                                 <?php endif; ?>
 
         <?php wp_nonce_field('bp_avatar_upload') ?>

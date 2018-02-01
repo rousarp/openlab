@@ -3,6 +3,7 @@ global $bp, $wp_query;
 $post_obj = $wp_query->get_queried_object();
 $group_type = openlab_page_slug_to_grouptype();
 $group_slug = $group_type . 's';
+global $bpcgc_color;
 
 //conditional for people archive sidebar
 if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
@@ -187,6 +188,7 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
 
                             <div class="custom-select">
                                 <label for="bp-group-categories-select" class="sr-only">Zvolte kategorii</label>
+
                                 <select name="cat" class="last-select <?php echo $bpcgc_color; ?>-text" id="bp-group-categories-select">
                                     <option value="" <?php selected('', $option_value_bpcgc) ?>>Zvolte kategorii</option>
                                     <option value='cat_all' <?php selected('cat_all', $option_value_bpcgc) ?>>Libovolná kategorie</option>

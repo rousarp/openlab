@@ -320,7 +320,7 @@ function openlab_group_archive() {
         </div>
         <div id="group-list" class="item-list row">
             <div class="widget-error query-no-results col-sm-24">
-                <p class="bold"><?php _e('Nejsou k dispozici žádné ' . $group_type . 'k zobrazení.', 'buddypress') ?></p>
+                <p class="bold"><?php _e('Nejsou k dispozici žádné ' . _x($group_type,'1M','openlab') . ' k zobrazení.', 'buddypress') ?></p>
             </div>
         </div>
 
@@ -633,7 +633,7 @@ function cuny_group_single() {
                     </div>
                 <?php endif; ?>
                 <?php openlab_render_message(); ?>
-        </div><!-- #<?php echo $group_type; ?>-header-avatar -->
+        </div><!-- #<?php echo _x($group_type,'1J','openlab'); ?>-header-avatar XXXX -->
 
             <div id="<?php echo $group_type; ?>-header-content" class="col-sm-16 col-xs-24 alignleft group-header-content group-<?php echo $group_id; ?>">
 
@@ -739,9 +739,9 @@ function cuny_group_single() {
 					<?php /* This won't work at all for l10n */ ?>
 					<?php
 					if ( 1 === count( $group_contacts ) ) {
-						$gc_label = sprintf( 'Kontakt', ucwords( $group_type ) );
+						$gc_label = sprintf( 'Kontakt ', _x( $group_type, '2J','openlab' ) );
 					} else {
-						$gc_label = sprintf( 'Kontakty', ucwords( $group_type ) );
+						$gc_label = sprintf( 'Kontakty ', _x( $group_type, '2J','openlab' ) );
 					}
 					?>
 					<div class="bold col-sm-7"><?php echo $gc_label ?></div>
@@ -766,7 +766,7 @@ function cuny_group_single() {
 
             <?php do_action('bp_after_group_header') ?>
 
-        </div><!--<?php echo $group_type; ?>-header -->
+        </div><!--<?php echo _x($group_type, '1J','openlab'); ?>-header XXXX-->
 
     <?php endif; ?>
 

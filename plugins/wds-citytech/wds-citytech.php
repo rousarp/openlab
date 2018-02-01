@@ -2617,7 +2617,7 @@ add_action( 'bp_actions', 'openlab_redirect_from_site_creation' );
 /**
  * Load custom language file for BP Group Documents
  */
-load_textdomain( 'bp-group-documents', WP_CONTENT_DIR . '/languages/buddypress-group-documents-en_CAC.mo' );
+load_textdomain( 'bp-group-documents', WP_CONTENT_DIR . '/languages/buddypress-group-documents-cs_CZ.mo' );
 
 /**
  * Allow super admins to change user type on Dashboard
@@ -2793,7 +2793,7 @@ class buddypress_Translation_Mangler {
 				return $translations->translate( 'Create a ' . $uc_grouptype );
 				break;
 			case 'Manage' :
-				return $translations->translate( 'Nastavení' );
+				return $translations->translate( 'Detailný nastavení' );
 				break;
 		}
 		return $translation;
@@ -2816,7 +2816,7 @@ function openlab_gettext_with_context( $translations, $text, $context, $domain )
 	switch ( $text ) {
 		case 'Manage' :
 			if ( 'My Group screen nav' === $context ) {
-				return 'Nastavení';
+				return 'Podrobná nastavení';
 			}
 			break;
 	}

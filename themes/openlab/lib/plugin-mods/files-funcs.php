@@ -39,7 +39,7 @@ function openlab_bp_group_documents_display_content() {
             <?php if (get_option('bp_group_documents_use_categories')) { ?>
                 <div id="bp-group-documents-categories">
                     <form id="bp-group-documents-category-form" method="get" action="<?php echo $template->action_link; ?>">
-                        &nbsp; <?php echo __('Category:', 'bp-group-documents'); ?>
+                        <?php echo __('Category:', 'bp-group-documents'); ?>
                         <select name="category">
                             <option value="" ><?php echo __('All', 'bp-group-documents'); ?></option>
                             <?php foreach ($template->get_group_categories() as $category) { ?>

@@ -2617,7 +2617,7 @@ add_action( 'bp_actions', 'openlab_redirect_from_site_creation' );
 /**
  * Load custom language file for BP Group Documents
  */
-load_textdomain( 'bp-group-documents', WP_CONTENT_DIR . '/languages/buddypress-group-documents-en_CAC.mo' );
+load_textdomain( 'bp-group-documents', WP_CONTENT_DIR . '/languages/buddypress-group-documents-cs_CZ.mo' );
 
 /**
  * Allow super admins to change user type on Dashboard

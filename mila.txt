@@ -17,3 +17,4 @@ jeste si udelam lokalni upravu. jeste neco k tomu vcetne serveru.
 # zmena na serveru v pavel-dev
 
 git clone xxxxx.git .
+poznámka pavla

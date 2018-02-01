@@ -95,14 +95,14 @@
         if ($this_topic_index < $last_topic_index) {
             $prev_topic_id = $group_topics->posts[$this_topic_index + 1];
             $prev_url = get_permalink($prev_topic_id);
-            $prev_link = '<a class="btn btn-primary link-btn" href="' . $prev_url . '"><span class="fa fa-chevron-circle-left"></span> Previous Topic</a>';
+            $prev_link = '<a class="btn btn-primary link-btn" href="' . $prev_url . '"><span class="fa fa-chevron-circle-left"></span> Předchozí téma</a>';
         }
 
         // Next is -1.
         if ($this_topic_index > 0) {
             $next_topic_id = $group_topics->posts[$this_topic_index - 1];
             $next_url = get_permalink($next_topic_id);
-            $next_link = '<a class="btn btn-primary link-btn"  href="' . $next_url . '">Next Topic <span class="fa fa-chevron-circle-right"></span></a>';
+            $next_link = '<a class="btn btn-primary link-btn"  href="' . $next_url . '">Další téma <span class="fa fa-chevron-circle-right"></span></a>';
         }
         ?>
 

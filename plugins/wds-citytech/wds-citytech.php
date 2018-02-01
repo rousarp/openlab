@@ -2769,7 +2769,7 @@ class buddypress_Translation_Mangler {
 				return $translations->translate( 'Forum' );
 				break;
 			case 'Group Forum':
-				return $translations->translate( "$uc_grouptype Discussion" );
+				return $translations->translate( "Témata diskuse " . _x(strtolower($uc_grouptype),'2J','openlab') );
 				break;
 			case 'Group Forum Directory':
 				return $translations->translate( '' );

@@ -106,7 +106,7 @@ class WP_Taxonomy {
 	 * @package WordPress
 	 * @subpackage Taxonomy
 	 * @since 2.3.0
-	 * 
+	 *
 	 * @uses $this->taxonomies
 	 *
 	 * @param string $taxonomy Name of taxonomy object
@@ -169,7 +169,7 @@ class WP_Taxonomy {
 	 * @subpackage Taxonomy
 	 * @since 2.3.0
 	 * @uses $this->taxonomies Inserts new taxonomy object into the list
-	 * 
+	 *
 	 * @param string $taxonomy Name of taxonomy object
 	 * @param string $object_type Name of the object type for the taxonomy object.
 	 * @param array|string $args See above description for the two keys values.
@@ -391,7 +391,7 @@ class WP_Taxonomy {
 	 * array of term IDs. Only useful for taxonomies which are hierarchical.
 	 *
 	 * Will return an empty array if $term does not exist in $taxonomy.
-	 * 
+	 *
 	 * @package WordPress
 	 * @subpackage Taxonomy
 	 * @since 2.3.0
@@ -463,7 +463,7 @@ class WP_Taxonomy {
 	 *
 	 * Return value is sanitize_term() and usage is for sanitizing the term for
 	 * editing. Function is for contextual and simplicity.
-	 * 
+	 *
 	 * @package WordPress
 	 * @subpackage Taxonomy
 	 * @since 2.3.0
@@ -827,7 +827,7 @@ class WP_Taxonomy {
 	function is_term($term, $taxonomy = '', $parent = 0) {
 		$select = "SELECT term_id FROM {$this->db->terms} as t WHERE ";
 		$tax_select = "SELECT tt.term_id, tt.term_taxonomy_id FROM {$this->db->terms} AS t INNER JOIN {$this->db->term_taxonomy} as tt ON tt.term_id = t.term_id WHERE ";
-		
+
 		if ( is_int($term) ) {
 			if ( 0 == $term )
 				return 0;
@@ -1845,7 +1845,7 @@ class WP_Taxonomy {
 	 *
 	 * @param string|array $object_ids Single or list of term object ID(s)
 	 * @param string $object_type The taxonomy object type
-	 * @return null|bool Null value is given with empty $object_ids. False if 
+	 * @return null|bool Null value is given with empty $object_ids. False if
 	 */
 	function update_object_term_cache($object_ids, $object_type) {
 		if ( empty($object_ids) )

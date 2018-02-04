@@ -20,8 +20,10 @@ function openlab_custom_page($slug, $title, $parent_obj = NULL) {
 
         $ancestor_path = array();
         foreach ($parent_obj as $parent) {
-            $ancestor_path[] = $parent->post_name;
-            $parent_id = $parent->ID;
+            if ( ! is_null($parent)) {
+                $ancestor_path[] = $parent->post_name;
+                $parent_id = $parent->ID;
+            }
         }
 
         $check_path = implode('/', $ancestor_path) . '/' . $slug;

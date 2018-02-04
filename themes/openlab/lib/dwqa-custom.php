@@ -46,7 +46,13 @@
     }
 
     function bp_get_dw_questions_user_slug(){
-      return "http://multi.openlab.dev/dwqa-questions/?user=" . get_user_by('id', bp_displayed_user_id())->user_login;
+        $user_id = bp_displayed_user_id();
+        if ( $user_id > 0 ) {
+            return  get_site_url( 1 ,"/dwqa-questions/?user=", "http"). get_user_by('id', $user_id)->user_login;
+        } else {
+            return  get_site_url( 1 ,"/dwqa-questions", "http");
+        }
+    //   return "http://multi.openlab.dev/dwqa-questions/?user=" . get_user_by('id', bp_displayed_user_id())->user_login;
     }
 
     function questions_list() {

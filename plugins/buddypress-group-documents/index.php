@@ -162,7 +162,7 @@ function bp_group_documents_check_installed() {
 	//Add the component's administration tab under the "BuddyPress" menu for site administrators
 	require (dirname(__FILE__) . '/include/admin.php');
 
-	add_submenu_page( 'bp-general-settings', __( 'Group Documents Admin', 'bp-group-documents' ), __( 'Group Documents', 'bp-group-documents' ), 'manage_options', 'bp-group-documents-settings', 'bp_group_documents_admin' );
+	add_submenu_page( 'options-general.php', __( 'Group Documents Admin', 'bp-group-documents' ), __( 'Group Documents', 'bp-group-documents' ), 'manage_options', 'bp-group-documents-settings', 'bp_group_documents_admin' );
 
 
 	/* Need to check db tables are current */
@@ -315,8 +315,7 @@ function bp_group_documents_display_content() {
 
 		<?php if( get_option('bp_group_documents_use_categories')) { ?>
 		<div id="bp-group-documents-categories">
-			<form id="bp-group-documents-category-form" method="get" action="<?php echo $template->action_link; ?>">
-			 &nbsp; <?php echo __('Category:','bp-group-documents'); ?>
+			<form id="bp-group-documents-category-form" method="get" action="<?php echo $template->action_link; ?>"><?php echo __('Category:','bp-group-documents'); ?>
 			<select name="category">
 				<option value="" ><?php echo __('All','bp-group-documents'); ?></option>
 				<?php foreach( $template->get_group_categories() as $category ) { ?>

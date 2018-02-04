@@ -14,3 +14,7 @@ git reset origin/master
 
 jeste si udelam lokalni upravu. jeste neco k tomu vcetne serveru.
 # poznámka
+# zmena na serveru v pavel-dev
+
+git clone xxxxx.git .
+poznámka pavla

@@ -20,7 +20,7 @@ $group_label_uc = openlab_get_group_type_label('case=upper');
 
             <?php else: ?>
 
-                <div class="submenu-text pull-left bold"><?php echo $group_label_uc ?> Nastavení:</div>
+                <div class="submenu-text pull-left bold">Nastavení <?php echo _x(strtolower($group_label_uc),'2J', 'openlab') . ': '; ?></div>
                 <ul class="nav nav-inline">
                     <?php openlab_group_admin_tabs(); ?>
                 </ul>

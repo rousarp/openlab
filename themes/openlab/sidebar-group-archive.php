@@ -11,7 +11,7 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
     $group_slug = $group_type;
     $sidebar_title = 'Hledání osob';
 } else {
-    $sidebar_title = 'Hledání v ' . _x($group_type,'6M','openlab');
+    $sidebar_title = 'Hledání ' . ucfirst($group_type);
 }
 ?>
 
@@ -188,8 +188,7 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
 
                             <div class="custom-select">
                                 <label for="bp-group-categories-select" class="sr-only">Zvolte kategorii</label>
-
-                                <select name="cat" class="last-select <?php echo $bpcgc_color; ?>-text" id="bp-group-categories-select">
+                                <select name="cat" class="last-select <?php echo $dept_color; ?>-text" id="bp-group-categories-select">
                                     <option value="" <?php selected('', $option_value_bpcgc) ?>>Zvolte kategorii</option>
                                     <option value='cat_all' <?php selected('cat_all', $option_value_bpcgc) ?>>Libovolná kategorie</option>
                                     <?php foreach ($group_terms as $term) : ?>

@@ -1381,7 +1381,7 @@ HTML;
             global $wpdb;
 
             //getting the theme folder for the main site
-            $main_site_theme = $wpdb->get_var('SELECT option_value FROM wp_options WHERE option_name = "template"');
+            $main_site_theme = $wpdb->get_var('SELECT option_value FROM '.$wpdb->prefix.'options WHERE option_name = "template"');
 
 //nefunguje, nastaveno na openlab �ablonu
 //	    $main_site_theme = "openlab";

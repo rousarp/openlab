@@ -971,7 +971,9 @@ function openlab_trim_member_name($name) {
 
     $trim_switch = false;
 
-    if ($post->post_name == 'people' || $bp->current_action == 'members') {
+    // MST UPDATE 2018/01/28
+    if ( (! empty( $post->post_name) && ($post->post_name == 'people')) || ( ! empty( $post->post_name) && ($bp->current_action == 'members')) ) {
+    // if ( $post->post_name == 'people' || $bp->current_action == 'members' ) {
         $trim_switch = true;
     }
 

@@ -25,7 +25,8 @@
 
 class AjaxThumbnailRebuild {
 
-	function AjaxThumbnailRebuild() {
+	// function AjaxThumbnailRebuild() {
+	function __construct() {
 		add_action( 'admin_menu', array(&$this, 'addAdminMenu') );
 		add_filter( 'attachment_fields_to_edit', array(&$this, 'addRebuildSingle'), 10, 2 );
 	}
@@ -37,7 +38,7 @@ class AjaxThumbnailRebuild {
 
 	/**
 	 * Add rebuild thumbnails button to the media page
-	 * 
+	 *
 	 * @param array $fields
 	 * @param object $post
 	 * @return array
@@ -277,7 +278,7 @@ function ajax_thumbnail_rebuild_get_sizes() {
 		$sizes[$s]['name'] = $s;
 
 		if ( isset( $_wp_additional_image_sizes[$s]['width'] ) )
-			$sizes[$s]['width'] = intval( $_wp_additional_image_sizes[$s]['width'] ); 
+			$sizes[$s]['width'] = intval( $_wp_additional_image_sizes[$s]['width'] );
 		else
 			$sizes[$s]['width'] = get_option( "{$s}_size_w" );
 

@@ -494,7 +494,7 @@ class Openlab_Breadcrumb {
      */
     function get_term_parents($parent_id, $taxonomy, $link = false, $visited = array()) {
 
-        $parent = &get_term((int) $parent_id, $taxonomy);
+        $parent = get_term((int) $parent_id, $taxonomy);
 
         if (is_wp_error($parent))
             return array();

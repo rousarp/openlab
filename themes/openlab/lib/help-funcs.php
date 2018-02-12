@@ -324,6 +324,7 @@ function openlab_help_cats_loop() {
                 <ul>
                     <?php
                     while ($child_query->have_posts()) : $child_query->the_post();
+                    $post_id = get_the_ID();
                         ?>
                         <li>
                             <h3 class="help-title no-margin no-margin-bottom"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>

@@ -68,8 +68,8 @@
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-24214531-1']);
-        _gaq.push(['_setDomainName', 'openlab.citytech.cuny.edu']);
+        _gaq.push(['_setAccount', 'UA-114674529-1']);
+        _gaq.push(['_setDomainName', 'lab.urad.online']);
         _gaq.push(['_trackPageview']);
 
         (function () {

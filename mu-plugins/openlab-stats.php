@@ -218,7 +218,7 @@ class OpenLab_Stats {
 				'section_number' => '',
 				'faculty_name' => trim( $course->faculty_name ),
 				'active' => '',
-				'course_profile_link' => 'http://lab.urad.online/groups/' . $course->slug,
+				'course_profile_link' => 'http://openlab.citytech.cuny.edu/groups/' . $course->slug,
 				'external_site_url' => openlab_get_external_site_url_by_group_id( $course->id ),
 				'last_active' => $wpdb->get_var( $wpdb->prepare( "SELECT date_recorded FROM {$bp->activity->table_name} WHERE component = 'groups' AND item_id = %d ORDER BY date_recorded DESC LIMIT 1", $course->id ) ),
 			);

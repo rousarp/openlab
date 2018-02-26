@@ -149,6 +149,7 @@ class CAC_NCS_Schema {
 
 	function __construct() {
 		$this->post_type_name = 'cac_ncs_code';
+		$pom = admin_url('admin-ajax.php');
 
 		add_action( 'init', array( $this, 'register_post_type' ), 99 );
 		add_action( 'admin_init', array( $this, 'add_meta_boxes' ) );
@@ -157,6 +158,7 @@ class CAC_NCS_Schema {
 		add_action( 'admin_print_scripts', array( $this, 'admin_scripts' ) );
 		add_action( 'admin_print_styles', array( $this, 'admin_styles' ) );
 		add_action( 'wp_ajax_cac_ncs_groups_query', array( $this, 'cac_ncs_groups_query' ) );
+		add_action( 'wp_ajax_nopriv_cac_ncs_groups_query', array( $this, 'cac_ncs_groups_query' ) );
 	}
 
 	function register_post_type() {
@@ -199,7 +201,10 @@ class CAC_NCS_Schema {
 	function group_meta_box_render() {
 		global $post;
 
+		// add_groups_to_code(767, "2,12");
+
 		$groups = isset( $post->ID ) ? get_post_meta( $post->ID, 'cac_ncs_groups', true ) : array();
+
 
 		if ( !$groups )
 			$groups = array();
@@ -305,6 +310,7 @@ class CAC_NCS_Schema {
 		if ( isset( $post->post_type ) && $this->post_type_name == $post->post_type ) {
 			wp_enqueue_script( 'suggest' );
 			wp_enqueue_script( 'cac_ncs_js', WP_CONTENT_URL . '/plugins/cac-non-cuny-signup/js/admin.js', array( 'jquery', 'suggest' ) );
+			wp_localize_script('cac_ncs_js', 'ajax_object_mila', array('ajax_url' => admin_url('admin-ajax.php')));
 		}
 	}
 
@@ -353,3 +359,11 @@ class CAC_NCS_Schema {
 
 }
 $cac_ncs_schema = new CAC_NCS_Schema;
+
+function add_groups_to_code( $id = 0, $groups_string)
+{
+
+	if ( $id > 0 ) {
+		update_post_meta( $id, 'cac_ncs_groups', explode( ",", $groups_string ));
+	}
+}

@@ -1,16 +1,64 @@
 jQuery(document).ready(function($) {
-	$('input#cac_ncs_groups').autocomplete( { 
-		serviceUrl: ajaxurl,
-		params: {
-			'action' : 'cac_ncs_groups_query'
+	console.log("MST jsem ve funkci dicument");
+	var mojeurl = ajax_object_mila.ajax_url;
+	var listy = "";
+
+	var ajaxRequest = {
+		url:  mojeurl,
+		data: {
+			action: 'cac_ncs_groups_query',
+			query: 't',
+		},
+	};
+
+	var mojeoptions = [
+		"Klara",
+		"Kleopatra",
+		"Petra",
+		"Petr",
+		"Adam",
+		"Alena"
+	];
+	jQuery('input#cac_ncs_groups').autocomplete( {
+		source: mojeoptions,
+		minLength: 1
+	});
+
+	jQuery('input#cac_ncs_groups').autocomplete("disable");
+
+
+	// jQuery.ajax( ajaxRequest ).done( function(response, status) {
+	// 	listy = response ;
+	// });
+
+	jQuery('input#cac_ncs_groups_a').autocomplete( {
+		// serviceUrl: ajaxurl,
+		// serviceUrl: mojeurl,
+		// params: {
+		// 	'action' : 'cac_ncs_groups_query'
+		// },
+		source: function(request, response) {
+			var ajaxRequest = {
+				url:  mojeurl,
+				data: {
+					action: 'cac_ncs_groups_query',
+					query: request.term,
+				},
+			};
+console.log("Request: ");
+			jQuery.ajax( ajaxRequest ).done( function(response, status) {
+				listy = response ;
+return listy;
+			});
 		},
 		deferRequestBy: 200,
 		onSelect: function( value, data ) {
+			console.log("fce on select");
 			var newitem = '<li id="cac-nsc-add-to-group-' + data + '">' + value + ' <span class="cac-nsc-remove-group"><a href="#">x</a></span></li>';
-			$('ul.cac-ncs-groups-results').append(newitem);
-			
+			jQuery('ul.cac-ncs-groups-results').append(newitem);
+
 			/* Add id to the list */
-			var groupids = $('#cac_nsc_group_ids').val();
+			var groupids = jQuery('#cac_nsc_group_ids').val();
 
 			if ( !groupids ) {
 				var newgroupids = [ data ];
@@ -18,39 +66,39 @@ jQuery(document).ready(function($) {
 				var newgroupids = groupids.split( ',' );
 				newgroupids.push( data );
 			}
-			
-			$('#cac_nsc_group_ids').val(newgroupids);
-			
-			$('input#cac_ncs_groups').val('');
-			
-			$('.cac-nsc-remove-group a').bind( 'click', function() { remove_item(this); } );
+
+			jQuery('#cac_nsc_group_ids').val(newgroupids);
+
+			jQuery('input#cac_ncs_groups').val('');
+
+			jQuery('.cac-nsc-remove-group a').bind( 'click', function() { remove_item(this); } );
 		}
 	} );
-	
-	$('.cac-nsc-remove-group a').bind( 'click', function() { remove_item(this); } );
-	
+
+	jQuery('.cac-nsc-remove-group a').bind( 'click', function() { remove_item(this); } );
+
 },(jQuery));
 
 function remove_item( item ){
 	var j = jQuery;
-	
+
 	var groupid = j(item).parent().parent().attr('id').split('cac-nsc-add-to-group-').pop();
-	
+
 	/* Remove from group ids list */
 	var cgroupids = j('#cac_nsc_group_ids').val().split(',');
-	
+
 	j(cgroupids).each(function(index, value){
 		if ( groupid == value ) {
 			cgroupids.splice(index,1);
 		}
 	});
-	
+
 	j('#cac_nsc_group_ids').val(cgroupids);
-	
+
 	/* Remove the list item itself */
 	j('li#cac-nsc-add-to-group-' + groupid).remove();
-				
-				
+
+
 }
 
 /**
@@ -76,7 +124,9 @@ function remove_item( item ){
   }
 
   function Autocomplete(el, options) {
-    this.el = $(el);
+	  console.log("COnstruct automcomplete");
+	  console.log(options);
+    this.el = jQuery(el);
     this.el.attr('autocomplete', 'off');
     this.suggestions = [];
     this.data = [];
@@ -104,9 +154,11 @@ function remove_item( item ){
     this.initialize();
     this.setOptions(options);
   }
-  
+
   $.fn.autocomplete = function(options) {
-    return new Autocomplete(this.get(0)||$('<input />'), options);
+	 console.log("MST jsem ve funkci fn.autocomplete");
+
+    return new Autocomplete(this.get(0)||jQuery('<input />'), options);
   };
 
 
@@ -115,6 +167,7 @@ function remove_item( item ){
     killerFn: null,
 
     initialize: function() {
+		console.log("MST jsem ve funkci initialize");
 
       var me, uid, autocompleteElId;
       me = this;
@@ -122,7 +175,7 @@ function remove_item( item ){
       autocompleteElId = 'Autocomplete_' + uid;
 
       this.killerFn = function(e) {
-        if ($(e.target).parents('.autocomplete').size() === 0) {
+        if (jQuery(e.target).parents('.autocomplete').size() === 0) {
           me.killSuggestions();
           me.disableKillerFn();
         }
@@ -131,9 +184,9 @@ function remove_item( item ){
       if (!this.options.width) { this.options.width = this.el.width(); }
       this.mainContainerId = 'AutocompleteContainter_' + uid;
 
-      $('<div id="' + this.mainContainerId + '" style="position:absolute;z-index:9999;"><div class="autocomplete-w1"><div class="autocomplete" id="' + autocompleteElId + '" style="display:none; width:300px;"></div></div></div>').appendTo('body');
+      jQuery('<div id="' + this.mainContainerId + '" style="position:absolute;z-index:9999;"><div class="autocomplete-w1"><div class="autocomplete" id="' + autocompleteElId + '" style="display:none; width:300px;"></div></div></div>').appendTo('body');
 
-      this.container = $('#' + autocompleteElId);
+      this.container = jQuery('#' + autocompleteElId);
       this.fixPosition();
       if (window.opera) {
         this.el.keypress(function(e) { me.onKeyPress(e); });
@@ -144,44 +197,47 @@ function remove_item( item ){
       this.el.blur(function() { me.enableKillerFn(); });
       this.el.focus(function() { me.fixPosition(); });
     },
-    
+
     setOptions: function(options){
       var o = this.options;
-      $.extend(o, options);
+      jQuery.extend(o, options);
       if(o.lookup){
         this.isLocal = true;
-        if($.isArray(o.lookup)){ o.lookup = { suggestions:o.lookup, data:[] }; }
+        if(jQuery.isArray(o.lookup)){ o.lookup = { suggestions:o.lookup, data:[] }; }
       }
-      $('#'+this.mainContainerId).css({ zIndex:o.zIndex });
+      jQuery('#'+this.mainContainerId).css({ zIndex:o.zIndex });
       this.container.css({ maxHeight: o.maxHeight + 'px', width:o.width });
     },
-    
+
     clearCache: function(){
       this.cachedResponse = [];
       this.badQueries = [];
     },
-    
+
     disable: function(){
+	console.log("MST jsem ve funkci disable");
+
       this.disabled = true;
     },
-    
+
     enable: function(){
+		console.log("MST jsem ve funkci enable");
       this.disabled = false;
     },
 
     fixPosition: function() {
       var offset = this.el.offset();
-      $('#' + this.mainContainerId).css({ top: (offset.top + this.el.innerHeight()) + 'px', left: offset.left + 'px' });
+      jQuery('#' + this.mainContainerId).css({ top: (offset.top + this.el.innerHeight()) + 'px', left: offset.left + 'px' });
     },
 
     enableKillerFn: function() {
       var me = this;
-      $(document).bind('click', me.killerFn);
+      jQuery(document).bind('click', me.killerFn);
     },
 
     disableKillerFn: function() {
       var me = this;
-      $(document).unbind('click', me.killerFn);
+      jQuery(document).unbind('click', me.killerFn);
     },
 
     killSuggestions: function() {
@@ -195,6 +251,8 @@ function remove_item( item ){
     },
 
     onKeyPress: function(e) {
+		console.log("MST jsem ve funkci onkeypress");
+
       if (this.disabled || !this.enabled) { return; }
       // return will exit the function
       // and event will not be prevented
@@ -226,7 +284,8 @@ function remove_item( item ){
     },
 
     onKeyUp: function(e) {
-      if(this.disabled){ return; }
+		console.log("MST jsem ve funkci onkeyup");
+  	  if(this.disabled){ return; }
       switch (e.keyCode) {
         case 38: //KEY_UP:
         case 40: //KEY_DOWN:
@@ -245,7 +304,8 @@ function remove_item( item ){
     },
 
     onValueChange: function() {
-      clearInterval(this.onChangeInterval);
+		console.log("MST jsem ve funkci onValueChange");
+  	  clearInterval(this.onChangeInterval);
       this.currentValue = this.el.val();
       var q = this.getQuery(this.currentValue);
       this.selectedIndex = -1;
@@ -262,13 +322,16 @@ function remove_item( item ){
 
     getQuery: function(val) {
       var d, arr;
+	  console.log("MST jsem ve funkci getQuery");
+
       d = this.options.delimiter;
-      if (!d) { return $.trim(val); }
+      if (!d) { return jQuery.trim(val); }
       arr = val.split(d);
-      return $.trim(arr[arr.length - 1]);
+      return jQuery.trim(arr[arr.length - 1]);
     },
 
     getSuggestionsLocal: function(q) {
+		console.log("MST jsem ve funkci getSuggestionsLocal");
       var ret, arr, len, val, i;
       arr = this.options.lookup;
       len = arr.suggestions.length;
@@ -283,19 +346,21 @@ function remove_item( item ){
       }
       return ret;
     },
-    
+
     getSuggestions: function(q) {
       var cr, me;
+	  console.log("fce getSuggestion " + q );
+	  console.log(this.serviceUrl);
       cr = this.isLocal ? this.getSuggestionsLocal(q) : this.cachedResponse[q];
-      
-      if (cr && $.isArray(cr.suggestions)) {
+
+      if (cr && jQuery.isArray(cr.suggestions)) {
         this.suggestions = cr.suggestions;
         this.data = cr.data;
         this.suggest();
       } else if (!this.isBadQuery(q)) {
         me = this;
         me.options.params.query = q;
-        $.get(this.serviceUrl, me.options.params, function(txt) { me.processResponse(txt); }, 'text');
+        jQuery.get(this.serviceUrl, me.options.params, function(txt) { me.processResponse(txt); }, 'text');
       }
     },
 
@@ -318,7 +383,7 @@ function remove_item( item ){
         this.hide();
         return;
       }
-
+console.log( "jsem ve fci suggest");
       var me, len, div, f, v, i, s, mOver, mClick;
       me = this;
       len = this.suggestions.length;
@@ -329,7 +394,7 @@ function remove_item( item ){
       this.container.hide().empty();
       for (i = 0; i < len; i++) {
         s = this.suggestions[i];
-        div = $((me.selectedIndex === i ? '<div class="selected"' : '<div') + ' title="' + s + '">' + f(s, this.data[i], v) + '</div>');
+        div = jQuery((me.selectedIndex === i ? '<div class="selected"' : '<div') + ' title="' + s + '">' + f(s, this.data[i], v) + '</div>');
         div.mouseover(mOver(i));
         div.click(mClick(i));
         this.container.append(div);
@@ -339,20 +404,21 @@ function remove_item( item ){
     },
 
     processResponse: function(text) {
+		console.log("jsem ve fci proces Response");
       var response;
       try {
         response = eval('(' + text + ')');
       } catch (err) { return; }
-      if (!$.isArray(response.data)) { response.data = []; }
+      if (!jQuery.isArray(response.data)) { response.data = []; }
       if(!this.options.noCache){
         this.cachedResponse[response.query] = response;
         if (response.suggestions.length === 0) { this.badQueries.push(response.query); }
       }
       if (response.query === this.getQuery(this.currentValue)) {
-       
+
        this.suggestions = response.suggestions;
         this.data = response.data;
-        this.suggest(); 
+        this.suggest();
       }
     },
 
@@ -361,12 +427,12 @@ function remove_item( item ){
       divs = this.container.children();
       // Clear previous selection:
       if (this.selectedIndex !== -1 && divs.length > this.selectedIndex) {
-        $(divs.get(this.selectedIndex)).removeClass();
+        jQuery(divs.get(this.selectedIndex)).removeClass();
       }
       this.selectedIndex = index;
       if (this.selectedIndex !== -1 && divs.length > this.selectedIndex) {
         activeItem = divs.get(this.selectedIndex);
-        $(activeItem).addClass('selected');
+        jQuery(activeItem).addClass('selected');
       }
       return activeItem;
     },
@@ -428,9 +494,9 @@ function remove_item( item ){
       s = me.suggestions[i];
       d = me.data[i];
       me.el.val(me.getValue(s));
-      if ($.isFunction(fn)) { fn(s, d, me.el); }
+      if (jQuery.isFunction(fn)) { fn(s, d, me.el); }
     },
-    
+
     getValue: function(value){
         var del, currVal, arr, me;
         me = this;
@@ -440,7 +506,11 @@ function remove_item( item ){
         arr = currVal.split(del);
         if (arr.length === 1) { return value; }
         return currVal.substr(0, currVal.length - arr[arr.length - 1].length) + value;
-    }
+    },
+	keyup: function(i) {
+		console.log("fce keyup");
+		console.log(i);
+	}
 
   };
 

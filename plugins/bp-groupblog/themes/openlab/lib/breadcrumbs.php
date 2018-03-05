@@ -100,6 +100,8 @@ function openlab_specific_archive_breadcrumb($crumb, $args) {
             $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
             $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+        } elseif ($account_type == "Uživatel z veřejné správy") {
+            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
         } else {
             $b1 = '<a href="' . site_url() . '/people/">People</a>';
         }
@@ -133,6 +135,8 @@ function openlab_page_crumb_overrides($crumb, $args) {
             $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
             $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+        } elseif ($account_type == "Uživatel z veřejné správy") {
+            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
         } else {
             $b1 = '<a href="' . site_url() . '/people/">People</a>';
         }

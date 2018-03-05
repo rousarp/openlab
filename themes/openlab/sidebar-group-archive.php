@@ -122,6 +122,15 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
         case 'alumni' :
             $display_option_user_type = 'Partner webu';
             $option_value_user_type = 'alumni';
+            break;
+        case 'Běžný uživatel' :
+            $display_option_user_type = 'Běžný uživatel';
+            $option_value_user_type = 'Běžný uživatel';
+            break;
+        case 'Uživatel z veřejné správy' :
+            $display_option_user_type = 'Uživatel z veřejné správy';
+            $option_value_user_type = 'Uživatel z veřejné správy';
+            break;
         case "user_type_all":
             $display_option_user_type = "Všichni";
             $option_value_user_type = "user_type_all";
@@ -222,10 +231,8 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
                         <label for="user-type-select" class="sr-only">Zvolte typ uživatele</label>
                         <select id="user-type-select" name="usertype" class="last-select <?php echo $user_color; ?>-text">
                             <option value='' <?php selected('', $option_value_user_type) ?>>Zvolte typ uživatele</option>
-                            <option value='student' <?php selected('student', $option_value_user_type) ?>>Úředník</option>
-                            <option value='faculty' <?php selected('faculty', $option_value_user_type) ?>>Dodavatel</option>
-                            <option value='staff' <?php selected('staff', $option_value_user_type) ?>>Politik</option>
-                            <option value='alumni' <?php selected('alumni', $option_value_user_type) ?>>Partner webu</option>
+                            <option value='Běžný uživatel' <?php selected('Běžný uživatel', $option_value_user_type) ?>>Běžný uživatel</option>
+                            <option value='Uživatel z veřejné správy' <?php selected('Uživatel z veřejné správy', $option_value_user_type) ?>>Uživatel z veřejné správy</option>
                             <option value='user_type_all' <?php selected('user_type_all', $option_value_user_type) ?>>Všichni</option>
                         </select>
                     </div>

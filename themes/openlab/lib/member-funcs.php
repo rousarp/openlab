@@ -122,7 +122,7 @@ function openlab_list_members($view) {
         $user_type_matches = $wpdb->get_col($wpdb->prepare(
                         "SELECT user_id
 			 FROM {$bp->profile->table_name_data}
-			 WHERE field_id = 7
+			 WHERE field_id = 2
 			       AND
 			       value = %s", $user_type
         ));

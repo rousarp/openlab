@@ -217,6 +217,7 @@ class OpenLab_Stats {
 				'course_code' => '',
 				'section_number' => '',
 				'faculty_name' => trim( $course->faculty_name ),
+
 				'active' => '',
 				'course_profile_link' => 'http://lab.urad.online/groups/' . $course->slug,
 				'external_site_url' => openlab_get_external_site_url_by_group_id( $course->id ),

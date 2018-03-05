@@ -3,12 +3,13 @@
  * AJAX handler for registration email check
  *
  * Return values:
- *   1: in ovm damain whitelisted
+ *   1: success
  *   2: no email provided
  *   3: not a valid email address
  *   4: unsafe
- *   5: not in ovm domain whitelist
+ *   5: not in domain whitelist
  *   6: email exists
+ *   7: a known undergraduate student address
  */
 function cac_ajax_email_check() {
 	$email = isset( $_POST['email'] ) ? $_POST['email'] : false;
@@ -22,10 +23,10 @@ function cac_ajax_email_check() {
 			$retval = '3'; // Not an email address
 		} else if ( function_exists( 'is_email_address_unsafe' ) && is_email_address_unsafe( $email ) ) {
 			$retval = '4'; // Unsafe
+		} else if ( ! cac_ncs_email_domain_is_in_whitelist( $email ) ) {
+			$retval = '5';
 		} else if ( email_exists( $email ) ) {
 			$retval = '6';
-		} else if ( ! cac_ncs_email_domain_is_in_ovmlist( $email ) ) {
-			$retval = '5';
 		}
 	}
 
@@ -68,35 +69,6 @@ function cac_ncs_email_domain_is_in_whitelist( $email ) {
 	}
 
 	return true;
-}
-
-function cac_ncs_email_domain_is_in_ovmlist( $email )
-{
-	$filename = ABSPATH."wp-content/uploads/ovmdata/ovm_domains_1.csv";
-
-	$ovm_dom = read_ovmdomains_from_file( $filename );
-
-	$email = explode( '@', trim( $email ) );
-
-	if ( ! isset( $email[1] ) || ! in_array( $email[1], $ovm_dom, true ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-function read_ovmdomains_from_file($filename)
-{
-	if (file_exists($filename)) {
-		$filecont = file_get_contents($filename);
-		$pole = explode(",", $filecont);
-		$return = array();
-		foreach ( $pole as $key => $value) {
-			array_push($return, trim($value));
-		}
-		return $return;
-	}
-	return array();
 }
 
 /**

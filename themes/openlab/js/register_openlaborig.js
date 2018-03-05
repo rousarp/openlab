@@ -153,148 +153,144 @@
 
         $('#signup_email').on('blur', function (e) {
             var email = $(e.target).val().toLowerCase();
-            var re = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[a-z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)/;
-
             if (!email.length) {
                 return;
             }
 
-            var emailtype = 'nonovm';
+            var emailtype = '';
             var $emaillabel = $('#signup_email_error');
             var $validationdiv = $('#validation-code');
             var $emailconfirm = $('#signup_email_confirm');
-            var errorcode = "1";
-            var message = '';
 
-            $emaillabel.html('<p class="parsley-errors-list other-errors">&mdash; Kontrola emailové adresy...</p>');
-            $emaillabel.css('color', '#000');
-            $emaillabel.fadeIn();
-            $emaillabel.addClass('error');
-            if ( $validationdiv.length ) {
-                $validationdiv.remove();
+            if (0 <= email.indexOf('mail.citytech.cuny.edu')) {
+                emailtype = 'student';
+            } else if (0 <= email.indexOf('citytech.cuny.edu')) {
+                emailtype = 'fs';
+            } else {
+                emailtype = 'nonct';
             }
 
-            if ( ! re.test(email)) {
-                message = 'E-mailová adresa není ve správném tvaru. Prosím zkuste to znovu.';
-                errorcode = "3";
-            } else {
+            if ('nonct' == emailtype) {
+                // Fade out and show a 'Checking' message.
+                $emaillabel.html('<p class="parsley-errors-list other-errors">&mdash; Checking...</p>');
+                $emaillabel.css('color', '#000');
+                $emaillabel.fadeIn();
+                $emaillabel.addClass('error');
+
+                // Non-City Tech requires an AJAX request for verification.
                 $.post(ajaxurl, {
                     action: 'cac_ajax_email_check',
                     'email': email
-                    },
-                    function (response) {
-                        var show_validation = false;
-                        errorcode = response;
-                        switch (errorcode) {
-                            /*
-                             * Return values:
-                             *   1: Non OVM
-                             *   2: no email provided
-                             *   3: not a valid email address
-                             *   4: unsafe
-                             *   5: Is in OVM domains
-                             *   6: email exists
-                             *   7: Is a student email
-                             */
-                            case "6" :
-                                message = 'Účet s touto e-mailovou adresou již existuje.';
-                                break;
-                            case "5" :
-                                message = 'Zadaná emailová adresa nemá doménu subjektu státní správy.';
-                                emailtype = 'nonovm';
-                                show_validation = true;
-                                break;
-                            case "4" :
-                                message = 'E-mailová adresa obsahuje zakázanou doménu.';
-                                show_validation = true;
-                                break;
-                            case "3" :
-                                message = 'E-mailová adresa není ve správném tvaru. Prosím zkuste to znovu.';
-                                break;
-                            case "2" :
-                                message = 'Zadání e-mailové adresy je povinné.';
-                                break;
+                },
+                        function (response) {
+                            var message = '';
+                            var show_validation = false;
 
-                            case '1' :
-                                message = '&mdash; Zadaná emailová adresa má doménu subjektu státní správy.';
-                                emailtype = 'ovm';
-                                break;
-                            default :
-                                message = '';
-                                break;
-                        }
-                        message = '<ul class="parsley-errors-list filled other-errors"><li role="alert">' + message + '</li></ul>';
+                            switch (response) {
+                                /*
+                                 * Return values:
+                                 *   1: success
+                                 *   2: no email provided
+                                 *   3: not a valid email address
+                                 *   4: unsafe
+                                 *   5: not in domain whitelist
+                                 *   6: email exists
+                                 *   7: Is a student email
+                                 */
+                                case "6" :
+                                    message = 'Účet s touto e-mailovou adresou již existuje.';
+                                    break;
+                                case "5" :
+                                case "4" :
+                                    message = 'E-mailová adresa musí být z City Tech.';
+                                    show_validation = true;
+                                    break;
+                                case "3" :
+                                    message = 'E-mailová adresa není ve správném tvaru. Prosím zkuste to znovu.';
+                                    break;
+                                case "2" :
+                                    message = 'Zadání e-mailové adresy je povinné.';
+                                    break;
 
-                        if (response != '1' && response != '5' ) {
-                            $emaillabel.fadeOut(function () {
-                                $emaillabel.html(message);
-                                $emaillabel.fadeIn();
-                            });
-                        } else if (response == '1') {
-                            $emaillabel.fadeOut(function () {
-                                $emaillabel.html(message);
-                                $emaillabel.fadeIn();
-                            });
-                        } else {
-                            $emaillabel.fadeOut();
-                            $emaillabel.html(message);
-                            // Don't add more than one
-                            if (!$validationdiv.length) {
-                                var valbox = '<div id="validation-code" style="display:none"><label for="signup_validation_code" role="alert">Registrační kód <em aria-hidden="true">(povinné)</em> <span>Vyžadováno pro uživatele mimo státní správu.</span></label><input name="signup_validation_code" id="signup_validation_code" type="text" val="" /></div>';
-                                $('input#signup_email').before(valbox);
-                                $validationdiv = $('#validation-code');
+                                case '1' :
+                                    message = '&mdash; SPRÁVNĚ!';
+                                    break;
+                                default :
+                                    message = '';
+                                    break;
                             }
-                        }
-                        if (show_validation) {
-                            $validationdiv.show();
-                        } else {
-                            $validationdiv.hide();
-                            //                           $emailconfirm.focus();
-                        }
 
-                        set_account_type_fields();
-                    });
+                            message = '<ul class="parsley-errors-list filled other-errors"><li role="alert">' + message + '</li></ul>';
+
+                            if (response != '1' && response != '5' && response != '4') {
+                                $emaillabel.fadeOut(function () {
+                                    $emaillabel.html(message);
+                                    $emaillabel.fadeIn();
+                                });
+                            } else if (response == '1') {
+                                $emaillabel.fadeOut(function () {
+                                    $emaillabel.html(message);
+                                    $emaillabel.fadeIn();
+                                });
+                            } else {
+                                $emaillabel.fadeOut();
+
+                                // Don't add more than one
+                                if (!$validationdiv.length) {
+                                    var valbox = '<div id="validation-code" style="display:none"><label for="signup_validation_code" role="alert">Signup code <em aria-hidden="true">(required)</em> <span>Required for non-City Tech addresses</span></label><input name="signup_validation_code" id="signup_validation_code" type="text" val="" /></div>';
+                                    $('input#signup_email').before(valbox);
+                                    $validationdiv = $('#validation-code');
+                                }
+                            }
+
+                            if (show_validation) {
+                                $validationdiv.show();
+                            } else {
+                                $validationdiv.hide();
+                                //                           $emailconfirm.focus();
+                            }
+
+                            set_account_type_fields();
+                        });
+
+            } else {
+                $validationdiv.hide();
+                $emaillabel.fadeOut();
+//            $emailconfirm.focus();
+                set_account_type_fields();
+            }
+
+            function set_account_type_fields() {
+                var newtypes = '';
+
+                if ('student' == emailtype) {
+                    newtypes += '<option value="Student">Student</option>';
+                    newtypes += '<option value="Alumni">Alumni</option>';
                 }
 
-                function set_account_type_fields() {
-                    var newtypes = '';
-
-                    if ('student' == emailtype) {
-                        newtypes += '<option value="Student">Student</option>';
-                        newtypes += '<option value="Alumni">Alumni</option>';
-                    }
-
-                    if ('fs' == emailtype) {
-                        newtypes += '<option value="">----</option>';
-                        newtypes += '<option value="Faculty">Faculty</option>';
-                        newtypes += '<option value="Staff">Staff</option>';
-                    }
-
-                    if ('nonct' == emailtype) {
-                        newtypes += '<option value="Non-City Tech">Non-City Tech</option>';
-                    }
-
-                    if ('ovm' == emailtype) {
-                        newtypes += '<option value="Uživatel z veřejné správy">Uživatel z veřejné správy</option>';
-                    }
-
-                    if ('nonovm' == emailtype) {
-                        newtypes += '<option value="Běžný uživatel">Běžný uživatel</option>';
-                    }
-
-                    if ('' == emailtype) {
-                        newtypes += '<option value="">----</option>';
-                    }
-
-                    var $typedrop = $('#field_2');
-                    $typedrop.html(newtypes);
-
-                    /*
-                     * Because there is no alternative in the dropdown, the 'change' event never
-                     * fires. So we trigger it manually.
-                     */
-                    load_account_type_fields();
+                if ('fs' == emailtype) {
+                    newtypes += '<option value="">----</option>';
+                    newtypes += '<option value="Faculty">Faculty</option>';
+                    newtypes += '<option value="Staff">Staff</option>';
                 }
+
+                if ('nonct' == emailtype) {
+                    newtypes += '<option value="Non-City Tech">Non-City Tech</option>';
+                }
+
+                if ('' == emailtype) {
+                    newtypes += '<option value="">----</option>';
+                }
+
+                var $typedrop = $('#field_7');
+                $typedrop.html(newtypes);
+
+                /*
+                 * Because there is no alternative in the dropdown, the 'change' event never
+                 * fires. So we trigger it manually.
+                 */
+                load_account_type_fields();
+            }
         });
 
         $('input#signup_validation_code').live('blur', function () {
@@ -303,7 +299,7 @@
             var vcodespan = $('#signup_email_error');
 
             $(vcodespan).fadeOut(function () {
-                $(vcodespan).html('<p class="parsley-errors-list">&mdash; Kontrola registračního kódu...</p>');
+                $(vcodespan).html('<p class="parsley-errors-list">&mdash; Checking...</p>');
                 $(vcodespan).css('color', '#000');
                 $(vcodespan).fadeIn();
                 $(vcodespan).addClass('error');

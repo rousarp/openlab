@@ -3754,7 +3754,7 @@ OpenLab.nav = (function ($) {
             OpenLab.nav.backgroundCont = $('#behind_menu_background');
 
             //get starting position of mobile menu background
-            OpenLab.nav.backgroundTopStart = OpenLab.nav.backgroundCont.css('top');
+            OpenLab.nav.backgroundTopStart = OpenLab.nav.backgroundCont.css("top");
 
             OpenLab.nav.removeDefaultScreenReaderShortcut();
             OpenLab.nav.directToggleAction();
@@ -3952,7 +3952,7 @@ OpenLab.nav = (function ($) {
 
             //reset mobile menu background position
             OpenLab.nav.backgroundCont.css({
-                'top': OpenLab.nav.backgroundTopStart
+                "top": OpenLab.nav.backgroundTopStart
             })
 
             var directToggle = $('.direct-toggle');

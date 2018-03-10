@@ -95,15 +95,15 @@ function openlab_specific_archive_breadcrumb($crumb, $args) {
     if (!empty($bp->displayed_user->id)) {
         $account_type = xprofile_get_field_data('Account Type', $bp->displayed_user->id);
         if ($account_type == "Staff") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
         } elseif ($account_type == "Faculty") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/students/">Students</a>';
         } elseif ($account_type == "Uživatel z veřejné správy") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
         } else {
-            $b1 = '<a href="' . site_url() . '/people/">People</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a>';
         }
         $last_name = xprofile_get_field_data('Last Name', $bp->displayed_user->id);
         $b2 = ucfirst($bp->displayed_user->fullname); //.''.ucfirst( $last_name )
@@ -130,15 +130,15 @@ function openlab_page_crumb_overrides($crumb, $args) {
 
         $account_type = xprofile_get_field_data('Account Type', $bp->displayed_user->id);
         if ($account_type == "Staff") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
         } elseif ($account_type == "Faculty") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/students/">Students</a>';
         } elseif ($account_type == "Uživatel z veřejné správy") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
         } else {
-            $b1 = '<a href="' . site_url() . '/people/">People</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a>';
         }
         $last_name = xprofile_get_field_data('Last Name', $bp->displayed_user->id);
         $b2 = ucfirst($bp->displayed_user->fullname); //.''.ucfirst( $last_name )

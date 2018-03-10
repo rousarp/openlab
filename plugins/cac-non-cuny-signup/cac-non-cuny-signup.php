@@ -3,12 +3,13 @@
  * AJAX handler for registration email check
  *
  * Return values:
- *   1: in ovm damain whitelisted
+ *   1: success
  *   2: no email provided
  *   3: not a valid email address
  *   4: unsafe
- *   5: not in ovm domain whitelist
+ *   5: not in domain whitelist
  *   6: email exists
+ *   7: a known undergraduate student address
  */
 function cac_ajax_email_check() {
 	$email = isset( $_POST['email'] ) ? $_POST['email'] : false;
@@ -22,10 +23,10 @@ function cac_ajax_email_check() {
 			$retval = '3'; // Not an email address
 		} else if ( function_exists( 'is_email_address_unsafe' ) && is_email_address_unsafe( $email ) ) {
 			$retval = '4'; // Unsafe
+		} else if ( ! cac_ncs_email_domain_is_in_whitelist( $email ) ) {
+			$retval = '5';
 		} else if ( email_exists( $email ) ) {
 			$retval = '6';
-		} else if ( ! cac_ncs_email_domain_is_in_ovmlist( $email ) ) {
-			$retval = '5';
 		}
 	}
 
@@ -68,35 +69,6 @@ function cac_ncs_email_domain_is_in_whitelist( $email ) {
 	}
 
 	return true;
-}
-
-function cac_ncs_email_domain_is_in_ovmlist( $email )
-{
-	$filename = ABSPATH."wp-content/uploads/ovmdata/ovm_domains_1.csv";
-
-	$ovm_dom = read_ovmdomains_from_file( $filename );
-
-	$email = explode( '@', trim( $email ) );
-
-	if ( ! isset( $email[1] ) || ! in_array( $email[1], $ovm_dom, true ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-function read_ovmdomains_from_file($filename)
-{
-	if (file_exists($filename)) {
-		$filecont = file_get_contents($filename);
-		$pole = explode(",", $filecont);
-		$return = array();
-		foreach ( $pole as $key => $value) {
-			array_push($return, trim($value));
-		}
-		return $return;
-	}
-	return array();
 }
 
 /**
@@ -177,7 +149,6 @@ class CAC_NCS_Schema {
 
 	function __construct() {
 		$this->post_type_name = 'cac_ncs_code';
-		$pom = admin_url('admin-ajax.php');
 
 		add_action( 'init', array( $this, 'register_post_type' ), 99 );
 		add_action( 'admin_init', array( $this, 'add_meta_boxes' ) );
@@ -186,7 +157,6 @@ class CAC_NCS_Schema {
 		add_action( 'admin_print_scripts', array( $this, 'admin_scripts' ) );
 		add_action( 'admin_print_styles', array( $this, 'admin_styles' ) );
 		add_action( 'wp_ajax_cac_ncs_groups_query', array( $this, 'cac_ncs_groups_query' ) );
-		add_action( 'wp_ajax_nopriv_cac_ncs_groups_query', array( $this, 'cac_ncs_groups_query' ) );
 	}
 
 	function register_post_type() {
@@ -229,10 +199,7 @@ class CAC_NCS_Schema {
 	function group_meta_box_render() {
 		global $post;
 
-		// add_groups_to_code(767, "2,12");
-
 		$groups = isset( $post->ID ) ? get_post_meta( $post->ID, 'cac_ncs_groups', true ) : array();
-
 
 		if ( !$groups )
 			$groups = array();
@@ -338,7 +305,6 @@ class CAC_NCS_Schema {
 		if ( isset( $post->post_type ) && $this->post_type_name == $post->post_type ) {
 			wp_enqueue_script( 'suggest' );
 			wp_enqueue_script( 'cac_ncs_js', WP_CONTENT_URL . '/plugins/cac-non-cuny-signup/js/admin.js', array( 'jquery', 'suggest' ) );
-			wp_localize_script('cac_ncs_js', 'ajax_object_mila', array('ajax_url' => admin_url('admin-ajax.php')));
 		}
 	}
 
@@ -387,11 +353,3 @@ class CAC_NCS_Schema {
 
 }
 $cac_ncs_schema = new CAC_NCS_Schema;
-
-function add_groups_to_code( $id = 0, $groups_string)
-{
-
-	if ( $id > 0 ) {
-		update_post_meta( $id, 'cac_ncs_groups', explode( ",", $groups_string ));
-	}
-}

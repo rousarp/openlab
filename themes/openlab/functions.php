@@ -88,6 +88,9 @@ function openlab_load_scripts() {
         ));
 
         wp_register_script('parsley', $stylesheet_dir_uri . '/js/parsley.min.js', array('jquery'));
+        wp_register_script('parsley-cs', $stylesheet_dir_uri . '/js/parsley-cs.js', array('jquery'));
+        wp_enqueue_script('parsley');
+        wp_enqueue_script('parsley-cs');
     }
 
     if (bp_is_register_page()) {

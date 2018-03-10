@@ -1159,13 +1159,15 @@ function openlab_get_directory_filter($filter_type, $label_type) {
 
             break;
 
-        case 'user_type' :
+        case 'usertype' :
             $filter_array['label'] = 'User Type';
             $filter_array['options'] = array(
                 'user_type_all' => 'All',
                 'student' => 'Student',
                 'faculty' => 'Faculty',
-                'staff' => 'Staff'
+                'staff' => 'Staff',
+                'Běžný uživatel' => 'Běžný uživatel',
+                'Uživatel z veřejné správy' => 'Uživatel z veřejné správy',
             );
             break;
 

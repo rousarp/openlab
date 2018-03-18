@@ -14,7 +14,7 @@
                             <h2><span>OpenLab - </span><span> místo, kde můžete pracovat, sdílet a učite se.</span></h2>
                             <div class="logos-wrapper clearfix">
                                 <p class="statement semibold"><span class="semibold">OpenLab</span> je digitální platforma na podporu vzdělávání, sdílení a výměny dobré praxe ve veřejné správě.</p>
-                                <a class="pull-left cuny-logo" href="http://www.citytech.cuny.edu/" target="_blank"><img class="img-responsive" src="https://lab.urad.online/wp-content/mu-plugins/css/images/openlab_menu_logo.png" alt="Úřad online" border="0" /></a>
+                                <a class="pull-left cuny-logo" href=" <?php echo get_site_url( 1 ) ?> " target="_blank"><img class="img-responsive" src="https://lab.urad.online/wp-content/mu-plugins/css/images/openlab_menu_logo.png" alt="Úřad online" border="0" /></a>
 
                            </div>
                         </div>

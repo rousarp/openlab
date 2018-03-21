@@ -83,25 +83,25 @@ function openlab_specific_archive_breadcrumb($crumb, $args) {
         $b2 = $bp->groups->current_group->name;
         $group_type = groups_get_groupmeta($bp->groups->current_group->id, 'wds_group_type');
         if ($group_type == "course") {
-            $b1 = '<a href="' . site_url() . '/courses/">Courses</a>';
+            $b1 = '<a href="' . site_url() . '/courses/">Kurzy</a>';
         } elseif ($group_type == "project") {
-            $b1 = '<a href="' . site_url() . '/projects/">Projects</a>';
+            $b1 = '<a href="' . site_url() . '/projects/">Projekty</a>';
         } elseif ($group_type == "club") {
-            $b1 = '<a href="' . site_url() . '/clubs/">Clubs</a>';
+            $b1 = '<a href="' . site_url() . '/clubs/">Skupiny</a>';
         } else {
-            $b1 = '<a href="' . site_url() . '/groups/">Groups</a>';
+            $b1 = '<a href="' . site_url() . '/groups/">Skupiny</a>';
         }
     }
     if (!empty($bp->displayed_user->id)) {
         $account_type = xprofile_get_field_data('Account Type', $bp->displayed_user->id);
         if ($account_type == "Staff") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
         } elseif ($account_type == "Faculty") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/students/">Students</a>';
         } else {
-            $b1 = '<a href="' . site_url() . '/people/">People</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a>';
         }
         $last_name = xprofile_get_field_data('Last Name', $bp->displayed_user->id);
         $b2 = ucfirst($bp->displayed_user->fullname); //.''.ucfirst( $last_name )

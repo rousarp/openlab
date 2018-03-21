@@ -28,6 +28,11 @@ msgctxt "1M"
 msgid "project"
 msgstr ""
 
+msgctxt "1M"
+msgid "projects"
+msgstr ""
+
+
 msgctxt "2M"
 msgid "project"
 msgstr ""

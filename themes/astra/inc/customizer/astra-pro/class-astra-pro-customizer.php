@@ -76,4 +76,4 @@ if ( ! class_exists( 'Astra_Pro_Customizer' ) ) {
 		}
 	}
 
-} // End if().
+}

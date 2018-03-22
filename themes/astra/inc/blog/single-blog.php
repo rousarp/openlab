@@ -193,9 +193,9 @@ if ( ! function_exists( 'astra_theme_comment' ) ) {
 				<!-- </li> -->
 				<?php
 				break;
-		} // End switch().
+		}
 	}
-}// End if().
+}
 
 /**
  * Get Post Navigation

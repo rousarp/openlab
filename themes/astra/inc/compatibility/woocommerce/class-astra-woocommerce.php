@@ -66,9 +66,9 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 			add_action( 'woocommerce_before_main_content', array( $this, 'before_main_content_start' ) );
 			add_action( 'woocommerce_after_main_content', array( $this, 'before_main_content_end' ) );
 			add_filter( 'wp_enqueue_scripts', array( $this, 'add_styles' ) );
-			add_action( 'init', array( $this, 'shop_customization' ), 5 );
+			add_action( 'wp', array( $this, 'shop_customization' ), 5 );
 			add_action( 'wp_head', array( $this, 'single_product_customization' ), 5 );
-			add_action( 'init', array( $this, 'woocommerce_init' ), 1 );
+			add_action( 'wp', array( $this, 'woocommerce_init' ), 1 );
 			add_action( 'wp', array( $this, 'shop_meta_option' ), 1 );
 			add_action( 'wp', array( $this, 'cart_page_upselles' ) );
 
@@ -212,7 +212,6 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 
 				if ( $attachment_ids ) {
 
-					// @see woocommerce_get_product_thumbnail()
 					$image_size = apply_filters( 'single_product_archive_thumbnail_size', 'shop_catalog' );
 
 					echo apply_filters( 'astra_woocommerce_product_flip_image', wp_get_attachment_image( reset( $attachment_ids ), $image_size, false, array( 'class' => 'show-on-hover' ) ) );
@@ -533,7 +532,7 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 				/**
 				 * Checkout Page
 				 */
-				add_action( 'woocommerce_checkout_billing', array( WC_Checkout::instance(), 'checkout_form_shipping' ) );
+				add_action( 'woocommerce_checkout_billing', array( WC()->checkout(), 'checkout_form_shipping' ) );
 
 				/**
 				 * Shop Page Product Content Sorting
@@ -575,7 +574,11 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 			remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 			remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
 			// Checkout Page.
-			remove_action( 'woocommerce_checkout_shipping', array( WC_Checkout::instance(), 'checkout_form_shipping' ) );
+			remove_action( 'woocommerce_checkout_shipping', array( WC()->checkout(), 'checkout_form_shipping' ) );
+
+			// Add wrapper to Single Product Add To Aart button.
+			add_action( 'woocommerce_before_add_to_cart_quantity', 'astra_single_product_add_to_cart_button_wrap', 999 );
+			add_action( 'woocommerce_after_add_to_cart_button', 'astra_woocommerce_div_wrapper_close', 1 );
 		}
 
 		/**
@@ -637,7 +640,8 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 			/**
 			 * - Variable Declaration
 			 */
-			$theme_color  = astra_get_option( 'link-color' );
+			$theme_color  = astra_get_option( 'theme-color' );
+			$link_color   = astra_get_option( 'link-color', $theme_color );
 			$text_color   = astra_get_option( 'text-color' );
 			$link_h_color = astra_get_option( 'link-h-color' );
 
@@ -666,6 +670,7 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 			$css_output = array(
 				'.woocommerce span.onsale'                => array(
 					'background-color' => $theme_color,
+					'color'            => astra_get_foreground_color( $theme_color ),
 				),
 				'.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button,.woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled' => array(
 					'color'            => $btn_color,
@@ -678,27 +683,27 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 					'background-color' => $btn_bg_h_color,
 				),
 				'.woocommerce-message, .woocommerce-info' => array(
-					'border-top-color' => $theme_color,
+					'border-top-color' => $link_color,
 				),
 				'.woocommerce-message::before,.woocommerce-info::before' => array(
-					'color' => $theme_color,
+					'color' => $link_color,
 				),
 				'.woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .widget_layered_nav_filters ul li.chosen a, .woocommerce-page ul.products li.product .ast-woo-product-category, .wc-layered-nav-rating a' => array(
 					'color' => $text_color,
 				),
 				// Form Fields, Pagination border Color.
 				'.woocommerce nav.woocommerce-pagination ul,.woocommerce nav.woocommerce-pagination ul li' => array(
-					'border-color' => $theme_color,
+					'border-color' => $link_color,
 				),
 				'.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current' => array(
-					'background' => $theme_color,
+					'background' => $link_color,
 					'color'      => $btn_color,
 				),
 				'.woocommerce-MyAccount-navigation-link.is-active a' => array(
 					'color' => $link_h_color,
 				),
 				'.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle' => array(
-					'background-color' => $theme_color,
+					'background-color' => $link_color,
 				),
 				// Button Typography.
 				'.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button,.woocommerce-cart table.cart td.actions .button, .woocommerce form.checkout_coupon .button, .woocommerce #respond input#submit' => array(
@@ -706,10 +711,10 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 					'padding'       => astra_get_css_value( $btn_vertical_padding, 'px' ) . ' ' . astra_get_css_value( $btn_horizontal_padding, 'px' ),
 				),
 				'.woocommerce .star-rating, .woocommerce .comment-form-rating .stars a, .woocommerce .star-rating::before' => array(
-					'color' => $theme_color,
+					'color' => $link_color,
 				),
 				'.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before' => array(
-					'background' => $theme_color,
+					'background' => $link_color,
 				),
 
 				/**
@@ -720,26 +725,26 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 				),
 
 				'.ast-site-header-cart a:focus, .ast-site-header-cart a:hover, .ast-site-header-cart .current-menu-item a' => array(
-					'color' => esc_attr( $theme_color ),
+					'color' => esc_attr( $link_color ),
 				),
 
 				'.ast-cart-menu-wrap .count, .ast-cart-menu-wrap .count:after' => array(
-					'border-color' => esc_attr( $theme_color ),
-					'color'        => esc_attr( $theme_color ),
+					'border-color' => esc_attr( $link_color ),
+					'color'        => esc_attr( $link_color ),
 				),
 
 				'.ast-cart-menu-wrap:hover .count'        => array(
 					'color'            => esc_attr( $cart_h_color ),
-					'background-color' => esc_attr( $theme_color ),
+					'background-color' => esc_attr( $link_color ),
 				),
 
 				'.ast-site-header-cart .widget_shopping_cart .total .woocommerce-Price-amount' => array(
-					'color' => esc_attr( $theme_color ),
+					'color' => esc_attr( $link_color ),
 				),
 
 				'.woocommerce a.remove:hover, .ast-woocommerce-cart-menu .main-header-menu .woocommerce-custom-menu-item li:hover > a.remove:hover' => array(
-					'color'            => esc_attr( $theme_color ),
-					'border-color'     => esc_attr( $theme_color ),
+					'color'            => esc_attr( $link_color ),
+					'border-color'     => esc_attr( $link_color ),
 					'background-color' => esc_attr( '#ffffff' ),
 				),
 
@@ -758,7 +763,7 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 					'color' => $text_color,
 				),
 				'.below-header-user-select .ast-site-header-cart .widget_shopping_cart a:hover, .ast-above-header-section .ast-site-header-cart .widget_shopping_cart a:hover, .below-header-user-select .ast-site-header-cart .widget_shopping_cart a.remove:hover, .ast-above-header-section .ast-site-header-cart .widget_shopping_cart a.remove:hover' => array(
-					'color' => esc_attr( $theme_color ),
+					'color' => esc_attr( $link_color ),
 				),
 			);
 
@@ -833,8 +838,8 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 					'border'         => esc_attr( '1px solid #ccc' ),
 				),
 				'.woocommerce #content table.wishlist_table.cart a.remove:hover' => array(
-					'color'            => esc_attr( $theme_color . '!important' ),
-					'border-color'     => esc_attr( $theme_color ),
+					'color'            => esc_attr( $link_color . '!important' ),
+					'border-color'     => esc_attr( $link_color ),
 					'background-color' => esc_attr( '#ffffff' ),
 				),
 			);
@@ -964,7 +969,7 @@ if ( ! class_exists( 'Astra_Woocommerce' ) ) :
 							<div class="ast-cart-menu-wrap">
 								<span class="count"> 
 									<?php
-									if ( apply_filters( 'astra_woo_header_cart_total', true ) ) {
+									if ( apply_filters( 'astra_woo_header_cart_total', true ) && null != WC()->cart ) {
 										echo WC()->cart->get_cart_contents_count();
 									}
 									?>

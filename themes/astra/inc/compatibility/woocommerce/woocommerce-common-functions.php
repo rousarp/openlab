@@ -247,3 +247,64 @@ if ( ! function_exists( 'astra_woo_shop_thumbnail_wrap_end' ) ) {
 		echo '</div>';
 	}
 }
+
+
+/**
+ * Woocommerce filter - Widget Products Tags
+ */
+if ( ! function_exists( 'astra_widget_product_tag_cloud_args' ) ) {
+
+	/**
+	 * Woocommerce filter - Widget Products Tags
+	 *
+	 * @param  array $args Tag arguments.
+	 * @return array       Modified tag arguments.
+	 */
+	function astra_widget_product_tag_cloud_args( $args = array() ) {
+
+		$sidebar_link_font_size            = astra_get_option( 'font-size-body' );
+		$sidebar_link_font_size['desktop'] = ( '' != $sidebar_link_font_size['desktop'] ) ? $sidebar_link_font_size['desktop'] : 15;
+
+		$args['smallest'] = intval( $sidebar_link_font_size['desktop'] ) - 2;
+		$args['largest']  = intval( $sidebar_link_font_size['desktop'] ) + 3;
+		$args['unit']     = 'px';
+
+		return apply_filters( 'astra_widget_product_tag_cloud_args', $args );
+	}
+	add_filter( 'woocommerce_product_tag_cloud_widget_args', 'astra_widget_product_tag_cloud_args', 90 );
+
+}
+
+
+/**
+ * Single Product Add To Cart button Wrapper
+ */
+if ( ! function_exists( 'astra_single_product_add_to_cart_button_wrap' ) ) :
+
+	/**
+	 * Single Product Add To Cart button Wrapper
+	 *
+	 * @return void
+	 */
+	function astra_single_product_add_to_cart_button_wrap() {
+		echo '<div class="ast-woo-single-cart-button-wrap">';
+	}
+endif;
+
+/**
+ * Woocommerce shop/product div close tag.
+ */
+if ( ! function_exists( 'astra_woocommerce_div_wrapper_close' ) ) :
+
+	/**
+	 * Woocommerce shop/product div close tag.
+	 *
+	 * @return void
+	 */
+	function astra_woocommerce_div_wrapper_close() {
+
+		echo '</div>';
+
+	}
+
+endif;

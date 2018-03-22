@@ -79,7 +79,7 @@ if ( ! class_exists( 'Astra_BB_Ultimate_Addon' ) ) :
 		 * Theme Color
 		 */
 		function theme_color() {
-			return astra_get_option( 'link-color' );
+			return astra_get_option( 'theme-color' );
 		}
 
 
@@ -148,8 +148,9 @@ if ( ! class_exists( 'Astra_BB_Ultimate_Addon' ) ) :
 		 * Button Text Color
 		 */
 		function button_text_color() {
-			$link_color = astra_get_option( 'link-color' );
-			$color      = astra_get_option( 'button-color' );
+			$theme_color = astra_get_option( 'theme-color' );
+			$link_color  = astra_get_option( 'link-color', $theme_color );
+			$color       = astra_get_option( 'button-color' );
 			if ( empty( $color ) ) {
 				$color = astra_get_foreground_color( $link_color );
 			}

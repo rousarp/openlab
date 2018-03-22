@@ -483,7 +483,7 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 			}
 		}
 	}
-}// End if().
+}
 
 /**
  * Kicking this off by calling 'get_instance()' method

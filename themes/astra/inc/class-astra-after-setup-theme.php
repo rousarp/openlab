@@ -147,6 +147,7 @@ if ( ! class_exists( 'Astra_After_Setup_Theme' ) ) {
 			if ( apply_filters( 'astra_fullwidth_oembed', true ) ) {
 				// Filters the oEmbed process to run the responsive_oembed_wrapper() function.
 				add_filter( 'embed_oembed_html', array( $this, 'responsive_oembed_wrapper' ), 10, 3 );
+				add_filter( 'oembed_result', array( $this, 'responsive_oembed_wrapper' ), 10, 3 );
 			}
 
 			// WooCommerce.
@@ -157,23 +158,35 @@ if ( ! class_exists( 'Astra_After_Setup_Theme' ) ) {
 		 * Adds a responsive embed wrapper around oEmbed content
 		 *
 		 * @param  string $html The oEmbed markup.
-		 * @param  string $url  The URL being embedded.
+		 * @param  string $url The URL being embedded.
 		 * @param  array  $attr An array of attributes.
+		 *
 		 * @return string       Updated embed markup.
 		 */
 		function responsive_oembed_wrapper( $html, $url, $attr ) {
 
 			$add_astra_oembed_wrapper = apply_filters( 'astra_responsive_oembed_wrapper_enable', true );
 
-			if ( false !== strpos( $url, 'vimeo.com' ) || false !== strpos( $url, 'youtube.com' ) || false !== strpos( $url, 'youtu.be' ) ) {
+			$allowed_providers = apply_filters(
+				'astra_allowed_fullwidth_oembed_providers', array(
+					'vimeo.com',
+					'youtube.com',
+					'youtu.be',
+					'wistia.com',
+					'wistia.net',
+				)
+			);
+
+			if ( astra_strposa( $url, $allowed_providers ) ) {
 				if ( $add_astra_oembed_wrapper ) {
 					$html = ( '' !== $html ) ? '<div class="ast-oembed-container">' . $html . '</div>' : '';
 				}
 			}
+
 			return $html;
 		}
 	}
-}// End if().
+}
 
 /**
  * Kicking this off by calling 'get_instance()' method

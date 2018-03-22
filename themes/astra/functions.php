@@ -11,7 +11,7 @@
 /**
  * Define Constants
  */
-define( 'ASTRA_THEME_VERSION', '1.2.3' );
+define( 'ASTRA_THEME_VERSION', '1.2.6' );
 define( 'ASTRA_THEME_SETTINGS', 'astra-settings' );
 define( 'ASTRA_THEME_DIR', get_template_directory() . '/' );
 define( 'ASTRA_THEME_URI', get_template_directory_uri() . '/' );
@@ -101,7 +101,6 @@ require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-jetpack.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/woocommerce/class-astra-woocommerce.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/lifterlms/class-astra-lifterlms.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-beaver-builder.php';
-require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-beaver-themer.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-bb-ultimate-addon.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-contact-form-7.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-visual-composer.php';
@@ -110,9 +109,14 @@ require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-gravity-forms.php'
 require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-bne-flyout.php';
 require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-ubermeu.php';
 
-// Check PHP_VERSION for namespace.
+// Elementor Compatibility requires PHP 5.4 for namespaces.
 if ( version_compare( PHP_VERSION, '5.4', '>=' ) ) {
 	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-elementor.php';
+}
+
+// Beaver Themer compatibility requires PHP 5.3 for anonymus functions.
+if ( version_compare( PHP_VERSION, '5.3', '>=' ) ) {
+	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-beaver-themer.php';
 }
 
 /**

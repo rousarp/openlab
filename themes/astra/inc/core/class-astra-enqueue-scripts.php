@@ -186,4 +186,4 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 	}
 
 	new Astra_Enqueue_Scripts();
-}// End if().
+}

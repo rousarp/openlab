@@ -13,6 +13,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 	/**
+	 * Option: Theme Color
+	 */
+	$wp_customize->add_setting(
+		ASTRA_THEME_SETTINGS . '[theme-color]', array(
+			'default'           => '#0274be',
+			'type'              => 'option',
+			'sanitize_callback' => array( 'Astra_Customizer_Sanitizes', 'sanitize_hex_color' ),
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize, ASTRA_THEME_SETTINGS . '[theme-color]', array(
+				'section'  => 'section-colors-body',
+				'priority' => 5,
+				'label'    => __( 'Theme Color', 'astra' ),
+			)
+		)
+	);
+
+	/**
 	 * Option: Link Color
 	 */
 	$wp_customize->add_setting(
@@ -27,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			$wp_customize, ASTRA_THEME_SETTINGS . '[link-color]', array(
 				'section'  => 'section-colors-body',
 				'priority' => 5,
-				'label'    => __( 'Theme Color / Link Color', 'astra' ),
+				'label'    => __( 'Link Color', 'astra' ),
 			)
 		)
 	);

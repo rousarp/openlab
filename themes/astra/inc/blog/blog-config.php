@@ -65,14 +65,14 @@ if ( ! function_exists( 'astra_get_post_meta' ) ) {
 				default:
 					$output_str = apply_filters( 'astra_meta_case_' . $meta_value, $output_str, $loop_count, $separator );
 
-			}// End switch().
+			}
 
 			$loop_count ++;
-		}// End foreach().
+		}
 
 		return $output_str;
 	}
-}// End if().
+}
 
 /**
  * Function to get Date of Post
@@ -107,7 +107,7 @@ if ( ! function_exists( 'astra_post_date' ) ) {
 		$output       .= '</span>';
 		return apply_filters( 'astra_post_date', $output );
 	}
-}// End if().
+}
 
 /**
  * Function to get Author of Post
@@ -218,7 +218,7 @@ if ( ! function_exists( 'astra_post_comments' ) ) {
 
 		return apply_filters( 'astra_post_comments', $output, $output_filter );
 	}
-}// End if().
+}
 
 /**
  * Function to get Tags applied of Post
@@ -374,8 +374,8 @@ if ( ! function_exists( 'astra_get_blog_layout_class' ) ) {
 						$classes[] = 'ast-no-thumb';
 					}
 					break;
-			}// End switch().
-		}// End if().
+			}
+		}
 
 		if ( ! empty( $class ) ) {
 			if ( ! is_array( $class ) ) {
@@ -396,4 +396,4 @@ if ( ! function_exists( 'astra_get_blog_layout_class' ) ) {
 
 		return array_unique( $classes );
 	}
-}// End if().
+}

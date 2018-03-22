@@ -76,6 +76,7 @@ if ( ! class_exists( 'Astra_Admin_Helper' ) ) :
 
 			return $value;
 		}
+
 	}
 
 

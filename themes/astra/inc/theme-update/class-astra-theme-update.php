@@ -125,6 +125,11 @@ if ( ! class_exists( 'Astra_Theme_Update' ) ) {
 				self::v_1_2_2();
 			}
 
+			// Update astra Theme colors values same as Link color.
+			if ( version_compare( $saved_version, '1.2.4', '<' ) ) {
+				self::v_1_2_4();
+			}
+
 			// Not have stored?
 			if ( empty( $saved_version ) ) {
 
@@ -153,6 +158,9 @@ if ( ! class_exists( 'Astra_Theme_Update' ) ) {
 
 			// Update auto saved version number.
 			update_option( ASTRA_THEME_SETTINGS, $theme_options );
+
+			// Update variables.
+			Astra_Theme_Options::refresh();
 
 			do_action( 'astra_update_after' );
 
@@ -506,9 +514,27 @@ if ( ! class_exists( 'Astra_Theme_Update' ) ) {
 			update_option( ASTRA_THEME_SETTINGS, $astra_options );
 		}
 
+		/**
+		 * Update Theme Color value same as Link Color for older version than 1.2.4.
+		 *
+		 * Theme Color update
+		 *
+		 * @since 1.2.4
+		 */
+		static public function v_1_2_4() {
+
+			$astra_options = get_option( ASTRA_THEME_SETTINGS, array() );
+
+			if ( isset( $astra_options['link-color'] ) ) {
+				$astra_options['theme-color'] = $astra_options['link-color'];
+			}
+
+			update_option( ASTRA_THEME_SETTINGS, $astra_options );
+		}
+
 	}
 
-}// End if().
+}
 
 /**
  * Kicking this off by calling 'get_instance()' method

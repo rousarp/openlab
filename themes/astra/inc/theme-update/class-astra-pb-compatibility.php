@@ -152,7 +152,7 @@ if ( ! class_exists( 'Astra_PB_Compatibility' ) ) {
 			}
 		}
 	}
-}// End if().
+}
 
 
 

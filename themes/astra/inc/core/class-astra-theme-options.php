@@ -97,6 +97,7 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 					// Colors.
 					'text-color'                       => '#3a3a3a',
 					'link-color'                       => '#0274be',
+					'theme-color'                      => '#0274be',
 					'link-h-color'                     => '#3a3a3a',
 
 					// Footer Colors.
@@ -296,7 +297,7 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 			);
 		}
 	}
-}// End if().
+}
 /**
  * Kicking this off by calling 'get_instance()' method
  */

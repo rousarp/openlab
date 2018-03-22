@@ -115,7 +115,7 @@ if ( ! class_exists( 'Astra_Customizer_Partials' ) ) {
 			return do_shortcode( $output );
 		}
 	}
-}// End if().
+}
 
 /**
  * Kicking this off by calling 'get_instance()' method

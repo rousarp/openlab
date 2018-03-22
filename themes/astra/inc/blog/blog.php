@@ -134,11 +134,11 @@ if ( ! function_exists( 'astra_blog_post_get_featured_item' ) ) {
 					$post_featured_data = do_shortcode( astra_get_audios_from_post( get_the_ID() ) );
 					break;
 			}
-		}// End if().
+		}
 
 		echo $post_featured_data; // WPCS: XSS OK.
 	}
-}// End if().
+}
 
 add_action( 'astra_blog_post_featured_format', 'astra_blog_post_get_featured_item' );
 
@@ -184,11 +184,11 @@ if ( ! function_exists( 'astra_blog_post_thumbnai_and_title_order' ) ) {
 					case 'single-title-meta':
 						astra_get_single_post_title_meta();
 						break;
-				}// End switch().
-			}// End foreach().
-		}// End if().
+				}
+			}
+		}
 	}
-}// End if().
+}
 
 /**
  * Blog / Single Post Thumbnail
@@ -211,7 +211,7 @@ if ( ! function_exists( 'astra_get_blog_post_thumbnail' ) ) {
 			astra_get_post_thumbnail();
 		}
 	}
-}// End if().
+}
 
 /**
  * Blog Post Title & Meta Order
@@ -236,7 +236,7 @@ if ( ! function_exists( 'astra_get_blog_post_title_meta' ) ) {
 		</header><!-- .entry-header -->
 		<?php
 	}
-}// End if().
+}
 
 /**
  * Single Post Title & Meta Order
@@ -262,7 +262,7 @@ if ( ! function_exists( 'astra_get_single_post_title_meta' ) ) {
 		</div>
 		<?php
 	}
-}// End if().
+}
 
 /**
  * Get audio files from post content

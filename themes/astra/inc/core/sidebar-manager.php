@@ -69,10 +69,10 @@ if ( ! function_exists( 'astra_page_layout' ) ) {
 					// Get the global sidebar value.
 					// NOTE: Here not used `true` in the below function call.
 					$layout = astra_get_option( 'site-sidebar-layout' );
-				}// End if().
+				}
 			}
-		}// End if().
+		}
 
 		return apply_filters( 'astra_page_layout', $layout );
 	}
-}// End if().
+}

@@ -130,3 +130,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 			)
 		)
 	);
+
+	// Learn More link if Astra Pro is not activated.
+	if ( ! defined( 'ASTRA_EXT_VER' ) ) {
+
+		/**
+		 * Option: Divider
+		 */
+		$wp_customize->add_control(
+			new Astra_Control_Divider(
+				$wp_customize, ASTRA_THEME_SETTINGS . '[ast-blog-single-more-feature-divider]', array(
+					'type'     => 'ast-divider',
+					'section'  => 'section-blog-single',
+					'priority' => 25,
+					'settings' => array(),
+				)
+			)
+		);
+		/**
+		 * Option: Learn More about Single Blog Pro
+		 */
+		$wp_customize->add_control(
+			new Astra_Control_Description(
+				$wp_customize, ASTRA_THEME_SETTINGS . '[ast-blog-single-more-feature-description]', array(
+					'type'     => 'ast-description',
+					'section'  => 'section-blog-single',
+					'priority' => 25,
+					'label'    => '',
+					'help'     => '<p>' . __( 'More Options Available for Single Post in Astra Pro!', 'astra' ) . '</p><a href="' . astra_get_pro_url( 'https://wpastra.com/docs/single-post-blog-pro/', 'customizer', 'learn-more', 'upgrade-to-pro' ) . '" class="button button-primary"  target="_blank" rel="noopener">' . __( 'Learn More', 'astra' ) . '</a>',
+					'settings' => array(),
+				)
+			)
+		);
+	}

@@ -100,4 +100,4 @@ if ( ! function_exists( 'astra_default_strings' ) ) {
 			return $output;
 		}
 	}
-}// End if().
+}

@@ -189,7 +189,7 @@ if ( ! function_exists( 'astra_masthead_toggle_buttons_primary' ) ) {
 	<?php
 		}
 	}
-}// End if().
+}
 
 /**
  * Small Footer

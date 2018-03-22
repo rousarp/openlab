@@ -16,8 +16,8 @@ $wp_customize->register_section_type( 'Astra_Pro_Customizer' );
 $wp_customize->add_section(
 	new Astra_Pro_Customizer(
 		$wp_customize, 'astra-pro', array(
-			'title'    => esc_html__( 'Need More Options? Get Astra Pro!', 'astra' ),
-			'pro_url'  => esc_url_raw( 'https://wpastra.com/pricing/?utm_source=customizer&utm_medium=upgrade-link&utm_campaign=upgrade-to-pro' ),
+			'title'    => esc_html__( 'More Options Available in Astra Pro!', 'astra' ),
+			'pro_url'  => htmlspecialchars_decode( astra_get_pro_url( 'https://wpastra.com/pricing/', 'customizer', 'upgrade-link', 'upgrade-to-pro' ) ),
 			'priority' => 1,
 		)
 	)

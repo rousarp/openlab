@@ -39,13 +39,13 @@ function openlab_group_library_settings() {
 
 	?>
 	<div class="panel panel-default">
-		<div class="panel-heading">Nastavení knihovny</div>
+		<div class="panel-heading">Nastavení vyhledávání na portále www.gov.cz</div>
 
 		<div class="panel-body">
-			<p>Tato nastavení umožní nebo zakáže zobrazení nástroje knihovny na profilu <?php echo esc_html( _x(strtolower($group_type_label),'2J-vy','openlab')); ?>.</p>
+			<p>Tato nastavení umožní nebo zakáže zobrazení nástroje vyhledávání (gov.cz) na profilu <?php echo esc_html( _x(strtolower($group_type_label),'2J-vy','openlab')); ?>.</p>
 
 			<div class="checkbox">
-				<label><input type="checkbox" name="group-show-library-tools" id="group-show-library-tools" value="1" <?php checked( $setting ); ?> /> Povolit nástroje knihovny</label>
+				<label><input type="checkbox" name="group-show-library-tools" id="group-show-library-tools" value="1" <?php checked( $setting ); ?> /> Povolit nástroje vyhledávání</label>
 			</div>
 		</div>
 	</div>
@@ -63,18 +63,18 @@ function openlab_group_library_tools_display() {
 	?>
 
 	<div id="openlab-library-tools-sidebar-widget" class="sidebar-widget openlab-library-tools">
-		<h2 class="sidebar-header">Library</h2>
+		<h2 class="sidebar-header">Životní situace</h2>
 
 		<div class="sidebar-block">
 			<div class="sidebar-block-content">
-				<h3 class="sidebar-block-header">Find Library Materials</h3>
+				<h3 class="sidebar-block-header">Vyhledávání na portále www.gov.cz</h3>
 				<?php openlab_library_search_form(); ?>
 			</div>
 		</div>
 
 		<div class="sidebar-block">
 			<div class="sidebar-block-content">
-				<h3 class="sidebar-block-header">Library Information</h3>
+				<h3 class="sidebar-block-header">Informace o veřejné správě</h3>
 				<?php openlab_library_information(); ?>
 			</div>
 		</div>
@@ -97,29 +97,21 @@ function openlab_register_library_tools_widget() {
 function openlab_library_search_form() {
 	?>
 
-<form action="https://library.citytech.cuny.edu/oneSearch.php" enctype="application/x-www-form-urlencoded; charset=utf-8" method="post" name="searchForm" role="search">
+<form action="https://gov.cz/obcan/hledat?q=" enctype="application/x-www-form-urlencoded; charset=utf-8" method="get" name="searchForm" role="search">
 
-<input name="institution" type="hidden" value="NY" />
-<input name="vid" type="hidden" value="ny" />
-<input name="group" type="hidden" value="GUEST" />
-<input name="onCampus" type="hidden" value="true" />
-<input name="search_scope" type="hidden" value="everything" />
-<input id="primoQuery" name="query" type="hidden" />
-<input label= "search query" id="primoQueryTemp" class="focus form-control" name="queryTemp" type="text" placeholder="Find books, media, and more" aria-label="Input search query here"/>
+<input label= "q" id="q" class="focus form-control" name="q" type="text" placeholder="Vyhledat životní situace, návody a vše ostatní" aria-label="Zadejte vyhledávací dotaz zde"/>
 
-<select name="selectStyle" class="form-control" aria-label="Search by Type">
-<option label="Everything">Everything</option>
-<option>Articles</option>
-<option label="Print and eBooks">Books (Print + eBooks)</option>
-<option label="Print Books">Books (Print)</option>
-<option label="eBooks">eBooks</option>
-<option label="Video, Audio and More">Media</option>
+<select name="selectStyle" class="form-control" aria-label="Vyhledávání podle typu">
+<option label="Občan">Občan</option>
+<option label="Podnikatel">Podnikatel</option>
+<option label="Cizinec">Cizinec</option>
+<option label="Úředník">Úředník</option>
 </select>
 
 <div class="library-search-actions">
-	<input alt="Search" class="btn btn-primary" id="submit" class="library-search-submit" title="Search books, articles &amp; more" type="submit" value="Search" />
+	<input alt="Search" class="btn btn-primary" id="submit" class="library-search-submit" title="Vyhledat životní situace, návody a vše ostatní" type="submit" value="Vyhledat" />
 
-	<a class="library-search-advanced-link" href="http://onesearch.cuny.edu/primo_library/libweb/action/search.do?vid=ny&mode=Advanced&ct=AdvancedSearch">Advanced Search</a>
+	<a class="library-search-advanced-link" href="https://gov.cz/otevrena-data/">Otevřená data</a>
 </div>
 
 </form>
@@ -133,13 +125,16 @@ function openlab_library_search_form() {
 function openlab_library_information() {
 	?>
 	<div class="openlab-library-information">
-		<a class="bold" href="https://library.citytech.cuny.edu">Ursula C. Schwerin Library</a><br />
-		New York City College of Technology, C.U.N.Y<br />
-		300 Jay Street, Atrium - 4th Floor<br />
+		<a class="bold" href="https://urad.online" target="_blank">Portál www.urad.online</a><br />
+		<a class="bold" href="https://gov.cz" target="_blank">Portál www.gov.cz</a><br />
+
 
 		<ul>
-			<li><a href="https://library.citytech.cuny.edu/help/ask/index.php">Ask Us</a></li>
-			<li><a href="https://library.citytech.cuny.edu/">library.citytech.cuny.edu</a></li>
+			<li><a href="https://gov.cz/obcan/" target="_blank">Občan</a></li>
+			<li><a href="https://gov.cz/podnikani/" target="_blank">Podnikatel</a></li>
+			<li><a href="https://gov.cz/cizinec/" target="_blank">Cizinec</a></li>
+			<li><a href="https://gov.cz/urednik//" target="_blank">Úředník</a></li>
+
 		</ul>
 	</div>
 	<?php
@@ -182,7 +177,7 @@ class OpenLab_Library_Tools_Widget extends WP_Widget {
 			<?php /* Divs with ids help with CSS specificity and theme overrides */ ?>
 			<div id="openlab-library-find-widget-content">
 				<?php echo str_replace( 'id="', 'id="find-', $args['before_widget'] ); ?>
-				<?php echo $args['before_title']; ?>Find Library Materials<?php echo $args['after_title']; ?>
+				<?php echo $args['before_title']; ?>Hledat informace o veřejné správě<?php echo $args['after_title']; ?>
 
 				<?php openlab_library_search_form(); ?>
 
@@ -193,7 +188,7 @@ class OpenLab_Library_Tools_Widget extends WP_Widget {
 		<?php if ( $settings['library_information'] ) : ?>
 			<div id="openlab-library-information-widget-content">
 				<?php echo str_replace( 'id="', 'id="information-', $args['before_widget'] ); ?>
-				<?php echo $args['before_title']; ?>Library Information<?php echo $args['after_title']; ?>
+				<?php echo $args['before_title']; ?>Vyhledávání gov.cz<?php echo $args['after_title']; ?>
 
 				<?php openlab_library_information(); ?>
 
@@ -230,12 +225,12 @@ class OpenLab_Library_Tools_Widget extends WP_Widget {
 
 		<p>
 			<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'find_library_materials' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'find_library_materials' ) ); ?>" value="1" <?php checked( $settings['find_library_materials'] ); ?> />
-			<label for="<?php echo esc_attr( $this->get_field_id( 'find_library_materials' ) ); ?>">Find Library Materials</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'find_library_materials' ) ); ?>">Hledat informace o veřejné správě</label>
 		</p>
 
 		<p>
 			<input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'library_information' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'library_information' ) ); ?>" value="1" <?php checked( $settings['library_information'] ); ?> />
-			<label for="<?php echo esc_attr( $this->get_field_id( 'library_information' ) ); ?>">Library Information</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'library_information' ) ); ?>">Informace o veřejné správě</label>
 		</p>
 
 		<?php wp_nonce_field( 'openlab_library_widget', 'openlab-library-widget-nonce', false ); ?>

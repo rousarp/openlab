@@ -135,7 +135,7 @@
                         <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" required />
 
                     <?php else : ?>
-                        <p class="ol-tooltip">Věnujte prosím chvilku pozornost názvu vaší/vašeho <?php echo ucwords($group_type) ?>.  Výběr názvu, který jasně identifikuje váš/vaši  <?php echo ucwords($group_type) ?> usnadňuje ostatním, aby našli profil vašeho/vaši <?php echo ucwords($group_type) ?>. Doporučujeme uvést jméno  <?php echo ucwords($group_type) ?> pod  50 znaků.</p>
+                        <p class="ol-tooltip">Věnujte prosím chvilku pozornost názvu  <?php echo _x($group_type,"2J-vy","openlab") ?>.  Výběr názvu, který jasně identifikuje  <?php echo _x($group_type,"4J-vy","openlab") ?> usnadňuje ostatním, aby našli profil <?php echo _x($group_type,"2J-vy","openlab") ?>. Pro jméno  <?php echo _x($group_type,"2J-vy","openlab") ?> doporučujeme použít maximálně  50 znaků.</p>
                         <input class="form-control" size="80" type="text" name="group-name" id="group-name" value="<?php bp_new_group_name() ?>" required />
 
                     <?php endif ?>

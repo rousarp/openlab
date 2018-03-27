@@ -223,7 +223,7 @@ HTML;
                 $wp_admin_bar->add_node(array(
                     'parent' => $parent,
                     'id' => 'home-'.$parent,
-                    'title' => 'Home',
+                    'title' => 'Úvod',
                     'href' => bp_get_root_domain(),
                     'meta' => array(
                         'class' => 'mobile-no-hover',
@@ -233,7 +233,7 @@ HTML;
                 $wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'about-'.$parent,
-			'title'  => 'About',
+			'title'  => 'O projektu',
 			'href'   => trailingslashit( bp_get_root_domain() . '/about' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
@@ -243,7 +243,7 @@ HTML;
  		$wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'people-'.$parent,
-			'title'  => 'People',
+			'title'  => 'Lidé',
 			'href'   => trailingslashit( bp_get_root_domain() . '/people' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
@@ -253,7 +253,7 @@ HTML;
  		$wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'courses-'.$parent,
-			'title'  => 'Courses',
+			'title'  => 'Kurzy',
 			'href'   => trailingslashit( bp_get_root_domain() . '/courses' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
@@ -263,7 +263,7 @@ HTML;
  		$wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'projects-'.$parent,
-			'title'  => 'Projects',
+			'title'  => 'Projekty',
 			'href'   => trailingslashit( bp_get_root_domain() . '/projects' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
@@ -273,7 +273,7 @@ HTML;
  		$wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'clubs-'.$parent,
-			'title'  => 'Clubs',
+			'title'  => 'Skupiny',
 			'href'   => trailingslashit( bp_get_root_domain() . '/clubs' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
@@ -283,7 +283,7 @@ HTML;
  		$wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'portfolios-'.$parent,
-			'title'  => 'Portfolios',
+			'title'  => 'Portfólia',
 			'href'   => trailingslashit( bp_get_root_domain() . '/portfolios' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
@@ -293,8 +293,8 @@ HTML;
 		$wp_admin_bar->add_node( array(
 			'parent' => $parent,
 			'id'     => 'help-'.$parent,
-			'title'  => 'Help',
-			'href'   => trailingslashit( bp_get_root_domain() . '/blog/help/openlab-help' ),
+			'title'  => 'Nápověda',
+			'href'   => trailingslashit( bp_get_root_domain() . '/blog/help/napoveda-openlab' ),
                         'meta' => array(
                             'class' => 'mobile-no-hover',
                         ),

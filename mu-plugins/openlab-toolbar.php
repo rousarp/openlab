@@ -294,11 +294,7 @@ HTML;
 			'parent' => $parent,
 			'id'     => 'help-'.$parent,
 			'title'  => 'Nápověda',
-<<<<<<< HEAD
 			'href'   => trailingslashit( bp_get_root_domain() . '/blog/help/napoveda-openlab' ),
-=======
-			'href'   => trailingslashit( bp_get_root_domain() . '/blog/help/openlab-help' ),
->>>>>>> bd703b34b2250403e1341ea375b820395d110603
                         'meta' => array(
                             'class' => 'mobile-no-hover',
                         ),

@@ -80,11 +80,11 @@ add_filter('wp_nav_menu_objects', 'openlab_wp_menu_customizations', 11, 2);
 function openlab_modify_options_nav() {
     if (bp_is_group() && openlab_is_portfolio() && !bp_is_group_create()) {
         buddypress()->groups->nav->edit_nav(array(
-            'name' => 'Profile',
+            'name' => 'Profil',
                 ), 'home', bp_get_current_group_slug());
 
         buddypress()->groups->nav->edit_nav(array(
-            'name' => 'Settings',
+            'name' => 'Nastavení',
                 ), 'admin', bp_get_current_group_slug());
 
         // Keep the following tabs as-is
@@ -398,7 +398,7 @@ function openlab_my_groups_submenu($group) {
     //get account type to see if they're faculty
     $faculty = xprofile_get_field_data('Account Type', get_current_user_id());
 
-    $submenu_text = 'Můj/moje ' . ucfirst($group) . '';
+    $submenu_text = 'Moje ' . _x($group,'1M','openlab') . '';
 
     //if the current user is faculty or a super admin, they can create a course, otherwise no dice
     if ($group == "course") {
@@ -406,16 +406,16 @@ function openlab_my_groups_submenu($group) {
         //determines if there are any courses - if not, only show "create"
         $filters['wds_group_type'] = openlab_page_slug_to_grouptype();
 
-        if (is_super_admin(get_current_user_id()) || $faculty == "Faculty") {
+        if (is_super_admin(get_current_user_id()) || $faculty == "Faculty" ) {
             //have to add extra conditional in here for submenus on editing pages
             $menu_list = array(
-                $create_link => 'Vytvořit / Duplikovat ' . ucfirst($group),
+                $create_link => 'Vytvořit / duplikovat ' . _x($group,'4J','openlab'),
             );
         }
     } else {
         //have to add extra conditional in here for submenus on editing pages
         $menu_list = array(
-            $create_link => 'Vytvořit ' . ucfirst($group),
+            $create_link => 'Vytvořit ' . _x($group,'4J','openlab'),
         );
     }
 
@@ -434,23 +434,23 @@ function openlab_create_group_menu($grouptype) {
 
     switch ($current_step) {
         case 'group-details':
-            $step_name = 'První krok: Profil';
+            $step_name = 'Krok první: Profil';
             break;
         case 'group-settings':
-            $step_name = 'Druhý krok: Nastavení ochrany osobních údajů';
+            $step_name = 'Krok druhý: Nastavení soukromí';
             break;
         case 'group-avatar':
-            $step_name = 'Třetí krok: Profilový obrázek';
+            $step_name = 'Krok třetí: Ilustrační obrázek';
             break;
         case 'invite-anyone' :
-            $step_name = 'Krok čtvrtý: Pozvánka ke členství';
+            $step_name = 'Krok čtvrtý: Pozvání uživatelů';
             break;
     }
 
     if ($grouptype == 'course') {
-        $title = 'Vytviřut/Duplikovat kurz: ';
+        $title = 'Vytvořit/duplikovat kurz: ';
     } else {
-        $title = 'Vytvořit ' . ucfirst($grouptype) . ': ';
+        $title = 'Vytvořit ' . _x($grouptype,'4J','openlab') . ': ';
     }
 
     $menu_mup = <<<HTML
@@ -518,9 +518,9 @@ function openlab_my_messages_submenu() {
     }
 
     $menu_list = array(
-        $dud . 'messages/inbox/' => 'Doručené zprávy',
-        $dud . 'messages/sentbox/' => 'Odeslané zprávy',
-        $dud . 'messages/compose' => 'Odeslat zprávu',
+        $dud . 'messages/inbox/' => 'Přijaté',
+        $dud . 'messages/sentbox/' => 'Odeslané',
+        $dud . 'messages/compose' => 'Nová zpráva',
     );
     return openlab_submenu_gen($menu_list);
 }
@@ -533,8 +533,8 @@ function openlab_my_invitations_submenu() {
     }
 
     $menu_list = array(
-        $dud . 'groups/invites/' => 'Pozvánky přijaté',
-        $dud . 'invite-anyone/' => 'Pozvat nové uživatele',
+        $dud . 'groups/invites/' => 'Přijaté pozvánky',
+        $dud . 'invite-anyone/' => 'Pozvat nové členy',
         $dud . 'invite-anyone/sent-invites/' => 'Odeslané pozvánky',
     );
     return openlab_submenu_gen($menu_list);
@@ -584,14 +584,14 @@ function openlab_submenu_gen($items, $timestamp = false) {
         }
 
         //special case for send invitations page hitting the same time as invitations received
-        if ($page_identify == "invites" && $title == "Sent Invitations") {
+        if ($page_identify == "invites" && $title == "Odeslat pozvánky") {
             $current_check = false;
         }
 
         //adding the current-menu-item class - also includes special cases, parsed out to make them easier to identify
         if ($current_check !== false) {
             $item_classes .= " current-menu-item";
-        } else if ($page_identify == "general" && $title == "Account Settings") {
+        } else if ($page_identify == "general" && $title == "Nastavení účtu") {
             //special case just for account settings page
             $item_classes .= " current-menu-item";
         } else if ($page_identify == "my-friends" && $title == "Moji přátelé") {
@@ -604,7 +604,7 @@ function openlab_submenu_gen($items, $timestamp = false) {
             //special case for my-<groups> pages
             if (isset($_GET['type'])) {
                 $type = $_GET['type'];
-                $type_title = 'My ' . ucfirst(str_replace('-', ' ', $type)) . 's';
+                $type_title = 'Moje ' . _x(str_replace('-', ' ', $type),'1M','openlab') . '';
                 if ($title == $type_title) {
                     $item_classes .= " current-menu-item";
                 }
@@ -664,7 +664,7 @@ function openlab_filter_subnav_home($subnav_item) {
 
     $displayed_user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
     $group_label = openlab_get_group_type_label('case=upper');
-    $new_label = '<span class="inline-visible-xs">' . $group_label . '</span> Profil';
+    $new_label = '<span class="inline-visible-xs">' . $group_label . '</span> profil';
 
     $new_item = str_replace("Home", $new_label, $subnav_item);
 
@@ -679,11 +679,11 @@ function openlab_filter_subnav_home($subnav_item) {
     $site_link = '';
 
     if (!empty($group_site_settings['site_url']) && $group_site_settings['is_visible']) {
-        $site_link = '<li id="site-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '" id="site">' . $group_label . ' Site</a></li>';
+        $site_link = '<li id="site-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '" id="site">' . $group_label . ' webové stránky</a></li>';
 
         if ($group_site_settings['is_local'] && ((openlab_is_portfolio() && openlab_is_my_portfolio()) || (!openlab_is_portfolio() && groups_is_user_member(bp_loggedin_user_id(), bp_get_current_group_id())) || $bp->is_item_admin || is_super_admin())) {
 
-            $site_link .= '<li id="site-admin-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . 'wp-admin/" id="site-admin">Nástěnka webu</a></li>';
+            $site_link .= '<li id="site-admin-groups-li" class="visible-xs"><a href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . 'wp-admin/" id="site-admin"> Nástěnka webu</a></li>';
         }
     }
 
@@ -830,7 +830,7 @@ add_filter('bp_get_options_nav_nav-forum', 'openlab_filter_subnav_forums');
 function openlab_filter_subnav_forums($subnav_item) {
     // update "current" class to "current-menu-item" to unify site identification of current menu page
     $subnav_item = str_replace('current selected', 'current-menu-item', $subnav_item);
-    $subnav_item = str_replace('Forum', 'Discussion', $subnav_item);
+    $subnav_item = str_replace('Forum', 'Diskuse', $subnav_item);
 
     // Add count.
     $count = 0;
@@ -898,7 +898,7 @@ function openlab_filter_subnav_nav_events($subnav_item) {
 add_filter('bp_get_options_nav_calendar', 'openlab_filter_subnav_nav_calendar');
 
 function openlab_filter_subnav_nav_calendar($subnav_item) {
-    $subnav_item = str_replace('Calendar', 'All Events', $subnav_item);
+    $subnav_item = str_replace('Calendar', 'Všechny události', $subnav_item);
 
     $subnav_item = str_replace("current selected", "current-menu-item", $subnav_item);
 
@@ -978,7 +978,7 @@ function openlab_group_admin_tabs($group = false) {
         --><li<?php if ('group-avatar' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-avatar">Změnit profilový obrázek</a></li><!--
         <?php endif; ?>
 
-        --><li<?php if ('group-settings' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-settings">Privacy Settings</a></li><!--
+        --><li<?php if ('group-settings' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/group-settings">Nastavení soukromí</a></li><!--
 
         <?php
         $account_type = xprofile_get_field_data('Account Type', $bp->loggedin_user->id);
@@ -989,7 +989,7 @@ function openlab_group_admin_tabs($group = false) {
         }
         ?>
 
-        --><li class="delete-button <?php if ('delete-group' == $current_tab) : ?> current-menu-item<?php endif; ?>" ><span class="fa fa-minus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/delete-group">Delete <?php echo $profile; ?></a></li><!--
+      --><li class="delete-button <?php if ('delete-group' == $current_tab) : ?> current-menu-item<?php endif; ?>" ><span class="fa fa-minus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/delete-group">Snazat <?php echo $profile; ?></a></li><!--
 
     <?php else : ?>
 
@@ -1009,10 +1009,10 @@ function openlab_group_admin_tabs($group = false) {
         <?php //do_action( 'groups_admin_tabs', $current_tab, $group->slug )             ?>
 
         <?php if ('course' === openlab_get_group_type(bp_get_current_group_id())) : ?>
-        --><li class="clone-button <?php if ('clone-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-plus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create/step/group-details?type=course&clone=' . bp_get_current_group_id() ?>"><?php _e('Duplikovat ' . ucfirst($group_type), 'buddypress'); ?></a></li><!--
+        --><li class="clone-button <?php if ('clone-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-plus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create/step/group-details?type=course&clone=' . bp_get_current_group_id() ?>"><?php _e('Duplikovat ' . _x($group_type,'4J','openlab'), 'buddypress'); ?></a></li><!--
         <?php endif ?>
 
-      --><li class="delete-button last-item <?php if ('delete-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-minus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/delete-group"><?php _e('Smazat ' . ucfirst($group_type), 'buddypress'); ?></a></li><!--
+      --><li class="delete-button last-item <?php if ('delete-group' == $current_tab) : ?>current-menu-item<?php endif; ?>" ><span class="fa fa-minus-circle"></span><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/delete-group"><?php _e('Smazat ' . _x($group_type,'4J','openlab'), 'buddypress'); ?></a></li><!--
 
         <?php if ($group_type == "portfolio") : ?>
                                                                                                                                                                                                                                                                                                                                                                <li class="portfolio-displayname pull-right"><span class="highlight"><?php echo bp_core_get_userlink(openlab_get_user_id_from_portfolio_group_id(bp_get_group_id())); ?></span></li>
@@ -1040,25 +1040,25 @@ function openlab_group_membership_tabs($group = false) {
     ?>
     <!--
     <?php if ($bp->is_item_admin || $bp->is_item_mod): ?>
-        --><li<?php if ($current_tab == 'manage-members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/manage-members"><?php _e('Membership', 'invite-anyone'); ?></a></li><!--
+    --><li<?php if ($current_tab == 'manage-members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/manage-members"><?php _e('Členství', 'buddypress'); ?></a></li><!--
 
         <?php if ($group->status == 'private'): ?>
-            --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Member Requests', 'invite-anyone'); ?></a></li><!--
+        --><li<?php if ('membership-requests' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/membership-requests"><?php _e('Požadavky na členství', 'buddypress'); ?></a></li><!--
         <?php endif; ?>
     <?php else: ?>
-    --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Memberships', 'buddypress'); ?></a></li><!--
+    --><li<?php if ($bp->current_action == 'members') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/members"><?php _e('Členství', 'buddypress'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && invite_anyone_access_test() && openlab_is_admin_truly_member()): ?>
-    --><li<?php if ($bp->current_action == 'invite-anyone') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/invite-anyone"><?php _e('Invite New Members', 'invite-anyone'); ?></a></li><!--
+        --><li<?php if ($bp->current_action == 'invite-anyone') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/invite-anyone"><?php _e('Invite New Members', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if ($bp->is_item_admin || $bp->is_item_mod): ?>
-        --><li<?php if ('notifications' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/notifications"><?php _e('Email Members', 'invite-anyone'); ?></a></li><!--
+    --><li<?php if ('notifications' == $current_tab) : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/admin/notifications"><?php _e('Odeslat mail členům', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
 
     <?php if (bp_group_is_member() && openlab_is_admin_truly_member()): ?>
-        --><li<?php if ($bp->current_action == 'notifications') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/notifications"><?php _e('Your Email Options', 'invite-anyone'); ?></a></li><!--
+        --><li<?php if ($bp->current_action == 'notifications') : ?> class="current-menu-item"<?php endif; ?>><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/notifications"><?php _e('Možnosti e-mailu', 'invite-anyone'); ?></a></li><!--
     <?php endif; ?>
     -->
     <?php
@@ -1075,9 +1075,9 @@ function openlab_docs_tabs() {
     }
     ?>
 
-    <li <?php echo (bp_docs_current_view() == 'list' ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/docs/">View Docs</a></li><!--
+    <li <?php echo (bp_docs_current_view() == 'list' ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/docs/">Zobrazit WIKI dokumenty</a></li><!--
     <?php if (groups_is_user_member(get_current_user_id(), bp_get_group_id())): ?>
-        --><li <?php echo (bp_docs_current_view() == 'create' ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/docs/create">New Doc</a></li><!--
+    --><li <?php echo (bp_docs_current_view() == 'create' ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/docs/create">Nový WIKI dokument</a></li><!--
     <?php endif; ?>
     <?php if ((bp_docs_current_view() == 'edit' || bp_docs_current_view() == 'single') && bp_docs_is_existing_doc()): ?>
         <?php $doc_obj = bp_docs_get_current_doc(); ?>
@@ -1114,7 +1114,7 @@ function openlab_forum_tabs() {
     bbp_the_topic();
     ?>
 
-    <li <?php echo (!bp_action_variable() ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/forum/">Discussion</a></li><!--
+    <li <?php echo (!bp_action_variable() ? 'class="current-menu-item"' : ''); ?> ><a href="<?php echo bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/' . $group->slug ?>/forum/">Diskuse</a></li><!--
     <?php if (bp_action_variable() == 'topic'): ?>
         --><li class="current-menu-item hyphenate"><span><?php bbp_topic_title() ?></span></li><!--
             <?php endif; ?>
@@ -1169,13 +1169,13 @@ function openlab_calendar_submenu() {
 
     $links_out = array(
         array(
-            'name' => 'All Events',
+            'name' => 'Všechny události',
             'slug' => 'calendar',
             'link' => get_site_url() . '/about/calendar/',
             'class' => $post->post_name === 'calendar' ? 'current-menu-item' : ''
         ),
         array(
-            'name' => 'Upcoming',
+            'name' => 'Nadcházející',
             'slug' => 'upcoming',
             'link' => get_site_url() . '/about/calendar/upcoming/',
             'class' => $post->post_name === 'upcoming' ? 'current-menu-item' : ''

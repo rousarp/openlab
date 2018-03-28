@@ -1329,7 +1329,7 @@ HTML;
 		$wp_admin_bar->remove_node( 'bp-login' );
 
 		// Change the title of the signup node
-		$signup->title = 'Registrovat se';
+		$signup->title = 'Registrace';
 
 		// Move them both to top-secondary, to appear at the right
 		$signup->parent = 'top-secondary';

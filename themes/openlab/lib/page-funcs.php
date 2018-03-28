@@ -44,7 +44,7 @@ function cuny_home_login() {
     <?php else : ?>
         <?php echo '<div id="open-lab-join" class="log-box links-lighter-hover">'; ?>
         <?php echo '<h1 class="title"><span class="fa fa-plus-circle flush-left"></span> Připojit se k OpenLab</h1>'; ?>
-        <?php _e('<p><a class="btn btn-default btn-primary link-btn pull-right semibold" href="' . site_url() . '/register/">Registrovat se</a> <span class="font-size font-14">Nemáte účet?<br />Registrujte se a staňte se členem!</span></p>', 'buddypress') ?>
+        <?php _e('<p><a class="btn btn-default btn-primary link-btn pull-right semibold" href="' . site_url() . '/register/">Registrovat</a> <span class="font-size font-14">Nemáte účet?<br />Registrujte se a staňte se členem!</span></p>', 'buddypress') ?>
         <?php echo '</div>'; ?>
 
         <?php echo '<div id="open-lab-login" class="log-box">'; ?>
@@ -53,7 +53,7 @@ function cuny_home_login() {
 
         <div id="user-login" class="log-box">
 
-            <?php echo '<h2 class="title"><span class="fa fa-arrow-circle-right"></span> Přihlásit se</h2>'; ?>
+            <?php echo '<h2 class="title"><span class="fa fa-arrow-circle-right"></span>Přihlásit se</h2>'; ?>
             <?php do_action('bp_before_sidebar_login_form') ?>
 
             <form name="login-form" class="standard-form" action="<?php echo site_url('wp-login.php', 'login_post') ?>" method="post">

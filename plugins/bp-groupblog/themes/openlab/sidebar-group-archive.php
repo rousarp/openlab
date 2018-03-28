@@ -3,14 +3,15 @@ global $bp, $wp_query;
 $post_obj = $wp_query->get_queried_object();
 $group_type = openlab_page_slug_to_grouptype();
 $group_slug = $group_type . 's';
+global $bpcgc_color;
 
 //conditional for people archive sidebar
 if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
     $group_type = "people";
     $group_slug = $group_type;
-    $sidebar_title = 'Find People';
+    $sidebar_title = 'Hledání osob';
 } else {
-    $sidebar_title = 'Find a ' . ucfirst($group_type);
+    $sidebar_title = 'Hledání ' . ucfirst($group_type);
 }
 ?>
 
@@ -107,26 +108,35 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
     switch ($_GET['usertype']) {
 
         case "student" :
-            $display_option_user_type = "Student";
+            $display_option_user_type = "Úředník";
             $option_value_user_type = "student";
             break;
         case "faculty" :
-            $display_option_user_type = "Faculty";
+            $display_option_user_type = "Dodavatel";
             $option_value_user_type = "faculty";
             break;
         case "staff" :
-            $display_option_user_type = "Staff";
+            $display_option_user_type = "Politik";
             $option_value_user_type = "staff";
             break;
         case 'alumni' :
-            $display_option_user_type = 'Alumni';
+            $display_option_user_type = 'Partner webu';
             $option_value_user_type = 'alumni';
+            break;
+        case 'Běžný uživatel' :
+            $display_option_user_type = 'Běžný uživatel';
+            $option_value_user_type = 'Běžný uživatel';
+            break;
+        case 'Uživatel z veřejné správy' :
+            $display_option_user_type = 'Uživatel z veřejné správy';
+            $option_value_user_type = 'Uživatel z veřejné správy';
+            break;
         case "user_type_all":
-            $display_option_user_type = "All";
+            $display_option_user_type = "Všichni";
             $option_value_user_type = "user_type_all";
             break;
         default:
-            $display_option_user_type = "Select User Type";
+            $display_option_user_type = "Zvolte typ uživatele";
             $option_value_user_type = "";
             break;
     }
@@ -138,19 +148,19 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
     }
     switch ($_GET['group_sequence']) {
         case "alphabetical":
-            $display_option = "Alphabetical";
+            $display_option = "Podle abecedy";
             $option_value = "alphabetical";
             break;
         case "newest":
-            $display_option = "Newest";
+            $display_option = "Nejnovější";
             $option_value = "newest";
             break;
         case "active":
-            $display_option = "Last Active";
+            $display_option = "Naposledy aktivní";
             $option_value = "active";
             break;
         default:
-            $display_option = "Order By";
+            $display_option = "Třídění";
             $option_value = "";
             break;
     }
@@ -160,9 +170,9 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
         <form id="group_seq_form" name="group_seq_form" action="#" method="get">
             <div id="sidebarCustomSelect" class="custom-select-parent">
                 <div class="custom-select" id="schoolSelect">
-                    <label for="school-select" class="sr-only">Zvolit téma</label>
+                    <label for="school-select" class="sr-only">Vybrat téma</label>
                     <select name="school" class="last-select <?php echo $school_color; ?>-text" id="school-select" tabindex="0">
-                        <option value="" <?php selected('', $option_value_school) ?>>Vybrat téma</option>
+                        <option value="" <?php selected('', $option_value_school) ?>>Vyberte téma</option>
                         <option value='school_all' <?php selected('school_all', $option_value_school) ?>>Všechna témata</option>
 			<?php foreach ( $schools as $school_key => $school_label ) : ?>
 				<option value='<?php echo esc_attr( $school_key ); ?>' <?php selected( $school_key, $option_value_school ); ?>><?php echo esc_html( $school_label ); ?></option>
@@ -172,7 +182,7 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
 
                 <div class="hidden" id="nonce-value"><?php echo wp_create_nonce("dept_select_nonce"); ?></div>
                 <div class="custom-select">
-                    <label for="dept-select" class="sr-only">Zvolit oblast</label>
+                    <label for="dept-select" class="sr-only">Vyberte oblasti</label>
                     <select name="department" class="last-select processing <?php echo $dept_color; ?>-text" id="dept-select" <?php disabled('', $option_value_school) ?>>
                         <?php echo openlab_return_course_list($option_value_school, $option_value_dept); ?>
                     </select>
@@ -186,10 +196,10 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
                         <?php if ($group_terms && !empty($group_terms)): ?>
 
                             <div class="custom-select">
-                                <label for="bp-group-categories-select" class="sr-only">Vybrat kategorii</label>
-                                <select name="cat" class="last-select <?php echo $bpcgc_color; ?>-text" id="bp-group-categories-select">
-                                    <option value="" <?php selected('', $option_value_bpcgc) ?>>Vybrat kategorii</option>
-                                    <option value='cat_all' <?php selected('cat_all', $option_value_bpcgc) ?>>Vše</option>
+                                <label for="bp-group-categories-select" class="sr-only">Zvolte kategorii</label>
+                                <select name="cat" class="last-select <?php echo $dept_color; ?>-text" id="bp-group-categories-select">
+                                    <option value="" <?php selected('', $option_value_bpcgc) ?>>Zvolte kategorii</option>
+                                    <option value='cat_all' <?php selected('cat_all', $option_value_bpcgc) ?>>Libovolná kategorie</option>
                                     <?php foreach ($group_terms as $term) : ?>
                                         <option value="<?php echo $term->slug ?>" <?php selected($option_value_bpcgc, $term->slug) ?>><?php echo $term->name ?></option>
                                     <?php endforeach; ?>
@@ -205,9 +215,9 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
                 <?php // @todo figure out a way to make this dynamic ?>
                 <?php if ($group_type == 'course'): ?>
                     <div class="custom-select">
-                        <label for="semester-select" class="sr-only">Vybrat semestr</label>
+                        <label for="semester-select" class="sr-only">Vyberte kvartál</label>
                         <select id="semester-select" name="semester" class="last-select <?php echo $semester_color; ?>-text">
-                            <option value='' <?php selected('', $option_value_semester) ?>>Vybrat semestr</option>
+                            <option value='' <?php selected('', $option_value_semester) ?>>Vyberte kvartál</option>
                             <option value='semester_all' <?php selected('semester_all', $option_value_semester) ?>>Vše</option>
                             <?php foreach (openlab_get_active_semesters() as $sem) : ?>
                                 <option value="<?php echo esc_attr($sem['option_value']) ?>" <?php selected($option_value_semester, $sem['option_value']) ?>><?php echo esc_attr($sem['option_label']) ?></option>
@@ -218,19 +228,17 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
 
                 <?php if ($group_type == 'portfolio' || $post_obj->post_title == 'People'): ?>
                     <div class="custom-select">
-                        <label for="user-type-select" class="sr-only">Zvolit typ uživatele</label>
+                        <label for="user-type-select" class="sr-only">Zvolte typ uživatele</label>
                         <select id="user-type-select" name="usertype" class="last-select <?php echo $user_color; ?>-text">
-                            <option value='' <?php selected('', $option_value_user_type) ?>>Vyberte typ uživatele</option>
-                            <option value='student' <?php selected('student', $option_value_user_type) ?>>Student</option>
-                            <option value='faculty' <?php selected('faculty', $option_value_user_type) ?>>Faculty</option>
-                            <option value='staff' <?php selected('staff', $option_value_user_type) ?>>Staff</option>
-                            <option value='alumni' <?php selected('alumni', $option_value_user_type) ?>>Alumni</option>
-                            <option value='user_type_all' <?php selected('user_type_all', $option_value_user_type) ?>>All</option>
+                            <option value='' <?php selected('', $option_value_user_type) ?>>Zvolte typ uživatele</option>
+                            <option value='Běžný uživatel' <?php selected('Běžný uživatel', $option_value_user_type) ?>>Běžný uživatel</option>
+                            <option value='Uživatel z veřejné správy' <?php selected('Uživatel z veřejné správy', $option_value_user_type) ?>>Uživatel z veřejné správy</option>
+                            <option value='user_type_all' <?php selected('user_type_all', $option_value_user_type) ?>>Všichni</option>
                         </select>
                     </div>
                 <?php endif; ?>
                 <div class="custom-select">
-                    <label for="sequence-select" class="sr-only">Zvolte způsob třídění</label>
+                    <label for="sequence-select" class="sr-only">Zvolte třídění</label>
                     <select id="sequence-select" name="group_sequence" class="last-select <?php echo $sort_color; ?>-text">
                         <option <?php selected($option_value, 'alphabetical') ?> value='alphabetical'>Podle abecedy</option>
                         <option <?php selected($option_value, 'newest') ?>  value='newest'>Nejnovější</option>
@@ -239,15 +247,15 @@ if ($group_type == 'not-archive' && $post_obj->post_title == "People") {
                 </div>
 
             </div>
-            <input class="btn btn-primary" type="submit" onchange="document.forms['group_seq_form'].submit();" value="Submit">
-            <input class="btn btn-default" type="button" value="Reset" onClick="window.location.href = '<?php echo $bp->root_domain ?>/<?php echo $group_slug; ?>/'">
+            <input class="btn btn-primary" type="submit" onchange="document.forms['group_seq_form'].submit();" value="Odeslat">
+            <input class="btn btn-default" type="button" value="Resetovat" onClick="window.location.href = '<?php echo $bp->root_domain ?>/<?php echo $group_slug; ?>/'">
         </form>
 
         <div class="archive-search">
             <h3 class="bold font-size font-14">Vyhledat</h3>
             <form method="get" class="form-inline btn-combo" role="form">
                 <div class="form-group">
-                    <input id="search-terms" class="form-control" type="text" name="search" placeholder="Enter keyword" /><label class="sr-only" for="search-terms">Zadejte klíčové slovo</label><button class="btn btn-primary top-align" id="search-submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Vyhledat</span></button>
+                    <input id="search-terms" class="form-control" type="text" name="search" placeholder="Zadejte klíčové slovo" /><label class="sr-only" for="search-terms">Zadejte klíčové slovo</label><button class="btn btn-primary top-align" id="search-submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Vyhledat</span></button>
                 </div>
             </form>
             <div class="clearfloat"></div>

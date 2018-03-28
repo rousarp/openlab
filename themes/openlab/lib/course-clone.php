@@ -774,7 +774,7 @@ class Openlab_Clone_Course_Site {
 
 	    // Make destination directory
 	    if (!is_dir($dest)) {
-		mkdir($dest);
+		mkdir($dest, 0777, true);
 	    }
 
 	    // Loop through the folder
@@ -794,4 +794,3 @@ class Openlab_Clone_Course_Site {
 	    return true;
 	}
 }
-

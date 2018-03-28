@@ -287,12 +287,12 @@ function openlab_list_members($view) {
 
         <?php
     else:
-        if ($user_type == "Student") {
-            $user_type = "students";
+        if ($user_type == "Uživatel z veřejné správy") {
+            $user_type = "uživatelů z veřejné správy";
         }
 
         if (empty($user_type)) {
-            $user_type = 'people';
+            $user_type = 'uživatelů';
         }
         ?>
         <div class="row group-archive-header-row">
@@ -303,7 +303,7 @@ function openlab_list_members($view) {
 
         <div id="group-members-list" class="item-list group-list row">
             <div class="widget-error query-no-results col-sm-24">
-                <p class="bold"><?php _e('Neexistují žádné  ' . strtolower($user_type) . ' kluby, které by se zobrazovaly.', 'buddypress') ?></p>
+                <p class="bold"><?php _e('Neexistují žádné kluby / skupiny ' . strtolower($user_type) . ', které by se zobrazovaly.', 'buddypress') ?></p>
             </div>
         </div>
 

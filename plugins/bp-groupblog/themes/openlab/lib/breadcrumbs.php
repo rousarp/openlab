@@ -17,7 +17,7 @@ add_action('bp_before_footer', 'openlab_do_breadcrumbs', 5);
 add_filter('openlab_breadcrumb_args', 'custom_breadcrumb_args');
 
 function custom_breadcrumb_args($args) {
-    $args['labels']['prefix'] = '<div class="breadcrumb-inline prefix-label"><div class="breadcrumb-prefix-label">You are here</div><i class="fa fa-caret-right"></i></div><div class="breadcrumb-inline breadcrumbs">';
+    $args['labels']['prefix'] = '<div class="breadcrumb-inline prefix-label"><div class="breadcrumb-prefix-label">Jste zde</div><i class="fa fa-caret-right"></i></div><div class="breadcrumb-inline breadcrumbs">';
     $args['prefix'] = '<div id="breadcrumb-container"><div class="breadcrumb-col semibold uppercase"><div class="breadcrumb-wrapper">';
     $args['suffix'] = '</div></div></div></div>';
     return $args;
@@ -95,15 +95,17 @@ function openlab_specific_archive_breadcrumb($crumb, $args) {
     if (!empty($bp->displayed_user->id)) {
         $account_type = xprofile_get_field_data('Account Type', $bp->displayed_user->id);
         if ($account_type == "Staff") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
         } elseif ($account_type == "Faculty") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/students/">Students</a>';
         } elseif ($account_type == "Uživatel z veřejné správy") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
+        } elseif ($account_type == "Bežný uživatel") {
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/bezny-uzivatel/">Běžní uživatelé</a>';
         } else {
-            $b1 = '<a href="' . site_url() . '/people/">People</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a>';
         }
         $last_name = xprofile_get_field_data('Last Name', $bp->displayed_user->id);
         $b2 = ucfirst($bp->displayed_user->fullname); //.''.ucfirst( $last_name )
@@ -123,22 +125,24 @@ function openlab_page_crumb_overrides($crumb, $args) {
     if ( bp_is_group() && ! bp_is_group_create() ) {
 
         $group_type = openlab_get_group_type();
-        $crumb = '<a href="' . site_url() . '/' . $group_type . 's/">' . ucfirst($group_type) . 's</a> / ' . bp_get_group_name();
+        $crumb = '<a href="' . site_url() . '/' . $group_type . 's/">' . _x($group_type,'1M','openlab') . '</a> / ' . bp_get_group_name();
     }
 
     if (bp_is_user()) {
 
         $account_type = xprofile_get_field_data('Account Type', $bp->displayed_user->id);
         if ($account_type == "Staff") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/staff/">Staff</a>';
         } elseif ($account_type == "Faculty") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/faculty/">Faculty</a>';
         } elseif ($account_type == "Student") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/students/">Students</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/students/">Students</a>';
         } elseif ($account_type == "Uživatel z veřejné správy") {
-            $b1 = '<a href="' . site_url() . '/people/">People</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/uzivatel-z-verejne-spravy/">Uživatelé z veřejné správy</a>';
+        } elseif ($account_type == "Bežný uživatel") {
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a> / <a href="' . site_url() . '/people/bezny-uzivatel/">Běžní uživatelé</a>';
         } else {
-            $b1 = '<a href="' . site_url() . '/people/">People</a>';
+            $b1 = '<a href="' . site_url() . '/people/">Lidé</a>';
         }
         $last_name = xprofile_get_field_data('Last Name', $bp->displayed_user->id);
         $b2 = ucfirst($bp->displayed_user->fullname); //.''.ucfirst( $last_name )
@@ -498,7 +502,7 @@ class Openlab_Breadcrumb {
      */
     function get_term_parents($parent_id, $taxonomy, $link = false, $visited = array()) {
 
-        $parent = &get_term((int) $parent_id, $taxonomy);
+        $parent = get_term((int) $parent_id, $taxonomy);
 
         if (is_wp_error($parent))
             return array();

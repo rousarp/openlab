@@ -31,7 +31,7 @@ function openlab_group_privacy_settings($group_type) {
     global $bp;
 
     $group_type_name = $group_type;
-    $group_type_name_uc = ucfirst($group_type);
+    $group_type_name_uc = $group_type;
 
     if ('portfolio' === $group_type) {
         $group_type_name = openlab_get_portfolio_label(array(
@@ -39,7 +39,7 @@ function openlab_group_privacy_settings($group_type) {
         ));
         $group_type_name_uc = openlab_get_portfolio_label(array(
             'group_id' => bp_get_current_group_id(),
-            'case' => 'upper',
+        //    'case' => 'upper',
         ));
     }
 
@@ -59,14 +59,14 @@ function openlab_group_privacy_settings($group_type) {
     }
     ?>
     <div class="panel panel-default">
-        <div class="panel-heading semibold"><?php _e('Privacy Settings', 'buddypress'); ?><?php if ($bp->current_action == 'admin' || $bp->current_action == 'create' || openlab_is_portfolio()): ?>: <?php echo $group_type_name_uc ?> Profile<?php endif; ?></div>
+        <div class="panel-heading semibold"><?php _e('Privacy Options', 'buddypress'); ?><?php if ($bp->current_action == 'admin' || $bp->current_action == 'create' || openlab_is_portfolio()): ?>: Profil <?php echo _x($group_type_name_uc,'2J','openlab') ?><?php endif; ?></div>
 
         <div class="radio group-profile panel-body">
 
             <?php if ($bp->current_action == 'create'): ?>
-                <p id="privacy-settings-tag-b"><?php _e('These settings affect how others view your ' . $group_type_name . ' Profile. You may change these settings later in the course Profile Settings.', 'buddypress'); ?></p>
+                <p id="privacy-settings-tag-b"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil ' . _x($group_type_name,'2J-tento','openlab') . '. Tato nastavení můžete později změnit v sekci Nastavení profilu.'); ?></p>
             <?php else: ?>
-                <p class="privacy-settings-tag-c"><?php _e('These settings affect how others view your ' . $group_type_name_uc . ' Profile.') ?></p>
+                <p class="privacy-settings-tag-c"><?php echo('Tato nastavení mají vliv na to, jak ostatní zobrazují profil ' .  _x($group_type_name,'2J-tento','openlab'). '.') ?></p>
             <?php endif; ?>
 
             <?php
@@ -78,27 +78,27 @@ function openlab_group_privacy_settings($group_type) {
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
                     <label><input type="radio" name="group-status" value="public" <?php checked('public', $new_group_status) ?> />
-                        This is a public <?php echo $group_type_name_uc ?></label>
+                        Toto je  <?php echo _x($group_type_name_uc, '1J-veřejný','openlab')?></label>
                     <ul>
-                        <li>This <?php echo $group_type_name_uc ?> Profile and related content and activity will be visible to the public.</li>
-                        <li><?php _e('This ' . $group_type_name_uc . ' will be listed in the ' . $group_type_name_uc . 's directory, search results, and may be displayed on the OpenLab home page.', 'buddypress') ?></li>
-                        <li><?php _e('Any OpenLab member may join this ' . $group_type_name_uc . '.', 'buddypress') ?></li>
+                        <li>Profil <?php echo _x($group_type_name_uc, '2J-veřejný','openlab')?> včetně souvisejícího obsahu a aktivit budou veřejnosti viditelné.</li>
+                        <li><?php echo( ucfirst(_x($group_type_name_uc, '1J-tento','openlab')) . ' bude uveden v seznamu ' ._x($group_type_name_uc, '2M','openlab') . ', ve výsledcích vyhledávání a může být zobrazen na domovské webové stránce OpenLab.') ?></li>
+                        <li><?php echo('Do  ' . _x($group_type_name_uc, '2J-tento','openlab') . ' se může přihlásit kterýkoliv člen OpenLab.') ?></li>
                     </ul>
 
                     <label><input type="radio" name="group-status" value="private" <?php checked('private', $new_group_status) ?> />
-                        <?php _e('This is a private ' . $group_type_name_uc, 'buddypress') ?></label>
+                        <?php echo('Toto je  ' . _x($group_type_name_uc, '1J-soukromý','openlab')) ?></label>
                     <ul>
-                        <li><?php _e('This ' . $group_type_name_uc . ' Profile and related content and activity will only be visible to members of the group.', 'buddypress') ?></li>
-                        <li><?php _e('This ' . $group_type_name_uc . ' will be listed in the ' . $group_type_name_uc . ' directory, search results, and may be displayed on the OpenLab home page.', 'buddypress') ?></li>
-                        <li><?php _e('Only OpenLab members who request membership and are accepted may join this ' . $group_type_name_uc . '.', 'buddypress') ?></li>
+                        <li><?php echo('Profil ' . _x($group_type_name_uc, '2J-tento','openlab') . ' včetně souvisejícího obsahu a aktivit bude viditelný pouze členům ' ._x($group_type_name_uc, '2J-tento','openlab')) ?></li>
+                        <li><?php echo(ucfirst(_x($group_type_name_uc, '1J-tento','openlab')) . ' bude uveden v seznamu ' . _x($group_type_name_uc, '2M','openlab') . ', ve výsledcích vyhledávání a může být zobrazen na domovské webové stránce OpenLab.') ?></li>
+                        <li><?php echo('Do ' .  _x($group_type_name_uc, '2J-tento','openlab') . ' se mohou připojit pouze členové OpenLab, kteří požádali o členství a jsou přijati.') ?></li>
                     </ul>
-
                     <label><input type="radio" name="group-status" value="hidden" <?php checked('hidden', $new_group_status) ?> />
-                        <?php _e('This is a hidden ' . $group_type_name_uc, 'buddypress') ?></label>
+
+                        <?php echo('Toto je  ' . _x($group_type_name_uc, '1J-skrytý','openlab')) ?></label>
                     <ul>
-                        <li><?php _e('This ' . $group_type_name_uc . ' Profile, related content and activity will only be visible only to members of the ' . $group_type_name_uc . '.', 'buddypress') ?></li>
-                        <li><?php _e('This ' . $group_type_name_uc . ' Profile will NOT be listed in the ' . $group_type_name_uc . ' directory, search results, or OpenLab home page.', 'buddypress') ?></li>
-                        <li><?php _e('Only OpenLab members who are invited may join this ' . $group_type_name_uc . '.', 'buddypress') ?></li>
+                        <li><?php echo('Profil ' ._x($group_type_name_uc, '2J-tento','openlab') . ' včetně souvisejícího obsahu a aktivit bude viditelný pouze členům ' . _x($group_type_name_uc, '2J-tento','openlab')) ?></li>
+                        <li><?php echo('Profil ' ._x($group_type_name_uc, '2J-tento','openlab') . ' NEBUDE uveden v seznamu ' .  _x($group_type_name_uc, '2M','openlab') . ' ve výsledcích vyhledávání a může být zobrazen na domovské webové stránce OpenLab.') ?></li>
+                        <li><?php echo('Do ' . _x($group_type_name_uc, '2J-tento','openlab') . '. se mohou přihlásit pouze pozvaní členové OpenLab') ?></li>
                     </ul>
                 </div>
             </div>
@@ -109,9 +109,9 @@ function openlab_group_privacy_settings($group_type) {
 
     <?php if ($site_id = openlab_get_site_id_by_group_id()) : ?>
         <div class="panel panel-default">
-            <div class="panel-heading semibold"><?php _e($group_type_name_uc . ' Site') ?></div>
+            <div class="panel-heading semibold"><?php _e('Webové stránky ' . _x($group_type_name_uc,'2J','openlab'))?></div>
             <div class="panel-body">
-                <p class="privacy-settings-tag-c"><?php _e('These settings affect how others view your ' . $group_type_name_uc . ' Site.') ?></p>
+                <p class="privacy-settings-tag-c"><?php _e('Tato nastavení ovlivňují to, jak ostatní zobrazují vaše webové stránky '  . _x($group_type_name_uc,'2J','openlab')) ?></p>
                 <?php openlab_site_privacy_settings_markup($site_id) ?>
             </div>
         </div>
@@ -320,7 +320,7 @@ function openlab_group_archive() {
         </div>
         <div id="group-list" class="item-list row">
             <div class="widget-error query-no-results col-sm-24">
-                <p class="bold"><?php _e('There are no ' . $group_type . 's to display.', 'buddypress') ?></p>
+                <p class="bold"><?php _e('Nejsou k dispozici žádné ' . _x($group_type,'1M','openlab') . ' k zobrazení.', 'buddypress') ?></p>
             </div>
         </div>
 
@@ -330,7 +330,7 @@ function openlab_group_archive() {
 
 function openlab_groups_pagination_links() {
     global $groups_template;
-
+    global $search_terms;
     $pagination = paginate_links(array(
         'base' => add_query_arg(array('grpage' => '%#%', 'num' => $groups_template->pag_num, 's' => $search_terms, 'sortby' => $groups_template->sort_by, 'order' => $groups_template->order)),
         'format' => '',
@@ -346,7 +346,7 @@ function openlab_groups_pagination_links() {
     $pagination = str_replace('page-numbers', 'page-numbers pagination', $pagination);
 
     //for screen reader only text - current page
-    $pagination = str_replace('current\'><span class="sr-only">Stránka', 'current\'><span class="sr-only">Aktuální stránka', $pagination);
+    $pagination = str_replace('current\'><span class="sr-only">Stránka', 'current\'><span class="sr-only">Current Page', $pagination);
 
     return $pagination;
 }
@@ -432,7 +432,7 @@ function cuny_groups_pagination_count($group_name) {
     $to_num = bp_core_number_format(( $start_num + ( $groups_template->pag_num - 1 ) > $groups_template->total_group_count ) ? $groups_template->total_group_count : $start_num + ( $groups_template->pag_num - 1 ));
     $total = bp_core_number_format($groups_template->total_group_count);
 
-    echo sprintf('%1$s až %2$s (z %3$s ' . _x($group_name,'1M','openlab') . ')', $from_num, $to_num, $total);
+    echo sprintf('%1$s až %2$s (z %3$s ' . _x($group_name,'2M','openlab') . ')', $from_num, $to_num, $total);
 }
 
 /**
@@ -494,51 +494,51 @@ function openlab_site_privacy_settings_markup($site_id = 0) {
 
     $blog_name = get_blog_option($site_id, 'blogname');
     $blog_public = get_blog_option($site_id, 'blog_public');
-    $group_type = openlab_get_current_group_type('case=upper');
+    $group_type = openlab_get_current_group_type();
     ?>
 
     <div class="radio group-site">
 
-        <h5><?php _e('Public', 'buddypress') ?></h5>
-        <p id="search-setting-note" class="italics note">Note: These options will NOT block access to your site. It is up to search engines to honor your request.</p>
+        <h5><?php echo(_x($group_type,'1J-veřejný','openlab')) ?></h5>
+        <p id="search-setting-note" class="italics note">Poznámka: Tyto možnosti nebudou blokovat přístup k vašemu webu. Je na vyhledávačích, aby vyhovovaly vaší žádosti.</p>
         <div class="row">
             <div class="col-sm-23 col-sm-offset-1">
-                <p><label for="blog-private1"><input id="blog-private1" type="radio" name="blog_public" value="1" <?php checked('1', $blog_public); ?> /><?php _e('Allow search engines to index this site. Your site will show up in web search results.'); ?></label></p>
+                <p><label for="blog-private1"><input id="blog-private1" type="radio" name="blog_public" value="1" <?php checked('1', $blog_public); ?> /><?php echo('Povolit vyhledávačům indexovat tyto stránky. Vaše stránky se budou zobrazovat ve výsledcích vyhledávání na webu.'); ?></label></p>
 
-                <p><label for="blog-private0"><input id="blog-private0" type="radio" name="blog_public" value="0" <?php checked('0', $blog_public); ?> /><?php _e('Ask search engines not to index this site. Your site should not show up in web search results.'); ?></label></p>
+                <p><label for="blog-private0"><input id="blog-private0" type="radio" name="blog_public" value="0" <?php checked('0', $blog_public); ?> /><?php _e('Požádejte vyhledávače, aby tuto stránku indexovali. Vaše stránky by se neměly zobrazovat ve výsledcích vyhledávání na webu.'); ?></label></p>
             </div>
         </div>
 
         <?php if (!openlab_is_portfolio() && (!isset($_GET['type']) || 'portfolio' != $_GET['type'] )): ?>
 
-            <h5><?php _e('Private', 'buddypress') ?></h5>
+            <h5><?php echo(_x($group_type,'1J-soukromý','openlab')) ?></h5>
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
-                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php _e('I would like my site to be visible only to registered users of City Tech OpenLab.', 'buddypress'); ?></label></p>
+                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php echo('Požaduji, aby byl můj web viditelný pouze pro registrované uživatele OpenLab.'); ?></label></p>
 
-                    <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>><?php _e('I would like my site to be visible to registered users of this ' . ucfirst($group_type) . '.'); ?></label></p>
+                    <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>><?php echo('Požaduji, aby byl můj web viditelný pro registrované uživatele ' . _x($group_type,'2J-tento','openlab') . '.'); ?></label></p>
                 </div>
             </div>
 
-            <h5><?php _e('Hidden', 'buddypress') ?></h5>
+            <h5><?php echo(_x($group_type,'1J-skrytý','openlab')) ?></h5>
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
-                    <p><label for="blog-private-3"><input id="blog-private-3" type="radio" name="blog_public" value="-3" <?php checked('-3', $blog_public); ?>><?php _e('I would like my site to be visible only to site administrators.'); ?></label></p>
+                    <p><label for="blog-private-3"><input id="blog-private-3" type="radio" name="blog_public" value="-3" <?php checked('-3', $blog_public); ?>><?php echo('Požaduji, aby byl web viditelný pouze pro správce webu.'); ?></label></p>
                 </div>
             </div>
 
         <?php else : ?>
 
             <?php /* Portfolios */ ?>
-            <h5>Private</h5>
+            <h5>Privátní porfolio</h5>
             <div class="row">
                 <div class="col-sm-23 col-sm-offset-1">
-                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php _e('I would like my site to be visible only to registered users of City Tech OpenLab.', 'buddypress'); ?></label></p>
+                    <p><label for="blog-private-1"><input id="blog-private-1" type="radio" name="blog_public" value="-1" <?php checked('-1', $blog_public); ?>><?php echo('Požaduji, aby byl můj web viditelný pouze pro registrované uživatele OpenLab.'); ?></label></p>
 
-                    <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>>I would like my site to be visible only to registered users that I have granted access.</label></p>
-                    <p class="description private-portfolio-gloss italics note">Note: If you would like non-City Tech users to view your private site, you will need to make your site public.</p>
+                    <p><label for="blog-private-2"><input id="blog-private-2" type="radio" name="blog_public" value="-2" <?php checked('-2', $blog_public); ?>>Chci, aby byl web viditelný pouze pro registrované uživatele, kterým jsem udělil(a) přístup.</label></p>
+                    <p class="description private-portfolio-gloss italics note">Poznámka: Pokud chcete, aby uživatelé, kteří nejsou členy Open Lab, viděli vaše soukromé stránky, budete muset vaše stránky zveřejnit.</p>
 
-                    <p><label for="blog-private-3"><input id="blog-private-3" type="radio" name="blog_public" value="-3" <?php checked('-3', $blog_public); ?>>I would like my site to be visible only to me.</label></p>
+                    <p><label for="blog-private-3"><input id="blog-private-3" type="radio" name="blog_public" value="-3" <?php checked('-3', $blog_public); ?>>Chci, aby byl můj web viditelný jen pro mě.</label></p>
                 </div>
             </div>
 
@@ -633,7 +633,7 @@ function cuny_group_single() {
                     </div>
                 <?php endif; ?>
                 <?php openlab_render_message(); ?>
-        </div><!-- #<?php echo $group_type; ?>-header-avatar -->
+        </div><!-- #<?php echo _x($group_type,'1J','openlab'); ?>-header-avatar XXXX -->
 
             <div id="<?php echo $group_type; ?>-header-content" class="col-sm-16 col-xs-24 alignleft group-header-content group-<?php echo $group_id; ?>">
 
@@ -663,23 +663,23 @@ function cuny_group_single() {
                             }
                             ?>
                             <div class="table-row row">
-                                <div class="bold col-sm-7">Professor(s)</div>
+                                <div class="bold col-sm-7">Profesoři</div>
                                 <div class="col-sm-17 row-content"><?php echo openlab_get_faculty_list() ?></div>
                             </div>
                             <div class="table-row row">
-                                <div class="bold col-sm-7">Department</div>
+                                <div class="bold col-sm-7">Oblast</div>
                                 <div class="col-sm-17 row-content"><?php echo $wds_departments; ?></div>
                             </div>
                             <div class="table-row row">
-                                <div class="bold col-sm-7">Course Code</div>
+                                <div class="bold col-sm-7">Kód kurzu</div>
                                 <div class="col-sm-17 row-content"><?php echo $wds_course_code; ?></div>
                             </div>
                             <div class="table-row row">
-                                <div class="bold col-sm-7">Semester / Year</div>
+                                <div class="bold col-sm-7">Kvartál / Rok</div>
                                 <div class="col-sm-17 row-content"><?php echo $wds_semester; ?> <?php echo $wds_year; ?></div>
                             </div>
                             <div class="table-row row">
-                                <div class="bold col-sm-7">Course Description</div>
+                                <div class="bold col-sm-7">Popis kurzu</div>
                                 <div class="col-sm-17 row-content"><?php echo apply_filters('the_content', $group_description); ?></div>
                             </div>
                         </div>
@@ -705,7 +705,7 @@ function cuny_group_single() {
                             <?php if ($wds_school && !empty($wds_school)): ?>
 
                                 <div class="table-row row">
-                                    <div class="bold col-sm-7">School</div>
+                                    <div class="bold col-sm-7">Téma</div>
                                     <div class="col-sm-17 row-content"><?php echo $wds_school; ?></div>
                                 </div>
 
@@ -714,7 +714,7 @@ function cuny_group_single() {
                             <?php if ($wds_departments && !empty($wds_departments)): ?>
 
                                 <div class="table-row row">
-                                    <div class="bold col-sm-7">Department</div>
+                                    <div class="bold col-sm-7">Oblast</div>
                                     <div class="col-sm-17 row-content"><?php echo $wds_departments; ?></div>
                                 </div>
 
@@ -723,14 +723,14 @@ function cuny_group_single() {
                             <?php if (function_exists('bpcgc_get_group_selected_terms')): ?>
                                 <?php if ($group_terms = bpcgc_get_group_selected_terms($group_id, true)): ?>
                                     <div class="table-row row">
-                                        <div class="bold col-sm-7">Category</div>
+                                        <div class="bold col-sm-7">Kategorie</div>
                                         <div class="col-sm-17 row-content"><?php echo implode(', ', wp_list_pluck($group_terms, 'name')); ?></div>
                                     </div>
                                 <?php endif; ?>
                             <?php endif; ?>
 
                             <div class="table-row row">
-                                <div class="bold col-sm-7"><?php echo ucfirst($group_type); ?> Description</div>
+                                <div class="bold col-sm-7">Popis</div>
                                 <div class="col-sm-17 row-content"><?php bp_group_description() ?></div>
                             </div>
 
@@ -739,9 +739,9 @@ function cuny_group_single() {
 					<?php /* This won't work at all for l10n */ ?>
 					<?php
 					if ( 1 === count( $group_contacts ) ) {
-						$gc_label = sprintf( '%s Contact', ucwords( $group_type ) );
+						$gc_label = sprintf( 'Kontakt ', _x( $group_type, '2J','openlab' ) );
 					} else {
-						$gc_label = sprintf( '%s Contacts', ucwords( $group_type ) );
+						$gc_label = sprintf( 'Kontakty ', _x( $group_type, '2J','openlab' ) );
 					}
 					?>
 					<div class="bold col-sm-7"><?php echo $gc_label ?></div>
@@ -752,7 +752,7 @@ function cuny_group_single() {
                             <?php if ($group_type == "portfolio"): ?>
 
                                 <div class="table-row row">
-                                    <div class="bold col-sm-7">Member Profile</div>
+                                    <div class="bold col-sm-7">Profil uživatele</div>
                                     <div class="col-sm-17 row-content"><?php echo bp_core_get_userlink(openlab_get_user_id_from_portfolio_group_id(bp_get_group_id())); ?></div>
                                 </div>
 
@@ -766,7 +766,7 @@ function cuny_group_single() {
 
             <?php do_action('bp_after_group_header') ?>
 
-                                                                                                                                                                                                                                                                            </div><!--<?php echo $group_type; ?>-header -->
+        </div><!--<?php echo _x($group_type, '1J','openlab'); ?>-header XXXX-->
 
     <?php endif; ?>
 
@@ -829,7 +829,7 @@ function openlab_group_profile_activity_list() {
                         <div class="col-sm-12">
                             <div class="recent-discussions">
                                 <div class="recent-posts">
-                                    <h2 class="title activity-title"><a class="no-deco" href="<?php site_url(); ?>/groups/<?php echo $group_slug; ?>/forum/">Recent Discussions<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
+                                    <h2 class="title activity-title"><a class="no-deco" href="<?php site_url(); ?>/groups/<?php echo $group_slug; ?>/forum/">Nedávné diskuse<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
                                     <?php
                                     $forum_ids = bbp_get_group_forum_ids(bp_get_current_group_id());
 
@@ -872,7 +872,7 @@ function openlab_group_profile_activity_list() {
                         <div class="col-sm-12">
                             <div id="recent-docs">
                                 <div class="recent-posts">
-                                    <h2 class="title activity-title"><a class="no-deco" href="<?php site_url(); ?>/groups/<?php echo $group_slug; ?>/docs/">Recent Docs<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
+                                    <h2 class="title activity-title"><a class="no-deco" href="<?php site_url(); ?>/groups/<?php echo $group_slug; ?>/docs/">Nedávné dokumenty<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
                                     <?php
                                     $docs_arg = Array("posts_per_page" => "3",
                                         "post_type" => "bp_doc",
@@ -1072,15 +1072,15 @@ function openlab_default_subscription_settings_form() {
     <p><?php _e('When new users join this group, their default email notification settings will be:', 'bp-ass'); ?></p>
     <div class="radio email-sub">
         <label><input type="radio" name="ass-default-subscription" value="no" <?php ass_default_subscription_settings('no') ?> />
-            <?php _e('Žádný e-mail (uživatelé budou číst tuto skupinu na webu - dobré pro libovolnou skupinu - výchozí)', 'bp-ass') ?></label>
+            <?php _e('No Email (users will read this group on the web - good for any group)', 'bp-ass') ?></label>
         <label><input type="radio" name="ass-default-subscription" value="sum" <?php ass_default_subscription_settings('sum') ?> />
-            <?php _e('Weekly Summary Email ( the week\'s topics - good for large groups )', 'bp-ass') ?></label>
+            <?php _e('Weekly Summary Email (the week\'s topics - good for large groups)', 'bp-ass') ?></label>
         <label><input type="radio" name="ass-default-subscription" value="dig" <?php ass_default_subscription_settings('dig') ?> />
-            <?php _e('Daily Digest Email ( all daily activity bundles in one email - good for medium-size groups )', 'bp-ass') ?></label>
+            <?php _e('Daily Digest Email (all daily activity bundles in one email - good for medium-size groups)', 'bp-ass') ?></label>
         <label><input type="radio" name="ass-default-subscription" value="sub" <?php ass_default_subscription_settings('sub') ?> />
-            <?php _e('New Topics Email ( new topics are sent as they arrive, but not replies - good for small groups )', 'bp-ass') ?></label>
+            <?php _e('New Topics Email (new topics are sent as they arrive, but not replies - good for small groups)', 'bp-ass') ?></label>
         <label><input type="radio" name="ass-default-subscription" value="supersub" <?php ass_default_subscription_settings('supersub') ?> />
-            <?php _e('All Email ( send emails about everything - recommended only for working groups )', 'bp-ass') ?></label>
+            <?php _e('All Email (send emails about everything - recommended only for working groups)', 'bp-ass') ?></label>
     </div>
     <hr />
     <?php
@@ -1159,13 +1159,15 @@ function openlab_get_directory_filter($filter_type, $label_type) {
 
             break;
 
-        case 'user_type' :
+        case 'usertype' :
             $filter_array['label'] = 'User Type';
             $filter_array['options'] = array(
                 'user_type_all' => 'All',
                 'student' => 'Student',
                 'faculty' => 'Faculty',
-                'staff' => 'Staff'
+                'staff' => 'Staff',
+                'Běžný uživatel' => 'Běžný uživatel',
+                'Uživatel z veřejné správy' => 'Uživatel z veřejné správy',
             );
             break;
 
@@ -1300,7 +1302,7 @@ function openlab_show_site_posts_and_comments() {
                 );
 
                 if (!empty($wp_post->post_password)) {
-                    $_post['content'] = 'This content is password protected.';
+                    $_post['content'] = 'Tento obsah je chráněn heslem.';
                 }
 
                 $posts[] = $_post;
@@ -1358,7 +1360,7 @@ function openlab_show_site_posts_and_comments() {
             <div class="col-sm-12">
                 <div id="recent-course">
                     <div class="recent-posts">
-                        <h2 class="title activity-title"><a class="no-deco" href="<?php echo esc_attr($site_url) ?>">Recent Posts<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
+                        <h2 class="title activity-title"><a class="no-deco" href="<?php echo esc_attr($site_url) ?>">Poslední příspěvky<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
 
 
                         <?php foreach ($posts as $post) : ?>
@@ -1370,7 +1372,7 @@ function openlab_show_site_posts_and_comments() {
                         <?php endforeach ?>
 
                         <?php if ('external' == $site_type && groups_is_user_admin(bp_loggedin_user_id(), bp_get_current_group_id())) : ?>
-                            <p class="description">Feed updates automatically every 10 minutes <a class="refresh-feed" id="refresh-posts-feed" href="<?php echo wp_nonce_url(add_query_arg('refresh_feed', 'posts', bp_get_group_permalink(groups_get_current_group())), 'refresh-posts-feed') ?>">Refresh now</a></p>
+                            <p class="description">Feed updates automatically every 10 minutes <a class="refresh-feed" id="refresh-posts-feed" href="<?php echo wp_nonce_url(add_query_arg('refresh_feed', 'posts', bp_get_group_permalink(groups_get_current_group())), 'refresh-posts-feed') ?>">Obnovit nyní</a></p>
                         <?php endif ?>
                     </div><!-- .recent-posts -->
                 </div><!-- #recent-course -->
@@ -1379,7 +1381,7 @@ function openlab_show_site_posts_and_comments() {
             <div class="col-sm-12">
                 <div id="recent-site-comments">
                     <div class="recent-posts">
-                        <h2 class="title activity-title"><a class="no-deco" href="<?php echo esc_attr($site_url) ?>">Recent Comments<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
+                        <h2 class="title activity-title"><a class="no-deco" href="<?php echo esc_attr($site_url) ?>">Nedávné Komentáře<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a></h2>
                         <?php if (!empty($comments)) : ?>
                             <?php foreach ($comments as $comment) : ?>
                                 <div class="panel panel-default">
@@ -1389,11 +1391,11 @@ function openlab_show_site_posts_and_comments() {
                             <?php endforeach ?>
                         <?php else : ?>
                             <div class="panel panel-default">
-                                <div class="panel-body"><p>No Comments Found</p></div></div>
+                                <div class="panel-body"><p>Nebyly nalezeny žádné komentáře</p></div></div>
                         <?php endif ?>
 
                         <?php if ('external' == $site_type && groups_is_user_admin(bp_loggedin_user_id(), bp_get_current_group_id())) : ?>
-                            <p class="refresh-message description">Feed updates automatically every 10 minutes <a class="refresh-feed" id="refresh-posts-feed" href="<?php echo wp_nonce_url(add_query_arg('refresh_feed', 'comments', bp_get_group_permalink(groups_get_current_group())), 'refresh-comments-feed') ?>">Refresh now</a></p>
+                            <p class="refresh-message description">Feed se automaticky aktualizuje každých 10 minut <a class="refresh-feed" id="refresh-posts-feed" href="<?php echo wp_nonce_url(add_query_arg('refresh_feed', 'comments', bp_get_group_permalink(groups_get_current_group())), 'refresh-comments-feed') ?>">Obnovit nyní</a></p>
                         <?php endif ?>
 
                     </div><!-- .recent-posts -->
@@ -1463,7 +1465,7 @@ function openlab_bp_group_site_pages() {
                 <?php if (openlab_is_my_portfolio() || is_super_admin()) : ?>
                     <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                         <li class="portfolio-site-link bold">
-                            <a class="bold no-deco" href="<?php echo esc_url($group_site_settings['site_url']) ?>">Visit <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> Web <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+                            <a class="bold no-deco" href="<?php echo esc_url($group_site_settings['site_url']) ?>">Navštívit web <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
                         </li>
 
                         <?php if (openlab_user_portfolio_site_is_local($displayed_user_id)) : ?>
@@ -1476,7 +1478,7 @@ function openlab_bp_group_site_pages() {
 
                     <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                         <li class="portfolio-site-link">
-                            <a class="bold no-deco" href="<?php echo trailingslashit(esc_attr($group_site_settings['site_url'])); ?>">Navštívit <?php echo openlab_get_group_type_label('group_id=' . $group_id . '&case=upper'); ?> web <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+                            <a class="bold no-deco" href="<?php echo trailingslashit(esc_attr($group_site_settings['site_url'])); ?>">Navštívit stránky <?php echo _x(openlab_get_group_type_label('group_id=' . $group_id),'2J','openlab'); ?>  <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
                         </li>
                     </ul>
 
@@ -1487,7 +1489,7 @@ function openlab_bp_group_site_pages() {
             <div class="sidebar-block">
                 <ul class="sidebar-sublinks portfolio-sublinks inline-element-list">
                     <li class="portfolio-site-link">
-                        <?php echo '<a class="bold no-deco" href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '">Navštívit ' . ucwords(groups_get_groupmeta(bp_get_group_id(), "wds_group_type")) . ' Site <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>'; ?>
+                        <?php echo '<a class="bold no-deco" href="' . trailingslashit(esc_attr($group_site_settings['site_url'])) . '">Navštívit stránky ' . _x((groups_get_groupmeta(bp_get_group_id(), "wds_group_type")),'2J','openlab') . '  <span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>'; ?>
                     </li>
                     <?php if ($group_site_settings['is_local'] && ($bp->is_item_admin || is_super_admin() || groups_is_user_member(bp_loggedin_user_id(), bp_get_current_group_id()))) : ?>
                         <li class="portfolio-dashboard-link">
@@ -1531,6 +1533,7 @@ function openlab_get_faculty_list() {
 
 function openlab_get_group_site_settings($group_id) {
     global $table_prefix;
+
     // Set up data. Look for local site first. Fall back on external site.
     $site_id = openlab_get_site_id_by_group_id($group_id);
 

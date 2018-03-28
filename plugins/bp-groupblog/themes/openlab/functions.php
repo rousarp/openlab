@@ -42,6 +42,12 @@ require_once( STYLESHEETPATH . '/lib/page-funcs.php' );
 require_once( STYLESHEETPATH . '/lib/sidebar-funcs.php' );
 require_once( STYLESHEETPATH . '/lib/plugin-hooks.php' );
 require_once( STYLESHEETPATH . '/lib/theme-hooks.php' );
+// doplněná integrace s dwqa - plugin dw question - answer
+require_once( STYLESHEETPATH . '/lib/dwqa-custom.php' );
+
+
+// přesměrovat profil uživatele dwqa na profil uživatele OpenLab
+//add_action( 'template_redirect', 'dwqa_redirect_author_archive_to_profile' );
 
 function openlab_load_scripts() {
     $stylesheet_dir_uri = get_stylesheet_directory_uri();
@@ -52,7 +58,7 @@ function openlab_load_scripts() {
     if (!is_admin()) {
 
         //google fonts
-        wp_register_style('google-open-sans', set_url_scheme('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'), array(), '2014', 'all');
+        wp_register_style('google-open-sans', set_url_scheme('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'), array(), '2014', 'all');
         wp_enqueue_style('google-open-sans');
 
         wp_register_style('camera-js-styles', $stylesheet_dir_uri . '/css/camera.css', array(), '20130604', 'all');
@@ -82,6 +88,9 @@ function openlab_load_scripts() {
         ));
 
         wp_register_script('parsley', $stylesheet_dir_uri . '/js/parsley.min.js', array('jquery'));
+        wp_register_script('parsley-cs', $stylesheet_dir_uri . '/js/parsley-cs.js', array('jquery'));
+        wp_enqueue_script('parsley');
+        wp_enqueue_script('parsley-cs');
     }
 
     if (bp_is_register_page()) {

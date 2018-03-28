@@ -419,7 +419,7 @@
                 $('#signup_submit').val('Dokončit registraci');
             } else if (!$('#signup_submit').hasClass('btn-disabled')) {
                 $('#signup_submit').addClass('btn-disabled');
-                $('#signup_submit').val('Please Complete Required Fields');
+                $('#signup_submit').val('Pro pokračování vyplňte požadovaná pole');
             }
 
         }

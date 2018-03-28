@@ -114,9 +114,9 @@ function openlab_group_sidebar($mobile = false) {
 function openlab_learnmore_sidebar() {
 	?>
 	<div class="learn-more-sidebar">
-		<p>Co je nového na našem webu naleznete na webu <a href="https://lab.urad.online/openroad/">Open Road</a></p>
+		<p>Co je nového na našem webu naleznete na webu <a href="<?PHP echo get_site_url( 1, '/openroad/', "http"); ?>">Open Road</a></p>
 		<p>Publikujte na serveru <a href="http://otevrenenoviny.cz/">Otevřené noviny</a></p>
-		<p>Připojte se k serveru <a href="https://openlab.citytech.cuny.edu/openpedagogyopenlab/">Otevřený úřad</a></p>
+		<p>Připojte se k serveru <a href="<?PHP echo get_site_url( 1, '/otrevrenyurad/', "http"); ?>">Otevřený úřad</a></p>
 	</div>
 	<?php
 }
